@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🧠 Souvenance
+# Souvenance
 
-**A living memory you own — queried through Claude.**
+**A living memory you own — queried through your AI.**
 
 Your conversations, voice memos, photos and daily notes become a consolidated,
 searchable, *portable* memory — hosted on your VPS, stored in formats that will
@@ -41,7 +41,7 @@ exportable, governed by you.
   word-aligned overnight. A 2-minute daily voice log. Perceptors that quietly
   pull your personal calendar. *Memory is never a chore — it is the byproduct
   of tools you use because they are useful.*
-- **Ask your past anything** — from claude.ai, mobile or voice:
+- **Ask your past anything** — from any MCP client (claude.ai, mobile, voice…):
   *"What did I think about X last year?"* Hybrid recall: vectors + a temporal
   knowledge graph + computed time framing ("14 months ago, two summers back").
 - **Relive, not just remember** — `recall` returns the summary *and* a
@@ -150,7 +150,7 @@ paste this repo into Claude Code and just say **"install it"**.
 
 ## FAQ
 
-**Do I talk to "a twin"?** No. You talk to Claude — the interlocutor stays
+**Do I talk to "a twin"?** No. You talk to your assistant — the interlocutor stays
 alive and replaceable. Souvenance is the back room.
 
 **What if I stop paying for Claude?** Capture never depends on the AI layer.

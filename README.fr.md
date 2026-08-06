@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🧠 Souvenance
+# Souvenance
 
-**Une mémoire vivante qui vous appartient — interrogée via Claude.**
+**Une mémoire vivante qui vous appartient — interrogée via votre IA.**
 
 Vos conversations, vocaux, photos et notes quotidiennes deviennent une mémoire
 consolidée, interrogeable, *portable* — hébergée sur votre VPS, stockée dans
