@@ -111,6 +111,15 @@ build the iOS shortcut — the full walkthrough is in
 [`docs/kit-installation.md`](docs/kit-installation.md), written so you can
 paste this repo into Claude Code and just say **"install it"**.
 
+## The turnkey kit ($69, one-time)
+
+The engine above is free and complete. The [kit](https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f) is the same code,
+packaged for a 15-minute install: versioned ZIP, pinned dependencies,
+START-HERE guide written to be followed by your AI ("paste into your coding
+agent and say *install it*"), iOS shortcuts walkthrough, founding-interview
+script. One-time payment, instant download, free re-downloads as versions
+ship. You pay for convenience — and you support the project.
+
 ## What's inside
 
 | Concern | Choice | Why |
