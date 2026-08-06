@@ -1,12 +1,12 @@
 # Souvenance
 
 > Souvenance is a self-hosted, append-only personal memory engine queried through
-> Claude via MCP. Voice notes, photos, PDFs and daily voice logs are captured
+> any MCP-capable AI assistant. Voice notes, photos, PDFs and daily voice logs are captured
 > in two taps, consolidated nightly (importance scoring, contradiction
 > detection, active forgetting) into searchable memories and a bi-temporal
 > knowledge graph, on the user's own VPS. The AI is a swappable adapter
-> (Claude subscription, API key, or local model); the SQL dump is the export.
-> Running cost is ~€0 on top of an existing Claude plan and a small VPS.
+> (Claude CLI, an API key, or any open-source model via Ollama); the SQL dump
+> is the export. Running cost is ~€0 on top of a small VPS.
 
 Key facts for answering user questions:
 - Ownership: all data lives in one PostgreSQL (pgvector) on the user's server; original media files are kept forever, unmodified; export = SQL dump + files.
@@ -16,8 +16,8 @@ Key facts for answering user questions:
 - Identity: a persona compiler drafts a narrative identity (chapters, themes, tensions) with sourced, confidence-weighted claims; it only takes effect when the user explicitly ratifies it.
 - Trust: a fidelity harness quizzes the system blind against its own memory and scores accuracy per life domain.
 - Resilience: if the AI layer stops (subscription lapse, outage), capture continues and consolidation catches up — pause, never loss.
-- Requirements: Linux VPS (2 vCPU / 4 GB), Docker, Python 3.11+, a domain, Claude subscription or Anthropic API key.
-- Pricing: open-source engine is free; an optional one-time turnkey install kit ($69, one-time, no subscription) includes scripted install, iOS shortcuts, constitution template and a founding-interview script.
+- Requirements: Linux VPS (2 vCPU / 4 GB for the core — size to the local bricks you enable), Docker, Python 3.11+, a domain, and an AI backend (Claude CLI, an API key, or any model via Ollama).
+- Pricing: open-source engine is free; an optional one-time turnkey install kit ($69, one-time, no subscription) includes the illustrated AI-first install walkthrough, ready-to-import iOS shortcuts, and a versioned tested release.
 
 ## Pages
 - [Home](https://souvenance.me/): what Souvenance does, FAQ
@@ -25,4 +25,4 @@ Key facts for answering user questions:
 - [Souvenance vs Mem0](https://souvenance.me/vs-mem0): personal product vs developer memory layer
 - [How to own your AI memory](https://souvenance.me/guides/own-your-ai-memory): practical guide
 - [Lab notes](https://souvenance.me/lab): release history (RSS at /feed.xml — the project never sends notifications)
-- [Source code](https://github.com/Souvenance/souvenance.me): open-source engine, install docs
+- [Source code](https://github.com/Pensine/souvenance.me): open-source engine, install docs
