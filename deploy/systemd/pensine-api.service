@@ -1,0 +1,17 @@
+[Unit]
+Description=Pensine — API de dépôt (raccourci iOS) et replongée
+After=network.target docker.service
+
+[Service]
+Type=simple
+WorkingDirectory=__PENSINE_DIR__
+EnvironmentFile=__PENSINE_DIR__/.env
+# PENSINE_BIND_HOST (.env) : 127.0.0.1 par défaut ; passerelle docker
+# (ex. 172.18.0.1) si le reverse proxy tourne en conteneur
+Environment=PENSINE_BIND_HOST=127.0.0.1
+ExecStart=__PENSINE_DIR__/.venv/bin/uvicorn pensine.api:app --host ${PENSINE_BIND_HOST} --port 8300
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

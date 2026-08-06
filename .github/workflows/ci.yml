@@ -1,0 +1,26 @@
+name: CI
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+      - name: Le serveur MCP et l'API chargent
+        run: |
+          python - <<'EOF'
+          import asyncio
+          from pensine.mcp_server import mcp
+          from pensine.api import app
+          tools = asyncio.run(mcp.list_tools())
+          assert {t.name for t in tools} >= {"daily_log", "recall", "get_persona", "curate", "log"}
+          print("OK:", sorted(t.name for t in tools))
+          EOF

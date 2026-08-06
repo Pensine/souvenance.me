@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Souvenance vs ChatGPT memory — who owns your context?</title>
+<meta name="description" content="Honest comparison: ChatGPT's built-in memory vs a self-hosted, append-only memory you own. Portability, auditability, multimodal originals, cost.">
+<link rel="canonical" href="https://souvenance.me/vs-chatgpt-memory">
+<style>
+@font-face{font-family:'Special Elite';font-style:normal;font-weight:400;
+  font-display:swap;src:url(assets/special-elite.woff2) format('woff2')}
+:root{--paper:#e9e2cf;--paper2:#ded4bc;--ink:#2b2620;--ink-soft:#5c5344;
+  --sepia:#8a7a5c;--red:#a33b2b;
+  --tw:'Special Elite','American Typewriter','Courier New',Courier,monospace;
+  color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 var(--tw)}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .3 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:var(--ink)}
+a:hover{background:var(--ink);color:var(--paper);text-decoration:none}
+::selection{background:var(--ink);color:var(--paper)}
+.doc{max-width:46rem;margin:0 auto;padding:1.3rem 1.2rem 3rem}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;
+  border-bottom:2px solid var(--ink);padding-bottom:.6rem;flex-wrap:wrap}
+.head .l1{letter-spacing:.16em;font-size:.9rem}
+.head .l2{letter-spacing:.13em;font-size:.68rem;color:var(--ink-soft);margin-top:.15rem}
+.stamp{border:3px double var(--red);color:var(--red);padding:.12rem .7rem;
+  font-size:.78rem;letter-spacing:.25em;transform:rotate(-5deg);opacity:.8;font-weight:700}
+h1{font:700 1.35rem var(--tw);text-transform:uppercase;letter-spacing:.03em;
+  margin:1.8rem 0 .4rem}
+h2{font:700 1rem var(--tw);text-transform:uppercase;letter-spacing:.05em;margin-top:2rem}
+.tbl{overflow-x:auto;margin:1.2rem 0;border:1px solid var(--sepia);
+  background:var(--paper2);box-shadow:3px 4px 0 rgba(90,76,52,.25)}
+table{border-collapse:collapse;width:100%;font-size:.82rem;min-width:34rem}
+td,th{padding:.5rem .6rem;border-bottom:1px dashed var(--sepia);text-align:left;
+  vertical-align:top}
+th{text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;color:var(--ink-soft);
+  border-bottom:1px solid var(--ink)}
+tr:last-child td{border-bottom:0}
+.y{color:var(--ink)}.n{color:var(--ink-soft)}
+footer{margin-top:3rem;color:var(--ink-soft);font-size:.82rem;
+  border-top:1px dashed var(--sepia);padding-top:.8rem}
+</style>
+</head>
+<body>
+<div class="doc">
+<div class="head">
+  <div>
+    <div class="l1">PROJECT SOUVENANCE — FILE 07 · ANNEX A</div>
+    <div class="l2">COMPARATIVE FINDINGS · SUBJECT MEMORY vs LAB MEMORY · <a href="/">RETURN TO DOSSIER</a></div>
+  </div>
+  <div class="stamp">DECLASSIFIED</div>
+</div>
+
+<h1>Souvenance vs ChatGPT memory</h1>
+<p>Both remember you across conversations. The difference is <strong>who owns
+the substrate</strong> — and what that makes possible or impossible.</p>
+
+<div class="tbl"><table>
+<tr><th></th><th>ChatGPT memory</th><th>Souvenance</th></tr>
+<tr><td>Where it lives</td><td class="n">OpenAI's servers</td><td class="y">Your VPS, your PostgreSQL</td></tr>
+<tr><td>Portability</td><td class="n">No meaningful export of the model of you; leaving means starting over</td><td class="y">The SQL dump is the export; the AI is a swappable adapter (subscription, API key, or local model)</td></tr>
+<tr><td>Auditability</td><td class="n">Opaque — memories are created unilaterally (a 2026 study: 96% system-initiated, half with psychological inferences)</td><td class="y">Every memory traces to source events; every system action is audit-logged; identity claims carry calibrated confidence</td></tr>
+<tr><td>What it remembers</td><td class="n">Text distilled from chats</td><td class="y">Chats, daily voice log, calendar — plus the originals: voice notes, photos, videos, PDFs, kept forever, replayable</td></tr>
+<tr><td>Time</td><td class="n">A flat “now”</td><td class="y">A bi-temporal knowledge graph: what was true when, contradicted facts closed but never deleted, computed time framing</td></tr>
+<tr><td>Your identity</td><td class="n">Written about you, without you</td><td class="y">A narrative persona you ratify — nothing takes effect without your explicit sign-off, versioned in Git</td></tr>
+<tr><td>Engagement design</td><td class="n">Product optimized for retention</td><td class="y">The silence rule: no notifications exist in the code; outbound actions are constitutionally rejected</td></tr>
+<tr><td>Fidelity</td><td class="n">Unmeasured</td><td class="y">A blind-quiz harness scores recall accuracy per life domain</td></tr>
+<tr><td>Running cost</td><td class="y">Included in your plan</td><td class="y">~€0 on top of a Claude plan (or API) + a small VPS</td></tr>
+</table></div>
+
+<h2>Where ChatGPT memory wins</h2>
+<p>Honestly: zero setup, works on day one, no server to run, integrated
+mobile experience. If you don't care about ownership, portability or the
+long horizon, the built-in feature is the pragmatic choice.</p>
+
+<h2>Where Souvenance wins</h2>
+<p>The 10-year horizon. Memory value compounds — near zero at 6 months,
+considerable at a decade — and compounding assets deserve ownership. Souvenance
+is built for exactly that: append-only history a better engine can re-read in
+2028, originals preserved for replay, and an archive that outlives any
+provider, any model, and any subscription.</p>
+
+<p><a href="/">Return to the dossier →</a></p>
+<footer>Related annexes: <a href="/vs-mem0">Souvenance vs Mem0</a> ·
+<a href="/guides/own-your-ai-memory">How to own your AI memory</a> ·
+<a href="/lab">lab log</a></footer>
+</div>
+</body>
+</html>

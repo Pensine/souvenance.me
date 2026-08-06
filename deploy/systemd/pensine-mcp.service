@@ -1,0 +1,17 @@
+[Unit]
+Description=Pensine — serveur MCP (mémoire vivante, pour claude.ai)
+After=network.target docker.service
+
+[Service]
+Type=simple
+WorkingDirectory=__PENSINE_DIR__
+EnvironmentFile=__PENSINE_DIR__/.env
+Environment=PENSINE_MCP_TRANSPORT=streamable-http
+# hôte/port lus dans le code : PENSINE_BIND_HOST (.env, défaut 127.0.0.1)
+# et PENSINE_MCP_PORT (défaut 8400)
+ExecStart=__PENSINE_DIR__/.venv/bin/python -m pensine.mcp_server
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

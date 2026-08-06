@@ -1,0 +1,9 @@
+# Pensine — cycles (VPS ; l'intelligence passe par l'adaptateur compute)
+# Consolidation nocturne (hippocampe -> cortex)
+0 3 * * *  cd /opt/pensine && /usr/bin/python3 consolidation/nightly.py >> /var/log/pensine/nightly.log 2>&1
+# Recombinaison hebdomadaire (REM)
+0 4 * * 0  cd /opt/pensine && /usr/bin/python3 consolidation/rem_weekly.py >> /var/log/pensine/rem.log 2>&1
+# Compilation de persona (proposition mensuelle — à ratifier manuellement)
+0 5 1 * *  cd /opt/pensine && /usr/bin/python3 consolidation/persona_compiler.py >> /var/log/pensine/persona.log 2>&1
+# Sauvegarde quotidienne (formats éternels)
+30 5 * * * cd /opt/pensine && ./scripts/backup.sh >> /var/log/pensine/backup.log 2>&1

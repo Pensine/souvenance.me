@@ -1,0 +1,20 @@
+# JUMEAU — infra v1 : une seule base (PostgreSQL + pgvector), rien d'autre.
+# MinIO viendra si le volume média l'exige (couche 6).
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: pensine
+      POSTGRES_USER: pensine
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?définir dans .env}
+    volumes:
+      - pensine_pgdata:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    ports:
+      # PENSINE_DB_PORT (.env) : port hôte, à changer si un autre Postgres
+      # occupe déjà 5432 sur la machine (cohabitation avec d'autres services)
+      - "127.0.0.1:${PENSINE_DB_PORT:-5432}:5432"
+
+volumes:
+  pensine_pgdata:
