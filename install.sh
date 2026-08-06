@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Pensine — installation sur VPS (Debian/Ubuntu). Idempotent : relançable.
-# Le support de niveau 1 est votre IA : collez ce repo dans Claude Code et
-# dites « installe » — docs/kit-installation.md contient tout le détail.
+# Le support de niveau 1 est votre IA : collez ce repo dans votre agent de code et
+# dites « installe » — le README contient le nécessaire ; le guide
+# pas-à-pas illustré est fourni avec le kit.
 set -euo pipefail
 
 PENSINE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -137,10 +138,10 @@ if command -v systemctl >/dev/null; then
   sudo systemctl enable --now pensine-api pensine-mcp
   say "Services actifs : pensine-api (:8300), pensine-mcp (:8400)"
 else
-  say "systemd absent — lancez manuellement (voir docs/kit-installation.md §Services)"
+  say "systemd absent — lancez manuellement uvicorn pensine.api:app (:8300) et python -m pensine.mcp_server (:8400)"
 fi
 
 say "Cron de consolidation — ajoutez à votre crontab (crontab -e) :"
 sed "s|/opt/pensine|${PENSINE_DIR}|g; s|/usr/bin/python3|${PENSINE_DIR}/.venv/bin/python|g" crontab.example
 
-say "Installation terminée. Étapes suivantes : docs/kit-installation.md §Après l'installation"
+say "Installation terminée. Étapes suivantes : README §Quick start (reverse proxy, MCP, raccourcis)"

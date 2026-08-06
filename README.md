@@ -41,7 +41,7 @@ exportable, governed by you.
   word-aligned overnight. A 2-minute daily voice log. Perceptors that quietly
   pull your personal calendar. *Memory is never a chore — it is the byproduct
   of tools you use because they are useful.*
-- **Ask your past anything** — from any MCP client (claude.ai, mobile, voice…):
+- **Ask your past anything** — from any MCP client, web, mobile or voice:
   *"What did I think about X last year?"* Hybrid recall: vectors + a temporal
   knowledge graph + computed time framing ("14 months ago, two summers back").
 - **Relive, not just remember** — `recall` returns the summary *and* a
@@ -67,15 +67,15 @@ exportable, governed by you.
 flowchart LR
     subgraph capture [Capture]
         A[iOS shortcut<br>voice / photo / PDF] --> E
-        B[Claude conversations<br>daily log, MCP] --> E
+        B[Assistant conversations<br>daily log, MCP] --> E
         C[Perceptors<br>calendar, mail opt-in] --> E
     end
-    E[(Append-only<br>event log)] --> N[Nightly consolidation<br>Claude headless]
+    E[(Append-only<br>event log)] --> N[Nightly consolidation<br>your AI backend]
     N --> M[(Memories<br>pgvector)]
     N --> G[(Temporal knowledge graph<br>bi-temporal, edges closed<br>never deleted)]
     N --> P[Persona proposals<br>you ratify]
     M & G --> R[MCP server: recall · mirror · curate]
-    R --> Claude[Claude<br>web / mobile / voice]
+    R --> AS[Your assistant<br>web / mobile / voice]
     E -.originals kept forever.-> S[(Media store<br>+ signed replay links)]
 ```
 
@@ -101,31 +101,43 @@ local bricks you enable), Docker, Python ≥ 3.11, a domain, and an AI backend
 of your choice: Claude CLI, an API key, or any open-source model via Ollama.
 
 ```bash
-git clone https://github.com/Pensine/souvenance.me /opt/pensine && cd /opt/pensine
+git clone https://github.com/YOUR_ORG/pensine /opt/pensine && cd /opt/pensine
 ./install.sh --with-local
 ```
 
 The installer generates secrets, starts Postgres, runs migrations and tests,
-and installs systemd services. Then connect the MCP server to claude.ai and
-build the iOS shortcut — the full walkthrough is in
-[`docs/kit-installation.md`](docs/kit-installation.md), written so you can
-paste this repo into Claude Code and just say **"install it"**.
+and installs systemd services. From there you are in known self-hosting
+territory: wire your reverse proxy (`deploy/Caddyfile.example`), point your
+MCP client at `/mcp`, configure `.env`, build the iOS shortcuts against
+`/deposit` and `/log`. The guided, illustrated, AI-first walkthrough is what
+the kit is for.
 
 ## The turnkey kit ($69, one-time)
 
-The engine above is free and complete. The [kit](https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f) is the same code,
-packaged for a 15-minute install: versioned ZIP, pinned dependencies,
-START-HERE guide written to be followed by your AI ("paste into your coding
-agent and say *install it*"), iOS shortcuts walkthrough, founding-interview
-script. One-time payment, instant download, free re-downloads as versions
-ship. You pay for convenience — and you support the project.
+The engine above is free, complete, and stays that way. What the [kit](https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f)
+adds is everything *around* the code that turns an afternoon of self-hosting
+into a 15-minute install:
+
+- **The full install walkthrough** — illustrated, step-by-step, written to be
+  followed by your AI: paste the folder into your coding agent, say
+  *"install it"*, answer a few questions. Reverse-proxy recipes (including
+  the proxy-in-Docker case), connector auth options, troubleshooting table
+  built from real installs.
+- **iOS shortcuts, ready to import** — the two capture shortcuts (deposit +
+  daily log with editable dictation review), plus the step-by-step build
+  guide with every pitfall documented.
+- **A versioned, tested release** — pinned dependencies, known-good
+  combination, free re-downloads as new versions ship.
+
+One-time payment, instant delivery, no subscription. You pay for the guided
+path — and you fund the project.
 
 ## What's inside
 
 | Concern | Choice | Why |
 |---|---|---|
 | Single database | PostgreSQL + pgvector | Event log + vectors + graph + transactions, in one place |
-| Transcription | WhisperX (word-aligned) | The one capability Claude lacks; excellent multilingual |
+| Transcription | WhisperX (word-aligned) | The one capability chat assistants lack; excellent multilingual |
 | Speaker ID | pyannote + ECAPA voiceprints | Enrollment is an explicit act; channel metadata always wins |
 | Embeddings | nomic-embed (default, ~500 MB) or BGE-M3 (~2 GB), local CPU | Fits small VPSes; switch backends anytime with `scripts/reembed.py`; degrades to full-text if absent |
 | Documents | Docling | Best PDF → structure available |
@@ -162,7 +174,7 @@ ship. You pay for convenience — and you support the project.
 **Do I talk to "a twin"?** No. You talk to your assistant — the interlocutor stays
 alive and replaceable. Souvenance is the back room.
 
-**What if I stop paying for Claude?** Capture never depends on the AI layer.
+**What if I stop paying for an AI subscription?** Capture never depends on the AI layer.
 Events accumulate; consolidation resumes when compute returns — with your
 subscription, an API key, or a local model behind the adapter. Worst case is
 a pause, never a loss.
@@ -177,7 +189,7 @@ interview (a scripted 4-session bootstrap) seeds the corpus on day one.
 
 ## License
 
-*To be finalized before public release.*
+MIT — see [LICENSE](LICENSE).
 
 ---
 

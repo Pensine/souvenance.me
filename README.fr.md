@@ -110,8 +110,7 @@ git clone https://github.com/VOTRE_ORG/pensine /opt/pensine && cd /opt/pensine
 L'installeur génère les secrets, lance Postgres, applique migrations et tests,
 installe les services systemd. Ensuite : connecteur MCP dans claude.ai et
 raccourci iOS — le guide complet est dans
-[`docs/kit-installation.md`](docs/kit-installation.md), écrit pour que vous
-puissiez coller ce repo dans Claude Code et dire simplement **« installe »**.
+le guide pas-à-pas illustré, écrit pour être suivi par votre IA, est fourni avec le kit.
 
 ## Coût de fonctionnement
 
@@ -152,7 +151,7 @@ premier jour.
 
 ## Licence
 
-*À finaliser avant la publication.*
+MIT — voir [LICENSE](LICENSE).
 
 ---
 
