@@ -114,7 +114,7 @@ the kit is for.
 
 ## The turnkey kit ($69, one-time)
 
-The engine above is free, complete, and stays that way. What the [kit](https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f)
+The engine above is free, complete, and stays that way. What the [kit](https://pensine.gumroad.com/l/souvenance-kit)
 adds is everything *around* the code that turns an afternoon of self-hosting
 into a 15-minute install:
 
