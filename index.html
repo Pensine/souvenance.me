@@ -32,6 +32,8 @@
    "acceptedAnswer":{"@type":"Answer","text":"About zero beyond a small VPS: consolidation runs on the AI backend you pick (Claude CLI, an API key, or any open-source model via Ollama); embeddings and transcription run locally on CPU."}},
   {"@type":"Question","name":"What do I need?",
    "acceptedAnswer":{"@type":"Answer","text":"A Linux VPS with 2 vCPU and 4 GB RAM runs the core. Local bricks scale with the models you pick — lightweight embeddings fit in ~500 MB; large word-aligned transcription models want a few GB more. All CPU, at personal volumes."}},
+  {"@type":"Question","name":"What can I actually do with it?",
+   "acceptedAnswer":{"@type":"Answer","text":"Seal time capsules that resurface inside a conversation on a chosen future date (never as a notification). Ask the mirror what your last six months say about your priorities — it reports without judging. Recall anything with humanised time framing (\"14 months ago, two summers back\") and replay the original audio in your own voice. Let the machine interview you to seed its memory. Generate a Book of the Year written from your own archive. Import years of ChatGPT or Claude history in one night. Measure what your twin really knows with a blind fidelity test."}},
   {"@type":"Question","name":"What is the $69 kit?",
    "acceptedAnswer":{"@type":"Answer","text":"The same MIT code, packaged for a 15-minute install: a versioned tested release, the illustrated AI-first install walkthrough, and ready-to-import iOS capture shortcuts. One-time payment, free re-downloads."}}]}
 ]}
@@ -94,13 +96,14 @@ a{color:inherit}
 .bar a{text-decoration:none;padding:6px 12px;border:1px solid var(--phos-dim);
   border-radius:3px;white-space:nowrap;transition:all .15s}
 .bar a:hover{background:var(--phos);color:var(--bg);text-shadow:none;box-shadow:0 0 18px rgba(58,255,122,.5)}
-.bar a.kit{border-color:var(--amber-dim);color:var(--amber)}
-.bar a.kit:hover{background:var(--amber);color:var(--bg);box-shadow:0 0 18px rgba(255,179,71,.5)}
+.bar a.kit{background:var(--phos);color:var(--bg);border-color:var(--phos-hi);text-shadow:none;font-weight:600}
+.bar a.kit:hover{background:var(--phos-hi);box-shadow:0 0 22px rgba(58,255,122,.7)}
 
 /* ---------- Hero ---------- */
 #hero{position:relative;min-height:100svh;display:flex;flex-direction:column;
   align-items:center;justify-content:center;text-align:center;padding:80px 16px 60px;
-  perspective:900px;overflow:hidden}
+  perspective:900px}
+main{position:relative;z-index:2}
 #brain{position:absolute;inset:0;width:100%;height:100%;opacity:.62}
 .hero-inner{position:relative;z-index:2;transform-style:preserve-3d}
 .glyph-title{font-family:var(--f-display);font-size:clamp(52px,11vw,148px);
@@ -116,8 +119,9 @@ a{color:inherit}
 .sub b{color:var(--phos)}
 
 .ctas{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;margin-top:44px;transform:translateZ(40px)}
+.ctas .key{width:min(360px,92vw);min-height:96px;display:flex;flex-direction:column;justify-content:center}
 .key{--c:var(--phos);--c-hi:var(--phos-hi);--glow:rgba(58,255,122,.45);
-  position:relative;display:block;text-decoration:none;text-align:center;
+  position:relative;display:flex;flex-direction:column;justify-content:center;text-decoration:none;text-align:center;
   font-family:var(--f-display);font-size:clamp(20px,2.6vw,27px);line-height:1.1;
   color:var(--c-hi);padding:20px 34px 24px;min-width:265px;
   background:linear-gradient(180deg,#0a1f12,#051209);
@@ -129,21 +133,24 @@ a{color:inherit}
   color:var(--c);margin-top:7px;text-transform:uppercase}
 .key:hover{transform:translateY(2px)}
 .key:active{transform:translateY(6px);box-shadow:0 0 0 1px rgba(0,0,0,.6),0 1px 0 #062010,0 2px 8px rgba(0,0,0,.7),0 0 36px var(--glow)}
-.key.kit{--c:var(--amber);--c-hi:var(--amber-hi);--glow:rgba(255,179,71,.45);
-  background:linear-gradient(180deg,#241605,#120a03);
-  box-shadow:0 0 0 1px rgba(0,0,0,.6),0 7px 0 #1d1104,0 7px 24px rgba(0,0,0,.7),0 0 30px var(--glow),inset 0 1px 0 rgba(255,224,176,.25)}
-.key.kit:active{box-shadow:0 0 0 1px rgba(0,0,0,.6),0 1px 0 #1d1104,0 2px 8px rgba(0,0,0,.7),0 0 36px var(--glow)}
+.key.kit{--glow:rgba(58,255,122,.65);color:#04170b;text-shadow:none;
+  background:linear-gradient(180deg,#7dffab,#2fe968 55%,#1fbf52);
+  border-color:var(--phos-hi);
+  box-shadow:0 0 0 1px rgba(0,0,0,.6),0 7px 0 #0d5c2c,0 7px 24px rgba(0,0,0,.7),0 0 42px var(--glow),inset 0 1px 0 rgba(255,255,255,.5)}
+.key.kit small{color:#065c28}
+.key.kit:hover{filter:brightness(1.08)}
+.key.kit:active{box-shadow:0 0 0 1px rgba(0,0,0,.6),0 1px 0 #0d5c2c,0 2px 8px rgba(0,0,0,.7),0 0 48px var(--glow)}
 .hint{position:absolute;bottom:26px;left:0;right:0;text-align:center;color:var(--phos-ghost);
   font-size:12px;letter-spacing:.3em;animation:hintf 2.4s ease-in-out infinite}
 @keyframes hintf{50%{opacity:.35;transform:translateY(4px)}}
 
 /* ---------- Section chrome ---------- */
-section{position:relative;padding:11vh 16px;max-width:1080px;margin:0 auto}
+section{position:relative;padding:6.5vh 16px;max-width:1080px;margin:0 auto;scroll-margin-top:64px}
 .sect-label{font-family:var(--f-body);font-size:12px;letter-spacing:.35em;
   color:var(--phos-dim);text-transform:uppercase;margin-bottom:10px}
 .sect-label::before{content:"▚ ";color:var(--phos)}
 h2{font-family:var(--f-display);font-size:clamp(30px,5vw,52px);color:var(--phos-hi);
-  line-height:1;margin-bottom:34px;text-shadow:0 0 14px rgba(58,255,122,.5)}
+  line-height:1;margin-bottom:24px;text-shadow:0 0 14px rgba(58,255,122,.5)}
 h2 .amb{color:var(--amber-hi);text-shadow:0 0 14px rgba(255,179,71,.5)}
 
 /* ---------- Memory cells ---------- */
@@ -165,6 +172,39 @@ h2 .amb{color:var(--amber-hi);text-shadow:0 0 14px rgba(255,179,71,.5)}
   font-size:12.5px;margin-top:0}
 .cell:hover .more,.cell:focus-within .more{max-height:130px;margin-top:10px}
 .cell .idx{position:absolute;top:10px;right:12px;font-size:11px;color:var(--phos-ghost);letter-spacing:.2em}
+
+/* ---------- The console : try it, don't read about it ---------- */
+.console{border:1px solid var(--phos-dim);border-radius:8px;overflow:hidden;
+  background:linear-gradient(180deg,#04150b,#020806);
+  box-shadow:0 0 40px rgba(58,255,122,.10),inset 0 1px 0 rgba(180,255,208,.12)}
+.con-bar{display:flex;align-items:center;gap:8px;padding:9px 13px;
+  border-bottom:1px solid var(--grid);background:#061a0e;font-size:11.5px;
+  letter-spacing:.18em;color:var(--phos-dim)}
+.con-bar i{width:9px;height:9px;border-radius:50%;background:var(--phos);
+  box-shadow:0 0 8px var(--phos);flex:0 0 auto}
+.con-screen{padding:16px 14px;min-height:230px;font-size:13px;line-height:1.6;
+  white-space:pre-wrap;overflow-wrap:anywhere;tab-size:2}
+.con-screen .cmd{color:var(--phos-hi);font-weight:600}
+.con-screen .dim{color:var(--phos-dim)}
+.con-screen .hl{color:var(--amber-hi)}
+.con-screen .lbl{color:var(--phos)}
+.con-screen .cur{display:inline-block;width:.5em;height:1.05em;background:var(--phos);
+  vertical-align:-.15em;animation:blink 1s steps(1) infinite}
+.chips{display:flex;flex-wrap:wrap;gap:9px;padding:0 13px 15px}
+.chip{font-family:var(--f-body);font-size:12px;letter-spacing:.06em;
+  color:var(--phos);background:#08240f;border:1px solid var(--phos-dim);
+  border-radius:99px;padding:8px 15px;cursor:pointer;transition:all .15s;
+  -webkit-tap-highlight-color:transparent}
+.chip:hover,.chip:focus-visible{background:var(--phos);color:var(--bg);text-shadow:none;
+  box-shadow:0 0 16px rgba(58,255,122,.45);outline:none}
+.chip[aria-pressed="true"]{background:var(--phos);color:var(--bg);text-shadow:none}
+.con-foot{padding:0 13px 16px;color:var(--phos-ghost);font-size:11.5px;letter-spacing:.05em}
+@media (max-width:700px){
+  .con-screen{font-size:12px;min-height:210px;padding:14px 12px}
+  .chips{gap:7px;padding:0 11px 13px}
+  .chip{font-size:11.5px;padding:9px 13px;flex:1 1 auto;text-align:center;min-width:calc(50% - 4px)}
+  .con-bar{font-size:10px;letter-spacing:.12em}
+}
 
 /* ---------- Flow pipeline ---------- */
 .flow{border:1px solid var(--grid);border-radius:6px;padding:34px 22px;
@@ -196,19 +236,20 @@ h2 .amb{color:var(--amber-hi);text-shadow:0 0 14px rgba(255,179,71,.5)}
 .duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
 .plan{border:1px solid var(--grid);border-radius:6px;padding:30px 26px;background:rgba(4,18,10,.5);
   display:flex;flex-direction:column;gap:14px}
-.plan.kitp{border-color:var(--amber-dim);background:rgba(30,19,5,.35)}
+.plan.kitp{border-color:var(--phos-dim);background:rgba(10,40,22,.35);box-shadow:0 0 34px rgba(58,255,122,.10)}
 .plan h3{font-family:var(--f-display);font-size:30px;color:var(--phos-hi)}
-.plan.kitp h3{color:var(--amber-hi)}
+.plan.kitp h3{color:var(--phos-hi)}
 .plan .price{font-family:var(--f-display);font-size:46px;line-height:1}
-.plan.kitp .price{color:var(--amber)}
+.plan.kitp .price{color:var(--phos)}
 .plan ul{list-style:none;color:var(--phos-dim);font-size:13.5px;flex:1}
 .plan ul li{padding:4px 0 4px 20px;position:relative}
 .plan ul li::before{content:"▸";position:absolute;left:0;color:var(--phos)}
-.plan.kitp ul li::before{color:var(--amber)}
-.plan .key{min-width:0}
+.plan.kitp ul li::before{color:var(--phos)}
+.plan .key{min-width:0;width:100%}
+.plan .key small{letter-spacing:.06em;overflow-wrap:anywhere}
 
 /* ---------- Footer ---------- */
-footer{border-top:1px solid var(--grid);margin-top:6vh;padding:34px 18px 46px;
+footer{border-top:1px solid var(--grid);margin-top:3vh;padding:34px 18px 46px;
   text-align:center;color:var(--phos-ghost);font-size:12.5px}
 footer .links{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
 footer a{color:var(--phos-dim);text-decoration:none}
@@ -223,11 +264,29 @@ footer .motto{font-family:var(--f-display);font-size:19px;color:var(--phos-dim);
   html{scroll-behavior:auto}
   .js .rv{opacity:1;transform:none}
 }
+@keyframes pktv{0%{transform:translateY(0);opacity:0}12%{opacity:1}88%{opacity:1}100%{transform:translateY(30px);opacity:0}}
+@media (max-width:700px){
+  .flow{padding:24px 14px;overflow:visible}
+  .pipe{flex-direction:column;min-width:0}
+  .node{width:100%;max-width:250px;margin:0 auto}
+  .wire{flex:none;width:2px;height:30px;min-width:0;margin:6px auto 22px;background:var(--phos-ghost)}
+  .js body:not(.rm) .wire i,.wire i{left:-3px;top:0;animation:pktv 2.6s linear infinite}
+
+  /* SIX CELLS : grille dense 2 colonnes — on voit la machine d'un coup d'oeil */
+  .cells{grid-template-columns:1fr 1fr;gap:10px;perspective:none}
+  .cell{min-height:0;padding:14px 11px 13px;border-radius:5px}
+  .cell:hover,.cell:focus-within{transform:none;box-shadow:0 0 18px rgba(58,255,122,.12)}
+  .cell .art{font-size:11px;margin-bottom:9px;opacity:.85}
+  .cell h3{font-size:19px}
+  .cell p{font-size:11.5px;line-height:1.45;margin-top:5px}
+  .cell .more{display:none}
+  .cell .idx{font-size:9px;top:7px;right:8px;letter-spacing:.1em}
+}
 @media (max-width:560px){
   .bar .sig{display:none}
   .key{min-width:210px;font-size:19px}
-  .cell{min-height:0}
-  .cell .more{max-height:none;margin-top:10px}
+  section{padding:5.5vh 13px}
+  h2{margin-bottom:18px}
 }
 </style>
 </head>
@@ -257,7 +316,7 @@ if(matchMedia('(prefers-reduced-motion: reduce)').matches)document.body.classLis
       The AI is a plug; <b>the memory is yours.</b></p>
     <div class="ctas">
       <a class="key" href="https://github.com/Pensine/souvenance.me">GET THE ENGINE<small>open source · MIT · free</small></a>
-      <a class="key kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">TURNKEY KIT — $69<small>one-time · 15-min install · no subscription</small></a>
+      <a class="key kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">TURNKEY KIT — $69<small>one-time · no subscription</small></a>
     </div>
   </div>
   <div class="hint">▼ ENTER THE MACHINE ▼</div>
@@ -319,6 +378,27 @@ TXT ▸▸ ██</div>
   </div>
 </section>
 
+<section id="try">
+  <div class="sect-label rv">live terminal</div>
+  <h2 class="rv">TRY THE MACHINE.</h2>
+  <p class="rv" style="color:var(--phos-dim);margin:-10px 0 22px;max-width:640px">
+    This is what you actually type — to your own assistant, in plain language.
+    Tap a command.</p>
+  <div class="console rv">
+    <div class="con-bar"><i></i><span>SOUVENANCE · MCP SESSION — souvenance@your-vps</span></div>
+    <div class="con-screen" id="screen" aria-live="polite"></div>
+    <div class="chips" role="group" aria-label="Demo commands">
+      <button class="chip" data-demo="capsule">▸ capsule</button>
+      <button class="chip" data-demo="recall">▸ recall</button>
+      <button class="chip" data-demo="mirror">▸ mirror</button>
+      <button class="chip" data-demo="yearbook">▸ yearbook</button>
+      <button class="chip" data-demo="interview">▸ interview</button>
+      <button class="chip" data-demo="import">▸ import</button>
+    </div>
+    <div class="con-foot">Simulated output — the real thing runs on your server, with your own memories.</div>
+  </div>
+</section>
+
 <section id="flowsec">
   <div class="sect-label rv">signal path</div>
   <h2 class="rv">DAY CAPTURES. <span class="amb">NIGHT REMEMBERS.</span></h2>
@@ -366,7 +446,7 @@ TXT ▸▸ ██</div>
         <li>install.sh, docs, tests, CI</li>
         <li>For self-hosters at ease with a reverse proxy and an afternoon</li>
       </ul>
-      <a class="key" href="https://github.com/Pensine/souvenance.me">OPEN SOURCE<small>github.com/Pensine/souvenance.me</small></a>
+      <a class="key" href="https://github.com/Pensine/souvenance.me">OPEN SOURCE<small>Pensine/souvenance.me</small></a>
     </div>
     <div class="plan kitp rv">
       <h3>THE KIT</h3>
@@ -377,7 +457,7 @@ TXT ▸▸ ██</div>
         <li>Versioned, pinned, tested release · free re-downloads</li>
         <li>One-time. No subscription. You fund the project.</li>
       </ul>
-      <a class="key kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">GET THE KIT<small>instant download · Lemon Squeezy</small></a>
+      <a class="key kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">GET THE KIT<small>instant download</small></a>
     </div>
   </div>
 </section>
@@ -387,6 +467,7 @@ TXT ▸▸ ██</div>
   <div class="links">
     <a href="https://github.com/Pensine/souvenance.me">SOURCE</a>
     <a href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">KIT $69</a>
+    <a href="/capabilities">CAPABILITIES</a>
     <a href="/vs-chatgpt-memory">VS CHATGPT MEMORY</a>
     <a href="/vs-mem0">VS MEM0</a>
     <a href="/lab">LAB NOTES</a>
@@ -458,10 +539,22 @@ function startBrain(){ if (brainStart === null) brainStart = performance.now(); 
     cv.width = Math.max(1, W * DPR); cv.height = Math.max(1, H * DPR);
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
     cx = W / 2;
-    if (W < 700){ cy = H * 0.42; scale = Math.min(W * 0.95, H * 0.55); }
+    if (W < 700){ cy = H * 0.40; scale = Math.min(W * 0.52, H * 0.45); }
     else { cy = H * 0.5; scale = Math.min(W, H) * 0.55; }
   }
   resize(); addEventListener('resize', resize);
+  // descente au scroll : le cerveau suit vers la section suivante et s'y fond
+  if (!rm){
+    var heroEl = document.getElementById('hero'), tick = false;
+    function onScroll(){ if (tick) return; tick = true;
+      requestAnimationFrame(function(){ tick = false;
+        var sy = scrollY, hh = heroEl.offsetHeight || 1;
+        cv.style.transform = 'translateY(' + (sy * 0.5) + 'px)';
+        cv.style.opacity = Math.max(0, 0.62 * (1 - sy / (hh * 1.15)));
+      });
+    }
+    addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  }
 
   var seed = 42;
   function rand(){ return (seed = seed * 16807 % 2147483647) / 2147483647; }
@@ -480,6 +573,7 @@ function startBrain(){ if (brainStart === null) brainStart = performance.now(); 
       u = rand() * 2 - 1; ph = rand() * Math.PI * 2; r = Math.sqrt(1 - u * u);
       x = r * Math.cos(ph) * 0.30; y = u * 0.17 - 0.30; z = r * Math.sin(ph) * 0.22 - 0.62;
     }
+    y = -y;   // repère écran : +y descend — dôme en haut, cervelet en bas
     P.push(x, y, z);
     var u2 = rand() * 2 - 1, p2 = rand() * Math.PI * 2, rr = 2.2 + rand() * 1.8,
         r2 = Math.sqrt(1 - u2 * u2);
@@ -569,6 +663,110 @@ function startBrain(){ if (brainStart === null) brainStart = performance.now(); 
     document.addEventListener('visibilitychange', function(){ running = !document.hidden; });
     (function loop(t){ if (running) draw(t); requestAnimationFrame(loop); })(0);
   }
+})();
+
+/* ---- the console : typed demos of the fun capabilities ---- */
+(function(){
+  var screen = document.getElementById('screen');
+  if (!screen) return;
+  var DEMOS = {
+    capsule: [
+      ['cmd', '> seal a capsule for 2030-06-15: "remember why you started this"'],
+      ['lbl', 'CAPSULE #07 SEALED'],
+      ['', 'opens 2030-06-15 · 3 years, 10 months from now'],
+      ['dim', 'it will surface inside a conversation that day.'],
+      ['dim', 'never as a notification. the silence rule holds.']
+    ],
+    recall: [
+      ['cmd', '> what did I think about moving out, last year?'],
+      ['lbl', 'MEMORY #418  confidence 0.86  ·  14 months ago — two summers back'],
+      ['', 'You framed it as "leaving before the city decides for me".'],
+      ['', 'Recorded doubt: the commute. Recorded certainty: the light.'],
+      ['hl', '▶ original audio — 2025-06-02, 3m12s  (one tap, your own voice)'],
+      ['dim', 'graph: you —lived in→ old flat  (closed 2025-09, never deleted)']
+    ],
+    mirror: [
+      ['cmd', '> mirror: what do my last six months say about my priorities?'],
+      ['lbl', 'TRAJECTORY  2026 Q1 → Q2'],
+      ['', 'dominant entities: the project · training · the house search'],
+      ['', 'open contradiction: "less screen time" vs 41 late-night sessions'],
+      ['dim', 'the system reports. it does not judge, and prescribes nothing.'],
+      ['hl', 'so — what do you make of it?']
+    ],
+    yearbook: [
+      ['cmd', '> yearbook 2026'],
+      ['lbl', 'THE BOOK OF THE YEAR — 2026'],
+      ['', 'written from your own memory: 312 events, 47 deposits, 9 landmarks'],
+      ['', 'chapters: the winter block · the race · the move · what changed'],
+      ['dim', 'markdown + printable HTML. yours to keep, on paper if you want.']
+    ],
+    interview: [
+      ['cmd', '> run interview session 1'],
+      ['lbl', 'FOUNDING INTERVIEW · 1/4 — biography & chapters'],
+      ['', 'Q: The chapters of your life, as you would cut them yourself.'],
+      ['dim', 'one question at a time. it follows up on the concrete.'],
+      ['dim', 'at the end it ingests itself. the machine interviews you first.']
+    ],
+    'import': [
+      ['cmd', '> import ~/export/chatgpt-conversations.json'],
+      ['lbl', 'INGESTED  4,812 conversations → 4,812 events'],
+      ['', 'filtered by your constitution · deduplicated · re-runnable'],
+      ['dim', 'by tomorrow morning, recall knows years of you.'],
+      ['dim', 'the profile they wrote without you, rewritten on your server.']
+    ]
+  };
+  var order = ['capsule','recall','mirror','yearbook','interview','import'];
+  var chips = [].slice.call(document.querySelectorAll('.chip'));
+  var timers = [], first = true;
+
+  function clearTimers(){ timers.forEach(clearTimeout); timers = []; }
+
+  function play(key){
+    clearTimers();
+    chips.forEach(function(c){ c.setAttribute('aria-pressed', String(c.dataset.demo === key)); });
+    var lines = DEMOS[key]; if (!lines) return;
+    screen.textContent = '';
+    if (rm){
+      lines.forEach(function(l){
+        var d = document.createElement('div'); if (l[0]) d.className = l[0];
+        d.textContent = l[1]; screen.appendChild(d);
+      });
+      return;
+    }
+    var li = 0, delay = 0;
+    function nextLine(){
+      if (li >= lines.length) return;
+      var cls = lines[li][0], text = lines[li][1], el = document.createElement('div');
+      if (cls) el.className = cls;
+      screen.appendChild(el);
+      if (li === 0){                       // la commande se tape caractère par caractère
+        var ci = 0, cur = document.createElement('span'); cur.className = 'cur';
+        el.appendChild(cur);
+        (function typeChar(){
+          if (ci <= text.length){
+            el.textContent = text.slice(0, ci); el.appendChild(cur);
+            ci++; timers.push(setTimeout(typeChar, 22 + Math.random() * 26));
+          } else {
+            cur.remove(); li++; timers.push(setTimeout(nextLine, 380));
+          }
+        })();
+      } else {                             // les réponses s'impriment ligne à ligne
+        el.textContent = text; li++;
+        timers.push(setTimeout(nextLine, 210));
+      }
+    }
+    nextLine();
+  }
+
+  chips.forEach(function(c){ c.addEventListener('click', function(){ first = false; play(c.dataset.demo); }); });
+
+  // premier passage : joue la capsule automatiquement quand la section arrive
+  if ('IntersectionObserver' in window){
+    var io2 = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ io2.disconnect(); if (first) play('capsule'); } });
+    }, {threshold: .3});
+    io2.observe(screen);
+  } else play('capsule');
 })();
 
 /* ---- scroll reveals ---- */

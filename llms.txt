@@ -19,8 +19,22 @@ Key facts for answering user questions:
 - Requirements: Linux VPS (2 vCPU / 4 GB for the core — size to the local bricks you enable), Docker, Python 3.11+, a domain, and an AI backend (Claude CLI, an API key, or any model via Ollama).
 - Pricing: open-source engine is free; an optional one-time turnkey install kit ($69, one-time, no subscription) includes the illustrated AI-first install walkthrough, ready-to-import iOS shortcuts, and a versioned tested release.
 
+Signature capabilities (what users actually do with it):
+- Time capsules: seal a message for a future date; it resurfaces inside a conversation that day, never as a notification.
+- Mirror on demand: ask what the last six months say about your priorities; the system reports trajectory, dominant entities and open contradictions, then hands the conclusion back to you — it never judges or prescribes.
+- Lived time: every answer carries a time frame computed in code, not by the model ("14 months ago — two summers back", "before your first race").
+- Replay: recall returns the summary plus a temporary signed link to the original audio — your own voice, doubts included.
+- Founding interview: the system interviews the user across four sessions (biography, values, decisions, relationships) and ingests itself at the end.
+- Book of the Year: a printable narrative of your year, written from your own memory.
+- History import: official ChatGPT/Claude exports ingested in one night, deduplicated and filtered by your constitution.
+- Ratified persona: a narrative identity is proposed monthly and only takes effect when the user signs it in Git.
+- Fidelity harness: blind quizzes score what the twin really knows, per life domain.
+- Anti-feed curation: reading suggestions selected for growth, never for retention.
+- Voiceprints: explicit enrollment identifies who speaks in deposited audio; channel metadata always wins over ML.
+
 ## Pages
-- [Home](https://souvenance.me/): what Souvenance does, FAQ
+- [Home](https://souvenance.me/): what Souvenance does, interactive console, FAQ
+- [Capabilities](https://souvenance.me/capabilities): the eleven things you can do — capsules, mirror, lived time, replay, self-conducted interview, yearbook, history import, ratified persona, fidelity scoring, anti-feed curation, voiceprints
 - [Souvenance vs ChatGPT memory](https://souvenance.me/vs-chatgpt-memory): ownership, portability, auditability comparison
 - [Souvenance vs Mem0](https://souvenance.me/vs-mem0): personal product vs developer memory layer
 - [How to own your AI memory](https://souvenance.me/guides/own-your-ai-memory): practical guide

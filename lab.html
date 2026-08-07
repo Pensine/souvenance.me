@@ -3,107 +3,111 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Souvenance — lab log (n=1)</title>
-<meta name="description" content="Release notes from the n=1 lab: I run Souvenance on my own life. Releases land here when I trust them with my own memory. RSS, not notifications.">
+<title>Lab log — Souvenance releases (n=1)</title>
+<meta name="description" content="Release notes from an n=1 lab: Souvenance runs on my own life. Versions land here when I trust them with my own memory. RSS only — the project never sends notifications.">
 <link rel="canonical" href="https://souvenance.me/lab">
-<link rel="alternate" type="application/rss+xml" title="Souvenance lab notes" href="/feed.xml">
-<style>
-@font-face{font-family:'Special Elite';font-style:normal;font-weight:400;
-  font-display:swap;src:url(assets/special-elite.woff2) format('woff2')}
-:root{--paper:#e9e2cf;--paper2:#ded4bc;--ink:#2b2620;--ink-soft:#5c5344;
-  --sepia:#8a7a5c;--red:#a33b2b;
-  --tw:'Special Elite','American Typewriter','Courier New',Courier,monospace;
-  color-scheme:light}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 var(--tw)}
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.5;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .3 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
-a{color:var(--ink)}
-a:hover{background:var(--ink);color:var(--paper);text-decoration:none}
-::selection{background:var(--ink);color:var(--paper)}
-.doc{max-width:46rem;margin:0 auto;padding:1.3rem 1.2rem 3rem}
-.head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;
-  border-bottom:2px solid var(--ink);padding-bottom:.6rem;flex-wrap:wrap}
-.head .l1{letter-spacing:.16em;font-size:.9rem}
-.head .l2{letter-spacing:.13em;font-size:.68rem;color:var(--ink-soft);margin-top:.15rem}
-.stamp{border:3px double var(--red);color:var(--red);padding:.12rem .7rem;
-  font-size:.78rem;letter-spacing:.25em;transform:rotate(-5deg);opacity:.8;font-weight:700}
-h1{font:700 1.35rem var(--tw);text-transform:uppercase;letter-spacing:.03em;
-  margin:1.8rem 0 .3rem}
-.sub{color:var(--ink-soft);margin:0 0 1.6rem}
-.entry{background:var(--paper2);border:1px solid var(--sepia);
-  box-shadow:3px 4px 0 rgba(90,76,52,.25);padding:1rem 1.1rem;margin:1.4rem 0;
-  position:relative}
-.entry:nth-child(odd){transform:rotate(.3deg)}
-.entry:nth-child(even){transform:rotate(-.25deg)}
-.entry::before{content:'';position:absolute;top:-9px;left:50%;width:58px;height:18px;
-  transform:translateX(-50%) rotate(-1.5deg);
-  background:rgba(196,186,160,.85);border:1px solid rgba(90,76,52,.4)}
-.entry .date{color:var(--red);font-weight:700;font-size:.72rem;letter-spacing:.22em}
-.entry h2{font:700 1rem var(--tw);text-transform:uppercase;letter-spacing:.04em;
-  margin:.25rem 0 .4rem}
-.entry ul{margin:.5rem 0 0;padding-left:1.2rem}
-.entry li{margin:.25rem 0;font-size:.88rem}
-.entry .note{color:var(--ink-soft);font-size:.8rem;margin:.6rem 0 0;
-  border-top:1px dashed var(--sepia);padding-top:.5rem}
-footer{margin-top:3rem;color:var(--ink-soft);font-size:.82rem;text-align:center;
-  border-top:1px dashed var(--sepia);padding-top:.8rem}
-</style>
+<meta name="theme-color" content="#030805">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://souvenance.me/lab">
+<meta property="og:title" content="Lab log — Souvenance releases (n=1)">
+<meta property="og:description" content="Versions land here when they earn their place in my own memory. Pull by RSS; nothing is ever pushed.">
+<link rel="alternate" type="application/rss+xml" title="Souvenance lab log" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/page.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"Souvenance lab log",
+ "url":"https://souvenance.me/lab","inLanguage":"en",
+ "description":"Release notes from an n=1 self-experimentation lab: the author runs Souvenance on his own life.",
+ "blogPost":[
+  {"@type":"BlogPosting","headline":"v0.3 — Reclaim your history","datePublished":"2026-08-04",
+   "url":"https://souvenance.me/lab#v0-3",
+   "description":"History import from ChatGPT/Claude exports, one-gesture daily log, time capsules, self-conducted founding interview, yearbook generator, fully local Ollama backend, encrypted off-site backups."},
+  {"@type":"BlogPosting","headline":"v0.2 — The deep layer","datePublished":"2026-08-04",
+   "url":"https://souvenance.me/lab#v0-2",
+   "description":"Bi-temporal knowledge graph, voiceprint enrollment and diarization, timeline web app, mirror, persona compiler with mandatory ratification, fidelity harness."},
+  {"@type":"BlogPosting","headline":"v0.1 — The substrate","datePublished":"2026-08-04",
+   "url":"https://souvenance.me/lab#v0-1",
+   "description":"Append-only event log, nightly consolidation and weekly REM recombination, active forgetting, MCP server, media pipeline, executable constitution."}]}
+</script>
 </head>
 <body>
-<div class="doc">
-<div class="head">
-  <div>
-    <div class="l1">PROJECT SOUVENANCE — FILE 07 · LAB LOG</div>
-    <div class="l2">n=1 TRIAL · SELF-EXPERIMENTATION RECORD · <a href="/">RETURN TO DOSSIER</a> · <a href="/feed.xml">RSS</a></div>
+<nav class="bar">
+  <a class="home" href="/">◂ SOUVENANCE</a>
+  <span class="sp"></span>
+  <a class="btn" href="https://github.com/Pensine/souvenance.me">SOURCE</a>
+  <a class="btn kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">KIT · $69</a>
+</nav>
+
+<main>
+  <div class="kicker">lab log · n=1</div>
+  <h1>RELEASES, WHEN <span class="amb">I TRUST THEM</span> WITH MY OWN MEMORY.</h1>
+  <p class="lede">This project has exactly one user so far: me. Versions land here when they have
+    survived my own corpus, not when a roadmap says so. No schedule is promised, and
+    <b>nothing is ever pushed</b> — <a href="/feed.xml">subscribe by RSS</a> if you want to know.
+    That asymmetry is the product: you pull, it never calls you.</p>
+
+  <div class="rel" id="v0-3">
+    <div class="meta">2026-08-04 · RELEASE v0.3</div>
+    <h3>Reclaim your history</h3>
+    <ul>
+      <li><b>History import</b> — official ChatGPT and Claude exports ingested, deduplicated, filtered by your constitution. Day one, your memory already knows years of you.</li>
+      <li><b>One-gesture daily log</b> — dictate from the iOS share sheet with an editable review step before it sends; audio transcribed overnight.</li>
+      <li><b>Time capsules</b> — seal a message to your future self; it surfaces in conversation on the day, never as a notification.</li>
+      <li><b>Founding interview, self-conducted</b> — four in-conversation sessions (biography, values, decisions, relationships); the system ingests its own transcript at the end.</li>
+      <li><b>Yearbook generator</b> — your year as a printable book, written from your own memory.</li>
+      <li><b>Ollama backend</b> — consolidation can run 100% locally, no external service at all. The exit is the feature.</li>
+      <li><b>Encrypted off-site backups</b> (restic) wired into the daily job.</li>
+    </ul>
+    <p>Tested on my own corpus, nightly since the first commit.</p>
   </div>
-  <div class="stamp">ONGOING</div>
-</div>
 
-<h1>Lab log — n=1</h1>
-<p class="sub">I run Souvenance on my own life. Releases land here when I trust
-them with my own memory — no schedule promised, no notifications sent.
-Subscribe by <a href="/feed.xml">RSS</a>: we don't push, you pull.</p>
+  <div class="rel" id="v0-2">
+    <div class="meta">2026-08-04 · RELEASE v0.2</div>
+    <h3>The deep layer</h3>
+    <ul>
+      <li><b>Bi-temporal knowledge graph</b> — contradicted facts are closed with validity intervals, never deleted. "What was true in 2024?" is a query, not a reconstruction.</li>
+      <li><b>Voiceprints</b> — explicit enrollment plus speaker diarization; channel metadata always beats the model.</li>
+      <li><b>Timeline web app</b>, <b>mirror</b> tool, and a <b>persona compiler</b> whose proposals only take effect once you ratify them in Git.</li>
+      <li><b>Fidelity harness</b> — blind-quiz the system against its own memory, scored per life domain. Trust is earned in points, not granted by time.</li>
+    </ul>
+  </div>
 
-<div class="entry">
-  <div class="date">2026-08-04 · RELEASE v0.3</div>
-  <h2>Reclaim your history</h2>
-  <ul>
-    <li>Import your official ChatGPT and Claude exports: day one, your memory already knows years of you</li>
-    <li>One-gesture daily log: dictate from the share sheet, transcribed overnight</li>
-    <li>Time capsules: seal a message to your future self; it surfaces in conversation on the day — never as a notification</li>
-    <li>Founding interview conducted by the system itself (4 sessions, in-conversation)</li>
-    <li>Yearbook generator: your year as a printable book, written from memory</li>
-    <li>Ollama backend: consolidation can now run 100% locally — the exit is the feature</li>
-    <li>Off-site encrypted backups (restic) wired into the daily backup</li>
-  </ul>
-  <p class="note">tested on: my own corpus, nightly since the first commit.</p>
-</div>
+  <div class="rel" id="v0-1">
+    <div class="meta">2026-08-04 · RELEASE v0.1</div>
+    <h3>The substrate</h3>
+    <ul>
+      <li><b>Append-only event log</b> — <code>UPDATE</code> and <code>DELETE</code> disabled at the SQL level. The past is not editable.</li>
+      <li><b>Sleep cycles</b> — nightly consolidation, weekly REM recombination, active forgetting, reconsolidation of corrected memories.</li>
+      <li><b>MCP server</b> (recall, mirror, daily_log, curate, landmark, capsule) and the media pipeline: word-aligned transcription, vision, EXIF, document parsing.</li>
+      <li><b>Executable constitution</b> — exclusion perimeter enforced at ingestion, outbound actions rejected, every action audit-logged.</li>
+    </ul>
+  </div>
 
-<div class="entry">
-  <div class="date">2026-08-04 · RELEASE v0.2</div>
-  <h2>The deep layer</h2>
-  <ul>
-    <li>Bi-temporal knowledge graph: contradicted facts are closed with validity intervals, never deleted</li>
-    <li>Voiceprint enrollment (explicit act) + speaker diarization; channel metadata always beats ML</li>
-    <li>Timeline web app, mirror tool, persona compiler with mandatory human ratification</li>
-    <li>Fidelity harness: blind-quiz the system against its own memory, scored per life domain</li>
-  </ul>
-</div>
+  <div class="box">
+    <div class="t">WHY AN n=1 LAB</div>
+    <p>A memory engine can only be judged by living with it. Every capability here exists because
+      the absence of it hurt, in my own use, on my own server. What does not survive that test does
+      not ship — and the honest verdict, when it comes, will be published here too.</p>
+  </div>
 
-<div class="entry">
-  <div class="date">2026-08-04 · RELEASE v0.1</div>
-  <h2>The substrate</h2>
-  <ul>
-    <li>Append-only event log (UPDATE/DELETE disabled at the SQL level)</li>
-    <li>Nightly consolidation + weekly REM recombination + active forgetting</li>
-    <li>MCP server (recall, mirror, daily_log, curate), media pipeline (WhisperX, vision, EXIF, Docling)</li>
-    <li>Executable constitution: exclusion perimeter, outbound actions rejected, full audit log</li>
-  </ul>
-</div>
+  <div class="cta">
+    <a href="https://github.com/Pensine/souvenance.me">READ THE SOURCE<small>open source · MIT · free</small></a>
+    <a class="kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">GET THE KIT — $69<small>one-time · no subscription</small></a>
+  </div>
+</main>
 
-<footer>Deep when you come. Silent when you leave.<br>
-<a href="/">DOSSIER</a> · <a href="/feed.xml">RSS</a> · <a href="/llms.txt">LLMS.TXT</a></footer>
-</div>
+<footer>
+  <div class="links">
+    <a href="/">HOME</a><a href="/capabilities">CAPABILITIES</a>
+    <a href="/vs-chatgpt-memory">VS CHATGPT MEMORY</a><a href="/vs-mem0">VS MEM0</a>
+    <a href="/guides/own-your-ai-memory">GUIDE</a><a href="/feed.xml">RSS</a>
+    <a href="https://github.com/Pensine/souvenance.me">GITHUB</a>
+  </div>
+  <div>© 2026 souvenance.me — self-hosted, append-only, yours.</div>
+  <div class="motto">COMPUTE IS RENTED. CONTEXT IS OWNED.</div>
+</footer>
+<div class="crt" aria-hidden="true"></div>
 </body>
 </html>

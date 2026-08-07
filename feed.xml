@@ -1,34 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Souvenance — lab notes</title>
+  <title>Souvenance — lab log</title>
   <link>https://souvenance.me/lab</link>
   <atom:link href="https://souvenance.me/feed.xml" rel="self" type="application/rss+xml"/>
-  <description>Release notes from the n=1 lab. Releases land here when I trust them with my own memory. We don't push, you pull.</description>
+  <description>Release notes from an n=1 lab: Souvenance runs on the author's own life. Versions land here when they earn their place in a real memory. Nothing is ever pushed — you pull.</description>
   <language>en</language>
+  <copyright>© 2026 souvenance.me — MIT licensed engine</copyright>
+  <lastBuildDate>Thu, 06 Aug 2026 20:00:00 GMT</lastBuildDate>
+  <docs>https://www.rssboard.org/rss-specification</docs>
+  <ttl>1440</ttl>
+  <image>
+    <url>https://souvenance.me/assets/timeline.png</url>
+    <title>Souvenance — lab log</title>
+    <link>https://souvenance.me/lab</link>
+  </image>
 
   <item>
-    <title>v0.3 — reclaim your history</title>
-    <link>https://souvenance.me/lab</link>
-    <guid isPermaLink="false">pensine-v0.3</guid>
+    <title>v0.3 — Reclaim your history</title>
+    <link>https://souvenance.me/lab#v0-3</link>
+    <guid isPermaLink="true">https://souvenance.me/lab#v0-3</guid>
     <pubDate>Tue, 04 Aug 2026 12:00:00 GMT</pubDate>
-    <description>Import your official ChatGPT and Claude exports (day one, your memory knows years of you), one-gesture daily log, time capsules, system-conducted founding interview, yearbook generator, Ollama backend for fully-local consolidation, off-site encrypted backups.</description>
+    <category>release</category>
+    <description>History import from official ChatGPT and Claude exports — day one, your memory already knows years of you. One-gesture daily log with an editable review step. Time capsules that resurface in conversation on a chosen future date, never as a notification. Founding interview conducted by the system itself. Yearbook generator. Ollama backend for fully local consolidation. Encrypted off-site backups.</description>
   </item>
 
   <item>
-    <title>v0.2 — the deep layer</title>
-    <link>https://souvenance.me/lab</link>
-    <guid isPermaLink="false">pensine-v0.2</guid>
+    <title>v0.2 — The deep layer</title>
+    <link>https://souvenance.me/lab#v0-2</link>
+    <guid isPermaLink="true">https://souvenance.me/lab#v0-2</guid>
     <pubDate>Tue, 04 Aug 2026 10:00:00 GMT</pubDate>
-    <description>Bi-temporal knowledge graph with closed-never-deleted facts, voiceprint enrollment and diarization, timeline web app, mirror, persona compiler with mandatory ratification, fidelity harness.</description>
+    <category>release</category>
+    <description>Bi-temporal knowledge graph where contradicted facts are closed with validity intervals and never deleted. Voiceprint enrollment as an explicit act, plus speaker diarization where channel metadata beats the model. Timeline web app, mirror tool, persona compiler whose proposals only take effect once ratified in Git. Fidelity harness scoring recall accuracy per life domain.</description>
   </item>
 
   <item>
-    <title>v0.1 — the substrate</title>
-    <link>https://souvenance.me/lab</link>
-    <guid isPermaLink="false">pensine-v0.1</guid>
+    <title>v0.1 — The substrate</title>
+    <link>https://souvenance.me/lab#v0-1</link>
+    <guid isPermaLink="true">https://souvenance.me/lab#v0-1</guid>
     <pubDate>Tue, 04 Aug 2026 08:00:00 GMT</pubDate>
-    <description>Append-only event log, nightly consolidation + weekly REM + active forgetting, MCP server, multimodal media pipeline, executable constitution with full audit log.</description>
+    <category>release</category>
+    <description>Append-only event log with UPDATE and DELETE disabled at the SQL level. Nightly consolidation, weekly REM recombination, active forgetting, reconsolidation. MCP server (recall, mirror, daily_log, curate, landmark, capsule) and the multimodal media pipeline. Executable constitution: exclusion perimeter, outbound actions rejected, full audit log.</description>
   </item>
 </channel>
 </rss>

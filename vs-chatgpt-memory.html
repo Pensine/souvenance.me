@@ -4,88 +4,116 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Souvenance vs ChatGPT memory — who owns your context?</title>
-<meta name="description" content="Honest comparison: ChatGPT's built-in memory vs a self-hosted, append-only memory you own. Portability, auditability, multimodal originals, cost.">
+<meta name="description" content="Honest comparison of built-in ChatGPT memory and a self-hosted, append-only memory you own: portability, auditability, multimodal originals, lived time, cost — and where the built-in feature legitimately wins.">
 <link rel="canonical" href="https://souvenance.me/vs-chatgpt-memory">
-<style>
-@font-face{font-family:'Special Elite';font-style:normal;font-weight:400;
-  font-display:swap;src:url(assets/special-elite.woff2) format('woff2')}
-:root{--paper:#e9e2cf;--paper2:#ded4bc;--ink:#2b2620;--ink-soft:#5c5344;
-  --sepia:#8a7a5c;--red:#a33b2b;
-  --tw:'Special Elite','American Typewriter','Courier New',Courier,monospace;
-  color-scheme:light}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 var(--tw)}
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.5;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .3 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
-a{color:var(--ink)}
-a:hover{background:var(--ink);color:var(--paper);text-decoration:none}
-::selection{background:var(--ink);color:var(--paper)}
-.doc{max-width:46rem;margin:0 auto;padding:1.3rem 1.2rem 3rem}
-.head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;
-  border-bottom:2px solid var(--ink);padding-bottom:.6rem;flex-wrap:wrap}
-.head .l1{letter-spacing:.16em;font-size:.9rem}
-.head .l2{letter-spacing:.13em;font-size:.68rem;color:var(--ink-soft);margin-top:.15rem}
-.stamp{border:3px double var(--red);color:var(--red);padding:.12rem .7rem;
-  font-size:.78rem;letter-spacing:.25em;transform:rotate(-5deg);opacity:.8;font-weight:700}
-h1{font:700 1.35rem var(--tw);text-transform:uppercase;letter-spacing:.03em;
-  margin:1.8rem 0 .4rem}
-h2{font:700 1rem var(--tw);text-transform:uppercase;letter-spacing:.05em;margin-top:2rem}
-.tbl{overflow-x:auto;margin:1.2rem 0;border:1px solid var(--sepia);
-  background:var(--paper2);box-shadow:3px 4px 0 rgba(90,76,52,.25)}
-table{border-collapse:collapse;width:100%;font-size:.82rem;min-width:34rem}
-td,th{padding:.5rem .6rem;border-bottom:1px dashed var(--sepia);text-align:left;
-  vertical-align:top}
-th{text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;color:var(--ink-soft);
-  border-bottom:1px solid var(--ink)}
-tr:last-child td{border-bottom:0}
-.y{color:var(--ink)}.n{color:var(--ink-soft)}
-footer{margin-top:3rem;color:var(--ink-soft);font-size:.82rem;
-  border-top:1px dashed var(--sepia);padding-top:.8rem}
-</style>
+<meta name="theme-color" content="#030805">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://souvenance.me/vs-chatgpt-memory">
+<meta property="og:title" content="Souvenance vs ChatGPT memory — who owns your context?">
+<meta property="og:description" content="Both remember you. The difference is who owns the substrate — and what that makes possible, or impossible.">
+<link rel="alternate" type="application/rss+xml" title="Souvenance lab log" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/page.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Article","headline":"Souvenance vs ChatGPT memory — who owns your context?",
+ "url":"https://souvenance.me/vs-chatgpt-memory","inLanguage":"en","datePublished":"2026-08-06",
+ "isPartOf":{"@type":"WebSite","name":"Souvenance","url":"https://souvenance.me/"}},
+{"@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Can I export ChatGPT's memory of me?",
+  "acceptedAnswer":{"@type":"Answer","text":"You can export your conversations. The distilled profile that actually personalises the product does not travel in any reusable, interoperable form — as of 2026 no major lab offers portable memory. With a self-hosted memory the SQL dump is the export, and the AI layer is a swappable adapter."}},
+ {"@type":"Question","name":"Is built-in AI memory auditable?",
+  "acceptedAnswer":{"@type":"Answer","text":"Not meaningfully. A 2026 study of ChatGPT memories found 96% were created unilaterally by the system, about half containing psychological inferences. In Souvenance every memory traces back to source events, every system action is audit-logged, and identity claims carry calibrated confidence."}},
+ {"@type":"Question","name":"When is built-in ChatGPT memory the better choice?",
+  "acceptedAnswer":{"@type":"Answer","text":"When you want zero setup and no server to run. It works on day one and is well integrated on mobile. If ownership, portability and the ten-year horizon do not matter to you, the built-in feature is the pragmatic choice."}}]}]}
+</script>
 </head>
 <body>
-<div class="doc">
-<div class="head">
-  <div>
-    <div class="l1">PROJECT SOUVENANCE — FILE 07 · ANNEX A</div>
-    <div class="l2">COMPARATIVE FINDINGS · SUBJECT MEMORY vs LAB MEMORY · <a href="/">RETURN TO DOSSIER</a></div>
+<nav class="bar">
+  <a class="home" href="/">◂ SOUVENANCE</a>
+  <span class="sp"></span>
+  <a class="btn" href="https://github.com/Pensine/souvenance.me">SOURCE</a>
+  <a class="btn kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">KIT · $69</a>
+</nav>
+
+<main>
+  <div class="kicker">comparison · annex a</div>
+  <h1>SOUVENANCE VS <span class="amb">CHATGPT MEMORY</span></h1>
+  <p class="lede">Both remember you across conversations. The difference is <b>who owns the
+    substrate</b> — and what that makes possible, or permanently impossible.</p>
+
+  <table class="cmp">
+    <thead><tr><th></th><th>ChatGPT memory</th><th>Souvenance</th></tr></thead>
+    <tbody>
+      <tr><th>Where it lives</th>
+        <td data-l="ChatGPT">The provider's servers</td>
+        <td data-l="Souvenance" class="win">Your VPS, your PostgreSQL</td></tr>
+      <tr><th>Portability</th>
+        <td data-l="ChatGPT">No meaningful export of the model of you; leaving means starting over</td>
+        <td data-l="Souvenance" class="win">The SQL dump <em>is</em> the export; the AI is a swappable adapter (a CLI, an API key, or any local model)</td></tr>
+      <tr><th>Auditability</th>
+        <td data-l="ChatGPT">Opaque — a 2026 study found 96% of memories created unilaterally, about half with psychological inferences</td>
+        <td data-l="Souvenance" class="win">Every memory traces to source events; every action audit-logged; claims carry calibrated confidence</td></tr>
+      <tr><th>What it remembers</th>
+        <td data-l="ChatGPT">Text distilled from chats</td>
+        <td data-l="Souvenance" class="win">Chats, daily voice log, calendar — plus the <b>originals</b>: voice notes, photos, videos, PDFs, kept forever and replayable</td></tr>
+      <tr><th>Time</th>
+        <td data-l="ChatGPT">A flat "now"</td>
+        <td data-l="Souvenance" class="win">A bi-temporal graph — what was true when, contradicted facts closed but never deleted — plus time framing computed in code</td></tr>
+      <tr><th>Your identity</th>
+        <td data-l="ChatGPT">Written about you, without you</td>
+        <td data-l="Souvenance" class="win">A narrative persona you ratify; nothing takes effect without your signature, versioned in Git</td></tr>
+      <tr><th>Engagement design</th>
+        <td data-l="ChatGPT">A product optimised for retention</td>
+        <td data-l="Souvenance" class="win">The silence rule: no notification channel exists in the code; outbound actions constitutionally rejected</td></tr>
+      <tr><th>Fidelity</th>
+        <td data-l="ChatGPT">Unmeasured</td>
+        <td data-l="Souvenance" class="win">A blind-quiz harness scores recall accuracy per life domain</td></tr>
+      <tr><th>Running cost</th>
+        <td data-l="ChatGPT">Included in your plan</td>
+        <td data-l="Souvenance">~€0 beyond a small VPS — or fully local with Ollama</td></tr>
+    </tbody>
+  </table>
+
+  <h2>WHERE THE BUILT-IN FEATURE WINS</h2>
+  <p>Honestly: <b>zero setup</b>, works on day one, no server to run, no reverse proxy to wire, a
+    polished mobile experience. If ownership, portability and the ten-year horizon aren't your
+    concern, the built-in memory is the pragmatic choice — and this page should not talk you out of it.</p>
+
+  <h2>WHERE SOUVENANCE WINS</h2>
+  <p><b>The ten-year horizon.</b> Memory value compounds: near zero at six months, considerable at a
+    decade — and compounding assets deserve ownership. This is built for exactly that: an append-only
+    history a better engine can re-read in 2028, originals preserved for replay, and an archive that
+    outlives any provider, any model, any subscription.</p>
+  <p>There is also a structural reason none of the labs will close this gap: <b>accumulated context
+    is their moat</b>. Portable memory is against their interest. It cannot be against yours.</p>
+
+  <div class="box">
+    <div class="t">THE TEST THAT SETTLES IT</div>
+    <p>Ask yourself one question: <em>if I switched assistant tomorrow, what would I lose?</em>
+      If the answer is "years of context I can never rebuild", you're renting the most valuable
+      asset you have.</p>
   </div>
-  <div class="stamp">DECLASSIFIED</div>
-</div>
 
-<h1>Souvenance vs ChatGPT memory</h1>
-<p>Both remember you across conversations. The difference is <strong>who owns
-the substrate</strong> — and what that makes possible or impossible.</p>
+  <div class="cta">
+    <a href="https://github.com/Pensine/souvenance.me">GET THE ENGINE<small>open source · MIT · free</small></a>
+    <a class="kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">GET THE KIT — $69<small>15-min install · one-time</small></a>
+  </div>
+  <p style="margin-top:26px">Related: <a href="/capabilities">what you can actually do with it</a> ·
+    <a href="/vs-mem0">vs Mem0</a> · <a href="/guides/own-your-ai-memory">how to own your AI memory</a></p>
+</main>
 
-<div class="tbl"><table>
-<tr><th></th><th>ChatGPT memory</th><th>Souvenance</th></tr>
-<tr><td>Where it lives</td><td class="n">OpenAI's servers</td><td class="y">Your VPS, your PostgreSQL</td></tr>
-<tr><td>Portability</td><td class="n">No meaningful export of the model of you; leaving means starting over</td><td class="y">The SQL dump is the export; the AI is a swappable adapter (subscription, API key, or local model)</td></tr>
-<tr><td>Auditability</td><td class="n">Opaque — memories are created unilaterally (a 2026 study: 96% system-initiated, half with psychological inferences)</td><td class="y">Every memory traces to source events; every system action is audit-logged; identity claims carry calibrated confidence</td></tr>
-<tr><td>What it remembers</td><td class="n">Text distilled from chats</td><td class="y">Chats, daily voice log, calendar — plus the originals: voice notes, photos, videos, PDFs, kept forever, replayable</td></tr>
-<tr><td>Time</td><td class="n">A flat “now”</td><td class="y">A bi-temporal knowledge graph: what was true when, contradicted facts closed but never deleted, computed time framing</td></tr>
-<tr><td>Your identity</td><td class="n">Written about you, without you</td><td class="y">A narrative persona you ratify — nothing takes effect without your explicit sign-off, versioned in Git</td></tr>
-<tr><td>Engagement design</td><td class="n">Product optimized for retention</td><td class="y">The silence rule: no notifications exist in the code; outbound actions are constitutionally rejected</td></tr>
-<tr><td>Fidelity</td><td class="n">Unmeasured</td><td class="y">A blind-quiz harness scores recall accuracy per life domain</td></tr>
-<tr><td>Running cost</td><td class="y">Included in your plan</td><td class="y">~€0 on top of a Claude plan (or API) + a small VPS</td></tr>
-</table></div>
-
-<h2>Where ChatGPT memory wins</h2>
-<p>Honestly: zero setup, works on day one, no server to run, integrated
-mobile experience. If you don't care about ownership, portability or the
-long horizon, the built-in feature is the pragmatic choice.</p>
-
-<h2>Where Souvenance wins</h2>
-<p>The 10-year horizon. Memory value compounds — near zero at 6 months,
-considerable at a decade — and compounding assets deserve ownership. Souvenance
-is built for exactly that: append-only history a better engine can re-read in
-2028, originals preserved for replay, and an archive that outlives any
-provider, any model, and any subscription.</p>
-
-<p><a href="/">Return to the dossier →</a></p>
-<footer>Related annexes: <a href="/vs-mem0">Souvenance vs Mem0</a> ·
-<a href="/guides/own-your-ai-memory">How to own your AI memory</a> ·
-<a href="/lab">lab log</a></footer>
-</div>
+<footer>
+  <div class="links">
+    <a href="/">HOME</a><a href="/capabilities">CAPABILITIES</a><a href="/lab">LAB LOG</a>
+    <a href="/vs-mem0">VS MEM0</a><a href="/guides/own-your-ai-memory">GUIDE</a>
+    <a href="/feed.xml">RSS</a><a href="https://github.com/Pensine/souvenance.me">GITHUB</a>
+  </div>
+  <div>© 2026 souvenance.me — self-hosted, append-only, yours.</div>
+  <div class="motto">COMPUTE IS RENTED. CONTEXT IS OWNED.</div>
+</footer>
+<div class="crt" aria-hidden="true"></div>
 </body>
 </html>

@@ -4,116 +4,129 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>How to own your AI memory (instead of renting it) — a practical guide</title>
-<meta name="description" content="Your AI's memory of you is becoming your most valuable digital asset — and today a lab owns it. A practical guide to taking it back: export what you can, then own the substrate.">
+<meta name="description" content="Your AI's model of you is becoming your most valuable digital asset — and today a lab owns it. A five-step practical guide to taking it back: audit, understand the export gap, own the substrate, make capture effortless, keep the originals.">
 <link rel="canonical" href="https://souvenance.me/guides/own-your-ai-memory">
+<meta name="theme-color" content="#030805">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://souvenance.me/guides/own-your-ai-memory">
+<meta property="og:title" content="How to own your AI memory (instead of renting it)">
+<meta property="og:description" content="Compute is rented; context is owned — by someone. A practical guide to making that someone you.">
+<link rel="alternate" type="application/rss+xml" title="Souvenance lab log" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/page.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HowTo",
- "name":"How to own your AI memory",
+{"@context":"https://schema.org","@graph":[
+{"@type":"HowTo","name":"How to own your AI memory instead of renting it",
+ "url":"https://souvenance.me/guides/own-your-ai-memory","inLanguage":"en",
+ "description":"Five practical steps to move the memory of you out of a provider's servers and onto infrastructure you control.",
  "step":[
-  {"@type":"HowToStep","name":"Audit what the labs hold","text":"Review the memory panels of ChatGPT and Claude and request your data exports to see how much of 'you' has accumulated."},
-  {"@type":"HowToStep","name":"Understand the export gap","text":"Data exports return your conversations, not the distilled model of you — the profile stays behind. That gap is the lock-in."},
-  {"@type":"HowToStep","name":"Own the substrate","text":"Run the memory layer yourself on a VPS: append-only event log, nightly consolidation, served to your AI via MCP. The AI becomes a swappable adapter."},
-  {"@type":"HowToStep","name":"Make capture effortless","text":"Memory must be the byproduct of tools you use anyway: a two-tap share shortcut, a 2-minute daily voice log, silent perceptors."},
-  {"@type":"HowToStep","name":"Keep the originals","text":"Store the actual voice notes and photos forever; transcripts are just catalog cards. In ten years you will want the voice, not the summary."}
- ]}
+  {"@type":"HowToStep","name":"Audit what the labs already hold","text":"Open your assistant's memory panel and read what has been written about you, then request a full data export from each provider."},
+  {"@type":"HowToStep","name":"Understand the export gap","text":"Exports return conversations, not the distilled profile that personalises the product. As of 2026 no major lab offers portable, interoperable memory — accumulated context is the moat."},
+  {"@type":"HowToStep","name":"Own the substrate","text":"Invert the architecture: an append-only PostgreSQL event log on your own server, nightly consolidation run by the AI backend you choose, served back through MCP so the model and vendor stay swappable."},
+  {"@type":"HowToStep","name":"Make capture effortless","text":"Any system that requires discipline dies in three weeks. Use a share-sheet shortcut, a two-minute daily voice log, and silent perceptors — never a journaling chore."},
+  {"@type":"HowToStep","name":"Keep the originals","text":"Store the actual audio, photos and videos forever on disk you control. Transcripts are catalogue cards for search; the originals are what you will want to replay in ten years."}]},
+{"@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Why can't I just export my AI memory?",
+  "acceptedAnswer":{"@type":"Answer","text":"Data exports return your conversations. The distilled profile that actually personalises the product does not travel in reusable form, and as of 2026 no major lab offers portable memory. Accumulated context is their competitive moat, so making it portable works against their interest."}},
+ {"@type":"Question","name":"What do I need to self-host an AI memory?",
+  "acceptedAnswer":{"@type":"Answer","text":"A small Linux VPS (2 vCPU, 4 GB RAM runs the core), Docker, Python 3.11+, a domain for HTTPS, and an AI backend of your choice: a CLI, an API key, or any open-source model via Ollama. Local bricks such as embeddings and transcription scale with the models you enable."}},
+ {"@type":"Question","name":"Should I build it myself or install something?",
+  "acceptedAnswer":{"@type":"Answer","text":"The architecture is not secret — an append-only log, nightly consolidation, a temporal graph, an MCP server. Building it teaches you the most; installing a packaged version gets you capturing tonight, which matters because memory value compounds from the first day you start."}}]}]}
 </script>
-<style>
-@font-face{font-family:'Special Elite';font-style:normal;font-weight:400;
-  font-display:swap;src:url(../assets/special-elite.woff2) format('woff2')}
-:root{--paper:#e9e2cf;--paper2:#ded4bc;--ink:#2b2620;--ink-soft:#5c5344;
-  --sepia:#8a7a5c;--red:#a33b2b;
-  --tw:'Special Elite','American Typewriter','Courier New',Courier,monospace;
-  color-scheme:light}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 var(--tw)}
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.5;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .3 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
-a{color:var(--ink)}
-a:hover{background:var(--ink);color:var(--paper);text-decoration:none}
-::selection{background:var(--ink);color:var(--paper)}
-.doc{max-width:46rem;margin:0 auto;padding:1.3rem 1.2rem 3rem}
-.head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;
-  border-bottom:2px solid var(--ink);padding-bottom:.6rem;flex-wrap:wrap}
-.head .l1{letter-spacing:.16em;font-size:.9rem}
-.head .l2{letter-spacing:.13em;font-size:.68rem;color:var(--ink-soft);margin-top:.15rem}
-.stamp{border:3px double var(--red);color:var(--red);padding:.12rem .7rem;
-  font-size:.78rem;letter-spacing:.25em;transform:rotate(-5deg);opacity:.8;font-weight:700}
-h1{font:700 1.35rem var(--tw);text-transform:uppercase;letter-spacing:.03em;
-  margin:1.8rem 0 .4rem}
-h2{font:700 1rem var(--tw);text-transform:uppercase;letter-spacing:.05em;margin-top:2rem}
-blockquote{border-left:3px solid var(--red);margin:1.4rem 0;padding:.2rem 1rem;
-  color:var(--ink-soft)}
-ul{padding-left:1.3rem}
-li{margin:.3rem 0}
-footer{margin-top:3rem;color:var(--ink-soft);font-size:.82rem;
-  border-top:1px dashed var(--sepia);padding-top:.8rem}
-</style>
 </head>
 <body>
-<div class="doc">
-<div class="head">
-  <div>
-    <div class="l1">PROJECT SOUVENANCE — FILE 07 · ANNEX C</div>
-    <div class="l2">FIELD MANUAL · MEMORY REPATRIATION PROCEDURE · <a href="/">RETURN TO DOSSIER</a></div>
+<nav class="bar">
+  <a class="home" href="/">◂ SOUVENANCE</a>
+  <span class="sp"></span>
+  <a class="btn" href="https://github.com/Pensine/souvenance.me">SOURCE</a>
+  <a class="btn kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">KIT · $69</a>
+</nav>
+
+<main>
+  <div class="kicker">field manual</div>
+  <h1>HOW TO OWN YOUR AI MEMORY <span class="amb">(INSTEAD OF RENTING IT)</span></h1>
+  <p class="lede">If you use an AI assistant daily, a second asset is quietly accumulating next to
+    your conversations: <b>its model of you</b>. Your preferences, projects, relationships, patterns
+    of decision. It makes every answer better — and it is precisely what will make leaving
+    impossible.</p>
+
+  <h2>01 · AUDIT WHAT THE LABS ALREADY HOLD</h2>
+  <p>Open your assistant's memory panel — ChatGPT: <em>Settings → Personalization → Memory</em>;
+    Claude: <em>Settings → Memory</em>, where available — and actually read what has been written
+    about you. Then request a full data export from each provider. Two things usually surprise
+    people: <b>how much is there</b>, and how much of it they never explicitly said.</p>
+
+  <h2>02 · UNDERSTAND THE EXPORT GAP</h2>
+  <p>Data exports return your <b>conversations</b>. The distilled profile — the part that actually
+    personalises the product — typically doesn't travel in any reusable form. As of 2026, no major
+    lab offers portable, interoperable memory.</p>
+  <p>That's not an oversight: <b>accumulated context is the moat</b>. A 2026 study of ChatGPT
+    memories found 96% were created unilaterally by the system, about half containing psychological
+    inferences. Frontier intelligence is becoming a commodity; compute is rented and context is
+    owned — by someone. The only open question is by whom.</p>
+
+  <h2>03 · OWN THE SUBSTRATE</h2>
+  <p>The durable fix isn't a better export — it's <b>inverting the architecture</b>: the memory lives
+    with you, and the AI visits. Concretely:</p>
+  <ul>
+    <li>An <b>append-only event log</b> (PostgreSQL) on your own server — every fact immutable,
+      timestamped, re-processable by any future engine. No <code>UPDATE</code>, no
+      <code>DELETE</code>: the past is not editable.</li>
+    <li><b>Nightly consolidation</b> run by whichever AI backend you choose — a CLI on a
+      subscription you already pay for, an API key, or a fully local model via Ollama.</li>
+    <li>Served back to your assistant through <b>MCP</b>, the open protocol — so the model, the
+      interface, even the vendor stay swappable.</li>
+  </ul>
+  <p>One database, no queue, no vector service: boring, proven, still readable in twenty years.</p>
+
+  <h2>04 · MAKE CAPTURE EFFORTLESS</h2>
+  <p>Any system that requires discipline dies in three weeks. Memory must be the <b>byproduct of
+    tools you use because they're useful</b>: a share-sheet shortcut (two taps from a voice note to
+    the archive), a two-minute daily voice log, silent perceptors for your calendar.
+    <b>Never a journaling chore.</b></p>
+
+  <h2>05 · KEEP THE ORIGINALS</h2>
+  <p>Store the actual audio, photos and videos <b>forever</b>, on disk you control. Transcripts are
+    only catalogue cards: they let you <em>find</em>, the recording lets you <em>relive</em>. In ten
+    years, the summary of a moment will be worth far less than thirty seconds of your own voice
+    describing it.</p>
+
+  <div class="box amber">
+    <div class="t">THE ONE RULE THAT MAKES IT LAST</div>
+    <p>Whatever you build, make it <b>never invite you back</b>. No notifications, no streaks, no
+      open questions engineered for retention. A memory system that competes for your attention has
+      already failed at its purpose, which is to give you more life outside the screen — not more
+      time inside it.</p>
   </div>
-  <div class="stamp">DECLASSIFIED</div>
-</div>
 
-<h1>How to own your AI memory<br>(instead of renting it)</h1>
+  <h2>BUILD IT OR INSTALL IT?</h2>
+  <p>The architecture above is not a secret, and building it yourself teaches you the most — that's
+    genuinely a good outcome. The argument for installing something instead is narrow but real:
+    <b>memory value compounds from day one</b>, and every week spent architecting is a week not
+    captured. Souvenance is that shortcut: the engine is
+    <a href="https://github.com/Pensine/souvenance.me">free and MIT-licensed</a>, and the
+    <a href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">$69 kit</a>
+    is the same code packaged so your own AI can install it while you answer a few questions.</p>
 
-<p>If you use an AI assistant daily, a second asset is quietly accumulating
-next to your conversations: <strong>its model of you</strong>. Your
-preferences, projects, relationships, patterns of decision. It makes every
-answer better — and it is precisely what will make leaving impossible.</p>
+  <div class="cta">
+    <a href="https://github.com/Pensine/souvenance.me">GET THE ENGINE<small>open source · MIT · free</small></a>
+    <a class="kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">GET THE KIT — $69<small>15-min install · one-time</small></a>
+  </div>
+  <p style="margin-top:26px">Related: <a href="/capabilities">what you can actually do with it</a> ·
+    <a href="/vs-chatgpt-memory">vs ChatGPT memory</a> · <a href="/vs-mem0">vs Mem0</a></p>
+</main>
 
-<h2>Step 1 — Audit what the labs already hold</h2>
-<p>Open your assistant's memory panel (ChatGPT: Settings → Personalization;
-Claude: project knowledge and memory settings, where available) and read what
-has been written about you. Then request a full data export from each
-provider. Two things usually surprise people: how much is there, and how much
-of it they never explicitly said.</p>
-
-<h2>Step 2 — Understand the export gap</h2>
-<p>Data exports return your <em>conversations</em>. The distilled profile —
-the part that actually personalizes the product — typically doesn't travel in
-any reusable form. As of 2026, no major lab offers a portable, interoperable
-memory. That's not an oversight; <strong>accumulated context is the moat</strong>.
-A 2026 study of ChatGPT memories found 96% were created unilaterally by the
-system, about half containing psychological inferences.</p>
-<blockquote>Frontier intelligence is becoming a commodity. Compute is rented;
-context is owned — by someone. The question is by whom.</blockquote>
-
-<h2>Step 3 — Own the substrate</h2>
-<p>The durable fix isn't a better export — it's inverting the architecture:
-the memory lives with <em>you</em>, and the AI visits. Concretely:</p>
-<ul>
-<li>an <strong>append-only event log</strong> (PostgreSQL) on your VPS — every fact immutable, timestamped, re-processable by any future engine;</li>
-<li><strong>nightly consolidation</strong> run by the AI you already pay for (a Claude subscription can drive it headless), producing searchable memories and a temporal knowledge graph;</li>
-<li>served back to your assistant through <strong>MCP</strong>, the open protocol — so the model, the interface, even the vendor stay swappable.</li>
-</ul>
-
-<h2>Step 4 — Make capture effortless</h2>
-<p>Any system that requires discipline dies in three weeks. Memory must be
-the byproduct of tools you use because they're useful: a share-sheet shortcut
-(two taps from a WhatsApp voice note to the archive), a two-minute daily
-voice log, silent perceptors for your calendar. Never a journaling chore.</p>
-
-<h2>Step 5 — Keep the originals</h2>
-<p>Store the actual audio, photos and videos forever — encrypted, on disk you
-control. Transcripts are catalog cards for search; the file is for replay.
-In ten years you won't want the summary of the morning before the race.
-You'll want the voice, the breathing, the doubt.</p>
-
-<h2>The build-vs-install question</h2>
-<p>Everything above is buildable from open parts (Postgres + pgvector,
-WhisperX, BGE-M3, MCP). If you'd rather not assemble it yourself,
-<a href="/">Souvenance</a> is exactly this architecture as a finished,
-self-hosted product — open-source engine, one-time install kit, no
-subscription, and an archive designed to outlive it.</p>
-
-<p><a href="/">Return to the dossier →</a></p>
-<footer>Related annexes: <a href="/vs-chatgpt-memory">Souvenance vs ChatGPT memory</a> ·
-<a href="/vs-mem0">Souvenance vs Mem0</a> · <a href="/lab">lab log</a></footer>
-</div>
+<footer>
+  <div class="links">
+    <a href="/">HOME</a><a href="/capabilities">CAPABILITIES</a><a href="/lab">LAB LOG</a>
+    <a href="/vs-chatgpt-memory">VS CHATGPT MEMORY</a><a href="/vs-mem0">VS MEM0</a>
+    <a href="/feed.xml">RSS</a><a href="https://github.com/Pensine/souvenance.me">GITHUB</a>
+  </div>
+  <div>© 2026 souvenance.me — self-hosted, append-only, yours.</div>
+  <div class="motto">COMPUTE IS RENTED. CONTEXT IS OWNED.</div>
+</footer>
+<div class="crt" aria-hidden="true"></div>
 </body>
 </html>

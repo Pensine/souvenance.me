@@ -4,87 +4,109 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Souvenance vs Mem0 — personal memory product vs memory layer for developers</title>
-<meta name="description" content="Honest comparison: Mem0 is a memory layer for developers building AI apps. Souvenance is a complete self-hosted memory product for one person's life.">
+<meta name="description" content="Honest comparison: Mem0 is a memory layer for developers building AI apps. Souvenance is a finished self-hosted memory product for one person's life — capture, media, sleep cycles and governance included.">
 <link rel="canonical" href="https://souvenance.me/vs-mem0">
-<style>
-@font-face{font-family:'Special Elite';font-style:normal;font-weight:400;
-  font-display:swap;src:url(assets/special-elite.woff2) format('woff2')}
-:root{--paper:#e9e2cf;--paper2:#ded4bc;--ink:#2b2620;--ink-soft:#5c5344;
-  --sepia:#8a7a5c;--red:#a33b2b;
-  --tw:'Special Elite','American Typewriter','Courier New',Courier,monospace;
-  color-scheme:light}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 var(--tw)}
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.5;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .3 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
-a{color:var(--ink)}
-a:hover{background:var(--ink);color:var(--paper);text-decoration:none}
-::selection{background:var(--ink);color:var(--paper)}
-.doc{max-width:46rem;margin:0 auto;padding:1.3rem 1.2rem 3rem}
-.head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;
-  border-bottom:2px solid var(--ink);padding-bottom:.6rem;flex-wrap:wrap}
-.head .l1{letter-spacing:.16em;font-size:.9rem}
-.head .l2{letter-spacing:.13em;font-size:.68rem;color:var(--ink-soft);margin-top:.15rem}
-.stamp{border:3px double var(--red);color:var(--red);padding:.12rem .7rem;
-  font-size:.78rem;letter-spacing:.25em;transform:rotate(-5deg);opacity:.8;font-weight:700}
-h1{font:700 1.35rem var(--tw);text-transform:uppercase;letter-spacing:.03em;
-  margin:1.8rem 0 .4rem}
-h2{font:700 1rem var(--tw);text-transform:uppercase;letter-spacing:.05em;margin-top:2rem}
-.tbl{overflow-x:auto;margin:1.2rem 0;border:1px solid var(--sepia);
-  background:var(--paper2);box-shadow:3px 4px 0 rgba(90,76,52,.25)}
-table{border-collapse:collapse;width:100%;font-size:.82rem;min-width:34rem}
-td,th{padding:.5rem .6rem;border-bottom:1px dashed var(--sepia);text-align:left;
-  vertical-align:top}
-th{text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;color:var(--ink-soft);
-  border-bottom:1px solid var(--ink)}
-tr:last-child td{border-bottom:0}
-footer{margin-top:3rem;color:var(--ink-soft);font-size:.82rem;
-  border-top:1px dashed var(--sepia);padding-top:.8rem}
-</style>
+<meta name="theme-color" content="#030805">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://souvenance.me/vs-mem0">
+<meta property="og:title" content="Souvenance vs Mem0 — product vs component">
+<meta property="og:description" content="They solve different problems: a memory layer you build with, versus a finished memory you live with.">
+<link rel="alternate" type="application/rss+xml" title="Souvenance lab log" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/page.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Article","headline":"Souvenance vs Mem0 — personal memory product vs memory layer for developers",
+ "url":"https://souvenance.me/vs-mem0","inLanguage":"en","datePublished":"2026-08-06",
+ "isPartOf":{"@type":"WebSite","name":"Souvenance","url":"https://souvenance.me/"}},
+{"@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Is Souvenance an alternative to Mem0?",
+  "acceptedAnswer":{"@type":"Answer","text":"They solve different problems. Mem0 is a memory layer for developers building AI applications — an excellent one, near the top of the LoCoMo benchmark. Souvenance is a finished self-hosted product for one person's own life: capture, media pipeline, sleep cycles and governance are included, not assembled."}},
+ {"@type":"Question","name":"Which should I choose for a personal AI memory?",
+  "acceptedAnswer":{"@type":"Answer","text":"If you are shipping a product and need user-level memory as a component, use Mem0. If the memory in question is your own life and you want the whole loop — effortless capture, nightly consolidation, replay of the original audio — running on your own server, use Souvenance."}}]}]}
+</script>
 </head>
 <body>
-<div class="doc">
-<div class="head">
-  <div>
-    <div class="l1">PROJECT SOUVENANCE — FILE 07 · ANNEX B</div>
-    <div class="l2">COMPARATIVE FINDINGS · COMPONENT vs APPARATUS · <a href="/">RETURN TO DOSSIER</a></div>
+<nav class="bar">
+  <a class="home" href="/">◂ SOUVENANCE</a>
+  <span class="sp"></span>
+  <a class="btn" href="https://github.com/Pensine/souvenance.me">SOURCE</a>
+  <a class="btn kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">KIT · $69</a>
+</nav>
+
+<main>
+  <div class="kicker">comparison · annex b</div>
+  <h1>SOUVENANCE VS <span class="amb">MEM0</span></h1>
+  <p class="lede">They solve different problems, and both answers are right. Mem0 is a
+    <b>memory layer for developers</b> building AI applications — an excellent one, near the top of
+    the LoCoMo benchmark. Souvenance is a <b>finished product for one person's life</b>: capture,
+    media, sleep cycles and governance included.</p>
+
+  <table class="cmp">
+    <thead><tr><th></th><th>Mem0</th><th>Souvenance</th></tr></thead>
+    <tbody>
+      <tr><th>You are…</th>
+        <td data-l="Mem0">a developer shipping an app with memory</td>
+        <td data-l="Souvenance">a person who wants to own their memory</td></tr>
+      <tr><th>Shape</th>
+        <td data-l="Mem0">SDK / API (managed platform or OSS library)</td>
+        <td data-l="Souvenance">Complete self-hosted system: MCP server, iOS capture, pipelines, web timeline</td></tr>
+      <tr><th>Capture</th>
+        <td data-l="Mem0">You build it</td>
+        <td data-l="Souvenance" class="win">Built in: share-sheet shortcut, daily voice log, perceptors, word-aligned transcription, vision, EXIF</td></tr>
+      <tr><th>Consolidation</th>
+        <td data-l="Mem0">Extraction pipeline per exchange</td>
+        <td data-l="Souvenance" class="win">Sleep cycles: nightly consolidation, weekly REM recombination, active forgetting, reconsolidation</td></tr>
+      <tr><th>Time</th>
+        <td data-l="Mem0">Facts with update semantics</td>
+        <td data-l="Souvenance" class="win">Bi-temporal graph, personal landmarks, prospective memory, humanised time framing computed in code</td></tr>
+      <tr><th>Originals</th>
+        <td data-l="Mem0">Out of scope</td>
+        <td data-l="Souvenance" class="win">Voice, photo, video, PDF kept forever, replayable through signed links</td></tr>
+      <tr><th>Governance</th>
+        <td data-l="Mem0">Out of scope</td>
+        <td data-l="Souvenance" class="win">Executable constitution, audit log, ratified persona, testament clauses</td></tr>
+      <tr><th>Substrate</th>
+        <td data-l="Mem0">Managed platform, or OSS you assemble</td>
+        <td data-l="Souvenance">One PostgreSQL on your VPS; SQL dump = export</td></tr>
+    </tbody>
+  </table>
+
+  <h2>USE MEM0 IF…</h2>
+  <p>You're building a product and need user-level memory <b>as a component</b>. It's the right tool
+    for that job — and Souvenance's own extraction approach cites Mem0's work as a reference. Good
+    components deserve credit.</p>
+
+  <h2>USE SOUVENANCE IF…</h2>
+  <p>The memory in question is <b>yours</b>. You want the whole loop — effortless capture, nightly
+    consolidation, <em>"what did I think about X last year?"</em> — running on your own hardware,
+    governed by rules you can read in a YAML file, with your actual voice preserved for the replay.</p>
+
+  <div class="box">
+    <div class="t">THE SHORT VERSION</div>
+    <p>A memory layer is a <b>component</b> you build with. Souvenance is an <b>apparatus</b> you
+      live with. Choosing between them is choosing which side of that line you're standing on.</p>
   </div>
-  <div class="stamp">DECLASSIFIED</div>
-</div>
 
-<h1>Souvenance vs Mem0</h1>
-<p>They solve different problems. <strong>Mem0 is a memory layer for
-developers</strong> building AI applications — an excellent one, near the top
-of the LoCoMo benchmark. <strong>Souvenance is a finished product for one
-person's life</strong>: capture, media, sleep cycles, governance, included.</p>
+  <div class="cta">
+    <a href="https://github.com/Pensine/souvenance.me">GET THE ENGINE<small>open source · MIT · free</small></a>
+    <a class="kit" href="https://souvenance.lemonsqueezy.com/checkout/buy/80bd8100-6e46-4f43-b423-1619b6e3836f">GET THE KIT — $69<small>15-min install · one-time</small></a>
+  </div>
+  <p style="margin-top:26px">Related: <a href="/capabilities">what you can actually do with it</a> ·
+    <a href="/vs-chatgpt-memory">vs ChatGPT memory</a> · <a href="/guides/own-your-ai-memory">how to own your AI memory</a></p>
+</main>
 
-<div class="tbl"><table>
-<tr><th></th><th>Mem0</th><th>Souvenance</th></tr>
-<tr><td>You are…</td><td>a developer shipping an app with memory</td><td>a person who wants to own their memory</td></tr>
-<tr><td>Shape</td><td>SDK / API (SaaS or OSS library)</td><td>Complete self-hosted system: MCP server, iOS capture, pipelines, web timeline</td></tr>
-<tr><td>Capture</td><td>You build it</td><td>Built in: share-sheet shortcut, daily voice log, perceptors, word-aligned transcription, vision, EXIF</td></tr>
-<tr><td>Consolidation</td><td>Extraction pipeline per exchange</td><td>Sleep cycles: nightly consolidation, weekly REM recombination, active forgetting, reconsolidation</td></tr>
-<tr><td>Time</td><td>Facts with update semantics</td><td>Bi-temporal graph (what was true when + when the system learned it), landmarks, prospective memory</td></tr>
-<tr><td>Originals</td><td>Out of scope</td><td>Voice/photo/video/PDF kept forever, replayable via signed links</td></tr>
-<tr><td>Governance</td><td>Out of scope</td><td>Executable constitution, audit log, ratified persona, testament clauses</td></tr>
-<tr><td>Substrate</td><td>Managed platform, or OSS you assemble</td><td>One PostgreSQL on your VPS; SQL dump = export</td></tr>
-</table></div>
-
-<h2>Use Mem0 if…</h2>
-<p>You're building a product and need user-level memory as a component. It's
-the right tool — Souvenance's own extraction pipeline cites Mem0's work as a
-reference.</p>
-
-<h2>Use Souvenance if…</h2>
-<p>The memory in question is <em>yours</em>. You want the whole loop — effortless
-capture to nightly consolidation to “what did I think about X last year?” —
-running on your own hardware, governed by rules you can read, with your
-actual voice preserved for the replay.</p>
-
-<p><a href="/">Return to the dossier →</a></p>
-<footer>Related annexes: <a href="/vs-chatgpt-memory">Souvenance vs ChatGPT memory</a> ·
-<a href="/guides/own-your-ai-memory">How to own your AI memory</a> ·
-<a href="/lab">lab log</a></footer>
-</div>
+<footer>
+  <div class="links">
+    <a href="/">HOME</a><a href="/capabilities">CAPABILITIES</a><a href="/lab">LAB LOG</a>
+    <a href="/vs-chatgpt-memory">VS CHATGPT MEMORY</a><a href="/guides/own-your-ai-memory">GUIDE</a>
+    <a href="/feed.xml">RSS</a><a href="https://github.com/Pensine/souvenance.me">GITHUB</a>
+  </div>
+  <div>© 2026 souvenance.me — self-hosted, append-only, yours.</div>
+  <div class="motto">COMPUTE IS RENTED. CONTEXT IS OWNED.</div>
+</footer>
+<div class="crt" aria-hidden="true"></div>
 </body>
 </html>
