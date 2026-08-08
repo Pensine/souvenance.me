@@ -6,3 +6,6 @@ persona/propositions/
 .venv/
 .claude/
 dist/
+
+# macOS
+.DS_Store

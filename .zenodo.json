@@ -1,0 +1,34 @@
+{
+  "upload_type": "software",
+  "title": "Souvenance — a self-hosted memory engine you own",
+  "description": "<p>A self-hosted personal memory engine for AI assistants. Events are stored in an append-only PostgreSQL log owned by the subject; memories, embeddings and a bi-temporal knowledge graph are recomputable projections of that log. Nightly consolidation runs on a swappable AI backend, and the memory is served through MCP — so the model, the interface and the vendor stay replaceable while the substrate persists.</p><p>This archive includes the <code>research/</code> folder: position papers and pre-registered evaluation protocols arguing and testing the architecture, with verified sources, an explicit list of rejected sources, and falsification criteria named in advance.</p>",
+  "creators": [
+    {
+      "name": "Noguera, Nicolas"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "personal memory",
+    "self-hosted",
+    "event sourcing",
+    "temporal knowledge graph",
+    "model context protocol",
+    "data ownership",
+    "data portability",
+    "personal informatics"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://souvenance.me",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/Pensine/souvenance.me",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

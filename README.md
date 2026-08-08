@@ -1,6 +1,6 @@
 <div align="center">
 
-# Souvenance
+# Pensine
 
 **A living memory you own — queried through your AI.**
 
@@ -30,7 +30,7 @@ Meanwhile, frontier intelligence is becoming a commodity. What compounds in
 value is your context: what you decided, what you believed, how you changed.
 **Compute is rented. Context should be owned.**
 
-Souvenance is the counter-position: an open, self-hosted memory engine where
+Pensine is the counter-position: an open, self-hosted memory engine where
 the AI is a replaceable adapter and the memory is yours — auditable,
 exportable, governed by you.
 
@@ -97,7 +97,9 @@ database, no queue — boring, proven, durable for 20 years.
 ## Quick start
 
 Requirements: a Linux VPS (2 vCPU / 4 GB runs the core; size up for the
-local bricks you enable), Docker, Python ≥ 3.11, a domain, and an AI backend
+local bricks you enable), Docker, Python ≥ 3.11, a public HTTPS URL (a domain,
+a free dynamic subdomain, or a Tailscale Funnel — the MCP connector requires
+HTTPS), and an AI backend
 of your choice: Claude CLI, an API key, or any open-source model via Ollama.
 
 ```bash
@@ -123,9 +125,11 @@ into a 15-minute install:
   *"install it"*, answer a few questions. Reverse-proxy recipes (including
   the proxy-in-Docker case), connector auth options, troubleshooting table
   built from real installs.
-- **iOS shortcuts, ready to import** — the two capture shortcuts (deposit +
-  daily log with editable dictation review), plus the step-by-step build
-  guide with every pitfall documented.
+- **The two iOS capture shortcuts, ready to import** — one tap each, then
+  replace two values (your URL, your token) and you are capturing. Deposit
+  from the share sheet, and the daily log with its editable dictation review.
+  The screen-by-screen build guide is included too, with every pitfall
+  documented — for when you want to change them.
 - **A versioned, tested release** — pinned dependencies, known-good
   combination, free re-downloads as new versions ship.
 
@@ -150,12 +154,12 @@ path — and you fund the project.
 ## How is this different from…
 
 - **ChatGPT / Claude native memory** — theirs, opaque, non-portable, non-auditable.
-  Souvenance is yours: SQL dump *is* the export, and the adapter means no model lock-in.
+  Pensine is yours: SQL dump *is* the export, and the adapter means no model lock-in.
 - **StoryWorth / HereAfter / legacy apps** — memory *for others, after you*.
-  Souvenance is memory *for you, alive*: you query it daily, and it still becomes
+  Pensine is memory *for you, alive*: you query it daily, and it still becomes
   a dynamic autobiography — your voice at the time, before your future self
   rewrites the past.
-- **Agent frameworks with memory bolted on** — Souvenance is memory-first:
+- **Agent frameworks with memory bolted on** — Pensine is memory-first:
   no outbound actions at all in v1, by constitution. The archive is the product.
 
 ## Roadmap
@@ -172,7 +176,7 @@ path — and you fund the project.
 ## FAQ
 
 **Do I talk to "a twin"?** No. You talk to your assistant — the interlocutor stays
-alive and replaceable. Souvenance is the back room.
+alive and replaceable. Pensine is the back room.
 
 **What if I stop paying for an AI subscription?** Capture never depends on the AI layer.
 Events accumulate; consolidation resumes when compute returns — with your

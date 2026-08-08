@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Souvenance — a self-hosted memory engine you own"
+message: "If you use this software or refer to its architecture, please cite it."
+type: software
+authors:
+  - family-names: "Noguera"
+    given-names: "Nicolas"
+    website: "https://souvenance.me"
+repository-code: "https://github.com/Pensine/souvenance.me"
+url: "https://souvenance.me"
+abstract: >-
+  A self-hosted personal memory engine for AI assistants. Events are stored in
+  an append-only PostgreSQL log owned by the subject; memories, embeddings and
+  a bi-temporal knowledge graph are recomputable projections of that log.
+  Nightly consolidation runs on a swappable AI backend, and the memory is
+  served through MCP — so the model, the interface and the vendor stay
+  replaceable while the substrate persists.
+keywords:
+  - personal memory
+  - self-hosted
+  - event sourcing
+  - temporal knowledge graph
+  - model context protocol
+  - data ownership
+license: MIT
+version: 0.2.4
+date-released: 2026-08-07

@@ -9,7 +9,7 @@ Un percepteur = une fonction `pull() -> list[dict]` où chaque dict a les clés
 `source`, `kind`, `occurred_at` (datetime aware), `payload` (dict).
 Il est actif si sa configuration existe (opt-in par variable d'environnement).
 
-Les percepteurs propres à un utilisateur (ex. un coach sportif via MCP)
+Les percepteurs propres à un utilisateur (ex. un service métier via MCP)
 s'ajoutent ici : un module, une fonction pull(), une entrée dans REGISTRY.
 """
 
