@@ -51,6 +51,29 @@ exportable, governed by you.
   scoring, contradiction detection, active forgetting) and weekly REM-style
   recombination across life domains. Built on an **append-only event log**:
   a better consolidation engine in 2028 can re-read your whole life.
+- **Memories with texture, not just text** — each carries an emotional charge
+  on two axes, because grief and anger are both negative and nothing alike.
+  Charge slows forgetting, as it does in people: a vivid memory keeps 69% of
+  its weight after a year untouched, a flat one 16%. Dispositions outlast
+  episodes. Relationships carry a state that *moves* — closeness and warmth,
+  stored as a dated series, so "we drifted apart" is a query, not a feeling.
+- **Recall that wanders, like yours** — memories link to each other: same
+  moment, or simply retrieved together often enough to wire up. Ask about one
+  thing and the things attached to it come back, even when they share no
+  words with your question. Links that go unused fade — otherwise everything
+  ends up connected to everything, and *associated* stops meaning anything.
+  What repeats gets promoted: several old episodes saying the same thing
+  become one durable piece of knowledge, still tied to the episodes it came
+  from.
+- **The assistant may notice — you decide** — it can propose to remember
+  something a conversation surfaced, but a proposal is not a memory. Nothing
+  reaches the log without your explicit yes, and a confirmation arriving too
+  fast for a human to have answered is rejected outright. Every event records
+  whether *you* filed it or the assistant proposed it. So you can ask your own
+  system a question no commercial assistant will answer: **what fraction of my
+  memory did you decide on your own?** A 2026 study had to go measure that from
+  the outside, on 80 strangers, and found 96% for ChatGPT. Here it is one SQL
+  query, and anyone running the engine can reproduce it on theirs.
 - **A narrative identity you author** — the persona compiler drafts your story
   (chapters, themes, owned tensions), every claim weighted and sourced. It
   never takes effect until *you* ratify it. Versioned in Git.
@@ -69,11 +92,13 @@ flowchart LR
         A[iOS shortcut<br>voice / photo / PDF] --> E
         B[Assistant conversations<br>daily log, MCP] --> E
         C[Perceptors<br>calendar, mail opt-in] --> E
+        D[Assistant proposals] -.your explicit yes.-> E
     end
-    E[(Append-only<br>event log)] --> N[Nightly consolidation<br>your AI backend]
-    N --> M[(Memories<br>pgvector)]
-    N --> G[(Temporal knowledge graph<br>bi-temporal, edges closed<br>never deleted)]
+    E[(Append-only event log<br>each event records its origin:<br>filed by you, or proposed)] --> N[Nightly consolidation<br>your AI backend]
+    N --> M[(Memories<br>pgvector · emotional charge<br>links between memories)]
+    N --> G[(Temporal knowledge graph<br>bi-temporal, edges closed<br>never deleted · relationship state)]
     N --> P[Persona proposals<br>you ratify]
+    M -->|what repeats| M
     M & G --> R[MCP server: recall · mirror · curate]
     R --> AS[Your assistant<br>web / mobile / voice]
     E -.originals kept forever.-> S[(Media store<br>+ signed replay links)]

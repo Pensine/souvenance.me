@@ -40,17 +40,27 @@ def append_event(
     occurred_at: datetime,
     payload: dict,
     media_id: int | None = None,
+    origin: str = "declared",
 ) -> int | None:
-    """Ajoute un fait au log. Retourne l'id, ou None si doublon (déjà perçu)."""
+    """Ajoute un fait au log. Retourne l'id, ou None si doublon (déjà perçu).
+
+    `origin` distingue ce que l'utilisateur a délibérément déposé ('declared')
+    de ce qu'un assistant a proposé et qu'il a accepté ('proposed'). Sans cette
+    distinction, les deux deviennent indiscernables dès le lendemain — et la
+    question « qu'est-ce que le système a retenu de lui-même ? » perd sa
+    réponse. Elle n'entre pas dans le hash : la provenance qualifie le fait,
+    elle ne le change pas.
+    """
     h = event_hash(source, kind, occurred_at, payload)
     row = conn.execute(
         """
-        INSERT INTO events (occurred_at, source, kind, payload, media_id, hash)
-        VALUES (%s, %s, %s, %s, %s, %s)
+        INSERT INTO events (occurred_at, source, kind, payload, media_id, hash, origin)
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (hash) DO NOTHING
         RETURNING id
         """,
-        (occurred_at, source, kind, json.dumps(payload, ensure_ascii=False), media_id, h),
+        (occurred_at, source, kind, json.dumps(payload, ensure_ascii=False),
+         media_id, h, origin),
     ).fetchone()
     return row["id"] if row else None
 
@@ -86,7 +96,8 @@ def search_memories(conn, query: str, embedding: list[float] | None, limit: int 
     if embedding is not None:
         rows = conn.execute(
             """
-            SELECT id, type, content, confidence, importance, valid_from, valid_to,
+            SELECT id, type, content, confidence, importance, valence, arousal,
+                   valid_from, valid_to,
                    source_event_ids, embedding <=> %s::vector AS distance
             FROM memories
             WHERE superseded_by IS NULL AND embedding IS NOT NULL
@@ -98,7 +109,8 @@ def search_memories(conn, query: str, embedding: list[float] | None, limit: int 
     else:
         rows = conn.execute(
             """
-            SELECT id, type, content, confidence, importance, valid_from, valid_to,
+            SELECT id, type, content, confidence, importance, valence, arousal,
+                   valid_from, valid_to,
                    source_event_ids, NULL::real AS distance
             FROM memories
             WHERE superseded_by IS NULL

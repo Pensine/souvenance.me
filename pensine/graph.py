@@ -93,7 +93,10 @@ def ingest(conn, entities: list[dict], relations: list[dict],
                         exclusive=bool(r.get("exclusive")),
                         source_event_ids=source_event_ids) is not None:
             added += 1
-    return {"entities": len(ids), "relations_added": added}
+    # `entity_ids` sert à rattacher l'état des liens aux entités que ce lot
+    # vient de résoudre (voir pensine/relations.py) : sans lui, il faudrait
+    # re-résoudre les noms et risquer d'en créer des doublons.
+    return {"entities": len(ids), "relations_added": added, "entity_ids": ids}
 
 
 def neighborhood(conn, query: str, at: datetime | None = None, limit: int = 12):
@@ -103,8 +106,9 @@ def neighborhood(conn, query: str, at: datetime | None = None, limit: int = 12):
     at = at or datetime.now(timezone.utc)
     return conn.execute(
         """
-        SELECT s.name AS subject, s.kind AS subject_kind, r.predicate,
-               o.name AS object, o.kind AS object_kind,
+        SELECT s.id AS subject_id, s.name AS subject, s.kind AS subject_kind,
+               r.predicate,
+               o.id AS object_id, o.name AS object, o.kind AS object_kind,
                r.valid_from, r.valid_to
         FROM relations r
         JOIN entities s ON s.id = r.subject_id
