@@ -80,6 +80,66 @@ def insert_media(
     return row["id"]
 
 
+def unconsolidated_events(conn, limit: int = 200):
+    """Events jamais examinés — le « jour » à rejouer.
+
+    Un événement qui n'a rien produit reste un événement examiné : sans le
+    marqueur, un log vide ou un test reviendrait chaque nuit indéfiniment,
+    coûtant un appel au modèle à chaque fois et gonflant le prompt de tous les
+    cycles suivants.
+
+    La condition sur `source_event_ids` reste en second filet pour les
+    événements consolidés avant l'existence des marqueurs. Les médias
+    transcrits/décrits sont joints : la consolidation voit le contenu.
+    """
+    return conn.execute(
+        """
+        SELECT e.id, e.occurred_at, e.source, e.kind, e.payload,
+               m.transcript AS media_transcript, m.description AS media_description,
+               m.exif AS media_exif
+        FROM events e
+        LEFT JOIN media m ON m.id = e.media_id
+        WHERE NOT EXISTS (
+            SELECT 1 FROM consolidation_marks cm WHERE cm.event_id = e.id
+        )
+        AND NOT EXISTS (
+            SELECT 1 FROM memories mm WHERE e.id = ANY(mm.source_event_ids)
+        )
+        -- un dépôt média attend son retraitement avant d'être consolidé
+        AND (e.media_id IS NULL
+             OR m.transcript IS NOT NULL OR m.description IS NOT NULL)
+        ORDER BY e.occurred_at
+        LIMIT %s
+        """,
+        (limit,),
+    ).fetchall()
+
+
+def mark_examined(conn, event_ids: list[int], memory_ids: set[int]) -> None:
+    """Trace le passage d'un cycle de consolidation sur ces événements.
+
+    À n'appeler qu'après une consolidation réussie : si la couche intelligente
+    est indisponible, rien n'est marqué et les événements repassent au cycle
+    suivant — la promesse « le pire scénario est une pause » tient.
+    """
+    if not event_ids:
+        return
+    produced = set()
+    if memory_ids:
+        rows = conn.execute(
+            "SELECT DISTINCT unnest(source_event_ids) AS eid FROM memories "
+            "WHERE id = ANY(%s)",
+            (sorted(memory_ids),),
+        ).fetchall()
+        produced = {r["eid"] for r in rows}
+    for eid in event_ids:
+        conn.execute(
+            "INSERT INTO consolidation_marks (event_id, produced_memory) "
+            "VALUES (%s, %s) ON CONFLICT (event_id) DO NOTHING",
+            (eid, eid in produced),
+        )
+
+
 def audit(conn, actor: str, action: str, detail: dict | None = None) -> None:
     """Couche 7 : chaque action du système laisse une trace."""
     conn.execute(

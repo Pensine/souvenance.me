@@ -48,27 +48,6 @@ def perceive(conn, governor: Governor) -> int:
     return written
 
 
-def unconsolidated_events(conn):
-    """Events jamais cités par une mémoire — le « jour » à rejouer.
-    Les médias transcrits/décrits sont joints : la consolidation voit le contenu."""
-    return conn.execute(
-        """
-        SELECT e.id, e.occurred_at, e.source, e.kind, e.payload,
-               m.transcript AS media_transcript, m.description AS media_description,
-               m.exif AS media_exif
-        FROM events e
-        LEFT JOIN media m ON m.id = e.media_id
-        WHERE NOT EXISTS (
-            SELECT 1 FROM memories mm WHERE e.id = ANY(mm.source_event_ids)
-        )
-        -- un dépôt média attend son retraitement avant d'être consolidé
-        AND (e.media_id IS NULL
-             OR m.transcript IS NOT NULL OR m.description IS NOT NULL)
-        ORDER BY e.occurred_at
-        LIMIT 200
-        """
-    ).fetchall()
-
 
 def _slim(e: dict) -> dict:
     """Compresse les gros payloads (imports de conversations) pour le prompt :
@@ -110,8 +89,10 @@ def consolidate(conn, governor: Governor, events) -> dict:
                      event_ids)
     states = relations.ingest(conn, out.get("relation_states") or [],
                               g.pop("entity_ids", {}), event_ids)
+    db.mark_examined(conn, event_ids, {m["id"] for m in written})
     return {"memories_written": len(written), "links_posed": posed,
             "relation_states": states, **g}
+
 
 
 def write_memories(conn, items: list[dict]) -> list[dict]:
@@ -214,7 +195,7 @@ def main() -> None:
         media_report = media_pipeline.process_pending(conn)
         conn.commit()  # les acquis (events, transcripts) survivent à un échec LLM
 
-        events = unconsolidated_events(conn)
+        events = db.unconsolidated_events(conn)
         if not events:
             db.audit(conn, "consolidation", "nightly_noop",
                      {"perceived": perceived})
