@@ -218,7 +218,9 @@ interview (a scripted 4-session bootstrap) seeds the corpus on day one.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+AGPL-3.0 — see [LICENSE](LICENSE). Self-host it, modify it, fork it freely;
+if you offer it as a network service, your changes must stay open. For a
+commercial license, get in touch.
 
 ---
 

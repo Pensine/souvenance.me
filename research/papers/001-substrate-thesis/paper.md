@@ -533,7 +533,7 @@ Events land in an append-only PostgreSQL log; memories, embeddings and a
 bi-temporal knowledge graph are projections recomputed from it; nightly
 consolidation runs on a swappable backend; the memory is served to any client
 over MCP. It runs on the author's own hardware against a real personal corpus,
-open source under MIT.
+open source under AGPL-3.0.
 
 Its evidential value is limited and we do not overstate it: n=1, no controlled
 comparison, and the author is not a neutral evaluator of their own design. It
