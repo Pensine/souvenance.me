@@ -136,27 +136,29 @@ The installer generates secrets, starts Postgres, runs migrations and tests,
 and installs systemd services. From there you are in known self-hosting
 territory: wire your reverse proxy (`deploy/Caddyfile.example`), point your
 MCP client at `/mcp`, configure `.env`, build the iOS shortcuts against
-`/deposit` and `/log`. The guided, illustrated, AI-first walkthrough is what
-the kit is for.
+`/deposit` and `/log`. The full illustrated walkthrough is public:
+[docs/kit-installation.md](docs/kit-installation.md) — written to be followed
+by a human or by your AI. Paste this repo into your coding agent, say
+*"install it"*, answer a few questions.
 
 ## The turnkey kit ($69, one-time)
 
-The engine above is free, complete, and stays that way. What the [kit](https://pensine.gumroad.com/l/souvenance-kit)
-adds is everything *around* the code that turns an afternoon of self-hosting
-into a 15-minute install:
+Everything is public — the engine, the tests, the full install walkthrough,
+the iOS shortcuts, the testament template. Nothing is held back. What the
+[kit](https://pensine.gumroad.com/l/souvenance-kit) sells is the comfortable
+path, and a way to keep an independent memory engine alive:
 
-- **The full install walkthrough** — illustrated, step-by-step, written to be
-  followed by your AI: paste the folder into your coding agent, say
-  *"install it"*, answer a few questions. Reverse-proxy recipes (including
-  the proxy-in-Docker case), connector auth options, troubleshooting table
-  built from real installs.
-- **The two iOS capture shortcuts, ready to import** — one tap each, then
-  replace two values (your URL, your token) and you are capturing. Deposit
-  from the share sheet, and the daily log with its editable dictation review.
-  The screen-by-screen build guide is included too, with every pitfall
-  documented — for when you want to change them.
 - **A versioned, tested release** — pinned dependencies, known-good
-  combination, free re-downloads as new versions ship.
+  combination, free re-downloads as new versions ship. The public `main`
+  moves; the kit doesn't move under your feet.
+- **Everything bundled and ordered** — walkthrough, shortcuts, testament and
+  constitution templates in one archive, in the order that works, with a
+  START-HERE. No assembly required.
+- **Patronage** — one-time payment, no subscription, ~100% margin funding
+  development. If Souvenance saved you an afternoon, this is the tip jar.
+
+If you'd rather follow the public docs end to end, that is a fully supported
+outcome — that's what they are for.
 
 One-time payment, instant delivery, no subscription. You pay for the guided
 path — and you fund the project.
@@ -208,7 +210,8 @@ Events accumulate; consolidation resumes when compute returns — with your
 subscription, an API key, or a local model behind the adapter. Worst case is
 a pause, never a loss.
 
-**What about my data when I die?** A testament template ships with the kit:
+**What about my data when I die?** A testament template is in the public docs
+([docs/clauses-testamentaires.md](docs/clauses-testamentaires.md)):
 extinction, read-only memorial, or delayed legacy — decided calmly, in
 advance, by you.
 
