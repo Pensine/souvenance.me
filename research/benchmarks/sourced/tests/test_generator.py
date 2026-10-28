@@ -174,3 +174,17 @@ def test_question_texts_are_unique(seed):
     w = generate_world(seed=seed, **FULL)
     qs = derive_questions(w, build_deposits(w))
     assert len({q.question for q in qs}) == len(qs)
+
+
+@pytest.mark.parametrize("seed", range(5))
+def test_voices_are_the_pinned_public_domain_set(seed):
+    """Every speaker uses a voice the Piper worker pins by checksum, and the
+    owner's voice is never lent to anyone else."""
+    from sourced.tts_worker import VOICES
+
+    w = generate_world(seed=seed, **FULL)
+    owner = w.person(w.owner).voice
+    assert all(p.voice in VOICES for p in w.people)
+    assert all(p.voice != owner for p in w.people if p.id != w.owner)
+    voiced = [d for d in build_deposits(w) if d.kind in ("voice", "voice_in")]
+    assert voiced and all(d.meta["voice"] in VOICES for d in voiced)

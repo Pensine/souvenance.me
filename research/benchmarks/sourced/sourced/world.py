@@ -78,6 +78,11 @@ VENUES = ["the riverside park", "the old market hall", "the botanical garden",
           "the harbour footpath", "the hilltop viewpoint", "the city library"]
 RACES = ["Spring 10K", "Harbour Half Marathon", "Park 5K"]
 RACE_MINUTES = {"Spring 10K": (42, 70), "Harbour Half Marathon": (95, 150), "Park 5K": (19, 34)}
+# Piper voices trained only on public-domain speech (SPEC section 9). The
+# list length matters: the owner draws with r.choice over all five and the
+# partner over the four others, which keeps the random stream unchanged.
+VOICES = ["en_US-ljspeech-medium", "en_US-kristin-medium", "en_US-norman-medium",
+          "en_US-john-medium", "en_GB-cori-medium"]
 RELATIONS = ["sister", "brother", "best friend", "friend", "colleague", "cousin",
              "neighbour", "manager"]
 
@@ -228,8 +233,7 @@ def generate_world(seed: int = 7, start: str = "2025-02-03", days: int = 182,
     few units (changes come in whole chains)."""
     b = _Builder(seed, date.fromisoformat(start), days)
     r = b.r
-    owner = Person("P0", b.name(), "self", voice=r.choice(["af_heart", "af_bella", "am_michael",
-                                                         "bf_emma", "bm_george"]))
+    owner = Person("P0", b.name(), "self", voice=r.choice(VOICES))
     b.people.append(owner)
     home_city = r.choice(CITIES)
     other_cities = [c for c in CITIES if c != home_city]
@@ -278,7 +282,7 @@ def generate_world(seed: int = 7, start: str = "2025-02-03", days: int = 182,
     partner = None
     if changes_left >= 1:
         partner = Person(f"P{len(b.people)}", b.name(), "partner",
-                         voice=r.choice(["am_adam", "af_sarah", "bm_lewis", "bf_isabella"]))
+                         voice=r.choice([v for v in VOICES if v != owner.voice]))
         b.people.append(partner)
         b.add("P0", "dating", {"person": partner.id, "name": partner.name},
               b.day_in(margin, days - margin))
@@ -336,7 +340,7 @@ def generate_world(seed: int = 7, start: str = "2025-02-03", days: int = 182,
     if partner:
         b.add(partner.id, "job", {"title": r.choice(JOB_TITLES)}, b.background())
 
-    voices = ["af_nicole", "am_eric", "bf_alice", "bm_daniel", "af_river", "am_liam"]
+    voices = [v for v in VOICES if v != owner.voice]  # the owner's voice stays theirs
     rel_cycle = list(RELATIONS)
     # events + people fill the remaining budget; keep ~45 % of facts as events
     event_target = int(n_facts * 0.45)

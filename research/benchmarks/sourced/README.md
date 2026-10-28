@@ -34,7 +34,7 @@ Pillow for photos; nothing else for the generator):
 ```bash
 python -m pytest tests -q
 python -m sourced generate --out sample --seed 1 --days 14 --facts 30 --changes 4 \
-    --tts-python /path/to/tts-venv/bin/python   # omit: voice deposits stay transcripts
+    --tts-python ~/.cache/sourced/piper-venv/bin/python   # omit: voice deposits stay transcripts
 python -m sourced run   --data sample --system oracle --out runs/oracle.json
 python -m sourced score --data sample --run runs/oracle.json --out runs/oracle.report.json
 ```
@@ -42,23 +42,21 @@ python -m sourced score --data sample --run runs/oracle.json --out runs/oracle.r
 The full release is the same command with the defaults (182 days, 300 facts,
 40 changes).
 
-**Voice (optional).** A separate environment keeps the generator light:
+**Voice (optional).** A separate environment keeps the generator light.
+Piper runs on CPU on macOS, Linux and Windows, with five public-domain
+English voices (licences and checks in SPEC §9):
 
 ```bash
-python -m venv tts-venv
-tts-venv/bin/pip install mlx-audio soundfile "misaki[en]"
+python3.11 -m venv ~/.cache/sourced/piper-venv
+~/.cache/sourced/piper-venv/bin/pip install piper-tts==1.8.0 onnx soundfile
+~/.cache/sourced/piper-venv/bin/python sourced/tts_worker.py --download
 ```
 
-On macOS the `espeakng_loader` wheel can ship without its data files
-(`phontab: No such file or directory`). Link the system espeak-ng data into
-it:
-
-```bash
-for f in /opt/homebrew/share/espeak-ng-data/*; do ln -sf "$f" tts-venv/lib/python3.11/site-packages/espeakng_loader/; done
-```
-
-`mlx-audio` needs Apple silicon. On other machines, swap `tts_worker.py`
-for any Kokoro runtime with the same job format.
+The voices land in `~/.cache/sourced/piper-voices` (override with
+`SOURCED_PIPER_VOICES`) and are checked against SHA-256. Keep the venv path
+short: espeak-ng ignores a data path longer than about 160 characters and
+fails with `phontab: No such file or directory`. `ffmpeg` encodes the
+`.m4a` files.
 
 **Pensine adapter.** It uses a throwaway database:
 

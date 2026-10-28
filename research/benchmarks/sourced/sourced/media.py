@@ -5,9 +5,10 @@ the date and GPS position written into EXIF. They never pretend to show an
 event, so any memory describing what a photo "shows" is an invention by
 construction (trap kind `photo_content`).
 
-Voice memos are synthesised locally with Kokoro-82M (Apache-2.0 weights),
-through a separate Python environment (`--tts-python`), so the generator
-itself keeps zero heavy dependencies. Light background noise is added.
+Voice memos are synthesised locally with Piper (five English voices trained
+only on public-domain speech, SPEC section 9), through a separate Python
+environment (`--tts-python`), so the generator itself keeps zero heavy
+dependencies. Light background noise and a random lead-in are added.
 Audio is NOT guaranteed bit-identical across machines; the manifest records
 a SHA-256 of every file so a published release can be checked.
 """
@@ -124,8 +125,8 @@ def render_pdf(text: str, path: Path) -> None:
 # --- voice -----------------------------------------------------------------
 
 def render_voices(jobs: list[dict], tts_python: str, workdir: Path) -> None:
-    """jobs: [{"text", "voice", "out", "seed"}]. Runs the Kokoro worker once
-    for all jobs (one model load), then compresses to AAC with ffmpeg."""
+    """jobs: [{"text", "voice", "out", "seed"}]. Runs the Piper worker once
+    for all jobs (each voice loaded once), then compresses to AAC with ffmpeg."""
     if not jobs:
         return
     with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, dir=workdir) as fh:
@@ -164,7 +165,7 @@ def render_all(deposits: list[Deposit], outdir: Path, seed: int,
             render_pdf(d.text, p)
         elif d.kind in ("voice", "voice_in"):
             if tts_python:
-                jobs.append({"text": d.text, "voice": d.meta.get("voice", "af_heart"),
+                jobs.append({"text": d.text, "voice": d.meta.get("voice", "en_US-ljspeech-medium"),
                              "out": str(p), "seed": f"{seed}:{d.id}"})
             else:
                 d.file = d.file.rsplit(".", 1)[0] + ".transcript.txt"

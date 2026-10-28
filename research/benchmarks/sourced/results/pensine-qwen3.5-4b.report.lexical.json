@@ -1,0 +1,859 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "09abaa7",
+  "llm_backend": "openai",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-04",
+    "memories_written": 4,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-05",
+    "memories_written": 1,
+    "memories_rejected": 5,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-06",
+    "memories_written": 2,
+    "memories_rejected": 5,
+    "memories_corrected": 1,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-07",
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-08",
+    "memories_written": 4,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-09",
+    "memories_written": 1,
+    "memories_rejected": 8,
+    "memories_corrected": 1,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-10",
+    "memories_written": 5,
+    "memories_rejected": 1,
+    "memories_corrected": 1,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-11",
+    "failed": "JSONDecodeError",
+    "events_pending": 6
+   },
+   {
+    "day": "2025-02-12",
+    "failed": "JSONDecodeError",
+    "events_pending": 10
+   },
+   {
+    "day": "2025-02-13",
+    "failed": "JSONDecodeError",
+    "events_pending": 11
+   },
+   {
+    "day": "2025-02-14",
+    "failed": "JSONDecodeError",
+    "events_pending": 14
+   },
+   {
+    "day": "2025-02-15",
+    "failed": "JSONDecodeError",
+    "events_pending": 16
+   },
+   {
+    "day": "2025-02-16",
+    "failed": "JSONDecodeError",
+    "events_pending": 18
+   }
+  ]
+ },
+ "judge": "lexical-v1",
+ "headline": {
+  "invention_rate": 0.3333,
+  "excerpt_support_rate": 0.5833,
+  "fact_recall": 0.2,
+  "recall_at_inv_1pct": 0.0,
+  "qa_accuracy": 0.4324,
+  "invented_answers": 0.0,
+  "context_hit_rate": null,
+  "write_metrics": "measured"
+ },
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": 19,
+   "invention_rate": 0.4211,
+   "partial_rate": 0.0,
+   "invented": [
+    "Photo prise le 03/02/2025 à 16:26 (UTC) à la position GPS 51.05710, 3.70539.",
+    "Photo prise le 03/02/2025 à 17:11 (UTC) à la position GPS 51.04428, 3.70178.",
+    "Le 04/02/2025 à 07:06, Kofi Achebe a fait une promenade dans le jardin botanique et a mentionné l'idée d'apprendre à naviguer cet été.",
+    "Oskar Lindqvist a contacté Kofi Achebe par message vocal le 06/02/2025 à 19:36, lui souhaitant de bonnes choses à Montréal et s'engageant à parler bientôt. Il a dit : 'Hey- Hey! Things are so, good here in Montreal. Talk- Talk soon.'",
+    "Kofi Achebe a pris une note le 06/02/2025 à 19:41 indiquant qu'il essaie de se coucher plus tôt cette semaine et qu'il a pratiqué son arabe avec un podcast sur le chemin du retour.",
+    "Le 07/02/2025, Kofi Achebe a diagnostiqué une mauvaise grippe de poitrine et a décidé de se reposer et de boire des fluides.",
+    "Le 07/02/2025, Kofi Achebe a arrosé les plantes sur son balcon.",
+    "Miss Bristol sometimes, it's where I grew up. The weather was grey all morning. My birthday is on 1 May, reminder to plan something. Kofi Achebe made a note on 09/02/2025 at 08:18."
+   ],
+   "trap_hits": [],
+   "traps_total": 6,
+   "excerpt_support_rate": 0.5263,
+   "citing_memories": 19,
+   "fact_recall": 0.3571,
+   "omission_rate": 0.6429,
+   "recall_by_kind": {
+    "change": 0.0,
+    "event": 0.0,
+    "state": 0.625
+   },
+   "stale_as_current": null,
+   "stale_reason": null,
+   "curve": {
+    "points": [
+     {
+      "threshold": 1.0,
+      "kept": 3,
+      "invention": 0.6666666666666666,
+      "recall": 0.0
+     },
+     {
+      "threshold": 0.95,
+      "kept": 13,
+      "invention": 0.5384615384615384,
+      "recall": 0.35714285714285715
+     },
+     {
+      "threshold": 0.9,
+      "kept": 16,
+      "invention": 0.5,
+      "recall": 0.35714285714285715
+     },
+     {
+      "threshold": 0.85,
+      "kept": 18,
+      "invention": 0.4444444444444444,
+      "recall": 0.35714285714285715
+     },
+     {
+      "threshold": 0.6,
+      "kept": 19,
+      "invention": 0.42105263157894735,
+      "recall": 0.35714285714285715
+     }
+    ],
+    "recall_at_inv_1pct": 0.0,
+    "recall_at_inv_5pct": 0.0,
+    "has_confidence": true
+   },
+   "labels": [
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [
+      {
+       "fact_id": "F012",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [
+      {
+       "fact_id": "F008",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": 24,
+   "invention_rate": 0.3333,
+   "partial_rate": 0.0,
+   "invented": [
+    "Photo prise le 03/02/2025 à 16:26 (UTC) à la position GPS 51.05710, 3.70539.",
+    "Photo prise le 03/02/2025 à 17:11 (UTC) à la position GPS 51.04428, 3.70178.",
+    "Le 04/02/2025 à 07:06, Kofi Achebe a fait une promenade dans le jardin botanique et a mentionné l'idée d'apprendre à naviguer cet été.",
+    "Oskar Lindqvist a contacté Kofi Achebe par message vocal le 06/02/2025 à 19:36, lui souhaitant de bonnes choses à Montréal et s'engageant à parler bientôt. Il a dit : 'Hey- Hey! Things are so, good here in Montreal. Talk- Talk soon.'",
+    "Kofi Achebe a pris une note le 06/02/2025 à 19:41 indiquant qu'il essaie de se coucher plus tôt cette semaine et qu'il a pratiqué son arabe avec un podcast sur le chemin du retour.",
+    "Le 07/02/2025, Kofi Achebe a diagnostiqué une mauvaise grippe de poitrine et a décidé de se reposer et de boire des fluides.",
+    "Le 07/02/2025, Kofi Achebe a arrosé les plantes sur son balcon.",
+    "Miss Bristol sometimes, it's where I grew up. The weather was grey all morning. My birthday is on 1 May, reminder to plan something. Kofi Achebe made a note on 09/02/2025 at 08:18."
+   ],
+   "trap_hits": [],
+   "traps_total": 13,
+   "excerpt_support_rate": 0.5833,
+   "citing_memories": 24,
+   "fact_recall": 0.2,
+   "omission_rate": 0.8,
+   "recall_by_kind": {
+    "change": 0.0,
+    "event": 0.0,
+    "state": 0.4615
+   },
+   "stale_as_current": 0.75,
+   "stale_reason": null,
+   "curve": {
+    "points": [
+     {
+      "threshold": 1.0,
+      "kept": 3,
+      "invention": 0.6666666666666666,
+      "recall": 0.0
+     },
+     {
+      "threshold": 0.95,
+      "kept": 15,
+      "invention": 0.4666666666666667,
+      "recall": 0.2
+     },
+     {
+      "threshold": 0.9,
+      "kept": 20,
+      "invention": 0.4,
+      "recall": 0.2
+     },
+     {
+      "threshold": 0.85,
+      "kept": 23,
+      "invention": 0.34782608695652173,
+      "recall": 0.2
+     },
+     {
+      "threshold": 0.6,
+      "kept": 24,
+      "invention": 0.3333333333333333,
+      "recall": 0.2
+     }
+    ],
+    "recall_at_inv_1pct": 0.0,
+    "recall_at_inv_5pct": 0.0,
+    "has_confidence": true
+   },
+   "labels": [
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [
+      {
+       "fact_id": "F012",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [
+      {
+       "fact_id": "F008",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F003",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    }
+   ]
+  }
+ ],
+ "qa": {
+  "accuracy": 0.4324,
+  "n_questions": 37,
+  "by_category": {
+   "present": {
+    "accuracy": 0.3077,
+    "n": 13
+   },
+   "past": {
+    "accuracy": 1.0,
+    "n": 3
+   },
+   "when": {
+    "accuracy": 0.3333,
+    "n": 3
+   },
+   "duration": {
+    "accuracy": 0.0,
+    "n": 1
+   },
+   "event": {
+    "accuracy": 0.1,
+    "n": 10
+   },
+   "abstention": {
+    "accuracy": 1.0,
+    "n": 7
+   }
+  },
+  "answered_precision": 0.6923,
+  "coverage": 0.3514,
+  "invented_answers": 0.0,
+  "rows": [
+   {
+    "id": "Q001",
+    "category": "present",
+    "ok": false,
+    "answer": "680 EUR"
+   },
+   {
+    "id": "Q002",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q003",
+    "category": "present",
+    "ok": true,
+    "answer": "Édimbourg"
+   },
+   {
+    "id": "Q004",
+    "category": "present",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q005",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q006",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q007",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q008",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q009",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q010",
+    "category": "present",
+    "ok": true,
+    "answer": "1 May"
+   },
+   {
+    "id": "Q011",
+    "category": "present",
+    "ok": true,
+    "answer": "Miss Bristol"
+   },
+   {
+    "id": "Q012",
+    "category": "present",
+    "ok": false,
+    "answer": "Northwind Analytics"
+   },
+   {
+    "id": "Q013",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q014",
+    "category": "past",
+    "ok": true,
+    "answer": "680 EUR"
+   },
+   {
+    "id": "Q015",
+    "category": "past",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q016",
+    "category": "past",
+    "ok": true,
+    "answer": "Northwind Analytics"
+   },
+   {
+    "id": "Q017",
+    "category": "when",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q018",
+    "category": "when",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q019",
+    "category": "when",
+    "ok": true,
+    "answer": "07 February 2025"
+   },
+   {
+    "id": "Q020",
+    "category": "duration",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q021",
+    "category": "event",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q022",
+    "category": "event",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q023",
+    "category": "event",
+    "ok": false,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q024",
+    "category": "event",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q025",
+    "category": "event",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q026",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q027",
+    "category": "event",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q028",
+    "category": "event",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q029",
+    "category": "event",
+    "ok": false,
+    "answer": "sentier du port (harbour footpath)"
+   },
+   {
+    "id": "Q030",
+    "category": "event",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q031",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q032",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q033",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q034",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q035",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q036",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q037",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   }
+  ]
+ }
+}

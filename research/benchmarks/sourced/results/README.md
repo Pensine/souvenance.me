@@ -49,3 +49,29 @@ of known inventions. The run measures Pensine's code-level evidence gate
 
 These observations come from 49 memories on one seed. They point at what to
 measure next. They are not findings.
+
+## First real run: Pensine with Qwen 3.5 4B (local), 2026-10-28
+
+`pensine-qwen3.5-4b.run.json`: Pensine at commit c0b62a8, backend `openai`
+→ `mlx_lm.server` serving `mlx-community/Qwen3.5-4B-MLX-4bit` (thinking
+off, temperature 0), `PENSINE_VERIFY=modele`. Measured on a Mac with 16 GB:
+69 min, model peak footprint 8.7 GB. Still one seed and a toy sample. The
+QA numbers below are scored in code and do not depend on the judge.
+
+- **Nights**: 8 of 14 consolidated. From 11 February on, every night failed
+  because the model returned invalid JSON, and the backlog grew from 6 to 18
+  deposits. The move and the job change (15 February) never reached memory.
+  A growing backlog plus a small model fails in cascade. This is the most
+  useful finding of the run.
+- **Store**: 24 memories, **written in French** from English deposits
+  (Pensine's prompt is French). The lexical judge cannot read across
+  languages, so write-time metrics wait for the model judge
+  (`*.report.phi4.json`, Phi-4 14B, still running when this was written).
+- **QA** (37 questions, abstention included): accuracy 0.43. 0 invented
+  answers on the 7 abstention questions. Answered precision 0.69 at
+  coverage 0.35. Several answers came back in French ("Édimbourg"): city
+  exonyms are now accepted by the matcher.
+- **Modality**: Qwen kept the hedges it saw ("envisage de s'installer à
+  Turin si l'offre…", "n'a pas [pu] s'inscrire au marathon"). The
+  conditional flaw found in scripted mode (a real quote stated as done)
+  stays a test case of the benchmark. Its fix belongs to the support check.

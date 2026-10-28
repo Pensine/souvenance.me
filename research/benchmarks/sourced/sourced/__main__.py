@@ -25,6 +25,9 @@ from .deposits import build_deposits, deposit_dicts
 from .tasks import derive_questions, evidence_index, question_dicts
 from .world import count_changes, generate_world
 
+AUDIO_LABEL = ("piper-tts 1.8.0, public-domain voices (rhasspy/piper-voices@5041a7a): "
+               "en_US-ljspeech, en_US-kristin, en_US-norman, en_US-john, en_GB-cori (medium)")
+
 
 def cmd_generate(a) -> None:
     out = Path(a.out)
@@ -60,8 +63,7 @@ def cmd_generate(a) -> None:
                    "people": len(w.people), "traps": len(w.traps), "deposits": len(deps),
                    "questions": len(qs)},
         "deposits_by_kind": kinds, "questions_by_category": cats,
-        "audio": "kokoro-82m (mlx-community/Kokoro-82M-bf16)" if a.tts_python and not a.text_only
-                 else "not rendered",
+        "audio": AUDIO_LABEL if a.tts_python and not a.text_only else "not rendered",
         "license": "CC-BY-4.0",
         "truth_sha256": hashlib.sha256((out / "truth.json").read_bytes()).hexdigest(),
         "files_sha256": hashes,

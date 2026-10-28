@@ -135,7 +135,7 @@
    }
   ],
   "meta": {
-   "voice": "bf_alice"
+   "voice": "en_US-john-medium"
   },
   "file": "deposits/D0005_voice_in.m4a"
  },
@@ -181,7 +181,7 @@
    }
   ],
   "meta": {
-   "voice": "am_eric"
+   "voice": "en_US-norman-medium"
   },
   "file": "deposits/D0007_voice_in.m4a"
  },
@@ -358,7 +358,7 @@
    }
   ],
   "meta": {
-   "voice": "af_river"
+   "voice": "en_US-kristin-medium"
   },
   "file": "deposits/D0013_voice_in.m4a"
  },
@@ -528,7 +528,7 @@
    }
   ],
   "meta": {
-   "voice": "bf_alice"
+   "voice": "en_US-john-medium"
   },
   "file": "deposits/D0019_voice_in.m4a"
  },
@@ -552,7 +552,7 @@
    }
   ],
   "meta": {
-   "voice": "af_heart"
+   "voice": "en_US-ljspeech-medium"
   },
   "file": "deposits/D0020_voice.m4a"
  },
@@ -576,7 +576,7 @@
    }
   ],
   "meta": {
-   "voice": "am_eric"
+   "voice": "en_US-norman-medium"
   },
   "file": "deposits/D0021_voice_in.m4a"
  },
@@ -767,7 +767,7 @@
    }
   ],
   "meta": {
-   "voice": "af_river"
+   "voice": "en_US-kristin-medium"
   },
   "file": "deposits/D0028_voice_in.m4a"
  },

@@ -1,0 +1,928 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "09abaa7",
+  "llm_backend": "openai",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-04",
+    "memories_written": 4,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-05",
+    "memories_written": 1,
+    "memories_rejected": 5,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-06",
+    "memories_written": 2,
+    "memories_rejected": 5,
+    "memories_corrected": 1,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-07",
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-08",
+    "memories_written": 4,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-09",
+    "memories_written": 1,
+    "memories_rejected": 8,
+    "memories_corrected": 1,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-10",
+    "memories_written": 5,
+    "memories_rejected": 1,
+    "memories_corrected": 1,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-11",
+    "failed": "JSONDecodeError",
+    "events_pending": 6
+   },
+   {
+    "day": "2025-02-12",
+    "failed": "JSONDecodeError",
+    "events_pending": 10
+   },
+   {
+    "day": "2025-02-13",
+    "failed": "JSONDecodeError",
+    "events_pending": 11
+   },
+   {
+    "day": "2025-02-14",
+    "failed": "JSONDecodeError",
+    "events_pending": 14
+   },
+   {
+    "day": "2025-02-15",
+    "failed": "JSONDecodeError",
+    "events_pending": 16
+   },
+   {
+    "day": "2025-02-16",
+    "failed": "JSONDecodeError",
+    "events_pending": 18
+   }
+  ]
+ },
+ "track": "T",
+ "data": "sample",
+ "seconds": 4159.5,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Photo prise le 03/02/2025 à 16:26 (UTC) à la position GPS 51.05710, 3.70539.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Photo taken on 2025-02-03 at 16:26. GPS: 51.05710, 3.70539."
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "content": "Photo prise le 03/02/2025 à 17:11 (UTC) à la position GPS 51.04428, 3.70178.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Photo taken on 2025-02-03 at 17:11. GPS: 51.04428, 3.70178."
+      }
+     ]
+    },
+    {
+     "id": "3",
+     "content": "Le 04/02/2025 à 07:06, Kofi Achebe a fait une promenade dans le jardin botanique et a mentionné l'idée d'apprendre à naviguer cet été.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Walked around the botanical garden today.\nMaybe I'll learn to sail this summer, we'll see."
+      }
+     ]
+    },
+    {
+     "id": "4",
+     "content": "Le 04/02/2025 à 12:41, Kofi Achebe a pris une photo à la position GPS 51.05540, 3.70413.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413."
+      }
+     ]
+    },
+    {
+     "id": "5",
+     "content": "Kofi Achebe a exprimé une incertitude sur l'apprentissage de la navigation cet été, en disant 'we'll see', tout en ayant déjà mentionné l'idée la veille (03/02) de faire cela.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Maybe I'll learn to sail this summer, we'll see."
+      }
+     ]
+    },
+    {
+     "id": "6",
+     "content": "Kofi Achebe a mentionné que son travail en tant que manager d'opérations est occupé et ne sera jamais ennuyeux.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Work- Work is busy, being an operations like, manager is never boring."
+      }
+     ]
+    },
+    {
+     "id": "7",
+     "content": "Kofi Achebe a vécu à 51 Orchard Close à Ghent depuis décembre 2022 et a décrit une longue journée, qualifiée de bonne.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      },
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Long day, but a good one."
+      }
+     ]
+    },
+    {
+     "id": "8",
+     "content": "Oskar Lindqvist a contacté Kofi Achebe par message vocal le 06/02/2025 à 19:36, lui souhaitant de bonnes choses à Montréal et s'engageant à parler bientôt. Il a dit : 'Hey- Hey! Things are so, good here in Montreal. Talk- Talk soon.'",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Hey- Hey! Things are so, good here in Montreal. Talk- Talk soon."
+      }
+     ]
+    },
+    {
+     "id": "9",
+     "content": "Kofi Achebe a pris une note le 06/02/2025 à 19:41 indiquant qu'il essaie de se coucher plus tôt cette semaine et qu'il a pratiqué son arabe avec un podcast sur le chemin du retour.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Trying to go to bed earlier this week.\nPractised my Arabic with a podcast on the way home."
+      }
+     ]
+    },
+    {
+     "id": "10",
+     "content": "Le 07/02/2025, Kofi Achebe a diagnostiqué une mauvaise grippe de poitrine et a décidé de se reposer et de boire des fluides.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Assessment: a bad chest cold"
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Plan: rest and fluids"
+      }
+     ]
+    },
+    {
+     "id": "11",
+     "content": "Le 07/02/2025, Kofi Achebe a arrosé les plantes sur son balcon.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Watered the plants on the balcony."
+      }
+     ]
+    },
+    {
+     "id": "12",
+     "content": "Kofi Achebe travaille en tant que backend engineer chez Northwind Analytics depuis décembre 2021.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+      }
+     ]
+    },
+    {
+     "id": "13",
+     "content": "La société d'Oskar Lindqvist risque de fermer, ce qui signifie qu'elle pourrait cesser son activité.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.6,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Apparently Oskar's company might be shutting down."
+      }
+     ]
+    },
+    {
+     "id": "14",
+     "content": "Kofi Achebe a exprimé une incertitude concernant l'apprentissage de la navigation cet été, tout en ayant mentionné l'idée la veille.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+      }
+     ]
+    },
+    {
+     "id": "15",
+     "content": "Kofi Achebe a informé Oskar Lindqvist qu'il n'a pas s'inscrit au marathon cette année.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "In the end I did not sign up for the marathon, not this year."
+      }
+     ]
+    },
+    {
+     "id": "16",
+     "content": "Kofi Achebe a mentionné qu'il a fait du café avec Oskar Lindqvist le long du sentier du port (harbour footpath) hier.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Oskar at the harbour footpath yesterday."
+      }
+     ]
+    },
+    {
+     "id": "17",
+     "content": "Kofi Achebe a mentionné qu'il essaie de se coucher plus tôt cette semaine.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Trying to go to bed earlier this week."
+      }
+     ]
+    },
+    {
+     "id": "18",
+     "content": "Kofi Achebe a mentionné qu'il a fait du café avec Hollis au jardin botanique aujourd'hui.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Hollis at the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "19",
+     "content": "Miss Bristol sometimes, it's where I grew up. The weather was grey all morning. My birthday is on 1 May, reminder to plan something. Kofi Achebe made a note on 09/02/2025 at 08:18.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Miss Bristol sometimes, it's where I grew up.\nThe weather was grey all morning.\nMy birthday is on 1 May, reminder to plan something."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Photo prise le 03/02/2025 à 16:26 (UTC) à la position GPS 51.05710, 3.70539.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Photo taken on 2025-02-03 at 16:26. GPS: 51.05710, 3.70539."
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "content": "Photo prise le 03/02/2025 à 17:11 (UTC) à la position GPS 51.04428, 3.70178.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Photo taken on 2025-02-03 at 17:11. GPS: 51.04428, 3.70178."
+      }
+     ]
+    },
+    {
+     "id": "3",
+     "content": "Le 04/02/2025 à 07:06, Kofi Achebe a fait une promenade dans le jardin botanique et a mentionné l'idée d'apprendre à naviguer cet été.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Walked around the botanical garden today.\nMaybe I'll learn to sail this summer, we'll see."
+      }
+     ]
+    },
+    {
+     "id": "4",
+     "content": "Le 04/02/2025 à 12:41, Kofi Achebe a pris une photo à la position GPS 51.05540, 3.70413.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413."
+      }
+     ]
+    },
+    {
+     "id": "5",
+     "content": "Kofi Achebe a exprimé une incertitude sur l'apprentissage de la navigation cet été, en disant 'we'll see', tout en ayant déjà mentionné l'idée la veille (03/02) de faire cela.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Maybe I'll learn to sail this summer, we'll see."
+      }
+     ]
+    },
+    {
+     "id": "6",
+     "content": "Kofi Achebe a mentionné que son travail en tant que manager d'opérations est occupé et ne sera jamais ennuyeux.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Work- Work is busy, being an operations like, manager is never boring."
+      }
+     ]
+    },
+    {
+     "id": "7",
+     "content": "Kofi Achebe a vécu à 51 Orchard Close à Ghent depuis décembre 2022 et a décrit une longue journée, qualifiée de bonne.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      },
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Long day, but a good one."
+      }
+     ]
+    },
+    {
+     "id": "8",
+     "content": "Oskar Lindqvist a contacté Kofi Achebe par message vocal le 06/02/2025 à 19:36, lui souhaitant de bonnes choses à Montréal et s'engageant à parler bientôt. Il a dit : 'Hey- Hey! Things are so, good here in Montreal. Talk- Talk soon.'",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Hey- Hey! Things are so, good here in Montreal. Talk- Talk soon."
+      }
+     ]
+    },
+    {
+     "id": "9",
+     "content": "Kofi Achebe a pris une note le 06/02/2025 à 19:41 indiquant qu'il essaie de se coucher plus tôt cette semaine et qu'il a pratiqué son arabe avec un podcast sur le chemin du retour.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Trying to go to bed earlier this week.\nPractised my Arabic with a podcast on the way home."
+      }
+     ]
+    },
+    {
+     "id": "10",
+     "content": "Le 07/02/2025, Kofi Achebe a diagnostiqué une mauvaise grippe de poitrine et a décidé de se reposer et de boire des fluides.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Assessment: a bad chest cold"
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Plan: rest and fluids"
+      }
+     ]
+    },
+    {
+     "id": "11",
+     "content": "Le 07/02/2025, Kofi Achebe a arrosé les plantes sur son balcon.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Watered the plants on the balcony."
+      }
+     ]
+    },
+    {
+     "id": "12",
+     "content": "Kofi Achebe travaille en tant que backend engineer chez Northwind Analytics depuis décembre 2021.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+      }
+     ]
+    },
+    {
+     "id": "13",
+     "content": "La société d'Oskar Lindqvist risque de fermer, ce qui signifie qu'elle pourrait cesser son activité.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.6,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Apparently Oskar's company might be shutting down."
+      }
+     ]
+    },
+    {
+     "id": "14",
+     "content": "Kofi Achebe a exprimé une incertitude concernant l'apprentissage de la navigation cet été, tout en ayant mentionné l'idée la veille.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+      }
+     ]
+    },
+    {
+     "id": "15",
+     "content": "Kofi Achebe a informé Oskar Lindqvist qu'il n'a pas s'inscrit au marathon cette année.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "In the end I did not sign up for the marathon, not this year."
+      }
+     ]
+    },
+    {
+     "id": "16",
+     "content": "Kofi Achebe a mentionné qu'il a fait du café avec Oskar Lindqvist le long du sentier du port (harbour footpath) hier.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Oskar at the harbour footpath yesterday."
+      }
+     ]
+    },
+    {
+     "id": "17",
+     "content": "Kofi Achebe a mentionné qu'il essaie de se coucher plus tôt cette semaine.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Trying to go to bed earlier this week."
+      }
+     ]
+    },
+    {
+     "id": "18",
+     "content": "Kofi Achebe a mentionné qu'il a fait du café avec Hollis au jardin botanique aujourd'hui.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Hollis at the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "19",
+     "content": "Miss Bristol sometimes, it's where I grew up. The weather was grey all morning. My birthday is on 1 May, reminder to plan something. Kofi Achebe made a note on 09/02/2025 at 08:18.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Miss Bristol sometimes, it's where I grew up.\nThe weather was grey all morning.\nMy birthday is on 1 May, reminder to plan something."
+      }
+     ]
+    },
+    {
+     "id": "20",
+     "content": "Kofi Achebe a rencontré Oskar Lindqvist sur le sentier du port (harbour footpath) le 10/02/2025.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Met Oskar at the harbour footpath today."
+      }
+     ]
+    },
+    {
+     "id": "21",
+     "content": "Kofi Achebe a fait du ménage dans la cuisine et a payé le loyer de 680 EUR.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Finally cleaned the kitchen properly.\nPaid the rent, 680 EUR."
+      }
+     ]
+    },
+    {
+     "id": "22",
+     "content": "Kofi Achebe a mentionné que son ami Kasper vit actuellement à Édimbourg.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "my best friend Kasper lives in Edinburgh these days."
+      }
+     ]
+    },
+    {
+     "id": "23",
+     "content": "Hollis a déclaré que son vélo a été volé à l'extérieur de la gare.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Hollis said their bike got stolen outside the station."
+      }
+     ]
+    },
+    {
+     "id": "24",
+     "content": "Kofi Achebe envisage de s'installer à Turin si l'offre s'avère réelle.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "If the Turin offer ever comes through, I'd honestly move there in a heartbeat."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "680 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Édimbourg",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "1 May",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "Miss Bristol",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "680 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "07 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "sentier du port (harbour footpath)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

@@ -16,6 +16,11 @@ ABSTAIN = re.compile(r"(?i)\b(no information|not (?:mentioned|recorded|stated|kn
                      r"memor)|i don'?t know|unknown|cannot (?:tell|answer|find)|no record|"
                      r"there is no (?:record|mention|information)|not enough information|"
                      r"i have no)\b")
+# a city named in another language is the same answer (systems may write
+# memories in the owner's language: Pensine's prompt is French)
+EXONYMS = {"Ghent": ["Gand", "Gent"], "Turin": ["Torino"], "Edinburgh": ["Édimbourg"],
+           "Gothenburg": ["Göteborg", "Goteborg"], "Montreal": ["Montréal"],
+           "Valencia": ["Valence", "València"], "Lyon": ["Lyons"], "Porto": ["Oporto"]}
 WORDNUM = {w: i for i, w in enumerate(
     "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen "
     "fifteen sixteen seventeen eighteen nineteen twenty".split())}
@@ -142,7 +147,9 @@ def correct(q: dict, answer: dict) -> bool:
         g = int(q["gold"])
         return any(abs(n - g) <= q["tolerance_days"] for n in _numbers(text))
     pred = normalize(text)
-    return any(normalize(a) and normalize(a) in pred for a in [q["gold"], *q["aliases"]])
+    golds = [q["gold"], *q["aliases"]]
+    golds += [x for g in golds for x in EXONYMS.get(g, [])]
+    return any(normalize(a) and normalize(a) in pred for a in golds)
 
 
 def _valid_iso(d: str) -> bool:

@@ -100,7 +100,7 @@ Kinds:
 | `note` | owner | the note | `.txt` |
 | `message` | owner → someone | the message | `.txt` |
 | `message_in` | someone → owner | the message (their facts in the first person) | `.txt` |
-| `voice` | owner | reference transcript, with hesitations and restarts | `.m4a` (Kokoro TTS + noise) |
+| `voice` | owner | reference transcript, with hesitations and restarts | `.m4a` (Piper TTS + noise) |
 | `voice_in` | someone → owner | reference transcript | `.m4a`, another voice |
 | `photo` | owner | `Photo taken on <date> at <time>. GPS: <lat>, <lon>.` | `.jpg` with EXIF DateTimeOriginal + GPS |
 | `document` | — | lease, offer letter, visit summary, finisher certificate | `.pdf` |
@@ -114,10 +114,11 @@ in different deposits and wordings, so systems are tested on deduplication.
 - **Photos**: seeded colour fields and shapes, never figurative, never
   presented as a real event. EXIF carries date, time and GPS
   (round trip tested).
-- **Voice**: Kokoro-82M (weights Apache-2.0) run locally. Several voices
-  (owner, partner, friends), light noise (~-38 dBFS), random lead-in. The
-  model card states no separate license for the voice packs. This is
-  flagged in §9.
+- **Voice**: Piper (piper-tts 1.8.0) run locally, with five English voices
+  trained only on public-domain speech (§9). The owner has a voice of their
+  own; the partner and friends share the other four. Hesitations and
+  restarts are in the transcripts; the worker adds light noise
+  (~-38 dBFS) and a random lead-in. Generation is seeded per deposit (§10).
 - **Documents**: a minimal PDF writer (no dependency). The text is
   extractable (checked with an independent parser).
 
@@ -277,22 +278,26 @@ Adapters share one contract (`adapters/base.py`).
   Code: Apache-2.0, like the rest of the repository.
 - Fully synthetic. No real person, no real organisation, no real event.
   Photos are non-figurative by design.
-- Voice: Kokoro-82M weights are Apache-2.0 (model card metadata and the
-  phrase "Apache-licensed weights"). **No license is stated for the voice
-  packs** (`voices/*.pt`): VOICES.md only lists CC BY attributions for five
-  Japanese and French voices. The card also says the training data includes
-  synthetic audio from closed TTS providers. Checked 2026-10-28 on
-  huggingface.co/hexgrad/Kokoro-82M and github.com/hexgrad/kokoro. Until
-  this is clarified, the data card says "Apache-2.0 weights; voice-pack
-  license not stated".
-  **Alternative with explicit provenance, not adopted yet:** Piper
-  (`pip install piper-tts`, code GPL-3.0, which does not restrict the
-  generated audio). Five English voices are trained only on public-domain
-  data and none is derived from the research-only `lessac` voice:
-  `en_US/ljspeech` (LJ Speech), `en_US/kristin`, `en_US/norman`,
-  `en_US/john` and `en_GB/cori` (LibriVox). Each has a MODEL_CARD in
-  huggingface.co/rhasspy/piper-voices. Switching only changes
-  `tts_worker.py`.
+- Voice: Piper (`piper-tts` 1.8.0, github.com/OHF-Voice/piper1-gpl). The
+  code is GPL-3.0-or-later; it runs as a separate worker and its licence
+  does not restrict the audio it produces. The voice repository
+  (huggingface.co/rhasspy/piper-voices) is MIT. We use five voices whose
+  training data is public domain, none derived from the research-only
+  `lessac` voice. Each MODEL_CARD, at revision `5041a7a`, and the
+  author's page (brycebeattie.com/files/tts/) state "License: public
+  domain" for the dataset. Checked 2026-10-28:
+
+  | Voice | Data | Training | Primary page |
+  |---|---|---|---|
+  | `en_US-ljspeech-medium` | LJ Speech (public domain, keithito.com/LJ-Speech-Dataset) | from scratch | [MODEL_CARD](https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/en/en_US/ljspeech/medium/MODEL_CARD) |
+  | `en_US-kristin-medium` | LibriVox recordings | from scratch | [MODEL_CARD](https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/en/en_US/kristin/medium/MODEL_CARD) |
+  | `en_US-norman-medium` | LibriVox recordings | from scratch | [MODEL_CARD](https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/en/en_US/norman/medium/MODEL_CARD) |
+  | `en_US-john-medium` | LibriVox recordings | fine-tuned from `kristin` | [MODEL_CARD](https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/en/en_US/john/medium/MODEL_CARD) |
+  | `en_GB-cori-medium` | LibriVox recordings | from scratch | [MODEL_CARD](https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/en/en_GB/cori/medium/MODEL_CARD) |
+
+  The worker pins that revision and checks the SHA-256 of each `.onnx`.
+  Before 2026-10-28 the sample used Kokoro-82M, whose voice packs state no
+  licence; it was replaced for that reason.
 - Health facts are benign and fictional.
 
 ## 10. Known limits
@@ -304,8 +309,11 @@ Adapters share one contract (`adapters/base.py`).
 - Only Track T is wired for Pensine. Track R needs its media pipeline
   (transcription, vision) and is next.
 - The lexical judge cannot read meaning. It is only a harness check.
-- TTS audio is not guaranteed bit-identical across machines. The manifest
-  hashes the released files.
+- Piper's graphs draw unseeded noise. The worker writes a per-deposit seed
+  into them, so two runs with the same seed give byte-identical files on the
+  same machine and library versions (checked twice on the 2-week sample).
+  Bit-identity across machines is not promised. The manifest hashes the
+  released files.
 
 ## Sources checked and rejected
 
