@@ -1,35 +1,35 @@
-# Clauses testamentaires — à décider à froid (phase 0)
+# Testamentary clauses — to be decided with a cool head (phase 0)
 
-*Statut : BROUILLON à compléter par le propriétaire de la mémoire. Ce document ne vaut que ratifié
-(commit signé d'un message « ratifié le … »). Décidé maintenant, pas dans
-l'urgence — cf. §8 du document fondateur.*
+*Status: DRAFT, to be completed by the owner of the memory. This document only takes effect once
+ratified (a signed commit whose message reads "ratified on …"). Decided now, not in a
+moment of urgency — see §8 of the founding document.*
 
-## 1. Accès de mon vivant
-- Qui, en dehors de moi, peut accéder à quoi : `_______________`
-  *(défaut proposé : personne — la mémoire est à la première personne)*
-- Accès d'urgence (incapacité) : qui détient la clé, sous quelle condition :
+## 1. Access during my lifetime
+- Who, other than me, may access what: `_______________`
+  *(proposed default: nobody — the memory is written in the first person)*
+- Emergency access (incapacity): who holds the key, and under what condition:
   `_______________`
 
-## 2. À ma mort — trois options, en choisir une
-- [ ] **Extinction** : destruction des clés de chiffrement ; l'archive devient
-      illisible. Simple, définitif.
-- [ ] **Mémorial en lecture seule** : accès accordé à `_______________`
-      (conjoint ? enfants à leur majorité ?), périmètre : `_______________`
-      (tout ? Pensine seule ? persona sans les events bruts ?).
-      Le jumeau ne parle jamais « en tant que moi » — disclosure systématique.
-- [ ] **Legs différé** : scellé pendant `____` ans, puis mémorial.
+## 2. At my death — three options, pick one
+- [ ] **Extinction**: the encryption keys are destroyed; the archive becomes
+      unreadable. Simple and final.
+- [ ] **Read-only memorial**: access granted to `_______________`
+      (spouse? children once they come of age?), scope: `_______________`
+      (everything? the Pensine alone? the persona without the raw events?).
+      The twin never speaks "as me" — disclosure every time.
+- [ ] **Deferred bequest**: sealed for `____` years, then a memorial.
 
-## 3. Modalités techniques
-- Détenteur(s) de la clé de secours : `_______________`
-- Support : `_______________` (coffre physique, gestionnaire de secrets, notaire)
-- Délai avant exécution de la clause (garde-fou contre les faux positifs) :
-  `____` jours
-- Export : l'archive reste en formats éternels (SQL, markdown, fichiers
-  bruts) — lisible dans 30 ans sans le logiciel.
+## 3. Technical arrangements
+- Holder(s) of the recovery key: `_______________`
+- Medium: `_______________` (physical safe, secrets manager, notary)
+- Delay before the clause is executed (a safeguard against false positives):
+  `____` days
+- Export: the archive stays in durable formats (SQL, markdown, raw
+  files) — readable in 30 years without the software.
 
-## 4. Interdits perpétuels (quel que soit le choix)
-- Aucun tiers commercial ne reçoit jamais la mémoire.
-- Aucune simulation conversationnelle de moi après ma mort sans mention
-  explicite ici : autorisée ? `oui / non : ______`
-- La sphère des tiers (règle des tiers, §8) reste protégée après moi comme
-  avant.
+## 4. Perpetual prohibitions (whatever the choice)
+- No commercial third party ever receives the memory.
+- No conversational simulation of me after my death unless explicitly
+  stated here: allowed? `yes / no: ______`
+- The sphere of third parties (third-party rule, §8) stays protected after me,
+  just as before.

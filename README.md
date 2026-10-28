@@ -1,233 +1,183 @@
-<div align="center">
+# Souvenance
 
-# Pensine
+> **A personal memory that invents nothing, and proves it.**
 
-**A living memory you own — queried through your AI.**
+Souvenance is an independent, open-source research lab on AI memory, and the engine it uses as a
+test bed. AI assistants now write memories about their users on their own; some of those memories
+rest on nothing the user said. This project builds and measures the opposite: a personal memory in
+which **every entry quotes the words it came from, checked in code before it is written**, and in
+which nothing is silently overwritten.
 
-Your conversations, voice memos, photos and daily notes become a consolidated,
-searchable, *portable* memory — hosted on your VPS, stored in formats that will
-still open in 30 years, powered by the AI subscription you already pay for.
-
-[Quick start](#quick-start) · [How it works](#how-it-works) ·
-[Principles](#principles-enforced-in-code-not-in-a-pdf) · [FAQ](#faq)
-
-<!-- badges: CI · license · demo GIF here -->
-<!-- ![demo](docs/assets/demo.gif) -->
-
-</div>
-
----
+[Website](https://souvenance.me) · [Research](https://souvenance.me/research) ·
+[SOURCED benchmark (in preparation)](https://souvenance.me/benchmark) · [Related work](https://souvenance.me/related-work) ·
+[Lab notes](https://souvenance.me/lab)
 
 ## Why
 
-Every AI lab is building memory for you. None of them will ever make it
-portable — **your accumulated context is their lock-in**. A 2026 study of
-ChatGPT memories found 96% were created unilaterally by the system, half of
-them containing psychological insights: *a profile of you, written without
-you, owned by someone else.*
+Every AI lab is building a memory of you, and none of them will ever make it portable: **your
+accumulated context is their lock-in**. A 2026 study of ChatGPT memories found 96% were created
+unilaterally by the system, and half contained psychological inferences. *A profile of you, written
+without you, held by someone else.*
 
-Meanwhile, frontier intelligence is becoming a commodity. What compounds in
-value is your context: what you decided, what you believed, how you changed.
-**Compute is rented. Context should be owned.**
+Meanwhile frontier intelligence is becoming a commodity. What gains value is your context: what you
+decided, what you believed, how you changed. **Compute can be rented; context can be owned.** Souvenance
+takes the opposite position: an open, self-hosted memory engine in which the AI is a replaceable
+adapter and the memory is yours — auditable, exportable, governed by you.
 
-Pensine is the counter-position: an open, self-hosted memory engine where
-the AI is a replaceable adapter and the memory is yours — auditable,
-exportable, governed by you.
+## What is new, and what is not
 
-## What you get
+| | |
+|---|---|
+| **Claimed** (to be measured publicly) | A write-time **admission cascade** — excerpt verified in code, then numbers and proper nouns, then a model re-read of flagged cases only — with the invention rate it lets through measured and published · a **fidelity harness** · **autobiographical lived time** (life landmarks and chapters as coordinates, computed in code) · **consent governance** (persona never self-ratified, too-fast confirmations refused, visible log of agent reads, no outbound channel) |
+| **Prior art**, implemented with credit | Append-only log with memories as projections (event sourcing) · bi-temporal graph with invalidation ([Zep / Graphiti, arXiv 2501.13956](https://arxiv.org/abs/2501.13956)) · background consolidation (OpenClaw dreaming; [sleep-time compute, arXiv 2504.13171](https://arxiv.org/abs/2504.13171)) · Hebbian links ([HeLa-Mem, arXiv 2604.16839](https://arxiv.org/abs/2604.16839)) · forgetting curves ([MemoryBank, arXiv 2305.10250](https://arxiv.org/abs/2305.10250)) |
 
-- **Capture without effort** — an iOS share-sheet shortcut: two taps and that
-  WhatsApp voice note, photo or PDF is archived forever, transcribed
-  word-aligned overnight. A 2-minute daily voice log. Perceptors that quietly
-  pull your personal calendar. *Memory is never a chore — it is the byproduct
-  of tools you use because they are useful.*
-- **Ask your past anything** — from any MCP client, web, mobile or voice:
-  *"What did I think about X last year?"* Hybrid recall: vectors + a temporal
-  knowledge graph + computed time framing ("14 months ago, two summers back").
-- **Relive, not just remember** — `recall` returns the summary *and* a
-  temporary signed link to the original audio: one tap, and you hear your own
-  voice from that morning, doubts included. A timeline web app to browse it all.
-- **A memory that sleeps** — nightly consolidation (extraction, importance
-  scoring, contradiction detection, active forgetting) and weekly REM-style
-  recombination across life domains. Built on an **append-only event log**:
-  a better consolidation engine in 2028 can re-read your whole life.
-- **Memories with texture, not just text** — each carries an emotional charge
-  on two axes, because grief and anger are both negative and nothing alike.
-  Charge slows forgetting, as it does in people: a vivid memory keeps 69% of
-  its weight after a year untouched, a flat one 16%. Dispositions outlast
-  episodes. Relationships carry a state that *moves* — closeness and warmth,
-  stored as a dated series, so "we drifted apart" is a query, not a feeling.
-- **Recall that wanders, like yours** — memories link to each other: same
-  moment, or simply retrieved together often enough to wire up. Ask about one
-  thing and the things attached to it come back, even when they share no
-  words with your question. Links that go unused fade — otherwise everything
-  ends up connected to everything, and *associated* stops meaning anything.
-  What repeats gets promoted: several old episodes saying the same thing
-  become one durable piece of knowledge, still tied to the episodes it came
-  from.
-- **The assistant may notice — you decide** — it can propose to remember
-  something a conversation surfaced, but a proposal is not a memory. Nothing
-  reaches the log without your explicit yes, and a confirmation arriving too
-  fast for a human to have answered is rejected outright. Every event records
-  whether *you* filed it or the assistant proposed it. So you can ask your own
-  system a question no commercial assistant will answer: **what fraction of my
-  memory did you decide on your own?** A 2026 study had to go measure that from
-  the outside, on 80 strangers, and found 96% for ChatGPT. Here it is one SQL
-  query, and anyone running the engine can reproduce it on theirs.
-- **A narrative identity you author** — the persona compiler drafts your story
-  (chapters, themes, owned tensions), every claim weighted and sourced. It
-  never takes effect until *you* ratify it. Versioned in Git.
-- **A mirror, never an oracle** — on demand, and only on demand: *"What do my
-  last six months say about my priorities?"* The system reports; it never
-  judges, never prescribes, and always hands the conclusion back to you.
-- **Measured, not assumed** — a fidelity harness quizzes your twin blind
-  against its own memory and scores it by life domain. Trust is graduated by
-  measurement, never by time.
+SOURCED, the benchmark in preparation ([`research/benchmarks/sourced`](research/benchmarks/sourced)), extends [HaluMem (arXiv 2511.03506)](https://arxiv.org/abs/2511.03506);
+it is not the first benchmark of hallucinations in memory systems.
 
-## How it works
+## Results so far
+
+| Question | Finding | Status |
+|---|---|---|
+| Invention rate of the production model at write time | 0 / 42 memories rated invented | Pilot: 5 nights of the author's private data, one LLM judge — a signal, not a result ([notes](research/evals/frugal/RESULTATS.md)) |
+| Same, small open models (3–9B) on a laptop | 5–20% | Same pilot |
+| Time framing computed in code vs raw timestamps (LoCoMo) | — | Pre-registered, not run ([protocol](research/papers/002-lived-time/README.md)) |
+| Integrity of memory systems on public data | — | SOURCED benchmark in preparation |
+
+No other number exists yet. When one does, it is published with its protocol, sample size and code.
+
+## Papers
+
+- **001 — Own the substrate** (essay, draft v0.2): a personal memory should be an append-only log
+  owned by its subject, with every AI layer a recomputable projection. [Paper](research/papers/001-substrate-thesis/paper.md) ·
+  [verified and rejected sources](research/papers/001-substrate-thesis/references.bib)
+- **002 — Lived time** (pre-registered protocol): an ablation on LoCoMo with five conditions, including
+  a token-matched placebo, across model sizes. [Protocol](research/papers/002-lived-time/README.md)
+
+Standards: [research/README.md](research/README.md). To cite: GitHub's "Cite this repository" button
+([CITATION.cff](CITATION.cff)).
+
+## Run the engine
+
+Docker on a Mac, a Linux PC or a NAS. Any AI backend: a CLI, an API key, or a local open model behind an
+OpenAI-compatible endpoint (LM Studio, Ollama, mlx, vLLM).
+
+```bash
+git clone https://github.com/Pensine/souvenance.me souvenance && cd souvenance
+python3 scripts/setup.py        # choose the AI backend, generate secrets
+docker compose up -d --build
+```
+
+Step by step, tunnel and troubleshooting: [docs/installer-chez-soi.md](docs/installer-chez-soi.md).
+On a Debian or Ubuntu server without Docker: `./install.sh --with-local`, guide in
+[docs/kit-installation.md](docs/kit-installation.md). Then add the MCP server as a connector in any
+assistant that supports remote MCP.
+
+Running cost: **about zero** beyond your server — the AI layer uses access you already have (a
+subscription CLI or an API key, swappable at any time), or runs entirely locally.
+
+A turnkey install kit, paid once, exists for those who would rather not set it up by hand; it supports
+the lab and contains nothing that is not in this repository.
+
+## What the engine does
+
+- **Capture without effort** — an iOS share-sheet shortcut: two taps and a voice note, a photo or a
+  PDF is archived for good and transcribed word for word overnight. A two-minute spoken daily log.
+  Collectors that quietly pull in your personal calendar. *Memory is never a chore; it is the
+  by-product of useful tools.*
+- **Query your past** — from any MCP client, on the web, on mobile or by voice: *"What did I think of X
+  last year?"* Hybrid retrieval: vectors, a temporal knowledge graph and a time frame computed in code
+  ("14 months ago, two summers back").
+- **Relive, not only remember** — `recall` returns the synthesis *and* a temporary signed link to the
+  original audio: one tap and you hear your own voice from that morning, doubts included. A timeline
+  web app to browse everything.
+- **A memory that sleeps** — nightly consolidation (extraction, importance scoring, contradiction
+  detection, active forgetting) and a weekly REM-style recombination across areas of life, on top of
+  an **append-only event log**: a better engine in 2028 can re-read your whole life.
+- **A narrative identity you author** — the persona compiler drafts your story (chapters, themes,
+  tensions you accept), each claim weighed and sourced. Nothing takes effect until you ratify it.
+  Versioned in Git.
+- **A mirror, never an oracle** — on request, and only on request: *"What do my last six months say
+  about my priorities?"* The system reports; it does not judge, prescribes nothing, and leaves the
+  conclusion to you.
+- **Measured, not assumed** — a fidelity harness questions your twin blind against its own memory and
+  scores it per area of life. Trust is earned by measurement, never by elapsed time.
 
 ```mermaid
 flowchart LR
     subgraph capture [Capture]
         A[iOS shortcut<br>voice / photo / PDF] --> E
         B[Assistant conversations<br>daily log, MCP] --> E
-        C[Perceptors<br>calendar, mail opt-in] --> E
-        D[Assistant proposals] -.your explicit yes.-> E
+        C[Collectors<br>calendar, opt-in mail] --> E
     end
-    E[(Append-only event log<br>each event records its origin:<br>filed by you, or proposed)] --> N[Nightly consolidation<br>your AI backend]
-    N --> M[(Memories<br>pgvector · emotional charge<br>links between memories)]
-    N --> G[(Temporal knowledge graph<br>bi-temporal, edges closed<br>never deleted · relationship state)]
-    N --> P[Persona proposals<br>you ratify]
-    M -->|what repeats| M
+    E[(Event log<br>append-only)] --> N[Nightly consolidation<br>headless LLM]
+    N --> M[(Memories<br>pgvector)]
+    N --> G[(Temporal graph<br>bi-temporal, edges closed<br>never erased)]
+    N --> P[Persona proposals<br>ratified by you]
     M & G --> R[MCP server: recall · mirror · curate]
-    R --> AS[Your assistant<br>web / mobile / voice]
-    E -.originals kept forever.-> S[(Media store<br>+ signed replay links)]
+    R --> AI[Your AI assistant<br>web / mobile / voice]
+    E -.originals kept for life.-> S[(Media storage<br>+ signed links back)]
 ```
 
-One PostgreSQL database (pgvector included). No graph database, no vector
-database, no queue — boring, proven, durable for 20 years.
+One PostgreSQL database (pgvector included). No graph database, no vector database, no queue — boring,
+proven, built to last 20 years.
 
-## Principles, enforced in code (not in a PDF)
+## Architecture
 
-| Principle | Enforcement |
+| Path | Role |
 |---|---|
-| **The silence rule** — it never invites you back | No notification channel exists; the constitutional governor rejects any outbound action |
-| **Append-only past** | SQL trigger: `UPDATE`/`DELETE` on the event log are impossible |
-| **Originals forever** | Media files are never modified; transcripts are just catalog cards |
-| **Exclusion perimeter** | `constitution.yaml` filters ingestion; every rejection is audit-logged |
-| **Third-party rule** | Others' private conversations are synthesized, never archived verbatim; channel metadata beats voice-ID |
-| **You author your identity** | Persona proposals are never auto-ratified |
-| **Pause, never loss** | If the AI layer breaks, events keep accumulating; consolidation catches up on recovery |
+| `db/schema.sql` | Append-only event log (SQL trigger), memories (pgvector), bi-temporal graph, audit |
+| `pensine/evidence.py` | Admission cascade: excerpt, details, re-read |
+| `pensine/temporal.py` | Time framing computed in code: durations, landmarks, chapters, plans |
+| `pensine/mcp_server.py` | MCP server: recall, timeline, daily log, proposals the user confirms |
+| `pensine/api.py` | Phone deposits (`POST /deposit`), signed media links |
+| `pensine/llm.py` | AI adapter: CLI, API, OpenAI-compatible (local or remote), Ollama, fake (tests) |
+| `pensine/governor.py`, `constitution.yaml` | Executable constitution: exclusions, outbound actions refused, audit |
+| `consolidation/nightly.py`, `rem_weekly.py` | Nightly consolidation and weekly recombination; persona proposals never self-ratified |
+| `research/` | Papers, protocols, evaluation harnesses |
+| `marketing/pages/`, `scripts/build_site_pages.py` | Source of souvenance.me |
 
-## Quick start
+## Rules enforced in code
 
-Requirements: a Linux VPS (2 vCPU / 4 GB runs the core; size up for the
-local bricks you enable), Docker, Python ≥ 3.11, a public HTTPS URL (a domain,
-a free dynamic subdomain, or a Tailscale Funnel — the MCP connector requires
-HTTPS), and an AI backend
-of your choice: Claude CLI, an API key, or any open-source model via Ollama.
+- **Append-only**: `events` accepts neither `UPDATE` nor `DELETE`.
+- **No memory without an excerpt** found in the source.
+- **Originals kept as received**; transcripts and descriptions are catalogue entries.
+- **The persona is never self-ratified.**
+- **Silence**: the system never invites you back — no notification channel exists, and the governor
+  refuses every outbound action.
+- **Exclusion perimeter**: `constitution.yaml` filters ingestion; every refusal is audited.
+- **Third-party rule**: other people's intimate conversations are summarised, never kept verbatim; the
+  channel's sender takes precedence over a voiceprint.
+- **Pause, never loss**: if the AI layer fails, events accumulate and consolidation catches up.
 
-```bash
-git clone https://github.com/YOUR_ORG/pensine /opt/pensine && cd /opt/pensine
-./install.sh --with-local
-```
+## How it differs from…
 
-The installer generates secrets, starts Postgres, runs migrations and tests,
-and installs systemd services. From there you are in known self-hosting
-territory: wire your reverse proxy (`deploy/Caddyfile.example`), point your
-MCP client at `/mcp`, configure `.env`, build the iOS shortcuts against
-`/deposit` and `/log`. The full illustrated walkthrough is public:
-[docs/kit-installation.md](docs/kit-installation.md) — written to be followed
-by a human or by your AI. Paste this repo into your coding agent, say
-*"install it"*, answer a few questions.
-
-## The turnkey kit ($69, one-time)
-
-Everything is public — the engine, the tests, the full install walkthrough,
-the iOS shortcuts, the testament template. Nothing is held back. What the
-[kit](https://pensine.gumroad.com/l/souvenance-kit) sells is the comfortable
-path, and a way to keep an independent memory engine alive:
-
-- **A versioned, tested release** — pinned dependencies, known-good
-  combination, free re-downloads as new versions ship. The public `main`
-  moves; the kit doesn't move under your feet.
-- **Everything bundled and ordered** — walkthrough, shortcuts, testament and
-  constitution templates in one archive, in the order that works, with a
-  START-HERE. No assembly required.
-- **Patronage** — one-time payment, no subscription, ~100% margin funding
-  development. If Souvenance saved you an afternoon, this is the tip jar.
-
-If you'd rather follow the public docs end to end, that is a fully supported
-outcome — that's what they are for.
-
-One-time payment, instant delivery, no subscription. You pay for the guided
-path — and you fund the project.
-
-## What's inside
-
-| Concern | Choice | Why |
-|---|---|---|
-| Single database | PostgreSQL + pgvector | Event log + vectors + graph + transactions, in one place |
-| Transcription | WhisperX (word-aligned) | The one capability chat assistants lack; excellent multilingual |
-| Speaker ID | pyannote + ECAPA voiceprints | Enrollment is an explicit act; channel metadata always wins |
-| Embeddings | nomic-embed (default, ~500 MB) or BGE-M3 (~2 GB), local CPU | Fits small VPSes; switch backends anytime with `scripts/reembed.py`; degrades to full-text if absent |
-| Documents | Docling | Best PDF → structure available |
-| Compute | **Adapter**: Claude CLI (your subscription) / API / anything | Swap anytime — flexibility *and* resilience |
-| Protocol | MCP | Survives model and interface changes |
-| Orchestration | cron + Python | Two nightly pipelines don't need Temporal |
-
-**Running cost: ~$0** beyond your VPS — the AI layer uses whatever access you already have, or runs fully local with Ollama.
-
-## How is this different from…
-
-- **ChatGPT / Claude native memory** — theirs, opaque, non-portable, non-auditable.
-  Pensine is yours: SQL dump *is* the export, and the adapter means no model lock-in.
-- **StoryWorth / HereAfter / legacy apps** — memory *for others, after you*.
-  Pensine is memory *for you, alive*: you query it daily, and it still becomes
-  a dynamic autobiography — your voice at the time, before your future self
-  rewrites the past.
-- **Agent frameworks with memory bolted on** — Pensine is memory-first:
-  no outbound actions at all in v1, by constitution. The archive is the product.
-
-## Roadmap
-
-- [x] Append-only event sourcing, nightly + REM consolidation, active forgetting
-- [x] Multimodal Pensieve: shortcut → WhisperX / vision / EXIF / Docling, replay links
-- [x] Temporal knowledge graph (bi-temporal, contradicted edges closed, never deleted)
-- [x] Voiceprint enrollment + diarization
-- [x] Timeline web app, mirror, persona compiler + ratification, fidelity harness
-- [ ] Prediction-error loop (drafts in your style, learning only from the delta)
-- [ ] Governed outbound actions (graduated autonomy, unlocked by fidelity scores)
-- [ ] Public benchmark run (LoCoMo)
+- **Built-in ChatGPT / Claude memory** — theirs is opaque, not portable, not auditable. Here the SQL
+  dump *is* the export, and the adapter removes model lock-in.
+- **StoryWorth, HereAfter and other legacy apps** — memory *for others, after you*. This is memory
+  *for you, while you live* — which still becomes a living autobiography: your voice at the time,
+  before your future self rewrites the past.
+- **Agent frameworks with memory bolted on** — this is memory first: no outbound action in v1, by
+  constitution. The archive is the product.
 
 ## FAQ
 
-**Do I talk to "a twin"?** No. You talk to your assistant — the interlocutor stays
-alive and replaceable. Pensine is the back room.
+**Am I talking "to a twin"?** No. You talk to your usual assistant; the other party stays alive and
+interchangeable. The memory engine is the back room.
 
-**What if I stop paying for an AI subscription?** Capture never depends on the AI layer.
-Events accumulate; consolidation resumes when compute returns — with your
-subscription, an API key, or a local model behind the adapter. Worst case is
-a pause, never a loss.
+**What if I stop paying for my AI provider?** Capture never depends on the AI layer. Events accumulate,
+and consolidation resumes when compute comes back. The worst case is a pause, never a loss.
 
-**What about my data when I die?** A testament template is in the public docs
-([docs/clauses-testamentaires.md](docs/clauses-testamentaires.md)):
-extinction, read-only memorial, or delayed legacy — decided calmly, in
-advance, by you.
+**What happens to my data when I die?** A template of testamentary clauses is public
+([docs/clauses-testamentaires.md](docs/clauses-testamentaires.md)): extinction, a read-only memorial,
+or a deferred bequest — decided in advance, with a cool head, by you.
 
-**Why should the first weeks feel underwhelming?** Because compound value is
-the point: near-zero at 6 months, considerable at 10 years. The founding
-interview (a scripted 4-session bootstrap) seeds the corpus on day one.
+**Why do the first weeks feel modest?** Because the value compounds: close to nothing at six months,
+considerable at ten years. The founding interview (four scripted sessions,
+[docs/interview-fondatrice.md](docs/interview-fondatrice.md)) seeds the corpus from day one.
 
 ## License
 
-AGPL-3.0 — see [LICENSE](LICENSE). Self-host it, modify it, fork it freely;
-if you offer it as a network service, your changes must stay open. For a
-commercial license, get in touch.
-
----
-
-<div align="center">
-<sub>Deep when you come. Silent when you leave.<br>
-The monastery bell, not the golden snitch.</sub>
-</div>
+Code: [Apache License 2.0](LICENSE) — see also [NOTICE](NOTICE). Research papers, lab notes and other
+research prose, and the SOURCED benchmark data: [Creative Commons Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+Language models assisted with drafting, code and literature synthesis; every claim is
+the author's responsibility (see each paper's disclosure section).

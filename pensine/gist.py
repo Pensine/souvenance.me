@@ -1,23 +1,22 @@
-"""Promotion épisodique → sémantique : ce qui se répète devient ce qu'on sait.
+"""Episodic → semantic promotion: what repeats becomes what we know.
 
-Consolidation systémique. Un épisode raconte une fois ; quand plusieurs
-épisodes anciens disent la même chose, le motif qu'ils dessinent est une
-connaissance durable — et cette connaissance n'existait nulle part dans le
-système, qui figeait le type d'une mémoire au moment de l'extraction.
+Systems consolidation. An episode tells something once; when several old
+episodes say the same thing, the pattern they draw is durable knowledge — and
+that knowledge existed nowhere in the system, which froze a memory's type at
+extraction time.
 
-Ce que ce module ne fait pas, volontairement :
+What this module deliberately does not do:
 
-    il ne supprime aucun épisode. Le gist s'ajoute, il ne remplace pas.
-    L'abstraction peut être fausse ; les épisodes, eux, sont attestés. Les
-    garder permet de la corriger plus tard, et de répondre « à cause de quoi ? »
+    it deletes no episode. The gist is added, it does not replace. The
+    abstraction may be wrong; the episodes, for their part, are attested.
+    Keeping them allows correcting it later, and answering "because of what?"
 
-    il n'invente pas d'affect. La charge du gist est la moyenne de ce qui a
-    réellement été ressenti dans les épisodes — calculée en code, pas devinée
-    par le modèle.
+    it does not invent affect. The gist's charge is the mean of what was
+    actually felt in the episodes — computed in code, not guessed by the model.
 
-Traçabilité : le gist hérite de l'union des events sources de ses épisodes, et
-un lien `gist` le rattache à chacun d'eux. La chaîne jusqu'au substrat reste
-entière.
+Traceability: the gist inherits the union of its episodes' source events, and
+a `gist` link ties it to each of them. The chain down to the substrate stays
+intact.
 """
 
 import json
@@ -28,19 +27,19 @@ from . import affect, embeddings, links, llm
 PROMPT_PATH = (Path(__file__).resolve().parent.parent
                / "consolidation" / "prompts" / "gist.md")
 
-# Fenêtre de maturation : on n'abstrait pas le mois en cours. Un motif se juge
-# avec du recul — trop tôt, on fige une coïncidence en trait de caractère.
+# Maturation window: the current month is not abstracted. A pattern is judged
+# with hindsight — too early, a coincidence gets frozen into a character trait.
 MATURATION_DAYS = 30
 
-# Distance cosinus max entre la graine et un épisode du même groupe. Au-delà,
-# ce ne sont plus des variantes d'une même chose.
+# Max cosine distance between the seed and an episode of the same group.
+# Beyond it, they are no longer variants of the same thing.
 MAX_DISTANCE = 0.35
 
-# Trois occurrences font un motif. Deux font une coïncidence.
+# Three occurrences make a pattern. Two make a coincidence.
 MIN_EPISODES = 3
 MAX_EPISODES = 12
 
-# Par nuit : l'abstraction est lente, comme dans un cerveau.
+# Per night: abstraction is slow, as in a brain.
 MAX_CLUSTERS_PER_NIGHT = 3
 
 _UNGISTED = """
@@ -51,11 +50,11 @@ _UNGISTED = """
 
 
 def _seed(conn, skip: list[int]):
-    """Le plus ancien épisode mûr qui n'a pas encore donné lieu à abstraction.
+    """The oldest mature episode that has not yet given rise to an abstraction.
 
-    `skip` écarte les graines déjà essayées cette nuit et restées trop
-    isolées. Sans cela un épisode solitaire, éternellement le plus ancien
-    non abstrait, bloquerait toute promotion ultérieure.
+    `skip` excludes the seeds already tried tonight that remained too
+    isolated. Without it a lone episode, forever the oldest non-abstracted
+    one, would block any later promotion.
     """
     return conn.execute(
         f"""
@@ -74,7 +73,7 @@ def _seed(conn, skip: list[int]):
 
 
 def _cluster(conn, seed) -> list[dict]:
-    """La graine et ses proches — les épisodes qui parlent de la même chose."""
+    """The seed and its neighbors — the episodes that talk about the same thing."""
     rows = conn.execute(
         f"""
         SELECT m.id, m.content, m.valence, m.arousal, m.importance,
@@ -94,10 +93,10 @@ def _cluster(conn, seed) -> list[dict]:
 
 
 def _mean_affect(episodes: list[dict]) -> tuple[float | None, float | None]:
-    """Charge du gist = moyenne de ce qui a été ressenti, pas une invention.
+    """Gist charge = mean of what was felt, not an invention.
 
-    Les épisodes sans affect connu ne comptent pas dans la moyenne : ils ne
-    tirent pas vers le neutre, ils s'abstiennent.
+    Episodes with no known affect do not count in the mean: they do not pull
+    toward neutral, they abstain.
     """
     def mean(key: str) -> float | None:
         vals = [e[key] for e in episodes if e.get(key) is not None]
@@ -107,7 +106,7 @@ def _mean_affect(episodes: list[dict]) -> tuple[float | None, float | None]:
 
 
 def _abstract(episodes: list[dict], owner: str, constitution: str) -> dict | None:
-    """Demande l'abstraction au modèle. `None` si aucun motif ne se dégage."""
+    """Ask the model for the abstraction. `None` if no pattern emerges."""
     payload = json.dumps(
         [{"content": e["content"], "quand": str(e["valid_from"].date())}
          for e in episodes],
@@ -122,13 +121,13 @@ def _abstract(episodes: list[dict], owner: str, constitution: str) -> dict | Non
         return None
     text = out.get("gist")
     if not text or not str(text).strip():
-        return None   # « aucun motif » est une réponse valide, pas un échec
+        return None   # "no pattern" is a valid answer, not a failure
     return {"content": str(text).strip(),
             "confidence": float(out.get("confidence", 0.5))}
 
 
 def _write(conn, gist: dict, episodes: list[dict]) -> int:
-    """Écrit la connaissance sémantique et la rattache à ses épisodes."""
+    """Write the semantic knowledge and attach it to its episodes."""
     valence, arousal = _mean_affect(episodes)
     sources = sorted({eid for e in episodes
                       for eid in (e["source_event_ids"] or [])})
@@ -144,24 +143,25 @@ def _write(conn, gist: dict, episodes: list[dict]) -> int:
          gist["confidence"],
          max(e["importance"] for e in episodes),
          valence, arousal,
-         min(e["valid_from"] for e in episodes),   # vrai depuis le premier épisode
+         min(e["valid_from"] for e in episodes),   # true since the first episode
          sources),
     ).fetchone()
 
-    # Un lien `gist` par épisode : il marque l'épisode comme abstrait (il ne
-    # repassera pas) et permet de remonter du général au vécu qui l'a produit.
+    # One `gist` link per episode: it marks the episode as abstracted (it will
+    # not come up again) and lets you trace from the general back to the
+    # lived experience that produced it.
     for e in episodes:
         links.link(conn, [row["id"], e["id"]], kind="gist")
     return row["id"]
 
 
 def promote(conn, owner: str, constitution: str) -> dict:
-    """Un tour de consolidation systémique. Renvoie ce qui a été abstrait.
+    """One round of systems consolidation. Returns what was abstracted.
 
-    Une graine trop isolée, ou un groupe où le modèle ne voit aucun motif, est
-    écartée pour cette nuit seulement : rien ne la marque en base. Elle
-    repassera quand d'autres épisodes proches auront mûri — l'abstraction
-    attend son heure plutôt que de forcer un motif.
+    A seed that is too isolated, or a group where the model sees no pattern, is
+    set aside for tonight only: nothing marks it in the database. It will come
+    up again when other nearby episodes have matured — abstraction bides its
+    time rather than forcing a pattern.
     """
     written: list[int] = []
     skipped: list[int] = []
@@ -175,7 +175,7 @@ def promote(conn, owner: str, constitution: str) -> dict:
             continue
         gist = _abstract(episodes, owner, constitution)
         if gist is None:
-            # « aucun motif » est une réponse valide du modèle, pas un échec
+            # "no pattern" is a valid model answer, not a failure
             skipped.append(seed["id"])
             continue
         written.append(_write(conn, gist, episodes))

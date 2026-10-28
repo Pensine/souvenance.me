@@ -1,36 +1,39 @@
-"""État des liens : ce qui bouge entre deux personnes, et dans quel sens.
+"""State of relationships: what moves between two people, and in which direction.
 
-Le graphe temporel dit ce qui *est* — travaille chez X, habite à Y. Il ne dit
-pas ce qui se passe entre deux personnes : une proximité qui se refroidit, une
-tension qui monte, un lien qu'on croyait perdu et qui se rallume.
+The temporal graph says what *is* — works at X, lives in Y. It does not say
+what happens between two people: a closeness that cools, a tension that
+rises, a bond believed lost that rekindles.
 
-Deux axes, pour la même raison que la charge d'un souvenir :
+Two axes, for the same reason as a memory's charge:
 
-    closeness   0 (distant) … 1 (intime)      — l'intensité du lien
-    valence    -1 (tendu) … +1 (chaleureux)   — sa couleur
+    closeness   0 (distant) … 1 (intimate)    — the intensity of the bond
+    valence    -1 (tense) … +1 (warm)         — its color
 
-Une famille peut être proche et tendue ; un vieil ami perdu de vue, lointain et
-chaleureux. Un curseur unique confondrait les deux.
+A family can be close and tense; an old friend lost from view, distant and
+warm. A single slider would conflate the two.
 
-Le point n'est pas l'état courant, c'est la **trajectoire**. On garde donc une
-suite d'états datés : le nouveau ferme le précédent, il ne l'écrase pas. « Où
-en est cette relation » se lit sur le dernier ; « qu'est-ce qui a changé » se
-lit sur les deux derniers.
+The point is not the current state, it is the **trajectory**. So we keep a
+series of dated states: the new one closes the previous one, it does not
+overwrite it. "Where does this relationship stand" is read from the latest;
+"what has changed" is read from the last two.
+
+The French keys and phrasings of `trajectory()` / `describe()` (`proximite`,
+`climat`, `evolution`, "s'est rapprochée"…) are recall output and stay French.
 """
 
-# En deçà, la variation relève du bruit d'estimation : deux nuits de
-# consolidation sur les mêmes faits ne donnent jamais exactement le même
-# chiffre, et signaler ce frémissement comme une évolution serait mentir.
+# Below this, the variation is estimation noise: two nights of consolidation
+# on the same facts never give exactly the same number, and flagging that
+# flutter as an evolution would be lying.
 SIGNIFICANT_DELTA = 0.15
 
 
 def set_state(conn, entity_id: int, *, closeness=None, valence=None,
               note: str = "", confidence: float = 0.5,
               valid_from=None, source_event_ids=None) -> int | None:
-    """Enregistre un nouvel état et ferme le précédent.
+    """Record a new state and close the previous one.
 
-    Renvoie None si aucun axe n'est renseigné : un état vide n'apprend rien et
-    n'a pas à occuper une ligne dans l'histoire de la relation.
+    Returns None if neither axis is given: an empty state teaches nothing and
+    has no business taking up a row in the relationship's history.
     """
     if closeness is None and valence is None:
         return None
@@ -55,7 +58,7 @@ def set_state(conn, entity_id: int, *, closeness=None, valence=None,
 
 
 def history(conn, entity_id: int, limit: int = 12):
-    """Les états successifs, du plus récent au plus ancien."""
+    """The successive states, from most recent to oldest."""
     return conn.execute(
         """
         SELECT closeness, valence, note, valid_from, valid_to
@@ -76,11 +79,11 @@ def _axis_trend(now, before, rising: str, falling: str) -> str | None:
 
 
 def trajectory(states) -> dict | None:
-    """Ce qui a changé entre les deux derniers états, en clair.
+    """What changed between the last two states, in plain words.
 
-    `states` est la sortie de `history` (plus récent d'abord). Renvoie None
-    quand il n'y a qu'un état, ou quand rien n'a bougé de façon significative —
-    « rien n'a changé » n'est pas une nouvelle et n'a pas à être dit.
+    `states` is the output of `history` (most recent first). Returns None when
+    there is only one state, or when nothing moved significantly —
+    "nothing changed" is not news and need not be said.
     """
     if states is None or len(states) < 2:
         return None
@@ -100,7 +103,7 @@ def trajectory(states) -> dict | None:
 
 
 def describe(conn, entity_id: int) -> dict | None:
-    """État courant du lien et son évolution, ou None si rien n'est connu."""
+    """Current state of the relationship and its evolution, or None if nothing is known."""
     states = history(conn, entity_id, limit=2)
     if not states:
         return None
@@ -119,12 +122,12 @@ def describe(conn, entity_id: int) -> dict | None:
 
 
 def ingest(conn, items: list[dict], entity_ids: dict, event_ids: list[int]) -> int:
-    """Applique les états de relation extraits par la consolidation.
+    """Apply the relationship states extracted by consolidation.
 
-    `items` : [{entity, closeness?, valence?, note?, confidence?}]
-    `entity_ids` : noms en minuscules → id, tels que le graphe les a résolus.
-    Une entité inconnue est ignorée : on n'invente pas de personne pour lui
-    attribuer un climat.
+    `items`: [{entity, closeness?, valence?, note?, confidence?}]
+    `entity_ids`: lowercase names → id, as the graph resolved them.
+    An unknown entity is ignored: we do not invent a person in order to
+    assign them a climate.
     """
     applied = 0
     for it in items or []:
@@ -143,9 +146,8 @@ def ingest(conn, items: list[dict], entity_ids: dict, event_ids: list[int]) -> i
 
 
 def _clamp(raw, lo: float, hi: float) -> float | None:
-    """Hors bornes ou non numérique : None. On refuse plutôt que de ramener
-    dans l'intervalle — une valeur inventée sur un lien humain est pire que
-    pas de valeur du tout."""
+    """Out of range or non-numeric: None. We refuse rather than clamp into the
+    interval — an invented value on a human bond is worse than no value at all."""
     if raw is None or isinstance(raw, bool):
         return None
     try:

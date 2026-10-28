@@ -1,0 +1,29 @@
+28 ids queried
+2310.08560v2	2023-10-12	MemGPT: Towards LLMs as Operating Systems	Charles Packer; Sarah Wooders; Kevin Lin; Vivian Fang; Shishir G. Patil; Ion Stoica; Joseph E. Gonzalez
+2502.01630v2	2025-02-03	TReMu: Towards Neuro-Symbolic Temporal Reasoning for LLM-Agents with Memory in Multi-Session Dialogues	Yubin Ge; Salvatore Romeo; Jason Cai; Raphael Shu; Monica Sunkara; Yassine Benajiba; Yi Zhang
+2510.02373v1	2025-09-29	A-MemGuard: A Proactive Defense Framework for LLM-Based Agent Memory	Qianshan Wei; Tengchao Yang; Yaochen Wang; Xinfeng Li; Lijun Li; Zhenfei Yin; Yi Zhan; Thorsten Holz; Zhiqiang Lin; XiaoFeng Wang
+2604.16839v1	2026-04-18	HeLa-Mem: Hebbian Learning and Associative Memory for LLM Agents	Jinchang Zhu; Jindong Li; Cheng Zhang; Jiahong Liu; Menglin Yang
+2601.07468v2	2026-01-12	Beyond Dialogue Time: Temporal Semantic Memory for Personalized LLM Agents	Miao Su; Yucan Guo; Zhongni Hou; Long Bai; Zixuan Li; Yufei Zhang; Guojun Yin; Wei Lin; Xiaolong Jin; Jiafeng Guo; Xueqi Cheng
+2403.14720v1	2024-03-20	Defending Against Indirect Prompt Injection Attacks With Spotlighting	Keegan Hines; Gary Lopez; Matthew Hall; Federico Zarfati; Yonatan Zunger; Emre Kiciman
+2604.11182v2	2026-04-13	Evaluating Memory Capability in Continuous Lifelog Scenario	Jianjie Zheng; Zhichen Liu; Zhanyu Shen; Jingxiang Qu; Guanhua Chen; Yile Wang; Yang Xu; Yang Liu; Sijie Cheng
+2602.01450v3	2026-02-01	The Algorithmic Self-Portrait: Deconstructing Memory in ChatGPT	Abhisek Dash; Soumi Das; Elisabeth Kirsten; Qinyuan Wu; Sai Keerthana Karnam; Krishna P. Gummadi; Thorsten Holz; Muhammad Bilal Zafar; Savvas Zannettou
+2604.20943v1	2026-04-22	SCM: Sleep-Consolidated Memory with Algorithmic Forgetting for Large Language Models	Saish Sachin Shinde
+2402.15089v1	2024-02-23	AttributionBench: How Hard is Automatic Attribution Evaluation?	Yifei Li; Xiang Yue; Zeyi Liao; Huan Sun
+2604.04853v1	2026-04-06	MemMachine: A Ground-Truth-Preserving Memory System for Personalized AI Agents	Shu Wang; Edwin Yu; Oscar Love; Tom Zhang; Tom Wong; Steve Scargall; Charles Fan
+2501.13956v1	2025-01-20	Zep: A Temporal Knowledge Graph Architecture for Agent Memory	Preston Rasmussen; Pavlo Paliychuk; Travis Beauvais; Jack Ryan; Daniel Chalef
+2407.12784v1	2024-07-17	AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases	Zhaorun Chen; Zhen Xiang; Chaowei Xiao; Dawn Song; Bo Li
+2603.03781v1	2026-03-04	LifeBench: A Benchmark for Long-Horizon Multi-Source Memory	Zihao Cheng; Weixin Wang; Yu Zhao; Ziyang Ren; Jiaxuan Chen; Ruiyang Xu; Shuai Huang; Yang Chen; Guowei Li; Mengshi Wang; Yi Xie; Ren Zhu …
+2503.03704v5	2025-03-05	Memory Injection Attacks on LLM Agents via Query-Only Interaction	Shen Dong; Shaochen Xu; Pengfei He; Yige Li; Jiliang Tang; Tianming Liu; Hui Liu; Zhen Xiang
+2602.23193v1	2026-02-26	ESAA: Event Sourcing for Autonomous Agents in LLM-Based Software Engineering	Elzo Brito dos Santos Filho
+2603.06365v1	2026-03-06	ESAA-Security: An Event-Sourced, Verifiable Architecture for Agent-Assisted Security Audits of AI-Generated Code	Elzo Brito dos Santos Filho
+2503.08102v2	2025-03-11	AI-native Memory 2.0: Second Me	Jiale Wei; Xiang Ying; Tao Gao; Fangyi Bao; Felix Tao; Jingbo Shang
+2601.00821v4	2025-12-23	Fidelity Before Structure: Verbatim Chunks Beat Lossy Artifact Extraction in Long-Conversation LLM Memory	Tao An
+2601.04463v2	2026-01-08	Beyond Static Summarization: Proactive Memory Extraction for LLM Agents	Chengyuan Yang; Zequn Sun; Wei Wei; Wei Hu
+2605.30087v1	2026-05-28	Selective QA over Conflicting Multi-Source Personal Memory: A Diagnostic Testbed and Method Comparison	Tiancheng Yang; Matthias Schonlau; Ilia Sucholutsky
+2604.21284v1	2026-04-23	Spatial Metaphors for LLM Memory: A Critical Analysis of the MemPalace Architecture	Robin Dey; Panyanon Viradecha
+2609.19167v1	2026-09-11	To Memories and Beyond: From Remembering to Knowing You across Long-Term Multimodal Personal Archives	Wenqi Zhou; Zhuorui Yu; Kaiao Wen; Hao Zheng; Xinyi Zheng; Peiran Wu; Enmin Zhou; Chi-Hao Wu; Junxiao Shen
+2608.29606v1	2026-08-30	Agent Zero Memory: Provenance-Aware Long-Term Memory for LLM Agents	Ming Wu; Pengyuan Zhu
+2610.22209v1	2026-10-15	Beyond Downstream QA: Rethinking How We Evaluate Agent Memory	Sebastian-Antonio Toma; Jean de Kernier; Mike Ply; Oliviu Matei
+2607.21962v1	2026-07-24	Ground Truth First: A Longitudinal Evaluation Instrument for Agent Memory, and the Tenure Crossover in Memory-Architecture Rankings	Quentin Spencer
+2609.16053v1	2026-09-13	Retrieval-Driven Memory Reconsolidation for Long-Term LLM Agents	Yuanyi Song; Yukai Wang; Xinbei Ma; Zhihui Fu; Jianghao Lin; Weiwen Liu; Jun Wang; Huarong Deng; Yong Yu; Weinan Zhang
+2608.07438v2	2026-08-07	PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents	Mohammad Amanlou; Parham Abed Azad; Farbod Davoodi; Mostafa Masumi; Behnam Bahrak; Abdol-Hossein Vahabie

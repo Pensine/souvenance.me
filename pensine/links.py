@@ -1,53 +1,53 @@
-"""Liaisons entre souvenirs — le rappel de proche en proche.
+"""Links between memories — associative, step-by-step recall.
 
-Une recherche vectorielle trouve ce qui *ressemble* à la question. Une mémoire
-humaine remonte aussi ce qui n'y ressemble pas mais s'y rattache : le nom d'un
-lieu ramène une conversation qui n'en parle pas, une odeur ramène une année.
-C'est ce que ce module ajoute — un réseau par-dessus l'index.
+A vector search finds what *resembles* the question. A human memory also
+surfaces what does not resemble it but is connected to it: the name of a
+place brings back a conversation that never mentions it, a smell brings back a
+year. That is what this module adds — a network on top of the index.
 
-Deux mécanismes, empruntés au même principe :
+Two mechanisms, borrowed from the same principle:
 
-    pose      deux mémoires nées du même événement sont liées d'office
-              (même épisode)
-    renforce  deux mémoires qui remontent ensemble voient leur lien grossir
-              — ce qui s'active ensemble se lie
+    lay        two memories born from the same event are linked outright
+               (same episode)
+    reinforce  two memories that surface together see their link grow
+               — what fires together wires together
 
-Et une contrepartie : un lien qu'on ne réactive pas s'affaiblit puis disparaît.
-Les liens sont une projection, recalculable depuis le log ; les supprimer ne
-coûte rien d'irremplaçable, et les garder tous ferait croître la table en n².
+And a counterpart: a link that is not reactivated weakens and then disappears.
+Links are a projection, recomputable from the log; deleting them costs nothing
+irreplaceable, and keeping them all would make the table grow as n².
 """
 
 from itertools import combinations
 
-# Un lien naît faible et se renforce par paliers décroissants : les premières
-# co-activations comptent plus que la millième, comme une courbe d'apprentissage.
+# A link is born weak and strengthens in diminishing steps: the first
+# co-activations matter more than the thousandth, like a learning curve.
 INITIAL_STRENGTH = 0.1
 REINFORCE_GAIN = 0.15
 MAX_STRENGTH = 1.0
 
-# Décroissance nocturne, après 30 jours sans réactivation. Un lien posé une
-# fois et jamais rejoué disparaît en ~2 mois ; un lien porté à pleine force
-# tient ~6 mois. L'écart est le point : ce qu'on rejoue reste, le reste
-# s'efface, et « associé » continue de vouloir dire quelque chose.
+# Nightly decay, after 30 days without reactivation. A link laid once and never
+# replayed disappears in ~2 months; a link at full strength lasts ~6 months.
+# The gap is the point: what gets replayed stays, the rest fades, and
+# "associated" keeps meaning something.
 DECAY_RATE = 0.98
 PRUNE_BELOW = 0.05
 
-# Expansion associative : au-delà, le rappel se dilue au lieu de s'enrichir.
+# Associative expansion: beyond this, recall dilutes instead of enriching.
 DEFAULT_HOPS = 6
 MIN_STRENGTH_TO_FOLLOW = 0.15
 
 
 def _pairs(memory_ids):
-    """Paires canoniques (a < b), sans doublon ni boucle."""
+    """Canonical pairs (a < b), no duplicates or self-loops."""
     unique = sorted({int(i) for i in memory_ids})
     return list(combinations(unique, 2))
 
 
 def link(conn, memory_ids, kind: str = "shared_event") -> int:
-    """Lie toutes les mémoires entre elles. Renforce si le lien existe déjà.
+    """Link all the memories to one another. Reinforces if the link already exists.
 
-    Utilisé à la consolidation : les mémoires extraites d'un même événement
-    appartiennent au même épisode et se rappelleront l'une l'autre.
+    Used at consolidation: memories extracted from the same event belong to
+    the same episode and will recall one another.
     """
     pairs = _pairs(memory_ids)
     if not pairs:
@@ -67,23 +67,23 @@ def link(conn, memory_ids, kind: str = "shared_event") -> int:
 
 
 def reinforce(conn, memory_ids) -> int:
-    """Renforce les liens entre des mémoires qui viennent de remonter ensemble.
+    """Reinforce the links between memories that have just surfaced together.
 
-    N'est appelé que sur les résultats de la recherche elle-même, jamais sur
-    les voisins ramenés par association : on sait que la question a activé les
-    premiers, on ne sait pas si les seconds ont servi. Renforcer les deux
-    densifierait le réseau sans preuve.
+    Only called on the search results themselves, never on the neighbors
+    brought back by association: we know the question activated the former, we
+    do not know whether the latter were useful. Reinforcing both would densify
+    the network without evidence.
     """
     return link(conn, memory_ids, kind="co_recall")
 
 
 def expand(conn, seed_ids, limit: int = DEFAULT_HOPS, exclude=None):
-    """Voisins associatifs des mémoires trouvées — un seul saut.
+    """Associative neighbors of the memories found — a single hop.
 
-    Renvoie les mémoires liées aux graines, les plus fortement liées d'abord,
-    en excluant celles déjà remontées. C'est le rappel de proche en proche :
-    ces souvenirs ne ressemblent pas forcément à la question, ils lui sont
-    rattachés par l'expérience.
+    Returns the memories linked to the seeds, most strongly linked first,
+    excluding those already surfaced. This is step-by-step recall: these
+    memories do not necessarily resemble the question, they are tied to it by
+    experience.
     """
     seeds = [int(i) for i in seed_ids]
     if not seeds or limit <= 0:
@@ -112,11 +112,11 @@ def expand(conn, seed_ids, limit: int = DEFAULT_HOPS, exclude=None):
 
 
 def decay(conn) -> None:
-    """Un lien qu'on ne réactive pas s'affaiblit, puis disparaît.
+    """A link that is not reactivated weakens, then disappears.
 
-    Sans cela le réseau ne ferait que densifier : tout finirait relié à tout,
-    et « associé » perdrait son sens. L'oubli des liens est ce qui garde
-    l'association informative.
+    Without this the network would only densify: everything would end up
+    linked to everything, and "associated" would lose its meaning. Forgetting
+    links is what keeps association informative.
     """
     conn.execute(
         "UPDATE memory_links SET strength = strength * %s "

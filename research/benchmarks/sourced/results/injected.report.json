@@ -1,0 +1,1060 @@
+{
+ "system": {
+  "name": "control:injected"
+ },
+ "judge": "lexical-v1",
+ "headline": {
+  "invention_rate": 0.2105,
+  "excerpt_support_rate": 0.7895,
+  "fact_recall": 1.0,
+  "recall_at_inv_1pct": 1.0,
+  "qa_accuracy": 1.0,
+  "invented_answers": 0.0,
+  "context_hit_rate": null,
+  "write_metrics": "measured"
+ },
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": 18,
+   "invention_rate": 0.2222,
+   "partial_rate": 0.0,
+   "invented": [
+    "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+    "Kofi Achebe has a dog.",
+    "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+    "Kofi Achebe's bike was stolen."
+   ],
+   "trap_hits": [
+    "T02",
+    "T04",
+    "T09",
+    "T12",
+    "T13"
+   ],
+   "traps_total": 6,
+   "excerpt_support_rate": 0.7778,
+   "citing_memories": 16,
+   "fact_recall": 1.0,
+   "omission_rate": 0.0,
+   "recall_by_kind": {
+    "change": 1.0,
+    "event": 1.0,
+    "state": 1.0
+   },
+   "stale_as_current": null,
+   "stale_reason": null,
+   "curve": {
+    "points": [
+     {
+      "threshold": 1.0,
+      "kept": 14,
+      "invention": 0.0,
+      "recall": 1.0
+     },
+     {
+      "threshold": 0.4,
+      "kept": 16,
+      "invention": 0.125,
+      "recall": 1.0
+     },
+     {
+      "threshold": 0.3,
+      "kept": 18,
+      "invention": 0.2222222222222222,
+      "recall": 1.0
+     }
+    ],
+    "recall_at_inv_1pct": 1.0,
+    "recall_at_inv_5pct": 1.0,
+    "has_confidence": true
+   },
+   "labels": [
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F008",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F011",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F012",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F014",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F016",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F021",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F025",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F030",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T09",
+      "T12"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T02"
+     ],
+     "citation_found": null,
+     "citation_supports": null
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T13"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T04"
+     ],
+     "citation_found": null,
+     "citation_supports": null
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": 38,
+   "invention_rate": 0.2105,
+   "partial_rate": 0.0,
+   "invented": [
+    "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+    "Kofi Achebe has a dog.",
+    "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+    "Kofi Achebe's bike was stolen.",
+    "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+    "Oskar Lindqvist's company shut down.",
+    "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+    "Kofi Achebe has a dog."
+   ],
+   "trap_hits": [
+    "T02",
+    "T04",
+    "T06",
+    "T08",
+    "T09",
+    "T11",
+    "T12",
+    "T13"
+   ],
+   "traps_total": 13,
+   "excerpt_support_rate": 0.7895,
+   "citing_memories": 34,
+   "fact_recall": 1.0,
+   "omission_rate": 0.0,
+   "recall_by_kind": {
+    "change": 1.0,
+    "event": 1.0,
+    "state": 1.0
+   },
+   "stale_as_current": 0.0,
+   "stale_reason": null,
+   "curve": {
+    "points": [
+     {
+      "threshold": 1.0,
+      "kept": 30,
+      "invention": 0.0,
+      "recall": 1.0
+     },
+     {
+      "threshold": 0.4,
+      "kept": 34,
+      "invention": 0.11764705882352941,
+      "recall": 1.0
+     },
+     {
+      "threshold": 0.3,
+      "kept": 38,
+      "invention": 0.21052631578947367,
+      "recall": 1.0
+     }
+    ],
+    "recall_at_inv_1pct": 1.0,
+    "recall_at_inv_5pct": 1.0,
+    "has_confidence": true
+   },
+   "labels": [
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F002",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F003",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F004",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F008",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F010",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F011",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F012",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F013",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F014",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F015",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F016",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F017",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F018",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F019",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F020",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F022",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F021",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F022",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F025",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F026",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F027",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F028",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F030",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T09",
+      "T12"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T02"
+     ],
+     "citation_found": null,
+     "citation_supports": null
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T13"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T04"
+     ],
+     "citation_found": null,
+     "citation_supports": null
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T11"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T06"
+     ],
+     "citation_found": null,
+     "citation_supports": null
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T08"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T02"
+     ],
+     "citation_found": null,
+     "citation_supports": null
+    }
+   ]
+  }
+ ],
+ "qa": {
+  "accuracy": 1.0,
+  "n_questions": 37,
+  "by_category": {
+   "present": {
+    "accuracy": 1.0,
+    "n": 13
+   },
+   "past": {
+    "accuracy": 1.0,
+    "n": 3
+   },
+   "when": {
+    "accuracy": 1.0,
+    "n": 3
+   },
+   "duration": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "event": {
+    "accuracy": 1.0,
+    "n": 10
+   },
+   "abstention": {
+    "accuracy": 1.0,
+    "n": 7
+   }
+  },
+  "answered_precision": 1.0,
+  "coverage": 0.8108,
+  "invented_answers": 0.0,
+  "rows": [
+   {
+    "id": "Q001",
+    "category": "present",
+    "ok": true,
+    "answer": "1340"
+   },
+   {
+    "id": "Q002",
+    "category": "present",
+    "ok": true,
+    "answer": "Montreal"
+   },
+   {
+    "id": "Q003",
+    "category": "present",
+    "ok": true,
+    "answer": "Edinburgh"
+   },
+   {
+    "id": "Q004",
+    "category": "present",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q005",
+    "category": "present",
+    "ok": true,
+    "answer": "Montreal"
+   },
+   {
+    "id": "Q006",
+    "category": "present",
+    "ok": true,
+    "answer": "Rotterdam"
+   },
+   {
+    "id": "Q007",
+    "category": "present",
+    "ok": true,
+    "answer": "sales lead"
+   },
+   {
+    "id": "Q008",
+    "category": "present",
+    "ok": true,
+    "answer": "sesame"
+   },
+   {
+    "id": "Q009",
+    "category": "present",
+    "ok": true,
+    "answer": "operations manager"
+   },
+   {
+    "id": "Q010",
+    "category": "present",
+    "ok": true,
+    "answer": "1 May"
+   },
+   {
+    "id": "Q011",
+    "category": "present",
+    "ok": true,
+    "answer": "Bristol"
+   },
+   {
+    "id": "Q012",
+    "category": "present",
+    "ok": true,
+    "answer": "Silverfern Energy"
+   },
+   {
+    "id": "Q013",
+    "category": "present",
+    "ok": true,
+    "answer": "Arabic"
+   },
+   {
+    "id": "Q014",
+    "category": "past",
+    "ok": true,
+    "answer": "680"
+   },
+   {
+    "id": "Q015",
+    "category": "past",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q016",
+    "category": "past",
+    "ok": true,
+    "answer": "Northwind Analytics"
+   },
+   {
+    "id": "Q017",
+    "category": "when",
+    "ok": true,
+    "answer": "2025-02-15"
+   },
+   {
+    "id": "Q018",
+    "category": "when",
+    "ok": true,
+    "answer": "2025-02-15"
+   },
+   {
+    "id": "Q019",
+    "category": "when",
+    "ok": true,
+    "answer": "2025-02-07"
+   },
+   {
+    "id": "Q020",
+    "category": "duration",
+    "ok": true,
+    "answer": "5"
+   },
+   {
+    "id": "Q021",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q022",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q023",
+    "category": "event",
+    "ok": true,
+    "answer": "Lyon"
+   },
+   {
+    "id": "Q024",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q025",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q026",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q027",
+    "category": "event",
+    "ok": true,
+    "answer": "2025-02-13"
+   },
+   {
+    "id": "Q028",
+    "category": "event",
+    "ok": true,
+    "answer": "the botanical garden"
+   },
+   {
+    "id": "Q029",
+    "category": "event",
+    "ok": true,
+    "answer": "the harbour footpath"
+   },
+   {
+    "id": "Q030",
+    "category": "event",
+    "ok": true,
+    "answer": "the harbour footpath"
+   },
+   {
+    "id": "Q031",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q032",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q033",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q034",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q035",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q036",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q037",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   }
+  ]
+ }
+}

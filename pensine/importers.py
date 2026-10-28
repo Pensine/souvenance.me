@@ -1,14 +1,14 @@
-"""Import des exports officiels ChatGPT et Claude — reprendre son contexte.
+"""Import of the official ChatGPT and Claude exports — pick up your context.
 
-Au jour 1, la mémoire connaît déjà des années de conversations : chaque
-conversation exportée devient un event `conversation_import` (couche 0),
-que la consolidation nocturne rejouera comme le reste. Le gouverneur
-filtre à l'ingestion (périmètre d'exclusion), le hash déduplique —
-relancer l'import est toujours sans risque.
+On day 1, the memory already knows years of conversations: each exported
+conversation becomes a `conversation_import` event (layer 0), which nightly
+consolidation will replay like everything else. The governor filters at
+ingestion (exclusion perimeter), the hash deduplicates — re-running the
+import is always safe.
 
-Formats reconnus (fichier `conversations.json` des exports officiels) :
-- ChatGPT : liste de conversations avec `mapping` (arbre de messages)
-- Claude  : liste de conversations avec `chat_messages`
+Recognized formats (the `conversations.json` file of the official exports):
+- ChatGPT: list of conversations with `mapping` (message tree)
+- Claude : list of conversations with `chat_messages`
 """
 
 import json
@@ -42,7 +42,7 @@ def detect_format(data) -> str | None:
 
 
 def parse_chatgpt(data: list) -> list[dict]:
-    """Export ChatGPT : chaque conversation porte un arbre `mapping`."""
+    """ChatGPT export: each conversation carries a `mapping` tree."""
     events = []
     for conv in data:
         messages = []
@@ -82,7 +82,7 @@ def parse_chatgpt(data: list) -> list[dict]:
 
 
 def parse_claude(data: list) -> list[dict]:
-    """Export Claude : chaque conversation porte `chat_messages`."""
+    """Claude export: each conversation carries `chat_messages`."""
     events = []
     for conv in data:
         messages = []
@@ -124,6 +124,6 @@ def parse_file(path: Path) -> tuple[str, list[dict]]:
     if fmt == "claude":
         return fmt, parse_claude(data)
     raise ValueError(
-        "Format non reconnu — attendu : conversations.json d'un export "
-        "officiel ChatGPT (clé 'mapping') ou Claude (clé 'chat_messages')."
+        "Unrecognized format — expected: conversations.json from an official "
+        "ChatGPT export (key 'mapping') or Claude export (key 'chat_messages')."
     )

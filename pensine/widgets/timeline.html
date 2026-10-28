@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+/*__BASE_CSS__*/
+.head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.lanes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+@media (max-width: 640px) { .lanes { grid-template-columns: 1fr; } }
+.lane { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.lane h3 { margin: 0 0 2px; font: 600 12px/1.3 var(--font); text-transform: uppercase;
+           letter-spacing: .06em; display: flex; align-items: center; gap: 6px; }
+.lane h3::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+.etait h3 { color: var(--past); } .change h3 { color: var(--accent); }
+.est h3 { color: var(--present); } .vient h3 { color: var(--future); }
+.item { padding: 9px 10px; border-radius: 10px; background: var(--bg); font-size: 13px;
+        border-left: 3px solid var(--faint); cursor: pointer; }
+.item:hover { outline: 1px solid var(--accent); }
+.etait .item { border-left-color: var(--past); color: var(--muted); }
+.change .item { border-left-color: var(--accent); }
+.est .item { border-left-color: var(--present); }
+.vient .item { border-left-color: var(--future); }
+.item .when { font-size: 11.5px; color: var(--muted); margin-bottom: 3px; }
+.item .txt { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.item .why { font-size: 12px; color: var(--accent); margin-top: 4px; }
+.item .arrow { font-size: 12px; margin-top: 4px; }
+.none { font-size: 12px; color: var(--muted); font-style: italic; padding: 4px 2px; }
+.item.etape .when::before { content: "to do · "; font-weight: 600; color: var(--future); }
+.item.suspens { opacity: .55; border-left-style: dashed; }
+.item.suspens .when::after { content: " · on hold"; }
+.item.issue-abandonne .arrow { color: var(--past); }
+</style>
+</head>
+<body>
+<div class="card" id="root"><div class="empty">Loading the timeline…</div></div>
+<script type="module">
+/*__EXT_APPS_BUNDLE__*/
+const { App } = globalThis.ExtApps;
+const $ = (s, e = document) => e.querySelector(s);
+const el = (tag, cls, text) => { const n = document.createElement(tag);
+  if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+const LANES = [["etait", "What was"], ["change", "What changed"], ["est", "What is"], ["vient", "What is coming"]];
+const month = iso => iso ? new Date(iso).toLocaleDateString("en-GB", { month: "short", year: "numeric" }) : "";
+
+const app = new App({ name: "Pensine — Timeline", version: "1.0.0" }, {}, { autoResize: true });
+const theme = ctx => document.documentElement.classList.toggle("dark", ctx?.theme === "dark");
+app.onhostcontextchanged = theme;
+const ask = text => app.sendMessage({ role: "user", content: [{ type: "text", text }] });
+
+function render(d) {
+  const root = $("#root"); root.innerHTML = "";
+  const head = el("div", "head");
+  head.append(el("h2", null, d.sujet ? `“${d.sujet}” over time` : "Over time"),
+              el("span", "small muted", "tap a memory to open it"));
+  root.append(head);
+  const lanes = el("div", "lanes");
+  for (const [key, title] of LANES) {
+    const lane = el("div", `lane ${key}`); lane.append(el("h3", null, title));
+    const items = d.lanes?.[key] || [];
+    if (!items.length) lane.append(el("div", "none", key === "change" ? "no change recorded" : "nothing"));
+    for (const it of items) {
+      const card = el("div", "item"); card.tabIndex = 0;
+      if (it.type === "etape") card.classList.add("etape");
+      if (it.statut === "en_suspens") card.classList.add("suspens");
+      if (it.issue) card.classList.add(`issue-${it.issue}`);
+      const when = [month(it.date), it.quand, it.lieu, it.epoque].filter(Boolean).join(" · ");
+      card.append(el("div", "when", when));
+      if (key === "change") {
+        card.append(el("div", "txt", it.de));
+        if (it.raison) card.append(el("div", "why", it.raison));
+        if (it.vers) card.append(el("div", "arrow", `→ ${it.vers}`));
+      } else {
+        card.append(el("div", "txt", it.content));
+      }
+      const id = key === "change" ? (it.vers_id || it.id) : it.id;
+      const open = id ? `Show me the card for memory #${id}`
+        : it.intention_id ? `Where does step no. ${it.intention_id} stand: “${it.content || it.de}”?` : null;
+      if (open) card.onclick = card.onkeydown = e => {
+        if (e.type === "keydown" && e.key !== "Enter") return;
+        ask(open);
+      };
+      lane.append(card);
+    }
+    lanes.append(lane);
+  }
+  root.append(lanes);
+}
+
+app.ontoolresult = ({ content }) => {
+  try { const d = JSON.parse(content?.[0]?.text || "{}");
+        if (d.card === "timeline") render(d); else $("#root").innerHTML = '<div class="empty">Nothing to place on the timeline.</div>'; }
+  catch (e) { $("#root").innerHTML = '<div class="empty">Unreadable response.</div>'; }
+};
+await app.connect();
+theme(app.getHostContext());
+</script>
+</body>
+</html>

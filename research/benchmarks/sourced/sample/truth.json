@@ -1,0 +1,752 @@
+{
+ "seed": 1,
+ "start": "2025-02-03",
+ "days": 14,
+ "owner": "P0",
+ "people": [
+  {
+   "id": "P0",
+   "name": "Kofi Achebe",
+   "relation": "self",
+   "voice": "af_heart"
+  },
+  {
+   "id": "P1",
+   "name": "Oskar Lindqvist",
+   "relation": "sister",
+   "voice": "am_eric"
+  },
+  {
+   "id": "P2",
+   "name": "Priya Sorensen",
+   "relation": "brother",
+   "voice": "bf_alice"
+  },
+  {
+   "id": "P3",
+   "name": "Kasper Varga",
+   "relation": "best friend",
+   "voice": "bm_daniel"
+  },
+  {
+   "id": "P4",
+   "name": "Hollis Petrov",
+   "relation": "friend",
+   "voice": "af_river"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F001",
+   "subject": "P0",
+   "predicate": "lives_at",
+   "value": {
+    "street": "51 Orchard Close",
+    "city": "Ghent"
+   },
+   "valid_from": "2022-12-26",
+   "valid_to": "2025-02-15",
+   "kind": "state",
+   "slot": "P0:lives_at",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": true,
+   "canonical": "Kofi Achebe lives at 51 Orchard Close, Ghent.",
+   "answer": "51 Orchard Close, Ghent"
+  },
+  {
+   "id": "F002",
+   "subject": "P0",
+   "predicate": "lives_at",
+   "value": {
+    "street": "79 Linden Street",
+    "city": "Ghent"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:lives_at",
+   "version": 1,
+   "supersedes": "F001",
+   "since_stated": true,
+   "canonical": "Kofi Achebe lives at 79 Linden Street, Ghent.",
+   "answer": "79 Linden Street, Ghent"
+  },
+  {
+   "id": "F003",
+   "subject": "P0",
+   "predicate": "pays_rent",
+   "value": {
+    "amount": 680,
+    "currency": "EUR"
+   },
+   "valid_from": "2022-12-26",
+   "valid_to": "2025-02-15",
+   "kind": "state",
+   "slot": "P0:pays_rent",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe pays 680 EUR a month in rent.",
+   "answer": "680 EUR"
+  },
+  {
+   "id": "F004",
+   "subject": "P0",
+   "predicate": "pays_rent",
+   "value": {
+    "amount": 1340,
+    "currency": "EUR"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:pays_rent",
+   "version": 1,
+   "supersedes": "F003",
+   "since_stated": true,
+   "canonical": "Kofi Achebe pays 1340 EUR a month in rent.",
+   "answer": "1340 EUR"
+  },
+  {
+   "id": "F005",
+   "subject": "P0",
+   "predicate": "works_at",
+   "value": {
+    "employer": "Northwind Analytics",
+    "title": "backend engineer"
+   },
+   "valid_from": "2021-12-26",
+   "valid_to": "2025-02-15",
+   "kind": "state",
+   "slot": "P0:works_at",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": true,
+   "canonical": "Kofi Achebe works as a backend engineer at Northwind Analytics.",
+   "answer": "Northwind Analytics"
+  },
+  {
+   "id": "F006",
+   "subject": "P0",
+   "predicate": "works_at",
+   "value": {
+    "employer": "Silverfern Energy",
+    "title": "research assistant"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:works_at",
+   "version": 1,
+   "supersedes": "F005",
+   "since_stated": true,
+   "canonical": "Kofi Achebe works as a research assistant at Silverfern Energy.",
+   "answer": "Silverfern Energy"
+  },
+  {
+   "id": "F007",
+   "subject": "P0",
+   "predicate": "health",
+   "value": {
+    "condition": "a bad chest cold",
+    "care": "rest and fluids"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": "2025-02-12",
+   "kind": "state",
+   "slot": "P0:health",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe had a bad chest cold, treated with rest and fluids.",
+   "answer": "a bad chest cold"
+  },
+  {
+   "id": "F008",
+   "subject": "P0",
+   "predicate": "birthday",
+   "value": {
+    "date": "1999-05-01"
+   },
+   "valid_from": "1999-05-01",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:birthday",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe's birthday is on 1 May.",
+   "answer": "1 May"
+  },
+  {
+   "id": "F009",
+   "subject": "P0",
+   "predicate": "hometown",
+   "value": {
+    "city": "Bristol"
+   },
+   "valid_from": "1999-05-01",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:hometown",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe grew up in Bristol.",
+   "answer": "Bristol"
+  },
+  {
+   "id": "F010",
+   "subject": "P0",
+   "predicate": "allergy",
+   "value": {
+    "food": "sesame"
+   },
+   "valid_from": "2021-08-24",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:allergy",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe is allergic to sesame.",
+   "answer": "sesame"
+  },
+  {
+   "id": "F011",
+   "subject": "P0",
+   "predicate": "speaks",
+   "value": {
+    "language": "Arabic"
+   },
+   "valid_from": "2024-03-16",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:speaks",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe speaks Arabic.",
+   "answer": "Arabic"
+  },
+  {
+   "id": "F012",
+   "subject": "P1",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Montreal"
+   },
+   "valid_from": "2022-11-25",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Oskar Lindqvist lives in Montreal.",
+   "answer": "Montreal"
+  },
+  {
+   "id": "F013",
+   "subject": "P2",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Rotterdam"
+   },
+   "valid_from": "2023-09-14",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Priya Sorensen lives in Rotterdam.",
+   "answer": "Rotterdam"
+  },
+  {
+   "id": "F014",
+   "subject": "P2",
+   "predicate": "job",
+   "value": {
+    "title": "operations manager"
+   },
+   "valid_from": "2021-12-19",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Priya Sorensen works as an operations manager.",
+   "answer": "operations manager"
+  },
+  {
+   "id": "F015",
+   "subject": "P3",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Edinburgh"
+   },
+   "valid_from": "2023-05-28",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kasper Varga lives in Edinburgh.",
+   "answer": "Edinburgh"
+  },
+  {
+   "id": "F016",
+   "subject": "P4",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Montreal"
+   },
+   "valid_from": "2022-08-31",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P4:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Hollis Petrov lives in Montreal.",
+   "answer": "Montreal"
+  },
+  {
+   "id": "F017",
+   "subject": "P4",
+   "predicate": "job",
+   "value": {
+    "title": "sales lead"
+   },
+   "valid_from": "2024-02-28",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P4:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Hollis Petrov works as a sales lead.",
+   "answer": "sales lead"
+  },
+  {
+   "id": "F018",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P1",
+    "name": "Oskar Lindqvist",
+    "venue": "the harbour footpath"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe met Oskar Lindqvist at the harbour footpath on 10 February 2025.",
+   "answer": "the harbour footpath"
+  },
+  {
+   "id": "F019",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the city library",
+    "city": "Lyon",
+    "lat": 45.75081,
+    "lon": 4.83579,
+    "time": "08:49"
+   },
+   "valid_from": "2025-02-14",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe was in Lyon on 14 February 2025.",
+   "answer": "Lyon"
+  },
+  {
+   "id": "F020",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the harbour footpath",
+    "city": "Ghent",
+    "lat": 51.05485,
+    "lon": 3.7355,
+    "time": "17:22"
+   },
+   "valid_from": "2025-02-16",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe was in Ghent on 16 February 2025.",
+   "answer": "Ghent"
+  },
+  {
+   "id": "F021",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P1",
+    "name": "Oskar Lindqvist",
+    "venue": "the harbour footpath"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe met Oskar Lindqvist at the harbour footpath on 7 February 2025.",
+   "answer": "the harbour footpath"
+  },
+  {
+   "id": "F022",
+   "subject": "P0",
+   "predicate": "appointment",
+   "value": {
+    "what": "bank adviser"
+   },
+   "valid_from": "2025-02-16",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:appointment",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe had a bank adviser appointment on 16 February 2025.",
+   "answer": "16 February 2025"
+  },
+  {
+   "id": "F023",
+   "subject": "P0",
+   "predicate": "appointment",
+   "value": {
+    "what": "bank adviser"
+   },
+   "valid_from": "2025-02-11",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:appointment",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe had a bank adviser appointment on 11 February 2025.",
+   "answer": "11 February 2025"
+  },
+  {
+   "id": "F024",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the botanical garden",
+    "city": "Ghent",
+    "lat": 51.0571,
+    "lon": 3.70539,
+    "time": "16:26"
+   },
+   "valid_from": "2025-02-03",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe was in Ghent on 3 February 2025.",
+   "answer": "Ghent"
+  },
+  {
+   "id": "F025",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P4",
+    "name": "Hollis Petrov",
+    "venue": "the botanical garden"
+   },
+   "valid_from": "2025-02-08",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe met Hollis Petrov at the botanical garden on 8 February 2025.",
+   "answer": "the botanical garden"
+  },
+  {
+   "id": "F026",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the hilltop viewpoint",
+    "city": "Ghent",
+    "lat": 51.04755,
+    "lon": 3.72139,
+    "time": "11:40"
+   },
+   "valid_from": "2025-02-11",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe was in Ghent on 11 February 2025.",
+   "answer": "Ghent"
+  },
+  {
+   "id": "F027",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the riverside park",
+    "city": "Ghent",
+    "lat": 51.06624,
+    "lon": 3.72928,
+    "time": "12:02"
+   },
+   "valid_from": "2025-02-12",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe was in Ghent on 12 February 2025.",
+   "answer": "Ghent"
+  },
+  {
+   "id": "F028",
+   "subject": "P0",
+   "predicate": "appointment",
+   "value": {
+    "what": "dentist"
+   },
+   "valid_from": "2025-02-13",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:appointment",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe had a dentist appointment on 13 February 2025.",
+   "answer": "13 February 2025"
+  },
+  {
+   "id": "F029",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the botanical garden",
+    "city": "Ghent",
+    "lat": 51.04428,
+    "lon": 3.70178,
+    "time": "17:11"
+   },
+   "valid_from": "2025-02-03",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe was in Ghent on 3 February 2025.",
+   "answer": "Ghent"
+  },
+  {
+   "id": "F030",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the botanical garden",
+    "city": "Ghent",
+    "lat": 51.0554,
+    "lon": 3.70413,
+    "time": "12:41"
+   },
+   "valid_from": "2025-02-04",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe was in Ghent on 4 February 2025.",
+   "answer": "Ghent"
+  }
+ ],
+ "traps": [
+  {
+   "id": "T01",
+   "kind": "hypothetical",
+   "subject": "P0",
+   "day": "2025-02-10",
+   "sentence": "If the Turin offer ever comes through, I'd honestly move there in a heartbeat.",
+   "forbidden": "Kofi Achebe moved to Turin.",
+   "question": "When did Kofi move to Turin?",
+   "fact_id": ""
+  },
+  {
+   "id": "T02",
+   "kind": "plan",
+   "subject": "P0",
+   "day": "2025-02-14",
+   "sentence": "I keep thinking about adopting a dog, maybe next year.",
+   "forbidden": "Kofi Achebe has a dog.",
+   "question": "What is the name of Kofi's dog?",
+   "fact_id": ""
+  },
+  {
+   "id": "T03",
+   "kind": "negation",
+   "subject": "P0",
+   "day": "2025-02-08",
+   "sentence": "In the end I did not sign up for the marathon, not this year.",
+   "forbidden": "Kofi Achebe signed up for a marathon.",
+   "question": "Which marathon did Kofi sign up for?",
+   "fact_id": ""
+  },
+  {
+   "id": "T04",
+   "kind": "hearsay",
+   "subject": "P4",
+   "day": "2025-02-10",
+   "sentence": "Hollis said their bike got stolen outside the station.",
+   "forbidden": "Kofi Achebe's bike was stolen.",
+   "question": "Where was Kofi's bike stolen?",
+   "fact_id": ""
+  },
+  {
+   "id": "T05",
+   "kind": "plan",
+   "subject": "P0",
+   "day": "2025-02-04",
+   "sentence": "Maybe I'll learn to sail this summer, we'll see.",
+   "forbidden": "Kofi Achebe learned to sail.",
+   "question": "Where did Kofi take sailing lessons?",
+   "fact_id": ""
+  },
+  {
+   "id": "T06",
+   "kind": "hearsay",
+   "subject": "P1",
+   "day": "2025-02-07",
+   "sentence": "Apparently Oskar's company might be shutting down.",
+   "forbidden": "Oskar Lindqvist's company shut down.",
+   "question": "When did Oskar's company shut down?",
+   "fact_id": ""
+  },
+  {
+   "id": "T07",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-14",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Kofi took on 14 February 2025?",
+   "fact_id": "F019"
+  },
+  {
+   "id": "T08",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-16",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Kofi took on 16 February 2025?",
+   "fact_id": "F020"
+  },
+  {
+   "id": "T09",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-03",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Kofi took on 3 February 2025?",
+   "fact_id": "F024"
+  },
+  {
+   "id": "T10",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-11",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Kofi took on 11 February 2025?",
+   "fact_id": "F026"
+  },
+  {
+   "id": "T11",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-12",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Kofi took on 12 February 2025?",
+   "fact_id": "F027"
+  },
+  {
+   "id": "T12",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-03",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Kofi took on 3 February 2025?",
+   "fact_id": "F029"
+  },
+  {
+   "id": "T13",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-04",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Kofi took on 4 February 2025?",
+   "fact_id": "F030"
+  }
+ ],
+ "unstated": [
+  {
+   "question": "What car does Kofi drive?"
+  },
+  {
+   "question": "What is Kofi's blood type?"
+  },
+  {
+   "question": "Which university did Kofi attend?"
+  },
+  {
+   "question": "What is the name of Kofi's landlord?"
+  },
+  {
+   "question": "How old is Kofi's pet?"
+  },
+  {
+   "question": "What car does Oskar drive?"
+  },
+  {
+   "question": "What is Priya's favourite band?"
+  },
+  {
+   "question": "Which school did Kasper go to?"
+  },
+  {
+   "question": "What is Hollis's middle name?"
+  }
+ ]
+}

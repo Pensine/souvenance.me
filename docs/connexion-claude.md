@@ -1,13 +1,13 @@
-# Connecter la Pensine à Claude
+# Connecting the Pensine to Claude
 
-Interface unique : on parle à Claude (web, mobile, voix), qui porte la mémoire
-via ce serveur MCP. Deux modes selon le client.
+A single interface: you talk to Claude (web, mobile, voice), which carries the memory
+through this MCP server. There are two modes, depending on the client.
 
-## claude.ai / app mobile (connecteur distant) — le mode cible
+## claude.ai / mobile app (remote connector) — the target mode
 
-claude.ai exige un serveur MCP **distant** (streamable HTTP), accessible en HTTPS.
+claude.ai requires a **remote** MCP server (streamable HTTP), reachable over HTTPS.
 
-Sur le VPS :
+On the VPS:
 
 ```bash
 PENSINE_MCP_TRANSPORT=streamable-http \
@@ -15,25 +15,29 @@ FASTMCP_HOST=127.0.0.1 FASTMCP_PORT=8400 \
 python -m pensine.mcp_server
 ```
 
-Derrière le reverse proxy (Caddy/nginx), exposer `https://pensine.example.org/mcp`
+Behind the reverse proxy (Caddy/nginx), expose `https://pensine.example.org/mcp`
 → `127.0.0.1:8400`.
 
-Puis dans claude.ai : **Paramètres → Connecteurs → Ajouter un connecteur
-personnalisé** → URL `https://pensine.example.org/mcp`. Créer ensuite le
-**projet Claude « Pensine »** et y activer le connecteur : c'est là que vivent
-les conversations, le log de bord et l'interview fondatrice.
+Then in claude.ai: **Settings → Connectors → Add custom connector**
+→ URL `https://pensine.example.org/mcp`. Next, create the
+**"Pensine" Claude project** and enable the connector in it: that is where
+the conversations, the logbook and the founding interview live.
 
-> Sécurité v1 : ne pas exposer le serveur MCP sans authentification. Au choix :
-> auth au niveau du reverse proxy (mTLS, IP allowlist) ou OAuth du SDK MCP.
-> La mémoire intime ne sort jamais sans contrôle d'accès.
+> Security: never expose the MCP server without authentication. The
+> simplest way: set `PENSINE_MCP_TOKEN` (scripts/setup.py generates it). The
+> server then requires the token — either as an `Authorization: Bearer <token>`
+> header, or in the address: `https://pensine.example.org/mcp/<token>`, which is the form
+> to paste into a claude.ai or ChatGPT connector, since those send no header.
+> Without a token, protection is left to the reverse proxy (mTLS, IP allowlist).
+> Intimate memory never leaves without access control.
 
-## Claude Code / Claude Desktop (stdio, pour développer)
+## Claude Code / Claude Desktop (stdio, for development)
 
 ```bash
 claude mcp add pensine -- python -m pensine.mcp_server
 ```
 
-ou dans la config Desktop :
+or in the Desktop config:
 
 ```json
 {
@@ -47,9 +51,9 @@ ou dans la config Desktop :
 }
 ```
 
-## Raccourci iOS « Pensine » (dépôt, hors MCP)
+## "Pensine" iOS Shortcut (deposits, outside MCP)
 
-Share sheet → raccourci → `POST https://pensine.example.org/deposit`
-(en-tête `Authorization: Bearer $PENSINE_DEPOSIT_TOKEN`, champ `file`,
-champs optionnels `note`, `captured_at`, `sender`). Deux taps entre
-« ce vocal compte » et « c'est dans la Pensine ».
+Share sheet → shortcut → `POST https://pensine.example.org/deposit`
+(header `Authorization: Bearer $PENSINE_DEPOSIT_TOKEN`, field `file`,
+optional fields `note`, `captured_at`, `sender`). Two taps between
+"this voice note matters" and "it's in the Pensine".

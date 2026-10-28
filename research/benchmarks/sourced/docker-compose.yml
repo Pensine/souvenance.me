@@ -1,0 +1,18 @@
+# SOURCED — throwaway database for the Pensine adapter. Never production.
+#   docker compose -p sourced-eval up -d
+#   docker compose -p sourced-eval down -v     # full reset
+# The adapter creates and drops the `sourced_eval` database itself.
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: sourced
+      POSTGRES_USER: sourced
+      POSTGRES_PASSWORD: sourced   # local, ephemeral, synthetic data only
+    volumes:
+      - sourced_pgdata:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:${SOURCED_DB_PORT:-5443}:5432"
+
+volumes:
+  sourced_pgdata:

@@ -1,9 +1,9 @@
-"""Identification des locuteurs (phase 2) — pyannote + empreintes ECAPA-TDNN.
+"""Speaker identification (phase 2) — pyannote + ECAPA-TDNN voiceprints.
 
-Règle des tiers (§8) : les métadonnées du canal (expéditeur du transfert)
-priment TOUJOURS sur le ML ; l'enrôlement d'une empreinte est un acte
-explicite (scripts/enroll_speaker.py). Briques optionnelles : sans
-speechbrain/pyannote installés, tout dégrade proprement (locuteurs 'unknown').
+Third-party rule (§8): channel metadata (the forwarder of the message)
+ALWAYS takes precedence over ML; enrolling a voiceprint is an explicit act
+(scripts/enroll_speaker.py). Optional building blocks: without
+speechbrain/pyannote installed, everything degrades gracefully (speakers 'unknown').
 """
 
 from pathlib import Path
@@ -12,7 +12,7 @@ EMBED_DIM = 192  # ECAPA-TDNN (speechbrain spkrec-ecapa-voxceleb)
 
 
 def compute_voiceprint(wav_path: Path) -> list[float]:
-    """Empreinte d'un échantillon audio (mono 16 kHz de préférence)."""
+    """Voiceprint of an audio sample (mono 16 kHz preferably)."""
     import torchaudio
     from speechbrain.inference.speaker import EncoderClassifier
 
@@ -27,11 +27,17 @@ def compute_voiceprint(wav_path: Path) -> list[float]:
 
 def identify_segments(conn, wav_path: Path, *, sender_entity_id: int | None = None,
                       threshold: float = 0.35) -> list[dict] | None:
-    """Diarise le fichier et identifie chaque segment.
+    """Diarize the file and identify each segment.
 
-    Si `sender_entity_id` est fourni (métadonnée du canal — ex. expéditeur
-    d'un vocal WhatsApp transféré), il est attribué d'office au locuteur
-    dominant : le canal prime sur le ML. Retourne None si pyannote absent."""
+    If `sender_entity_id` is provided (channel metadata — e.g. the sender of a
+    forwarded WhatsApp voice note), it is assigned outright to the dominant
+    speaker: the channel takes precedence over ML. Returns None if pyannote is absent."""
+    # With no enrolled voiceprint and no known sender, diarization cannot
+    # name anyone: no point loading pyannote (several hundred MB more in a
+    # nightly cycle that shares the server).
+    if sender_entity_id is None and not conn.execute(
+            "SELECT 1 FROM voiceprints LIMIT 1").fetchone():
+        return None
     try:
         from pyannote.audio import Pipeline
     except ImportError:
@@ -40,7 +46,7 @@ def identify_segments(conn, wav_path: Path, *, sender_entity_id: int | None = No
     pipeline = Pipeline.from_pretrained("pyannote/speaker-diarization-3.1")
     diarization = pipeline(str(wav_path))
 
-    # Regroupe les segments par locuteur pyannote
+    # Group segments by pyannote speaker
     turns: dict[str, list[tuple[float, float]]] = {}
     for turn, _, label in diarization.itertracks(yield_label=True):
         turns.setdefault(label, []).append((turn.start, turn.end))
@@ -51,7 +57,7 @@ def identify_segments(conn, wav_path: Path, *, sender_entity_id: int | None = No
     for label, segments in turns.items():
         entity_id = None
         if label == dominant and sender_entity_id is not None:
-            entity_id = sender_entity_id       # le canal prime sur le ML
+            entity_id = sender_entity_id       # the channel takes precedence over ML
         else:
             entity_id = _match_voiceprint(conn, wav_path, segments, threshold)
         results.extend(
@@ -64,7 +70,7 @@ def identify_segments(conn, wav_path: Path, *, sender_entity_id: int | None = No
 
 def _match_voiceprint(conn, wav_path: Path, segments: list[tuple[float, float]],
                       threshold: float) -> int | None:
-    """Empreinte du locuteur sur ses segments → plus proche voisin pgvector."""
+    """Speaker voiceprint over their segments → nearest neighbor via pgvector."""
     try:
         import torchaudio
         from speechbrain.inference.speaker import EncoderClassifier
@@ -74,7 +80,7 @@ def _match_voiceprint(conn, wav_path: Path, segments: list[tuple[float, float]],
     if sr != 16000:
         signal = torchaudio.functional.resample(signal, sr, 16000)
         sr = 16000
-    # Concatène jusqu'à 30 s des segments de ce locuteur
+    # Concatenate up to 30 s of this speaker's segments
     import torch
     chunks, total = [], 0.0
     for s, e in segments:

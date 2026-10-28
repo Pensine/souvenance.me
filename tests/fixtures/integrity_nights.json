@@ -1,0 +1,32 @@
+[
+ {"night": "2026-09-14",
+  "events": [
+   {"id": 101, "occurred_at": "2026-09-14T08:10:00+00:00",
+    "payload": {"transcript": "Ce matin j'ai couru dix kilomètres autour du lac avec Camille, il faisait frais. On a parlé de l'Atelier Nova et du salon de novembre."}},
+   {"id": 102, "occurred_at": "2026-09-14T21:40:00+00:00",
+    "payload": {"note": "Décidé de ne plus prendre de café après seize heures, je dors mal depuis une semaine."}}],
+  "candidates": [
+   {"type": "episodic", "content": "Course de dix kilomètres autour du lac avec Camille, par temps frais.",
+    "source_event_ids": [101], "preuve": ["j'ai couru dix kilomètres autour du lac avec Camille"], "_verdict": "fidele"},
+   {"type": "semantic", "content": "L'Atelier Nova prépare un salon en novembre.",
+    "source_event_ids": [101], "preuve": ["On a parlé de l'Atelier Nova et du salon de novembre"], "_verdict": "fidele"},
+   {"type": "procedural", "content": "Plus de café après seize heures, à cause d'un sommeil perturbé.",
+    "source_event_ids": [102], "preuve": ["ne plus prendre de café après seize heures, je dors mal"], "_verdict": "fidele"},
+   {"type": "episodic", "content": "Course de 12 km au bord du lac d'Annecy.",
+    "source_event_ids": [101], "preuve": ["j'ai couru dix kilomètres autour du lac"], "_verdict": "inventee"},
+   {"type": "reflection", "content": "Camille est sa partenaire d'entraînement principale depuis des années.",
+    "source_event_ids": [101], "preuve": ["Camille est ma partenaire depuis des années"], "_verdict": "inventee"},
+   {"type": "semantic", "content": "Il souffre d'insomnie chronique.",
+    "source_event_ids": [102], "preuve": [], "_verdict": "inventee"}]},
+ {"night": "2026-09-15",
+  "events": [
+   {"id": 103, "occurred_at": "2026-09-15T12:00:00+00:00",
+    "payload": {"transcript": "Rendez-vous chez ACME pour le devis du site, ils proposent trois mille euros, je dois répondre avant vendredi."}}],
+  "candidates": [
+   {"type": "episodic", "content": "Rendez-vous chez ACME : devis du site à trois mille euros, réponse avant vendredi.",
+    "source_event_ids": [103], "preuve": ["ils proposent trois mille euros, je dois répondre avant vendredi"], "_verdict": "fidele"},
+   {"type": "semantic", "content": "ACME a proposé 3000 euros pour le site.",
+    "source_event_ids": [103], "preuve": ["ils proposent trois mille euros"], "_verdict": "fidele"},
+   {"type": "reflection", "content": "Il hésite à accepter le devis d'ACME, qu'il trouve trop cher.",
+    "source_event_ids": [103], "preuve": ["Rendez-vous chez ACME pour le devis du site"], "_verdict": "approximative"}]}
+]

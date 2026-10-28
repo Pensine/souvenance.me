@@ -1,10 +1,10 @@
-# Persona — l'identité narrative (couche 3)
+# Persona — the narrative identity (layer 3)
 
-Le persona n'est pas une liste de traits : une histoire structurée (McAdams) —
-chapitres, tournants, thèmes, tensions assumées. Il vit ici, en markdown,
-versionné dans Git. **Le propriétaire en est l'auteur final** : les propositions
-d'amendement (cycle REM → `propositions/`, non versionnées) ne sont jamais
-auto-ratifiées.
+The persona is not a list of traits: it is a structured story (McAdams) —
+chapters, turning points, themes, owned tensions. It lives here, in markdown,
+versioned in Git. **The owner is its final author**: amendment proposals
+(weekly REM cycle → `propositions/`, not versioned) are never ratified
+automatically.
 
-Se remplit en phase 0 à partir de l'interview fondatrice (3-4 sessions audio :
-biographie, valeurs, contradictions, style de décision, relations, projets, peurs).
+It is filled in phase 0 from the founding interview (3-4 audio sessions:
+biography, values, contradictions, decision style, relationships, projects, fears).

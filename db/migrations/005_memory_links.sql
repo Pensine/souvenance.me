@@ -1,22 +1,21 @@
--- Liaisons entre souvenirs — le rappel devient un réseau, plus un index.
+-- Links between memories — recall becomes a network, no longer an index.
 --
--- Jusqu'ici une mémoire pointait vers ses events sources (provenance) et vers
--- son successeur (reconsolidation). Rien ne reliait deux souvenirs entre eux :
--- le graphe relie des *entités*, pas des *souvenirs*. Conséquence, le rappel
--- était une recherche par similarité — un index plat. Une mémoire humaine
--- récupère de proche en proche : un souvenir en active un autre, qui ne partage
--- pas forcément son vocabulaire.
+-- Until now a memory pointed to its source events (provenance) and to its
+-- successor (reconsolidation). Nothing linked two memories to each other:
+-- the graph links *entities*, not *memories*. As a result, recall was a
+-- similarity search — a flat index. A human memory retrieves step by step: one
+-- memory activates another, which does not necessarily share its vocabulary.
 --
--- Deux origines de lien :
---   'shared_event' — structurel, posé à la consolidation : deux mémoires nées
---                    du même événement appartiennent au même épisode.
---   'co_recall'    — appris, hebbien : deux mémoires qui remontent ensemble
---                    voient leur lien se renforcer. Ce qui s'active ensemble
---                    se lie.
+-- Two origins of a link:
+--   'shared_event' — structural, set at consolidation: two memories born
+--                    from the same event belong to the same episode.
+--   'co_recall'    — learned, Hebbian: two memories that surface together
+--                    see their link strengthen. What fires together
+--                    wires together.
 --
--- Arête non orientée, stockée une seule fois (source_id < target_id) : une
--- association n'a pas de sens de lecture. `kind` garde l'origine de la
--- création ; la force, elle, s'accumule quelle que soit la voie.
+-- Undirected edge, stored only once (source_id < target_id): an association
+-- has no reading direction. `kind` keeps the origin of creation; strength
+-- accumulates whichever way it arises.
 CREATE TABLE memory_links (
     id BIGSERIAL PRIMARY KEY,
     source_id BIGINT NOT NULL REFERENCES memories(id),
@@ -33,7 +32,7 @@ CREATE TABLE memory_links (
 CREATE INDEX memory_links_source_idx ON memory_links(source_id, strength DESC);
 CREATE INDEX memory_links_target_idx ON memory_links(target_id, strength DESC);
 
--- Note sur l'oubli : contrairement aux mémoires, un lien trop faible est
--- SUPPRIMÉ, pas conservé au plancher. Les liens sont une projection —
--- recalculables depuis les events — et les garder tous ferait croître la table
--- en O(n²). Le substrat, lui, n'est jamais touché.
+-- Note on forgetting: unlike memories, a link that is too weak is
+-- DELETED, not kept at the floor. Links are a projection — recomputable from
+-- the events — and keeping them all would make the table grow as O(n²). The
+-- substrate itself is never touched.

@@ -1,0 +1,21 @@
+# LoCoMo eval — THROWAWAY database, never production.
+# An isolated compose project (name, volume, port): it cannot touch the real
+# Pensine or the VPS. The schema is applied the first time the volume starts.
+#
+#   docker compose -p locomo-eval up -d
+#   docker compose -p locomo-eval down -v     # full reset
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: locomo
+      POSTGRES_USER: locomo
+      POSTGRES_PASSWORD: locomo   # ephemeral local database, fictional public data
+    volumes:
+      - locomo_pgdata:/var/lib/postgresql/data
+      - ../../../db/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    ports:
+      - "127.0.0.1:${LOCOMO_DB_PORT:-5442}:5432"
+
+volumes:
+  locomo_pgdata:

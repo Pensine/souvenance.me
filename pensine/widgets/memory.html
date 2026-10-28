@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+/*__BASE_CSS__*/
+.top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.photo { margin: 12px -18px 0; aspect-ratio: 16 / 10; max-height: 280px; width: calc(100% + 36px);
+         background: var(--bg); overflow: hidden; }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo:empty { display: none; }
+.grid { display: grid; grid-template-columns: 1fr 190px; gap: 16px; margin-top: 12px; align-items: start; }
+@media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
+.place { border: 1px solid var(--faint); border-radius: 10px; padding: 8px; background: var(--bg); }
+.place svg { width: 100%; height: auto; display: block; }
+.place .lbl { font-size: 12px; margin-top: 4px; }
+.facts { display: grid; gap: 6px; font-size: 13px; }
+.facts b { font-weight: 600; color: var(--muted); font-size: 11.5px; text-transform: uppercase;
+           letter-spacing: .05em; display: block; }
+.chain { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--faint); display: grid; gap: 8px; }
+.link { cursor: pointer; padding: 8px 10px; border-radius: 10px; background: var(--bg); font-size: 13px; }
+.link:hover { outline: 1px solid var(--accent); }
+.link .why { color: var(--accent); font-size: 12px; margin-top: 2px; }
+.actions { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.past .quote { color: var(--past); }
+.proof { margin: 10px 0 0; padding: 8px 12px; border-left: 3px solid var(--accent);
+         background: var(--bg); border-radius: 0 8px 8px 0; font-size: 13px; }
+.proof .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
+              color: var(--muted); margin-bottom: 3px; }
+.proof q { font-family: var(--serif); font-style: italic; }
+</style>
+</head>
+<body>
+<div class="card" id="root"><div class="empty">Loading the memory…</div></div>
+<script type="module">
+/*__EXT_APPS_BUNDLE__*/
+const { App } = globalThis.ExtApps;
+const $ = (s, e = document) => e.querySelector(s);
+const el = (tag, cls, text) => { const n = document.createElement(tag);
+  if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+const TENSE = { present: ["present", "present"], past: ["past", "past"], future: ["upcoming", "future"] };
+const TYPE = { episodic: "episode", semantic: "knowledge", procedural: "way of doing", reflection: "reflection" };
+const day = iso => iso ? new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : "";
+
+const app = new App({ name: "Pensine — Memory", version: "1.0.0" }, {}, { autoResize: true });
+const theme = ctx => document.documentElement.classList.toggle("dark", ctx?.theme === "dark");
+app.onhostcontextchanged = theme;
+const ask = text => app.sendMessage({ role: "user", content: [{ type: "text", text }] });
+
+// Map without tiles: the point in the centre, nearby localities at their true
+// distance and bearing, a scale circle. Nothing is requested from a server.
+function miniMap(ou) {
+  const R = ou.map.radius_km, S = 180, C = S / 2, k = (C - 14) / R;
+  const svgNS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(svgNS, "svg"); svg.setAttribute("viewBox", `0 0 ${S} ${S}`);
+  svg.setAttribute("role", "img"); svg.setAttribute("aria-label", `Map around ${ou.label}`);
+  const add = (tag, attrs, text) => { const n = document.createElementNS(svgNS, tag);
+    for (const [a, v] of Object.entries(attrs)) n.setAttribute(a, v);
+    if (text) n.textContent = text; svg.append(n); return n; };
+  add("circle", { cx: C, cy: C, r: C - 14, fill: "none", stroke: "var(--faint)", "stroke-dasharray": "3 4" });
+  add("text", { x: C, y: 11, "text-anchor": "middle", "font-size": 9, fill: "var(--muted)" }, "N");
+  add("text", { x: S - 4, y: S - 4, "text-anchor": "end", "font-size": 8.5, fill: "var(--muted)" }, `${R} km`);
+  // non-overlapping labels: the nearest first, the others only if there
+  // is room (the dot itself always stays)
+  const boxes = [[C - 10, C - 10, C + 10, C + 10]];
+  const free = b => !boxes.some(o => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1]);
+  for (const p of ou.map.points) {
+    if (p.km < 0.5) continue;
+    const x = C + p.x * k, y = C - p.y * k;
+    add("circle", { cx: x, cy: y, r: 2.4, fill: "var(--muted)" });
+    const w = p.name.length * 4.6;
+    const sides = [["start", [x + 3, y - 6, x + 5 + w, y + 4]], ["end", [x - 5 - w, y - 6, x - 3, y + 4]]]
+      .filter(([, b]) => b[0] >= 0 && b[2] <= S);
+    const spot = sides.find(([, b]) => free(b));
+    if (spot) {
+      const [anchor, b] = spot; boxes.push(b);
+      add("text", { x: anchor === "start" ? x + 4 : x - 4, y: y + 3, "font-size": 8.5,
+                    fill: "var(--muted)", "text-anchor": anchor }, p.name);
+    }
+  }
+  add("circle", { cx: C, cy: C, r: 9, fill: "var(--accent)", opacity: .18 });
+  add("circle", { cx: C, cy: C, r: 4.5, fill: "var(--accent)" });
+  return svg;
+}
+
+async function loadPhoto(memoryId, box) {
+  try {
+    const res = await app.callServerTool({ name: "memory_photo", arguments: { memory_id: memoryId } });
+    const url = JSON.parse(res.content?.[0]?.text || "{}").data_url;
+    if (url) { const img = el("img"); img.src = url; img.alt = "Photo of the memory"; box.append(img); }
+  } catch (e) { /* no photo: the card stays readable */ }
+}
+
+function render(d) {
+  const root = $("#root"); root.innerHTML = "";
+  root.classList.toggle("past", d.temps === "past");
+  const top = el("div", "top");
+  const [label, cls] = TENSE[d.temps] || TENSE.present;
+  top.append(el("span", `chip ${cls}`, label), el("span", "chip", TYPE[d.type] || d.type));
+  if (d.archivee) top.append(el("span", "chip past", "archived"));
+  root.append(top);
+
+  const photo = el("div", "photo"); root.append(photo);
+  if (d.photo_media_id) loadPhoto(d.id, photo);
+
+  root.append(el("p", "quote", d.content));
+  if (d.preuve?.length) {
+    const CTRL = { verifiee: "verified in the deposit", verifiee_modele: "verified, reviewed",
+                   corrigee: "corrected on review", partielle: "partially supported",
+                   a_verifier: "to be checked" };
+    const proof = el("div", "proof");
+    proof.append(el("div", "lbl", `Evidence · ${CTRL[d.controle] || "excerpt from the deposit"}`));
+    for (const c of d.preuve.slice(0, 2)) { const q = el("q", null, c); const p = el("div"); p.append(q); proof.append(p); }
+    root.append(proof);
+  }
+
+  const grid = el("div", "grid"); const facts = el("div", "facts");
+  const fact = (k, v) => { if (!v) return; const f = el("div"); f.append(el("b", null, k), el("span", null, v)); facts.append(f); };
+  fact("When", `${day(d.date)} · ${d.quand}`);
+  if (d.temps === "past") fact("True until", `${day(d.fin)}${d.raison ? " — " + d.raison : ""}`);
+  fact("Era", d.epoque);
+  fact("Where", d.ou && `${d.ou.label}${d.ou.source ? " · " + d.ou.source : ""}`);
+  fact("Confidence", d.confidence != null ? `${Math.round(d.confidence * 100)}%` : null);
+  grid.append(facts);
+  if (d.ou?.map?.points?.length) {
+    const place = el("div", "place"); place.append(miniMap(d.ou), el("div", "lbl muted", d.ou.label));
+    grid.append(place);
+  } else { grid.style.gridTemplateColumns = "1fr"; }
+  root.append(grid);
+
+  if (d.avant?.length || d.apres?.length) {
+    const chain = el("div", "chain"); chain.append(el("div", "small muted", "Continuity"));
+    for (const b of d.avant || []) {
+      const l = el("div", "link"); l.tabIndex = 0;
+      l.append(el("div", null, `Before: ${b.content}`));
+      if (b.raison) l.append(el("div", "why", `changed: ${b.raison}`));
+      l.onclick = () => ask(`Show me the card for memory #${b.id}`); chain.append(l);
+    }
+    for (const a of d.apres || []) {
+      const l = el("div", "link"); l.tabIndex = 0;
+      l.append(el("div", null, `Since: ${a.content}`));
+      l.onclick = () => ask(`Show me the card for memory #${a.id}`); chain.append(l);
+    }
+    root.append(chain);
+  }
+
+  const actions = el("div", "actions");
+  if (d.audio_media_id) { const b = el("button", null, "▶ Listen to the recording");
+    b.onclick = () => ask(`Play me the voice recording of memory #${d.id}`); actions.append(b); }
+  const t = el("button", null, "See on the timeline");
+  t.onclick = () => ask(`Show me the timeline of this subject: ${d.content.slice(0, 80)}`); actions.append(t);
+  root.append(actions);
+}
+
+app.ontoolresult = ({ content }) => {
+  try { const d = JSON.parse(content?.[0]?.text || "{}");
+        if (d.card === "memory") render(d); else $("#root").innerHTML = '<div class="empty">Memory not found.</div>'; }
+  catch (e) { $("#root").innerHTML = '<div class="empty">Unreadable response.</div>'; }
+};
+await app.connect();
+theme(app.getHostContext());
+</script>
+</body>
+</html>

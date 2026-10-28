@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Le compilateur de persona (pièce 2 du §7) — la plus originale et la plus
-précieuse : flux de mémoires → identité narrative structurée (McAdams).
+"""The persona compiler (piece 2 of §7) — the most original and the most
+valuable: memory stream → structured narrative identity (McAdams).
 
-Produit une PROPOSITION complète dans persona/propositions/ :
-chapitres, tournants, thèmes, tensions assumées, style de décision —
-chaque affirmation avec confiance calibrée et mémoires sources.
-JAMAIS auto-ratifiée : `scripts/ratify_persona.py` installe la version
-que l'utilisateur a relue et amendée. L'utilisateur est l'auteur final.
+Produces a complete PROPOSAL in persona/propositions/:
+chapters, turning points, themes, acknowledged tensions, decision style —
+each claim with calibrated confidence and source memories.
+NEVER auto-ratified: `scripts/ratify_persona.py` installs the version
+the user has reread and amended. The user is the final author.
 """
 
 import json
@@ -98,7 +98,7 @@ def main() -> None:
         if material is None:
             db.audit(conn, "consolidation", "persona_noop", {})
             conn.commit()
-            print("Corpus trop jeune pour compiler un persona (< 10 mémoires).")
+            print("Corpus too young to compile a persona (< 10 memories).")
             return
     prompt = PROMPT.format(
         owner=config.OWNER_NAME,
@@ -108,7 +108,7 @@ def main() -> None:
     try:
         output = llm.complete(prompt)
     except llm.LLMUnavailable as exc:
-        print(f"Compilation en pause ({exc}).")
+        print(f"Compilation paused ({exc}).")
         return
 
     PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)
@@ -118,8 +118,8 @@ def main() -> None:
     with db.connection() as conn:
         db.audit(conn, "consolidation", "persona_compiled", {"proposal": str(out)})
         conn.commit()
-    print(f"Proposition de persona : {out}\n"
-          f"Relisez, amendez, puis : scripts/ratify_persona.py {out.name}")
+    print(f"Persona proposal: {out}\n"
+          f"Review, amend, then: scripts/ratify_persona.py {out.name}")
 
 
 if __name__ == "__main__":

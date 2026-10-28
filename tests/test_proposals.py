@@ -1,9 +1,9 @@
-"""Mémoire proposée : rien n'entre dans le substrat sans un second acte.
+"""Proposed memory: nothing enters the substrate without a second act.
 
-Ce qui est verrouillé ici est la propriété qui distingue ce système d'un
-assistant du marché : l'assistant peut repérer, il ne décide pas. Le serveur ne
-voit pas la conversation et ne peut donc pas vérifier un consentement — mais il
-peut refuser de croire à un consentement qui n'a pas eu le temps d'exister.
+What is locked down here is the property that distinguishes this system from an
+off-the-shelf assistant: the assistant may spot, it does not decide. The server
+does not see the conversation and so cannot verify consent -- but it
+can refuse to believe in a consent that has not had time to exist.
 """
 
 import pytest
@@ -23,7 +23,7 @@ class _FakeCursor:
 
 
 class _FakeConn:
-    """Connexion minimale : enregistre les requêtes, rejoue des lignes fixées."""
+    """Minimal connection: records the requests, replays fixed rows."""
 
     def __init__(self, rows=None):
         self.rows = list(rows or [])
@@ -42,27 +42,27 @@ class _FakeConn:
         return [v for p in self.params for v in p]
 
 
-# --- Proposer n'est pas mémoriser ------------------------------------------
+# --- Proposing is not memorizing -------------------------------------------
 
 def test_proposer_n_ecrit_aucun_evenement():
-    """La garantie centrale : une proposition n'atteint pas le substrat."""
+    """The central guarantee: a proposal does not reach the substrate."""
     conn = _FakeConn([{"id": 1, "proposed_at": "2026-08-08"}])
     proposals.propose(conn, "achat d'un appartement", "fact", "engagement long")
     assert not conn.wrote_to_events()
 
 
 def test_un_type_inconnu_bascule_vers_la_categorie_prudente():
-    """Dans le doute, l'inférence — c'est elle qui demande le plus de retenue."""
+    """When in doubt, inference -- it is the one that demands the most restraint."""
     conn = _FakeConn([{"id": 1, "proposed_at": "2026-08-08"}])
     proposals.propose(conn, "x", kind="n'importe quoi")
     assert "inference" in conn.all_params()
     assert "n'importe quoi" not in conn.all_params()
 
 
-# --- Le consentement doit avoir eu le temps d'exister ----------------------
+# --- Consent must have had time to exist -----------------------------------
 
 def test_confirmation_immediate_refusee():
-    """Personne ne lit une proposition et ne répond en deux secondes."""
+    """Nobody reads a proposal and answers in two seconds."""
     conn = _FakeConn([{"id": 1, "content": "x", "kind": "fact",
                        "rationale": None, "status": "pending", "age_s": 0.4}])
     with pytest.raises(proposals.NotConsented):
@@ -70,7 +70,7 @@ def test_confirmation_immediate_refusee():
 
 
 def test_confirmation_immediate_n_ecrit_rien():
-    """Le refus doit être total : pas d'événement écrit « au cas où »."""
+    """Refusal must be total: no event written "just in case"."""
     conn = _FakeConn([{"id": 1, "content": "x", "kind": "fact",
                        "rationale": None, "status": "pending", "age_s": 0.1}])
     with pytest.raises(proposals.NotConsented):
@@ -89,7 +89,7 @@ def test_proposition_inconnue_leve_une_erreur():
 
 
 def test_une_proposition_deja_decidee_n_est_pas_rejouee():
-    """Confirmer deux fois ne doit pas dupliquer l'événement."""
+    """Confirming twice must not duplicate the event."""
     conn = _FakeConn([{"id": 1, "content": "x", "kind": "fact",
                        "rationale": None, "status": "confirmed", "age_s": 900}])
     assert proposals.confirm(conn, 1) == {"already": "confirmed"}
@@ -103,7 +103,7 @@ def test_une_proposition_refusee_ne_peut_plus_etre_confirmee():
     assert not conn.wrote_to_events()
 
 
-# --- Le refus est une information, pas un néant ---------------------------
+# --- Refusal is information, not a void ------------------------------------
 
 def test_le_refus_est_conserve():
     conn = _FakeConn([{"id": 3}])
@@ -123,10 +123,10 @@ def test_refuser_une_proposition_deja_decidee_ne_fait_rien():
     assert proposals.decline(conn, 3) == {"already": "decided"}
 
 
-# --- Traçabilité : la question qu'aucun assistant du marché ne sait rendre --
+# --- Traceability: the question no off-the-shelf assistant can answer ------
 
 def test_les_evenements_portent_leur_provenance():
-    """Sans origin, le déposé et le proposé deviennent indiscernables."""
+    """Without origin, the deposited and the proposed become indistinguishable."""
     import inspect
     from pensine import db
     sig = inspect.signature(db.append_event)
@@ -134,8 +134,8 @@ def test_les_evenements_portent_leur_provenance():
 
 
 def test_la_provenance_n_entre_pas_dans_le_hash():
-    """Elle qualifie le fait, elle ne le change pas — sinon le même fait
-    déposé deux fois par deux voies créerait deux events."""
+    """It qualifies the fact, it does not change it -- otherwise the same fact
+    deposited twice through two channels would create two events."""
     import inspect
     from pensine import db
     src = inspect.getsource(db.append_event)

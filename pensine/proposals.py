@@ -1,47 +1,45 @@
-"""Mémoire proposée : l'assistant repère, l'utilisateur tranche.
+"""Proposed memory: the assistant spots, the user decides.
 
-Le serveur ne voit pas la conversation. Il ne peut donc pas *vérifier* qu'un
-consentement a été donné — aucune API ne le peut. Ce qu'il peut faire, et qui
-est fait ici :
+The server does not see the conversation. It therefore cannot *verify* that
+consent was given — no API can. What it can do, and what is done here:
 
-    séparer  une proposition n'est pas un événement. Elle vit dans sa propre
-             table et n'entre dans le substrat append-only qu'après un second
-             appel, distinct.
+    separate  a proposal is not an event. It lives in its own table and only
+              enters the append-only substrate after a second, distinct call.
 
-    dater    proposition et décision sont horodatées. Une confirmation trop
-             rapide pour qu'une réponse humaine ait eu lieu est refusée — un
-             modèle qui propose et confirme d'un seul souffle est arrêté.
+    timestamp proposal and decision are timestamped. A confirmation too fast
+              for a human answer to have occurred is refused — a model that
+              proposes and confirms in one breath is stopped.
 
-    tracer   l'événement produit porte `origin='proposed'`. La question « qu'a
-             retenu le système de lui-même ? » reste une requête SQL, pour
-             toujours.
+    trace     the resulting event carries `origin='proposed'`. The question
+              "what did the system retain on its own?" remains a SQL query,
+              forever.
 
-Le reste — annoncer avant de proposer, ne jamais confirmer sans un oui — tient
-à la discipline du modèle. On ne peut pas l'imposer depuis le serveur ; on peut
-le rendre visible, et c'est ce que fait `review`.
+The rest — announcing before proposing, never confirming without a yes —
+depends on the model's discipline. It cannot be enforced from the server; it
+can be made visible, and that is what `review` does.
 """
 
 from datetime import datetime, timezone
 
 from . import db
 
-# Délai minimal entre proposer et confirmer. Ce n'est pas une sécurité — un
-# modèle déterminé le contourne en attendant. C'est un garde-fou contre le zèle :
-# personne ne lit une proposition et ne répond en deux secondes, donc une
-# confirmation aussi rapide n'a pas pu être consentie.
+# Minimum delay between proposing and confirming. This is not a security
+# measure — a determined model gets around it by waiting. It is a guardrail
+# against zeal: nobody reads a proposal and answers within two seconds, so a
+# confirmation that fast cannot have been consented to.
 MIN_SECONDS_BEFORE_CONFIRM = 4
 
 KINDS = {"fact", "inference"}
 
 
 class NotConsented(Exception):
-    """Confirmation refusée : rien ne prouve qu'on a laissé le temps de répondre."""
+    """Confirmation refused: nothing proves that time was left to answer."""
 
 
 def propose(conn, content: str, kind: str, rationale: str = "") -> dict:
-    """Enregistre ce que l'assistant a compris. N'écrit AUCUN événement."""
+    """Record what the assistant understood. Writes NO event."""
     if kind not in KINDS:
-        kind = "inference"   # dans le doute, la catégorie la plus prudente
+        kind = "inference"   # when in doubt, the most cautious category
     row = conn.execute(
         """
         INSERT INTO memory_proposals (content, kind, rationale)
@@ -56,10 +54,10 @@ def propose(conn, content: str, kind: str, rationale: str = "") -> dict:
 
 
 def confirm(conn, proposal_id: int) -> dict:
-    """L'utilisateur a dit oui : la proposition devient un événement.
+    """The user said yes: the proposal becomes an event.
 
-    Lève NotConsented si la proposition vient d'être créée — le temps qu'il
-    faut pour lire et répondre ne s'est pas écoulé.
+    Raises NotConsented if the proposal has just been created — the time it
+    takes to read and answer has not elapsed.
     """
     row = conn.execute(
         """
@@ -70,16 +68,15 @@ def confirm(conn, proposal_id: int) -> dict:
         (proposal_id,),
     ).fetchone()
     if row is None:
-        raise KeyError(f"proposition {proposal_id} introuvable")
+        raise KeyError(f"proposal {proposal_id} not found")
     if row["status"] != "pending":
         return {"already": row["status"]}
     if row["age_s"] < MIN_SECONDS_BEFORE_CONFIRM:
         db.audit(conn, "mcp", "memory_confirm_too_fast",
                  {"proposal_id": proposal_id, "age_s": float(row["age_s"])})
         raise NotConsented(
-            "Proposition confirmée trop vite pour qu'une réponse ait pu être "
-            "donnée. Présente-la à la personne, attends sa réponse, puis "
-            "confirme."
+            "Proposal confirmed too fast for an answer to have been given. "
+            "Present it to the person, wait for their answer, then confirm."
         )
 
     event_id = db.append_event(
@@ -102,7 +99,7 @@ def confirm(conn, proposal_id: int) -> dict:
 
 
 def decline(conn, proposal_id: int, reason: str = "") -> dict:
-    """Refus. Conservé : ce qu'on ne veut pas voir mémorisé en dit long."""
+    """Refusal. Kept: what one does not want remembered says a lot."""
     updated = conn.execute(
         "UPDATE memory_proposals SET status='declined', decided_at=now(), "
         "decline_reason=%s WHERE id=%s AND status='pending' RETURNING id",
@@ -115,7 +112,7 @@ def decline(conn, proposal_id: int, reason: str = "") -> dict:
 
 
 def pending(conn, limit: int = 20):
-    """Ce qui attend une décision."""
+    """What is awaiting a decision."""
     return conn.execute(
         "SELECT id, content, kind, rationale, proposed_at FROM memory_proposals "
         "WHERE status='pending' ORDER BY proposed_at LIMIT %s",
@@ -124,11 +121,11 @@ def pending(conn, limit: int = 20):
 
 
 def review(conn, days: int = 30) -> dict:
-    """Ce que le système a retenu de lui-même, et ce qu'on lui a refusé.
+    """What the system retained on its own, and what it was refused.
 
-    C'est la question que Dash et al. ont dû poser de l'extérieur, sur des
-    inconnus, faute de pouvoir l'adresser au système lui-même. Ici, elle est
-    une requête.
+    This is the question Dash et al. had to ask from the outside, about
+    strangers, for lack of being able to put it to the system itself. Here, it
+    is a query.
     """
     counts = conn.execute(
         f"""

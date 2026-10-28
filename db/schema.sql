@@ -1,66 +1,66 @@
--- JUMEAU — Schéma SQL v1 (annexe A du document fondateur)
--- Note : `media` est créée avant `events` (events.media_id la référence).
+-- JUMEAU — SQL schema v1 (appendix A of the founding document)
+-- Note: `media` is created before `events` (events.media_id references it).
 
 CREATE EXTENSION IF NOT EXISTS vector;
 
--- Pensine : médias bruts — LE FICHIER ORIGINAL EST CONSERVÉ POUR TOUJOURS
--- (le transcript n'est qu'un index de recherche accroché au fichier)
+-- Pensine: raw media — THE ORIGINAL FILE IS KEPT FOREVER
+-- (the transcript is only a search index attached to the file)
 CREATE TABLE media (
     id BIGSERIAL PRIMARY KEY,
     captured_at TIMESTAMPTZ NOT NULL,
     kind TEXT NOT NULL,            -- 'audio','photo','video','pdf'
-    storage_path TEXT NOT NULL,    -- fichier brut, chiffré, jamais modifié
+    storage_path TEXT NOT NULL,    -- raw file, encrypted, never modified
     duration_s INT,
-    transcript TEXT,               -- WhisperX (aligné mot-à-mot)
-    speakers JSONB,                -- pyannote/ECAPA : [{segment, entity_id|'unknown'}]
-    exif JSONB,                    -- photos : date, GPS
-    description TEXT               -- images/keyframes : vision Claude Code
+    transcript TEXT,               -- WhisperX (word-level aligned)
+    speakers JSONB,                -- pyannote/ECAPA: [{segment, entity_id|'unknown'}]
+    exif JSONB,                    -- photos: date, GPS
+    description TEXT               -- images/keyframes: Claude Code vision
 );
 
--- Couche 0 : le substrat (append-only, jamais de UPDATE/DELETE)
+-- Layer 0: the substrate (append-only, never UPDATE/DELETE)
 CREATE TABLE events (
     id BIGSERIAL PRIMARY KEY,
     occurred_at TIMESTAMPTZ NOT NULL,
     ingested_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     source TEXT NOT NULL,          -- 'conversation','calendar','mail','sport_tracker','daily_log','pensieve'
     kind TEXT NOT NULL,            -- 'message','meeting','activity','decision','deposit',...
-    payload JSONB NOT NULL,        -- contenu brut retraité par le percepteur
+    payload JSONB NOT NULL,        -- raw content, reprocessed by the perceiver
     media_id BIGINT REFERENCES media(id),
-    hash TEXT NOT NULL             -- intégrité / déduplication
+    hash TEXT NOT NULL             -- integrity / deduplication
 );
 CREATE UNIQUE INDEX events_hash_idx ON events(hash);
 CREATE INDEX events_occurred_at_idx ON events(occurred_at);
 CREATE INDEX events_source_idx ON events(source);
 
--- Garde-fou append-only : aucun UPDATE/DELETE sur le log d'événements
+-- Append-only guard: no UPDATE/DELETE on the event log
 CREATE OR REPLACE FUNCTION forbid_mutation() RETURNS trigger AS $$
 BEGIN
-    RAISE EXCEPTION 'events est append-only (couche 0) : % interdit', TG_OP;
+    RAISE EXCEPTION 'events is append-only (layer 0): % is forbidden', TG_OP;
 END;
 $$ LANGUAGE plpgsql;
 CREATE TRIGGER events_append_only
     BEFORE UPDATE OR DELETE ON events
     FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
 
--- Couche 1 : mémoires dérivées (projections recalculables des events)
+-- Layer 1: derived memories (recomputable projections of events)
 CREATE TABLE memories (
     id BIGSERIAL PRIMARY KEY,
     type TEXT NOT NULL,            -- 'episodic','semantic','procedural','reflection'
     content TEXT NOT NULL,
     embedding VECTOR(768),         -- nomic-embed-text-v1.5 (BGE-M3 : 1024)
-    confidence REAL NOT NULL,      -- métacognition : calibrée, jamais implicite
+    confidence REAL NOT NULL,      -- metacognition: calibrated, never implicit
     importance REAL NOT NULL,
     valid_from TIMESTAMPTZ NOT NULL,
-    valid_to TIMESTAMPTZ,          -- NULL = encore vrai ; le temps est natif
-    source_event_ids BIGINT[],     -- traçabilité totale
+    valid_to TIMESTAMPTZ,          -- NULL = still true; time is native
+    source_event_ids BIGINT[],     -- full traceability
     access_count INT DEFAULT 0,
-    last_accessed_at TIMESTAMPTZ,  -- pour l'oubli actif
+    last_accessed_at TIMESTAMPTZ,  -- for active forgetting
     superseded_by BIGINT REFERENCES memories(id)  -- reconsolidation
 );
 CREATE INDEX memories_type_idx ON memories(type);
 CREATE INDEX memories_valid_idx ON memories(valid_from, valid_to);
 
--- Graphe temporel minimal (triplets)
+-- Minimal temporal graph (triples)
 CREATE TABLE entities (
     id BIGSERIAL PRIMARY KEY,
     name TEXT NOT NULL,
@@ -76,15 +76,15 @@ CREATE TABLE relations (
     source_event_ids BIGINT[]
 );
 
--- Couche 3 : le persona vit dans Git (fichiers markdown) ; ici, le pointeur
+-- Layer 3: the persona lives in Git (markdown files); here, the pointer
 CREATE TABLE persona_versions (
     id BIGSERIAL PRIMARY KEY,
     git_commit TEXT NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    ratified_by_user BOOLEAN NOT NULL DEFAULT false  -- l'utilisateur est l'auteur final
+    ratified_by_user BOOLEAN NOT NULL DEFAULT false  -- the user is the final author
 );
 
--- Boucle prédiction-erreur (phase 3)
+-- Prediction-error loop (phase 3)
 CREATE TABLE predictions (
     id BIGSERIAL PRIMARY KEY,
     context TEXT NOT NULL,         -- 'draft_email','decision','calibration_question'
@@ -94,27 +94,27 @@ CREATE TABLE predictions (
     created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
--- Moteur temporel : jalons (coordonnées humaines du temps)
+-- Temporal engine: landmarks (human coordinates of time)
 CREATE TABLE landmarks (
     id BIGSERIAL PRIMARY KEY,
-    name TEXT NOT NULL,            -- 'UTMB 2027','déménagement','début chapitre X'
+    name TEXT NOT NULL,            -- 'UTMB 2027','moving house','start of chapter X'
     at_date DATE NOT NULL,
     kind TEXT NOT NULL,            -- 'race','life_event','chapter_start','chapter_end'
-    cycle TEXT                     -- 'saison_trail','annuel',... si récurrent
+    cycle TEXT                     -- 'saison_trail','annuel',... if recurring
 );
 
--- Moteur temporel : mémoire prospective (se souvenir du futur)
+-- Temporal engine: prospective memory (remembering the future)
 CREATE TABLE intentions (
     id BIGSERIAL PRIMARY KEY,
-    content TEXT NOT NULL,         -- 'tester la stratégie de sommeil backyard'
+    content TEXT NOT NULL,         -- 'try the backyard sleep strategy'
     trigger_kind TEXT NOT NULL,    -- 'date','delta_landmark','topic'
     trigger_value TEXT NOT NULL,   -- '2026-10-15' | 'J-30:backyard_2026' | 'immobilier'
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    surfaced_at TIMESTAMPTZ,       -- refait surface en contexte, jamais en notification
+    surfaced_at TIMESTAMPTZ,       -- resurfaces in context, never as a notification
     resolved_at TIMESTAMPTZ
 );
 
--- Couche 7 : audit
+-- Layer 7: audit
 CREATE TABLE audit_log (
     id BIGSERIAL PRIMARY KEY,
     at TIMESTAMPTZ NOT NULL DEFAULT now(),

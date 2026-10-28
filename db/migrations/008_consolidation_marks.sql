@@ -1,30 +1,31 @@
--- « Vu, rien à en tirer » : un examen sans récolte doit rester une conclusion.
+-- "Seen, nothing to draw from it": an examination with no harvest must remain
+-- a conclusion.
 --
--- Un événement était réputé « à consolider » tant qu'aucune mémoire ne le
--- citait. Conséquence : un événement dont la consolidation décide légitimement
--- qu'il n'y a rien à retenir — un log de bord vide, un test, une notification
--- sans contenu — n'était jamais marqué comme traité. Il revenait chaque nuit,
--- coûtait un appel au modèle, et s'accumulait avec ses semblables dans le
--- prompt de tous les cycles suivants.
+-- An event was considered "to be consolidated" as long as no memory cited it.
+-- Consequence: an event that consolidation legitimately decides has nothing
+-- worth retaining — an empty logbook entry, a test, a notification with no
+-- content — was never marked as processed. It came back every night, cost a
+-- model call, and piled up with its kind in the prompt of every following
+-- cycle.
 --
--- Le marqueur ne peut pas vivre sur `events` : le trigger append-only interdit
--- tout UPDATE, et c'est bien ainsi. Le fait qu'un cycle ait examiné un
--- événement n'est pas un fait sur la vie de la personne — c'est un état du
--- traitement, donc une projection, donc sa place est ici.
+-- The marker cannot live on `events`: the append-only trigger forbids any
+-- UPDATE, and rightly so. That a cycle examined an event is not a fact about
+-- the person's life — it is a state of the processing, hence a projection,
+-- hence its place is here.
 --
--- REJEU COMPLET : `DELETE FROM consolidation_marks;` puis relancer la
--- consolidation fait relire tout le log au moteur courant. C'est la promesse
--- centrale de l'architecture — un meilleur modèle relit la même vie — et elle
--- reste vraie parce que ce marqueur est jetable.
+-- FULL REPLAY: `DELETE FROM consolidation_marks;` then rerunning
+-- consolidation makes the current engine reread the whole log. This is the
+-- central promise of the architecture — a better model rereads the same life
+-- — and it stays true because this marker is disposable.
 CREATE TABLE consolidation_marks (
     event_id BIGINT PRIMARY KEY REFERENCES events(id),
     examined_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     produced_memory BOOLEAN NOT NULL DEFAULT false
 );
 
--- Les événements déjà consolidés avant cette migration n'ont pas de marqueur.
--- On les marque d'après ce qu'ils ont produit, sinon le premier cycle
--- réexaminerait tout le corpus et créerait des mémoires en double.
+-- Events already consolidated before this migration have no marker.
+-- We mark them according to what they produced; otherwise the first cycle
+-- would reexamine the whole corpus and create duplicate memories.
 INSERT INTO consolidation_marks (event_id, examined_at, produced_memory)
 SELECT DISTINCT e.id, now(), true
 FROM events e

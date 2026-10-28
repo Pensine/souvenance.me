@@ -1,4 +1,4 @@
-"""Outil MCP landmark : validation en code (unitaire) + insertion (intégration)."""
+"""MCP landmark tool: validation in code (unit) + insertion (integration)."""
 
 import os
 
@@ -12,23 +12,23 @@ def test_validation_ok():
 
 
 def test_date_invalide():
-    assert "Date invalide" in _validate_landmark("X", "4 juillet 2026", "race")
+    assert "Invalid date" in _validate_landmark("X", "4 juillet 2026", "race")
 
 
 def test_kind_invalide():
     msg = _validate_landmark("X", "2026-07-04", "course")
-    assert "Kind invalide" in msg
+    assert "Invalid kind" in msg
     for kind in LANDMARK_KINDS:
-        assert kind in msg  # le message liste les kinds attendus
+        assert kind in msg  # the message lists the expected kinds
 
 
 def test_nom_manquant():
-    assert "Nom" in _validate_landmark("  ", "2026-07-04", "race")
+    assert "name missing" in _validate_landmark("  ", "2026-07-04", "race")
 
 
 @pytest.mark.skipif(
     not os.environ.get("PENSINE_TEST_DB"),
-    reason="PENSINE_TEST_DB non défini (test d'intégration)",
+    reason="PENSINE_TEST_DB not set (integration test)",
 )
 def test_insertion_et_doublon(monkeypatch):
     monkeypatch.setattr("pensine.config.DATABASE_URL",
@@ -36,11 +36,11 @@ def test_insertion_et_doublon(monkeypatch):
     from pensine.mcp_server import landmark
 
     first = landmark("TestJalon pytest", "2030-01-15", "life_event")
-    assert "posé au 2030-01-15" in first
+    assert "set on 2030-01-15" in first
     again = landmark("TestJalon pytest", "2030-01-15", "life_event")
-    assert "doublon ignoré" in again
+    assert "duplicate ignored" in again
 
-    # nettoyage (la table landmarks n'est pas append-only : c'est un référentiel)
+    # cleanup (the landmarks table is not append-only: it is a reference table)
     from pensine import db
     with db.connection() as conn:
         conn.execute("DELETE FROM landmarks WHERE name = 'TestJalon pytest'")

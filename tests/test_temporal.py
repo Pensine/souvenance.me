@@ -1,4 +1,4 @@
-"""Le moteur temporel est calculé en code, jamais par le LLM — donc testable."""
+"""The temporal engine is computed in code, never by the LLM -- hence testable."""
 
 from datetime import datetime, timezone
 
@@ -23,7 +23,7 @@ def test_jours_et_semaines():
 
 
 def test_mois_et_etes():
-    # ~14 mois en arrière : deux étés vécus depuis (2025 et 2026)
+    # ~14 months back: two summers lived since (2025 and 2026)
     d = humanize_delta(datetime(2025, 6, 1, tzinfo=timezone.utc), NOW)
     assert "il y a 14 mois" in d
     assert "deux étés en arrière" in d

@@ -1,8 +1,8 @@
-"""Embeddings : dégradation propre et préfixes de tâche.
+"""Embeddings: clean degradation and task prefixes.
 
-Le préfixe nomic n'est pas cosmétique — sans 'search_query: ' /
-'search_document: ', la qualité de recherche chute nettement. On le teste
-donc explicitement, sans charger le modèle (500 Mo).
+The nomic prefix is not cosmetic -- without 'search_query: ' /
+'search_document: ', search quality drops sharply. We therefore test it
+explicitly, without loading the model (500 MB).
 """
 
 import pytest
@@ -29,17 +29,17 @@ def test_modele_absent_degrade_sans_casser(monkeypatch, caplog):
     monkeypatch.setattr("pensine.config.EMBEDDINGS_ENABLED", True)
     monkeypatch.setattr(embeddings, "_load",
                         lambda: (_ for _ in ()).throw(ImportError("pas de modèle")))
-    assert embeddings.embed("peu importe") is None  # recall bascule en plein-texte
-    # …mais jamais en silence : une recherche plein-texte qui se ferait passer
-    # pour sémantique serait un mensonge du système.
-    assert "dégrade" in caplog.text
+    assert embeddings.embed("peu importe") is None  # recall falls back to full-text
+    # ...but never silently: a full-text search passing itself off
+    # as semantic would be a lie by the system.
+    assert "degrades" in caplog.text
     caplog.clear()
     embeddings.embed("une autre requête")
-    assert caplog.text == ""  # averti une fois, pas à chaque appel
+    assert caplog.text == ""  # warned once, not on every call
 
 
 class _FauxModele:
-    """Capture ce qui est réellement encodé."""
+    """Captures what is actually encoded."""
 
     def __init__(self):
         self.vu = []

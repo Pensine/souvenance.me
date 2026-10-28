@@ -1,22 +1,22 @@
--- Couche affective : un souvenir porte une charge, pas seulement un poids.
+-- Affective layer: a memory carries a charge, not just a weight.
 --
--- `importance` répond à « est-ce que ça compte ? ». Elle ne dit rien de ce qui
--- était ressenti. Un déjeuner anodin et un enterrement peuvent partager la même
--- importance ; ils n'ont pas la même charge, et une mémoire qui ne distingue pas
--- les deux ne modélise pas une personne.
+-- `importance` answers "does it matter?". It says nothing about what was
+-- felt. A mundane lunch and a funeral can share the same importance; they do
+-- not carry the same charge, and a memory that cannot tell the two apart does
+-- not model a person.
 --
--- Modèle circumplexe (Russell, 1980) : deux axes orthogonaux plutôt qu'un
--- curseur « bon/mauvais ». Le chagrin et la colère sont tous deux négatifs mais
--- ne se ressemblent pas — l'un est éteint, l'autre est vif. Sans le second axe,
--- ils deviennent indiscernables.
+-- Circumplex model (Russell, 1980): two orthogonal axes rather than a single
+-- "good/bad" slider. Grief and anger are both negative but do not resemble
+-- each other — one is subdued, the other is sharp. Without the second axis,
+-- they become indistinguishable.
 --
---   valence   -1 (pénible) … 0 (neutre) … +1 (heureux)
---   arousal    0 (calme, éteint) … 1 (intense, activé)
+--   valence   -1 (distressing) … 0 (neutral) … +1 (happy)
+--   arousal    0 (calm, subdued) … 1 (intense, activated)
 --
--- NULL est un état valide et distinct de zéro : « non déterminé » n'est pas
--- « neutre ». Les mémoires écrites avant cette migration restent NULL, et rien
--- ne les invente rétroactivement — les originaux sont conservés, une future
--- reconsolidation pourra les relire.
+-- NULL is a valid state, distinct from zero: "undetermined" is not
+-- "neutral". Memories written before this migration stay NULL, and nothing
+-- invents values for them retroactively — the originals are kept, and a future
+-- reconsolidation can reread them.
 ALTER TABLE memories ADD COLUMN valence REAL;
 ALTER TABLE memories ADD COLUMN arousal REAL;
 
@@ -25,8 +25,8 @@ ALTER TABLE memories ADD CONSTRAINT memories_valence_range
 ALTER TABLE memories ADD CONSTRAINT memories_arousal_range
     CHECK (arousal IS NULL OR (arousal >= 0.0 AND arousal <= 1.0));
 
--- L'intensité module la consolidation : c'est l'un des effets les mieux établis
--- de la mémoire humaine (modulation amygdalienne). Un souvenir chargé résiste à
--- l'oubli ; un souvenir tiède s'efface. L'index sert la décroissance nocturne,
--- qui filtre sur l'arousal.
+-- Intensity modulates consolidation: it is one of the best-established effects
+-- of human memory (amygdala modulation). A charged memory resists forgetting;
+-- a lukewarm one fades. The index serves the nightly decay, which filters on
+-- arousal.
 CREATE INDEX memories_arousal_idx ON memories(arousal) WHERE superseded_by IS NULL;

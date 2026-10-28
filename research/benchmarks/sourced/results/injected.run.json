@@ -1,0 +1,1038 @@
+{
+ "system": {
+  "name": "control:injected"
+ },
+ "track": "T",
+ "data": "sample",
+ "seconds": 0.0,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "MF001",
+     "content": "Kofi Achebe lives at 51 Orchard Close, Ghent.",
+     "valid_from": "2022-12-26",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      },
+      {
+       "deposit_id": "D0026",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      }
+     ]
+    },
+    {
+     "id": "MF005",
+     "content": "Kofi Achebe works as a backend engineer at Northwind Analytics.",
+     "valid_from": "2021-12-26",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+      },
+      {
+       "deposit_id": "D0016",
+       "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+      }
+     ]
+    },
+    {
+     "id": "MF007",
+     "content": "Kofi Achebe had a bad chest cold, treated with rest and fluids.",
+     "valid_from": "2025-02-07",
+     "valid_to": "2025-02-12",
+     "current": false,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Assessment: a bad chest cold"
+      },
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Fully recovered today, no more rest."
+      }
+     ]
+    },
+    {
+     "id": "MF008",
+     "content": "Kofi Achebe's birthday is on 1 May.",
+     "valid_from": "1999-05-01",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "My birthday is on 1 May, reminder to plan something."
+      }
+     ]
+    },
+    {
+     "id": "MF009",
+     "content": "Kofi Achebe grew up in Bristol.",
+     "valid_from": "1999-05-01",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Miss Bristol sometimes, it's where I grew up."
+      }
+     ]
+    },
+    {
+     "id": "MF011",
+     "content": "Kofi Achebe speaks Arabic.",
+     "valid_from": "2024-03-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Practised my Arabic with a podcast on the way home."
+      }
+     ]
+    },
+    {
+     "id": "MF012",
+     "content": "Oskar Lindqvist lives in Montreal.",
+     "valid_from": "2022-11-25",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Things are so, good here in Montreal."
+      },
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Things are good here in Montreal."
+      }
+     ]
+    },
+    {
+     "id": "MF014",
+     "content": "Priya Sorensen works as an operations manager.",
+     "valid_from": "2021-12-19",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Work- Work is busy, being an operations like, manager is never boring."
+      }
+     ]
+    },
+    {
+     "id": "MF016",
+     "content": "Hollis Petrov lives in Montreal.",
+     "valid_from": "2022-08-31",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Things are good here um, in like, Montreal."
+      }
+     ]
+    },
+    {
+     "id": "MF021",
+     "content": "Kofi Achebe met Oskar Lindqvist at the harbour footpath on 7 February 2025.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Oskar at the harbour footpath yesterday."
+      }
+     ]
+    },
+    {
+     "id": "MF024",
+     "content": "Kofi Achebe was in Ghent on 3 February 2025.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Photo taken on 2025-02-03 at 16:26. GPS: 51.05710, 3.70539."
+      }
+     ]
+    },
+    {
+     "id": "MF025",
+     "content": "Kofi Achebe met Hollis Petrov at the botanical garden on 8 February 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Hollis at the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "MF029",
+     "content": "Kofi Achebe was in Ghent on 3 February 2025.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Photo taken on 2025-02-03 at 17:11. GPS: 51.04428, 3.70178."
+      }
+     ]
+    },
+    {
+     "id": "MF030",
+     "content": "Kofi Achebe was in Ghent on 4 February 2025.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Walked around the botanical garden today."
+      },
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413."
+      }
+     ]
+    },
+    {
+     "id": "X0",
+     "content": "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.4,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Photo taken on 2025-02-03 at 16:26. GPS:"
+      }
+     ]
+    },
+    {
+     "id": "X1",
+     "content": "Kofi Achebe has a dog.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.3,
+     "citations": []
+    },
+    {
+     "id": "X2",
+     "content": "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.4,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Photo taken on 2025-02-04 at 12:41. GPS:"
+      }
+     ]
+    },
+    {
+     "id": "X3",
+     "content": "Kofi Achebe's bike was stolen.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.3,
+     "citations": []
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "MF001",
+     "content": "Kofi Achebe lives at 51 Orchard Close, Ghent.",
+     "valid_from": "2022-12-26",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      },
+      {
+       "deposit_id": "D0026",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      }
+     ]
+    },
+    {
+     "id": "MF002",
+     "content": "Kofi Achebe lives at 79 Linden Street, Ghent.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Got the keys today: the new place is 79 Linden Street, Ghent."
+      },
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Premises: 79 Linden Street, Ghent"
+      }
+     ]
+    },
+    {
+     "id": "MF003",
+     "content": "Kofi Achebe pays 680 EUR a month in rent.",
+     "valid_from": "2022-12-26",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Paid the rent, 680 EUR."
+      }
+     ]
+    },
+    {
+     "id": "MF004",
+     "content": "Kofi Achebe pays 1340 EUR a month in rent.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Monthly rent: 1340 EUR"
+      }
+     ]
+    },
+    {
+     "id": "MF005",
+     "content": "Kofi Achebe works as a backend engineer at Northwind Analytics.",
+     "valid_from": "2021-12-26",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+      },
+      {
+       "deposit_id": "D0016",
+       "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+      }
+     ]
+    },
+    {
+     "id": "MF006",
+     "content": "Kofi Achebe works as a research assistant at Silverfern Energy.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "We are pleased to offer you the position of research assistant."
+      },
+      {
+       "deposit_id": "D0025",
+       "excerpt": "I accepted the research assistant job at Silverfern Energy, I start on 15 February 2025."
+      },
+      {
+       "deposit_id": "D0033",
+       "excerpt": "First day as research assistant at Silverfern Energy yesterday."
+      }
+     ]
+    },
+    {
+     "id": "MF007",
+     "content": "Kofi Achebe had a bad chest cold, treated with rest and fluids.",
+     "valid_from": "2025-02-07",
+     "valid_to": "2025-02-12",
+     "current": false,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Assessment: a bad chest cold"
+      },
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Fully recovered today, no more rest."
+      }
+     ]
+    },
+    {
+     "id": "MF008",
+     "content": "Kofi Achebe's birthday is on 1 May.",
+     "valid_from": "1999-05-01",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "My birthday is on 1 May, reminder to plan something."
+      }
+     ]
+    },
+    {
+     "id": "MF009",
+     "content": "Kofi Achebe grew up in Bristol.",
+     "valid_from": "1999-05-01",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Miss Bristol sometimes, it's where I grew up."
+      }
+     ]
+    },
+    {
+     "id": "MF010",
+     "content": "Kofi Achebe is allergic to sesame.",
+     "valid_from": "2021-08-24",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Had to send the dish back, I'm allergic to sesame."
+      }
+     ]
+    },
+    {
+     "id": "MF011",
+     "content": "Kofi Achebe speaks Arabic.",
+     "valid_from": "2024-03-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Practised my Arabic with a podcast on the way home."
+      }
+     ]
+    },
+    {
+     "id": "MF012",
+     "content": "Oskar Lindqvist lives in Montreal.",
+     "valid_from": "2022-11-25",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Things are so, good here in Montreal."
+      },
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Things are good here in Montreal."
+      }
+     ]
+    },
+    {
+     "id": "MF013",
+     "content": "Priya Sorensen lives in Rotterdam.",
+     "valid_from": "2023-09-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Things are uh, good you know, here in Rotterdam."
+      }
+     ]
+    },
+    {
+     "id": "MF014",
+     "content": "Priya Sorensen works as an operations manager.",
+     "valid_from": "2021-12-19",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Work- Work is busy, being an operations like, manager is never boring."
+      }
+     ]
+    },
+    {
+     "id": "MF015",
+     "content": "Kasper Varga lives in Edinburgh.",
+     "valid_from": "2023-05-28",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "my best friend Kasper lives in Edinburgh these days."
+      },
+      {
+       "deposit_id": "D0026",
+       "excerpt": "Kasper lives in Edinburgh these days."
+      }
+     ]
+    },
+    {
+     "id": "MF016",
+     "content": "Hollis Petrov lives in Montreal.",
+     "valid_from": "2022-08-31",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Things are good here um, in like, Montreal."
+      }
+     ]
+    },
+    {
+     "id": "MF017",
+     "content": "Hollis Petrov works as a sales lead.",
+     "valid_from": "2024-02-28",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Work is busy, being a sales lead is never boring."
+      },
+      {
+       "deposit_id": "D0028",
+       "excerpt": "Work is busy, being a sales I mean, lead is never you know, boring."
+      }
+     ]
+    },
+    {
+     "id": "MF018",
+     "content": "Kofi Achebe met Oskar Lindqvist at the harbour footpath on 10 February 2025.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Met Oskar at the harbour footpath today."
+      }
+     ]
+    },
+    {
+     "id": "MF019",
+     "content": "Kofi Achebe was in Lyon on 14 February 2025.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "Photo taken on 2025-02-14 at 08:49. GPS: 45.75081, 4.83579."
+      }
+     ]
+    },
+    {
+     "id": "MF020",
+     "content": "Kofi Achebe was in Ghent on 16 February 2025.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Photo taken on 2025-02-16 at 17:22. GPS: 51.05485, 3.73550."
+      }
+     ]
+    },
+    {
+     "id": "MF021",
+     "content": "Kofi Achebe met Oskar Lindqvist at the harbour footpath on 7 February 2025.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Oskar at the harbour footpath yesterday."
+      }
+     ]
+    },
+    {
+     "id": "MF022",
+     "content": "Kofi Achebe had a bank adviser appointment on 16 February 2025.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Bank adviser appointment today, all fine."
+      }
+     ]
+    },
+    {
+     "id": "MF023",
+     "content": "Kofi Achebe had a bank adviser appointment on 11 February 2025.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Bank adviser um, appointment today, all fine."
+      }
+     ]
+    },
+    {
+     "id": "MF024",
+     "content": "Kofi Achebe was in Ghent on 3 February 2025.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Photo taken on 2025-02-03 at 16:26. GPS: 51.05710, 3.70539."
+      }
+     ]
+    },
+    {
+     "id": "MF025",
+     "content": "Kofi Achebe met Hollis Petrov at the botanical garden on 8 February 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Hollis at the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "MF026",
+     "content": "Kofi Achebe was in Ghent on 11 February 2025.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Walked around the hilltop viewpoint today."
+      },
+      {
+       "deposit_id": "D0017",
+       "excerpt": "Photo taken on 2025-02-11 at 11:40. GPS: 51.04755, 3.72139."
+      }
+     ]
+    },
+    {
+     "id": "MF027",
+     "content": "Kofi Achebe was in Ghent on 12 February 2025.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Walked around the riverside park today."
+      },
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Photo taken on 2025-02-12 at 12:02. GPS: 51.06624, 3.72928."
+      }
+     ]
+    },
+    {
+     "id": "MF028",
+     "content": "Kofi Achebe had a dentist appointment on 13 February 2025.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Dentist appointment yesterday, all fine."
+      }
+     ]
+    },
+    {
+     "id": "MF029",
+     "content": "Kofi Achebe was in Ghent on 3 February 2025.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Photo taken on 2025-02-03 at 17:11. GPS: 51.04428, 3.70178."
+      }
+     ]
+    },
+    {
+     "id": "MF030",
+     "content": "Kofi Achebe was in Ghent on 4 February 2025.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Walked around the botanical garden today."
+      },
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413."
+      }
+     ]
+    },
+    {
+     "id": "X0",
+     "content": "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.4,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Photo taken on 2025-02-03 at 16:26. GPS:"
+      }
+     ]
+    },
+    {
+     "id": "X1",
+     "content": "Kofi Achebe has a dog.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.3,
+     "citations": []
+    },
+    {
+     "id": "X2",
+     "content": "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.4,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Photo taken on 2025-02-04 at 12:41. GPS:"
+      }
+     ]
+    },
+    {
+     "id": "X3",
+     "content": "Kofi Achebe's bike was stolen.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.3,
+     "citations": []
+    },
+    {
+     "id": "X4",
+     "content": "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.4,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Photo taken on 2025-02-12 at 12:02. GPS:"
+      }
+     ]
+    },
+    {
+     "id": "X5",
+     "content": "Oskar Lindqvist's company shut down.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.3,
+     "citations": []
+    },
+    {
+     "id": "X6",
+     "content": "The photo shows a sunset over the water, Kofi Achebe smiling with friends.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.4,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Photo taken on 2025-02-16 at 17:22. GPS:"
+      }
+     ]
+    },
+    {
+     "id": "X7",
+     "content": "Kofi Achebe has a dog.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.3,
+     "citations": []
+    }
+   ]
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1340",
+   "abstained": false,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Montreal",
+   "abstained": false,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Edinburgh",
+   "abstained": false,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Ghent",
+   "abstained": false,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Montreal",
+   "abstained": false,
+   "citations": []
+  },
+  "Q006": {
+   "text": "Rotterdam",
+   "abstained": false,
+   "citations": []
+  },
+  "Q007": {
+   "text": "sales lead",
+   "abstained": false,
+   "citations": []
+  },
+  "Q008": {
+   "text": "sesame",
+   "abstained": false,
+   "citations": []
+  },
+  "Q009": {
+   "text": "operations manager",
+   "abstained": false,
+   "citations": []
+  },
+  "Q010": {
+   "text": "1 May",
+   "abstained": false,
+   "citations": []
+  },
+  "Q011": {
+   "text": "Bristol",
+   "abstained": false,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Silverfern Energy",
+   "abstained": false,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Arabic",
+   "abstained": false,
+   "citations": []
+  },
+  "Q014": {
+   "text": "680",
+   "abstained": false,
+   "citations": []
+  },
+  "Q015": {
+   "text": "Ghent",
+   "abstained": false,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Northwind Analytics",
+   "abstained": false,
+   "citations": []
+  },
+  "Q017": {
+   "text": "2025-02-15",
+   "abstained": false,
+   "citations": []
+  },
+  "Q018": {
+   "text": "2025-02-15",
+   "abstained": false,
+   "citations": []
+  },
+  "Q019": {
+   "text": "2025-02-07",
+   "abstained": false,
+   "citations": []
+  },
+  "Q020": {
+   "text": "5",
+   "abstained": false,
+   "citations": []
+  },
+  "Q021": {
+   "text": "Ghent",
+   "abstained": false,
+   "citations": []
+  },
+  "Q022": {
+   "text": "Ghent",
+   "abstained": false,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Lyon",
+   "abstained": false,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Ghent",
+   "abstained": false,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Ghent",
+   "abstained": false,
+   "citations": []
+  },
+  "Q026": {
+   "text": "Ghent",
+   "abstained": false,
+   "citations": []
+  },
+  "Q027": {
+   "text": "2025-02-13",
+   "abstained": false,
+   "citations": []
+  },
+  "Q028": {
+   "text": "the botanical garden",
+   "abstained": false,
+   "citations": []
+  },
+  "Q029": {
+   "text": "the harbour footpath",
+   "abstained": false,
+   "citations": []
+  },
+  "Q030": {
+   "text": "the harbour footpath",
+   "abstained": false,
+   "citations": []
+  },
+  "Q031": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q032": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q033": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  }
+ }
+}

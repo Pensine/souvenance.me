@@ -1,0 +1,1063 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "scripted",
+  "pensine_commit": "b1f9e87",
+  "llm_backend": "fake",
+  "verify": "code",
+  "embeddings": "nomic",
+  "qa_mode": "context",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "memories_written": 2,
+    "memories_rejected": 2,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-04",
+    "memories_written": 4,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-05",
+    "memories_written": 1,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-06",
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-07",
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-08",
+    "memories_written": 3,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-09",
+    "memories_written": 3,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-10",
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-11",
+    "memories_written": 7,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-12",
+    "memories_written": 6,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-13",
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-14",
+    "memories_written": 4,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-15",
+    "memories_written": 3,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   },
+   {
+    "day": "2025-02-16",
+    "memories_written": 3,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0
+   }
+  ]
+ },
+ "judge": "lexical-v1",
+ "headline": {
+  "invention_rate": 0.1224,
+  "excerpt_support_rate": 0.8163,
+  "fact_recall": 1.0,
+  "recall_at_inv_1pct": 0.5333333333333333,
+  "qa_accuracy": null,
+  "invented_answers": null,
+  "context_hit_rate": 0.96,
+  "write_metrics": "measured"
+ },
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": 19,
+   "invention_rate": 0.1579,
+   "partial_rate": 0.0,
+   "invented": [
+    "Kofi learned to sail.",
+    "Oskar's company shut down.",
+    "Kofi signed up for a marathon."
+   ],
+   "trap_hits": [
+    "T03",
+    "T05",
+    "T06"
+   ],
+   "traps_total": 6,
+   "excerpt_support_rate": 0.7895,
+   "citing_memories": 19,
+   "fact_recall": 1.0,
+   "omission_rate": 0.0,
+   "recall_by_kind": {
+    "change": 1.0,
+    "event": 1.0,
+    "state": 1.0
+   },
+   "stale_as_current": null,
+   "stale_reason": null,
+   "curve": {
+    "points": [
+     {
+      "threshold": 0.9,
+      "kept": 9,
+      "invention": 0.0,
+      "recall": 0.5714285714285714
+     },
+     {
+      "threshold": 0.7,
+      "kept": 12,
+      "invention": 0.25,
+      "recall": 0.5714285714285714
+     },
+     {
+      "threshold": 0.5,
+      "kept": 19,
+      "invention": 0.15789473684210525,
+      "recall": 1.0
+     }
+    ],
+    "recall_at_inv_1pct": 0.5714285714285714,
+    "recall_at_inv_5pct": 0.5714285714285714,
+    "has_confidence": true
+   },
+   "labels": [
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F030",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T05"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F030",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F014",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F012",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F011",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T06"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F021",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F025",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T03"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F008",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F016",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": 49,
+   "invention_rate": 0.1224,
+   "partial_rate": 0.0,
+   "invented": [
+    "Kofi learned to sail.",
+    "Oskar's company shut down.",
+    "Kofi signed up for a marathon.",
+    "Kofi moved to Turin.",
+    "Kofi's bike was stolen.",
+    "Kofi has a dog."
+   ],
+   "trap_hits": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06"
+   ],
+   "traps_total": 13,
+   "excerpt_support_rate": 0.8163,
+   "citing_memories": 49,
+   "fact_recall": 1.0,
+   "omission_rate": 0.0,
+   "recall_by_kind": {
+    "change": 1.0,
+    "event": 1.0,
+    "state": 1.0
+   },
+   "stale_as_current": 0.0,
+   "stale_reason": null,
+   "curve": {
+    "points": [
+     {
+      "threshold": 0.9,
+      "kept": 26,
+      "invention": 0.0,
+      "recall": 0.5333333333333333
+     },
+     {
+      "threshold": 0.7,
+      "kept": 31,
+      "invention": 0.16129032258064516,
+      "recall": 0.5333333333333333
+     },
+     {
+      "threshold": 0.5,
+      "kept": 49,
+      "invention": 0.12244897959183673,
+      "recall": 1.0
+     }
+    ],
+    "recall_at_inv_1pct": 0.5333333333333333,
+    "recall_at_inv_5pct": 0.5333333333333333,
+    "has_confidence": true
+   },
+   "labels": [
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F030",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T05"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F030",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F014",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F012",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F011",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T06"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F021",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F025",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T03"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F008",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F016",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F003",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F018",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T01"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T04"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F015",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F026",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F026",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F017",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F013",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F012",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F027",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F027",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F010",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F015",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F019",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F017",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F028",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T02"
+     ],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F002",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F002",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F004",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F020",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F022",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F022",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    }
+   ]
+  }
+ ],
+ "qa": {
+  "context_hit_rate": 0.96,
+  "n_text_questions": 25,
+  "note": "retrieval context, not an answer: abstention and accuracy not measurable in this mode",
+  "upper_bound": true
+ }
+}

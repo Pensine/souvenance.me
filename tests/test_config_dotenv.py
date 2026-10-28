@@ -1,4 +1,4 @@
-"""Chargement du .env par config : le cron nu et systemd doivent voir pareil."""
+"""Loading of .env by config: bare cron and systemd must see the same thing."""
 
 import os
 
@@ -30,8 +30,8 @@ def test_environnement_prioritaire(tmp_path, monkeypatch):
     env.write_text("PENSINE_TEST_D=fichier\n", encoding="utf-8")
     monkeypatch.setenv("PENSINE_TEST_D", "process")
     _load_dotenv(env)
-    assert os.environ["PENSINE_TEST_D"] == "process"  # systemd garde la main
+    assert os.environ["PENSINE_TEST_D"] == "process"  # systemd keeps control
 
 
 def test_fichier_absent_ne_casse_pas(tmp_path):
-    _load_dotenv(tmp_path / "inexistant.env")  # ne doit pas lever
+    _load_dotenv(tmp_path / "inexistant.env")  # must not raise

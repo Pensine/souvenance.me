@@ -1,0 +1,16 @@
+-- Every memory carries its proof.
+--
+-- A model that consolidates a day can make things up: a small local model
+-- does so in 5 to 20% of cases on our bench (research/evals/frugal). An
+-- invention in a life memory cannot be recovered, unlike an omission (the
+-- raw deposit stays in the log, replayable).
+--
+-- From now on, each memory quotes word for word the excerpt of the deposit
+-- that grounds it, and the code checks that the excerpt exists. What cannot
+-- be verified is rejected; what is doubtful (a number or a name absent from
+-- the deposit) goes back to the model with a short question.
+--
+-- evidence = {"citations": [...], "statut": "verifiee|verifiee_modele|
+--             partielle|corrigee|a_verifier", "motifs": [...]}
+-- NULL for memories written before this check.
+ALTER TABLE memories ADD COLUMN IF NOT EXISTS evidence JSONB;

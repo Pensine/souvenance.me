@@ -1,8 +1,8 @@
-"""Web app « Pensine » (phase 2) — timeline des dépôts et de la mémoire.
+"""The "Pensine" web app (phase 2) — a timeline of deposits and of the memory.
 
-Lecture seule, servie par le même process que l'API (couche 6). Auth par mot
-de passe (PENSINE_WEBAPP_PASSWORD) → cookie signé. Respecte la règle du
-silence : c'est une page qu'on visite, elle ne pousse rien.
+Read-only, served by the same process as the API (layer 6). Password auth
+(PENSINE_WEBAPP_PASSWORD) → signed cookie. Respects the rule of silence:
+it is a page you visit; it pushes nothing.
 """
 
 import hmac
@@ -13,7 +13,7 @@ from fastapi import APIRouter, Form, Request
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 from itsdangerous import BadSignature, SignatureExpired, TimestampSigner
 
-from . import config, db, temporal
+from . import config, db, shred, temporal
 
 router = APIRouter(prefix="/app")
 
@@ -60,6 +60,7 @@ main{max-width:44rem;margin:0 auto;padding:1rem}
 .item{border-left:2px solid #3a6;margin:.7rem 0;padding:.5rem .9rem;background:#181818;
 border-radius:0 .5rem .5rem 0}
 .item.memory{border-color:#57c}
+.item.read{border-color:#c93}
 .item .when{color:#9a9;font-size:.8rem}
 .item .kind{display:inline-block;font-size:.72rem;padding:.1rem .5rem;
 border-radius:1rem;background:#2a2a2a;margin-left:.5rem}
@@ -71,7 +72,8 @@ border-radius:1rem;background:#2a2a2a;margin-left:.5rem}
   <input id="q" placeholder="filter (text, person, place)…">
   <select id="kind"><option value="">all</option><option>audio</option>
   <option>photo</option><option>video</option><option>pdf</option>
-  <option value="memory">memories</option></select>
+  <option value="memory">memories</option>
+  <option value="read">agent reads</option></select>
   <select id="year"><option value="">all years</option></select>
 </header>
 <main id="list"><div class="empty">loading…</div></main>
@@ -91,12 +93,12 @@ function render(){
   const y=document.getElementById('year').value;
   const shown = items.filter(i =>
     (!q || (i.text||'').toLowerCase().includes(q)) &&
-    (!k || i.kind===k || (k==='memory'&&i.type==='memory')) &&
+    (!k || i.kind===k || (k==='memory'&&i.type==='memory') || (k==='read'&&i.type==='read')) &&
     (!y || i.when.startsWith(y)));
   list.innerHTML = shown.length ? '' : '<div class="empty">nothing here</div>';
   for(const i of shown){
     const d=document.createElement('div');
-    d.className='item'+(i.type==='memory'?' memory':'');
+    d.className='item'+(i.type==='memory'?' memory':'')+(i.type==='read'?' read':'');
     let media='';
     if(i.media_link && i.kind==='audio') media=`<audio controls preload="none" src="${i.media_link}"></audio>`;
     if(i.media_link && i.kind==='photo') media=`<img loading="lazy" src="${i.media_link}">`;
@@ -111,11 +113,35 @@ load();
 </script>"""
 
 
+def describe_read(r: dict) -> str:
+    """An agent read in plain words: who, what, and the memories it saw."""
+    d = r["detail"]
+    who = d.get("client") or "an agent"
+    if r["action"] == "recall":
+        head = f"{who} searched “{d.get('query', '')}” — {d.get('hits', 0)} memories read"
+    elif r["action"] == "mirror":
+        q = d.get("question")
+        head = f"{who} opened the mirror" + (f" — “{q}”" if q else "")
+    elif r["action"] == "listen":
+        head = f"{who} replayed a voice memo"
+    elif r["action"] == "memory_card":
+        head = f"{who} opened a memory card"
+    elif r["action"] == "timeline":
+        head = f"{who} drew a timeline of “{d.get('query', '')}”"
+    else:
+        head = f"{who} asked for curation" + (f" — {d['domain']}" if d.get("domain") else "")
+    lines = [f"· #{m['id']} " + ((m["content"] or "(no longer exists)")[:120])
+             for m in r["memories"]]
+    if r["memories"] == [] and r["action"] == "recall" and "memory_ids" not in d:
+        lines = ["· (logged before read tracking: memories not recorded)"]
+    return "\n".join([head, *lines])
+
+
 @router.get("", response_class=HTMLResponse)
 @router.get("/", response_class=HTMLResponse)
 def home(request: Request):
     if not WEBAPP_PASSWORD:
-        return HTMLResponse("PENSINE_WEBAPP_PASSWORD non configuré", status_code=503)
+        return HTMLResponse("PENSINE_WEBAPP_PASSWORD not configured", status_code=503)
     if not _authed(request):
         return HTMLResponse(LOGIN_HTML)
     return HTMLResponse(APP_HTML)
@@ -135,7 +161,7 @@ def login(password: str = Form(...)):
 def data(request: Request):
     if not _authed(request):
         return JSONResponse({"error": "auth"}, status_code=401)
-    from .mcp_server import _media_link  # liens signés temporaires
+    from .mcp_server import _media_link  # temporary signed links
 
     items = []
     with db.connection() as conn:
@@ -149,8 +175,7 @@ def data(request: Request):
             """
         ).fetchall()
         for d in deposits:
-            payload = d["payload"] if isinstance(d["payload"], dict) \
-                else json.loads(d["payload"])
+            payload = shred.open_payload(d["payload"]) or {}
             text = d["transcript"] or d["description"] or payload.get("note") or ""
             items.append({
                 "when": d["occurred_at"].isoformat(),
@@ -172,6 +197,13 @@ def data(request: Request):
                 "human_when": temporal.humanize_delta(m["valid_from"]),
                 "kind": m["type"], "type": "memory",
                 "text": m["content"][:600], "media_link": None,
+            })
+        for r in db.agent_reads(conn):
+            items.append({
+                "when": r["at"].isoformat(),
+                "human_when": temporal.humanize_delta(r["at"]),
+                "kind": "read", "type": "read",
+                "text": describe_read(r), "media_link": None,
             })
         db.audit(conn, "mcp", "webapp_view", {"items": len(items)})
         conn.commit()

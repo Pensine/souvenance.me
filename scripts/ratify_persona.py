@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Ratification du persona — l'acte par lequel l'utilisateur devient l'auteur.
+"""Persona ratification — the act by which the user becomes the author.
 
-Installe une proposition (relue et amendée à la main) comme persona courant :
-copie vers persona/persona.md, commit Git, pointeur en base (persona_versions,
-ratified_by_user=true). C'est la SEULE voie d'écriture du persona."""
+Installs a proposal (reread and amended by hand) as the current persona:
+copy to persona/persona.md, Git commit, pointer in the database
+(persona_versions, ratified_by_user=true). This is the ONLY write path for the
+persona."""
 
 import argparse
 import subprocess
@@ -20,25 +21,25 @@ PERSONA = ROOT / "persona" / "persona.md"
 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("proposal", help="nom du fichier dans persona/propositions/ "
-                                    "(ou chemin d'un fichier amendé)")
+    p.add_argument("proposal", help="file name in persona/propositions/ "
+                                    "(or path of an amended file)")
     args = p.parse_args()
 
     src = Path(args.proposal)
     if not src.exists():
         src = ROOT / "persona" / "propositions" / args.proposal
     if not src.exists():
-        sys.exit(f"Introuvable : {args.proposal}")
+        sys.exit(f"Not found: {args.proposal}")
 
-    print(f"Vous ratifiez : {src}")
-    print("Cette version devient VOTRE identité narrative de référence.")
-    if input("Vous l'avez relue et amendée vous-même ? [oui/N] ").strip().lower() != "oui":
-        sys.exit("Ratification annulée — relisez d'abord. Vous êtes l'auteur final.")
+    print(f"You are ratifying: {src}")
+    print("This version becomes YOUR reference narrative identity.")
+    if input("Have you reread and amended it yourself? [yes/N] ").strip().lower() not in ("yes", "oui"):
+        sys.exit("Ratification cancelled — reread it first. You are the final author.")
 
     PERSONA.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
     subprocess.run(["git", "add", str(PERSONA)], cwd=ROOT, check=True)
     subprocess.run(["git", "commit", "-m",
-                    f"Persona ratifié ({src.name})"], cwd=ROOT, check=True)
+                    f"Persona ratified ({src.name})"], cwd=ROOT, check=True)
     commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
                             capture_output=True, text=True, check=True).stdout.strip()
 
@@ -48,7 +49,7 @@ def main() -> None:
             "VALUES (%s, true)", (commit,))
         db.audit(conn, "mcp", "persona_ratified", {"git_commit": commit})
         conn.commit()
-    print(f"Ratifié — commit {commit[:8]}. get_persona() sert désormais cette version.")
+    print(f"Ratified — commit {commit[:8]}. get_persona() now serves this version.")
 
 
 if __name__ == "__main__":

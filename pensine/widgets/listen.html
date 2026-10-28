@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+/*__BASE_CSS__*/
+.player { display: flex; align-items: center; gap: 12px; margin: 14px 0 6px; }
+.play { width: 44px; height: 44px; border-radius: 50%; padding: 0; flex: none;
+        background: var(--accent); border-color: var(--accent); color: #fff;
+        display: grid; place-items: center; }
+.play:hover { color: #fff; filter: brightness(1.08); }
+.play svg { width: 18px; height: 18px; fill: currentColor; }
+.track { flex: 1; min-width: 0; }
+.bar { position: relative; height: 6px; border-radius: 3px; background: var(--faint); cursor: pointer; }
+.fill { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: 3px; background: var(--accent); }
+.time { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--muted);
+        margin-top: 5px; font-variant-numeric: tabular-nums; }
+.words { max-height: 260px; overflow-y: auto; margin-top: 10px; padding: 12px 14px;
+         border-radius: 10px; background: var(--bg); font-family: var(--serif);
+         font-size: 15.5px; line-height: 1.75; scroll-behavior: smooth; }
+.w { cursor: pointer; border-radius: 4px; padding: 0 1px; transition: background .12s, color .12s; }
+.w:hover { background: var(--accent-soft); }
+.w.said { color: var(--ink); }
+.w.todo { color: var(--muted); }
+.w.now { background: var(--accent); color: #fff; }
+.summary { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--faint); }
+.err { color: var(--accent); font-size: 12.5px; margin-top: 6px; display: none; }
+</style>
+</head>
+<body>
+<div class="card" id="root"><div class="empty">Loading the recording…</div></div>
+<audio id="audio" preload="metadata"></audio>
+<script type="module">
+/*__EXT_APPS_BUNDLE__*/
+const { App } = globalThis.ExtApps;
+const $ = (s, el = document) => el.querySelector(s);
+const el = (tag, cls, text) => { const n = document.createElement(tag);
+  if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+const fmt = s => { if (!isFinite(s)) return "–:–"; s = Math.max(0, Math.round(s));
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
+const PLAY = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+const PAUSE = '<svg viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>';
+
+const app = new App({ name: "Pensine — Listen", version: "1.0.0" }, {}, { autoResize: true });
+const audio = $("#audio");
+let data = null, spans = [], current = -1, retried = false;
+
+function theme(ctx) { document.documentElement.classList.toggle("dark", ctx?.theme === "dark"); }
+app.onhostcontextchanged = theme;
+
+function render(d) {
+  data = d;
+  const root = $("#root"); root.innerHTML = "";
+  const meta = el("div", "meta");
+  meta.append(el("span", "chip", "Voice"));
+  if (d.quand) meta.append(el("span", null, `${d.quand}${d.date ? " · " + new Date(d.date).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : ""}`));
+  if (d.ou?.label) meta.append(el("span", null, `📍 ${d.ou.label}`));
+  if (d.epoque) meta.append(el("span", null, `· ${d.epoque}`));
+  root.append(meta);
+
+  const player = el("div", "player");
+  const btn = el("button", "play"); btn.innerHTML = PLAY; btn.setAttribute("aria-label", "Play");
+  const track = el("div", "track");
+  const bar = el("div", "bar"); bar.append(el("div", "fill"));
+  const time = el("div", "time"); time.append(el("span", "cur", "0:00"), el("span", "dur", fmt(d.duration_s)));
+  track.append(bar, time); player.append(btn, track); root.append(player);
+  root.append(el("div", "err", "Audio link expired — renewing…"));
+
+  if (d.words_count) {
+    const box = el("div", "words"); box.append(el("span", "muted small", "Transcript…"));
+    root.append(box);
+    loadWords(d.media_id, box);
+  } else if (d.transcript) {
+    const box = el("div", "words"); box.textContent = d.transcript; root.append(box);
+  }
+  if (d.memory?.content) {
+    const sum = el("div", "summary");
+    sum.append(el("div", "small muted", "What the memory retained from it"), el("p", "quote", d.memory.content));
+    root.append(sum);
+  }
+
+  btn.addEventListener("click", () => audio.paused ? audio.play().catch(onError) : audio.pause());
+  bar.addEventListener("click", e => {
+    const r = bar.getBoundingClientRect(); const dur = audio.duration || d.duration_s;
+    if (dur) seek(((e.clientX - r.left) / r.width) * dur, true);
+  });
+  audio.onplay = () => { btn.innerHTML = PAUSE; btn.setAttribute("aria-label", "Pause"); };
+  audio.onpause = () => { btn.innerHTML = PLAY; btn.setAttribute("aria-label", "Play"); };
+  audio.ontimeupdate = tick;
+  audio.onloadedmetadata = () => { $(".dur").textContent = fmt(audio.duration); };
+  audio.onerror = onError;
+  if (d.audio_url) audio.src = d.audio_url;
+}
+
+// The timestamped words go straight from the server to the card: no need to
+// make Claude read them, it does not need them to answer.
+async function loadWords(mediaId, box) {
+  try {
+    const res = await app.callServerTool({ name: "listen_words", arguments: { media_id: mediaId } });
+    const words = JSON.parse(res.content?.[0]?.text || "[]");
+    data.words = words; box.innerHTML = "";
+    spans = words.map((w, i) => {
+      const s = el("span", "w todo", w.w);
+      s.addEventListener("click", () => seek(w.s, true));
+      box.append(s, document.createTextNode(" ")); return s;
+    });
+    if (!data.duration_s && words.length) $(".dur").textContent = fmt(words[words.length - 1].e);
+  } catch (e) { box.textContent = data.transcript || "Transcript unavailable."; }
+}
+
+function seek(t, play) { audio.currentTime = t; if (play) audio.play().catch(onError); tick(); }
+
+function tick() {
+  const t = audio.currentTime, dur = audio.duration || data?.duration_s || 0;
+  $(".fill").style.width = dur ? `${(t / dur) * 100}%` : "0";
+  $(".cur").textContent = fmt(t);
+  if (!spans.length) return;
+  // last word started (binary search: 800 words, 4 times per second)
+  const w = data.words; let lo = 0, hi = w.length - 1, i = -1;
+  while (lo <= hi) { const m = (lo + hi) >> 1; if (w[m].s <= t) { i = m; lo = m + 1; } else hi = m - 1; }
+  if (i === current) return;
+  const from = Math.min(i, current), to = Math.max(i, current);
+  for (let k = Math.max(0, from); k <= to; k++) if (spans[k]) spans[k].className = "w " + (k < i ? "said" : k === i ? "now" : "todo");
+  current = i;
+  const s = spans[i];
+  if (s && !audio.paused) {
+    const box = s.parentElement, top = s.offsetTop - box.offsetTop;
+    if (top < box.scrollTop + 20 || top > box.scrollTop + box.clientHeight - 40) box.scrollTop = top - box.clientHeight / 3;
+  }
+}
+
+// The signed link expires (15 min): ask the server for a new one, once.
+async function onError() {
+  if (retried || !data) return;
+  retried = true; $(".err").style.display = "block";
+  try {
+    const res = await app.callServerTool({ name: "media_link", arguments: { media_id: data.media_id } });
+    const url = JSON.parse(res.content?.[0]?.text || "{}").url;
+    if (url) { const t = audio.currentTime; audio.src = url; audio.currentTime = t;
+               $(".err").style.display = "none"; retried = false; audio.play().catch(() => {}); }
+  } catch (e) { $(".err").textContent = "Could not renew the audio link."; }
+}
+
+app.ontoolresult = ({ content }) => {
+  try { const d = JSON.parse(content?.[0]?.text || "{}");
+        if (d.card === "listen") render(d); else $("#root").innerHTML = '<div class="empty">No recording to play.</div>'; }
+  catch (e) { $("#root").innerHTML = '<div class="empty">Unreadable response.</div>'; }
+};
+await app.connect();
+theme(app.getHostContext());
+</script>
+</body>
+</html>

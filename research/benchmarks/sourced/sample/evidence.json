@@ -1,0 +1,363 @@
+{
+ "F024": [
+  {
+   "deposit": "D0001",
+   "start": 0,
+   "end": 59,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-03 at 16:26. GPS: 51.05710, 3.70539."
+  }
+ ],
+ "F029": [
+  {
+   "deposit": "D0002",
+   "start": 0,
+   "end": 59,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-03 at 17:11. GPS: 51.04428, 3.70178."
+  }
+ ],
+ "F030": [
+  {
+   "deposit": "D0003",
+   "start": 0,
+   "end": 41,
+   "role": "mention",
+   "excerpt": "Walked around the botanical garden today."
+  },
+  {
+   "deposit": "D0004",
+   "start": 0,
+   "end": 59,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413."
+  }
+ ],
+ "F014": [
+  {
+   "deposit": "D0005",
+   "start": 12,
+   "end": 82,
+   "role": "mention",
+   "excerpt": "Work- Work is busy, being an operations like, manager is never boring."
+  }
+ ],
+ "F001": [
+  {
+   "deposit": "D0006",
+   "start": 0,
+   "end": 66,
+   "role": "mention",
+   "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+  },
+  {
+   "deposit": "D0026",
+   "start": 72,
+   "end": 138,
+   "role": "mention",
+   "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+  }
+ ],
+ "F012": [
+  {
+   "deposit": "D0007",
+   "start": 10,
+   "end": 47,
+   "role": "mention",
+   "excerpt": "Things are so, good here in Montreal."
+  },
+  {
+   "deposit": "D0021",
+   "start": 14,
+   "end": 47,
+   "role": "mention",
+   "excerpt": "Things are good here in Montreal."
+  }
+ ],
+ "F011": [
+  {
+   "deposit": "D0008",
+   "start": 39,
+   "end": 90,
+   "role": "mention",
+   "excerpt": "Practised my Arabic with a podcast on the way home."
+  }
+ ],
+ "F007": [
+  {
+   "deposit": "D0009",
+   "start": 0,
+   "end": 61,
+   "role": "start",
+   "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+  },
+  {
+   "deposit": "D0010",
+   "start": 95,
+   "end": 123,
+   "role": "mention",
+   "excerpt": "Assessment: a bad chest cold"
+  },
+  {
+   "deposit": "D0022",
+   "start": 48,
+   "end": 84,
+   "role": "end",
+   "excerpt": "Fully recovered today, no more rest."
+  }
+ ],
+ "F005": [
+  {
+   "deposit": "D0009",
+   "start": 148,
+   "end": 231,
+   "role": "mention",
+   "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+  },
+  {
+   "deposit": "D0016",
+   "start": 38,
+   "end": 121,
+   "role": "mention",
+   "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+  }
+ ],
+ "F021": [
+  {
+   "deposit": "D0011",
+   "start": 62,
+   "end": 114,
+   "role": "mention",
+   "excerpt": "Coffee with Oskar at the harbour footpath yesterday."
+  }
+ ],
+ "F025": [
+  {
+   "deposit": "D0011",
+   "start": 154,
+   "end": 203,
+   "role": "mention",
+   "excerpt": "Coffee with Hollis at the botanical garden today."
+  }
+ ],
+ "F009": [
+  {
+   "deposit": "D0012",
+   "start": 0,
+   "end": 45,
+   "role": "mention",
+   "excerpt": "Miss Bristol sometimes, it's where I grew up."
+  }
+ ],
+ "F008": [
+  {
+   "deposit": "D0012",
+   "start": 80,
+   "end": 132,
+   "role": "mention",
+   "excerpt": "My birthday is on 1 May, reminder to plan something."
+  }
+ ],
+ "F016": [
+  {
+   "deposit": "D0013",
+   "start": 5,
+   "end": 48,
+   "role": "mention",
+   "excerpt": "Things are good here um, in like, Montreal."
+  }
+ ],
+ "F003": [
+  {
+   "deposit": "D0014",
+   "start": 117,
+   "end": 140,
+   "role": "mention",
+   "excerpt": "Paid the rent, 680 EUR."
+  }
+ ],
+ "F018": [
+  {
+   "deposit": "D0014",
+   "start": 141,
+   "end": 181,
+   "role": "mention",
+   "excerpt": "Met Oskar at the harbour footpath today."
+  }
+ ],
+ "F015": [
+  {
+   "deposit": "D0015",
+   "start": 38,
+   "end": 90,
+   "role": "mention",
+   "excerpt": "my best friend Kasper lives in Edinburgh these days."
+  },
+  {
+   "deposit": "D0026",
+   "start": 0,
+   "end": 37,
+   "role": "mention",
+   "excerpt": "Kasper lives in Edinburgh these days."
+  }
+ ],
+ "F026": [
+  {
+   "deposit": "D0016",
+   "start": 122,
+   "end": 164,
+   "role": "mention",
+   "excerpt": "Walked around the hilltop viewpoint today."
+  },
+  {
+   "deposit": "D0017",
+   "start": 0,
+   "end": 59,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-11 at 11:40. GPS: 51.04755, 3.72139."
+  }
+ ],
+ "F017": [
+  {
+   "deposit": "D0018",
+   "start": 5,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "Work is busy, being a sales lead is never boring."
+  },
+  {
+   "deposit": "D0028",
+   "start": 5,
+   "end": 72,
+   "role": "mention",
+   "excerpt": "Work is busy, being a sales I mean, lead is never you know, boring."
+  }
+ ],
+ "F013": [
+  {
+   "deposit": "D0019",
+   "start": 16,
+   "end": 64,
+   "role": "mention",
+   "excerpt": "Things are uh, good you know, here in Rotterdam."
+  }
+ ],
+ "F023": [
+  {
+   "deposit": "D0020",
+   "start": 0,
+   "end": 45,
+   "role": "mention",
+   "excerpt": "Bank adviser um, appointment today, all fine."
+  }
+ ],
+ "F027": [
+  {
+   "deposit": "D0022",
+   "start": 85,
+   "end": 124,
+   "role": "mention",
+   "excerpt": "Walked around the riverside park today."
+  },
+  {
+   "deposit": "D0024",
+   "start": 0,
+   "end": 59,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-12 at 12:02. GPS: 51.06624, 3.72928."
+  }
+ ],
+ "F006": [
+  {
+   "deposit": "D0023",
+   "start": 59,
+   "end": 122,
+   "role": "future",
+   "excerpt": "We are pleased to offer you the position of research assistant."
+  },
+  {
+   "deposit": "D0025",
+   "start": 0,
+   "end": 88,
+   "role": "future",
+   "excerpt": "I accepted the research assistant job at Silverfern Energy, I start on 15 February 2025."
+  },
+  {
+   "deposit": "D0033",
+   "start": 0,
+   "end": 63,
+   "role": "start",
+   "excerpt": "First day as research assistant at Silverfern Energy yesterday."
+  }
+ ],
+ "F010": [
+  {
+   "deposit": "D0025",
+   "start": 122,
+   "end": 172,
+   "role": "mention",
+   "excerpt": "Had to send the dish back, I'm allergic to sesame."
+  }
+ ],
+ "F019": [
+  {
+   "deposit": "D0027",
+   "start": 0,
+   "end": 59,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-14 at 08:49. GPS: 45.75081, 4.83579."
+  }
+ ],
+ "F028": [
+  {
+   "deposit": "D0029",
+   "start": 48,
+   "end": 88,
+   "role": "mention",
+   "excerpt": "Dentist appointment yesterday, all fine."
+  }
+ ],
+ "F002": [
+  {
+   "deposit": "D0030",
+   "start": 34,
+   "end": 95,
+   "role": "start",
+   "excerpt": "Got the keys today: the new place is 79 Linden Street, Ghent."
+  },
+  {
+   "deposit": "D0031",
+   "start": 83,
+   "end": 116,
+   "role": "mention",
+   "excerpt": "Premises: 79 Linden Street, Ghent"
+  }
+ ],
+ "F004": [
+  {
+   "deposit": "D0031",
+   "start": 152,
+   "end": 174,
+   "role": "mention",
+   "excerpt": "Monthly rent: 1340 EUR"
+  }
+ ],
+ "F020": [
+  {
+   "deposit": "D0032",
+   "start": 0,
+   "end": 59,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-16 at 17:22. GPS: 51.05485, 3.73550."
+  }
+ ],
+ "F022": [
+  {
+   "deposit": "D0033",
+   "start": 112,
+   "end": 153,
+   "role": "mention",
+   "excerpt": "Bank adviser appointment today, all fine."
+  }
+ ]
+}

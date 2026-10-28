@@ -16,9 +16,9 @@ def test_page_login_puis_session(monkeypatch):
     client = _client(monkeypatch, password="s3cret")
     r = client.get("/app")
     assert r.status_code == 200 and 'placeholder="password"' in r.text
-    # mauvais mot de passe
+    # wrong password
     assert client.post("/app/login", data={"password": "faux"}).status_code == 401
-    # bon mot de passe → cookie → timeline servie
+    # right password -> cookie -> timeline served
     r = client.post("/app/login", data={"password": "s3cret"}, follow_redirects=True)
     assert r.status_code == 200 and "timeline" in r.text
 

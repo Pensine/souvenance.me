@@ -1,4 +1,4 @@
-"""Graphe temporel : intégration sur base réelle (skip sans PENSINE_TEST_DB)."""
+"""Temporal graph: integration on a real database (skipped without PENSINE_TEST_DB)."""
 
 import os
 from datetime import datetime, timezone
@@ -7,7 +7,7 @@ import pytest
 
 pytestmark = pytest.mark.skipif(
     not os.environ.get("PENSINE_TEST_DB"),
-    reason="PENSINE_TEST_DB non défini (test d'intégration)",
+    reason="PENSINE_TEST_DB not set (integration test)",
 )
 
 
@@ -18,7 +18,7 @@ def conn(monkeypatch):
     from pensine import db
     with db.connection() as c:
         yield c
-        c.rollback()  # rien ne persiste
+        c.rollback()  # nothing persists
 
 
 def _dt(y, m, d):
@@ -43,9 +43,9 @@ def test_exclusive_ferme_l_ancienne_arete(conn):
            ORDER BY r.valid_from""", (alice,)).fetchall()
     assert len(rows) == 2
     assert rows[0]["name"] == "TestLyon"
-    assert rows[0]["valid_to"] is not None          # fermée, jamais effacée
-    assert rows[0]["invalidated_at"] is not None    # temps du système tracé
-    assert rows[1]["valid_to"] is None              # la nouvelle est active
+    assert rows[0]["valid_to"] is not None          # closed, never erased
+    assert rows[0]["invalidated_at"] is not None    # system time recorded
+    assert rows[1]["valid_to"] is None              # the new one is active
 
 
 def test_dedup_arete_active(conn):
@@ -56,7 +56,7 @@ def test_dedup_arete_active(conn):
                             object_id=b, valid_from=_dt(2026, 1, 1))
     r2 = graph.add_relation(conn, subject_id=a, predicate="travaille sur",
                             object_id=b, valid_from=_dt(2026, 2, 1))
-    assert r1 is not None and r2 is None  # doublon actif non recréé
+    assert r1 is not None and r2 is None  # active duplicate not recreated
 
 
 def test_neighborhood_au_temps_t(conn):
@@ -66,10 +66,10 @@ def test_neighborhood_au_temps_t(conn):
     graph.add_relation(conn, subject_id=alice, predicate="habite à",
                        object_id=lyon, valid_from=_dt(2024, 1, 1),
                        valid_to=_dt(2025, 1, 1))
-    # aujourd'hui : l'arête est fermée → absente du voisinage courant
+    # today: the edge is closed -> absent from the current neighbourhood
     now_edges = graph.neighborhood(conn, "TestCarole")
     assert not any(e["object"] == "TestGrenoble" for e in now_edges)
-    # mais au temps T (2024), elle était vraie
+    # but at time T (2024), it was true
     then_edges = graph.neighborhood(conn, "TestCarole", at=_dt(2024, 6, 1))
     assert any(e["object"] == "TestGrenoble" for e in then_edges)
 

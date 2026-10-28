@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Le Livre de l'année — l'autobiographie dynamique rendue imprimable.
+"""The Yearbook — the dynamic autobiography made printable.
 
-Génère à la demande (jamais poussé) un livre markdown + HTML imprimable
-depuis la mémoire d'une année : chapitres par saison, jalons, décisions,
-ce qui a changé. La voix du présent, avant que le futur ne réécrive.
+Generates on demand (never pushed) a markdown + printable HTML book from a
+year's memory: chapters by season, landmarks, decisions, what changed. The
+voice of the present, before the future rewrites it.
 
-Usage : yearbook.py --year 2026
+Usage: yearbook.py --year 2026
 """
 
 import argparse
@@ -94,8 +94,8 @@ def main() -> None:
     with db.connection() as conn:
         material = gather(conn, args.year)
         if material is None:
-            sys.exit(f"Corpus {args.year} trop mince (< 8 mémoires) — "
-                     "le livre attendra.")
+            sys.exit(f"Corpus {args.year} too thin (< 8 memories) — "
+                     "the book will wait.")
 
     prompt = PROMPT.format(
         year=args.year, owner=config.OWNER_NAME,
@@ -105,13 +105,13 @@ def main() -> None:
     try:
         book = llm.complete(prompt)
     except llm.LLMUnavailable as exc:
-        sys.exit(f"Compute indisponible ({exc}) — réessayez plus tard, "
-                 "rien n'est perdu.")
+        sys.exit(f"Compute unavailable ({exc}) — try again later, "
+                 "nothing is lost.")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     md = OUT_DIR / f"livre-{args.year}.md"
     md.write_text(book, encoding="utf-8")
-    # version imprimable (markdown minimal → HTML)
+    # printable version (minimal markdown → HTML)
     import html as html_mod
     paras = []
     for line in book.splitlines():
@@ -128,7 +128,7 @@ def main() -> None:
     with db.connection() as conn:
         db.audit(conn, "mcp", "yearbook", {"year": args.year, "path": str(md)})
         conn.commit()
-    print(f"Livre {args.year} : {md} (+ .html imprimable)")
+    print(f"Book {args.year}: {md} (+ printable .html)")
 
 
 if __name__ == "__main__":

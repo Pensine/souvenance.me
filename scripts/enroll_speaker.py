@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Enrôlement d'une empreinte vocale — acte EXPLICITE (§8), jamais implicite.
+"""Enrolment of a voiceprint — an EXPLICIT act (§8), never implicit.
 
-Usage : enroll_speaker.py --name "Prénom" --kind person échantillon.wav
-L'échantillon : 30-60 s de voix seule, propre. Le fichier n'est PAS conservé
-(seule l'empreinte 192-d l'est) — sauf s'il passe aussi par la Pensine."""
+Usage: enroll_speaker.py --name "First name" --kind person sample.wav
+The sample: 30-60 s of clean, solo voice. The file is NOT kept (only the
+192-d voiceprint is) — unless it also goes through Pensine."""
 
 import argparse
 import sys
@@ -18,14 +18,14 @@ from pensine.speakers import compute_voiceprint  # noqa: E402
 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("sample", type=Path, help="échantillon audio (wav/mp3/opus)")
-    p.add_argument("--name", required=True, help="nom de la personne")
+    p.add_argument("sample", type=Path, help="audio sample (wav/mp3/opus)")
+    p.add_argument("--name", required=True, help="the person's name")
     p.add_argument("--kind", default="person")
     args = p.parse_args()
 
     if not args.sample.exists():
-        sys.exit(f"Introuvable : {args.sample}")
-    print(f"Calcul de l'empreinte de {args.name}…")
+        sys.exit(f"Not found: {args.sample}")
+    print(f"Computing {args.name}'s voiceprint…")
     vector = compute_voiceprint(args.sample)
 
     with db.connection() as conn:
@@ -33,13 +33,13 @@ def main() -> None:
         conn.execute(
             "INSERT INTO voiceprints (entity_id, embedding, sample_note) "
             "VALUES (%s, %s, %s)",
-            (entity_id, str(vector), f"enrôlement explicite : {args.sample.name}"),
+            (entity_id, str(vector), f"explicit enrolment: {args.sample.name}"),
         )
         db.audit(conn, "mcp", "voiceprint_enrolled",
                  {"entity_id": entity_id, "name": args.name})
         conn.commit()
-    print(f"Empreinte enrôlée pour {args.name} (entity {entity_id}). "
-          "Les prochains cycles nocturnes identifieront cette voix.")
+    print(f"Voiceprint enrolled for {args.name} (entity {entity_id}). "
+          "The next nightly cycles will identify this voice.")
 
 
 if __name__ == "__main__":

@@ -1,11 +1,11 @@
-"""Graphe de connaissances temporel (couche 1) — mécanique bi-temporelle
-sur PostgreSQL (choix « base unique » du document fondateur ; mêmes propriétés
-que Graphiti : intervalles de validité, invalidation des arêtes contredites,
-requête « que savait-on / qu'était vrai au temps T »).
+"""Temporal knowledge graph (layer 1) — bi-temporal mechanics on PostgreSQL
+(the founding document's "single database" choice; same properties as
+Graphiti: validity intervals, invalidation of contradicted edges, queries of
+the form "what did we know / what was true at time T").
 
-Deux axes de temps :
-- valid_from / valid_to : le temps du MONDE (quand le fait était vrai)
-- created_at / invalidated_at : le temps du SYSTÈME (quand il l'a appris/corrigé)
+Two time axes:
+- valid_from / valid_to: WORLD time (when the fact was true)
+- created_at / invalidated_at: SYSTEM time (when it learned/corrected it)
 """
 
 from datetime import datetime, timezone
@@ -28,9 +28,9 @@ def add_relation(
     valid_from: datetime, valid_to: datetime | None = None,
     exclusive: bool = False, source_event_ids: list[int] | None = None,
 ) -> int | None:
-    """Ajoute une arête. `exclusive=True` : le nouveau fait remplace les arêtes
-    actives de même (sujet, prédicat) vers un autre objet (ex. « habite à ») —
-    elles sont fermées (valid_to) et marquées invalidées, jamais supprimées."""
+    """Add an edge. `exclusive=True`: the new fact replaces the active edges
+    with the same (subject, predicate) pointing to a different object (e.g.
+    "lives in") — they are closed (valid_to) and marked invalidated, never deleted."""
     if exclusive:
         conn.execute(
             """
@@ -41,7 +41,7 @@ def add_relation(
             """,
             (valid_from, subject_id, predicate, object_id),
         )
-    # Déduplication : l'arête active identique n'est pas recréée
+    # Deduplication: an identical active edge is not recreated
     existing = conn.execute(
         """
         SELECT id FROM relations
@@ -66,7 +66,7 @@ def add_relation(
 
 def ingest(conn, entities: list[dict], relations: list[dict],
            source_event_ids: list[int]) -> dict:
-    """Ingestion d'un lot extrait par la consolidation.
+    """Ingest a batch extracted by consolidation.
     entities : [{name, kind}] ; relations : [{subject, predicate, object,
     subject_kind?, object_kind?, valid_from?, exclusive?}]."""
     ids: dict[str, int] = {}
@@ -93,16 +93,16 @@ def ingest(conn, entities: list[dict], relations: list[dict],
                         exclusive=bool(r.get("exclusive")),
                         source_event_ids=source_event_ids) is not None:
             added += 1
-    # `entity_ids` sert à rattacher l'état des liens aux entités que ce lot
-    # vient de résoudre (voir pensine/relations.py) : sans lui, il faudrait
-    # re-résoudre les noms et risquer d'en créer des doublons.
+    # `entity_ids` is used to attach relationship state to the entities this
+    # batch has just resolved (see pensine/relations.py): without it, names
+    # would have to be re-resolved, risking duplicates.
     return {"entities": len(ids), "relations_added": added, "entity_ids": ids}
 
 
 def neighborhood(conn, query: str, at: datetime | None = None, limit: int = 12):
-    """Les arêtes autour des entités qui matchent la requête — telles que
-    valides au temps `at` (défaut : maintenant). C'est la brique « graphe »
-    de la recherche hybride de recall."""
+    """The edges around the entities matching the query — as valid at time
+    `at` (default: now). This is the "graph" building block of recall's
+    hybrid search."""
     at = at or datetime.now(timezone.utc)
     return conn.execute(
         """
@@ -124,8 +124,8 @@ def neighborhood(conn, query: str, at: datetime | None = None, limit: int = 12):
 
 
 def entity_history(conn, name: str):
-    """Toute l'histoire d'une entité, arêtes fermées comprises —
-    « que croyait-on, qu'est-ce qui a changé » (autobiographie dynamique)."""
+    """The whole history of an entity, closed edges included —
+    "what did we believe, what changed" (dynamic autobiography)."""
     return conn.execute(
         """
         SELECT s.name AS subject, r.predicate, o.name AS object,

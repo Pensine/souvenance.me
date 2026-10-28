@@ -1,11 +1,11 @@
-"""Percepteur mails personnels — IMAP (phase 2, désactivé par défaut).
+"""Personal mail perceptor — IMAP (phase 2, disabled by default).
 
-S'active uniquement si PENSINE_IMAP_HOST est configuré. Sous règle des tiers :
-on capture l'enveloppe (qui, quoi, quand) et un extrait court ; la consolidation
-synthétise, elle n'archive jamais les conversations des autres verbatim.
-Sécurité (§5 couche 5) : ce percepteur LIT — le contenu externe non fiable
-n'obtient jamais d'accès en écriture à la mémoire ; il ne produit que des
-events candidats, filtrés par le gouverneur.
+Only active if PENSINE_IMAP_HOST is configured. Under the third-party rule:
+we capture the envelope (who, what, when) and a short excerpt; consolidation
+synthesizes, it never archives other people's conversations verbatim.
+Security (§5 layer 5): this perceptor READS — untrusted external content
+never gets write access to memory; it only produces candidate events,
+filtered by the governor.
 """
 
 import email

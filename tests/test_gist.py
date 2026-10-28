@@ -1,36 +1,36 @@
-"""Promotion épisodique → sémantique.
+"""Episodic -> semantic promotion.
 
-Ce qui est verrouillé ici, c'est la retenue du mécanisme : abstraire trop vite,
-ou abstraire un groupe hétéroclite, fabrique une croyance fausse du système sur
-la personne — et une croyance fausse se propage à tous les rappels suivants.
+What is locked down here is the restraint of the mechanism: abstracting too fast,
+or abstracting a heterogeneous group, manufactures a false belief of the system about
+the person -- and a false belief propagates to every later recall.
 """
 
 from pensine import gist
 
 
-# --- Seuils : ce qui empêche de fabriquer un motif ------------------------
+# --- Thresholds: what prevents manufacturing a pattern ---------------------
 
 def test_trois_occurrences_font_un_motif_deux_font_une_coincidence():
     assert gist.MIN_EPISODES >= 3
 
 
 def test_on_laisse_le_temps_au_motif_de_se_former():
-    """Abstraire le mois en cours fige une coïncidence en trait de caractère."""
+    """Abstracting the current month freezes a coincidence into a character trait."""
     assert gist.MATURATION_DAYS >= 30
 
 
 def test_le_groupe_reste_homogene():
-    """Une distance trop permissive rassemblerait des épisodes sans rapport."""
+    """A distance that is too permissive would gather unrelated episodes."""
     assert 0 < gist.MAX_DISTANCE <= 0.5
 
 
 def test_l_abstraction_est_lente():
-    """Comme dans un cerveau : quelques motifs par nuit, pas le corpus entier."""
+    """As in a brain: a few patterns per night, not the whole corpus."""
     assert 0 < gist.MAX_CLUSTERS_PER_NIGHT <= 5
     assert gist.MAX_EPISODES >= gist.MIN_EPISODES
 
 
-# --- Affect du gist : moyenne du vécu, jamais une invention ----------------
+# --- Gist affect: average of what was lived, never an invention -------------
 
 def test_la_charge_du_gist_est_la_moyenne_des_episodes():
     episodes = [
@@ -41,7 +41,7 @@ def test_la_charge_du_gist_est_la_moyenne_des_episodes():
 
 
 def test_les_episodes_sans_affect_s_abstiennent_au_lieu_de_tirer_vers_le_neutre():
-    """Un épisode dont on ignore la charge ne doit pas diluer celle des autres."""
+    """An episode whose load is unknown must not dilute the others' load."""
     episodes = [
         {"valence": -0.8, "arousal": 0.9},
         {"valence": None, "arousal": None},
@@ -55,7 +55,7 @@ def test_aucun_affect_connu_donne_aucun_affect():
 
 
 def test_les_deux_axes_sont_moyennes_separement():
-    """Connaître l'intensité sans la valence reste une information."""
+    """Knowing the intensity without the valence is still information."""
     episodes = [
         {"valence": None, "arousal": 1.0},
         {"valence": 0.5, "arousal": 0.0},
@@ -63,7 +63,7 @@ def test_les_deux_axes_sont_moyennes_separement():
     assert gist._mean_affect(episodes) == (0.5, 0.5)
 
 
-# --- « Aucun motif » est une réponse valide, pas un échec -----------------
+# --- "No pattern" is a valid answer, not a failure -------------------------
 
 class _FakeLLM:
     def __init__(self, payload):
@@ -87,7 +87,7 @@ def _abstract_with(monkeypatch, payload):
 
 
 def test_gist_null_ne_produit_rien(monkeypatch):
-    """Le modèle a le droit de ne voir aucun motif ; ne rien écrire est correct."""
+    """The model is allowed to see no pattern; writing nothing is correct."""
     assert _abstract_with(monkeypatch, '{"gist": null, "confidence": 0.0}') is None
 
 

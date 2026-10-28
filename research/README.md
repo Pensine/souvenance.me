@@ -60,3 +60,10 @@ gatekeeping.
 |---|---|---|
 | [001 — The substrate thesis](papers/001-substrate-thesis/) | [draft v0.1](papers/001-substrate-thesis/paper.md) | A memory system stays relevant across AI generations *because* it presupposes their obsolescence |
 | [002 — Lived time](papers/002-lived-time/) | [protocol](papers/002-lived-time/README.md) | Time framing computed in code beats leaving temporal arithmetic to the model — measured by ablation on LoCoMo, across a capability range |
+
+## License
+
+Papers, lab notes and other research prose, and the SOURCED benchmark data, are published under
+[Creative Commons Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+Code in this folder (eval harnesses, the benchmark tooling) is Apache-2.0, like the rest of the
+repository.

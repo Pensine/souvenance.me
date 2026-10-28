@@ -57,7 +57,7 @@ def test_claude_ignore_messages_vides():
 def test_parse_file_format_inconnu(tmp_path):
     p = tmp_path / "conversations.json"
     p.write_text(json.dumps([{"mystery": True}]))
-    with pytest.raises(ValueError, match="Format non reconnu"):
+    with pytest.raises(ValueError, match="Unrecognized format"):
         parse_file(p)
 
 

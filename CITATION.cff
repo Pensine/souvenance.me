@@ -22,6 +22,6 @@ keywords:
   - temporal knowledge graph
   - model context protocol
   - data ownership
-license: AGPL-3.0-or-later
+license: Apache-2.0
 version: 0.2.4
 date-released: 2026-08-07

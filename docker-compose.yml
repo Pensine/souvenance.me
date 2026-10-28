@@ -1,5 +1,42 @@
-# JUMEAU — infra v1 : une seule base (PostgreSQL + pgvector), rien d'autre.
-# MinIO viendra si le volume média l'exige (couche 6).
+# JUMEAU — infrastructure: a single database (PostgreSQL + pgvector), and, for
+# a home installation, the whole application in containers.
+#
+# Without a profile, only `db` starts: this is the historical server
+# installation (API and MCP under systemd, cycles in cron — see install.sh).
+# The `app` profile adds api, mcp and nightly; the `tunnel` profile adds a
+# Cloudflare tunnel. scripts/setup.py writes COMPOSE_PROFILES into .env:
+# `docker compose up -d` is then enough.
+x-app: &app
+  # a single image for the three services; only `api` builds it
+  image: souvenance:local
+  restart: unless-stopped
+  profiles: [app]
+  env_file:
+    - path: .env
+      required: false
+  environment:
+    # inside the containers, paths and addresses are fixed here: those of the
+    # .env (meant for the host) do not apply
+    PENSINE_DATABASE_URL: postgresql://pensine:${POSTGRES_PASSWORD:-}@db:5432/pensine
+    PENSINE_DATA_DIR: /data
+    PENSINE_MEDIA_ROOT: /data/media
+    PENSINE_GEO_DIR: /data/geo
+    PENSINE_BACKUP_DIR: /data/backups
+    PENSINE_LOG_DIR: /data/logs
+    PENSINE_BIND_HOST: 0.0.0.0
+    TZ: ${TZ:-UTC}
+  volumes:
+    # SOUVENANCE_DATA: named volume (default) or host folder (./data)
+    - ${SOUVENANCE_DATA:-souvenance_data}:/data
+    - ./persona:/app/persona
+    - ./constitution.yaml:/app/constitution.yaml:ro
+  extra_hosts:
+    # a local model on the host (LM Studio, Ollama…) is reached by this name
+    - host.docker.internal:host-gateway
+  depends_on:
+    db:
+      condition: service_healthy
+
 services:
   db:
     image: pgvector/pgvector:pg17
@@ -7,14 +44,86 @@ services:
     environment:
       POSTGRES_DB: pensine
       POSTGRES_USER: pensine
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?définir dans .env}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set it in .env}
     volumes:
       - pensine_pgdata:/var/lib/postgresql/data
       - ./db/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
     ports:
-      # PENSINE_DB_PORT (.env) : port hôte, à changer si un autre Postgres
-      # occupe déjà 5432 sur la machine (cohabitation avec d'autres services)
+      # PENSINE_DB_PORT (.env): host port, to change if another Postgres
+      # already occupies 5432 on the machine (coexistence with other services)
       - "127.0.0.1:${PENSINE_DB_PORT:-5432}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pensine -d pensine"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    <<: *app
+    build:
+      context: .
+      args:
+        EXTRAS: ${SOUVENANCE_EXTRAS:-api,embeddings}
+        TRANSCRIPTION: ${SOUVENANCE_TRANSCRIPTION:-faster-whisper}
+        WITH_CLAUDE_CLI: ${SOUVENANCE_CLAUDE_CLI:-1}
+    # migrations first: an image update brings the database up to date
+    command: ["sh", "-c", "python scripts/migrate.py && exec uvicorn pensine.api:app --host 0.0.0.0 --port 8300"]
+    ports:
+      - "${SOUVENANCE_LISTEN:-127.0.0.1}:${SOUVENANCE_API_PORT:-8300}:8300"
+
+  mcp:
+    <<: *app
+    pull_policy: never
+    command: ["python", "-m", "pensine.mcp_server"]
+    environment:
+      PENSINE_DATABASE_URL: postgresql://pensine:${POSTGRES_PASSWORD:-}@db:5432/pensine
+      PENSINE_DATA_DIR: /data
+      PENSINE_MEDIA_ROOT: /data/media
+      PENSINE_GEO_DIR: /data/geo
+      PENSINE_BACKUP_DIR: /data/backups
+      PENSINE_LOG_DIR: /data/logs
+      PENSINE_BIND_HOST: 0.0.0.0
+      PENSINE_MCP_TRANSPORT: streamable-http
+      TZ: ${TZ:-UTC}
+    ports:
+      - "${SOUVENANCE_LISTEN:-127.0.0.1}:${SOUVENANCE_MCP_PORT:-8400}:8400"
+    depends_on:
+      api:
+        condition: service_started
+
+  nightly:
+    <<: *app
+    pull_policy: never
+    # consolidation 03:30, REM on Sunday 04:00, persona on the 1st, backup
+    # 05:30 — table: deploy/docker/crontab
+    command: ["python", "consolidation/scheduler.py"]
+    environment:
+      PENSINE_DATABASE_URL: postgresql://pensine:${POSTGRES_PASSWORD:-}@db:5432/pensine
+      PENSINE_DATA_DIR: /data
+      PENSINE_MEDIA_ROOT: /data/media
+      PENSINE_GEO_DIR: /data/geo
+      PENSINE_BACKUP_DIR: /data/backups
+      PENSINE_LOG_DIR: /data/logs
+      PENSINE_GEONAMES_AUTO: "1"
+      TZ: ${TZ:-UTC}
+    depends_on:
+      api:
+        condition: service_started
+
+  tunnel:
+    # Cloudflare tunnel: a public HTTPS address without opening a port or
+    # touching the router. Token: Cloudflare dashboard → Zero Trust →
+    # Networks → Tunnels. Active only with the `tunnel` profile.
+    image: cloudflare/cloudflared:2025.8.1
+    restart: unless-stopped
+    profiles: [tunnel]
+    command: ["tunnel", "--no-autoupdate", "run"]
+    environment:
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN:-}
+    depends_on:
+      - api
+      - mcp
 
 volumes:
   pensine_pgdata:
+  souvenance_data:

@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Ré-indexe toutes les mémoires avec le backend d'embeddings configuré.
+"""Re-indexes all memories with the configured embeddings backend.
 
-Les mémoires sont des projections recalculables (couche 0) : changer de
-modèle d'embeddings n'est pas une migration, c'est un recalcul. Cet outil :
+Memories are recomputable projections (layer 0): changing the embeddings
+model is not a migration, it is a recomputation. This tool:
 
-1. aligne la dimension de `memories.embedding` sur le backend configuré
-   (PENSINE_EMBEDDING_BACKEND / PENSINE_EMBEDDING_DIM) ;
-2. recalcule le vecteur de chaque mémoire non remplacée ;
-3. journalise l'opération dans l'audit.
+1. aligns the dimension of `memories.embedding` with the configured backend
+   (PENSINE_EMBEDDING_BACKEND / PENSINE_EMBEDDING_DIM);
+2. recomputes the vector of every non-superseded memory;
+3. logs the operation in the audit.
 
-Usage : ./.venv/bin/python scripts/reembed.py [--dry-run]
-(le .env du projet est chargé par pensine.config — lançable tel quel)
+Usage: ./.venv/bin/python scripts/reembed.py [--dry-run]
+(the project's .env is loaded by pensine.config — runnable as is)
 """
 
 import sys
@@ -24,22 +24,22 @@ from pensine import config, db, embeddings  # noqa: E402
 def main() -> int:
     dry = "--dry-run" in sys.argv
     if not config.EMBEDDINGS_ENABLED:
-        print("PENSINE_EMBEDDINGS=0 — rien à faire.")
+        print("PENSINE_EMBEDDINGS=0 — nothing to do.")
         return 0
 
-    probe = embeddings.embed("sonde de dimension", kind="document")
+    probe = embeddings.embed("dimension probe", kind="document")
     if probe is None:
-        print(f"ERREUR : le backend '{config.EMBEDDING_BACKEND}' ne charge pas "
-              "(voir le warning ci-dessus) — aucune modification.")
+        print(f"ERROR: the backend '{config.EMBEDDING_BACKEND}' does not load "
+              "(see the warning above) — no change made.")
         return 1
     dim = len(probe)
     if dim != config.EMBEDDING_DIM:
-        print(f"ATTENTION : le modèle produit {dim}-d mais PENSINE_EMBEDDING_DIM="
-              f"{config.EMBEDDING_DIM} — on suit le modèle ({dim}).")
+        print(f"WARNING: the model produces {dim}-d but PENSINE_EMBEDDING_DIM="
+              f"{config.EMBEDDING_DIM} — following the model ({dim}).")
 
     with db.connection() as conn:
-        # pour le type vector, atttypmod EST la dimension (pas d'en-tête de 4
-        # octets comme varchar)
+        # for the vector type, atttypmod IS the dimension (no 4-byte header
+        # as with varchar)
         current = conn.execute(
             "SELECT atttypmod AS dim FROM pg_attribute "
             "WHERE attrelid = 'memories'::regclass AND attname = 'embedding'"
@@ -47,24 +47,24 @@ def main() -> int:
         rows = conn.execute(
             "SELECT id, content FROM memories WHERE superseded_by IS NULL ORDER BY id"
         ).fetchall()
-        print(f"backend : {config.EMBEDDING_BACKEND} ({dim}-d) | colonne : "
-              f"{current}-d | mémoires à recalculer : {len(rows)}")
+        print(f"backend: {config.EMBEDDING_BACKEND} ({dim}-d) | column: "
+              f"{current}-d | memories to recompute: {len(rows)}")
         if dry:
-            print("(--dry-run : aucune écriture)")
+            print("(--dry-run: nothing written)")
             return 0
 
         if current != dim:
-            # le type change : les anciens vecteurs n'ont plus de sens, on repart
+            # the type changes: the old vectors are meaningless, start afresh
             conn.execute("ALTER TABLE memories ALTER COLUMN embedding "
                          f"TYPE VECTOR({dim}) USING NULL")
-            print(f"colonne redimensionnée : {current}-d → {dim}-d")
+            print(f"column resized: {current}-d → {dim}-d")
 
         done = 0
         for r in rows:
             vec = embeddings.embed(r["content"], kind="document")
             if vec is None:
-                print(f"  mémoire {r['id']} : embedding indisponible — ABANDON "
-                      "(les vecteurs déjà écrits restent cohérents)")
+                print(f"  memory {r['id']}: embedding unavailable — ABORTING "
+                      "(the vectors already written remain consistent)")
                 break
             conn.execute("UPDATE memories SET embedding = %s::vector WHERE id = %s",
                          (str(list(vec)), r["id"]))
@@ -73,7 +73,7 @@ def main() -> int:
                  {"backend": config.EMBEDDING_BACKEND, "dim": dim,
                   "total": len(rows), "done": done})
         conn.commit()
-        print(f"vecteurs recalculés : {done}/{len(rows)}")
+        print(f"vectors recomputed: {done}/{len(rows)}")
         return 0 if done == len(rows) else 1
 
 

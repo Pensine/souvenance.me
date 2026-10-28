@@ -1,0 +1,2179 @@
+{
+ "system": {
+  "name": "baseline:verbatim"
+ },
+ "track": "T",
+ "data": "sample",
+ "seconds": 0.0,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "D0001.0",
+     "content": "Photo taken on 2025-02-03 at 16:26.",
+     "valid_from": "2025-02-03T16:26:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Photo taken on 2025-02-03 at 16:26."
+      }
+     ]
+    },
+    {
+     "id": "D0001.1",
+     "content": "GPS: 51.05710, 3.70539.",
+     "valid_from": "2025-02-03T16:26:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "GPS: 51.05710, 3.70539."
+      }
+     ]
+    },
+    {
+     "id": "D0002.0",
+     "content": "Photo taken on 2025-02-03 at 17:11.",
+     "valid_from": "2025-02-03T17:11:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Photo taken on 2025-02-03 at 17:11."
+      }
+     ]
+    },
+    {
+     "id": "D0002.1",
+     "content": "GPS: 51.04428, 3.70178.",
+     "valid_from": "2025-02-03T17:11:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "GPS: 51.04428, 3.70178."
+      }
+     ]
+    },
+    {
+     "id": "D0003.0",
+     "content": "Walked around the botanical garden today.",
+     "valid_from": "2025-02-04T07:06:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Walked around the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "D0003.1",
+     "content": "Maybe I'll learn to sail this summer, we'll see.",
+     "valid_from": "2025-02-04T07:06:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Maybe I'll learn to sail this summer, we'll see."
+      }
+     ]
+    },
+    {
+     "id": "D0003.2",
+     "content": "Made soup with whatever was left in the fridge.",
+     "valid_from": "2025-02-04T07:06:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Made soup with whatever was left in the fridge."
+      }
+     ]
+    },
+    {
+     "id": "D0004.0",
+     "content": "Photo taken on 2025-02-04 at 12:41.",
+     "valid_from": "2025-02-04T12:41:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Photo taken on 2025-02-04 at 12:41."
+      }
+     ]
+    },
+    {
+     "id": "D0004.1",
+     "content": "GPS: 51.05540, 3.70413.",
+     "valid_from": "2025-02-04T12:41:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "GPS: 51.05540, 3.70413."
+      }
+     ]
+    },
+    {
+     "id": "D0005.0",
+     "content": "Hi um, you, Work- Work is busy, being an operations like, manager is never boring.",
+     "valid_from": "2025-02-04T18:30:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Hi um, you, Work- Work is busy, being an operations like, manager is never boring."
+      }
+     ]
+    },
+    {
+     "id": "D0006.0",
+     "content": "I've been living at 51 Orchard Close in Ghent since December 2022.",
+     "valid_from": "2025-02-05T09:06:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      }
+     ]
+    },
+    {
+     "id": "D0006.1",
+     "content": "Long day, but a good one.",
+     "valid_from": "2025-02-05T09:06:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Long day, but a good one."
+      }
+     ]
+    },
+    {
+     "id": "D0007.1",
+     "content": "Things are so, good here in Montreal.",
+     "valid_from": "2025-02-06T19:36:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Things are so, good here in Montreal."
+      }
+     ]
+    },
+    {
+     "id": "D0007.2",
+     "content": "Talk- Talk soon.",
+     "valid_from": "2025-02-06T19:36:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Talk- Talk soon."
+      }
+     ]
+    },
+    {
+     "id": "D0008.0",
+     "content": "Trying to go to bed earlier this week.",
+     "valid_from": "2025-02-06T19:41:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Trying to go to bed earlier this week."
+      }
+     ]
+    },
+    {
+     "id": "D0008.1",
+     "content": "Practised my Arabic with a podcast on the way home.",
+     "valid_from": "2025-02-06T19:41:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Practised my Arabic with a podcast on the way home."
+      }
+     ]
+    },
+    {
+     "id": "D0009.0",
+     "content": "Turns out it's a bad chest cold today.",
+     "valid_from": "2025-02-07T07:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today."
+      }
+     ]
+    },
+    {
+     "id": "D0009.1",
+     "content": "Rest and fluids it is.",
+     "valid_from": "2025-02-07T07:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Rest and fluids it is."
+      }
+     ]
+    },
+    {
+     "id": "D0009.2",
+     "content": "Apparently Oskar's company might be shutting down.",
+     "valid_from": "2025-02-07T07:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Apparently Oskar's company might be shutting down."
+      }
+     ]
+    },
+    {
+     "id": "D0009.3",
+     "content": "Watered the plants on the balcony.",
+     "valid_from": "2025-02-07T07:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Watered the plants on the balcony."
+      }
+     ]
+    },
+    {
+     "id": "D0009.4",
+     "content": "I've been working as a backend engineer at Northwind Analytics since December 2021.",
+     "valid_from": "2025-02-07T07:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+      }
+     ]
+    },
+    {
+     "id": "D0010.0",
+     "content": "RIVERSIDE MEDICAL PRACTICE",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "RIVERSIDE MEDICAL PRACTICE"
+      }
+     ]
+    },
+    {
+     "id": "D0010.1",
+     "content": "VISIT SUMMARY",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "VISIT SUMMARY"
+      }
+     ]
+    },
+    {
+     "id": "D0010.2",
+     "content": "Patient: Kofi Achebe",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Patient: Kofi Achebe"
+      }
+     ]
+    },
+    {
+     "id": "D0010.3",
+     "content": "Date of visit: 7 February 2025",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Date of visit: 7 February 2025"
+      }
+     ]
+    },
+    {
+     "id": "D0010.4",
+     "content": "Assessment: a bad chest cold",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Assessment: a bad chest cold"
+      }
+     ]
+    },
+    {
+     "id": "D0010.5",
+     "content": "Plan: rest and fluids",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Plan: rest and fluids"
+      }
+     ]
+    },
+    {
+     "id": "D0010.6",
+     "content": "Follow up if symptoms persist.",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Follow up if symptoms persist."
+      }
+     ]
+    },
+    {
+     "id": "D0011.0",
+     "content": "In the end I did not sign up for the marathon, not this year.",
+     "valid_from": "2025-02-08T15:50:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "In the end I did not sign up for the marathon, not this year."
+      }
+     ]
+    },
+    {
+     "id": "D0011.1",
+     "content": "Coffee with Oskar at the harbour footpath yesterday.",
+     "valid_from": "2025-02-08T15:50:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Oskar at the harbour footpath yesterday."
+      }
+     ]
+    },
+    {
+     "id": "D0011.2",
+     "content": "Trying to go to bed earlier this week.",
+     "valid_from": "2025-02-08T15:50:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Trying to go to bed earlier this week."
+      }
+     ]
+    },
+    {
+     "id": "D0011.3",
+     "content": "Coffee with Hollis at the botanical garden today.",
+     "valid_from": "2025-02-08T15:50:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Hollis at the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "D0012.0",
+     "content": "Miss Bristol sometimes, it's where I grew up.",
+     "valid_from": "2025-02-09T08:18:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Miss Bristol sometimes, it's where I grew up."
+      }
+     ]
+    },
+    {
+     "id": "D0012.1",
+     "content": "The weather was grey all morning.",
+     "valid_from": "2025-02-09T08:18:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "The weather was grey all morning."
+      }
+     ]
+    },
+    {
+     "id": "D0012.2",
+     "content": "My birthday is on 1 May, reminder to plan something.",
+     "valid_from": "2025-02-09T08:18:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "My birthday is on 1 May, reminder to plan something."
+      }
+     ]
+    },
+    {
+     "id": "D0013.1",
+     "content": "Things are good here um, in like, Montreal.",
+     "valid_from": "2025-02-09T19:24:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Things are good here um, in like, Montreal."
+      }
+     ]
+    },
+    {
+     "id": "D0013.2",
+     "content": "Miss- Miss you!",
+     "valid_from": "2025-02-09T19:24:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Miss- Miss you!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "D0001.0",
+     "content": "Photo taken on 2025-02-03 at 16:26.",
+     "valid_from": "2025-02-03T16:26:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Photo taken on 2025-02-03 at 16:26."
+      }
+     ]
+    },
+    {
+     "id": "D0001.1",
+     "content": "GPS: 51.05710, 3.70539.",
+     "valid_from": "2025-02-03T16:26:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "GPS: 51.05710, 3.70539."
+      }
+     ]
+    },
+    {
+     "id": "D0002.0",
+     "content": "Photo taken on 2025-02-03 at 17:11.",
+     "valid_from": "2025-02-03T17:11:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Photo taken on 2025-02-03 at 17:11."
+      }
+     ]
+    },
+    {
+     "id": "D0002.1",
+     "content": "GPS: 51.04428, 3.70178.",
+     "valid_from": "2025-02-03T17:11:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "GPS: 51.04428, 3.70178."
+      }
+     ]
+    },
+    {
+     "id": "D0003.0",
+     "content": "Walked around the botanical garden today.",
+     "valid_from": "2025-02-04T07:06:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Walked around the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "D0003.1",
+     "content": "Maybe I'll learn to sail this summer, we'll see.",
+     "valid_from": "2025-02-04T07:06:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Maybe I'll learn to sail this summer, we'll see."
+      }
+     ]
+    },
+    {
+     "id": "D0003.2",
+     "content": "Made soup with whatever was left in the fridge.",
+     "valid_from": "2025-02-04T07:06:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Made soup with whatever was left in the fridge."
+      }
+     ]
+    },
+    {
+     "id": "D0004.0",
+     "content": "Photo taken on 2025-02-04 at 12:41.",
+     "valid_from": "2025-02-04T12:41:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Photo taken on 2025-02-04 at 12:41."
+      }
+     ]
+    },
+    {
+     "id": "D0004.1",
+     "content": "GPS: 51.05540, 3.70413.",
+     "valid_from": "2025-02-04T12:41:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "GPS: 51.05540, 3.70413."
+      }
+     ]
+    },
+    {
+     "id": "D0005.0",
+     "content": "Hi um, you, Work- Work is busy, being an operations like, manager is never boring.",
+     "valid_from": "2025-02-04T18:30:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Hi um, you, Work- Work is busy, being an operations like, manager is never boring."
+      }
+     ]
+    },
+    {
+     "id": "D0006.0",
+     "content": "I've been living at 51 Orchard Close in Ghent since December 2022.",
+     "valid_from": "2025-02-05T09:06:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      }
+     ]
+    },
+    {
+     "id": "D0006.1",
+     "content": "Long day, but a good one.",
+     "valid_from": "2025-02-05T09:06:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Long day, but a good one."
+      }
+     ]
+    },
+    {
+     "id": "D0007.1",
+     "content": "Things are so, good here in Montreal.",
+     "valid_from": "2025-02-06T19:36:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Things are so, good here in Montreal."
+      }
+     ]
+    },
+    {
+     "id": "D0007.2",
+     "content": "Talk- Talk soon.",
+     "valid_from": "2025-02-06T19:36:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Talk- Talk soon."
+      }
+     ]
+    },
+    {
+     "id": "D0008.0",
+     "content": "Trying to go to bed earlier this week.",
+     "valid_from": "2025-02-06T19:41:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Trying to go to bed earlier this week."
+      }
+     ]
+    },
+    {
+     "id": "D0008.1",
+     "content": "Practised my Arabic with a podcast on the way home.",
+     "valid_from": "2025-02-06T19:41:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Practised my Arabic with a podcast on the way home."
+      }
+     ]
+    },
+    {
+     "id": "D0009.0",
+     "content": "Turns out it's a bad chest cold today.",
+     "valid_from": "2025-02-07T07:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today."
+      }
+     ]
+    },
+    {
+     "id": "D0009.1",
+     "content": "Rest and fluids it is.",
+     "valid_from": "2025-02-07T07:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Rest and fluids it is."
+      }
+     ]
+    },
+    {
+     "id": "D0009.2",
+     "content": "Apparently Oskar's company might be shutting down.",
+     "valid_from": "2025-02-07T07:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Apparently Oskar's company might be shutting down."
+      }
+     ]
+    },
+    {
+     "id": "D0009.3",
+     "content": "Watered the plants on the balcony.",
+     "valid_from": "2025-02-07T07:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Watered the plants on the balcony."
+      }
+     ]
+    },
+    {
+     "id": "D0009.4",
+     "content": "I've been working as a backend engineer at Northwind Analytics since December 2021.",
+     "valid_from": "2025-02-07T07:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+      }
+     ]
+    },
+    {
+     "id": "D0010.0",
+     "content": "RIVERSIDE MEDICAL PRACTICE",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "RIVERSIDE MEDICAL PRACTICE"
+      }
+     ]
+    },
+    {
+     "id": "D0010.1",
+     "content": "VISIT SUMMARY",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "VISIT SUMMARY"
+      }
+     ]
+    },
+    {
+     "id": "D0010.2",
+     "content": "Patient: Kofi Achebe",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Patient: Kofi Achebe"
+      }
+     ]
+    },
+    {
+     "id": "D0010.3",
+     "content": "Date of visit: 7 February 2025",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Date of visit: 7 February 2025"
+      }
+     ]
+    },
+    {
+     "id": "D0010.4",
+     "content": "Assessment: a bad chest cold",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Assessment: a bad chest cold"
+      }
+     ]
+    },
+    {
+     "id": "D0010.5",
+     "content": "Plan: rest and fluids",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Plan: rest and fluids"
+      }
+     ]
+    },
+    {
+     "id": "D0010.6",
+     "content": "Follow up if symptoms persist.",
+     "valid_from": "2025-02-07T13:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Follow up if symptoms persist."
+      }
+     ]
+    },
+    {
+     "id": "D0011.0",
+     "content": "In the end I did not sign up for the marathon, not this year.",
+     "valid_from": "2025-02-08T15:50:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "In the end I did not sign up for the marathon, not this year."
+      }
+     ]
+    },
+    {
+     "id": "D0011.1",
+     "content": "Coffee with Oskar at the harbour footpath yesterday.",
+     "valid_from": "2025-02-08T15:50:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Oskar at the harbour footpath yesterday."
+      }
+     ]
+    },
+    {
+     "id": "D0011.2",
+     "content": "Trying to go to bed earlier this week.",
+     "valid_from": "2025-02-08T15:50:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Trying to go to bed earlier this week."
+      }
+     ]
+    },
+    {
+     "id": "D0011.3",
+     "content": "Coffee with Hollis at the botanical garden today.",
+     "valid_from": "2025-02-08T15:50:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Hollis at the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "D0012.0",
+     "content": "Miss Bristol sometimes, it's where I grew up.",
+     "valid_from": "2025-02-09T08:18:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Miss Bristol sometimes, it's where I grew up."
+      }
+     ]
+    },
+    {
+     "id": "D0012.1",
+     "content": "The weather was grey all morning.",
+     "valid_from": "2025-02-09T08:18:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "The weather was grey all morning."
+      }
+     ]
+    },
+    {
+     "id": "D0012.2",
+     "content": "My birthday is on 1 May, reminder to plan something.",
+     "valid_from": "2025-02-09T08:18:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "My birthday is on 1 May, reminder to plan something."
+      }
+     ]
+    },
+    {
+     "id": "D0013.1",
+     "content": "Things are good here um, in like, Montreal.",
+     "valid_from": "2025-02-09T19:24:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Things are good here um, in like, Montreal."
+      }
+     ]
+    },
+    {
+     "id": "D0013.2",
+     "content": "Miss- Miss you!",
+     "valid_from": "2025-02-09T19:24:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Miss- Miss you!"
+      }
+     ]
+    },
+    {
+     "id": "D0014.0",
+     "content": "If the Turin offer ever comes through, I'd honestly move there in a heartbeat.",
+     "valid_from": "2025-02-10T14:37:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "If the Turin offer ever comes through, I'd honestly move there in a heartbeat."
+      }
+     ]
+    },
+    {
+     "id": "D0014.1",
+     "content": "Finally cleaned the kitchen properly.",
+     "valid_from": "2025-02-10T14:37:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Finally cleaned the kitchen properly."
+      }
+     ]
+    },
+    {
+     "id": "D0014.2",
+     "content": "Paid the rent, 680 EUR.",
+     "valid_from": "2025-02-10T14:37:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Paid the rent, 680 EUR."
+      }
+     ]
+    },
+    {
+     "id": "D0014.3",
+     "content": "Met Oskar at the harbour footpath today.",
+     "valid_from": "2025-02-10T14:37:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Met Oskar at the harbour footpath today."
+      }
+     ]
+    },
+    {
+     "id": "D0014.4",
+     "content": "Hollis said their bike got stolen outside the station.",
+     "valid_from": "2025-02-10T14:37:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Hollis said their bike got stolen outside the station."
+      }
+     ]
+    },
+    {
+     "id": "D0015.0",
+     "content": "Finally cleaned the kitchen properly.",
+     "valid_from": "2025-02-10T14:41:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Finally cleaned the kitchen properly."
+      }
+     ]
+    },
+    {
+     "id": "D0015.1",
+     "content": "my best friend Kasper lives in Edinburgh these days.",
+     "valid_from": "2025-02-10T14:41:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "my best friend Kasper lives in Edinburgh these days."
+      }
+     ]
+    },
+    {
+     "id": "D0016.0",
+     "content": "Finally cleaned the kitchen properly.",
+     "valid_from": "2025-02-11T08:32:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Finally cleaned the kitchen properly."
+      }
+     ]
+    },
+    {
+     "id": "D0016.1",
+     "content": "I've been working as a backend engineer at Northwind Analytics since December 2021.",
+     "valid_from": "2025-02-11T08:32:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
+      }
+     ]
+    },
+    {
+     "id": "D0016.2",
+     "content": "Walked around the hilltop viewpoint today.",
+     "valid_from": "2025-02-11T08:32:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Walked around the hilltop viewpoint today."
+      }
+     ]
+    },
+    {
+     "id": "D0017.0",
+     "content": "Photo taken on 2025-02-11 at 11:40.",
+     "valid_from": "2025-02-11T11:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "Photo taken on 2025-02-11 at 11:40."
+      }
+     ]
+    },
+    {
+     "id": "D0017.1",
+     "content": "GPS: 51.04755, 3.72139.",
+     "valid_from": "2025-02-11T11:40:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "GPS: 51.04755, 3.72139."
+      }
+     ]
+    },
+    {
+     "id": "D0018.1",
+     "content": "Work is busy, being a sales lead is never boring.",
+     "valid_from": "2025-02-11T14:17:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Work is busy, being a sales lead is never boring."
+      }
+     ]
+    },
+    {
+     "id": "D0018.2",
+     "content": "Call me this weekend?",
+     "valid_from": "2025-02-11T14:17:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Call me this weekend?"
+      }
+     ]
+    },
+    {
+     "id": "D0019.0",
+     "content": "Hi- Hi so, you, Things are uh, good you know, here in Rotterdam.",
+     "valid_from": "2025-02-11T14:34:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Hi- Hi so, you, Things are uh, good you know, here in Rotterdam."
+      }
+     ]
+    },
+    {
+     "id": "D0019.1",
+     "content": "Call me this weekend?",
+     "valid_from": "2025-02-11T14:34:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Call me this weekend?"
+      }
+     ]
+    },
+    {
+     "id": "D0020.0",
+     "content": "Bank adviser um, appointment today, all fine.",
+     "valid_from": "2025-02-11T17:05:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Bank adviser um, appointment today, all fine."
+      }
+     ]
+    },
+    {
+     "id": "D0020.1",
+     "content": "Made- Made soup with whatever was left you know, in the I mean, fridge.",
+     "valid_from": "2025-02-11T17:05:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Made- Made soup with whatever was left you know, in the I mean, fridge."
+      }
+     ]
+    },
+    {
+     "id": "D0021.0",
+     "content": "Quick update.",
+     "valid_from": "2025-02-11T17:11:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Quick update."
+      }
+     ]
+    },
+    {
+     "id": "D0021.1",
+     "content": "Things are good here in Montreal.",
+     "valid_from": "2025-02-11T17:11:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Things are good here in Montreal."
+      }
+     ]
+    },
+    {
+     "id": "D0021.2",
+     "content": "Call- Call me this so, weekend?",
+     "valid_from": "2025-02-11T17:11:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Call- Call me this so, weekend?"
+      }
+     ]
+    },
+    {
+     "id": "D0022.0",
+     "content": "Made soup with whatever was left in the fridge.",
+     "valid_from": "2025-02-12T08:28:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Made soup with whatever was left in the fridge."
+      }
+     ]
+    },
+    {
+     "id": "D0022.1",
+     "content": "Fully recovered today, no more rest.",
+     "valid_from": "2025-02-12T08:28:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Fully recovered today, no more rest."
+      }
+     ]
+    },
+    {
+     "id": "D0022.2",
+     "content": "Walked around the riverside park today.",
+     "valid_from": "2025-02-12T08:28:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Walked around the riverside park today."
+      }
+     ]
+    },
+    {
+     "id": "D0023.0",
+     "content": "SILVERFERN ENERGY",
+     "valid_from": "2025-02-12T11:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "SILVERFERN ENERGY"
+      }
+     ]
+    },
+    {
+     "id": "D0023.1",
+     "content": "OFFER OF EMPLOYMENT",
+     "valid_from": "2025-02-12T11:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "OFFER OF EMPLOYMENT"
+      }
+     ]
+    },
+    {
+     "id": "D0023.2",
+     "content": "Dear Kofi Achebe,",
+     "valid_from": "2025-02-12T11:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "Dear Kofi Achebe,"
+      }
+     ]
+    },
+    {
+     "id": "D0023.3",
+     "content": "We are pleased to offer you the position of research assistant.",
+     "valid_from": "2025-02-12T11:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "We are pleased to offer you the position of research assistant."
+      }
+     ]
+    },
+    {
+     "id": "D0023.4",
+     "content": "Your start date will be 15 February 2025.",
+     "valid_from": "2025-02-12T11:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "Your start date will be 15 February 2025."
+      }
+     ]
+    },
+    {
+     "id": "D0023.5",
+     "content": "Please sign and return a copy of this letter.",
+     "valid_from": "2025-02-12T11:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "Please sign and return a copy of this letter."
+      }
+     ]
+    },
+    {
+     "id": "D0023.6",
+     "content": "Human Resources",
+     "valid_from": "2025-02-12T11:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "Human Resources"
+      }
+     ]
+    },
+    {
+     "id": "D0024.0",
+     "content": "Photo taken on 2025-02-12 at 12:02.",
+     "valid_from": "2025-02-12T12:02:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Photo taken on 2025-02-12 at 12:02."
+      }
+     ]
+    },
+    {
+     "id": "D0024.1",
+     "content": "GPS: 51.06624, 3.72928.",
+     "valid_from": "2025-02-12T12:02:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "GPS: 51.06624, 3.72928."
+      }
+     ]
+    },
+    {
+     "id": "D0025.0",
+     "content": "I accepted the research assistant job at Silverfern Energy, I start on 15 February 2025.",
+     "valid_from": "2025-02-12T13:55:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "I accepted the research assistant job at Silverfern Energy, I start on 15 February 2025."
+      }
+     ]
+    },
+    {
+     "id": "D0025.1",
+     "content": "Started a new book, slow so far.",
+     "valid_from": "2025-02-12T13:55:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Started a new book, slow so far."
+      }
+     ]
+    },
+    {
+     "id": "D0025.2",
+     "content": "Had to send the dish back, I'm allergic to sesame.",
+     "valid_from": "2025-02-12T13:55:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Had to send the dish back, I'm allergic to sesame."
+      }
+     ]
+    },
+    {
+     "id": "D0026.0",
+     "content": "Kasper lives in Edinburgh these days.",
+     "valid_from": "2025-02-13T12:45:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "Kasper lives in Edinburgh these days."
+      }
+     ]
+    },
+    {
+     "id": "D0026.1",
+     "content": "The train was a few minutes late.",
+     "valid_from": "2025-02-13T12:45:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "The train was a few minutes late."
+      }
+     ]
+    },
+    {
+     "id": "D0026.2",
+     "content": "I've been living at 51 Orchard Close in Ghent since December 2022.",
+     "valid_from": "2025-02-13T12:45:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      }
+     ]
+    },
+    {
+     "id": "D0027.0",
+     "content": "Photo taken on 2025-02-14 at 08:49.",
+     "valid_from": "2025-02-14T08:49:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "Photo taken on 2025-02-14 at 08:49."
+      }
+     ]
+    },
+    {
+     "id": "D0027.1",
+     "content": "GPS: 45.75081, 4.83579.",
+     "valid_from": "2025-02-14T08:49:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "GPS: 45.75081, 4.83579."
+      }
+     ]
+    },
+    {
+     "id": "D0028.1",
+     "content": "Work is busy, being a sales I mean, lead is never you know, boring.",
+     "valid_from": "2025-02-14T18:21:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "Work is busy, being a sales I mean, lead is never you know, boring."
+      }
+     ]
+    },
+    {
+     "id": "D0029.0",
+     "content": "Made soup with whatever was left in the fridge.",
+     "valid_from": "2025-02-14T19:28:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Made soup with whatever was left in the fridge."
+      }
+     ]
+    },
+    {
+     "id": "D0029.1",
+     "content": "Dentist appointment yesterday, all fine.",
+     "valid_from": "2025-02-14T19:28:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Dentist appointment yesterday, all fine."
+      }
+     ]
+    },
+    {
+     "id": "D0029.2",
+     "content": "I keep thinking about adopting a dog, maybe next year.",
+     "valid_from": "2025-02-14T19:28:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "I keep thinking about adopting a dog, maybe next year."
+      }
+     ]
+    },
+    {
+     "id": "D0030.0",
+     "content": "The weather was grey all morning.",
+     "valid_from": "2025-02-15T11:36:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "The weather was grey all morning."
+      }
+     ]
+    },
+    {
+     "id": "D0030.1",
+     "content": "Got the keys today: the new place is 79 Linden Street, Ghent.",
+     "valid_from": "2025-02-15T11:36:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Got the keys today: the new place is 79 Linden Street, Ghent."
+      }
+     ]
+    },
+    {
+     "id": "D0031.0",
+     "content": "RESIDENTIAL LEASE AGREEMENT",
+     "valid_from": "2025-02-15T17:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "RESIDENTIAL LEASE AGREEMENT"
+      }
+     ]
+    },
+    {
+     "id": "D0031.1",
+     "content": "Landlord: Rowan Property Lettings",
+     "valid_from": "2025-02-15T17:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Landlord: Rowan Property Lettings"
+      }
+     ]
+    },
+    {
+     "id": "D0031.2",
+     "content": "Tenant: Kofi Achebe",
+     "valid_from": "2025-02-15T17:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Tenant: Kofi Achebe"
+      }
+     ]
+    },
+    {
+     "id": "D0031.3",
+     "content": "Premises: 79 Linden Street, Ghent",
+     "valid_from": "2025-02-15T17:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Premises: 79 Linden Street, Ghent"
+      }
+     ]
+    },
+    {
+     "id": "D0031.4",
+     "content": "Lease start date: 15 February 2025",
+     "valid_from": "2025-02-15T17:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Lease start date: 15 February 2025"
+      }
+     ]
+    },
+    {
+     "id": "D0031.5",
+     "content": "Monthly rent: 1340 EUR",
+     "valid_from": "2025-02-15T17:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Monthly rent: 1340 EUR"
+      }
+     ]
+    },
+    {
+     "id": "D0031.6",
+     "content": "The tenant agrees to keep the premises in good order.",
+     "valid_from": "2025-02-15T17:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "The tenant agrees to keep the premises in good order."
+      }
+     ]
+    },
+    {
+     "id": "D0031.7",
+     "content": "Signed by both parties.",
+     "valid_from": "2025-02-15T17:00:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Signed by both parties."
+      }
+     ]
+    },
+    {
+     "id": "D0032.0",
+     "content": "Photo taken on 2025-02-16 at 17:22.",
+     "valid_from": "2025-02-16T17:22:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Photo taken on 2025-02-16 at 17:22."
+      }
+     ]
+    },
+    {
+     "id": "D0032.1",
+     "content": "GPS: 51.05485, 3.73550.",
+     "valid_from": "2025-02-16T17:22:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "GPS: 51.05485, 3.73550."
+      }
+     ]
+    },
+    {
+     "id": "D0033.0",
+     "content": "First day as research assistant at Silverfern Energy yesterday.",
+     "valid_from": "2025-02-16T18:45:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "First day as research assistant at Silverfern Energy yesterday."
+      }
+     ]
+    },
+    {
+     "id": "D0033.1",
+     "content": "Made soup with whatever was left in the fridge.",
+     "valid_from": "2025-02-16T18:45:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Made soup with whatever was left in the fridge."
+      }
+     ]
+    },
+    {
+     "id": "D0033.2",
+     "content": "Bank adviser appointment today, all fine.",
+     "valid_from": "2025-02-16T18:45:00",
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Bank adviser appointment today, all fine."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q002": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q003": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q004": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q005": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q006": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q007": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q008": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q009": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q010": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q011": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q012": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q013": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q014": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q015": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q016": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q017": {
+   "text": "Got the keys today: the new place is 79 Linden Street, Ghent. (recorded 2025-02-15T11:36:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0030",
+     "excerpt": "Got the keys today: the new place is 79 Linden Street, Ghent."
+    }
+   ]
+  },
+  "Q018": {
+   "text": "I accepted the research assistant job at Silverfern Energy, I start on 15 February 2025. (recorded 2025-02-12T13:55:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0025",
+     "excerpt": "I accepted the research assistant job at Silverfern Energy, I start on 15 February 2025."
+    }
+   ]
+  },
+  "Q019": {
+   "text": "Turns out it's a bad chest cold today. (recorded 2025-02-07T07:40:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0009",
+     "excerpt": "Turns out it's a bad chest cold today."
+    }
+   ]
+  },
+  "Q020": {
+   "text": "Turns out it's a bad chest cold today. (recorded 2025-02-07T07:40:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0009",
+     "excerpt": "Turns out it's a bad chest cold today."
+    }
+   ]
+  },
+  "Q021": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q022": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q023": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q024": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q025": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q026": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q027": {
+   "text": "Dentist appointment yesterday, all fine. (recorded 2025-02-14T19:28:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0029",
+     "excerpt": "Dentist appointment yesterday, all fine."
+    }
+   ]
+  },
+  "Q028": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q029": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q030": {
+   "text": "Date of visit: 7 February 2025 (recorded 2025-02-07T13:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0010",
+     "excerpt": "Date of visit: 7 February 2025"
+    }
+   ]
+  },
+  "Q031": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q032": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q033": {
+   "text": "Your start date will be 15 February 2025. (recorded 2025-02-12T11:00:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0023",
+     "excerpt": "Your start date will be 15 February 2025."
+    }
+   ]
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": true,
+   "citations": []
+  },
+  "Q037": {
+   "text": "In the end I did not sign up for the marathon, not this year. (recorded 2025-02-08T15:50:00)",
+   "abstained": false,
+   "citations": [
+    {
+     "deposit_id": "D0011",
+     "excerpt": "In the end I did not sign up for the marathon, not this year."
+    }
+   ]
+  }
+ }
+}

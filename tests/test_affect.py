@@ -1,4 +1,4 @@
-"""Charge affective : les deux axes, et le droit de ne pas savoir."""
+"""Affective load: the two axes, and the right not to know."""
 
 import pytest
 
@@ -7,10 +7,10 @@ from pensine import affect
 _affect = affect.parse
 
 
-# --- Le second axe sépare ce qu'un curseur bon/mauvais confondrait ----------
+# --- The second axis separates what a good/bad slider would conflate --------
 
 def test_chagrin_et_colere_ne_sont_pas_le_meme_souvenir():
-    """Tous deux pénibles ; l'un est sourd, l'autre vif."""
+    """Both painful; one is dull, the other sharp."""
     chagrin = affect.label(valence=-0.7, arousal=0.1)
     colere = affect.label(valence=-0.7, arousal=0.9)
     assert chagrin != colere
@@ -22,11 +22,11 @@ def test_serenite_et_euphorie_ne_sont_pas_le_meme_souvenir():
 
 
 def test_tension_neutre_reste_chargee():
-    """Valence neutre mais forte activation : l'épisode compte quand même."""
+    """Neutral valence but high arousal: the episode still counts."""
     assert affect.label(0.0, 0.9) == "neutre, sous tension"
 
 
-# --- « Non déterminé » n'est pas « neutre » --------------------------------
+# --- "Undetermined" is not "neutral" -------------------------------------
 
 def test_charge_inconnue_ne_produit_aucun_libelle():
     assert affect.label(None, None) is None
@@ -34,7 +34,7 @@ def test_charge_inconnue_ne_produit_aucun_libelle():
 
 
 def test_un_seul_axe_connu_reste_une_information():
-    """Savoir que c'était intense sans savoir si c'était bon se conserve."""
+    """Knowing it was intense without knowing whether it was good is worth keeping."""
     assert affect.label(None, 0.9) == "intense"
     assert affect.label(-0.8, None) == "pénible"
 
@@ -55,16 +55,16 @@ def test_describe_omet_l_axe_inconnu():
     assert "valence" not in out and out["intensite"] == 0.9
 
 
-# --- Extraction : refuser plutôt qu'inventer -------------------------------
+# --- Extraction: refuse rather than invent ---------------------------------
 
 @pytest.mark.parametrize("payload", [
-    {},                                        # rien d'exprimé
+    {},                                        # nothing expressed
     {"valence": None, "arousal": None},
-    {"valence": "beaucoup", "arousal": "peu"},  # non numérique
-    {"valence": -3.0, "arousal": 7.0},          # hors bornes
+    {"valence": "beaucoup", "arousal": "peu"},  # non-numeric
+    {"valence": -3.0, "arousal": 7.0},          # out of bounds
 ])
 def test_affect_invalide_devient_none_jamais_zero(payload):
-    """Un affect faux contamine le corpus ; l'absence, non."""
+    """A false affect contaminates the corpus; absence does not."""
     assert _affect(payload) == (None, None)
 
 
@@ -78,5 +78,5 @@ def test_bornes_exactes_acceptees():
 
 
 def test_un_axe_valide_survit_a_l_autre_invalide():
-    """Une valeur aberrante n'emporte pas celle qui tient."""
+    """An outlier value does not take down the one that holds."""
     assert _affect({"valence": -0.5, "arousal": 42}) == (-0.5, None)

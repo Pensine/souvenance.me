@@ -15,4 +15,4 @@ def test_quatre_champs_en_lignes():
 
 def test_transcript_libre_ne_casse_pas():
     f = _parse_daily_log("journée sans structure, juste un vrac de pensées")
-    assert set(f) == {"fait", "decision", "etat", "cap"}  # champs présents, vides
+    assert set(f) == {"fait", "decision", "etat", "cap"}  # fields present, empty

@@ -1,303 +1,376 @@
-# Pensine — Installation complète
+# Pensine — Full installation
 
-*Cette doc est écrite pour être suivie par un humain **ou par une IA** : collez
-ce repo dans Claude Code sur votre VPS et dites « installe la Pensine en
-suivant docs/kit-installation.md ». Chaque étape a sa commande de vérification.*
+*This guide is written to be followed by a human **or by an AI**: open this
+repository in a coding agent on your VPS (Claude Code, for example) and say
+"install the Pensine by following docs/kit-installation.md". Every step has
+its own check command.*
 
-## Ce que vous obtenez
+## What you get
 
-Une mémoire vivante auto-hébergée, interrogée via Claude : vos conversations,
-votre log de bord quotidien et vos dépôts (vocaux, photos, PDF) deviennent une
-mémoire consolidée chaque nuit, que vous interrogez depuis claude.ai
-(« qu'est-ce que je pensais de X l'an dernier ? »). Tout vous appartient :
-PostgreSQL chez vous, fichiers originaux conservés à vie, export SQL/markdown
-permanent. Aucun lock-in : l'intelligence est un adaptateur — CLI Claude,
-clé API, ou n'importe quel modèle local via Ollama (Mistral, Qwen, Llama…) —
-changeable à tout moment. Self-hosted intégral possible.
+A self-hosted living memory, queried from your AI assistant: your conversations,
+your daily logbook and your deposits (voice notes, photos, PDFs) become a
+memory that is consolidated every night, and that you query from claude.ai or another
+MCP client ("what did I think of X last year?"). Everything belongs to you:
+PostgreSQL on your machine, original files kept for life, a permanent SQL/markdown
+export. No lock-in: the intelligence is an adapter — the Claude CLI,
+an API key, or any local model through Ollama (Mistral, Qwen, Llama…) —
+that you can swap at any time. Fully self-hosted is possible.
 
-## Prérequis
+## Requirements
 
-| Quoi | Pourquoi | Vérifier |
+| What | Why | Check |
 |---|---|---|
-| VPS Linux (Debian/Ubuntu) — dimensionné selon vos briques (voir « Ordres de grandeur ») | héberge tout | `free -h` |
+| Linux VPS (Debian/Ubuntu) — sized to the components you pick (see "Orders of magnitude") | hosts everything | `free -h` |
 | Docker + compose v2 | PostgreSQL+pgvector | `docker compose version` |
-| Python ≥ 3.11 | serveur MCP, API, crons | `python3 --version` |
-| Une URL HTTPS publique (voir « Sans acheter de domaine » ci-dessous) | le connecteur claude.ai exige un MCP distant en HTTPS ; sans TLS votre token circulerait en clair | `dig +short votre.domaine` |
-| Un backend d'IA au choix : CLI Claude, clé API, ou Ollama (modèles open source) | l'intelligence (adaptateur) | `claude --version`, une clé, ou `ollama list` |
-| ffmpeg (**requis** avec `--with-local`) | décodage audio (WhisperX) + vidéos | `ffmpeg -version` |
+| Python ≥ 3.11 | MCP server, API, cron jobs | `python3 --version` |
+| A public HTTPS URL (see "Without buying a domain" below) | the claude.ai connector requires a remote MCP server over HTTPS; without TLS your token would travel in clear text | `dig +short your.domain` |
+| An AI backend of your choice: Claude CLI, an API key, or Ollama (open-source models) | the intelligence (adapter) | `claude --version`, a key, or `ollama list` |
+| ffmpeg (**required** with `--with-local`) | audio decoding (WhisperX) + videos | `ffmpeg -version` |
 
-### Ordres de grandeur (RAM constatée — à adapter à votre configuration)
+### Orders of magnitude (observed RAM — adjust to your setup)
 
-| Brique | RAM résidente | Optionnelle ? |
+| Component | Resident RAM | Optional? |
 |---|---|---|
-| Cœur (API, MCP, Postgres) | ~1 Go | non |
-| Embeddings `nomic` (défaut) | ~0,5 Go | oui (`PENSINE_EMBEDDINGS=0` → plein-texte) |
-| Embeddings `bge-m3` | ~2 Go | oui (alternative à nomic) |
-| WhisperX large-v3 (transcription) | ~3 Go pendant les cycles nocturnes | oui (`--with-local`) |
-| Pillow, Docling | négligeable | oui (`--with-local`) |
+| Core (API, MCP, Postgres) | ~1 GB | no |
+| `nomic` embeddings (default) | ~0.5 GB | yes (`PENSINE_EMBEDDINGS=0` → full-text search) |
+| `bge-m3` embeddings | ~2 GB | yes (alternative to nomic) |
+| WhisperX large-v3 (transcription) | ~3 GB during the night cycles | yes (`--with-local`) |
+| Pillow, Docling | negligible | yes (`--with-local`) |
 
-Chaque brique dégrade proprement si elle manque : rien n'est jamais perdu,
-le traitement rattrape quand la brique arrive. Composez selon votre budget.
+Each component degrades gracefully when it is missing: nothing is ever lost,
+and processing catches up once the component is there. Build to your budget.
 
 ## Installation
 
 ```bash
-git clone <votre-fork-ou-le-repo> /opt/pensine && cd /opt/pensine
-./install.sh --with-local     # sans --with-local : pas de transcription locale
-                              # (les dépôts audio attendent, rien n'est perdu)
+git clone <your-fork-or-the-repo> /opt/pensine && cd /opt/pensine
+./install.sh --with-local     # without --with-local: no local transcription
+                              # (audio deposits wait, nothing is lost)
 ```
 
-### Sans acheter de domaine
+### Without buying a domain
 
-Un domaine à ~10 €/an reste le plus simple, mais ce n'est pas obligatoire — il
-faut seulement une **URL HTTPS publique et stable** :
+A domain at ~€10/year is still the simplest option, but it is not required — all
+you need is a **stable public HTTPS URL**:
 
-- **Sous-domaine dynamique gratuit** (DuckDNS, no-ip…) : `vous.duckdns.org`
-  pointé sur votre VPS. Caddy obtient le certificat normalement.
-- **Tailscale Funnel** : expose un service local derrière une URL
-  `*.ts.net` en HTTPS, sans DNS ni port ouvert. Pratique si vous ne voulez
-  rien exposer directement.
-- **Un sous-domaine d'un domaine que vous avez déjà** (`memoire.mondomaine.fr`) :
-  zéro euro de plus.
+- **Free dynamic subdomain** (DuckDNS, no-ip…): `you.duckdns.org`
+  pointed at your VPS. Caddy obtains the certificate as usual.
+- **Tailscale Funnel**: exposes a local service behind a
+  `*.ts.net` HTTPS URL, with no DNS and no open port. Handy if you do not want
+  to expose anything directly.
+- **A subdomain of a domain you already own** (`memory.mydomain.com`):
+  zero extra cost.
 
-Quelle que soit l'option, c'est cette URL qui va dans `PENSINE_PUBLIC_BASE_URL`,
-dans le vhost du reverse proxy, et dans les deux raccourcis iOS.
+Whichever option you pick, that URL goes into `PENSINE_PUBLIC_BASE_URL`,
+into the reverse proxy vhost, and into both iOS shortcuts.
 
-**VPS déjà occupé par un autre Postgres ?** Le port hôte est configurable :
-`PENSINE_DB_PORT=5433 ./install.sh` (ou éditez `PENSINE_DB_PORT` **et** le port
-dans `PENSINE_DATABASE_URL` de `.env`, puis `docker compose up -d db`).
-La base Pensine reste isolée dans son conteneur ; seul le port d'écoute
-sur 127.0.0.1 change.
+**VPS already running another Postgres?** The host port is configurable:
+`PENSINE_DB_PORT=5433 ./install.sh` (or edit `PENSINE_DB_PORT` **and** the port
+in `PENSINE_DATABASE_URL` in `.env`, then `docker compose up -d db`).
+The Pensine database stays isolated in its container; only the listening port
+on 127.0.0.1 changes.
 
-Le script : génère `.env` avec des secrets aléatoires, lance la base, applique
-le schéma, installe le venv, exécute les tests, installe et démarre les
-services systemd (`pensine-api` :8300, `pensine-mcp` :8400), affiche le cron
-à ajouter.
+The script: generates `.env` with random secrets, starts the database, applies
+the schema and then the migrations (`db/migrations/`, through `scripts/migrate.py`),
+sets up the venv, runs the tests, installs and starts the systemd services
+(`pensine-api` :8300, `pensine-mcp` :8400), and prints the cron lines to add.
 
-Puis **éditez `.env`** :
-- `PENSINE_OWNER_NAME=` votre prénom (utilisé par les prompts de consolidation)
-- `PENSINE_PUBLIC_BASE_URL=https://votre.domaine`
-- `PENSINE_CALENDAR_ICS_URLS=` l'URL ICS privée de votre agenda (optionnel —
-  Google Agenda : Paramètres → votre agenda → « Adresse secrète au format iCal »)
-- autre backend : `PENSINE_LLM_BACKEND=api` ou `ollama` — ex. api :
-  `PENSINE_ANTHROPIC_API_KEY=sk-ant-…`
+**Offline place names** (recommended, ~10 MB) — so that a deposit with a location
+gets the name of its town without querying any mapping service:
+```bash
+sudo mkdir -p /var/lib/pensine/geo && sudo chown "$(whoami)" /var/lib/pensine/geo
+scripts/install_geonames.sh          # safe to re-run: updates the data
+```
+(another folder: `PENSINE_GEO_DIR=` in `.env`, before running the script.)
+Without this copy, coordinates are kept and the place simply has no name.
 
-Redémarrez après édition : `sudo systemctl restart pensine-api pensine-mcp`
+Then **edit `.env`**:
+- `PENSINE_OWNER_NAME=` your first name (used by the consolidation prompts)
+- `PENSINE_PUBLIC_BASE_URL=https://your.domain`
+- `PENSINE_CALENDAR_ICS_URLS=` the private ICS URL of your calendar (optional —
+  Google Calendar: Settings → your calendar → "Secret address in iCal format")
+- another backend: `PENSINE_LLM_BACKEND=api` or `ollama` — e.g. api:
+  `PENSINE_ANTHROPIC_API_KEY=sk-ant-…` (the api backend also needs
+  `./.venv/bin/pip install -e ".[api]"`)
+- optional: `PENSINE_VERIFY=code` so that evidence checking
+  (each memory cites the passage it rests on) sticks to the free
+  checks instead of having the model review doubtful ones;
+  `PENSINE_TRANSCRIBE_LANGUAGE=fr` to force the language of voice notes (empty =
+  automatic detection, recommended if you speak several languages)
+
+Restart after editing: `sudo systemctl restart pensine-api pensine-mcp`
 
 ### Reverse proxy (HTTPS)
 
 ```bash
 sudo apt install -y caddy
 sudo cp deploy/Caddyfile.example /etc/caddy/Caddyfile
-# éditez le domaine, décommentez basicauth pour /mcp, puis :
+# edit the domain, uncomment basicauth for /mcp, then:
 sudo systemctl reload caddy
 ```
 
-⚠️ **N'exposez pas `/mcp` sans protection** : c'est votre mémoire intime.
-Deux options selon votre compte claude.ai : **basicauth** si la section
-« Request headers » apparaît dans votre boîte d'ajout de connecteur (valeur :
-`Basic <base64 de user:motdepasse>`), sinon un **chemin secret** (`handle
-/mcp-<48 caractères hex>* { rewrite * /mcp ... }` — l'URL est le secret,
-claude.ai n'a alors rien à configurer). Sans l'un des deux, un `401` déclenche
-côté claude.ai un flux OAuth voué à l'échec.
+⚠️ **Do not expose `/mcp` without protection**: it is your intimate memory.
+Two options depending on your claude.ai account: **basicauth** if the
+"Request headers" section appears in your add-connector dialog (value:
+`Basic <base64 of user:password>`), otherwise a **secret path** (`handle
+/mcp-<48 hex characters>* { rewrite * /mcp ... }` — the URL is the secret,
+and claude.ai then has nothing to configure). Without one of the two, a `401` makes
+claude.ai start an OAuth flow that is bound to fail.
 
-**Si votre reverse proxy tourne en conteneur Docker** (au lieu du Caddy
-systemd ci-dessus) : il ne peut pas joindre `127.0.0.1` de l'hôte. Mettez
-`PENSINE_BIND_HOST=<passerelle du bridge>` (ex. `172.18.0.1`) dans `.env`,
-faites pointer le vhost dessus, et ouvrez le couloir dans le pare-feu :
-`ufw allow from <sous-réseau docker> to <passerelle> port 8300,8400 proto tcp`.
-Attention aussi au bind mount du Caddyfile : éditez-le **en place** (`cat >`,
-éditeur) — un `sed -i` recrée le fichier et détache silencieusement le mount.
+**If your reverse proxy runs in a Docker container** (instead of the systemd
+Caddy above): it cannot reach the host's `127.0.0.1`. Set
+`PENSINE_BIND_HOST=<bridge gateway>` (e.g. `172.18.0.1`) in `.env`,
+point the vhost at it, and open the path in the firewall:
+`ufw allow from <docker subnet> to <gateway> port 8300,8400 proto tcp`.
+Also watch out for the Caddyfile bind mount: edit it **in place** (`cat >`,
+an editor) — `sed -i` recreates the file and silently detaches the mount.
 
-### Cron de consolidation
+### Consolidation cron
 
-`crontab -e`, puis collez ce qu'`install.sh` a affiché (nocturne 03:00 + REM
-dimanche 04:00 + `scripts/backup.sh` quotidien recommandé).
+The cron lines write to the logs folder (`/var/log/pensine/`
+on a server, otherwise `PENSINE_LOG_DIR` or `PENSINE_DATA_DIR/logs` — see
+`python3 -m pensine.config`). `install.sh` creates it, along with the media,
+GeoNames and backup folders; without it, cron runs **nothing** (the redirection
+fails before the command, silently). By hand:
+```bash
+sudo mkdir -p /var/log/pensine && sudo chown "$(whoami)" /var/log/pensine
+```
+Then `crontab -e`, and paste what `install.sh` printed (nightly at 03:00 +
+REM on Sundays at 04:00 + monthly persona + daily `scripts/backup.sh`).
 
-### Vérifications finales
+### Final checks
 
 ```bash
-# API de dépôt (403/401 attendu sans token = OK)
-curl -s -o /dev/null -w '%{http_code}\n' https://votre.domaine/deposit -X POST   # 401
-# Dépôt réel
-source .env && curl -s https://votre.domaine/deposit \
+# Deposit API (401 expected without a token = OK; without a file, 422)
+curl -s -o /dev/null -w '%{http_code}\n' https://your.domain/deposit -F "file=@/etc/hostname"   # 401
+# Real deposit
+source .env && curl -s https://your.domain/deposit \
   -H "Authorization: Bearer $PENSINE_DEPOSIT_TOKEN" \
   -F "file=@/etc/hostname" -F "note=test"                                        # {"ok":true,...}
-# Consolidation à blanc
+# Dry-run consolidation
 ./.venv/bin/python consolidation/nightly.py
 ```
 
-## Connexion à claude.ai
+## Connecting to claude.ai
 
-1. claude.ai → **Paramètres → Connecteurs → Ajouter un connecteur personnalisé**
-   → URL : `https://votre.domaine/mcp` (avec les identifiants basicauth si configurés).
-2. Créez un **projet Claude « Pensine »** et activez-y le connecteur. C'est là
-   que vivent vos conversations, votre log de bord, votre interview fondatrice.
-3. Testez : « Utilise recall pour chercher "test" dans ma mémoire. »
+1. claude.ai → **Settings → Connectors → Add custom connector**
+   → URL: `https://your.domain/mcp` (with the basicauth credentials if configured).
+2. Create a **"Pensine" Claude project** and enable the connector in it. That is
+   where your conversations, your logbook and your founding interview live.
+3. Test it: "Use recall to search for "test" in my memory."
 
-## Les deux raccourcis iOS — prêts à importer
+Any other client that speaks remote MCP connects the same way (see
+[installer-chez-soi.md](installer-chez-soi.md) for ChatGPT).
 
-Le plus rapide : **importez-les, puis remplacez deux valeurs**.
+## The two iOS shortcuts — ready to import
 
-| Raccourci | Lien d'import |
+The fastest way: **import them, then replace two values**.
+
+| Shortcut | Import link |
 |---|---|
-| Dépôt (photo, vocal, PDF depuis la feuille de partage) | [Souvenance — Deposit](https://www.icloud.com/shortcuts/cbf7cb768b8d4b559ccdc21864891030) |
-| Log de bord (dictée avec relecture avant envoi) | [Souvenance — Daily log](https://www.icloud.com/shortcuts/0e633971aab04c43940e0d17f894ff18) |
+| Deposit (photo, voice note, PDF from the share sheet) | [Souvenance — Deposit](https://www.icloud.com/shortcuts/cbf7cb768b8d4b559ccdc21864891030) |
+| Logbook (dictation, reviewed before sending) | [Souvenance — Daily log](https://www.icloud.com/shortcuts/0e633971aab04c43940e0d17f894ff18) |
 
-Après l'import, ouvrez chaque raccourci → action **Obtenir le contenu de
-l'URL**, et remplacez :
+After importing, open each shortcut → the **Get Contents of URL** action,
+and replace:
 
-- l'**URL** : `https://YOUR-DOMAIN/deposit` (ou `/log`) → votre propre URL ;
-- l'en-tête **Authorization** : `Bearer YOUR_DEPOSIT_TOKEN` → `Bearer ` suivi de
-  votre `PENSINE_DEPOSIT_TOKEN` (dans `.env`).
+- the **URL**: `https://YOUR-DOMAIN/deposit` (or `/log`) → your own URL;
+- the **Authorization** header: `Bearer YOUR_DEPOSIT_TOKEN` → `Bearer ` followed by
+  your `PENSINE_DEPOSIT_TOKEN` (from `.env`).
 
-Pour le raccourci de dépôt, activez enfin « Afficher dans la feuille de
-partage » dans ses réglages. Rien d'autre à toucher : méthode, corps en
-formulaire et variables sont déjà en place.
+For the deposit shortcut, finally turn on "Show in Share Sheet" in its
+settings. Nothing else to touch: method, form body and variables are already
+in place.
 
-### Les construire à la main (si vous préférez)
+### Building them by hand (if you prefer)
 
-App Raccourcis → **+** → nommez « Pensine » :
-1. Action **Recevoir** : « Recevoir Toute entrée depuis la feuille de partage »
-   (types : images, fichiers, contenus multimédias)
-2. Action **Obtenir le contenu de l'URL** :
-   - URL : `https://votre.domaine/deposit` — Méthode : **POST**
-   - En-têtes : `Authorization` = `Bearer VOTRE_PENSINE_DEPOSIT_TOKEN` (dans `.env`)
-   - Corps : **Formulaire** → champ `file` = *Entrée du raccourci* (type Fichier)
-3. Réglages du raccourci → activez « Afficher dans la feuille de partage »
+Shortcuts app → **+** → name it "Pensine":
+1. **Receive** action: "Receive Any input from Share Sheet"
+   (types: images, files, media)
+2. **Get Contents of URL** action:
+   - URL: `https://your.domain/deposit` — Method: **POST**
+   - Headers: `Authorization` = `Bearer YOUR_PENSINE_DEPOSIT_TOKEN` (from `.env`)
+   - Body: **Form** → field `file` = *Shortcut Input* (type File)
+3. Shortcut settings → turn on "Show in Share Sheet"
 
-Usage : vocal WhatsApp → appui long → Transférer → Partager → **Pensine**.
-Photo, PDF, mémo vocal : pareil. Deux taps, c'est dans la mémoire.
+Usage: WhatsApp voice note → long press → Forward → Share → **Pensine**.
+Photo, PDF, voice memo: same thing. Two taps, and it is in the memory.
 
-## Démarrer (l'ordre qui marche)
+### Adding the place (optional, recommended)
 
-1. **Interview fondatrice** (docs/interview-fondatrice.md) : 3-4 sessions dans
-   le projet Claude, transcripts ingérés via `scripts/ingest_interview.py` —
-   c'est elle qui amorce le corpus. Sans elle, `recall` est vide.
-2. **Log de bord quotidien** : 2-3 min à la voix dans le projet Claude
-   (« daily_log : … ») — 4 champs : fait du jour, décision/hésitation, état, cap.
-3. **Personnalisez `constitution.yaml`** : motifs à exclure (ex. votre sphère
-   professionnelle), puis commitez — la constitution se révise par Git.
-4. Les dépôts Pensine, à l'envie. La mémoire se construit en silence.
+A memory sits in space as much as in time. Photos already carry their GPS
+coordinates; a shared voice memo does not (iOS strips them). To let each
+deposit know where you were, in both shortcuts:
 
-## Fonctions avancées (phase 2)
+1. Before **Get Contents of URL**, add the **Get Current
+   Location** action (iOS asks for permission once).
+2. In the **Form** body, add two text fields:
+   `lat` = *Current Location* → **Latitude**, and `lon` = *Current Location*
+   → **Longitude** (tap the variable to pick the property).
+3. (optional) a `place` text field: a place named in plain words ("at my
+   parents'", "Goûter hut"), which takes precedence over the computed name.
 
-**Web app timeline** — `https://votre.domaine/app` : la replongée visuelle.
-Timeline de tous les dépôts (audio écoutable en place, photos) et mémoires,
-filtrable par texte/type/année. Mot de passe : `PENSINE_WEBAPP_PASSWORD`
-(généré par `install.sh`).
+The position stays on your server: the place name is computed locally
+(`scripts/install_geonames.sh`, an offline copy of GeoNames), and no mapping service
+learns where you were. Without these fields, everything works as before.
+Tip: in Settings → Voice Memos, "Location-based Naming" names memos after the
+street; Pensine uses it when it has nothing better.
 
-**Graphe temporel** — la consolidation extrait entités et relations avec leurs
-périodes de validité ; un fait qui en remplace un autre (« habite à ») ferme
-l'ancienne arête sans jamais l'effacer. `recall` renvoie une section `graphe` ;
-« qu'est-ce qui était vrai en 2024 ? » est une requête, pas une reconstruction.
+## Getting started (the order that works)
 
-**Miroir** — dans Claude : « utilise mirror avec ma question ». Trajectoire par
-trimestre, entités dominantes, contradictions ouvertes — le système rapporte,
-ne juge pas, et rend la main (« qu'en dis-tu ? »).
+1. **Founding interview** (docs/interview-fondatrice.md): 3 to 4 sessions in
+   the assistant project, transcripts ingested with `scripts/ingest_interview.py` —
+   it is what seeds the corpus. Without it, `recall` is empty.
+2. **Daily logbook**: 2 or 3 minutes by voice in the assistant project
+   ("daily_log: …") — 4 fields: what happened today, a decision or hesitation, how you feel, heading.
+3. **Customise `constitution.yaml`** (shipped neutral, with no exclusions):
+   patterns to exclude under `exclusions.motifs` (e.g. your professional
+   sphere), then commit — the constitution is revised through Git.
+4. Pensine deposits, whenever you like. The memory builds itself quietly.
 
-**Choisir son moteur d'embeddings** — `nomic` par défaut (768-d, ~500 Mo :
-tient sur 4 Go de RAM) ; `bge-m3` (1024-d, ~2 Go résidents : meilleur
-en français). Pour changer :
+## Advanced features (phase 2)
+
+**Timeline web app** — `https://your.domain/app`: the visual dive back in.
+A timeline of all deposits (audio playable in place, photos) and memories,
+filterable by text, type and year. Password: `PENSINE_WEBAPP_PASSWORD`
+(generated by `install.sh`).
+
+**Temporal graph** — consolidation extracts entities and relations with their
+validity periods; a fact that replaces another ("lives in") closes the
+old edge without ever erasing it. `recall` returns a `graphe` section;
+"what was true in 2024?" is a query, not a reconstruction.
+
+**Mirror** — in your assistant: "use mirror with my question". Trajectory by
+quarter, dominant entities, open contradictions — the system reports,
+does not judge, and hands back control ("what do you make of it?").
+
+**Choosing the embeddings engine** — `nomic` by default (768-d, ~500 MB:
+fits in 4 GB of RAM); `bge-m3` (1024-d, ~2 GB resident: better
+in French). To switch:
 ```bash
-# dans .env : PENSINE_EMBEDDING_BACKEND=bge-m3   (ou nomic)
-./.venv/bin/python scripts/reembed.py     # redimensionne et recalcule tout
+# in .env: PENSINE_EMBEDDING_BACKEND=bge-m3   (or nomic)
+./.venv/bin/python scripts/reembed.py     # resizes and recomputes everything
 sudo systemctl restart pensine-api pensine-mcp
 ```
-Les mémoires sont des projections recalculables : l'opération est sans risque
-et réversible.
+Memories are recomputable projections: the operation is safe
+and reversible.
 
-**Empreintes vocales** (nécessite `--with-local`) — l'enrôlement est un acte
-explicite :
+**Voiceprints** (requires `--with-local`) — enrolment is an explicit
+act:
 ```bash
-./.venv/bin/python scripts/enroll_speaker.py --name "Prénom" échantillon.wav
+./.venv/bin/python scripts/enroll_speaker.py --name "FirstName" sample.wav
 ```
-Les cycles suivants identifient cette voix dans les dépôts. L'expéditeur d'un
-vocal transféré (métadonnée du canal) prime toujours sur le ML.
+Later cycles identify that voice in deposits. The sender of a
+forwarded voice note (channel metadata) always takes precedence over ML.
 
-**Persona** — chaque mois, le compilateur produit une proposition d'identité
-narrative dans `persona/propositions/` (chapitres, thèmes, tensions, chaque
-affirmation sourcée et pesée). Elle n'entre en vigueur que ratifiée par vous :
+**Persona** — every month, the compiler produces a proposed narrative
+identity in `persona/propositions/` (chapters, themes, tensions, each
+claim sourced and weighed). It only takes effect once you ratify it:
 ```bash
 ./.venv/bin/python scripts/ratify_persona.py 2026-XX-XX-persona.md
 ```
 
-**Tests de fidélité** — mesurez ce que le jumeau sait vraiment (seuil phase 2 :
-9/10 factuel) :
+**Fidelity tests** — measure what the twin really knows (phase 2 threshold:
+9/10 factual):
 ```bash
 ./.venv/bin/python scripts/fidelity_test.py generate --n 10
 ./.venv/bin/python scripts/fidelity_test.py run
-./.venv/bin/python scripts/fidelity_test.py report   # score par domaine
+./.venv/bin/python scripts/fidelity_test.py report   # score per domain
 ```
 
-## Reprendre son historique et aller plus loin
+## Bringing in your history and going further
 
-**Importer vos années ChatGPT / Claude** — demandez vos exports officiels
-(Paramètres → Données), puis :
+**Import your years of ChatGPT / Claude** — request your official exports
+(Settings → Data), then:
 ```bash
 ./.venv/bin/python scripts/import_history.py ~/export/conversations.json
 ```
-Dès la première nuit, `recall` connaît des années de vous. Relançable sans
-risque (déduplication), filtré par votre constitution.
+From the first night, `recall` knows years of you. Safe to re-run
+(deduplication), filtered by your constitution.
 
-**Le log de bord en un geste** — raccourci iOS « Log », quatre actions :
-1. **Dicter le texte** (Arrêter l'écoute : *Après une pause*)
-2. **Demander une entrée** (type Texte, **Réponse par défaut** = *Texte
-   dicté*, plusieurs lignes autorisées) — la dictée s'affiche pré-remplie et
-   éditable : vous corrigez les mots mal entendus avant l'envoi
-3. **Obtenir le contenu de l'URL** : `POST https://votre.domaine/log`,
-   en-tête `Authorization: Bearer <PENSINE_DEPOSIT_TOKEN>`, corps
-   **Formulaire** → champ texte `text` = *Entrée fournie*
-4. (optionnel) Ajouter à l'écran d'accueil — le geste du soir
+**Import what the assistant remembers about you** (Claude/ChatGPT memory,
+projects) — the unzipped export, or the memory copied into a `.md` file:
+```bash
+./.venv/bin/python scripts/import_vendor_memory.py ~/export/ --dry-run   # preview
+./.venv/bin/python scripts/import_vendor_memory.py ~/export/
+./.venv/bin/python scripts/vendor_mirror.py   # what it knows vs what you deposited
+```
+These are second-hand memories: they never count as much as a deposit.
 
-⚠️ Piège classique des deux raccourcis : le **Corps de la requête** doit être
-**Formulaire** (pas JSON, pas Fichier), sinon l'API répond 422 « Field
-required ». Et l'ordre des actions compte : on dicte *avant* d'envoyer.
+**The logbook in one gesture** — an iOS "Log" shortcut, four actions:
+1. **Dictate Text** (Stop Listening: *After Pause*)
+2. **Ask for Input** (type Text, **Default Answer** = *Dictated
+   Text*, multiple lines allowed) — the dictation shows up pre-filled and
+   editable: you fix misheard words before sending
+3. **Get Contents of URL**: `POST https://your.domain/log`,
+   header `Authorization: Bearer <PENSINE_DEPOSIT_TOKEN>`, body
+   **Form** → text field `text` = *Provided Input*
+4. (optional) Add to Home Screen — the evening gesture
 
-**L'interview fondatrice, conduite par le système** — dans Claude :
-« lance interview session 1 » ; le système pose les questions et s'ingère
-lui-même à la fin (`interview_save`).
+⚠️ The classic trap with both shortcuts: the **Request Body** must be
+**Form** (not JSON, not File), otherwise the API answers 422 "Field
+required". And the order of the actions matters: dictate *before* sending.
 
-**Jalons du moteur temporel** — dans Claude : « ajoute le jalon UTMB 2027 au
-27 août » (outil `landmark`). Courses, déménagements, chapitres : ils
-deviennent les coordonnées humaines du cadre temporel (« avant ou après
-l'UTMB ? »).
+**The founding interview, run by the system** — in your assistant:
+"start interview session 1"; the system asks the questions and ingests
+itself at the end (`interview_save`).
 
-**Capsules temporelles** — « scelle une capsule pour le 15 juin 2027 : … ».
-Elle refera surface dans vos conversations ce jour-là — jamais en
+**Landmarks for the temporal engine** — in your assistant: "add the landmark UTMB 2027 on
+27 August" (the `landmark` tool). Races, moves, chapters: they
+become the human coordinates of the time frame ("before or after
+UTMB?").
+
+**Time capsules** — "seal a capsule for 15 June 2027: …".
+It resurfaces in your conversations on that day — never as a
 notification.
 
-**Le Livre de l'année** — `scripts/yearbook.py --year 2026` : votre année
-écrite depuis la mémoire, en markdown + HTML imprimable.
+**The Book of the Year** — `scripts/yearbook.py --year 2026`: your year
+written from the memory, in markdown + printable HTML.
 
-**Compute 100 % local** — `PENSINE_LLM_BACKEND=ollama` (+
-`PENSINE_OLLAMA_MODEL`) : la consolidation tourne sans aucun service
-externe. La vision passe en pause, tout le reste fonctionne.
+**100% local compute** — `PENSINE_LLM_BACKEND=ollama` (+
+`PENSINE_OLLAMA_MODEL`): consolidation runs without any external
+service. Vision is paused, everything else works.
 
-**Sauvegarde hors site chiffrée** — définissez `RESTIC_REPOSITORY` et
-`RESTIC_PASSWORD` dans `.env` : `backup.sh` pousse automatiquement vers
-B2/S3/SFTP avec rotation 14 j / 12 sem / 30 ans.
+**Encrypted off-site backup** — set `RESTIC_REPOSITORY` and
+`RESTIC_PASSWORD` in `.env`: `backup.sh` pushes automatically to
+B2/S3/SFTP with a 14-day / 3-month / 12-month rotation (the bound on the right to be forgotten,
+see docs/oubli.md).
 
-## Sauvegarde, export, réversibilité
+## Updating (new version of the kit)
 
-- `scripts/backup.sh` : dump SQL + rsync des médias — **formats éternels**,
-  lisibles dans 30 ans sans le kit. Copiez le dossier hors VPS (restic/rclone).
-- Export total à tout moment : le dump SQL **est** l'export (events = source
-  de vérité), les médias sont des fichiers ordinaires, le persona est du
-  markdown dans Git.
-- Tout arrêter : `docker compose down` + désactiver les services. Vos données
-  restent dans le volume Postgres et `PENSINE_MEDIA_ROOT`.
+Keep `.env`, `constitution.yaml` and `persona/`; replace the rest with the
+new version (or `git pull`), then:
+```bash
+./install.sh            # same options as at install time (--with-local…):
+                        # keeps .env, applies the migrations, reruns the tests
+sudo systemctl restart pensine-api pensine-mcp   # install.sh does not restart
+                                                 # services that are already running
+```
+Migrations (`scripts/migrate.py`) are idempotent: each one is applied
+only once. If a version adds a step (e.g. GeoNames), it is listed
+in `START-HERE.md`.
 
-## Dépannage
+## Backup, export, reversibility
 
-| Symptôme | Cause probable | Remède |
+- `scripts/backup.sh`: SQL dump + rsync of the media — **durable formats**,
+  readable in 30 years without the kit. Copy the folder off the VPS (restic/rclone).
+- Full export at any time: the SQL dump **is** the export (events = the source
+  of truth), media are ordinary files, the persona is
+  markdown in Git.
+- Stopping everything: `docker compose down` + disable the services. Your data
+  stays in the Postgres volume and in `PENSINE_MEDIA_ROOT`.
+
+## Troubleshooting
+
+| Symptom | Likely cause | Fix |
 |---|---|---|
-| `recall` vide | corpus jeune, consolidation pas passée | ingérez l'interview, lancez `consolidation/nightly.py` à la main |
-| `nightly_paused` dans l'audit | `claude` CLI absent, non connecté, **ou jeton révoqué** (une reconnexion ailleurs peut le faire tourner) | `claude /login` sur le VPS — attention : l'URL OAuth se replie sur plusieurs lignes dans le terminal, copiez-la en entier (le scope `org:create_api_key` doit être complet) |
-| médias `media_skip` dans l'audit | WhisperX/Pillow/Docling absents | `./.venv/bin/pip install -e ".[local]"` — repris au cycle suivant |
-| 503 sur /deposit | token non configuré | `PENSINE_DEPOSIT_TOKEN` dans `.env`, restart |
-| `install.sh` : « port déjà occupé » | un autre Postgres écoute sur 5432 | `PENSINE_DB_PORT=5433 ./install.sh` |
-| claude.ai ne voit pas le connecteur | /mcp pas accessible en HTTPS | testez `curl https://votre.domaine/mcp` ; vérifiez Caddy |
+| `recall` is empty | young corpus, consolidation has not run yet | ingest the interview, run `consolidation/nightly.py` by hand |
+| `nightly_paused` in the audit log | `claude` CLI missing, not signed in, **or token revoked** (signing in again elsewhere can rotate it) | `claude /login` on the VPS — careful: the OAuth URL wraps over several lines in the terminal, copy all of it (the `org:create_api_key` scope must be complete) |
+| consolidation never finishes, or opens a Claude window | the `claude` on the PATH is the **desktop app**, not the CLI (common on macOS) | `which -a claude`: if the first result is inside `Claude.app`, set `PENSINE_CLAUDE_BIN=/path/to/cli/claude` in `.env` |
+| `media_skip` media in the audit log | WhisperX/Pillow/Docling missing | `./.venv/bin/pip install -e ".[local]"` — picked up on the next cycle |
+| 503 on /deposit | token not configured | `PENSINE_DEPOSIT_TOKEN` in `.env`, restart |
+| `install.sh`: "port already in use" | another Postgres is listening on 5432 | `PENSINE_DB_PORT=5433 ./install.sh` |
+| claude.ai does not see the connector | /mcp not reachable over HTTPS | test `curl https://your.domain/mcp`; check Caddy |
 
-Le journal d'audit (`SELECT * FROM audit_log ORDER BY at DESC LIMIT 50;`)
-raconte tout ce que le système a fait — c'est la couche 7, elle est là pour ça.
+The audit log (`SELECT * FROM audit_log ORDER BY at DESC LIMIT 50;`)
+records everything the system has done — that is layer 7, it is there for that.

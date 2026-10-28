@@ -1,7 +1,7 @@
--- Dimension des embeddings alignée sur le backend par défaut (nomic, 768-d).
--- BGE-M3 (1024-d) reste possible : voir PENSINE_EMBEDDING_BACKEND.
+-- Embedding dimension aligned with the default backend (nomic, 768-d).
+-- BGE-M3 (1024-d) remains possible: see PENSINE_EMBEDDING_BACKEND.
 --
--- Les mémoires sont des projections recalculables : changer de modèle ne
--- détruit rien d'irremplaçable, il suffit de relancer la consolidation pour
--- réembedder. Les events, eux, ne bougent jamais.
+-- Memories are recomputable projections: changing the model destroys nothing
+-- irreplaceable, rerunning consolidation is enough to re-embed. Events, for
+-- their part, never change.
 ALTER TABLE memories ALTER COLUMN embedding TYPE VECTOR(768) USING NULL;

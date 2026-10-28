@@ -1,8 +1,8 @@
-# Pensine — reverse proxy (Caddy : HTTPS automatique via Let's Encrypt)
-# Remplacez pensine.example.org par votre domaine (pointé vers le VPS).
+# Pensine — reverse proxy (Caddy: automatic HTTPS via Let's Encrypt)
+# Replace pensine.example.org with your domain (pointed at the VPS).
 
 pensine.example.org {
-    # API de dépôt (raccourci iOS) + replongée — auth par token applicatif
+    # Deposit API (iOS shortcut) + re-immersion — auth by application token
     handle /deposit {
         reverse_proxy 127.0.0.1:8300
     }
@@ -10,14 +10,15 @@ pensine.example.org {
         reverse_proxy 127.0.0.1:8300
     }
 
-    # Web app timeline (auth par mot de passe applicatif : PENSINE_WEBAPP_PASSWORD)
+    # Timeline web app (auth by application password: PENSINE_WEBAPP_PASSWORD)
     handle /app* {
         reverse_proxy 127.0.0.1:8300
     }
 
-    # Serveur MCP (claude.ai) — la mémoire intime ne s'expose pas nue :
-    # OAuth MCP à venir ; en attendant, IP allowlist ou basic auth au minimum.
-    # ATTENTION : sans une de ces protections, n'exposez pas /mcp.
+    # MCP server (claude.ai) — an intimate memory is not exposed bare:
+    # PENSINE_MCP_TOKEN set: the server requires the token itself (Bearer
+    # or /mcp/<token>). Otherwise, an IP allowlist or basic auth at minimum.
+    # WARNING: without one of these protections, do not expose /mcp.
     handle /mcp* {
         # basicauth {
         #     pensine $2a$14$...   # caddy hash-password

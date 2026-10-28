@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Ingère un transcript d'interview fondatrice comme events (phase 0).
+"""Ingests a founding-interview transcript as events (phase 0).
 
-Chaque session devient un event `interview/session` ; la consolidation
-nocturne en extraira les mémoires (biographie, valeurs, style de décision).
+Each session becomes an `interview/session` event; nightly consolidation
+will extract the memories from it (biography, values, decision style).
 """
 
 import argparse
@@ -17,9 +17,9 @@ from pensine import db  # noqa: E402
 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("transcript", type=Path, help="fichier texte du transcript")
-    p.add_argument("--session", type=int, required=True, help="n° de session (1-4)")
-    p.add_argument("--date", help="date de la session (ISO), défaut : maintenant")
+    p.add_argument("transcript", type=Path, help="transcript text file")
+    p.add_argument("--session", type=int, required=True, help="session number (1-4)")
+    p.add_argument("--date", help="session date (ISO), default: now")
     args = p.parse_args()
 
     text = args.transcript.read_text(encoding="utf-8")
@@ -38,10 +38,10 @@ def main() -> None:
         conn.commit()
 
     if event_id is None:
-        print("Session déjà ingérée (doublon ignoré).")
+        print("Session already ingested (duplicate ignored).")
     else:
-        print(f"Session {args.session} ingérée (event {event_id}). "
-              "La consolidation nocturne en extraira les mémoires.")
+        print(f"Session {args.session} ingested (event {event_id}). "
+              "Nightly consolidation will extract the memories from it.")
 
 
 if __name__ == "__main__":

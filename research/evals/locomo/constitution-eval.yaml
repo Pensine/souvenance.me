@@ -1,0 +1,10 @@
+# Neutral constitution for the LoCoMo evaluation: no exclusions.
+# The corpus is fictional and public; nothing must be filtered at ingestion.
+version: 1
+regle_du_silence: true
+actions_sortantes: interdites
+exclusions:
+  sources: []
+  motifs: []
+regle_des_tiers: synthese
+persona_auto_ratification: false

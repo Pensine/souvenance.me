@@ -1,4 +1,4 @@
-"""La constitution est exécutable — donc testable."""
+"""The constitution is executable -- hence testable."""
 
 from pathlib import Path
 
@@ -48,5 +48,5 @@ def test_constitution_injectee_dans_prompt(gov):
 def test_defauts_sans_fichier(tmp_path):
     g = Governor(tmp_path / "absent.yaml")
     ok, _ = g.event_allowed("calendar", {"summary": "n'importe quoi"})
-    assert ok  # pas d'exclusion par défaut
-    assert not g.action_allowed("publish_post")  # sortant toujours interdit en v1
+    assert ok  # no exclusion by default
+    assert not g.action_allowed("publish_post")  # outbound still forbidden in v1

@@ -1,22 +1,25 @@
-"""Charge affective d'un souvenir — modèle circumplexe (Russell, 1980).
+"""Affective charge of a memory — circumplex model (Russell, 1980).
 
-Deux axes indépendants plutôt qu'un curseur bon/mauvais :
+Two independent axes rather than a good/bad slider:
 
-    valence   -1 (pénible) … 0 (neutre) … +1 (heureux)
-    arousal    0 (éteint, calme) … 1 (vif, intense)
+    valence   -1 (painful) … 0 (neutral) … +1 (happy)
+    arousal    0 (flat, calm) … 1 (vivid, intense)
 
-Le second axe n'est pas un raffinement décoratif : sans lui, le chagrin et la
-colère — tous deux négatifs, l'un sourd, l'autre vif — deviennent le même
-souvenir. C'est aussi lui qui module la consolidation nocturne : un souvenir
-intense résiste à l'oubli.
+The second axis is not a decorative refinement: without it, grief and anger —
+both negative, one dull, the other vivid — become the same memory. It is also
+what modulates nightly consolidation: an intense memory resists forgetting.
 
-`None` signifie « non déterminé » et ne vaut jamais 0 : ne rien savoir de ce
-qui était ressenti n'est pas savoir que c'était neutre. Le rappel omet alors
-la clé plutôt que d'afficher un affect neutre inventé.
+`None` means "undetermined" and is never 0: knowing nothing about what was
+felt is not knowing that it was neutral. Recall then omits the key rather than
+displaying an invented neutral affect.
+
+The labels returned by `label()` / `describe()` (and the `ressenti` /
+`intensite` keys) are deliberately French: they are recall output over a
+French-language memory corpus.
 """
 
-_NEUTRAL_BAND = 0.25   # en deçà, la valence ne penche ni d'un côté ni de l'autre
-_CALM_BAND = 0.35      # en deçà, l'épisode est éteint plutôt que vif
+_NEUTRAL_BAND = 0.25   # below this, valence leans neither one way nor the other
+_CALM_BAND = 0.35      # below this, the episode is flat rather than vivid
 
 _LABELS = {
     ("negative", "vif"): "pénible, intense",
@@ -29,12 +32,12 @@ _LABELS = {
 
 
 def parse(item: dict) -> tuple[float | None, float | None]:
-    """Lit `valence` et `arousal` d'une mémoire produite par le modèle.
+    """Read `valence` and `arousal` from a memory produced by the model.
 
-    Une valeur non numérique ou hors bornes est refusée plutôt que ramenée dans
-    l'intervalle : un affect inventé contamine le corpus, et l'événement brut
-    reste dans le log pour une relecture ultérieure. Les deux axes sont validés
-    séparément — une aberration sur l'un n'emporte pas l'autre.
+    A non-numeric or out-of-range value is rejected rather than clamped into
+    the interval: an invented affect contaminates the corpus, and the raw
+    event stays in the log for later review. The two axes are validated
+    separately — an aberration on one does not take the other down.
     """
     def read(key: str, lo: float, hi: float) -> float | None:
         raw = item.get(key)
@@ -50,11 +53,11 @@ def parse(item: dict) -> tuple[float | None, float | None]:
 
 
 def label(valence: float | None, arousal: float | None) -> str | None:
-    """Libellé lisible, ou None si la charge n'a pas été déterminée.
+    """Human-readable label, or None if the charge was not determined.
 
-    Un seul des deux axes suffit à produire un libellé partiel : savoir que
-    l'épisode était intense sans savoir s'il était bon ou mauvais reste une
-    information, et l'effacer serait perdre ce qu'on sait.
+    A single axis is enough to produce a partial label: knowing that the
+    episode was intense without knowing whether it was good or bad is still
+    information, and erasing it would lose what we know.
     """
     if valence is None and arousal is None:
         return None
@@ -79,10 +82,10 @@ def label(valence: float | None, arousal: float | None) -> str | None:
 
 
 def describe(valence: float | None, arousal: float | None) -> dict | None:
-    """Bloc `ressenti` du rappel, ou None quand rien n'a été déterminé.
+    """The `ressenti` block of recall, or None when nothing was determined.
 
-    Les valeurs brutes accompagnent le libellé : le libellé sert à la lecture,
-    les nombres servent au tri et à la comparaison.
+    The raw values accompany the label: the label is for reading, the numbers
+    are for sorting and comparison.
     """
     text = label(valence, arousal)
     if text is None:

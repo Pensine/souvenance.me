@@ -1,9 +1,14 @@
-# Pensine — cycles (VPS ; l'intelligence passe par l'adaptateur compute)
-# Consolidation nocturne (hippocampe -> cortex)
+# Pensine — cycles (server installation; intelligence goes through the compute adapter)
+# The paths below are those of the historical installation. install.sh replaces
+# them with yours: the repo folder, the .venv Python, and the log folder
+# resolved by `python3 -m pensine.config` (PENSINE_LOG_DIR, otherwise
+# PENSINE_DATA_DIR/logs). Docker installation: nothing to cron, the `nightly`
+# container reads deploy/docker/crontab.
+# Nightly consolidation (hippocampus -> cortex)
 0 3 * * *  cd /opt/pensine && /usr/bin/python3 consolidation/nightly.py >> /var/log/pensine/nightly.log 2>&1
-# Recombinaison hebdomadaire (REM)
+# Weekly recombination (REM)
 0 4 * * 0  cd /opt/pensine && /usr/bin/python3 consolidation/rem_weekly.py >> /var/log/pensine/rem.log 2>&1
-# Compilation de persona (proposition mensuelle — à ratifier manuellement)
+# Persona compilation (monthly proposal — to be ratified manually)
 0 5 1 * *  cd /opt/pensine && /usr/bin/python3 consolidation/persona_compiler.py >> /var/log/pensine/persona.log 2>&1
-# Sauvegarde quotidienne (formats éternels)
+# Daily backup (eternal formats)
 30 5 * * * cd /opt/pensine && ./scripts/backup.sh >> /var/log/pensine/backup.log 2>&1

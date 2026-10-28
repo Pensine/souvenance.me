@@ -1,1 +1,1 @@
-"""JUMEAU — la mémoire vivante. Voir DOCUMENT_FONDATEUR.md."""
+"""JUMEAU — the living memory. See DOCUMENT_FONDATEUR.md."""

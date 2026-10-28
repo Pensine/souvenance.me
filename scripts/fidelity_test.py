@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
-"""Harnais de fidélité (pièce 4 du §7) — sans mesure, pas de graduation.
+"""Fidelity harness (piece 4 of §7) — no measurement, no graduation.
 
-Test factuel v1 (phase 2 : « réponses factuelles 9/10 ») :
-1. `generate` : échantillonne des mémoires, fait produire des paires
-   question/réponse-attendue fondées dessus
-2. `run` : le jumeau répond À L'AVEUGLE — uniquement via recall (le contexte
-   qu'un agent aurait), pas la mémoire source
-3. un juge LLM compare réponse/attendu ; chaque essai est stocké dans
-   `predictions` (context='fidelity:<domaine>')
-4. `report` : score par domaine
+Factual test v1 (phase 2: "factual answers 9/10"):
+1. `generate`: samples memories and has question/expected-answer pairs
+   produced from them
+2. `run`: the twin answers BLIND — only through recall (the context an agent
+   would have), not the source memory
+3. an LLM judge compares answer/expected; each trial is stored in
+   `predictions` (context='fidelity:<domain>')
+4. `report`: score per domain
 
-Usage :
-  fidelity_test.py generate --n 10        # crée le quiz du jour
-  fidelity_test.py run                    # fait passer le test au jumeau
-  fidelity_test.py report                 # scores cumulés par domaine
+Usage:
+  fidelity_test.py generate --n 10        # creates today's quiz
+  fidelity_test.py run                    # puts the twin through the test
+  fidelity_test.py report                 # cumulative scores per domain
 """
 
 import argparse
@@ -76,7 +76,7 @@ def generate(n: int) -> None:
             """
         ).fetchall()
     if len(memories) < 5:
-        sys.exit("Corpus trop jeune (< 5 mémoires fiables).")
+        sys.exit("Corpus too young (< 5 reliable memories).")
     raw = llm.complete(GEN_PROMPT.format(
         owner=config.OWNER_NAME, n=n,
         memories=json.dumps([dict(m) for m in memories], ensure_ascii=False,
@@ -89,9 +89,9 @@ def generate(n: int) -> None:
 
 
 def run() -> None:
-    from pensine.mcp_server import recall  # import ici : charge la stack MCP
+    from pensine.mcp_server import recall  # imported here: loads the MCP stack
     if not QUIZ_PATH.exists():
-        sys.exit("Pas de quiz — lancez d'abord `generate`.")
+        sys.exit("No quiz — run `generate` first.")
     quiz = json.loads(QUIZ_PATH.read_text(encoding="utf-8"))
     correct = 0
     with db.connection() as conn:
@@ -114,12 +114,12 @@ def run() -> None:
             flag = "✓" if verdict.get("correct") else \
                 ("✗ HALLUCINATION" if verdict.get("hallucination") else "✗")
             print(f"{flag} [{q.get('domain')}] {q['question']}\n"
-                  f"   attendu : {q['expected']}\n   jumeau  : {answer.strip()}")
+                  f"   expected: {q['expected']}\n   twin    : {answer.strip()}")
         db.audit(conn, "mcp", "fidelity_run",
                  {"n": len(quiz), "correct": correct})
         conn.commit()
-    print(f"\nScore : {correct}/{len(quiz)}"
-          f" — seuil phase 2 : 9/10 sur les réponses factuelles.")
+    print(f"\nScore: {correct}/{len(quiz)}"
+          f" — phase 2 threshold: 9/10 on factual answers.")
 
 
 def report() -> None:
@@ -134,9 +134,9 @@ def report() -> None:
             """
         ).fetchall()
     if not rows:
-        print("Aucun test passé encore.")
+        print("No test run yet.")
         return
-    print(f"{'domaine':<20} {'essais':>6} {'score':>6}")
+    print(f"{'domain':<20} {'trials':>6} {'score':>6}")
     for r in rows:
         print(f"{r['domaine']:<20} {r['essais']:>6} {r['score']:>6}")
 

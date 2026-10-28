@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Applique les migrations db/migrations/*.sql dans l'ordre, une seule fois
-chacune (suivi dans schema_migrations). Idempotent : relançable sans risque."""
+"""Applies the db/migrations/*.sql migrations in order, each only once
+(tracked in schema_migrations). Idempotent: safe to rerun."""
 
 import sys
 from pathlib import Path
@@ -32,7 +32,7 @@ def main() -> None:
             conn.execute("INSERT INTO schema_migrations (filename) VALUES (%s)",
                          (path.name,))
             conn.commit()
-    print("Migrations à jour.")
+    print("Migrations up to date.")
 
 
 if __name__ == "__main__":

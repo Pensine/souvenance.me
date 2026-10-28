@@ -1,8 +1,8 @@
-"""Percepteur agenda personnel — URL ICS privée (Google/Apple/Proton l'exportent).
+"""Personal calendar perceptor — private ICS URL (exported by Google/Apple/Proton).
 
-Générique : fonctionne pour n'importe quel utilisateur avec une URL ICS.
-Fenêtre : les événements des dernières 48 h (le cycle nocturne rattrape).
-Parsing minimal sans dépendance — DTSTART, SUMMARY, LOCATION, DESCRIPTION.
+Generic: works for any user with an ICS URL.
+Window: events from the last 48 h (the nightly cycle catches up).
+Minimal dependency-free parsing — DTSTART, SUMMARY, LOCATION, DESCRIPTION.
 """
 
 import urllib.request
@@ -36,9 +36,9 @@ def pull() -> list[dict]:
 
 
 def parse_ics(ics: str) -> list[dict]:
-    """Parse minimal des VEVENT. Gère les lignes pliées (RFC 5545),
-    DTSTART avec TZID/UTC/DATE."""
-    # Dépliage : une ligne qui commence par espace/tab continue la précédente
+    """Minimal VEVENT parser. Handles folded lines (RFC 5545),
+    DTSTART with TZID/UTC/DATE."""
+    # Unfolding: a line starting with a space/tab continues the previous one
     lines: list[str] = []
     for raw in ics.splitlines():
         if raw[:1] in (" ", "\t") and lines:
@@ -73,8 +73,8 @@ def _parse_dt(value: str, params: str) -> datetime | None:
             return datetime.strptime(value, "%Y%m%d").replace(tzinfo=timezone.utc)
         if value.endswith("Z"):
             return datetime.strptime(value, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
-        # TZID non résolu sans base de fuseaux : on prend l'heure naïve en UTC
-        # (suffisant pour situer un rendez-vous dans la journée)
+        # Unresolved TZID without a timezone database: take the naive time as UTC
+        # (enough to place an appointment within the day)
         return datetime.strptime(value, "%Y%m%dT%H%M%S").replace(tzinfo=timezone.utc)
     except ValueError:
         return None

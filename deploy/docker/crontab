@@ -1,0 +1,11 @@
+# Cycles of the Docker installation, read by consolidation/scheduler.py
+# (`nightly` container). Local time = the .env's TZ variable.
+# Same commands as crontab.example; logs in PENSINE_LOG_DIR.
+# Nightly consolidation (hippocampus -> cortex)
+30 3 * * *  python consolidation/nightly.py
+# Weekly recombination (REM), on Sundays
+0 4 * * 0   python consolidation/rem_weekly.py
+# Persona compilation (monthly proposal — to be ratified manually)
+0 5 1 * *   python consolidation/persona_compiler.py
+# Daily backup (eternal formats)
+30 5 * * *  bash scripts/backup.sh

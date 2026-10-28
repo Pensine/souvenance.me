@@ -1,0 +1,916 @@
+[
+ {
+  "id": "D0001",
+  "kind": "photo",
+  "created_at": "2025-02-03T16:26:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Photo taken on 2025-02-03 at 16:26. GPS: 51.05710, 3.70539.",
+  "fact_ids": [
+   "F024"
+  ],
+  "trap_ids": [
+   "T09"
+  ],
+  "spans": [
+   {
+    "fact_id": "F024",
+    "start": 0,
+    "end": 59,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "lat": 51.0571,
+   "lon": 3.70539,
+   "time": "16:26"
+  },
+  "file": "deposits/D0001_photo.jpg"
+ },
+ {
+  "id": "D0002",
+  "kind": "photo",
+  "created_at": "2025-02-03T17:11:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Photo taken on 2025-02-03 at 17:11. GPS: 51.04428, 3.70178.",
+  "fact_ids": [
+   "F029"
+  ],
+  "trap_ids": [
+   "T12"
+  ],
+  "spans": [
+   {
+    "fact_id": "F029",
+    "start": 0,
+    "end": 59,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "lat": 51.04428,
+   "lon": 3.70178,
+   "time": "17:11"
+  },
+  "file": "deposits/D0002_photo.jpg"
+ },
+ {
+  "id": "D0003",
+  "kind": "note",
+  "created_at": "2025-02-04T07:06:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Walked around the botanical garden today.\nMaybe I'll learn to sail this summer, we'll see.\nMade soup with whatever was left in the fridge.",
+  "fact_ids": [
+   "F030"
+  ],
+  "trap_ids": [
+   "T05"
+  ],
+  "spans": [
+   {
+    "fact_id": "F030",
+    "start": 0,
+    "end": 41,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T05",
+     42,
+     90
+    ]
+   ]
+  },
+  "file": "deposits/D0003_note.txt"
+ },
+ {
+  "id": "D0004",
+  "kind": "photo",
+  "created_at": "2025-02-04T12:41:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413.",
+  "fact_ids": [
+   "F030"
+  ],
+  "trap_ids": [
+   "T13"
+  ],
+  "spans": [
+   {
+    "fact_id": "F030",
+    "start": 0,
+    "end": 59,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "lat": 51.0554,
+   "lon": 3.70413,
+   "time": "12:41"
+  },
+  "file": "deposits/D0004_photo.jpg"
+ },
+ {
+  "id": "D0005",
+  "kind": "voice_in",
+  "created_at": "2025-02-04T18:30:00",
+  "author": "P2",
+  "recipient": "P0",
+  "text": "Hi um, you, Work- Work is busy, being an operations like, manager is never boring. Miss you!",
+  "fact_ids": [
+   "F014"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F014",
+    "start": 12,
+    "end": 82,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "bf_alice"
+  },
+  "file": "deposits/D0005_voice_in.m4a"
+ },
+ {
+  "id": "D0006",
+  "kind": "note",
+  "created_at": "2025-02-05T09:06:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "I've been living at 51 Orchard Close in Ghent since December 2022.\nLong day, but a good one.",
+  "fact_ids": [
+   "F001"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F001",
+    "start": 0,
+    "end": 66,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0006_note.txt"
+ },
+ {
+  "id": "D0007",
+  "kind": "voice_in",
+  "created_at": "2025-02-06T19:36:00",
+  "author": "P1",
+  "recipient": "P0",
+  "text": "Hey- Hey! Things are so, good here in Montreal. Talk- Talk soon.",
+  "fact_ids": [
+   "F012"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F012",
+    "start": 10,
+    "end": 47,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "am_eric"
+  },
+  "file": "deposits/D0007_voice_in.m4a"
+ },
+ {
+  "id": "D0008",
+  "kind": "note",
+  "created_at": "2025-02-06T19:41:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Trying to go to bed earlier this week.\nPractised my Arabic with a podcast on the way home.",
+  "fact_ids": [
+   "F011"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F011",
+    "start": 39,
+    "end": 90,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0008_note.txt"
+ },
+ {
+  "id": "D0009",
+  "kind": "note",
+  "created_at": "2025-02-07T07:40:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Turns out it's a bad chest cold today. Rest and fluids it is.\nApparently Oskar's company might be shutting down.\nWatered the plants on the balcony.\nI've been working as a backend engineer at Northwind Analytics since December 2021.",
+  "fact_ids": [
+   "F007",
+   "F005"
+  ],
+  "trap_ids": [
+   "T06"
+  ],
+  "spans": [
+   {
+    "fact_id": "F007",
+    "start": 0,
+    "end": 61,
+    "role": "start"
+   },
+   {
+    "fact_id": "F005",
+    "start": 148,
+    "end": 231,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T06",
+     62,
+     112
+    ]
+   ]
+  },
+  "file": "deposits/D0009_note.txt"
+ },
+ {
+  "id": "D0010",
+  "kind": "document",
+  "created_at": "2025-02-07T13:00:00",
+  "author": "",
+  "recipient": null,
+  "text": "RIVERSIDE MEDICAL PRACTICE\n\nVISIT SUMMARY\n\nPatient: Kofi Achebe\nDate of visit: 7 February 2025\nAssessment: a bad chest cold\nPlan: rest and fluids\nFollow up if symptoms persist.",
+  "fact_ids": [
+   "F007"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F007",
+    "start": 95,
+    "end": 123,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "doc_type": "visit_summary"
+  },
+  "file": "deposits/D0010_document.pdf"
+ },
+ {
+  "id": "D0011",
+  "kind": "message",
+  "created_at": "2025-02-08T15:50:00",
+  "author": "P0",
+  "recipient": "P1",
+  "text": "In the end I did not sign up for the marathon, not this year. Coffee with Oskar at the harbour footpath yesterday. Trying to go to bed earlier this week. Coffee with Hollis at the botanical garden today.",
+  "fact_ids": [
+   "F021",
+   "F025"
+  ],
+  "trap_ids": [
+   "T03"
+  ],
+  "spans": [
+   {
+    "fact_id": "F021",
+    "start": 62,
+    "end": 114,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F025",
+    "start": 154,
+    "end": 203,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T03",
+     0,
+     61
+    ]
+   ]
+  },
+  "file": "deposits/D0011_message.txt"
+ },
+ {
+  "id": "D0012",
+  "kind": "note",
+  "created_at": "2025-02-09T08:18:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Miss Bristol sometimes, it's where I grew up.\nThe weather was grey all morning.\nMy birthday is on 1 May, reminder to plan something.",
+  "fact_ids": [
+   "F009",
+   "F008"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F009",
+    "start": 0,
+    "end": 45,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F008",
+    "start": 80,
+    "end": 132,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0012_note.txt"
+ },
+ {
+  "id": "D0013",
+  "kind": "voice_in",
+  "created_at": "2025-02-09T19:24:00",
+  "author": "P4",
+  "recipient": "P0",
+  "text": "Hey! Things are good here um, in like, Montreal. Miss- Miss you!",
+  "fact_ids": [
+   "F016"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F016",
+    "start": 5,
+    "end": 48,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "af_river"
+  },
+  "file": "deposits/D0013_voice_in.m4a"
+ },
+ {
+  "id": "D0014",
+  "kind": "note",
+  "created_at": "2025-02-10T14:37:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "If the Turin offer ever comes through, I'd honestly move there in a heartbeat.\nFinally cleaned the kitchen properly.\nPaid the rent, 680 EUR.\nMet Oskar at the harbour footpath today.\nHollis said their bike got stolen outside the station.",
+  "fact_ids": [
+   "F003",
+   "F018"
+  ],
+  "trap_ids": [
+   "T01",
+   "T04"
+  ],
+  "spans": [
+   {
+    "fact_id": "F003",
+    "start": 117,
+    "end": 140,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F018",
+    "start": 141,
+    "end": 181,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T01",
+     0,
+     78
+    ],
+    [
+     "T04",
+     182,
+     236
+    ]
+   ]
+  },
+  "file": "deposits/D0014_note.txt"
+ },
+ {
+  "id": "D0015",
+  "kind": "note",
+  "created_at": "2025-02-10T14:41:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Finally cleaned the kitchen properly.\nmy best friend Kasper lives in Edinburgh these days.",
+  "fact_ids": [
+   "F015"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F015",
+    "start": 38,
+    "end": 90,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0015_note.txt"
+ },
+ {
+  "id": "D0016",
+  "kind": "message",
+  "created_at": "2025-02-11T08:32:00",
+  "author": "P0",
+  "recipient": "P3",
+  "text": "Finally cleaned the kitchen properly. I've been working as a backend engineer at Northwind Analytics since December 2021. Walked around the hilltop viewpoint today.",
+  "fact_ids": [
+   "F005",
+   "F026"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F005",
+    "start": 38,
+    "end": 121,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F026",
+    "start": 122,
+    "end": 164,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0016_message.txt"
+ },
+ {
+  "id": "D0017",
+  "kind": "photo",
+  "created_at": "2025-02-11T11:40:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Photo taken on 2025-02-11 at 11:40. GPS: 51.04755, 3.72139.",
+  "fact_ids": [
+   "F026"
+  ],
+  "trap_ids": [
+   "T10"
+  ],
+  "spans": [
+   {
+    "fact_id": "F026",
+    "start": 0,
+    "end": 59,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "lat": 51.04755,
+   "lon": 3.72139,
+   "time": "11:40"
+  },
+  "file": "deposits/D0017_photo.jpg"
+ },
+ {
+  "id": "D0018",
+  "kind": "message_in",
+  "created_at": "2025-02-11T14:17:00",
+  "author": "P4",
+  "recipient": "P0",
+  "text": "Hey! Work is busy, being a sales lead is never boring. Call me this weekend?",
+  "fact_ids": [
+   "F017"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F017",
+    "start": 5,
+    "end": 54,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0018_message_in.txt"
+ },
+ {
+  "id": "D0019",
+  "kind": "voice_in",
+  "created_at": "2025-02-11T14:34:00",
+  "author": "P2",
+  "recipient": "P0",
+  "text": "Hi- Hi so, you, Things are uh, good you know, here in Rotterdam. Call me this weekend?",
+  "fact_ids": [
+   "F013"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F013",
+    "start": 16,
+    "end": 64,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "bf_alice"
+  },
+  "file": "deposits/D0019_voice_in.m4a"
+ },
+ {
+  "id": "D0020",
+  "kind": "voice",
+  "created_at": "2025-02-11T17:05:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Bank adviser um, appointment today, all fine. Made- Made soup with whatever was left you know, in the I mean, fridge.",
+  "fact_ids": [
+   "F023"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F023",
+    "start": 0,
+    "end": 45,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "af_heart"
+  },
+  "file": "deposits/D0020_voice.m4a"
+ },
+ {
+  "id": "D0021",
+  "kind": "voice_in",
+  "created_at": "2025-02-11T17:11:00",
+  "author": "P1",
+  "recipient": "P0",
+  "text": "Quick update. Things are good here in Montreal. Call- Call me this so, weekend?",
+  "fact_ids": [
+   "F012"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F012",
+    "start": 14,
+    "end": 47,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "am_eric"
+  },
+  "file": "deposits/D0021_voice_in.m4a"
+ },
+ {
+  "id": "D0022",
+  "kind": "message",
+  "created_at": "2025-02-12T08:28:00",
+  "author": "P0",
+  "recipient": "P2",
+  "text": "Made soup with whatever was left in the fridge. Fully recovered today, no more rest. Walked around the riverside park today.",
+  "fact_ids": [
+   "F007",
+   "F027"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F007",
+    "start": 48,
+    "end": 84,
+    "role": "end"
+   },
+   {
+    "fact_id": "F027",
+    "start": 85,
+    "end": 124,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0022_message.txt"
+ },
+ {
+  "id": "D0023",
+  "kind": "document",
+  "created_at": "2025-02-12T11:00:00",
+  "author": "",
+  "recipient": null,
+  "text": "SILVERFERN ENERGY\n\nOFFER OF EMPLOYMENT\n\nDear Kofi Achebe,\n\nWe are pleased to offer you the position of research assistant.\nYour start date will be 15 February 2025.\nPlease sign and return a copy of this letter.\n\nHuman Resources",
+  "fact_ids": [
+   "F006"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F006",
+    "start": 59,
+    "end": 122,
+    "role": "future"
+   }
+  ],
+  "meta": {
+   "doc_type": "offer_letter"
+  },
+  "file": "deposits/D0023_document.pdf"
+ },
+ {
+  "id": "D0024",
+  "kind": "photo",
+  "created_at": "2025-02-12T12:02:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Photo taken on 2025-02-12 at 12:02. GPS: 51.06624, 3.72928.",
+  "fact_ids": [
+   "F027"
+  ],
+  "trap_ids": [
+   "T11"
+  ],
+  "spans": [
+   {
+    "fact_id": "F027",
+    "start": 0,
+    "end": 59,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "lat": 51.06624,
+   "lon": 3.72928,
+   "time": "12:02"
+  },
+  "file": "deposits/D0024_photo.jpg"
+ },
+ {
+  "id": "D0025",
+  "kind": "note",
+  "created_at": "2025-02-12T13:55:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "I accepted the research assistant job at Silverfern Energy, I start on 15 February 2025.\nStarted a new book, slow so far.\nHad to send the dish back, I'm allergic to sesame.",
+  "fact_ids": [
+   "F006",
+   "F010"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F006",
+    "start": 0,
+    "end": 88,
+    "role": "future"
+   },
+   {
+    "fact_id": "F010",
+    "start": 122,
+    "end": 172,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0025_note.txt"
+ },
+ {
+  "id": "D0026",
+  "kind": "note",
+  "created_at": "2025-02-13T12:45:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Kasper lives in Edinburgh these days.\nThe train was a few minutes late.\nI've been living at 51 Orchard Close in Ghent since December 2022.",
+  "fact_ids": [
+   "F015",
+   "F001"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F015",
+    "start": 0,
+    "end": 37,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F001",
+    "start": 72,
+    "end": 138,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0026_note.txt"
+ },
+ {
+  "id": "D0027",
+  "kind": "photo",
+  "created_at": "2025-02-14T08:49:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Photo taken on 2025-02-14 at 08:49. GPS: 45.75081, 4.83579.",
+  "fact_ids": [
+   "F019"
+  ],
+  "trap_ids": [
+   "T07"
+  ],
+  "spans": [
+   {
+    "fact_id": "F019",
+    "start": 0,
+    "end": 59,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "lat": 45.75081,
+   "lon": 4.83579,
+   "time": "08:49"
+  },
+  "file": "deposits/D0027_photo.jpg"
+ },
+ {
+  "id": "D0028",
+  "kind": "voice_in",
+  "created_at": "2025-02-14T18:21:00",
+  "author": "P4",
+  "recipient": "P0",
+  "text": "Hey! Work is busy, being a sales I mean, lead is never you know, boring. Miss you!",
+  "fact_ids": [
+   "F017"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F017",
+    "start": 5,
+    "end": 72,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "af_river"
+  },
+  "file": "deposits/D0028_voice_in.m4a"
+ },
+ {
+  "id": "D0029",
+  "kind": "note",
+  "created_at": "2025-02-14T19:28:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Made soup with whatever was left in the fridge.\nDentist appointment yesterday, all fine.\nI keep thinking about adopting a dog, maybe next year.",
+  "fact_ids": [
+   "F028"
+  ],
+  "trap_ids": [
+   "T02"
+  ],
+  "spans": [
+   {
+    "fact_id": "F028",
+    "start": 48,
+    "end": 88,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T02",
+     89,
+     143
+    ]
+   ]
+  },
+  "file": "deposits/D0029_note.txt"
+ },
+ {
+  "id": "D0030",
+  "kind": "note",
+  "created_at": "2025-02-15T11:36:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "The weather was grey all morning.\nGot the keys today: the new place is 79 Linden Street, Ghent.",
+  "fact_ids": [
+   "F002"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F002",
+    "start": 34,
+    "end": 95,
+    "role": "start"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0030_note.txt"
+ },
+ {
+  "id": "D0031",
+  "kind": "document",
+  "created_at": "2025-02-15T17:00:00",
+  "author": "",
+  "recipient": null,
+  "text": "RESIDENTIAL LEASE AGREEMENT\n\nLandlord: Rowan Property Lettings\nTenant: Kofi Achebe\nPremises: 79 Linden Street, Ghent\nLease start date: 15 February 2025\nMonthly rent: 1340 EUR\n\nThe tenant agrees to keep the premises in good order.\nSigned by both parties.",
+  "fact_ids": [
+   "F002",
+   "F004"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F002",
+    "start": 83,
+    "end": 116,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F004",
+    "start": 152,
+    "end": 174,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "doc_type": "lease"
+  },
+  "file": "deposits/D0031_document.pdf"
+ },
+ {
+  "id": "D0032",
+  "kind": "photo",
+  "created_at": "2025-02-16T17:22:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Photo taken on 2025-02-16 at 17:22. GPS: 51.05485, 3.73550.",
+  "fact_ids": [
+   "F020"
+  ],
+  "trap_ids": [
+   "T08"
+  ],
+  "spans": [
+   {
+    "fact_id": "F020",
+    "start": 0,
+    "end": 59,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "lat": 51.05485,
+   "lon": 3.7355,
+   "time": "17:22"
+  },
+  "file": "deposits/D0032_photo.jpg"
+ },
+ {
+  "id": "D0033",
+  "kind": "message",
+  "created_at": "2025-02-16T18:45:00",
+  "author": "P0",
+  "recipient": "P2",
+  "text": "First day as research assistant at Silverfern Energy yesterday. Made soup with whatever was left in the fridge. Bank adviser appointment today, all fine.",
+  "fact_ids": [
+   "F006",
+   "F022"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F006",
+    "start": 0,
+    "end": 63,
+    "role": "start"
+   },
+   {
+    "fact_id": "F022",
+    "start": 112,
+    "end": 153,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0033_message.txt"
+ }
+]

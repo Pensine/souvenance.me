@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Recombinaison hebdomadaire (dimanche 04:00) — le cycle REM.
+"""Weekly recombination (Sunday 04:00) — the REM cycle.
 
-Croise des souvenirs distants entre domaines, formule des hypothèses de
-traits à valider, propose des amendements du persona — JAMAIS auto-ratifiés
-(l'utilisateur est l'auteur final ; couche 3).
+Cross-links distant memories across domains, formulates trait hypotheses to
+validate, proposes persona amendments — NEVER auto-ratified (the user is the
+final author; layer 3).
 """
 
 import json
@@ -21,7 +21,7 @@ PROPOSALS_DIR = Path(__file__).resolve().parent.parent / "persona" / "propositio
 
 
 def sample_memories(conn):
-    """Échantillon inter-domaines : les plus importantes + un tirage ancien."""
+    """Cross-domain sample: the most important + an old random draw."""
     return conn.execute(
         """
         (SELECT id, type, content, valid_from FROM memories
@@ -41,7 +41,7 @@ def main() -> None:
         if len(rows) < 5:
             db.audit(conn, "consolidation", "rem_noop", {"memories": len(rows)})
             conn.commit()
-            print("Corpus trop jeune pour recombiner.")
+            print("Corpus too young to recombine.")
             return
         corpus = json.dumps([dict(r) for r in rows], ensure_ascii=False, default=str)
 
@@ -55,7 +55,7 @@ def main() -> None:
         with db.connection() as conn:
             db.audit(conn, "consolidation", "rem_paused", {"reason": str(exc)})
             conn.commit()
-        print(f"REM en pause ({exc}).")
+        print(f"REM paused ({exc}).")
         return
 
     PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)
@@ -66,7 +66,7 @@ def main() -> None:
     with db.connection() as conn:
         db.audit(conn, "consolidation", "rem_weekly", {"proposal": str(out)})
         conn.commit()
-    print(f"Propositions REM écrites : {out} (à ratifier manuellement).")
+    print(f"REM proposals written: {out} (to be ratified manually).")
 
 
 if __name__ == "__main__":

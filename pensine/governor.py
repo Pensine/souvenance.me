@@ -1,9 +1,9 @@
-"""Le gouverneur constitutionnel (couche 7) — enforcement exécutable.
+"""The constitutional governor (layer 7) — executable enforcement.
 
-La constitution (constitution.yaml, versionnée dans Git) est vérifiée par le
-code : filtrage des events à l'ingestion (périmètre d'exclusion), refus des
-actions sortantes en v1, injection du texte constitutionnel dans les prompts
-de consolidation. Chaque refus est journalisé dans l'audit.
+The constitution (constitution.yaml, versioned in Git) is checked by code:
+event filtering at ingestion (exclusion perimeter), refusal of outbound
+actions in v1, injection of the constitutional text into the consolidation
+prompts. Every refusal is logged in the audit trail.
 """
 
 import json
@@ -32,19 +32,19 @@ class Governor:
         else:
             self.rules = dict(_DEFAULT)
 
-    # -- Périmètre d'exclusion -------------------------------------------------
+    # -- Exclusion perimeter -------------------------------------------------
     def event_allowed(self, source: str, payload: dict) -> tuple[bool, str]:
         exclusions = self.rules.get("exclusions") or {}
         if source in (exclusions.get("sources") or []):
-            return False, f"source exclue : {source}"
+            return False, f"excluded source: {source}"
         blob = json.dumps(payload, ensure_ascii=False).lower()
         for motif in exclusions.get("motifs") or []:
             if motif.lower() in blob:
-                return False, f"motif exclu : {motif}"
+                return False, f"excluded pattern: {motif}"
         return True, ""
 
     def filter_events(self, conn, events: list[dict]) -> list[dict]:
-        """Écarte les events hors périmètre, en journalisant chaque refus."""
+        """Drop events outside the perimeter, logging each rejection."""
         kept = []
         for e in events:
             ok, reason = self.event_allowed(e["source"], e["payload"])
@@ -57,8 +57,8 @@ class Governor:
 
     # -- Actions ---------------------------------------------------------------
     def action_allowed(self, action: str) -> bool:
-        """v1 : entrant uniquement. Tout ce qui sort (envoi, notification,
-        publication) est refusé, quelle que soit la demande."""
+        """v1: inbound only. Everything that goes out (sending, notification,
+        publication) is refused, whatever the request."""
         outbound = {"send", "notify", "publish", "post", "email", "message"}
         if any(action.lower().startswith(v) for v in outbound):
             return False
@@ -69,12 +69,14 @@ class Governor:
             db.audit(conn, "governor", "action_refused",
                      {"actor": actor, "action": action})
             raise PermissionError(
-                f"Constitution : action sortante refusée ({action}) — "
-                "v1 est entrant uniquement, et la règle du silence est absolue."
+                f"Constitution: outbound action refused ({action}) — "
+                "v1 is inbound-only, and the silence rule is absolute."
             )
 
-    # -- Injection dans les prompts -------------------------------------------
+    # -- Injection into prompts -------------------------------------------
     def constitution_text(self) -> str:
+        # The returned text is injected into the (French) consolidation prompts,
+        # so it stays in French.
         exclusions = self.rules.get("exclusions") or {}
         lines = [
             "Contraintes constitutionnelles (non négociables) :",
