@@ -122,6 +122,18 @@ Reading:
   It is the reader's discipline, not the store: the question is now
   whether those answers come from memories the gate should have stopped.
   The model judge (Phi-4, not run here) is what measures that.
+- **Correction (2026-10-28): one of those "inventions" was the benchmark's
+  error.** Q035 asked for the landlord's name as an unanswerable question,
+  yet the lease deposit (D0031) states "Landlord: Rowan Property Lettings":
+  the system answered correctly. The generator no longer asks it (replaced
+  by a shoe-size question, the sample's `questions.jsonl` and `truth.json`
+  regenerated, nothing else changes), and a test now checks that no
+  unstated question is answered by a deposit. Without Q035: 0 / 6 at
+  09abaa7, 0 / 6 at 1bb37f1, 1 / 6 at b2e12b1. The remaining one (Q033,
+  "what could be seen in the photo?") repeats the photo's date and GPS
+  line, which is quoted, not invented, but does not abstain either; the
+  lexical scorer counts it as invented, a judge may not. The table above is
+  left as measured.
 - **The two after-runs differ** (precision 0.83 vs 0.71) although the
   server runs at temperature 0: changes in between touch the prompt, and
   `mlx_lm` is not bit-deterministic across runs. One seed, 37 questions:

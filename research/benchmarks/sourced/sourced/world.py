@@ -78,11 +78,12 @@ VENUES = ["the riverside park", "the old market hall", "the botanical garden",
           "the harbour footpath", "the hilltop viewpoint", "the city library"]
 RACES = ["Spring 10K", "Harbour Half Marathon", "Park 5K"]
 RACE_MINUTES = {"Spring 10K": (42, 70), "Harbour Half Marathon": (95, 150), "Park 5K": (19, 34)}
-# Piper voices trained only on public-domain speech (SPEC section 9). The
-# list length matters: the owner draws with r.choice over all five and the
-# partner over the four others, which keeps the random stream unchanged.
-VOICES = ["en_US-ljspeech-medium", "en_US-kristin-medium", "en_US-norman-medium",
-          "en_US-john-medium", "en_GB-cori-medium"]
+# Five voice slots, independent of the TTS engine (SPEC section 3.3). Each
+# engine maps a slot to its own asset: a public-domain LibriVox reference
+# clip for Chatterbox, a public-domain Piper voice for the fallback. The list
+# length and order matter: the owner draws with r.choice over all five and
+# the partner over the four others, which keeps the random stream unchanged.
+VOICES = ["female_a", "female_b", "male_a", "male_b", "female_gb"]
 RELATIONS = ["sister", "brother", "best friend", "friend", "colleague", "cousin",
              "neighbour", "manager"]
 
@@ -503,7 +504,8 @@ def _unstated(w: World, has_pet: bool) -> list[dict]:
     qs = [f"What car does {first} drive?",
           f"What is {first}'s blood type?",
           f"Which university did {first} attend?",
-          f"What is the name of {first}'s landlord?"]
+          # not the landlord: every lease document names it
+          f"What is {first}'s shoe size?"]
     if not has_pet:
         qs.append(f"How old is {first}'s pet?")
     # attributes of real people that no deposit ever states

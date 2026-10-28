@@ -5,10 +5,12 @@ the date and GPS position written into EXIF. They never pretend to show an
 event, so any memory describing what a photo "shows" is an invention by
 construction (trap kind `photo_content`).
 
-Voice memos are synthesised locally with Piper (five English voices trained
-only on public-domain speech, SPEC section 9), through a separate Python
-environment (`--tts-python`), so the generator itself keeps zero heavy
-dependencies. Light background noise and a random lead-in are added.
+Voice memos are synthesised locally through a separate Python environment
+(`--tts-python`), so the generator itself keeps zero heavy dependencies.
+The default engine is Chatterbox (MIT), cloning five public-domain LibriVox
+reference clips; Piper (five public-domain voices) is kept as a fallback
+(`--tts-engine piper`). See SPEC sections 3.3 and 9. Light background noise
+and a random lead-in are added.
 Audio is NOT guaranteed bit-identical across machines; the manifest records
 a SHA-256 of every file so a published release can be checked.
 """
@@ -124,15 +126,18 @@ def render_pdf(text: str, path: Path) -> None:
 
 # --- voice -----------------------------------------------------------------
 
-def render_voices(jobs: list[dict], tts_python: str, workdir: Path) -> None:
-    """jobs: [{"text", "voice", "out", "seed"}]. Runs the Piper worker once
-    for all jobs (each voice loaded once), then compresses to AAC with ffmpeg."""
+def render_voices(jobs: list[dict], tts_python: str, workdir: Path,
+                  engine: str = "chatterbox", device: str = "cpu") -> None:
+    """jobs: [{"text", "voice", "out", "seed"}]. Runs the TTS worker once for
+    all jobs (the model and each voice loaded once), then compresses to AAC
+    with ffmpeg."""
     if not jobs:
         return
     with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, dir=workdir) as fh:
         json.dump(jobs, fh)
         job_file = fh.name
-    subprocess.run([tts_python, str(HERE / "tts_worker.py"), job_file], check=True)
+    subprocess.run([tts_python, str(HERE / "tts_worker.py"), "--engine", engine,
+                    "--device", device, job_file], check=True)
     for j in jobs:
         wav = Path(j["out"]).with_suffix(".wav")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), "-c:a", "aac",
@@ -149,7 +154,8 @@ def sha256(path: Path) -> str:
 
 
 def render_all(deposits: list[Deposit], outdir: Path, seed: int,
-               tts_python: str | None) -> dict:
+               tts_python: str | None, tts_engine: str = "chatterbox",
+               tts_device: str = "cpu") -> dict:
     """Writes every deposit file under outdir; returns {deposit id: sha256}.
     Without `tts_python`, voice deposits fall back to their transcript (.txt)
     and the manifest says so."""
@@ -165,12 +171,12 @@ def render_all(deposits: list[Deposit], outdir: Path, seed: int,
             render_pdf(d.text, p)
         elif d.kind in ("voice", "voice_in"):
             if tts_python:
-                jobs.append({"text": d.text, "voice": d.meta.get("voice", "en_US-ljspeech-medium"),
+                jobs.append({"text": d.text, "voice": d.meta.get("voice", "female_a"),
                              "out": str(p), "seed": f"{seed}:{d.id}"})
             else:
                 d.file = d.file.rsplit(".", 1)[0] + ".transcript.txt"
                 d.meta["audio"] = "not rendered (no --tts-python)"
                 (outdir / d.file).write_text(d.text + "\n", encoding="utf-8")
     if tts_python:
-        render_voices(jobs, tts_python, outdir)
+        render_voices(jobs, tts_python, outdir, tts_engine, tts_device)
     return {d.id: sha256(outdir / d.file) for d in deposits}

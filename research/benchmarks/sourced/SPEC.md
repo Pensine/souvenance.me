@@ -100,7 +100,7 @@ Kinds:
 | `note` | owner | the note | `.txt` |
 | `message` | owner → someone | the message | `.txt` |
 | `message_in` | someone → owner | the message (their facts in the first person) | `.txt` |
-| `voice` | owner | reference transcript, with hesitations and restarts | `.m4a` (Piper TTS + noise) |
+| `voice` | owner | reference transcript, with hesitations and restarts | `.m4a` (Chatterbox TTS + noise) |
 | `voice_in` | someone → owner | reference transcript | `.m4a`, another voice |
 | `photo` | owner | `Photo taken on <date> at <time>. GPS: <lat>, <lon>.` | `.jpg` with EXIF DateTimeOriginal + GPS |
 | `document` | — | lease, offer letter, visit summary, finisher certificate | `.pdf` |
@@ -114,11 +114,17 @@ in different deposits and wordings, so systems are tested on deduplication.
 - **Photos**: seeded colour fields and shapes, never figurative, never
   presented as a real event. EXIF carries date, time and GPS
   (round trip tested).
-- **Voice**: Piper (piper-tts 1.8.0) run locally, with five English voices
-  trained only on public-domain speech (§9). The owner has a voice of their
-  own; the partner and friends share the other four. Hesitations and
-  restarts are in the transcripts; the worker adds light noise
-  (~-38 dBFS) and a random lead-in. Generation is seeded per deposit (§10).
+- **Voice**: Chatterbox (`chatterbox-tts` 0.1.7, Resemble AI, MIT) run
+  locally, cloning five voices zero-shot from ~10 s public-domain LibriVox
+  clips (§9, `sourced/voices/refs/REFS.md`). The world draws one of five
+  engine-neutral slots per speaker (`female_a`, `female_b`, `male_a`,
+  `male_b`, `female_gb`); the owner has a slot of their own and the partner
+  and friends share the other four. Every file carries Resemble's
+  imperceptible Perth watermark, which marks it as synthetic; the worker
+  refuses to write audio if the watermarker is unavailable. Piper (§9) is
+  kept as a fallback engine on the same slots. Hesitations and restarts are
+  in the transcripts; the worker adds light noise (~-38 dBFS) and a random
+  lead-in. Generation is seeded per deposit (§10).
 - **Documents**: a minimal PDF writer (no dependency). The text is
   extractable (checked with an independent parser).
 
@@ -278,7 +284,28 @@ Adapters share one contract (`adapters/base.py`).
   Code: Apache-2.0, like the rest of the repository.
 - Fully synthetic. No real person, no real organisation, no real event.
   Photos are non-figurative by design.
-- Voice: Piper (`piper-tts` 1.8.0, github.com/OHF-Voice/piper1-gpl). The
+- Voice, default engine: Chatterbox. The code
+  (github.com/resemble-ai/chatterbox) and the model
+  (huggingface.co/ResembleAI/chatterbox: metadata `license: mit`, README
+  "Licensed under MIT") are MIT, checked 2026-10-28. The worker pins
+  `chatterbox-tts` 0.1.7 (the full environment is frozen in
+  `requirements-chatterbox.txt`) and the model revision
+  `5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18`, and checks the SHA-256 of the
+  five files it loads before loading them. Every output carries a Perth
+  watermark (github.com/resemble-ai/perth, MIT, `resemble-perth` 1.0.1):
+  imperceptible, it lets anyone check that a SOURCED voice memo is
+  synthetic, which we count as a feature of the dataset. The voices are
+  cloned from five ~10 s clips cut from LibriVox solo recordings of
+  1813-1883 books (three female, two male, one of them British).
+  librivox.org/pages/public-domain/ states that "all our recordings are
+  public domain (definitely in the USA, and maybe in your country as well)";
+  the texts are public domain everywhere their authors died more than a
+  century ago, and each archive.org item carries a public-domain licence
+  URL. Readers, files, segments and SHA-256 are in
+  `sourced/voices/refs/REFS.md`. The clips voice fictional characters; no
+  clip is presented as its reader.
+- Voice, fallback engine: Piper (`piper-tts` 1.8.0,
+  github.com/OHF-Voice/piper1-gpl). The
   code is GPL-3.0-or-later; it runs as a separate worker and its licence
   does not restrict the audio it produces. The voice repository
   (huggingface.co/rhasspy/piper-voices) is MIT. We use five voices whose
@@ -296,8 +323,13 @@ Adapters share one contract (`adapters/base.py`).
   | `en_GB-cori-medium` | LibriVox recordings | from scratch | [MODEL_CARD](https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/en/en_GB/cori/medium/MODEL_CARD) |
 
   The worker pins that revision and checks the SHA-256 of each `.onnx`.
+  The Piper voices map to the slots in this order: `female_a` ljspeech,
+  `female_b` kristin, `male_a` norman, `male_b` john, `female_gb` cori.
   Before 2026-10-28 the sample used Kokoro-82M, whose voice packs state no
-  licence; it was replaced for that reason.
+  licence; it was replaced for that reason. Chatterbox replaced Piper as the
+  default on 2026-10-28, on listening quality; the sample's committed voice
+  files stay Piper until `scripts/regen_voices.sh` is run (the manifest's
+  `audio` field says which engine made them).
 - Health facts are benign and fictional.
 
 ## 10. Known limits
@@ -309,6 +341,12 @@ Adapters share one contract (`adapters/base.py`).
 - Only Track T is wired for Pensine. Track R needs its media pipeline
   (transcription, vision) and is next.
 - The lexical judge cannot read meaning. It is only a harness check.
+- Chatterbox samples speech tokens and flow-matching noise from torch. The
+  worker seeds Python, NumPy and torch before the model is built and again
+  per deposit, on CPU by default; reproducibility of Chatterbox files on the
+  same machine is intended but not yet checked (MPS is not promised
+  reproducible). Zero-shot cloning can drift from the reference voice; each
+  file must be listened to before a release.
 - Piper's graphs draw unseeded noise. The worker writes a per-deposit seed
   into them, so two runs with the same seed give byte-identical files on the
   same machine and library versions (checked twice on the 2-week sample).

@@ -8,31 +8,31 @@
    "id": "P0",
    "name": "Kofi Achebe",
    "relation": "self",
-   "voice": "en_US-ljspeech-medium"
+   "voice": "female_a"
   },
   {
    "id": "P1",
    "name": "Oskar Lindqvist",
    "relation": "sister",
-   "voice": "en_US-norman-medium"
+   "voice": "male_a"
   },
   {
    "id": "P2",
    "name": "Priya Sorensen",
    "relation": "brother",
-   "voice": "en_US-john-medium"
+   "voice": "male_b"
   },
   {
    "id": "P3",
    "name": "Kasper Varga",
    "relation": "best friend",
-   "voice": "en_GB-cori-medium"
+   "voice": "female_gb"
   },
   {
    "id": "P4",
    "name": "Hollis Petrov",
    "relation": "friend",
-   "voice": "en_US-kristin-medium"
+   "voice": "female_b"
   }
  ],
  "facts": [
@@ -731,7 +731,7 @@
    "question": "Which university did Kofi attend?"
   },
   {
-   "question": "What is the name of Kofi's landlord?"
+   "question": "What is Kofi's shoe size?"
   },
   {
    "question": "How old is Kofi's pet?"

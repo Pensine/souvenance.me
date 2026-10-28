@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import sys
 import time
 from dataclasses import asdict
 from datetime import date, timedelta
@@ -28,8 +29,22 @@ def view(d: dict, people: dict[str, str], data_dir: Path, track: str) -> Deposit
                        path=str((data_dir / d["file"]).resolve()) if d.get("file") else None)
 
 
+def _eta(t_start: float, done: int, total: int) -> str:
+    """Elapsed and remaining time, extrapolated from the steps done so far."""
+    spent = time.time() - t_start
+    left = spent / done * (total - done) if done else 0.0
+    return f"{spent / 60:.1f} min elapsed, ~{left / 60:.1f} min left"
+
+
+def stderr_progress(line: str) -> None:
+    print(line, file=sys.stderr, flush=True)
+
+
 def run(system: MemorySystem, data_dir: Path, track: str = "T", checkpoint_every: int = 7,
-        qa: bool = True, limit_questions: int | None = None) -> dict:
+        qa: bool = True, limit_questions: int | None = None,
+        progress=stderr_progress) -> dict:
+    """`progress` receives one line per night and per question (None: silent)."""
+    say = progress or (lambda _line: None)
     truth, deposits, questions = load(data_dir)
     people = {p["id"]: p["name"] for p in truth["people"]}
     start = date.fromisoformat(truth["start"])
@@ -43,6 +58,8 @@ def run(system: MemorySystem, data_dir: Path, track: str = "T", checkpoint_every
                   if d["created_at"][:10] == day.isoformat()]
         system.ingest(todays, day)
         system.end_of_day(day)
+        say(f"night {i + 1}/{truth['days']} ({len(todays)} deposits), "
+            f"{_eta(t0, i + 1, truth['days'])}")
         last = i == truth["days"] - 1
         if write_unavailable is None and ((i + 1) % checkpoint_every == 0 or last):
             try:
@@ -55,8 +72,11 @@ def run(system: MemorySystem, data_dir: Path, track: str = "T", checkpoint_every
     answers = {}
     if qa:
         asked = date.fromisoformat(questions[0]["asked_at"]) if questions else start
-        for q in questions[:limit_questions]:
+        asked_qs = questions[:limit_questions]
+        tq = time.time()
+        for j, q in enumerate(asked_qs, 1):
             answers[q["id"]] = asdict(system.answer(q["question"], asked))
+            say(f"question {j}/{len(asked_qs)}, {_eta(tq, j, len(asked_qs))}")
     return {"system": system.describe(), "track": track, "data": str(data_dir),
             "seconds": round(time.time() - t0, 1), "snapshots": snapshots,
             "write_unavailable": write_unavailable, "answers": answers}

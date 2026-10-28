@@ -1,7 +1,8 @@
 """SOURCED command line.
 
   python -m sourced generate --out sample --seed 3 --days 14 --facts 30 --changes 4 \
-                             [--tts-python /path/to/tts-venv/bin/python]
+                             [--tts-python /path/to/tts-venv/bin/python
+                              --tts-engine chatterbox|piper --tts-device cpu|mps]
   python -m sourced run   --data sample --system oracle|injected|verbatim|pensine --out run.json
   python -m sourced score --data sample --run run.json [--judge lexical|model --judge-url URL
                                                         --judge-model NAME] --out report.json
@@ -25,8 +26,12 @@ from .deposits import build_deposits, deposit_dicts
 from .tasks import derive_questions, evidence_index, question_dicts
 from .world import count_changes, generate_world
 
-AUDIO_LABEL = ("piper-tts 1.8.0, public-domain voices (rhasspy/piper-voices@5041a7a): "
-               "en_US-ljspeech, en_US-kristin, en_US-norman, en_US-john, en_GB-cori (medium)")
+AUDIO_LABELS = {
+    "chatterbox": ("chatterbox-tts 0.1.7 (MIT), ResembleAI/chatterbox@5bb1f6e, Perth-watermarked; "
+                   "voices cloned from public-domain LibriVox clips (sourced/voices/refs/REFS.md)"),
+    "piper": ("piper-tts 1.8.0, public-domain voices (rhasspy/piper-voices@5041a7a): "
+              "en_US-ljspeech, en_US-kristin, en_US-norman, en_US-john, en_GB-cori (medium)"),
+}
 
 
 def cmd_generate(a) -> None:
@@ -39,7 +44,7 @@ def cmd_generate(a) -> None:
     hashes = {}
     if not a.text_only:
         from .media import render_all
-        hashes = render_all(deps, out, a.seed, a.tts_python)
+        hashes = render_all(deps, out, a.seed, a.tts_python, a.tts_engine, a.tts_device)
     (out / "truth.json").write_text(json.dumps(w.to_dict(), indent=1, ensure_ascii=False),
                                     encoding="utf-8")
     (out / "deposits.json").write_text(json.dumps(deposit_dicts(deps), indent=1,
@@ -63,7 +68,8 @@ def cmd_generate(a) -> None:
                    "people": len(w.people), "traps": len(w.traps), "deposits": len(deps),
                    "questions": len(qs)},
         "deposits_by_kind": kinds, "questions_by_category": cats,
-        "audio": AUDIO_LABEL if a.tts_python and not a.text_only else "not rendered",
+        "audio": (AUDIO_LABELS[a.tts_engine] if a.tts_python and not a.text_only
+                  else "not rendered"),
         "license": "CC-BY-4.0",
         "truth_sha256": hashlib.sha256((out / "truth.json").read_bytes()).hexdigest(),
         "files_sha256": hashes,
@@ -191,6 +197,8 @@ def main() -> None:
     g.add_argument("--facts", type=int, default=300)
     g.add_argument("--changes", type=int, default=40)
     g.add_argument("--tts-python", default=None)
+    g.add_argument("--tts-engine", default="chatterbox", choices=["chatterbox", "piper"])
+    g.add_argument("--tts-device", default="cpu", choices=["cpu", "mps"])
     g.add_argument("--text-only", action="store_true", help="truth + text, no media files")
     r_ = sub.add_parser("run")
     r_.add_argument("--data", required=True)

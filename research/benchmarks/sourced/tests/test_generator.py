@@ -176,11 +176,37 @@ def test_question_texts_are_unique(seed):
     assert len({q.question for q in qs}) == len(qs)
 
 
+# The word a deposit would need to answer each unstated slot. An abstention
+# question whose answer sits in a deposit scores a correct answer as invented
+# (the landlord question did: every lease names the landlord).
+UNSTATED_CUES = {"car": ["drive", " car"], "blood type": ["blood"],
+                 "university": ["universit"], "landlord": ["landlord"],
+                 "shoe size": ["shoe size"], "pet": ["pet "],
+                 "favourite band": ["band"], "school": ["school"],
+                 "middle name": ["middle name"]}
+
+
+@pytest.mark.parametrize("kw", [SMALL, FULL])
+@pytest.mark.parametrize("seed", range(3))
+def test_unstated_questions_are_unanswerable(seed, kw):
+    w = generate_world(seed=seed, **kw)
+    text = " ".join(d.text for d in build_deposits(w)).lower()
+    for u in w.unstated:
+        q = u["question"].lower()
+        slot = next((k for k in UNSTATED_CUES if k in q), None)
+        assert slot, f"no cue for unstated question: {u['question']}"
+        for cue in UNSTATED_CUES[slot]:
+            assert cue not in text, f"{u['question']!r} is answered by a deposit ({cue!r})"
+
+
 @pytest.mark.parametrize("seed", range(5))
 def test_voices_are_the_pinned_public_domain_set(seed):
-    """Every speaker uses a voice the Piper worker pins by checksum, and the
-    owner's voice is never lent to anyone else."""
-    from sourced.tts_worker import VOICES
+    """Every speaker uses a slot both TTS engines pin by checksum (a reference
+    clip for Chatterbox, a voice for Piper), and the owner's voice is never
+    lent to anyone else."""
+    from sourced.tts_worker import PIPER_VOICES, REFS
+
+    VOICES = set(REFS) & set(PIPER_VOICES)
 
     w = generate_world(seed=seed, **FULL)
     owner = w.person(w.owner).voice

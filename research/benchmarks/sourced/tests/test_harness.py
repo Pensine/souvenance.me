@@ -134,3 +134,14 @@ def test_label_tool_is_blind_and_resumable(tmp_path):
     assert res == {"labelled": 3, "total": 3}
     labels = [r[4] for r in csv.reader(open(f))][1:]
     assert labels == ["supported", "unsupported", "partial"]
+
+
+def test_run_reports_progress_per_night_and_question(data):
+    out, truth, _, qs = data
+    lines = []
+    run(VerbatimSystem(), out, progress=lines.append, limit_questions=3)
+    nights = [x for x in lines if x.startswith("night ")]
+    asked = [x for x in lines if x.startswith("question ")]
+    assert len(nights) == truth["days"] and nights[-1].startswith(f"night {truth['days']}/")
+    assert asked == [a for a in asked if "min left" in a] and len(asked) == 3
+    assert asked[-1].startswith("question 3/3")
