@@ -38,6 +38,7 @@ def build_prompt(batch: dict, owner: str, constitution: str) -> str:
             .replace("{{CONSTITUTION}}", constitution)
             .replace("{{TODAY}}", batch["night"][:10])
             .replace("{{FENCE}}", token)
+            .replace("{{LANGUAGE}}", "")  # added after this bench was run
             .replace("{{EVENTS}}", fenced))
 
 

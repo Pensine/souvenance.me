@@ -26,6 +26,8 @@ Règles :
   ce n'est pas une abstraction.
 - **Reste descriptif.** Tu rapportes un motif, tu ne juges pas la personne et
   tu ne conseilles rien.
+- **Écris dans la langue des épisodes**, sans traduire : des épisodes en
+  anglais donnent une affirmation en anglais.
 - N'utilise pas de superlatif ni de quantificateur absolu (« toujours »,
   « jamais ») : les épisodes que tu vois ne sont qu'un échantillon.
 

@@ -44,7 +44,7 @@ def test_le_cycle_nocturne_enferme_et_signale(monkeypatch):
 
     seen = {}
 
-    def _complete(prompt):
+    def _complete(prompt, **kwargs):
         seen["prompt"] = prompt
         return json.dumps({"memories": [], "entities": [], "relations": []})
 

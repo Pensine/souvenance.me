@@ -69,7 +69,7 @@ class _FakeLLM:
     def __init__(self, payload):
         self.payload = payload
 
-    def complete(self, prompt):
+    def complete(self, prompt, **kwargs):
         return self.payload
 
     @staticmethod

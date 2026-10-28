@@ -1,0 +1,1299 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "1bb37f1",
+  "llm_backend": "openai",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 0,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-04",
+    "events": 3,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-05",
+    "events": 1,
+    "memories_written": 1,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 1,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-06",
+    "events": 2,
+    "memories_written": 1,
+    "memories_rejected": 8,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 2,
+    "batches_failed": 1,
+    "events_pending": 0,
+    "llm_calls": 2,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 1,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-07",
+    "events": 2,
+    "memories_written": 3,
+    "memories_rejected": 2,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-08",
+    "events": 1,
+    "memories_written": 2,
+    "memories_rejected": 3,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-09",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 6,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-10",
+    "events": 2,
+    "memories_written": 6,
+    "memories_rejected": 6,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 2,
+    "batches_failed": 1,
+    "events_pending": 0,
+    "llm_calls": 2,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-11",
+    "events": 5,
+    "memories_written": 9,
+    "memories_rejected": 1,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 9,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-12",
+    "events": 3,
+    "memories_written": 3,
+    "memories_rejected": 2,
+    "memories_corrected": 0,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-13",
+    "events": 1,
+    "memories_written": 3,
+    "memories_rejected": 4,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-14",
+    "events": 3,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-15",
+    "events": 2,
+    "memories_written": 3,
+    "memories_rejected": 1,
+    "memories_corrected": 3,
+    "memories_revised": 3,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 2
+   },
+   {
+    "day": "2025-02-16",
+    "events": 2,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 1
+   }
+  ]
+ },
+ "judge": "lexical-v1",
+ "headline": {
+  "invention_rate": 0.18,
+  "excerpt_support_rate": 0.64,
+  "fact_recall": 0.4333,
+  "recall_at_inv_1pct": 0.0,
+  "qa_accuracy": 0.7027,
+  "invented_answers": 0.1429,
+  "context_hit_rate": null,
+  "write_metrics": "measured"
+ },
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": 17,
+   "invention_rate": 0.3529,
+   "partial_rate": 0.0,
+   "invented": [
+    "Photo prise le 3 février 2025 à 16h26. Localisation GPS : 51.05710, 3.70539.",
+    "Photo prise le 3 février 2025 à 17h11. Localisation GPS : 51.04428, 3.70178.",
+    "Relationship with Priya Sorensen exists; she expressed missing the speaker.",
+    "Contradiction between the statement that work is never boring and the admission that work is busy, implying a potential disconnect between the nature of the work and the speaker's experience of it.",
+    "Attempted to go to bed earlier this week and practiced Arabic using a podcast during the commute home.",
+    "Diagnosed with a bad chest cold requiring rest and fluids; assessed by Riverside Medical Practice on 2025-02-07."
+   ],
+   "trap_hits": [],
+   "traps_total": 6,
+   "excerpt_support_rate": 0.5882,
+   "citing_memories": 17,
+   "fact_recall": 0.4286,
+   "omission_rate": 0.5714,
+   "recall_by_kind": {
+    "change": 1.0,
+    "event": 0.0,
+    "state": 0.625
+   },
+   "stale_as_current": null,
+   "stale_reason": null,
+   "curve": {
+    "points": [
+     {
+      "threshold": 1.0,
+      "kept": 2,
+      "invention": 1.0,
+      "recall": 0.0
+     },
+     {
+      "threshold": 0.95,
+      "kept": 8,
+      "invention": 0.5,
+      "recall": 0.42857142857142855
+     },
+     {
+      "threshold": 0.9,
+      "kept": 14,
+      "invention": 0.2857142857142857,
+      "recall": 0.42857142857142855
+     },
+     {
+      "threshold": 0.85,
+      "kept": 15,
+      "invention": 0.3333333333333333,
+      "recall": 0.42857142857142855
+     },
+     {
+      "threshold": 0.8,
+      "kept": 16,
+      "invention": 0.3125,
+      "recall": 0.42857142857142855
+     },
+     {
+      "threshold": 0.7,
+      "kept": 17,
+      "invention": 0.35294117647058826,
+      "recall": 0.42857142857142855
+     }
+    ],
+    "recall_at_inv_1pct": 0.0,
+    "recall_at_inv_5pct": 0.0,
+    "has_confidence": true
+   },
+   "labels": [
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [
+      {
+       "fact_id": "F011",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F008",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F016",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": 50,
+   "invention_rate": 0.18,
+   "partial_rate": 0.0,
+   "invented": [
+    "Photo prise le 3 février 2025 à 16h26. Localisation GPS : 51.05710, 3.70539.",
+    "Photo prise le 3 février 2025 à 17h11. Localisation GPS : 51.04428, 3.70178.",
+    "Relationship with Priya Sorensen exists; she expressed missing the speaker.",
+    "Contradiction between the statement that work is never boring and the admission that work is busy, implying a potential disconnect between the nature of the work and the speaker's experience of it.",
+    "Attempted to go to bed earlier this week and practiced Arabic using a podcast during the commute home.",
+    "Diagnosed with a bad chest cold requiring rest and fluids; assessed by Riverside Medical Practice on 2025-02-07.",
+    "Contradiction between the statement that work is never boring and the admission that work is busy, implying a potential disconnect between the nature of the work and the speaker's experience of it.",
+    "Took a photo at 12:02 on 2025-02-12. GPS coordinates: 51.06624, 3.72928.",
+    "Contradiction between the statement that work is never boring and the admission that work is busy, implying a potential disconnect between the nature of the work and the speaker's experience of it."
+   ],
+   "trap_hits": [],
+   "traps_total": 13,
+   "excerpt_support_rate": 0.64,
+   "citing_memories": 50,
+   "fact_recall": 0.4333,
+   "omission_rate": 0.5667,
+   "recall_by_kind": {
+    "change": 1.0,
+    "event": 0.0,
+    "state": 0.6923
+   },
+   "stale_as_current": 0.75,
+   "stale_reason": null,
+   "curve": {
+    "points": [
+     {
+      "threshold": 1.0,
+      "kept": 2,
+      "invention": 1.0,
+      "recall": 0.0
+     },
+     {
+      "threshold": 0.99,
+      "kept": 4,
+      "invention": 0.75,
+      "recall": 0.0
+     },
+     {
+      "threshold": 0.98,
+      "kept": 8,
+      "invention": 0.375,
+      "recall": 0.13333333333333333
+     },
+     {
+      "threshold": 0.95,
+      "kept": 25,
+      "invention": 0.2,
+      "recall": 0.43333333333333335
+     },
+     {
+      "threshold": 0.9,
+      "kept": 38,
+      "invention": 0.13157894736842105,
+      "recall": 0.43333333333333335
+     },
+     {
+      "threshold": 0.85,
+      "kept": 44,
+      "invention": 0.1590909090909091,
+      "recall": 0.43333333333333335
+     },
+     {
+      "threshold": 0.8,
+      "kept": 47,
+      "invention": 0.14893617021276595,
+      "recall": 0.43333333333333335
+     },
+     {
+      "threshold": 0.7,
+      "kept": 50,
+      "invention": 0.18,
+      "recall": 0.43333333333333335
+     }
+    ],
+    "recall_at_inv_1pct": 0.0,
+    "recall_at_inv_5pct": 0.0,
+    "has_confidence": true
+   },
+   "labels": [
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [
+      {
+       "fact_id": "F011",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F008",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F016",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F003",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F015",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F015",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F010",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F015",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F002",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F004",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F003",
+       "status": "correct"
+      },
+      {
+       "fact_id": "F004",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true
+    }
+   ]
+  }
+ ],
+ "qa": {
+  "accuracy": 0.7027,
+  "n_questions": 37,
+  "by_category": {
+   "present": {
+    "accuracy": 0.6923,
+    "n": 13
+   },
+   "past": {
+    "accuracy": 0.6667,
+    "n": 3
+   },
+   "when": {
+    "accuracy": 1.0,
+    "n": 3
+   },
+   "duration": {
+    "accuracy": 0.0,
+    "n": 1
+   },
+   "event": {
+    "accuracy": 0.6,
+    "n": 10
+   },
+   "abstention": {
+    "accuracy": 0.8571,
+    "n": 7
+   }
+  },
+  "answered_precision": 0.8333,
+  "coverage": 0.6486,
+  "invented_answers": 0.1429,
+  "rows": [
+   {
+    "id": "Q001",
+    "category": "present",
+    "ok": true,
+    "answer": "1340 EUR"
+   },
+   {
+    "id": "Q002",
+    "category": "present",
+    "ok": true,
+    "answer": "Montreal"
+   },
+   {
+    "id": "Q003",
+    "category": "present",
+    "ok": true,
+    "answer": "Edinburgh"
+   },
+   {
+    "id": "Q004",
+    "category": "present",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q005",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q006",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q007",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q008",
+    "category": "present",
+    "ok": true,
+    "answer": "Sesame"
+   },
+   {
+    "id": "Q009",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q010",
+    "category": "present",
+    "ok": true,
+    "answer": "1 May"
+   },
+   {
+    "id": "Q011",
+    "category": "present",
+    "ok": true,
+    "answer": "Miss Bristol"
+   },
+   {
+    "id": "Q012",
+    "category": "present",
+    "ok": true,
+    "answer": "Silverfern Energy"
+   },
+   {
+    "id": "Q013",
+    "category": "present",
+    "ok": true,
+    "answer": "Arabic"
+   },
+   {
+    "id": "Q014",
+    "category": "past",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q015",
+    "category": "past",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q016",
+    "category": "past",
+    "ok": true,
+    "answer": "Northwind Analytics"
+   },
+   {
+    "id": "Q017",
+    "category": "when",
+    "ok": true,
+    "answer": "15 February 2025"
+   },
+   {
+    "id": "Q018",
+    "category": "when",
+    "ok": true,
+    "answer": "15 February 2025"
+   },
+   {
+    "id": "Q019",
+    "category": "when",
+    "ok": true,
+    "answer": "7 February 2025"
+   },
+   {
+    "id": "Q020",
+    "category": "duration",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q021",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q022",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q023",
+    "category": "event",
+    "ok": false,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q024",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q025",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q026",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q027",
+    "category": "event",
+    "ok": true,
+    "answer": "2025-02-13"
+   },
+   {
+    "id": "Q028",
+    "category": "event",
+    "ok": false,
+    "answer": "botanical garden"
+   },
+   {
+    "id": "Q029",
+    "category": "event",
+    "ok": false,
+    "answer": "harbour footpath"
+   },
+   {
+    "id": "Q030",
+    "category": "event",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q031",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q032",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q033",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q034",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q035",
+    "category": "abstention",
+    "ok": false,
+    "answer": "Rowan Property Lettings"
+   },
+   {
+    "id": "Q036",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q037",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   }
+  ]
+ }
+}

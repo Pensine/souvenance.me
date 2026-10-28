@@ -180,6 +180,23 @@ LLM_API_KEY = os.environ.get("PENSINE_LLM_API_KEY", "").strip()
 # Response cap: some local servers cut off at 512 tokens by default, too
 # short for a batch of memories in JSON.
 LLM_MAX_TOKENS = int(os.environ.get("PENSINE_LLM_MAX_TOKENS", "8192"))
+# Structured output: 'auto' asks the backend for a JSON object whenever the
+# caller expects one (OpenAI-compatible `response_format`, Ollama `format`),
+# falling back silently when the server refuses it; 'off' never asks.
+LLM_JSON_MODE = os.environ.get("PENSINE_LLM_JSON_MODE", "auto").strip().lower()
+
+# Consolidation robustness (consolidation/nightly.py). A night whose answer
+# cannot be read is asked again, stricter (ATTEMPTS calls per batch in all),
+# then split in halves down to single deposits. A deposit that still fails
+# stays pending for the next night: never lost, never blocking the others.
+CONSOLIDATION_ATTEMPTS = int(os.environ.get("PENSINE_CONSOLIDATION_ATTEMPTS", "2"))
+# Upper bound on deposits sent in one call, 0 = no bound (the whole night,
+# split only on failure). Small local models may do better with 4-6.
+CONSOLIDATION_MAX_EVENTS = int(os.environ.get("PENSINE_CONSOLIDATION_MAX_EVENTS", "0"))
+# Language memories are written in: 'source' = the language of the deposit
+# they come from (detected per deposit, pensine/language.py); or a fixed
+# code ('fr', 'en'…) to write everything in one language.
+MEMORY_LANGUAGE = os.environ.get("PENSINE_MEMORY_LANGUAGE", "source").strip().lower()
 # Model for describing images (openai and ollama backends); empty = the same
 # as for text. A model without vision makes the description fail, and the
 # photo stays pending — a pause, not a loss.

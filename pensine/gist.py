@@ -116,7 +116,12 @@ def _abstract(episodes: list[dict], owner: str, constitution: str) -> dict | Non
               .replace("{{OWNER}}", owner)
               .replace("{{CONSTITUTION}}", constitution)
               .replace("{{EPISODES}}", payload))
-    out = llm.extract_json(llm.complete(prompt))
+    try:
+        out = llm.extract_json(llm.complete(prompt, json_mode=True))
+    except ValueError:
+        # an unreadable answer is not a pattern; the episodes stay and the
+        # group comes back another night
+        return None
     if not isinstance(out, dict):
         return None
     text = out.get("gist")

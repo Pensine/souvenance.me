@@ -190,3 +190,62 @@ def test_anthropic_sans_sdk(server, monkeypatch):
     req = s.requests[0]
     assert req["headers"]["x-api-key"] == "sk-ant-test"
     assert req["body"]["system"] == "sys"
+
+
+# -- Structured output (JSON mode) ----------------------------------------------
+
+def test_openai_json_mode_asks_for_a_json_object(server, openai_backend, monkeypatch):
+    monkeypatch.setattr(llm, "_JSON_LEVEL", {})
+    s = server((200, _chat('{"memories": []}')))
+    openai_backend(s.url)
+    llm.complete("x", json_mode=True)
+    assert s.requests[0]["body"]["response_format"] == {"type": "json_object"}
+
+
+def test_openai_without_json_mode_sends_no_format(server, openai_backend):
+    s = server()
+    openai_backend(s.url)
+    llm.complete("x")
+    assert "response_format" not in s.requests[0]["body"]
+
+
+def test_openai_json_mode_off_by_config(server, openai_backend, monkeypatch):
+    monkeypatch.setattr(config, "LLM_JSON_MODE", "off")
+    s = server()
+    openai_backend(s.url)
+    llm.complete("x", json_mode=True)
+    assert "response_format" not in s.requests[0]["body"]
+
+
+def test_openai_falls_back_to_json_schema_then_none(server, openai_backend, monkeypatch):
+    """LM Studio refuses json_object but takes json_schema; another server
+    refuses both: the call still goes through, and the refusal is remembered."""
+    monkeypatch.setattr(llm, "_JSON_LEVEL", {})
+    refuse = (400, {"error": "'response_format.type' must be 'json_schema' or 'text'"})
+    s = server(refuse, refuse, (200, _chat("{}")))
+    openai_backend(s.url)
+    assert llm.complete("x", json_mode=True) == "{}"
+    formats = [r["body"].get("response_format") for r in s.requests]
+    assert formats[0] == {"type": "json_object"}
+    assert formats[1]["type"] == "json_schema"
+    assert formats[2] is None
+    llm.complete("y", json_mode=True)  # remembered: no refused format sent again
+    assert "response_format" not in s.requests[3]["body"]
+
+
+def test_openai_other_400_is_still_a_pause(server, openai_backend, monkeypatch):
+    monkeypatch.setattr(llm, "_JSON_LEVEL", {})
+    s = server((400, {"error": "model not found"}))
+    openai_backend(s.url)
+    with pytest.raises(llm.LLMUnavailable, match="400"):
+        llm.complete("x", json_mode=True)
+
+
+def test_ollama_json_mode_sets_format(server, monkeypatch):
+    s = server((200, {"message": {"role": "assistant", "content": "{}"}}))
+    monkeypatch.setattr(config, "LLM_BACKEND", "ollama")
+    monkeypatch.setattr(config, "OLLAMA_URL", s.url)
+    llm.complete("x", json_mode=True)
+    assert s.requests[0]["body"]["format"] == "json"
+    llm.complete("x")
+    assert "format" not in s.requests[1]["body"]

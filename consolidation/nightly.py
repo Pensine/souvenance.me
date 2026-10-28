@@ -13,6 +13,12 @@ under subscription, or API — pensine/llm.py). Steps:
 
 If the intelligent layer breaks: nothing is lost, events accumulate,
 consolidation catches up on resume. The worst case is a pause.
+
+If the model answers but its answer cannot be read (invalid or truncated
+JSON — small local models do it on long nights), the batch is asked again,
+stricter, then split in halves down to single deposits. What still fails
+stays pending and is retried next night; it never blocks the rest of the
+night, and the log is never touched.
 """
 
 import json
@@ -23,7 +29,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from pensine import (affect, config, db, embeddings, evidence, gist,  # noqa: E402
-                     graph, injection, integrity, intentions, links, llm,
+                     graph, injection, integrity, intentions, language, links, llm,
                      percepteurs, places, relations)
 from pensine.governor import Governor  # noqa: E402
 
@@ -32,6 +38,26 @@ import media_pipeline  # noqa: E402
 PROMPT = (Path(__file__).parent / "prompts" / "nightly.md").read_text(encoding="utf-8")
 
 MEMORY_TYPES = {"episodic", "semantic", "procedural", "reflection"}
+
+# The keys a night's answer may carry, and those that must be lists.
+NIGHT_LISTS = ("memories", "revolues", "intentions", "intentions_closes",
+               "intentions_evoquees", "entities", "relations", "relation_states")
+
+# Appended to the prompt when the previous answer could not be used. French,
+# like the prompt it follows.
+STRICT_RETRY = """
+
+---
+Ta réponse précédente était inutilisable : {error}.
+Recommence. Réponds avec UN SEUL objet JSON valide et complet : pas de texte
+avant ou après, pas de bloc de code, des guillemets doubles, aucune virgule
+finale. Sois concis : des contenus et des extraits courts, une mémoire par
+fait qui compte, des listes vides plutôt que des champs inventés."""
+
+
+class MalformedOutput(ValueError):
+    """The model answered, but not with a usable night (invalid JSON, wrong
+    shape). Unlike LLMUnavailable, retrying smaller can help."""
 
 
 def perceive(conn, governor: Governor) -> int:
@@ -105,12 +131,249 @@ def _knowledge(conn, slimmed: list[dict]) -> list[dict]:
             for r in db.present_knowledge(conn, vectors)]
 
 
+def validate_night(value) -> tuple[dict | None, str | None]:
+    """Shape check of a night's answer. Returns (night, None) or (None, why).
+    Lenient on what is harmless (a single object where a list was expected,
+    null lists, a stray non-object memory), strict on what means the model
+    answered something else."""
+    if isinstance(value, list):  # compat: old format (array of memories)
+        value = {"memories": value}
+    if not isinstance(value, dict):
+        return None, "la réponse n'est pas un objet JSON"
+    if not any(k in value for k in NIGHT_LISTS):
+        return None, "aucune des clés attendues (memories, entities…)"
+    out = dict(value)
+    for k in NIGHT_LISTS:
+        v = out.get(k)
+        if v is None:
+            out[k] = []
+        elif isinstance(v, dict):
+            out[k] = [v]
+        elif not isinstance(v, list):
+            return None, f"`{k}` n'est pas une liste"
+    mems = []
+    for m in out["memories"]:
+        if isinstance(m, dict) and isinstance(m.get("content"), str):
+            mems.append(_clean_memory(m))
+    out["memories"] = mems
+    out["relations"] = [{**r, "valid_from": _iso(r.get("valid_from"))}
+                        for r in out["relations"] if isinstance(r, dict)]
+    for k in ("revolues", "intentions", "intentions_closes", "entities", "relation_states"):
+        out[k] = [x for x in out[k] if isinstance(x, dict)]
+    for r in out["revolues"]:
+        r["valid_to"] = _iso(r.get("valid_to"))
+    return out, None
+
+
+def _iso(value) -> str | None:
+    """An ISO date or datetime the database will accept, else None. Small
+    models write "unknown", "2025-02-?" or "next week" in date fields; one
+    such value used to take the whole night down."""
+    if value is None or isinstance(value, bool):
+        return None
+    text = str(value).strip().replace("Z", "+00:00")
+    try:
+        datetime.fromisoformat(text)
+        return text
+    except ValueError:
+        pass
+    try:
+        datetime.fromisoformat(text[:10])
+        return text[:10]
+    except ValueError:
+        return None
+
+
+def _unit(value, default: float) -> float:
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return default
+    return min(1.0, max(0.0, v)) if v == v else default  # NaN → default
+
+
+def _ints(values) -> list[int]:
+    out = []
+    for v in values if isinstance(values, list) else [values] if values is not None else []:
+        try:
+            i = int(v)
+        except (TypeError, ValueError):
+            continue
+        if i not in out:
+            out.append(i)
+    return out
+
+
+def _clean_memory(m: dict) -> dict:
+    """Field-level repair of one memory: what a field cannot hold is reset
+    to its neutral value instead of failing the night (affects are left to
+    affect.parse, which already rejects what is out of range)."""
+    m = dict(m)
+    if isinstance(m.get("type"), str):
+        m["type"] = m["type"].strip().lower()
+    fixes = {"confidence": lambda v: _unit(v, 0.5), "importance": lambda v: _unit(v, 0.5),
+             "valid_from": _iso, "valid_to": _iso,
+             "source_event_ids": _ints, "remplace": _ints}
+    for key, fix in fixes.items():
+        if key in m:  # absent stays absent: the defaults downstream apply
+            m[key] = fix(m[key])
+    return m
+
+
+def ask_night(prompt: str, *, accept_truncated: bool = False) -> tuple[dict, dict]:
+    """One batch's answer, read defensively. Up to CONSOLIDATION_ATTEMPTS
+    calls: the first with the prompt as is, the next ones with a stricter
+    re-ask naming what went wrong. A truncated answer (complete elements
+    kept, tail cut) is only accepted for a batch that cannot be split any
+    further — otherwise a smaller batch will give the whole answer.
+    Returns (night, stats); raises MalformedOutput."""
+    attempts = max(1, config.CONSOLIDATION_ATTEMPTS)
+    error, salvage = None, None
+    for i in range(attempts):
+        raw = llm.complete(prompt if i == 0 else prompt + STRICT_RETRY.format(error=error),
+                           json_mode=True)
+        try:
+            value, how = llm.parse_json(raw)
+        except ValueError as exc:
+            error = f"JSON illisible ({str(exc)[:80]})"
+            continue
+        night, problem = validate_night(value)
+        if problem:
+            error = problem
+            continue
+        if how == "truncated":
+            salvage = salvage or night
+            error = "réponse coupée avant la fin, trop longue"
+            continue
+        return night, {"calls": i + 1, "repaired": int(how != "clean"), "truncated": 0}
+    if salvage is not None and accept_truncated:
+        return salvage, {"calls": attempts, "repaired": 1, "truncated": 1}
+    raise MalformedOutput(error or "réponse inutilisable")
+
+
+try:
+    from psycopg import DataError as _DataError
+except ImportError:  # pragma: no cover - psycopg is a dependency of the engine
+    class _DataError(Exception):
+        pass
+
+# What an unusable answer looks like by the time it reaches the code: an
+# unreadable answer, or one whose values the code or the database refuse.
+# Retrying smaller can help with all of them; an outage is not among them.
+_BAD_ANSWER = (MalformedOutput, ValueError, TypeError, KeyError, AttributeError, _DataError)
+
+
+def _savepoint(conn):
+    from contextlib import nullcontext
+    return conn.transaction() if hasattr(conn, "transaction") else nullcontext()
+
+
+def _batches(events: list, size: int) -> list[list]:
+    if size <= 0 or len(events) <= size:
+        return [events]
+    return [events[i:i + size] for i in range(0, len(events), size)]
+
+
 def consolidate(conn, governor: Governor, events) -> dict:
+    """Consolidate a night, batch by batch, in chronological order (a later
+    batch sees the knowledge an earlier one wrote). A batch whose answer
+    cannot be used is split in halves; a single deposit that still fails is
+    left pending — not marked, retried next night. LLMUnavailable still
+    propagates: an outage is a pause, not a reason to split."""
+    events = list(events)
+    total: dict = {"batches": 0, "batches_failed": 0, "events_pending": 0}
+    pending: list[int] = []
+    errors: list[str] = []
+
+    def run(batch: list) -> None:
+        try:
+            # a savepoint per batch: a batch that breaks halfway through its
+            # writes leaves nothing behind, and the batches before it stay
+            with _savepoint(conn):
+                r = consolidate_batch(conn, governor, batch)
+        except _BAD_ANSWER as exc:
+            total["batches_failed"] += 1
+            if len(batch) > 1:
+                half = (len(batch) + 1) // 2
+                run(batch[:half])
+                run(batch[half:])
+            else:
+                pending.append(batch[0]["id"])
+                # our own messages only: a library error may quote the
+                # model's text, and the audit log never copies content
+                errors.append(str(exc)[:160] if isinstance(exc, MalformedOutput)
+                              else type(exc).__name__)
+            return
+        total["batches"] += 1
+        for k, v in r.items():
+            if isinstance(v, (int, float)) and not isinstance(v, bool):
+                total[k] = total.get(k, 0) + v
+
+    for batch in _batches(events, config.CONSOLIDATION_MAX_EVENTS):
+        run(batch)
+    total["events_pending"] = len(pending)
+    if pending:
+        # ids and error kinds only: the audit log never copies content
+        db.audit(conn, "consolidation", "batch_failed",
+                 {"event_ids": pending, "errors": sorted(set(errors))[:5]})
+    for k in ("memories_written", "memories_revised", "memories_rejected",
+              "memories_corrected", "links_posed", "relations_added"):
+        total.setdefault(k, 0)
+    return total
+
+
+def event_languages(events: list[dict]) -> dict[int, str | None]:
+    """The language of each deposit: detected on its text, or fixed by
+    PENSINE_MEMORY_LANGUAGE. A deposit too short to tell takes the
+    language of the others."""
+    if config.MEMORY_LANGUAGE not in ("", "source", "auto"):
+        return {e["id"]: config.MEMORY_LANGUAGE for e in events}
+    found = {e["id"]: language.detect(evidence.source_text(e)) for e in events}
+    common = language.majority(found.values())
+    if common is None:  # each deposit too short ("Photo taken on … at …"): pooled
+        common = language.detect("\n".join(evidence.source_text(e) for e in events),
+                                 min_hits=2)
+    return {i: code or common for i, code in found.items()}
+
+
+def language_instruction(codes) -> str:
+    """The last lines of the prompt: which language to write in, named
+    concretely — and, for one language, said in that language."""
+    known = {c for c in codes if c}
+    if len(known) == 1:
+        code = known.pop()
+        fr, _ = language.NAMES.get(code, (code, code))
+        return (f"Langue d'écriture : {fr} ({code}). "
+                + language.WRITE_IN.get(code, "Ne traduis pas."))
+    if known:
+        return ("Langue d'écriture : celle de chaque événement source (champ `langue`), "
+                "sans traduire.")
+    return "Langue d'écriture : celle des dépôts, sans traduire."
+
+
+def language_check(memories: list[dict], langs: dict[int, str | None]) -> dict:
+    """How many written memories are in their deposits' language (measured,
+    never enforced: a memory is not rejected for its language)."""
+    checked = mismatched = 0
+    batch_lang = language.majority(langs.values())
+    for m in memories:
+        expected = language.majority(langs.get(i) for i in m.get("source_event_ids") or []
+                                     if isinstance(i, int)) or batch_lang
+        got = language.detect(m.get("content") or "", min_hits=1)
+        if expected and got:
+            checked += 1
+            mismatched += got != expected
+    return {"language_checked": checked, "language_mismatched": mismatched}
+
+
+def consolidate_batch(conn, governor: Governor, events) -> dict:
     places_by_event = {e["id"]: p for e in events if (p := event_place(dict(e)))}
+    langs = event_languages([dict(e) for e in events])
     # the forgetting scope (pensine/shred.py) is not the model's business
     slimmed = [_flag({**_slim({k: v for k, v in dict(e).items()
                                if k not in ("scope", "forgotten")}),
                       "occurred_at": e["occurred_at"].isoformat(),
+                      **({"langue": langs[e["id"]]} if langs.get(e["id"]) else {}),
                       **({"lieu": places_by_event[e["id"]].get("place")}
                          if places_by_event.get(e["id"], {}).get("place") else {})})
                for e in events]
@@ -129,20 +392,18 @@ def consolidate(conn, governor: Governor, events) -> dict:
               .replace("{{CONSTITUTION}}", governor.constitution_text())
               .replace("{{TODAY}}", datetime.now(timezone.utc).date().isoformat())
               .replace("{{FENCE}}", token)
+              .replace("{{LANGUAGE}}", language_instruction(langs.values()))
               # last: the material must never have its own "{{…}}" replaced
               # by the replacements that would follow
               .replace("{{EVENTS}}", fenced))
-    raw = llm.complete(prompt)
-    out = llm.extract_json(raw)
-    if isinstance(out, list):  # compat: old format (array of memories)
-        out = {"memories": out, "entities": [], "relations": []}
+    out, stats = ask_night(prompt, accept_truncated=len(events) == 1)
     event_ids = [e["id"] for e in events]
     allowed = {k["id"] for k in knowledge}
     # cited proof: what cannot be verified in the deposits does not get in
     trace: list[str] = []
     checked, proof = evidence.verify(
         out.get("memories") or [], slimmed, owner=config.OWNER_NAME,
-        ask=llm.complete if config.VERIFY == "modele" else None,
+        ask=(lambda p: llm.complete(p, json_mode=True)) if config.VERIFY == "modele" else None,
         extract_json=llm.extract_json, severity=config.EVIDENCE_SEVERITY, trace=trace)
     db.audit(conn, "consolidation", "evidence", proof)
     # the raw candidates, to replay this night under other severities
@@ -161,8 +422,10 @@ def consolidate(conn, governor: Governor, events) -> dict:
     db.mark_examined(conn, event_ids, {m["id"] for m in written})
     return {"memories_written": len(written), "memories_revised": revised, **steps,
             "memories_rejected": proof["rejetees"], "memories_corrected": proof["corrigees"],
-            "links_posed": posed,
-            "relation_states": states, **g}
+            "links_posed": posed, "relation_states": states,
+            "llm_calls": stats["calls"], "answers_repaired": stats["repaired"],
+            "answers_truncated": stats["truncated"],
+            **language_check(checked, langs), **g}
 
 
 
@@ -365,7 +628,13 @@ def main() -> None:
 
         forgetting_decay(conn)
         links.decay(conn)
-        promoted = gist.promote(conn, config.OWNER_NAME, governor.constitution_text())
+        try:
+            promoted = gist.promote(conn, config.OWNER_NAME, governor.constitution_text())
+        except llm.LLMUnavailable as exc:
+            # the night's memories are already written: an abstraction
+            # failing afterwards must not take them down with it
+            db.audit(conn, "consolidation", "gist_paused", {"reason": str(exc)[:300]})
+            promoted = {}
         db.audit(conn, "consolidation", "nightly", {
             "perceived": perceived,
             "media_done": len(media_report["done"]),
@@ -380,7 +649,9 @@ def main() -> None:
               f"{result['memories_written']} memories "
               f"({result['memories_revised']} revised, "
               f"{result['memories_rejected']} rejected for lack of proof), "
-              f"{result['relations_added']} graph edges.")
+              f"{result['relations_added']} graph edges"
+              + (f"; {result['events_pending']} events left pending (unreadable model "
+                 "answer, retried next night)." if result["events_pending"] else "."))
 
 
 if __name__ == "__main__":

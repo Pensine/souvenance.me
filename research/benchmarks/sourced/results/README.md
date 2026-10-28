@@ -75,3 +75,59 @@ QA numbers below are scored in code and do not depend on the judge.
   Turin si l'offre…", "n'a pas [pu] s'inscrire au marathon"). The
   conditional flaw found in scripted mode (a real quote stated as done)
   stays a test case of the benchmark. Its fix belongs to the support check.
+
+## Second real run: robust consolidation, same model, 2026-10-28
+
+Same sample, same model (`mlx-community/Qwen3.5-4B-MLX-4bit` on
+`mlx_lm.server --temp 0 --chat-template-args '{"enable_thinking":false}'`),
+backend `openai`, `PENSINE_VERIFY=modele`, embeddings `nomic`, default
+settings (`PENSINE_CONSOLIDATION_ATTEMPTS=2`, no batch cap). Code changes
+since the first run: tolerant JSON reading and a stricter re-ask, splitting
+of a failing night down to single deposits, field-level repair of the
+answer and a savepoint per batch (`consolidation/nightly.py`,
+`pensine/llm.py`), and memories written in the deposit's language
+(`pensine/language.py`). `mlx_lm.server` ignores `response_format`, so
+structured output played no part here.
+
+Two after-runs, because the second one fixed what the first one showed
+(reread corrections translated into French):
+
+| | before (09abaa7) | after (1bb37f1) | after (b2e12b1) |
+|---|---|---|---|
+| Nights consolidated without failure / 14 | 8 | 14 (2 split once) | 14 |
+| Deposits pending after the last night | 18 | 0 | 0 |
+| Memories written | 24 | 50 | 51 |
+| Memories in English (decidable) | 1/24 | 44/49 | 48/50 |
+| QA accuracy (abstention incl., 37 q.) | 0.43 | 0.70 | 0.68 |
+| Coverage (answered rate) | 0.35 | 0.65 | 0.76 |
+| Answered precision | 0.69 | 0.83 | 0.71 |
+| Invented answers (7 abstention q.) | 0 / 7 | 1 / 7 | 2 / 7 |
+| Fact recall (lexical judge) | 0.20 | 0.43 | 0.47 |
+| Wall time | 69 min | 59 min | 43 min |
+
+`pensine-qwen3.5-4b-robust-1bb37f1.*` and `pensine-qwen3.5-4b-robust.*`.
+"Decidable" = the function-word detector of `pensine/language.py` could
+tell the language (min. one hit); the 2 French memories left at b2e12b1
+are the two photos of night 1, fixed afterwards (57b8f5a, checked on that
+night alone, not on a full rerun).
+
+Reading:
+
+- **No night is lost any more.** The backlog never builds up, so the move
+  and the job change reach memory, and the questions on them get answered.
+  Most of the QA gain comes from there.
+- **Invented answers went from 0 to 1-2 of 7.** With more memories, the
+  reader answers more often, sometimes wrongly on an abstention question
+  (one answer quoted a photo memory, another named a letting agency).
+  It is the reader's discipline, not the store: the question is now
+  whether those answers come from memories the gate should have stopped.
+  The model judge (Phi-4, not run here) is what measures that.
+- **The two after-runs differ** (precision 0.83 vs 0.71) although the
+  server runs at temperature 0: changes in between touch the prompt, and
+  `mlx_lm` is not bit-deterministic across runs. One seed, 37 questions:
+  differences of a few questions are noise.
+
+French non-regression (not SOURCED: 8 synthetic French and 8 English
+deposits, batches of 4, same model, `VERIFY=code`), share of memories in
+the deposits' language: French 14/14 before, 8/8 after; English 0/8
+before, 8/8 after.

@@ -101,6 +101,12 @@ Ta tâche — rejouer la journée et en extraire les mémoires :
    chaque nuit efface la trajectoire au lieu de la dessiner. Omets un axe que
    rien n'éclaire plutôt que de le deviner.
 
+7. **Langue** : chaque événement porte `langue` (code ISO) quand elle est
+   connue. Écris chaque mémoire — `content`, et aussi `quoi`, `raison`,
+   `note` — dans la langue de ses événements sources, sans traduire : un dépôt
+   en anglais donne une mémoire en anglais, un dépôt en français une mémoire
+   en français. Les extraits `preuve` restent copiés tels quels.
+
 {{CONSTITUTION}}
 
 Réponds UNIQUEMENT avec un objet JSON (aucun texte autour) :
@@ -139,3 +145,5 @@ Réponds UNIQUEMENT avec un objet JSON (aucun texte autour) :
   ]
 }
 ```
+
+{{LANGUAGE}}

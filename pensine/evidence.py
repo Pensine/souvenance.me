@@ -34,7 +34,7 @@ import unicodedata
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-from . import config, injection
+from . import config, injection, language
 
 MAX_CITATION = 300
 _NUM = re.compile(r"\d+(?:[.,]\d+)?")
@@ -243,7 +243,7 @@ tiers ne soutient pas un fait accompli.
 
 Réponds UNIQUEMENT en JSON :
 {{"verdict": "soutenue|partielle|non_soutenue",
-  "correction": "si partielle : la même mémoire réécrite sans ce que les extraits ne disent pas, sinon null"}}"""
+  "correction": "si partielle : la même mémoire réécrite sans ce que les extraits ne disent pas, dans la langue de la memoire, sinon null"}}"""
 
 
 def relecture(memory: dict, citations: list[str], ask, extract_json) -> dict | None:
@@ -251,10 +251,20 @@ def relecture(memory: dict, citations: list[str], ask, extract_json) -> dict | N
         {"type": memory.get("type"), "memoire": memory.get("content"), "extraits": citations},
         ensure_ascii=False))
     try:
-        out = extract_json(ask(RELECTURE.format(token=token, material=material)))
+        prompt = RELECTURE.format(token=token, material=material)
+        code = language.detect(memory.get("content") or "", min_hits=1)
+        if code in language.WRITE_IN:  # named, and said in that language
+            prompt += ("\n\nLangue de la correction : " + language.NAMES[code][0] + ". "
+                       + language.WRITE_IN[code])
+        out = extract_json(ask(prompt))
     except Exception:
         return None
     return out if isinstance(out, dict) and out.get("verdict") else None
+
+
+def _language_changed(before: str, after: str) -> bool:
+    a, b = (language.detect(t, min_hits=1) for t in (before, after))
+    return bool(a and b and a != b)
 
 
 SEVERITES = ("desactive", "defaut", "strict")
@@ -340,6 +350,10 @@ def verify(memories: list[dict], events: list[dict], *, owner: str = "", ask=Non
         elif verdict["verdict"] == "partielle" and severity != "strict":
             note("relecture_partielle")
             corr = (verdict.get("correction") or "").strip()
+            if corr and _language_changed(m.get("content") or "", corr):
+                # measured: a small model "corrects" an English memory into
+                # French; the person would read their life translated
+                corr = ""
             if corr:
                 kept.append({**m, "content": corr, "evidence": {
                     **ev, "statut": "corrigee", "avant": m.get("content")}})

@@ -1,0 +1,1410 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "1bb37f1",
+  "llm_backend": "openai",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 0,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-04",
+    "events": 3,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-05",
+    "events": 1,
+    "memories_written": 1,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 1,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-06",
+    "events": 2,
+    "memories_written": 1,
+    "memories_rejected": 8,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 2,
+    "batches_failed": 1,
+    "events_pending": 0,
+    "llm_calls": 2,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 1,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-07",
+    "events": 2,
+    "memories_written": 3,
+    "memories_rejected": 2,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-08",
+    "events": 1,
+    "memories_written": 2,
+    "memories_rejected": 3,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-09",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 6,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-10",
+    "events": 2,
+    "memories_written": 6,
+    "memories_rejected": 6,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 2,
+    "batches_failed": 1,
+    "events_pending": 0,
+    "llm_calls": 2,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-11",
+    "events": 5,
+    "memories_written": 9,
+    "memories_rejected": 1,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 9,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-12",
+    "events": 3,
+    "memories_written": 3,
+    "memories_rejected": 2,
+    "memories_corrected": 0,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-13",
+    "events": 1,
+    "memories_written": 3,
+    "memories_rejected": 4,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-14",
+    "events": 3,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-15",
+    "events": 2,
+    "memories_written": 3,
+    "memories_rejected": 1,
+    "memories_corrected": 3,
+    "memories_revised": 3,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 2
+   },
+   {
+    "day": "2025-02-16",
+    "events": 2,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 1
+   }
+  ]
+ },
+ "track": "T",
+ "data": "sample",
+ "seconds": 3547.5,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Photo prise le 3 février 2025 à 16h26. Localisation GPS : 51.05710, 3.70539.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Photo taken on 2025-02-03 at 16:26. GPS: 51.05710, 3.70539."
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "content": "Photo prise le 3 février 2025 à 17h11. Localisation GPS : 51.04428, 3.70178.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Photo taken on 2025-02-03 at 17:11. GPS: 51.04428, 3.70178."
+      }
+     ]
+    },
+    {
+     "id": "3",
+     "content": "Walked around the botanical garden today.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Walked around the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "4",
+     "content": "Made soup with whatever was left in the fridge.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Made soup with whatever was left in the fridge."
+      }
+     ]
+    },
+    {
+     "id": "5",
+     "content": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413."
+      }
+     ]
+    },
+    {
+     "id": "6",
+     "content": "Work is busy; being an operations manager is never boring.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Work- Work is busy, being an operations like, manager is never boring."
+      }
+     ]
+    },
+    {
+     "id": "7",
+     "content": "Relationship with Priya Sorensen exists; she expressed missing the speaker.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Hi um, you, Work- Work is busy, being an operations like, manager is never boring. Miss you!"
+      }
+     ]
+    },
+    {
+     "id": "8",
+     "content": "Contradiction between the statement that work is never boring and the admission that work is busy, implying a potential disconnect between the nature of the work and the speaker's experience of it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Work- Work is busy, being an operations like, manager is never boring."
+      }
+     ]
+    },
+    {
+     "id": "9",
+     "content": "Living at 51 Orchard Close in Ghent since December 2022. Had a long day, but considered it a good one.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      },
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Long day, but a good one."
+      }
+     ]
+    },
+    {
+     "id": "10",
+     "content": "Attempted to go to bed earlier this week and practiced Arabic using a podcast during the commute home.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Trying to go to bed earlier this week.\nPractised my Arabic with a podcast on the way home."
+      }
+     ]
+    },
+    {
+     "id": "11",
+     "content": "Diagnosed with a bad chest cold requiring rest and fluids; assessed by Riverside Medical Practice on 2025-02-07.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Patient: Kofi Achebe\nDate of visit: 7 February 2025\nAssessment: a bad chest cold\nPlan: rest and fluids"
+      }
+     ]
+    },
+    {
+     "id": "12",
+     "content": "Living at 51 Orchard Close in Ghent since December 2022; spent the day resting due to illness. Turns out it's a bad chest cold today.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+      }
+     ]
+    },
+    {
+     "id": "13",
+     "content": "Watered the plants on the balcony on 2025-02-07.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Watered the plants on the balcony."
+      }
+     ]
+    },
+    {
+     "id": "14",
+     "content": "Coffee with Oskar at the harbour footpath yesterday.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Oskar at the harbour footpath yesterday."
+      }
+     ]
+    },
+    {
+     "id": "15",
+     "content": "Coffee with Hollis at the botanical garden today.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Hollis at the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "16",
+     "content": "Miss Bristol sometimes, it's where I grew up. The weather was grey all morning. My birthday is on 1 May, reminder to plan something.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Miss Bristol sometimes, it's where I grew up.\nThe weather was grey all morning.\nMy birthday is on 1 May, reminder to plan something."
+      }
+     ]
+    },
+    {
+     "id": "17",
+     "content": "Hollis Petrov called to say things are good in Montreal and to express missing the speaker.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Hey! Things are good here um, in like, Montreal. Miss- Miss you!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Photo prise le 3 février 2025 à 16h26. Localisation GPS : 51.05710, 3.70539.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Photo taken on 2025-02-03 at 16:26. GPS: 51.05710, 3.70539."
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "content": "Photo prise le 3 février 2025 à 17h11. Localisation GPS : 51.04428, 3.70178.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 1.0,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Photo taken on 2025-02-03 at 17:11. GPS: 51.04428, 3.70178."
+      }
+     ]
+    },
+    {
+     "id": "3",
+     "content": "Walked around the botanical garden today.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Walked around the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "4",
+     "content": "Made soup with whatever was left in the fridge.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Made soup with whatever was left in the fridge."
+      }
+     ]
+    },
+    {
+     "id": "5",
+     "content": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413."
+      }
+     ]
+    },
+    {
+     "id": "6",
+     "content": "Work is busy; being an operations manager is never boring.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Work- Work is busy, being an operations like, manager is never boring."
+      }
+     ]
+    },
+    {
+     "id": "7",
+     "content": "Relationship with Priya Sorensen exists; she expressed missing the speaker.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Hi um, you, Work- Work is busy, being an operations like, manager is never boring. Miss you!"
+      }
+     ]
+    },
+    {
+     "id": "8",
+     "content": "Contradiction between the statement that work is never boring and the admission that work is busy, implying a potential disconnect between the nature of the work and the speaker's experience of it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Work- Work is busy, being an operations like, manager is never boring."
+      }
+     ]
+    },
+    {
+     "id": "9",
+     "content": "Living at 51 Orchard Close in Ghent since December 2022. Had a long day, but considered it a good one.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      },
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Long day, but a good one."
+      }
+     ]
+    },
+    {
+     "id": "10",
+     "content": "Attempted to go to bed earlier this week and practiced Arabic using a podcast during the commute home.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Trying to go to bed earlier this week.\nPractised my Arabic with a podcast on the way home."
+      }
+     ]
+    },
+    {
+     "id": "11",
+     "content": "Diagnosed with a bad chest cold requiring rest and fluids; assessed by Riverside Medical Practice on 2025-02-07.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Patient: Kofi Achebe\nDate of visit: 7 February 2025\nAssessment: a bad chest cold\nPlan: rest and fluids"
+      }
+     ]
+    },
+    {
+     "id": "12",
+     "content": "Living at 51 Orchard Close in Ghent since December 2022; spent the day resting due to illness. Turns out it's a bad chest cold today.",
+     "valid_from": "2025-02-07",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Turns out it's a bad chest cold today. Rest and fluids it is."
+      }
+     ]
+    },
+    {
+     "id": "13",
+     "content": "Watered the plants on the balcony on 2025-02-07.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Watered the plants on the balcony."
+      }
+     ]
+    },
+    {
+     "id": "14",
+     "content": "Coffee with Oskar at the harbour footpath yesterday.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Oskar at the harbour footpath yesterday."
+      }
+     ]
+    },
+    {
+     "id": "15",
+     "content": "Coffee with Hollis at the botanical garden today.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Coffee with Hollis at the botanical garden today."
+      }
+     ]
+    },
+    {
+     "id": "16",
+     "content": "Miss Bristol sometimes, it's where I grew up. The weather was grey all morning. My birthday is on 1 May, reminder to plan something.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Miss Bristol sometimes, it's where I grew up.\nThe weather was grey all morning.\nMy birthday is on 1 May, reminder to plan something."
+      }
+     ]
+    },
+    {
+     "id": "17",
+     "content": "Hollis Petrov called to say things are good in Montreal and to express missing the speaker.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Hey! Things are good here um, in like, Montreal. Miss- Miss you!"
+      }
+     ]
+    },
+    {
+     "id": "18",
+     "content": "Met Oskar at the harbour footpath today.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Met Oskar at the harbour footpath today."
+      }
+     ]
+    },
+    {
+     "id": "19",
+     "content": "Paid the rent, 680 EUR.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.98,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Paid the rent, 680 EUR."
+      }
+     ]
+    },
+    {
+     "id": "20",
+     "content": "Finally cleaned the kitchen properly.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Finally cleaned the kitchen properly."
+      }
+     ]
+    },
+    {
+     "id": "21",
+     "content": "If the Turin offer ever comes through, I'd honestly move there in a heartbeat.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "If the Turin offer ever comes through, I'd honestly move there in a heartbeat."
+      }
+     ]
+    },
+    {
+     "id": "22",
+     "content": "Finally cleaned the kitchen properly.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.98,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Finally cleaned the kitchen properly."
+      }
+     ]
+    },
+    {
+     "id": "23",
+     "content": "The day involved a mix of illness requiring rest, a productive cleaning task, and social interaction with Oskar at the harbour footpath. The contrast between the physical ailment (bad chest cold) and the successful completion of the kitchen cleaning suggests a resilience in daily routine despite health setbacks. This is supported by the fact that the kitchen was finally cleaned properly, and by the mention of my best friend Kasper living in Edinburgh these days.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Finally cleaned the kitchen properly.\nmy best friend Kasper lives in Edinburgh these days."
+      }
+     ]
+    },
+    {
+     "id": "24",
+     "content": "The day involved a mix of illness requiring rest, a productive cleaning task, and social interaction with Oskar at the harbour footpath. The contrast between the physical ailment (bad chest cold) and the successful completion of the kitchen cleaning suggests a resilience in daily routine despite health setbacks. This is supported by the fact that the kitchen was finally cleaned properly, and by the mention of my best friend Kasper living in Edinburgh these days. I've been working as a backend engineer at Northwind Analytics since December 2021. I walked around the hilltop viewpoint today.",
+     "valid_from": "2025-02-11",
+     "valid_to": "2025-02-12",
+     "current": false,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Finally cleaned the kitchen properly. I've been working as a backend engineer at Northwind Analytics since December 2021. Walked around the hilltop viewpoint today."
+      }
+     ]
+    },
+    {
+     "id": "25",
+     "content": "Finally cleaned the kitchen properly.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Finally cleaned the kitchen properly."
+      },
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Finally cleaned the kitchen properly."
+      }
+     ]
+    },
+    {
+     "id": "26",
+     "content": "Living at 51 Orchard Close in Ghent since December 2022; spent the day resting due to illness. Turns out it's a bad chest cold today. I've been working as a backend engineer at Northwind Analytics since December 2021. Walked around the hilltop viewpoint today.",
+     "valid_from": "2025-02-11",
+     "valid_to": "2025-02-12",
+     "current": false,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Finally cleaned the kitchen properly. I've been working as a backend engineer at Northwind Analytics since December 2021. Walked around the hilltop viewpoint today."
+      }
+     ]
+    },
+    {
+     "id": "27",
+     "content": "Walked around the hilltop viewpoint today.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Finally cleaned the kitchen properly. I've been working as a backend engineer at Northwind Analytics since December 2021. Walked around the hilltop viewpoint today."
+      }
+     ]
+    },
+    {
+     "id": "28",
+     "content": "Photo taken on 2025-02-11 at 11:40. GPS: 51.04755, 3.72139.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "Photo taken on 2025-02-11 at 11:40. GPS: 51.04755, 3.72139."
+      }
+     ]
+    },
+    {
+     "id": "29",
+     "content": "Work is busy; being a sales lead is never boring.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Hey! Work is busy, being a sales lead is never boring. Call me this weekend?"
+      }
+     ]
+    },
+    {
+     "id": "30",
+     "content": "Things are good here in Rotterdam.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Hi- Hi so, you, Things are uh, good you know, here in Rotterdam. Call me this weekend?"
+      }
+     ]
+    },
+    {
+     "id": "31",
+     "content": "Things are good here in Montreal.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Quick update. Things are good here in Montreal. Call- Call me this so, weekend?"
+      }
+     ]
+    },
+    {
+     "id": "32",
+     "content": "Contradiction between the statement that work is never boring and the admission that work is busy, implying a potential disconnect between the nature of the work and the speaker's experience of it.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Hey! Work is busy, being a sales lead is never boring. Call me this weekend?"
+      }
+     ]
+    },
+    {
+     "id": "33",
+     "content": "Accepted the position of research assistant at Silverfern Energy with a start date of 15 February 2025. Started a new book but progress has been slow. Had to return a dish due to a sesame allergy.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "I accepted the research assistant job at Silverfern Energy, I start on 15 February 2025."
+      },
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Had to send the dish back, I'm allergic to sesame."
+      }
+     ]
+    },
+    {
+     "id": "34",
+     "content": "The speaker works as a backend engineer at Northwind Analytics since December 2021, but has now accepted a new role as a research assistant at Silverfern Energy starting 15 February 2025.",
+     "valid_from": "2025-02-12",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "I accepted the research assistant job at Silverfern Energy, I start on 15 February 2025."
+      }
+     ]
+    },
+    {
+     "id": "35",
+     "content": "Took a photo at 12:02 on 2025-02-12. GPS coordinates: 51.06624, 3.72928.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Photo taken on 2025-02-12 at 12:02. GPS: 51.06624, 3.72928."
+      }
+     ]
+    },
+    {
+     "id": "36",
+     "content": "I have been living at 51 Orchard Close in Ghent since December 2022.",
+     "valid_from": "2022-12-01",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 0.98,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+      }
+     ]
+    },
+    {
+     "id": "37",
+     "content": "Kasper lives in Edinburgh these days.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "Kasper lives in Edinburgh these days."
+      }
+     ]
+    },
+    {
+     "id": "38",
+     "content": "The train was a few minutes late.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "The train was a few minutes late."
+      }
+     ]
+    },
+    {
+     "id": "39",
+     "content": "Photo taken on 2025-02-14 at 08:49. GPS: 45.75081, 4.83579.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "Photo taken on 2025-02-14 at 08:49. GPS: 45.75081, 4.83579."
+      }
+     ]
+    },
+    {
+     "id": "40",
+     "content": "Made soup with whatever was left in the fridge. Dentist appointment yesterday, all fine. I keep thinking about adopting a dog, maybe next year.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Made soup with whatever was left in the fridge.\nDentist appointment yesterday, all fine.\nI keep thinking about adopting a dog, maybe next year."
+      }
+     ]
+    },
+    {
+     "id": "41",
+     "content": "Work is busy; being a sales lead is never boring. The speaker is missing the interlocutor.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "Hey! Work is busy, being a sales I mean, lead is never you know, boring. Miss you!"
+      }
+     ]
+    },
+    {
+     "id": "42",
+     "content": "Contradiction between the statement that work is never boring and the admission that work is busy, implying a potential disconnect between the nature of the work and the speaker's experience of it.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Made soup with whatever was left in the fridge.\nDentist appointment yesterday, all fine.\nI keep thinking about adopting a dog, maybe next year."
+      }
+     ]
+    },
+    {
+     "id": "43",
+     "content": "The weather was grey all morning. Got the keys today: the new place is 79 Linden Street, Ghent. The day was marked by a bad chest cold requiring rest, followed by a productive cleaning task in the kitchen and social interaction with Oskar at the harbour footpath. The contrast between the physical ailment and the successful completion of the cleaning suggests resilience in daily routine despite health setbacks.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "The weather was grey all morning.\nGot the keys today: the new place is 79 Linden Street, Ghent."
+      }
+     ]
+    },
+    {
+     "id": "44",
+     "content": "Kofi Achebe a obtenu les clés aujourd'hui : le nouveau logement est situé au 79 Linden Street, Ghent. Il remplace son adresse précédente, 51 Orchard Close, Ghent, qui était leur domicile depuis décembre 2022. Le bailleur est Rowan Property Lettings, le début du bail est fixé au 15 février 2025 et le loyer mensuel est de 1340 EUR.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.98,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Got the keys today: the new place is 79 Linden Street, Ghent."
+      },
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Landlord: Rowan Property Lettings\nTenant: Kofi Achebe\nPremises: 79 Linden Street, Ghent\nLease start date: 15 February 2025\nMonthly rent: 1340 EUR"
+      }
+     ]
+    },
+    {
+     "id": "45",
+     "content": "Kofi Achebe a payé 680 EUR de loyer, probablement couvrant un mois partiel ou un acompte spécifique, distinct du loyer mensuel complet de 1340 EUR pour le nouveau bail.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Monthly rent: 1340 EUR"
+      }
+     ]
+    },
+    {
+     "id": "46",
+     "content": "Photo taken on 2025-02-16 at 17:22. GPS: 51.05485, 3.73550.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Photo taken on 2025-02-16 at 17:22. GPS: 51.05485, 3.73550."
+      }
+     ]
+    },
+    {
+     "id": "47",
+     "content": "First day as research assistant at Silverfern Energy yesterday. Made soup with whatever was left in the fridge. Bank adviser appointment today, all fine.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "First day as research assistant at Silverfern Energy yesterday. Made soup with whatever was left in the fridge. Bank adviser appointment today, all fine."
+      }
+     ]
+    },
+    {
+     "id": "48",
+     "content": "Kofi Achebe est assistant de recherche chez Silverfern Energy à partir du 15 février 2025.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "First day as research assistant at Silverfern Energy yesterday."
+      }
+     ]
+    },
+    {
+     "id": "49",
+     "content": "Bank adviser appointment scheduled for today (2025-02-16).",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Bank adviser appointment today, all fine."
+      }
+     ]
+    },
+    {
+     "id": "50",
+     "content": "The speaker mentions making soup with whatever was left in the fridge on 2025-02-04 and 2025-02-14. On 2025-02-16, the speaker also made soup with whatever was left in the fridge.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Made soup with whatever was left in the fridge."
+      },
+      {
+       "deposit_id": "D0033",
+       "excerpt": "First day as research assistant at Silverfern Energy yesterday. Made soup with whatever was left in the fridge."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1340 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Edinburgh",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Sesame",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "1 May",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "Miss Bristol",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Silverfern Energy",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Arabic",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "15 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "15 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "7 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "2025-02-13",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "botanical garden",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "Rowan Property Lettings",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

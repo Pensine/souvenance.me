@@ -145,11 +145,15 @@ class PensineSystem(MemorySystem):
                       f"{len(events)} events carried over", file=sys.stderr, flush=True)
                 return
             conn.commit()
-            self.gate.append({"day": day.isoformat(), **{k: r.get(k) for k in (
-                "memories_written", "memories_rejected", "memories_corrected",
-                "memories_revised")}})
-            print(f"night {day}: {r.get('memories_written')} written, "
-                  f"{r.get('memories_rejected')} rejected", file=sys.stderr, flush=True)
+            self.gate.append({"day": day.isoformat(), "events": len(events), **{
+                k: r.get(k) for k in (
+                    "memories_written", "memories_rejected", "memories_corrected",
+                    "memories_revised", "batches", "batches_failed", "events_pending",
+                    "llm_calls", "answers_repaired", "answers_truncated",
+                    "language_checked", "language_mismatched") if k in r}})
+            print(f"night {day}: {len(events)} events, {r.get('memories_written')} written, "
+                  f"{r.get('memories_rejected')} rejected, "
+                  f"{r.get('events_pending', 0)} left pending", file=sys.stderr, flush=True)
 
     def _scripted(self, conn, events) -> dict:
         """The stand-in for the consolidation model (scripted mode only)."""
