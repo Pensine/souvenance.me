@@ -10,8 +10,8 @@ The reconciliation: when PENSINE_SHRED=1, each new deposit is sealed
 or one scope per subject chosen at deposit time. The keys live OUTSIDE the
 database, in PENSINE_KEYS_DIR, hence outside the SQL dumps. Forgetting a scope:
   1. purge the projections derived from the deposits concerned (memories and
-     their embeddings, links, graph edges, relationship states, steps,
-     proposals, media); memories that mixed in other deposits are deleted and
+     their embeddings, links, graph edges, relationship states, identity
+     claims, event-time bounds, steps, proposals, media); memories that mixed in other deposits are deleted and
      those other deposits are put back up for consolidation: they will be
      recomputed without what was forgotten;
   2. destroy the key. The journal row remains, intact and unreadable:
@@ -234,12 +234,17 @@ def purge_projections(conn, event_ids: list[int]) -> dict:
         return {}
     ev = sorted(set(event_ids))
     mems = conn.execute(
-        "SELECT id, source_event_ids FROM memories WHERE source_event_ids && %s::bigint[]",
-        (ev,)).fetchall()
+        "SELECT id, source_event_ids, subject_entity_id FROM memories "
+        "WHERE source_event_ids && %s::bigint[]", (ev,)).fetchall()
     mem_ids = _ids(mems)
     # the other deposits of these memories will be re-consolidated, without the forgotten one
     others = sorted({i for m in mems for i in (m["source_event_ids"] or []) if i not in ev})
     counts = {"memoires": len(mem_ids), "a_reconsolider": len(others)}
+    # event-time bounds (pensine/dating.py) quote their deposit: those that
+    # quote a forgotten one go, and so do those of the memories that go
+    counts["bornes"] = conn.execute(
+        "DELETE FROM memory_time_bounds WHERE source_event_id = ANY(%s) "
+        "OR memory_id = ANY(%s)", (ev, mem_ids)).rowcount
     if others:
         conn.execute("DELETE FROM consolidation_marks WHERE event_id = ANY(%s)", (others,))
     if mem_ids:
@@ -255,16 +260,48 @@ def purge_projections(conn, event_ids: list[int]) -> dict:
     states = conn.execute(
         "DELETE FROM relation_states WHERE source_event_ids && %s::bigint[] "
         "RETURNING entity_id", (ev,)).fetchall()
+    # identity claims proven by these deposits (pensine/identity.py): their
+    # excerpt quotes the deposit, so they go with it; edges that other
+    # deposits attached through them keep their facts but lose the pointer
+    # memories other deposits attached through these claims keep their
+    # subject but lose the pointer to the claim, like edges below
+    # inferred claims (migration 018) quote several deposits in `supports`:
+    # forgetting any one of them takes the hypothesis, and its proposal, along
+    claims_of = """SELECT id FROM entity_aliases WHERE source_event_id = ANY(%s)
+                   OR EXISTS (SELECT 1 FROM jsonb_array_elements(supports) s
+                              WHERE (s->>'alias_event_id')::bigint = ANY(%s)
+                                 OR (s->>'name_event_id')::bigint = ANY(%s))"""
+    conn.execute(f"UPDATE memories SET subject_alias_id = NULL WHERE subject_alias_id IN "
+                 f"({claims_of})", (ev, ev, ev))
+    conn.execute(f"UPDATE entity_aliases SET promoted_to = NULL WHERE promoted_to IN "
+                 f"({claims_of})", (ev, ev, ev))
+    aliases = conn.execute(
+        f"DELETE FROM entity_aliases WHERE id IN ({claims_of}) "
+        "RETURNING id, entity_id, proposal_id", (ev, ev, ev)).fetchall()
+    linked = [a["proposal_id"] for a in aliases if a["proposal_id"]]
+    if linked:
+        conn.execute("DELETE FROM memory_proposals WHERE id = ANY(%s) AND event_id IS NULL",
+                     (linked,))
+    alias_ids = _ids(aliases)
+    if alias_ids:
+        conn.execute(
+            """UPDATE relations SET via_alias_ids = ARRAY(
+                   SELECT x FROM unnest(via_alias_ids) AS x WHERE NOT (x = ANY(%s)))
+               WHERE via_alias_ids && %s::bigint[]""", (alias_ids, alias_ids))
     counts["aretes"], counts["etats_relation"] = len(rels), len(states)
+    counts["alias"] = len(aliases)
     touched = sorted({i for r in rels for i in (r["subject_id"], r["object_id"]) if i}
-                     | {r["entity_id"] for r in states})
+                     | {r["entity_id"] for r in states} | {a["entity_id"] for a in aliases}
+                     | {m["subject_entity_id"] for m in mems if m["subject_entity_id"]})
     if touched:
         counts["entites"] = conn.execute(
             """DELETE FROM entities e WHERE e.id = ANY(%s)
                AND NOT EXISTS (SELECT 1 FROM relations r
                                WHERE r.subject_id = e.id OR r.object_id = e.id)
                AND NOT EXISTS (SELECT 1 FROM relation_states s WHERE s.entity_id = e.id)
-               AND NOT EXISTS (SELECT 1 FROM voiceprints v WHERE v.entity_id = e.id)""",
+               AND NOT EXISTS (SELECT 1 FROM voiceprints v WHERE v.entity_id = e.id)
+               AND NOT EXISTS (SELECT 1 FROM entity_aliases a WHERE a.entity_id = e.id)
+               AND NOT EXISTS (SELECT 1 FROM memories m WHERE m.subject_entity_id = e.id)""",
             (touched,)).rowcount
     counts["etapes"] = conn.execute(
         "DELETE FROM intentions WHERE source_event_ids && %s::bigint[]", (ev,)).rowcount

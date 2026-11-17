@@ -1,0 +1,1076 @@
+{
+ "judge": "model:claude-sonnet-5-5:prompt-7dfb69b6cd34",
+ "system": "pensine b111d05",
+ "seed": 0,
+ "only_judge_supported": true,
+ "thresholds": {
+  "strict_detection_min": 0.9,
+  "verbatim_false_alarm_max": 0.1
+ },
+ "mutations": {
+  "n": 60,
+  "detected": 58,
+  "rate": 0.9667,
+  "strict": {
+   "n": 31,
+   "detected": 31,
+   "rate": 1.0
+  },
+  "by_kind": {
+   "number": {
+    "n": 7,
+    "detected": 7,
+    "rate": 1.0
+   },
+   "date": {
+    "n": 13,
+    "detected": 11,
+    "rate": 0.8462
+   },
+   "person_outside": {
+    "n": 17,
+    "detected": 17,
+    "rate": 1.0
+   },
+   "person_inside": {
+    "n": 16,
+    "detected": 16,
+    "rate": 1.0
+   },
+   "place": {
+    "n": 7,
+    "detected": 7,
+    "rate": 1.0
+   }
+  },
+  "excerpt_still_called_supporting": 0.0167
+ },
+ "verbatim": {
+  "n": 30,
+  "false_alarms": 0,
+  "rate": 0.0
+ },
+ "passes": true,
+ "items": [
+  {
+   "origin_id": "26",
+   "content": "Anton lives at 66 Kiln Lane in Rotterdam.",
+   "mutation": {
+    "kind": "number",
+    "from": "49",
+    "to": "66",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "9",
+   "content": "Anton's piano teacher lives in Cuenca now.",
+   "mutation": {
+    "kind": "place",
+    "from": "Porto",
+    "to": "Cuenca",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "14",
+   "content": "Anton picked up his sister from the summer course, Ingrid, from the station on 4 February 2025.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Maya",
+    "to": "Ingrid",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "8",
+   "content": "Anton sometimes misses Windhoek.",
+   "mutation": {
+    "kind": "place",
+    "from": "Ghent",
+    "to": "Windhoek",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "53",
+   "content": "Anton's uncle lives in Hobart now.",
+   "mutation": {
+    "kind": "place",
+    "from": "Edinburgh",
+    "to": "Hobart",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "16",
+   "content": "As of 29 January 2025, Gideon had not got the rowing machine yet.",
+   "mutation": {
+    "kind": "date",
+    "from": "4 February 2025",
+    "to": "29 January 2025",
+    "strict": false
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "2",
+   "content": "In the week of 11 February 2025, Anton is trying to go to bed earlier.",
+   "mutation": {
+    "kind": "date",
+    "from": "3 February 2025",
+    "to": "11 February 2025",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "99",
+   "content": "Anton had lunch with his uncle and Cormac.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Tomas Achebe",
+    "to": "Cormac Duarte",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "59",
+   "content": "Colette lives in Porto, near the harbour.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Ruth",
+    "to": "Colette",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "19",
+   "content": "Tomas was still waiting for the standing desk; it had not been delivered yet.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Joaquin Brennan",
+    "to": "Tomas Achebe",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "57",
+   "content": "Oksana has had the standing desk for a while already.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Joaquin",
+    "to": "Oksana",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "86",
+   "content": "Fatima works from home most days.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Clara Novak",
+    "to": "Fatima Lindqvist",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "3",
+   "content": "Anton pays 1181 EUR in rent every month.",
+   "mutation": {
+    "kind": "number",
+    "from": "1170",
+    "to": "1181",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "52",
+   "content": "Anton's birthday is on 6 April.",
+   "mutation": {
+    "kind": "date",
+    "from": "18 March",
+    "to": "6 April",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "92",
+   "content": "A photo was taken in Delfshaven, South Holland (NL) on 31 January 2025 at 10:49.",
+   "mutation": {
+    "kind": "date",
+    "from": "15 February 2025",
+    "to": "31 January 2025",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "82",
+   "content": "Marisol has had the pottery wheel for a while already.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Alba",
+    "to": "Marisol",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "22",
+   "content": "Vera Novak told Anton in a voice message on 31 January 2025 that she had passed her driving test that day.",
+   "mutation": {
+    "kind": "date",
+    "from": "5 February 2025",
+    "to": "31 January 2025",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "7",
+   "content": "Anton grew up in Asuncion.",
+   "mutation": {
+    "kind": "place",
+    "from": "Ghent",
+    "to": "Asuncion",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "11",
+   "content": "Anton was in Rotterdam, South Holland (NL) on 23 January 2025.",
+   "mutation": {
+    "kind": "date",
+    "from": "4 February 2025",
+    "to": "23 January 2025",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "33",
+   "content": "Cormac lives in Montreal, near the harbour.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Owen Fischer",
+    "to": "Cormac Duarte",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "25",
+   "content": "The speaker met their sister Marisol at the city library.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Vera",
+    "to": "Marisol",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "32",
+   "content": "Anton described 27 January 2025 as a long day, but a good one.",
+   "mutation": {
+    "kind": "date",
+    "from": "6 February 2025",
+    "to": "27 January 2025",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "88",
+   "content": "Anton ran into Joaquin.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Owen Fischer",
+    "to": "Joaquin Brennan",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "41",
+   "content": "Clara had not yet received the sewing machine.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Vera Novak",
+    "to": "Clara Novak",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "98",
+   "content": "Oksana joined the Beacon Hill Choir.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Greta",
+    "to": "Oksana",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "84",
+   "content": "Anton had coffee with Alba at the hilltop viewpoint.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Vera Novak",
+    "to": "Alba Kowalski",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "91",
+   "content": "Hemi joined the Juniper Street Youth Choir.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Joaquin",
+    "to": "Hemi",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "31",
+   "content": "Anton picked up his brother from the old flat, Ruth, from the station.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Greta Petrov",
+    "to": "Ruth Haddad",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "38",
+   "content": "Dmitri was still waiting for the pottery wheel; it had not been delivered yet.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Alba",
+    "to": "Dmitri",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "79",
+   "content": "On 4 March 2025 Anton ran the Harbour Half Marathon and finished in 2:28:59 (official time).",
+   "mutation": {
+    "kind": "date",
+    "from": "13 February 2025",
+    "to": "4 March 2025",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "49",
+   "content": "On 12 February 2025 Anton described the day as a long day, but a good one.",
+   "mutation": {
+    "kind": "date",
+    "from": "9 February 2025",
+    "to": "12 February 2025",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "17",
+   "content": "Anton's climbing partner lives in Dunedin now.",
+   "mutation": {
+    "kind": "place",
+    "from": "Montreal",
+    "to": "Dunedin",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "89",
+   "content": "Ingrid works at Halyard Sailmakers.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Owen",
+    "to": "Ingrid",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "5",
+   "content": "Vera told Anton that their bike was stolen outside the station.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Greta Petrov",
+    "to": "Vera Novak",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "24",
+   "content": "Anton had a long call with Dmitri, his sister from the old flat, in the evening.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Gideon",
+    "to": "Dmitri",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "34",
+   "content": "Vera Novak told Anton in a voice message on 26 February 2025 that her dog Otis woke her up at six again.",
+   "mutation": {
+    "kind": "date",
+    "from": "6 February 2025",
+    "to": "26 February 2025",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "81",
+   "content": "Ruth already has the sewing machine, and Anton says it looks great.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Vera Novak",
+    "to": "Ruth Haddad",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "62",
+   "content": "In the week of 14 February 2025, Anton is trying to go to bed earlier.",
+   "mutation": {
+    "kind": "date",
+    "from": "10 February 2025",
+    "to": "14 February 2025",
+    "strict": false
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "55",
+   "content": "Had coffee with Yusuf at the old market hall.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Vera",
+    "to": "Yusuf",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "75",
+   "content": "Tomas works at Corvid Mapmakers.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Ruth Haddad",
+    "to": "Tomas Achebe",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "28",
+   "content": "Anton's aunt lives in Tromso now.",
+   "mutation": {
+    "kind": "place",
+    "from": "Lyon",
+    "to": "Tromso",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "102",
+   "content": "Anton rents 56 Quarry Lane, Gothenburg from Elm Property Lettings under a lease starting 16 February 2025, at 1216 EUR per month.",
+   "mutation": {
+    "kind": "number",
+    "from": "1210",
+    "to": "1216",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "101",
+   "content": "Anton lives at 65 Quarry Lane in Gothenburg.",
+   "mutation": {
+    "kind": "number",
+    "from": "56",
+    "to": "65",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "77",
+   "content": "Marisol joined the Kiln Lane Chamber Choir.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Gideon",
+    "to": "Marisol",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "63",
+   "content": "Greta already has the rowing machine;",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Gideon Collins",
+    "to": "Greta Petrov",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "4",
+   "content": "Anton says that if the Leipzig offer ever comes through, he would move there without hesitation.",
+   "mutation": {
+    "kind": "place",
+    "from": "Edinburgh",
+    "to": "Leipzig",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "100",
+   "content": "Anton moved into his new flat at 73 Quarry Lane, Gothenburg on 16 February 2025.",
+   "mutation": {
+    "kind": "number",
+    "from": "56",
+    "to": "73",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "95",
+   "content": "Anton mentioned that Colette's company might be shutting down.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Greta",
+    "to": "Colette",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "29",
+   "content": "Anton had a long call with Tomas, his colleague, in the evening.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Alba Kowalski",
+    "to": "Tomas Achebe",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "44",
+   "content": "Anton starts as a UX researcher at Harbor & Pine Studio on 19 February 2025.",
+   "mutation": {
+    "kind": "date",
+    "from": "15 February 2025",
+    "to": "19 February 2025",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "60",
+   "content": "On 10 February 2025 Anton ran the Spring 21K and finished in 57:04.",
+   "mutation": {
+    "kind": "number",
+    "from": "10",
+    "to": "21",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "94",
+   "content": "Tomas joined the Saltmarsh Community Choir.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Vera Novak",
+    "to": "Tomas Achebe",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "93",
+   "content": "Vera Novak told Anton in a voice message on 24 February 2025 that her dog Otis woke her up at six again.",
+   "mutation": {
+    "kind": "date",
+    "from": "15 February 2025",
+    "to": "24 February 2025",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "65",
+   "content": "Someone ran the Park 9K and finished in 22:11.",
+   "mutation": {
+    "kind": "number",
+    "from": "5",
+    "to": "9",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "46",
+   "content": "Marisol joined the Harbour Gospel Choir.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Maya",
+    "to": "Marisol",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "10",
+   "content": "Anton picked up his manager Marisol from the station.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Joaquin",
+    "to": "Marisol",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "87",
+   "content": "Greta works at Pellucid Labs.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Tomas Achebe",
+    "to": "Greta Petrov",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "21",
+   "content": "Anton had a long call with Dmitri, his sister from the running club, in the evening.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Vera",
+    "to": "Dmitri",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "83",
+   "content": "Cormac has had the espresso machine for a while already.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Greta Petrov",
+    "to": "Cormac Duarte",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "74",
+   "content": "Hemi works as a UX researcher.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Greta",
+    "to": "Hemi",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "26",
+   "content": "I've been living at 49 Kiln Lane in Rotterdam.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "9",
+   "content": "My piano teacher lives in Porto now.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "14",
+   "content": "Picked up my sister from the summer course Maya from the station.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "53",
+   "content": "My uncle lives in Edinburgh now.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "16",
+   "content": "Gideon has not got the rowing machine yet.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "2",
+   "content": "Trying you know, to go to um, bed earlier you know, this um, week.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "96",
+   "content": "Started a new book, slow so far.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "99",
+   "content": "Lunch with my uncle and Tomas today.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "59",
+   "content": "Ruth lives in Porto, near the harbour.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "19",
+   "content": "Joaquin is still waiting for the standing desk, not delivered yet.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "69",
+   "content": "My uncle works at Pellucid Labs.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "57",
+   "content": "Joaquin has had the standing desk for a while already.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "45",
+   "content": "Busy week at Northwind Analytics, the usual sales lead stuff.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "86",
+   "content": "Clara works from home most days.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "3",
+   "content": "Rent went out, 1170 EUR as every month.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "52",
+   "content": "My birthday is on 18 March, reminder to plan something.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "82",
+   "content": "Alba has had the pottery wheel for a while already.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "72",
+   "content": "My aunt works from home most days.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "22",
+   "content": "I passed a you know, driving test so, today!",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "27",
+   "content": "In the end I did not sign up for the marathon, not this year.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "64",
+   "content": "Gideon already has the rowing machine, it looks great.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "33",
+   "content": "Owen lives in Montreal, near the harbour.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "25",
+   "content": "Met my sister Vera at the city library today.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "32",
+   "content": "Long day, but a good one.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "88",
+   "content": "Ran into Owen, who works at Halyard Sailmakers.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "41",
+   "content": "Vera has not got the sewing machine yet.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "98",
+   "content": "Greta joined the Beacon Hill Choir today.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "84",
+   "content": "Coffee with Vera at the hilltop viewpoint today.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "48",
+   "content": "Cormac asked about my sister from the summer course, who works at Thistledown Instruments.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "103",
+   "content": "Practised my Italian with a podcast on the way home.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  }
+ ]
+}

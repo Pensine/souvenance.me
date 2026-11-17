@@ -1,0 +1,3896 @@
+{
+ "system": {
+  "name": "mem0",
+  "mem0ai": "2.2.1",
+  "llm": "claude-cli:claude-sonnet-5-5",
+  "embedder": "nomic-ai/nomic-embed-text-v1.5",
+  "store": "qdrant local",
+  "top_k": 10,
+  "failed_adds": 0
+ },
+ "track": "T",
+ "data": "sample-test-s6",
+ "seconds": 827.9,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "06912429-5164-455e-b086-1c15e6323b57",
+     "content": "As of February 5, 2025, Maya's home is Gothenburg, according to Ivo Okafor's note",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0764d3b4-fcb0-45f2-bb23-26365d40fd44",
+     "content": "On February 9, 2025, Ivo Okafor messaged Talia Castillo that it rained on and off all afternoon, repeating a weather note made on earlier days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "097a827d-f1ea-4c2d-83b2-e3a3aeeb0e00",
+     "content": "As of February 4, 2025, Ivo Okafor's piano teacher lives in Edinburgh",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0c055dbf-b45f-4889-9570-0449dcb8f782",
+     "content": "Ivo Okafor noted on February 8, 2025 that Cormac is still without the rowing machine",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0c4c015b-e02b-46da-9f8f-0654c4c90809",
+     "content": "Marco became a member of the Juniper Street Youth Choir on February 8, 2025, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13645950-6323-4810-8f99-e10b6bd41d10",
+     "content": "Dev's pottery wheel finally arrived as of February 5, 2025, after the delivery had been late, and Dev is thrilled with it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13e7abbb-1f13-4e9d-a826-38a5e9a11a71",
+     "content": "Ivo Okafor noted on February 6, 2025 that they felt tired that night, describing it as a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14fe45b6-14ad-4ecc-bc25-39dab1d6d512",
+     "content": "Ivo Okafor was seen at Riverside Medical Practice on February 5, 2025, and diagnosed with a bad chest cold; the treatment given was rest and fluids, with instructions to return if there is no improvement",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "15862c67-894c-493b-959e-e0e442b90eff",
+     "content": "Ivo Okafor bumped into Dev at the hilltop viewpoint on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1d7af6b8-f71a-4d9e-80da-e012a1320fbf",
+     "content": "The espresso machine reached Ivo Okafor's sister Ezra by February 7, 2025, after an earlier delivery delay, and Ezra is thrilled with it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1f2fcf96-adf5-4ab0-82b9-afd354cd84ba",
+     "content": "Ivo Okafor noted on February 8, 2025 that the kitchen was finally spotless, down to every shelf",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21d9de64-12d2-4ead-8297-5b4bc3fda5cb",
+     "content": "As of February 8, 2025, Ivo Okafor had ordered a standing desk that had still not arrived, and told Talia Castillo there was still no sign of it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "288251f8-2f32-4fd4-8799-eab3e2c818d1",
+     "content": "Ivo Okafor's goal for the week of February 4, 2025 is to have lights out by eleven",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2894a378-c08e-4c37-95bf-8212d512da4b",
+     "content": "As of February 9, 2025, Ivo Okafor's flatmate is employed by Wickerfield Nursery",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30acab5a-f29f-4bd3-b78f-86196b9afc9f",
+     "content": "As of February 4, 2025, Owen has a flat in Rotterdam",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3210cd15-3c67-4616-b9f5-443437221a91",
+     "content": "Ivo Okafor reported on February 6, 2025 that the kitchen was finally spotless, down to every shelf",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "345fdedb-668e-42f5-b94c-11227892d4c8",
+     "content": "Ivo Okafor accepted the research assistant position at Kestrel Logistics on February 3, 2025, with a start date of February 11, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34974203-eee6-4f91-af7d-f9050adba052",
+     "content": "Ivo Okafor's brother Dev phoned them on the evening of February 5, 2025, and they talked for ages",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34e8e050-6875-4df8-91ce-ccde16c4efca",
+     "content": "Jonah Haddad messaged Ivo Okafor on February 6, 2025 to say they passed a driving test that day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "359ad5bd-0c1f-4293-8489-4598570fa8db",
+     "content": "As of February 4, 2025 (22:51), Ivo Okafor's coffee filters had run out again and Ivo wanted them added to the shopping list, repeating the same note made earlier on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3d3c6cfb-28e8-451a-abd5-e47daaae5848",
+     "content": "Ivo Okafor had tea with their colleague Yusuf at the station café on February 4, 2025, before taking the evening train",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42bc56fc-3969-4058-9bfd-71f1abd68d79",
+     "content": "As of February 4, 2025, Ivo Okafor's sister Ezra is in Valencia",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45ed5ed8-803c-4078-9e71-eec9397013a3",
+     "content": "As of February 3, 2025, Ivo Okafor's flatmate lives in Gothenburg",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "49e7bce6-4376-4124-a3bd-fd23f74be8a2",
+     "content": "Ivo Okafor transferred 760 EUR for rent on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4ef1671e-f9ae-4f95-91e5-ee82d8b44700",
+     "content": "As of February 4, 2025, Ivo Okafor's coffee filters had run out again and Ivo wanted them added to the shopping list, repeating a note from February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5140da8d-bd43-425b-8927-61db8d5f4c05",
+     "content": "Ivo Okafor noted on February 3, 2025 that music was coming through the wall from next door again, indicating a recurring noise issue from the neighbors",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "51b89d54-f8da-445c-8a9d-d11ca27718e9",
+     "content": "Ivo Okafor took a photo on February 4, 2025 at 09:33 with GPS coordinates 45.08166, 7.68210",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "51fc0f50-0a2d-41f5-b76d-97f4d44ee539",
+     "content": "On February 8, 2025, Ivo Okafor messaged Talia Castillo that the coffee filters were out again and asked for them to be added to the list, repeating the same note made on earlier days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "57c6a94a-5d49-4b6d-94cd-5a1910de250c",
+     "content": "Ivo Okafor's first working day as research assistant at Kestrel Logistics is February 11, 2025, and the offer letter asks them to countersign it and send it back",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5805f7f5-3b2e-465c-90a1-1bb8bc48130d",
+     "content": "On February 7, 2025, Ivo Okafor noted that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5a08c57e-8b03-4ae2-9c07-2c9bf25988e8",
+     "content": "Ivo Okafor's best friend Jonah came over for dinner and stayed until midnight, as noted in a message to Talia Castillo on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5a2c13c2-d9e7-49bd-bbce-fad2292a795f",
+     "content": "Jonah, Ivo Okafor's best friend, became a member of the Old Mill Folk Choir on the morning of February 8, 2025, as noted by Ivo",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "63343253-83cb-4794-901b-9333341b6225",
+     "content": "On February 3, 2025, Ivo Okafor noted that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6338edfc-b274-4aec-93b4-f4f4977ab3b5",
+     "content": "As of February 4, 2025, Ivo Okafor's sister Ezra has not yet received an espresso machine because the delivery is late",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "635854f3-521e-4da7-ab2c-822b4e25fc1a",
+     "content": "Ivo Okafor's sister Ezra phoned them on the evening of February 6, 2025, and they talked for ages",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "68bc32be-f299-420f-8cbd-12247d392e3a",
+     "content": "Dev is allergic to sesame, so a dessert containing it was sent back to the kitchen, as noted by Ivo Okafor on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6900d514-1b3b-40df-90d7-47874ff92106",
+     "content": "Ivo Okafor took a photo on February 4, 2025 at 13:59 with GPS coordinates 51.04180, 3.71751",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "694e85b4-68b2-4ade-93d8-cf994d0cbda1",
+     "content": "Ivo Okafor folded and put away the laundry on February 3, 2025 and considered it a small victory",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7775731c-555b-42c7-971d-161d4bfb6abd",
+     "content": "As of February 8, 2025, Ida has a flat in Leipzig, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "783cb7f6-2358-44d5-9173-309163e0608e",
+     "content": "Ivo Okafor's sister works at Quillon Maps, and Ivo reminded their best friend Jonah of this on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7a48b8a3-4896-4763-b919-8aad942f532c",
+     "content": "As of February 5, 2025, Ivo Okafor's cousin from the old flat, Cormac, works at Brackenridge Seeds, which Ivo reminded Talia of",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7bb804b4-a150-4a67-9b9b-c042c72ec838",
+     "content": "As of February 3, 2025, Ivo Okafor's uncle lives in Rotterdam",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "840a73e1-5fa9-4ca7-91a0-2d7e7babfb57",
+     "content": "Ivo Okafor's morning train arrived late on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "88364da3-0069-493e-b5f3-a9f1cf68f231",
+     "content": "On February 9, 2025, Ivo Okafor messaged Cormac Fischer that Talia's upright piano had not yet arrived",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "88a6928d-8898-4671-a9f9-dda8cd2faf57",
+     "content": "As of February 3, 2025, Ivo Okafor's coffee filters had run out again and Ivo wanted them added to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "88aae647-01cd-4b6e-ac6d-ff5a5a918a03",
+     "content": "Ivo Okafor's brother Dev has his birthday on December 17, and Ivo wants to make sure not to forget it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8a29dc12-08c8-4d97-946e-a7d9aa4d7ca6",
+     "content": "As of February 3, 2025, Dev was still waiting on a pottery wheel because the delivery was late",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8ac96e73-ba8a-441c-ae89-706981c5053c",
+     "content": "As of February 4, 2025, Ivo Okafor is two chapters into a new novel and finds it slow going",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8af40e15-c288-4ad8-90d0-b96472610060",
+     "content": "Ivo Okafor's neighbour Marco came over for dinner and stayed until midnight, as noted on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8c5f9f5a-a787-402f-8243-44b6435e7ed0",
+     "content": "Ivo Okafor is employed by Harbor & Pine Studio as a project manager, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8ea77cf5-efde-4148-b145-9769024e1b99",
+     "content": "As of February 6, 2025, Ivo Okafor's coffee filters had run out again and Ivo wanted them added to the shopping list, repeating the same note made on earlier days (February 3-5, 2025)",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9b41f903-d2f7-4c4b-9e4e-42a309c05257",
+     "content": "Ivo Okafor has a bad chest cold, confirmed on February 5, 2025, and plans to treat it with rest and fluids",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9c7d0259-72af-47cf-8d70-be87a57eaa83",
+     "content": "Ivo Okafor felt tired on the night of February 8, 2025, noting it was a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a6ccf373-5869-4b04-835e-0a6dc269ee39",
+     "content": "On February 3, 2025, Ivo Okafor noted that it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "aa9970bf-9f7e-4696-a9f0-623d605ca87c",
+     "content": "Ivo Okafor's morning train arrived late on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b1180417-6cb6-4e62-b0a6-92f3cd417d1d",
+     "content": "Ivo Okafor took a long stroll around the botanical garden on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b266f75a-7d21-4481-9f29-3d4ae5992325",
+     "content": "Dev Lindqvist messaged Ivo Okafor on February 7, 2025 from Bordeaux, saying all was good there",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b2a7c89b-7684-4358-aa9a-42ae97bf6b2d",
+     "content": "Ezra Delacroix messaged Ivo Okafor on the morning of February 8, 2025, asking Ivo to ring them when free",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b348979f-a52c-440b-afa3-2c385406e474",
+     "content": "Following interviews, Kestrel Logistics' People team sent Ivo Okafor a letter dated February 3, 2025 offering them a position as research assistant",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b466bc04-830c-46e3-b0e9-16c2b25cfbf7",
+     "content": "On February 6, 2025, Ivo Okafor noted that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b6b4a2f6-696d-4100-933a-2e1f69fe44af",
+     "content": "As of February 6, 2025, Umar has a flat in Edinburgh, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ba8d35b7-2d3c-460e-b4d0-479718083b44",
+     "content": "Ivo Okafor had coffee with their best friend Jonah at the harbour footpath on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "babe83a1-ea40-4e02-8df1-afb200b2716a",
+     "content": "Ivo Okafor had coffee at the harbour footpath with Ezra on February 9, 2025, as noted in a message to Jonah Haddad",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c19e7079-f7ed-41a0-ae39-3fc347810d28",
+     "content": "Jonah Haddad messaged Ivo Okafor on February 7, 2025, saying life in Porto is treating them well and asking Ivo to ring them when free",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cdde1c2f-0cfb-4d33-8ca7-e413ad945d3e",
+     "content": "Dev works as a backend engineer for a living, as noted by Ivo Okafor on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ced1342e-3f79-45dc-b6a5-24db4c7fb45a",
+     "content": "Ivo Okafor listens to a Swedish podcast on the way home to keep practising Swedish, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d0e135bd-4624-4ddc-aa3f-c958b6544d3c",
+     "content": "Ivo Okafor felt tired on the evening of February 5, 2025, describing it as a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d439f82e-a969-4a57-8339-3693c587fef2",
+     "content": "Ivo Okafor noted on February 9, 2025 that the kitchen was finally spotless, down to every shelf",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d85d7c38-24e5-4fb0-8889-8b49bc01cb24",
+     "content": "Ivo Okafor grew up in Lyon and misses it now and then",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "da2301c3-213a-49f5-910a-292b39a6e845",
+     "content": "Ivo Okafor noted on February 8, 2025 that Dev's company might be shutting down, according to what people say",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e21b01ca-3028-4d77-95ca-ef42eff94d6b",
+     "content": "Ivo Okafor's morning train crawled in late on February 9, 2025, as noted in a message to Jonah Haddad",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e567daae-c4e7-4680-991b-03c531501a40",
+     "content": "As of February 6, 2025, Ivo Okafor's uncle works from home most days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e92729d1-aa65-47c8-b56b-531f901585d6",
+     "content": "As of February 4, 2025, Ivo Okafor's godfather lives in Leipzig",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e9e853bd-74aa-41f4-b444-ea2473825d5b",
+     "content": "As of February 4, 2025, Ivo Okafor's best friend is Jonah, who works as a sales lead by trade",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "efec880d-d005-4336-aaf3-3a13481e41de",
+     "content": "Ivo Okafor had tea at the station café on February 4, 2025 with their cousin from the old flat, Cormac, before the evening train",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f2b4b065-958c-4021-8ffd-e654718b1ee0",
+     "content": "Ivo Okafor had coffee with their best friend Jonah at the harbour footpath on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f6b53e6f-d60f-4ae8-9941-2204be322f45",
+     "content": "Ezra Delacroix works as a product designer and says the job keeps them busy, as stated in a message to Ivo Okafor on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f86233eb-0a10-46fc-98cb-1a821264b428",
+     "content": "As of February 9, 2025, Yusuf's kayak had still not arrived, as Ivo Okafor told Talia Castillo",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fd5bee41-da6f-4436-bc4d-5000d166567e",
+     "content": "As of February 5, 2025, Ivo Okafor is considering adopting a dog but nothing is decided",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "01968a17-4148-4a0c-bb96-86f7bd3999c1",
+     "content": "Dev told Ivo Okafor on February 14, 2025 that their bike had been stolen outside the station, though Ivo noted it was 'or so they said'",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "03d8600d-b4f6-4724-8e96-b9f1a9d80541",
+     "content": "As of February 12, 2025, Ivo Okafor's piano teacher is employed by Tamberlane Bakery",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "06912429-5164-455e-b086-1c15e6323b57",
+     "content": "As of February 5, 2025, Maya's home is Gothenburg, according to Ivo Okafor's note",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0764d3b4-fcb0-45f2-bb23-26365d40fd44",
+     "content": "On February 9, 2025, Ivo Okafor messaged Talia Castillo that it rained on and off all afternoon, repeating a weather note made on earlier days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "097a827d-f1ea-4c2d-83b2-e3a3aeeb0e00",
+     "content": "As of February 4, 2025, Ivo Okafor's piano teacher lives in Edinburgh",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "09f0483b-c73c-4c71-859e-3f87f19b183c",
+     "content": "Ivo Okafor met up with Ezra at the riverside park in Ghent on February 14, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0b45be69-5e4a-43b0-a486-22eb8086885f",
+     "content": "Ivo Okafor's best friend works at Saltire Glassworks, which Ivo reminded Talia Castillo of on February 14, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0c055dbf-b45f-4889-9570-0449dcb8f782",
+     "content": "Ivo Okafor noted on February 8, 2025 that Cormac is still without the rowing machine",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0c4c015b-e02b-46da-9f8f-0654c4c90809",
+     "content": "Marco became a member of the Juniper Street Youth Choir on February 8, 2025, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0d27ec29-bd63-4f95-8cb8-428df28bb3a6",
+     "content": "Ivo Okafor felt tired on the evening of February 15, 2025, noting it was a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13645950-6323-4810-8f99-e10b6bd41d10",
+     "content": "Dev's pottery wheel finally arrived as of February 5, 2025, after the delivery had been late, and Dev is thrilled with it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13e7abbb-1f13-4e9d-a826-38a5e9a11a71",
+     "content": "Ivo Okafor noted on February 6, 2025 that they felt tired that night, describing it as a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "142a3673-f20b-4fcc-bf0a-7e4a65e5b22a",
+     "content": "Ivo Okafor noted on February 14, 2025 that the kitchen was finally spotless, every shelf of it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14fe45b6-14ad-4ecc-bc25-39dab1d6d512",
+     "content": "Ivo Okafor was seen at Riverside Medical Practice on February 5, 2025, and diagnosed with a bad chest cold; the treatment given was rest and fluids, with instructions to return if there is no improvement",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "15862c67-894c-493b-959e-e0e442b90eff",
+     "content": "Ivo Okafor bumped into Dev at the hilltop viewpoint on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1829aba8-0f5d-435c-a9e5-47f50c333a08",
+     "content": "Ivo Okafor folded and put away the laundry on February 15, 2025 and considered it a small victory",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1d7af6b8-f71a-4d9e-80da-e012a1320fbf",
+     "content": "The espresso machine reached Ivo Okafor's sister Ezra by February 7, 2025, after an earlier delivery delay, and Ezra is thrilled with it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1f2fcf96-adf5-4ab0-82b9-afd354cd84ba",
+     "content": "Ivo Okafor noted on February 8, 2025 that the kitchen was finally spotless, down to every shelf",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21a59920-1b1d-4b33-bbba-bf2b28e8b28a",
+     "content": "Ivo Okafor noted on February 13, 2025 that the plants on the balcony were watered at last",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21d9de64-12d2-4ead-8297-5b4bc3fda5cb",
+     "content": "As of February 8, 2025, Ivo Okafor had ordered a standing desk that had still not arrived, and told Talia Castillo there was still no sign of it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "288251f8-2f32-4fd4-8799-eab3e2c818d1",
+     "content": "Ivo Okafor's goal for the week of February 4, 2025 is to have lights out by eleven",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2894a378-c08e-4c37-95bf-8212d512da4b",
+     "content": "As of February 9, 2025, Ivo Okafor's flatmate is employed by Wickerfield Nursery",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30acab5a-f29f-4bd3-b78f-86196b9afc9f",
+     "content": "As of February 4, 2025, Owen has a flat in Rotterdam",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3210cd15-3c67-4616-b9f5-443437221a91",
+     "content": "Ivo Okafor reported on February 6, 2025 that the kitchen was finally spotless, down to every shelf",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3223f721-0f81-47b8-b30a-c6a3881feebe",
+     "content": "Ivo Okafor finally watered the plants on the balcony on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "345fdedb-668e-42f5-b94c-11227892d4c8",
+     "content": "Ivo Okafor accepted the research assistant position at Kestrel Logistics on February 3, 2025, with a start date of February 11, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34974203-eee6-4f91-af7d-f9050adba052",
+     "content": "Ivo Okafor's brother Dev phoned them on the evening of February 5, 2025, and they talked for ages",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34e8e050-6875-4df8-91ce-ccde16c4efca",
+     "content": "Jonah Haddad messaged Ivo Okafor on February 6, 2025 to say they passed a driving test that day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "359ad5bd-0c1f-4293-8489-4598570fa8db",
+     "content": "As of February 4, 2025 (22:51), Ivo Okafor's coffee filters had run out again and Ivo wanted them added to the shopping list, repeating the same note made earlier on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3d3066fa-0c44-45ca-8217-34222dd2b48e",
+     "content": "Ivo Okafor noted on February 14, 2025 that music was coming through the wall from next door again, a recurring noise issue also noted on February 3 and February 13, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3d3c6cfb-28e8-451a-abd5-e47daaae5848",
+     "content": "Ivo Okafor had tea with their colleague Yusuf at the station café on February 4, 2025, before taking the evening train",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3d40a343-c890-4bf9-a16d-7636220f4531",
+     "content": "Yusuf became a member of the Beacon Hill Choir on the morning of February 15, 2025, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40a316c3-528e-496f-8705-90ba1daf358b",
+     "content": "Ivo Okafor's home is at 64 Mill Road, Ghent, as noted on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "41266ef8-c88a-4bbe-ae73-5ceab6db33f5",
+     "content": "Ivo Okafor started their first day as research assistant at Kestrel Logistics on February 11, 2025, and received a new badge, as told to Cormac Fischer",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42bc56fc-3969-4058-9bfd-71f1abd68d79",
+     "content": "As of February 4, 2025, Ivo Okafor's sister Ezra is in Valencia",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "44beee1b-eee1-4998-8447-061027ef7a96",
+     "content": "As of February 16, 2025, Ivo Okafor is still two chapters into the new novel and finds it slow going",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45ed5ed8-803c-4078-9e71-eec9397013a3",
+     "content": "As of February 3, 2025, Ivo Okafor's flatmate lives in Gothenburg",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "46694500-82f7-4579-9194-34b8a59edd1b",
+     "content": "Ivo Okafor completed the Spring 10K on February 10, 2025 with an official chip finish time of 47:27, as certified by the official results document",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "49e7bce6-4376-4124-a3bd-fd23f74be8a2",
+     "content": "Ivo Okafor transferred 760 EUR for rent on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4a734b98-ca8c-4a78-aceb-7ac8f8f13b95",
+     "content": "Ivo Okafor will not take part in this year's (2025) marathon because they never signed up, as told to Talia Castillo on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4ef1671e-f9ae-4f95-91e5-ee82d8b44700",
+     "content": "As of February 4, 2025, Ivo Okafor's coffee filters had run out again and Ivo wanted them added to the shopping list, repeating a note from February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4f642cd7-be3f-45c6-b4bf-db06e37fc58e",
+     "content": "Umar works at Oxbow Bindery as of February 14, 2025, according to Ivo Okafor's note",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5140da8d-bd43-425b-8927-61db8d5f4c05",
+     "content": "Ivo Okafor noted on February 3, 2025 that music was coming through the wall from next door again, indicating a recurring noise issue from the neighbors",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "51b89d54-f8da-445c-8a9d-d11ca27718e9",
+     "content": "Ivo Okafor took a photo on February 4, 2025 at 09:33 with GPS coordinates 45.08166, 7.68210",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "51fc0f50-0a2d-41f5-b76d-97f4d44ee539",
+     "content": "On February 8, 2025, Ivo Okafor messaged Talia Castillo that the coffee filters were out again and asked for them to be added to the list, repeating the same note made on earlier days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5254126e-0f9a-489f-b319-f66a4f61972f",
+     "content": "Ivo Okafor had coffee with their cousin Cormac around February 16, 2025; Cormac asked whether Ivo's colleague was still at Larkspur Ceramics, and Ivo confirmed the colleague is still there",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "56a0f312-ecd8-4405-bd92-61e36dec6463",
+     "content": "Ivo Okafor noted on February 13, 2025 that the kitchen was finally spotless, down to every shelf",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "57c6a94a-5d49-4b6d-94cd-5a1910de250c",
+     "content": "Ivo Okafor's first working day as research assistant at Kestrel Logistics is February 11, 2025, and the offer letter asks them to countersign it and send it back",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5805f7f5-3b2e-465c-90a1-1bb8bc48130d",
+     "content": "On February 7, 2025, Ivo Okafor noted that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "59280ea8-4fac-4f0c-b516-5c515f19c8f9",
+     "content": "Ivo Okafor recovered from their bad chest cold on February 10, 2025 and was done with the rest at last, as noted in a message to Jonah Haddad",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5a08c57e-8b03-4ae2-9c07-2c9bf25988e8",
+     "content": "Ivo Okafor's best friend Jonah came over for dinner and stayed until midnight, as noted in a message to Talia Castillo on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5a204053-4fc0-4e45-9f17-fb9c044d0f5c",
+     "content": "Ezra became a new member of the Kiln Lane Chamber Choir on the morning of February 10, 2025, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5a2c13c2-d9e7-49bd-bbce-fad2292a795f",
+     "content": "Jonah, Ivo Okafor's best friend, became a member of the Old Mill Folk Choir on the morning of February 8, 2025, as noted by Ivo",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5b9981c8-7b24-41a3-b57a-69a1d29f8b3c",
+     "content": "As of February 13, 2025, Ivo Okafor's neighbour is employed by Hollowbrook Surveying, which Ivo's best friend Jonah had no idea about",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5c860592-c548-48f7-b4e6-17b7f7d719ff",
+     "content": "As of February 14, 2025, Maya works at Wickerfield Nursery, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "63343253-83cb-4794-901b-9333341b6225",
+     "content": "On February 3, 2025, Ivo Okafor noted that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6338edfc-b274-4aec-93b4-f4f4977ab3b5",
+     "content": "As of February 4, 2025, Ivo Okafor's sister Ezra has not yet received an espresso machine because the delivery is late",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "635854f3-521e-4da7-ab2c-822b4e25fc1a",
+     "content": "Ivo Okafor's sister Ezra phoned them on the evening of February 6, 2025, and they talked for ages",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "68bc32be-f299-420f-8cbd-12247d392e3a",
+     "content": "Dev is allergic to sesame, so a dessert containing it was sent back to the kitchen, as noted by Ivo Okafor on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6900d514-1b3b-40df-90d7-47874ff92106",
+     "content": "Ivo Okafor took a photo on February 4, 2025 at 13:59 with GPS coordinates 51.04180, 3.71751",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "694e85b4-68b2-4ade-93d8-cf994d0cbda1",
+     "content": "Ivo Okafor folded and put away the laundry on February 3, 2025 and considered it a small victory",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6aa04394-01e1-4965-93fe-0c534da3cc33",
+     "content": "Ivo Okafor entered a tenancy agreement with Elm Property Lettings for the property at 95 Orchard Close, Ghent, beginning February 14, 2025, with rent of 1190 EUR payable monthly",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "70e1b2e4-156d-4240-a92a-2d0db7aaf694",
+     "content": "Ivo Okafor had coffee with Dev at the city library on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "75b9a163-664a-43aa-b920-45bd7edf787a",
+     "content": "Dev became a member of the Saltmarsh Community Choir on February 15, 2025, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7775731c-555b-42c7-971d-161d4bfb6abd",
+     "content": "As of February 8, 2025, Ida has a flat in Leipzig, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "783cb7f6-2358-44d5-9173-309163e0608e",
+     "content": "Ivo Okafor's sister works at Quillon Maps, and Ivo reminded their best friend Jonah of this on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7a48b8a3-4896-4763-b919-8aad942f532c",
+     "content": "As of February 5, 2025, Ivo Okafor's cousin from the old flat, Cormac, works at Brackenridge Seeds, which Ivo reminded Talia of",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7bb804b4-a150-4a67-9b9b-c042c72ec838",
+     "content": "As of February 3, 2025, Ivo Okafor's uncle lives in Rotterdam",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7cd14f2b-cbb2-456f-b362-7dd8f3840cb9",
+     "content": "Ivo Okafor is considering packing up and moving to Valencia if the Valencia offer actually happens",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "840a73e1-5fa9-4ca7-91a0-2d7e7babfb57",
+     "content": "Ivo Okafor's morning train arrived late on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "86ffd38a-15ab-4a76-8ca5-bb60f6e145bc",
+     "content": "Ivo Okafor noted on February 13, 2025 that Owen mostly works from home",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8820f54b-7247-4f17-b609-a48f956a6e56",
+     "content": "As of February 13, 2025, Ivo Okafor's godfather is employed by Halyard Sailmakers",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "88364da3-0069-493e-b5f3-a9f1cf68f231",
+     "content": "On February 9, 2025, Ivo Okafor messaged Cormac Fischer that Talia's upright piano had not yet arrived",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "88a6928d-8898-4671-a9f9-dda8cd2faf57",
+     "content": "As of February 3, 2025, Ivo Okafor's coffee filters had run out again and Ivo wanted them added to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "88aae647-01cd-4b6e-ac6d-ff5a5a918a03",
+     "content": "Ivo Okafor's brother Dev has his birthday on December 17, and Ivo wants to make sure not to forget it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8a29dc12-08c8-4d97-946e-a7d9aa4d7ca6",
+     "content": "As of February 3, 2025, Dev was still waiting on a pottery wheel because the delivery was late",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8ac96e73-ba8a-441c-ae89-706981c5053c",
+     "content": "As of February 4, 2025, Ivo Okafor is two chapters into a new novel and finds it slow going",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8af40e15-c288-4ad8-90d0-b96472610060",
+     "content": "Ivo Okafor's neighbour Marco came over for dinner and stayed until midnight, as noted on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8c5f9f5a-a787-402f-8243-44b6435e7ed0",
+     "content": "Ivo Okafor is employed by Harbor & Pine Studio as a project manager, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8ea77cf5-efde-4148-b145-9769024e1b99",
+     "content": "As of February 6, 2025, Ivo Okafor's coffee filters had run out again and Ivo wanted them added to the shopping list, repeating the same note made on earlier days (February 3-5, 2025)",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "92920a08-8ead-4dc4-8524-d2e317bca31b",
+     "content": "Ivo Okafor's morning train crawled in late on February 14, 2025, as noted in a personal note",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9512617d-c7af-43bb-b649-cbb8da7d0367",
+     "content": "As of February 14, 2025, Ivo Okafor's ordered standing desk had arrived and was in use, as Ivo told Marco Abbott. It had not yet arrived as of February 8, 2025.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9a65abd2-b10f-4cde-9f4c-fb66d1f9ec1a",
+     "content": "Ivo Okafor had lunch on February 16, 2025 with Ida and with their godfather, who both came along",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9abaf2cc-0132-47b3-a570-2a4d9873e342",
+     "content": "Ivo Okafor folded and put away the laundry on February 10, 2025 and considered it a small victory, as noted in a message to Jonah Haddad",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9b41f903-d2f7-4c4b-9e4e-42a309c05257",
+     "content": "Ivo Okafor has a bad chest cold, confirmed on February 5, 2025, and plans to treat it with rest and fluids",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9c7d0259-72af-47cf-8d70-be87a57eaa83",
+     "content": "Ivo Okafor felt tired on the night of February 8, 2025, noting it was a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9e0bc152-3f9d-4c6e-bcfa-f6c14227dcaf",
+     "content": "Ivo Okafor noted on February 15, 2025 that the rowing machine finally made it to Cormac, who is thrilled with it, after Cormac had been without it as of February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9e9a56a8-ca97-4f89-9246-da5ad43b74f1",
+     "content": "Ivo Okafor sent a dish back on February 11, 2025 because it contained sesame, and stated that Ivo is allergic to sesame",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a6ccf373-5869-4b04-835e-0a6dc269ee39",
+     "content": "On February 3, 2025, Ivo Okafor noted that it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "aa9970bf-9f7e-4696-a9f0-623d605ca87c",
+     "content": "Ivo Okafor's morning train arrived late on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ab2c16c6-b82b-4ef9-bba5-307b1bc30edc",
+     "content": "Ivo Okafor's goal for the week of February 10, 2025 is to have lights out by eleven, noted on February 14, 2025 and repeating the same goal from the week of February 4",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b1180417-6cb6-4e62-b0a6-92f3cd417d1d",
+     "content": "Ivo Okafor took a long stroll around the botanical garden on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b266f75a-7d21-4481-9f29-3d4ae5992325",
+     "content": "Dev Lindqvist messaged Ivo Okafor on February 7, 2025 from Bordeaux, saying all was good there",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b2a7c89b-7684-4358-aa9a-42ae97bf6b2d",
+     "content": "Ezra Delacroix messaged Ivo Okafor on the morning of February 8, 2025, asking Ivo to ring them when free",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b348979f-a52c-440b-afa3-2c385406e474",
+     "content": "Following interviews, Kestrel Logistics' People team sent Ivo Okafor a letter dated February 3, 2025 offering them a position as research assistant",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b3d3c6ee-d593-4c41-b545-2101e63c1de5",
+     "content": "Ivo Okafor noted on February 13, 2025 that music was coming through the wall from next door again, a recurring noise issue also noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b466bc04-830c-46e3-b0e9-16c2b25cfbf7",
+     "content": "On February 6, 2025, Ivo Okafor noted that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b4abd229-530f-4ce3-9e4e-8a74e20fb320",
+     "content": "On February 13, 2025, Ivo Okafor noted that Talia Castillo showed them the upright piano, which had arrived at some unspecified point after it was still missing on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b6b4a2f6-696d-4100-933a-2e1f69fe44af",
+     "content": "As of February 6, 2025, Umar has a flat in Edinburgh, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ba8d35b7-2d3c-460e-b4d0-479718083b44",
+     "content": "Ivo Okafor had coffee with their best friend Jonah at the harbour footpath on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "babe83a1-ea40-4e02-8df1-afb200b2716a",
+     "content": "Ivo Okafor had coffee at the harbour footpath with Ezra on February 9, 2025, as noted in a message to Jonah Haddad",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bc02502c-de60-4792-a2ea-9f70e6c90455",
+     "content": "Yusuf's kayak finally arrived, and Yusuf is thrilled with it, as Ivo Okafor told Talia Castillo on February 11, 2025, after the kayak had still not come as of February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bffdc190-b6f7-4466-bf31-e4a8fba52167",
+     "content": "Ivo Okafor had coffee with Dev at the old market hall on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c19e7079-f7ed-41a0-ae39-3fc347810d28",
+     "content": "Jonah Haddad messaged Ivo Okafor on February 7, 2025, saying life in Porto is treating them well and asking Ivo to ring them when free",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c3c3ae32-726a-47f2-99f7-255fe716e6cb",
+     "content": "Ivo Okafor would like to learn to sail if the summer of 2025 is kind, as mentioned to Talia Castillo on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c43e8f75-20eb-4058-8436-ad307c26315c",
+     "content": "Ivo Okafor's morning train crawled in late on February 16, 2025, as noted in a personal note",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c5417e79-ead0-4149-9ec5-9d7ed3215c99",
+     "content": "Ivo Okafor met up with Dev at the botanical garden on February 13, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c60880e7-87e5-4606-adca-47804ba328ed",
+     "content": "Ivo Okafor bumped into Ida on February 14, 2025, and Ida works at Halyard Sailmakers, the same company that employs Ivo's godfather",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c68275b5-ba69-4f9b-81c4-6a95afb4df21",
+     "content": "On February 16, 2025, Ivo Okafor noted that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cdde1c2f-0cfb-4d33-8ca7-e413ad945d3e",
+     "content": "Dev works as a backend engineer for a living, as noted by Ivo Okafor on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ced1342e-3f79-45dc-b6a5-24db4c7fb45a",
+     "content": "Ivo Okafor listens to a Swedish podcast on the way home to keep practising Swedish, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d0e135bd-4624-4ddc-aa3f-c958b6544d3c",
+     "content": "Ivo Okafor felt tired on the evening of February 5, 2025, describing it as a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d33be0b9-f6fb-40c3-bc27-a5c059223b76",
+     "content": "Ivo Okafor's birthday falls on 12 November, and as of February 12, 2025 they feel they must organise something for it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d439f82e-a969-4a57-8339-3693c587fef2",
+     "content": "Ivo Okafor noted on February 9, 2025 that the kitchen was finally spotless, down to every shelf",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d85d7c38-24e5-4fb0-8889-8b49bc01cb24",
+     "content": "Ivo Okafor grew up in Lyon and misses it now and then",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "da2301c3-213a-49f5-910a-292b39a6e845",
+     "content": "Ivo Okafor noted on February 8, 2025 that Dev's company might be shutting down, according to what people say",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "de60ae6d-8e49-482e-a8dc-719f37066a39",
+     "content": "Ivo Okafor noted on February 14, 2025 that the plants on the balcony were watered at last",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e21b01ca-3028-4d77-95ca-ef42eff94d6b",
+     "content": "Ivo Okafor's morning train crawled in late on February 9, 2025, as noted in a message to Jonah Haddad",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e3a0cfe8-e5d0-4e76-b7d7-dc79d8e3ffb0",
+     "content": "Under the tenancy agreement for 95 Orchard Close, Ghent, dated February 14, 2025, Ivo Okafor as tenant must keep the property clean and in good repair, and both parties sign the agreement",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e567daae-c4e7-4680-991b-03c531501a40",
+     "content": "As of February 6, 2025, Ivo Okafor's uncle works from home most days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e92729d1-aa65-47c8-b56b-531f901585d6",
+     "content": "As of February 4, 2025, Ivo Okafor's godfather lives in Leipzig",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e9e853bd-74aa-41f4-b444-ea2473825d5b",
+     "content": "As of February 4, 2025, Ivo Okafor's best friend is Jonah, who works as a sales lead by trade",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "efec880d-d005-4336-aaf3-3a13481e41de",
+     "content": "Ivo Okafor had tea at the station café on February 4, 2025 with their cousin from the old flat, Cormac, before the evening train",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f000e205-89f7-46db-bff3-d97dc2b80360",
+     "content": "Ivo Okafor moved into the flat at 95 Orchard Close, Ghent on February 14, 2025, the start date of the tenancy with Elm Property Lettings",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f0eac735-2a59-4b65-b06d-945e96a4ebfa",
+     "content": "Ivo Okafor noted on February 10, 2025 that it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f2b4b065-958c-4021-8ffd-e654718b1ee0",
+     "content": "Ivo Okafor had coffee with their best friend Jonah at the harbour footpath on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f30d5cfb-296a-4f5e-988a-0c4937fd25d1",
+     "content": "Ivo Okafor's brother works at Fennick & Dale Opticians, which Ivo reminded Cormac of on February 16, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f6b53e6f-d60f-4ae8-9941-2204be322f45",
+     "content": "Ezra Delacroix works as a product designer and says the job keeps them busy, as stated in a message to Ivo Okafor on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f86233eb-0a10-46fc-98cb-1a821264b428",
+     "content": "As of February 9, 2025, Yusuf's kayak had still not arrived, as Ivo Okafor told Talia Castillo",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fb97e126-22d6-4eef-b81e-819c94c43287",
+     "content": "Cormac became a member of the Harbour Gospel Choir on February 13, 2025, as noted by Ivo Okafor",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fd5bee41-da6f-4436-bc4d-5000d166567e",
+     "content": "As of February 5, 2025, Ivo Okafor is considering adopting a dog but nothing is decided",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1190 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Bordeaux",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "Backend engineer",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "Product designer",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Sesame",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "Sales lead",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "17 December",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "12 November",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Lyon",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Kestrel Logistics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "Swedish",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "760 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "14 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "11 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "5 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "5 days",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "3 days",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "47:27",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "City library",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Botanical garden",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "The riverside park in Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "Harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "Harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "Harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "Jonah Haddad",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "Old Mill Folk Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "Saltmarsh Community Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "Beacon Hill Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "Juniper Street Youth Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q049": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q050": {
+   "text": "Brackenridge Seeds",
+   "abstained": null,
+   "citations": []
+  },
+  "Q051": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q052": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q053": {
+   "text": "Harbor & Pine Studio",
+   "abstained": null,
+   "citations": []
+  },
+  "Q054": {
+   "text": "15 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q055": {
+   "text": "5 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q056": {
+   "text": "7 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q057": {
+   "text": "By 14 February 2025 (it arrived after 8 February 2025)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q058": {
+   "text": "Between 9 and 13 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q059": {
+   "text": "11 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

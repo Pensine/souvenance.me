@@ -1,0 +1,2645 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "147568c",
+  "llm_backend": "claude-cli",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 7,
+    "memories_written": 11,
+    "memories_rejected": 0,
+    "memories_corrected": 4,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-04",
+    "events": 5,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-05",
+    "events": 6,
+    "memories_written": 7,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 0,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-06",
+    "events": 4,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-07",
+    "events": 6,
+    "memories_written": 8,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-08",
+    "events": 5,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-09",
+    "events": 4,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-10",
+    "events": 3,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-11",
+    "events": 3,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-12",
+    "events": 5,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-13",
+    "events": 3,
+    "memories_written": 3,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-14",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-15",
+    "events": 3,
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 0,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-16",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 1
+   }
+  ]
+ },
+ "track": "T",
+ "data": "sample-test",
+ "seconds": 689.7,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Pablo is a friend of the speaker.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "with my best friend, Pablo"
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "The speaker had tea with their best friend Pablo at the station café before taking the evening train.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Tea at the station café with my best friend, Pablo, before the evening train."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3",
+     "content": "The speaker's birthday is on 1 November.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "My birthday falls on 1 November"
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": "2025-11-01",
+     "event_latest": "2025-11-01"
+    },
+    {
+     "id": "4",
+     "content": "Alba's uncle lives in Edinburgh these days.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "These days my uncle lives in Edinburgh."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "Alba has lived at 26 Tanner Street, Porto since October 2021.",
+     "valid_from": "2021-10-01",
+     "valid_to": "2025-02-07",
+     "current": false,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Home since October 2021 — 26 Tanner Street, Porto"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2021-10-01",
+     "event_latest": "2021-10-31"
+    },
+    {
+     "id": "6",
+     "content": "Alba pays 660 EUR a month for her flat; the monthly payment has been made.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "The monthly 660 EUR for the flat has been paid."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "Alba is not running a marathon this year; she did not sign up in the end.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "No marathon for me this year: I did not sign up in the end."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8",
+     "content": "Pablo told Alba that their bike had been stolen outside the station;",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "their bike, stolen outside the station, or so they said"
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "Alba reports it with some reserve (\"or so they said\").",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "their bike, stolen outside the station, or so they said"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "10",
+     "content": "Pablo Achebe works as a UX researcher.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "UX researcher's work is never done"
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11",
+     "content": "Alba's aunt lives in Leipzig now.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Leipzig is where my aunt lives now."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12",
+     "content": "Northwind Analytics sent Alba a letter offering her a data analyst position after her interviews, asking her to countersign and return it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Northwind Analytics would like you to join as data analyst."
+      },
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Kindly countersign this letter and send it back."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Alba has signed her contract with Northwind Analytics.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "the contract is okay so, signed."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "Alba starts work as a data analyst at Northwind Analytics on 8 February 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "First working day: February 8, 2025."
+      },
+      {
+       "deposit_id": "D0006",
+       "excerpt": "On 8 February right, 2025, I start er, as data analyst at Northwind right, Analytics"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "15",
+     "content": "Samir has a flat in Edinburgh.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Samir has a flat in Edinburgh."
+      }
+     ],
+     "subject": "Samir",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "Alba's climbing partner lives in Turin now.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Turin is where my climbing partner lives now."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17",
+     "content": "Kenji's espresso machine had not arrived yet.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Kenji's espresso machine hasn't come."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18",
+     "content": "Alba works as an editor.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "as an editor I get a lot of those"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "Alba sat through another long meeting at Bramble Health.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Another long meeting at Bramble Health"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "Alba's brother Kenji lives in Rotterdam these days.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Thinking of my brother Kenji. They live in Rotterdam these days."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "Alba's uncle mostly works from home.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "My uncle mostly works from home."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "22",
+     "content": "The upright piano Alba ordered had not shipped yet when she checked the tracking.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Checked the tracking again: the upright piano hasn't shipped."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "Alba had tea with her brother Kenji at the station café before taking the evening train.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Tea at the station café with my brother, Kenji, before the evening train."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24",
+     "content": "Alba's piano teacher lives in Montreal these days.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": "These days my piano teacher lives in Montreal."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25",
+     "content": "Alba grew up in Valencia and some days she really misses it.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Valencia is where I grew right, up; some days I really miss it."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26",
+     "content": "Talia works as a sales lead.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Talia well, earns a living as a sales lead."
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Alba's birthday is on 2 February.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "My birthday falls on 2 February"
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": "2025-02-02",
+     "event_latest": "2025-02-02"
+    },
+    {
+     "id": "28",
+     "content": "Alba is allergic to shellfish.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "shellfish, and I'm allergic"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Alba sent a dish back because it contained shellfish.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "sent the dish back — shellfish, and I'm allergic"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30",
+     "content": "Kenji Delacroix works as a project manager.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "a project manager's work is never done"
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Nadia has a flat in Leipzig.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "Nadia has a flat in Leipzig."
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "Alba lives at 71 Beacon Hill Road, Bordeaux, having moved into the flat on 7 February 2025.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Today, I moved into the flat at 71 Beacon Hill Road, Bordeaux."
+      },
+      {
+       "deposit_id": "D0012",
+       "excerpt": "The tenancy begins on February 7, 2025."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "33",
+     "content": "Alba's rent for the Bordeaux flat is 730 EUR, payable monthly.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Rent: 730 EUR, payable monthly"
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Pablo is the speaker's best friend.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "my best friend Pablo's birthday"
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Pablo's birthday is on 5 July.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "5 July — my best friend Pablo's birthday, don't forget."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-07-05",
+     "event_latest": "2025-07-05"
+    },
+    {
+     "id": "36",
+     "content": "Pablo joined the Harbour Gospel Choir as a new member.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "The Harbour Gospel Choir has a new member as of today: Pablo."
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "37",
+     "content": "Fatima has a flat in Montreal.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "Fatima has a flat in Montreal."
+      }
+     ],
+     "subject": "Fatima",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "38",
+     "content": "Samir works from home most days.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Most days, Samir works from home."
+      }
+     ],
+     "subject": "Samir",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "Alba is two chapters into a new novel and finds it slow going.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40",
+     "content": "Alba had her first day at Northwind Analytics as their data analyst.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Today, my first day at Northwind Analytics, as their data analyst."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "41",
+     "content": "There is a rumour that Talia's company could be closing down.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.3,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Rumour has it that Talia's company could be closing down."
+      }
+     ],
+     "subject": "Talia's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42",
+     "content": "Alba's brother still works at Marrowgate Press.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Over coffee, Talia wanted to know whether my brother was still at Marrowgate Press; yes, still there."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "43",
+     "content": "Alba's aunt works at Pellucid Labs these days.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "My aunt — at Pellucid Labs these days."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "44",
+     "content": "Alba's piano teacher works at Oxbow Bindery these days.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "My piano teacher — at Oxbow Bindery these days."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45",
+     "content": "Wes's home is Turin.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Home for Wes is Turin."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "46",
+     "content": "Nadia works at Pellucid Labs.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Pellucid Labs is where they work."
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "Alba bumped into Nadia on the morning train journey.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Bumped into Nadia"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "48",
+     "content": "Pablo ran his first marathon, which Alba described as lovely news.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "Lovely news er, today: Pablo ran a first right, marathon."
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "49",
+     "content": "Pablo lives in Ghent and says life there is treating him well.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Life in Ghent is treating me well."
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my best friend",
+     "name": "Pablo",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother",
+     "name": "Kenji",
+     "tier": "proven"
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Pablo is a friend of the speaker.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "with my best friend, Pablo"
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "The speaker had tea with their best friend Pablo at the station café before taking the evening train.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Tea at the station café with my best friend, Pablo, before the evening train."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3",
+     "content": "The speaker's birthday is on 1 November.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "My birthday falls on 1 November"
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": "2025-11-01",
+     "event_latest": "2025-11-01"
+    },
+    {
+     "id": "4",
+     "content": "Alba's uncle lives in Edinburgh these days.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "These days my uncle lives in Edinburgh."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "Alba has lived at 26 Tanner Street, Porto since October 2021.",
+     "valid_from": "2021-10-01",
+     "valid_to": "2025-02-07",
+     "current": false,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Home since October 2021 — 26 Tanner Street, Porto"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2021-10-01",
+     "event_latest": "2021-10-31"
+    },
+    {
+     "id": "6",
+     "content": "Alba pays 660 EUR a month for her flat; the monthly payment has been made.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "The monthly 660 EUR for the flat has been paid."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "Alba is not running a marathon this year; she did not sign up in the end.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "No marathon for me this year: I did not sign up in the end."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8",
+     "content": "Pablo told Alba that their bike had been stolen outside the station;",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "their bike, stolen outside the station, or so they said"
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "Alba reports it with some reserve (\"or so they said\").",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "their bike, stolen outside the station, or so they said"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "10",
+     "content": "Pablo Achebe works as a UX researcher.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "UX researcher's work is never done"
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11",
+     "content": "Alba's aunt lives in Leipzig now.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Leipzig is where my aunt lives now."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12",
+     "content": "Northwind Analytics sent Alba a letter offering her a data analyst position after her interviews, asking her to countersign and return it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Northwind Analytics would like you to join as data analyst."
+      },
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Kindly countersign this letter and send it back."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Alba has signed her contract with Northwind Analytics.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "the contract is okay so, signed."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "Alba starts work as a data analyst at Northwind Analytics on 8 February 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "First working day: February 8, 2025."
+      },
+      {
+       "deposit_id": "D0006",
+       "excerpt": "On 8 February right, 2025, I start er, as data analyst at Northwind right, Analytics"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "15",
+     "content": "Samir has a flat in Edinburgh.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Samir has a flat in Edinburgh."
+      }
+     ],
+     "subject": "Samir",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "Alba's climbing partner lives in Turin now.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Turin is where my climbing partner lives now."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17",
+     "content": "Kenji's espresso machine had not arrived yet.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Kenji's espresso machine hasn't come."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18",
+     "content": "Alba works as an editor.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "as an editor I get a lot of those"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "Alba sat through another long meeting at Bramble Health.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Another long meeting at Bramble Health"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "Alba's brother Kenji lives in Rotterdam these days.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Thinking of my brother Kenji. They live in Rotterdam these days."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "Alba's uncle mostly works from home.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "My uncle mostly works from home."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "22",
+     "content": "The upright piano Alba ordered had not shipped yet when she checked the tracking.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-13",
+     "current": false,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Checked the tracking again: the upright piano hasn't shipped."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "Alba had tea with her brother Kenji at the station café before taking the evening train.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Tea at the station café with my brother, Kenji, before the evening train."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24",
+     "content": "Alba's piano teacher lives in Montreal these days.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": "These days my piano teacher lives in Montreal."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25",
+     "content": "Alba grew up in Valencia and some days she really misses it.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Valencia is where I grew right, up; some days I really miss it."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26",
+     "content": "Talia works as a sales lead.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Talia well, earns a living as a sales lead."
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Alba's birthday is on 2 February.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "My birthday falls on 2 February"
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": "2025-02-02",
+     "event_latest": "2025-02-02"
+    },
+    {
+     "id": "28",
+     "content": "Alba is allergic to shellfish.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "shellfish, and I'm allergic"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Alba sent a dish back because it contained shellfish.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "sent the dish back — shellfish, and I'm allergic"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30",
+     "content": "Kenji Delacroix works as a project manager.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "a project manager's work is never done"
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Nadia has a flat in Leipzig.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "Nadia has a flat in Leipzig."
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "Alba lives at 71 Beacon Hill Road, Bordeaux, having moved into the flat on 7 February 2025.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Today, I moved into the flat at 71 Beacon Hill Road, Bordeaux."
+      },
+      {
+       "deposit_id": "D0012",
+       "excerpt": "The tenancy begins on February 7, 2025."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "33",
+     "content": "Alba's rent for the Bordeaux flat is 730 EUR, payable monthly.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Rent: 730 EUR, payable monthly"
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Pablo is the speaker's best friend.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "my best friend Pablo's birthday"
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Pablo's birthday is on 5 July.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "5 July — my best friend Pablo's birthday, don't forget."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-07-05",
+     "event_latest": "2025-07-05"
+    },
+    {
+     "id": "36",
+     "content": "Pablo joined the Harbour Gospel Choir as a new member.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "The Harbour Gospel Choir has a new member as of today: Pablo."
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "37",
+     "content": "Fatima has a flat in Montreal.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "Fatima has a flat in Montreal."
+      }
+     ],
+     "subject": "Fatima",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "38",
+     "content": "Samir works from home most days.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Most days, Samir works from home."
+      }
+     ],
+     "subject": "Samir",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "Alba is two chapters into a new novel and finds it slow going.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40",
+     "content": "Alba had her first day at Northwind Analytics as their data analyst.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Today, my first day at Northwind Analytics, as their data analyst."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "41",
+     "content": "There is a rumour that Talia's company could be closing down.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.3,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Rumour has it that Talia's company could be closing down."
+      }
+     ],
+     "subject": "Talia's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42",
+     "content": "Alba's brother still works at Marrowgate Press.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Over coffee, Talia wanted to know whether my brother was still at Marrowgate Press; yes, still there."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "43",
+     "content": "Alba's aunt works at Pellucid Labs these days.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "My aunt — at Pellucid Labs these days."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "44",
+     "content": "Alba's piano teacher works at Oxbow Bindery these days.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "My piano teacher — at Oxbow Bindery these days."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45",
+     "content": "Wes's home is Turin.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Home for Wes is Turin."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "46",
+     "content": "Nadia works at Pellucid Labs.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Pellucid Labs is where they work."
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "Alba bumped into Nadia on the morning train journey.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Bumped into Nadia"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "48",
+     "content": "Pablo ran his first marathon, which Alba described as lovely news.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "Lovely news er, today: Pablo ran a first right, marathon."
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "49",
+     "content": "Pablo lives in Ghent and says life there is treating him well.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Life in Ghent is treating me well."
+      }
+     ],
+     "subject": "Pablo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "50",
+     "content": "Talia Kowalski lives in Gothenburg and says life there is treating her well.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Life in Gothenburg is treating me well."
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "51",
+     "content": "Kenji started a new course, which Alba called lovely news.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Lovely news yesterday: Kenji started a new course."
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "52",
+     "content": "The idea of having a cat of her own someday keeps coming back to Alba.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "A cat of my own, maybe one day: the idea keeps coming back."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "53",
+     "content": "Fatima works at Halyard Sailmakers.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": "Bumped into Fatima; Halyard Sailmakers is where they work."
+      }
+     ],
+     "subject": "Fatima",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "54",
+     "content": "Alba bumped into Fatima.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": "Bumped into Fatima"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55",
+     "content": "Alba was seen at Northgate Medical Practice on 11 February 2025 and diagnosed with an ear infection.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.97,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Seen on February 11, 2025: Alba Achebe"
+      },
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Diagnosis — an ear infection"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-11",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "56",
+     "content": "Alba was prescribed a seven-day course of antibiotics for her ear infection, with advice to return if there is no improvement.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.97,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Treatment — a seven-day course of antibiotics"
+      },
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Return if there is no improvement."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "57",
+     "content": "Alba listened to a German podcast on the way home to keep practising her German.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "podcast on er, the way home, to keep practising."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "58",
+     "content": "Alba met Kenji at the hilltop viewpoint.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Kenji well, and I well, met erm, up at the erm, hilltop viewpoint today."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-11",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "59",
+     "content": "Alba's climbing partner works at Mistral Joinery these days.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": "My climbing partner — at Mistral Joinery these days."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "60",
+     "content": "Alba's best friend works at Larkspur Ceramics;",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "Kenji had no idea that my best friend is employed by Larkspur Ceramics."
+      }
+     ],
+     "subject": "Alba's",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "61",
+     "content": "Kenji did not know this.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "Kenji had no idea that my best friend is employed by Larkspur Ceramics."
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "62",
+     "content": "Kenji Delacroix told Alba about running a first marathon the day before.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Yesterday, I ran a first marathon. Can you believe it?"
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": "2025-02-11",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "63",
+     "content": "Wes works at Mistral Joinery these days.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": "Wes — at Mistral Joinery these days."
+      }
+     ],
+     "subject": "Wes",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "64",
+     "content": "Alba has been using the upright piano every day, and it turned up at some point.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Using the upright piano every day now; it turned up at some point."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "65",
+     "content": "Alba plays the upright piano every day now.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Using the upright piano every day now"
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "66",
+     "content": "On 13 February 2025 Alba took a long stroll along the harbour footpath and ended the day pleasantly tired.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "Tired tonight; good tired, though."
+      },
+      {
+       "deposit_id": "D0027",
+       "excerpt": "Today, right, a long stroll around okay so, the harbour er, footpath."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-13",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "67",
+     "content": "The speaker of a voice note took part in the Spring 10K and gives a time of 51:27, though the transcript is garbled.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "51:27 er, — my time at right, the Spring 10K today."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "68",
+     "content": "Kenji became a new member of the Saltmarsh Community Choir.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "The Saltmarsh Community Choir has a new member as of today: Kenji."
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "69",
+     "content": "Talia Kowalski's birthday is in November.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "November is my birthday"
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "70",
+     "content": "Kenji's espresso machine has arrived, and Kenji is thrilled with it.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "The espresso machine made it to Kenji; they're thrilled with it."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "71",
+     "content": "As of 16 February 2025, Alba's ear infection is over.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Today, the ear infection is behind me."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "72",
+     "content": "Alba had her aunt and Nadia round for lunch on 16 February 2025, and the two of them got on well.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": "Had my aunt and Nadia round for lunch today; the two of them got on well."
+      }
+     ],
+     "subject": "Alba Achebe",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my best friend",
+     "name": "Pablo",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother",
+     "name": "Kenji",
+     "tier": "proven"
+    }
+   ]
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "730 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Bordeaux",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Gothenburg",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "Shellfish",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "Project manager",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "UX researcher",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "Sales lead",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "2 February",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "5 July",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "1 November",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "German",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "7 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "8 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "11 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "5 days (diagnosed 11 February 2025, over by 16 February 2025)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "1 day",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Bordeaux",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Bordeaux",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "Bordeaux",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "Bordeaux",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "27:27",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "51:27",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "The hilltop viewpoint",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "Kenji",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "Harbour Gospel Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q049": {
+   "text": "15 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

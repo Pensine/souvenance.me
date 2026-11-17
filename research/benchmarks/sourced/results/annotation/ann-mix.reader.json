@@ -1,0 +1,26 @@
+{
+ "reader": "reader:claude-opus-5-5:guide-dd18ff635494",
+ "labels": {
+  "1": "supported",
+  "2": "supported",
+  "3": "supported",
+  "4": "supported",
+  "5": "supported",
+  "6": "supported",
+  "7": "partial",
+  "8": "unsupported",
+  "9": "supported",
+  "10": "supported",
+  "11": "unsupported",
+  "12": "supported",
+  "13": "supported",
+  "14": "supported",
+  "15": "supported",
+  "16": "partial",
+  "17": "supported",
+  "18": "supported",
+  "19": "unsupported",
+  "20": "partial"
+ },
+ "unparsed": []
+}

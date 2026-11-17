@@ -95,7 +95,10 @@ def confirm(conn, proposal_id: int) -> dict:
     )
     db.audit(conn, "mcp", "memory_confirmed",
              {"proposal_id": proposal_id, "event_id": event_id})
-    return {"event_id": event_id}
+    # an identity hypothesis the owner just confirmed becomes a proven claim
+    from . import identity
+    claim = identity.on_confirmed(conn, proposal_id, event_id)
+    return {"event_id": event_id, **({"identity_claim": claim} if claim else {})}
 
 
 def decline(conn, proposal_id: int, reason: str = "") -> dict:
@@ -108,6 +111,8 @@ def decline(conn, proposal_id: int, reason: str = "") -> dict:
     if updated is None:
         return {"already": "decided"}
     db.audit(conn, "mcp", "memory_declined", {"proposal_id": proposal_id})
+    from . import identity
+    identity.on_declined(conn, proposal_id)   # a declined identity hypothesis is refuted
     return {"declined": proposal_id}
 
 

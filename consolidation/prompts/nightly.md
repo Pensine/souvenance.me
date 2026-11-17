@@ -34,9 +34,16 @@ Ta tâche — rejouer la journée et en extraire les mémoires :
      `"remplace": [id]` et `"raison": "…"` (une phrase : ce qui a changé).
    - Si quelque chose a pris fin **sans** successeur (« j'ai abandonné X »),
      liste-le dans `"revolues"` avec `memory_id`, `raison` et `valid_to`.
-   - En cas de simple tension ou de doute, ne remplace rien : produis une
-     mémoire `reflection` qui expose la contradiction. Les contradictions sont
-     des mises à jour prioritaires, jamais des erreurs.
+   - En cas de simple tension ou de doute, ne remplace rien : garde chaque
+     fait comme sa propre mémoire, avec son extrait ; le code confronte les
+     faits. Un doute sur qui est qui va dans `identity_hypotheses`. N'écris
+     jamais une mémoire sur le dossier lui-même (« le sujet rapporte… »,
+     « l'entrée précédente… », « incertitude sur… ») : elle est rejetée.
+   - Une mémoire = un fait. Deux faits d'un même dépôt (« j'ai arrosé les
+     plantes » et « ma tante vit à Valence ») font deux mémoires.
+   - Une photo n'a que sa date et son `lieu` (nommé par le code à partir de
+     ses coordonnées) : elle prouve que {{OWNER}} était à ce lieu ce jour-là,
+     rien de plus. N'en décris jamais le contenu.
    - N'utilise que des `id` présents dans `connaissances_actuelles`.
    - Date les faits au moment où ils sont vrais (`valid_from`), pas au moment
      où on en parle : « en juin j'ai quitté X » se date en juin. Un projet ou
@@ -92,6 +99,60 @@ Ta tâche — rejouer la journée et en extraire les mémoires :
    de même nature (ex. « habite à », « travaille chez ») — l'ancienne arête
    sera fermée, jamais effacée.
 
+5bis. **Qui est qui** : la personne désigne souvent les autres par un rôle
+   (« ma sœur », « my colleague from the book group ») autant que par leur nom.
+   - Chaque mémoire porte `subject` : de qui elle parle, écrit comme dans le
+     dépôt (un nom, ou un rôle : « Priya », « ma sœur »), ou `"{{OWNER}}"`
+     quand elle parle de la personne elle-même. Un fait qu'elle rapporte sur
+     quelqu'un d'autre (« Told Oskar that my sister works at… ») a pour sujet
+     cet autre (« my sister »), jamais elle-même ni l'interlocuteur.
+   - Un rôle se recopie ENTIER, avec ce qui le précise : « my sister from the
+     old flat », « ma sœur du club », jamais raccourci en « my sister ». Deux
+     rôles qui ne diffèrent que par cette précision sont deux personnes.
+   - Quand un dépôt dit lui-même qu'un rôle et un nom sont la même personne
+     (« dinner with my sister Priya », « Priya, ma sœur »), ajoute une entrée à
+     `aliases` : `name` (le nom), `alias` (le rôle ou le surnom, tel qu'écrit),
+     `role_of_owner` (« sister », « colleague »… ou null pour un surnom),
+     `excerpt` (le passage COPIÉ MOT POUR MOT qui nomme les deux ensemble),
+     `source_event_id`, `confidence`. Le code n'admet le lien que si l'extrait
+     les relie dans une même proposition ; deux noms qui se suivent seulement
+     dans une phrase ne suffisent pas. N'en propose jamais par déduction.
+     Une entrée par couple nom + rôle écrits ensemble, même si ce nom a déjà
+     un autre rôle ; l'`alias` garde la précision du rôle (« my brother from
+     the old flat »), et la mémoire du dépôt garde aussi la phrase qui les
+     nomme ensemble (« Long call with Gideon, my sister from the old flat »).
+   - Quand aucun dépôt ne les écrit ensemble mais que le rôle et le nom
+     partagent des attributs précis dits dans des dépôts DIFFÉRENTS (même
+     ville et même employeur, même événement le même jour), tu peux proposer
+     une hypothèse dans `identity_hypotheses` : `name`, `alias`,
+     `role_of_owner`, et `supports`, une entrée par attribut : `attribute`
+     (la valeur partagée, telle qu'écrite), `alias_excerpt` + `alias_event_id`
+     (l'extrait qui la dit du rôle), `name_excerpt` + `name_event_id` (celui
+     qui la dit du nom). Ajoute dans `against` ce qui la contredit (deux villes
+     différentes au même moment : `alias_value`, `name_value`, extraits et ids).
+     Le code vérifie chaque extrait, ignore les attributs génériques (« from
+     home »), exige deux appuis indépendants et réfute l'hypothèse si un dépôt
+     montre les deux personnes ensemble. Une hypothèse n'attache aucun fait.
+   - Un pronom (« she », « il ») comme `subject` n'est résolu que dans son
+     propre dépôt, s'il n'y a qu'une personne nommée avant lui.
+
+5ter. **Quand, au juste** : un dépôt date rarement ce qu'il raconte. Ne
+   devine jamais un jour : borne-le.
+   - Une mémoire dont le fait a une date d'événement porte `event_key` (le fait
+     en quelques mots, le même pour toutes les mémoires sur ce fait :
+     « Kofi a le kayak ») et `event_bounds`, une liste de bornes :
+     `side` (`earliest` : le fait n'était pas encore arrivé ; `latest` : il
+     était déjà arrivé ; `exact` : le dépôt donne le jour), `excerpt` (le
+     passage COPIÉ MOT POUR MOT qui le dit) et `source_event_id`.
+   - « pas encore », « not yet » → `earliest` ; « déjà », « already »,
+     « since », « by then » → `latest` ; une date dite (« le 12 mars »,
+     « hier ») → `exact`. N'écris pas la date : le code la calcule depuis
+     l'extrait, ou depuis la date du dépôt quand l'extrait ne dit qu'une
+     relation (« pas encore »). Une borne sans extrait retrouvé, ou dont
+     l'extrait ne dit ni date ni relation, est refusée.
+   - Deux mémoires sur le même fait (« pas encore » un jour, « déjà » un autre)
+     gardent la même `event_key` : le code en déduit l'intervalle.
+
 6. **État des liens** : quand les événements disent quelque chose de la
    relation elle-même — pas d'un fait la concernant —, produis un état pour
    l'entité en cause. Deux axes indépendants : `closeness` (0 distant, 1
@@ -126,9 +187,19 @@ Réponds UNIQUEMENT avec un objet JSON (aucun texte autour) :
       "source_event_ids": [1, 2],
       "preuve": ["extrait exact du dépôt"],
       "remplace": [],
-      "raison": null
+      "raison": null,
+      "subject": "de qui parle la mémoire, tel qu'écrit",
+      "event_key": null,
+      "event_bounds": [{"side": "earliest|latest|exact", "excerpt": "…", "source_event_id": 1}]
     }
   ],
+  "aliases": [{"name": "…", "alias": "…", "role_of_owner": null, "excerpt": "…",
+               "source_event_id": 1, "confidence": 0.0}],
+  "identity_hypotheses": [{"name": "…", "alias": "…", "role_of_owner": "…",
+                           "supports": [{"attribute": "…", "alias_excerpt": "…",
+                                         "alias_event_id": 1, "name_excerpt": "…",
+                                         "name_event_id": 2}],
+                           "against": []}],
   "revolues": [{"memory_id": 0, "raison": "…", "valid_to": "ISO 8601"}],
   "intentions": [{"quoi": "…", "sujet": "…", "echeance": null, "source_event_ids": [1]}],
   "intentions_closes": [{"intention_id": 0, "issue": "fait|abandonne", "raison": "…", "date": "ISO 8601"}],

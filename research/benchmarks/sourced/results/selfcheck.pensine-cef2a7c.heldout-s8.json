@@ -1,0 +1,1076 @@
+{
+ "judge": "model:claude-sonnet-5-5:prompt-7dfb69b6cd34",
+ "system": "pensine cef2a7c",
+ "seed": 0,
+ "only_judge_supported": true,
+ "thresholds": {
+  "strict_detection_min": 0.9,
+  "verbatim_false_alarm_max": 0.1
+ },
+ "mutations": {
+  "n": 60,
+  "detected": 60,
+  "rate": 1.0,
+  "strict": {
+   "n": 33,
+   "detected": 33,
+   "rate": 1.0
+  },
+  "by_kind": {
+   "number": {
+    "n": 5,
+    "detected": 5,
+    "rate": 1.0
+   },
+   "date": {
+    "n": 13,
+    "detected": 13,
+    "rate": 1.0
+   },
+   "person_outside": {
+    "n": 15,
+    "detected": 15,
+    "rate": 1.0
+   },
+   "person_inside": {
+    "n": 14,
+    "detected": 14,
+    "rate": 1.0
+   },
+   "place": {
+    "n": 13,
+    "detected": 13,
+    "rate": 1.0
+   }
+  },
+  "excerpt_still_called_supporting": 0.0167
+ },
+ "verbatim": {
+  "n": 30,
+  "false_alarms": 0,
+  "rate": 0.0
+ },
+ "passes": true,
+ "items": [
+  {
+   "origin_id": "83",
+   "content": "Nell said their bike was stolen outside the station.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Gideon Abbott",
+    "to": "Nell Fischer",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "46",
+   "content": "Yusuf was in Porto on 2025-01-28, with photos taken there at 11:03 and 14:11.",
+   "mutation": {
+    "kind": "date",
+    "from": "2025-02-07",
+    "to": "2025-01-28",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "12",
+   "content": "Yusuf's home is at 60 Tanner Street, Hobart.",
+   "mutation": {
+    "kind": "place",
+    "from": "Porto",
+    "to": "Hobart",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "86",
+   "content": "Hemi became a member of the Beacon Hill Choir on the morning of 2025-02-15.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Jonah",
+    "to": "Hemi",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "26",
+   "content": "Yusuf called it lovely news that Marisol passed a driving test.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Lena",
+    "to": "Marisol",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "2",
+   "content": "Yusuf's landlady now lives in Windhoek.",
+   "mutation": {
+    "kind": "place",
+    "from": "Bordeaux",
+    "to": "Windhoek",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "53",
+   "content": "Yusuf was in Afurada de Baixo, Porto on 2025-02-18, with a photo taken there at 15:50.",
+   "mutation": {
+    "kind": "date",
+    "from": "2025-02-09",
+    "to": "2025-02-18",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "60",
+   "content": "Yusuf's tenancy of 66 Orchard Close, Valencia, with Elm Property Lettings begins on 10 February 2025.",
+   "mutation": {
+    "kind": "number",
+    "from": "60",
+    "to": "66",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "9",
+   "content": "Linus, the speaker's best friend, adopted a puppy, which the speaker called lovely news.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Gideon Abbott",
+    "to": "Linus Delacroix",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "20",
+   "content": "Yusuf's birthday falls on 30 November.",
+   "mutation": {
+    "kind": "date",
+    "from": "17 November",
+    "to": "30 November",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "58",
+   "content": "Oksana has a flat in Bristol.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Bianca",
+    "to": "Oksana",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "78",
+   "content": "Yusuf was in Valencia on 2025-01-28, with a photo taken there at 16:31.",
+   "mutation": {
+    "kind": "date",
+    "from": "2025-02-13",
+    "to": "2025-01-28",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "65",
+   "content": "Kaia lives in Montreal now.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Lena Abbott",
+    "to": "Kaia Duarte",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "85",
+   "content": "Yusuf said he was tired, but in a good way, on 2025-02-06.",
+   "mutation": {
+    "kind": "date",
+    "from": "2025-02-15",
+    "to": "2025-02-06",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "48",
+   "content": "Nell works at Wickerfield Nursery these days.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Cyrus Duarte",
+    "to": "Nell Fischer",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "75",
+   "content": "Yusuf reminded Ingrid of this.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Lena",
+    "to": "Ingrid",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "94",
+   "content": "Nell showed Yusuf the upright piano on 2025-02-16; it had arrived at some point.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Dalia Petrov",
+    "to": "Nell Fischer",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "11",
+   "content": "Lena, Yusuf's sister, is living in Dunedin these days.",
+   "mutation": {
+    "kind": "place",
+    "from": "Montreal",
+    "to": "Dunedin",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "64",
+   "content": "Marisol became a member of the Juniper Street Youth Choir.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Nadia",
+    "to": "Marisol",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "3",
+   "content": "Yusuf's aunt now lives in Windhoek.",
+   "mutation": {
+    "kind": "place",
+    "from": "Rotterdam",
+    "to": "Windhoek",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "56",
+   "content": "Yusuf had coffee with Marisol at the riverside park on 2025-02-09.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Dalia",
+    "to": "Marisol",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "77",
+   "content": "Yusuf's brother from the running club still works at Hollowbrook Surveying, as Yusuf confirmed to Maren over coffee.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Jonah Varga",
+    "to": "Maren Moreau",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "49",
+   "content": "Kaia works at Pellucid Labs.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Maren Moreau",
+    "to": "Kaia Duarte",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "80",
+   "content": "Yusuf spent an hour or two at the hilltop viewpoint on 2025-02-21.",
+   "mutation": {
+    "kind": "date",
+    "from": "2025-02-13",
+    "to": "2025-02-21",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "42",
+   "content": "On January 29, 2025, Yusuf was seen at Riverside Medical Practice and diagnosed with a bad chest cold; treatment is rest and fluids, with a return visit if there is no improvement.",
+   "mutation": {
+    "kind": "date",
+    "from": "February 7, 2025",
+    "to": "January 29, 2025",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "15",
+   "content": "Maren's home is Tbilisi.",
+   "mutation": {
+    "kind": "place",
+    "from": "Rotterdam",
+    "to": "Tbilisi",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "88",
+   "content": "Ingrid's rowing machine has arrived;",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Wes",
+    "to": "Ingrid",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "5",
+   "content": "Yusuf said yes to Silverfern Energy's offer of an editor role, starting January 25, 2025.",
+   "mutation": {
+    "kind": "date",
+    "from": "February 5, 2025",
+    "to": "January 25, 2025",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "63",
+   "content": "Lyon is home for Dora.",
+   "mutation": {
+    "kind": "place",
+    "from": "Bordeaux",
+    "to": "Lyon",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "16",
+   "content": "Jonah, the speaker's brother from the old flat, came over for dinner and stayed until midnight.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Linus Delacroix",
+    "to": "Jonah Varga",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "36",
+   "content": "Yusuf grew up in Asuncion.",
+   "mutation": {
+    "kind": "place",
+    "from": "Ghent",
+    "to": "Asuncion",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "52",
+   "content": "Dmitri has the espresso machine now and loves it.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Nadia",
+    "to": "Dmitri",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "61",
+   "content": "The rent is 1174 EUR, payable monthly.",
+   "mutation": {
+    "kind": "number",
+    "from": "1170",
+    "to": "1174",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "69",
+   "content": "On 2025-02-12 Samir became a member of the Saltmarsh Community Choir.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Dalia Petrov",
+    "to": "Samir Haddad",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "27",
+   "content": "Yusuf had tea at the station café with his neighbour, Hemi, before the evening train.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Nadia",
+    "to": "Hemi",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "91",
+   "content": "Yusuf was in Valencia on 2025-02-06, with a photo taken there at 08:18.",
+   "mutation": {
+    "kind": "date",
+    "from": "2025-02-16",
+    "to": "2025-02-06",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "93",
+   "content": "Hemi became a member of the Old Mill Folk Choir on 2025-02-16.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Linus",
+    "to": "Hemi",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "4",
+   "content": "Yusuf's flatmate now lives in Hobart.",
+   "mutation": {
+    "kind": "place",
+    "from": "Leipzig",
+    "to": "Hobart",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "90",
+   "content": "Gideon became a member of the Kiln Lane Chamber Choir on 2025-01-29.",
+   "mutation": {
+    "kind": "date",
+    "from": "2025-02-15",
+    "to": "2025-01-29",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "32",
+   "content": "Lena's rowing machine had not arrived yet.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Wes Varga",
+    "to": "Lena Abbott",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "87",
+   "content": "Yusuf was in Gothenburg on 2025-02-08, with a photo taken there at 10:26.",
+   "mutation": {
+    "kind": "date",
+    "from": "2025-02-15",
+    "to": "2025-02-08",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "84",
+   "content": "Yusuf had lunch on 2025-02-15 with Linus and his godfather.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Bianca Sorensen",
+    "to": "Linus Delacroix",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "45",
+   "content": "Yusuf transferred 1317 EUR for the rent on rent day.",
+   "mutation": {
+    "kind": "number",
+    "from": "1310",
+    "to": "1317",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "21",
+   "content": "Yusuf heard word that Colette's company might be on the brink of shutting down; it is hearsay, not confirmed.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Gideon",
+    "to": "Colette",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "82",
+   "content": "Nell mostly works from home.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Dora Collins",
+    "to": "Nell Fischer",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "24",
+   "content": "Yusuf's friend Oksana phoned him in the evening and they talked for ages.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Jonah",
+    "to": "Oksana",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "7",
+   "content": "Dmitri is the speaker's best friend.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Gideon",
+    "to": "Dmitri",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "34",
+   "content": "Yusuf's godfather lives in Asuncion these days.",
+   "mutation": {
+    "kind": "place",
+    "from": "Bristol",
+    "to": "Asuncion",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "47",
+   "content": "Dalia Petrov left Yusuf a voice message saying she is in Windhoek, that all is well, and asking him to ring her when he is free.",
+   "mutation": {
+    "kind": "place",
+    "from": "Turin",
+    "to": "Windhoek",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "19",
+   "content": "Cyrus's home is Edinburgh.",
+   "mutation": {
+    "kind": "place",
+    "from": "Leipzig",
+    "to": "Edinburgh",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "37",
+   "content": "Yusuf says that some days he really misses Tbilisi.",
+   "mutation": {
+    "kind": "place",
+    "from": "Ghent",
+    "to": "Tbilisi",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "13",
+   "content": "Yusuf ran the Spring 27K and finished in 1:03:54.",
+   "mutation": {
+    "kind": "number",
+    "from": "10",
+    "to": "27",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "79",
+   "content": "Lena became a member of the Harbour Gospel Choir on the morning of 2025-03-04.",
+   "mutation": {
+    "kind": "date",
+    "from": "2025-02-13",
+    "to": "2025-03-04",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "41",
+   "content": "Wes showed Yusuf the pottery wheel, which had arrived at some point.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Linus Delacroix",
+    "to": "Wes Varga",
+    "strict": false
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "18",
+   "content": "Dora, Yusuf's sister from the old flat, phoned him in the evening and they talked for ages.",
+   "mutation": {
+    "kind": "person_inside",
+    "from": "Lena Abbott",
+    "to": "Dora Collins",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "71",
+   "content": "Yusuf completed the Spring 27K on February 12, 2025, with an official chip time of 48:01.",
+   "mutation": {
+    "kind": "number",
+    "from": "10",
+    "to": "27",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "31",
+   "content": "Colette's espresso machine had not arrived yet.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Nadia",
+    "to": "Colette",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "81",
+   "content": "Dmitri works at Tamberlane Bakery these days.",
+   "mutation": {
+    "kind": "person_outside",
+    "from": "Bianca",
+    "to": "Dmitri",
+    "strict": true
+   },
+   "support": "unsupported",
+   "flagged": true
+  },
+  {
+   "origin_id": "50",
+   "content": "Yusuf bumped into Maren on the morning of 2025-02-19.",
+   "mutation": {
+    "kind": "date",
+    "from": "2025-02-09",
+    "to": "2025-02-19",
+    "strict": false
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "57",
+   "content": "Yusuf says he might pack up and go if the Cuenca offer actually happens.",
+   "mutation": {
+    "kind": "place",
+    "from": "Leipzig",
+    "to": "Cuenca",
+    "strict": true
+   },
+   "support": "partial",
+   "flagged": true
+  },
+  {
+   "origin_id": "83",
+   "content": "According to what Gideon said, their bike was stolen outside the station.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "74",
+   "content": "Saltire Glassworks is where my best friend works, I reminded Lena.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "12",
+   "content": "Home — 60 Tanner Street, Porto.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "86",
+   "content": "Jonah — new member of the Beacon Hill Choir since this morning.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "26",
+   "content": "Lovely news today: Lena passed a driving test.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "30",
+   "content": "Still no sign of the standing desk I ordered.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "25",
+   "content": "Yesterday, my first day at Silverfern Energy, as their editor.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "2",
+   "content": "Bordeaux is where my landlady lives now.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "8",
+   "content": "came over for dinner and stayed till midnight",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "60",
+   "content": "This agreement is made between Elm Property Lettings and Yusuf Ishikawa, the tenant.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "9",
+   "content": "Today, my best friend Gideon adopted a puppy, lovely news.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "20",
+   "content": "My birthday falls on 17 November",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "39",
+   "content": "My aunt — at Gullwing Ferries these days.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "66",
+   "content": "my sister from the old flat was still at Quillon Maps; yes, still there",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "58",
+   "content": "Bianca has a flat in Bristol.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "65",
+   "content": "Montreal is where Lena lives now.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "85",
+   "content": "Tired tonight; good tired, though.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "33",
+   "content": "Gideon had no idea that my neighbour is employed by Thistledown Instruments.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "48",
+   "content": "Cyrus — at Wickerfield Nursery these days.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "54",
+   "content": "Fennick & Dale Opticians is where my brother from the old flat works, I reminded Nadia.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "75",
+   "content": "Saltire Glassworks is where my best friend works, I reminded Lena.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "94",
+   "content": "Dalia showed me the upright piano, it arrived at some point.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "11",
+   "content": "My sister Lena — in Montreal these days.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "64",
+   "content": "Today Nadia became a member of the Juniper Street Youth Choir.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "3",
+   "content": "Rotterdam is where my aunt lives now.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "56",
+   "content": "Today, coffee at the riverside park, Dalia and me.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "77",
+   "content": "Jonah wanted to know whether my brother from the running club was still at Hollowbrook Surveying; yes, still there.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "49",
+   "content": "Bumped into Maren; Pellucid Labs is where they work.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "80",
+   "content": "An hour or two at the hilltop viewpoint today.",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  },
+  {
+   "origin_id": "42",
+   "content": "Seen on February 7, 2025: Yusuf Ishikawa",
+   "mutation": {
+    "kind": "verbatim",
+    "strict": true
+   },
+   "support": "supported",
+   "flagged": false
+  }
+ ]
+}

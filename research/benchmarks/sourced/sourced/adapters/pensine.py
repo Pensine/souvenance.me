@@ -35,7 +35,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from ..judge import quote_found
-from .base import Answer, Citation, DepositView, MemoryRecord, MemorySystem
+from .base import AliasLink, Answer, Citation, DepositView, MemoryRecord, MemorySystem
 
 REPO = Path(__file__).resolve().parents[5]
 PORT = int(os.environ.get("SOURCED_DB_PORT", "5443"))
@@ -45,11 +45,22 @@ ANSWER_SYSTEM = (
     "You answer questions about {owner}'s life using ONLY the memory context "
     "provided (JSON from a memory engine). Reply with the shortest possible answer: "
     "a few words, a name, a number or a date. Write dates as '8 May 2025'. "
+    "When the context gives an event date as an interval (date_evenement), answer "
+    "'between A and B' with both dates; never pick a single date inside it. "
     "If the context does not contain the answer, reply exactly: No information")
 
 
 def _url(db: str) -> str:
     return f"postgresql://sourced:sourced@127.0.0.1:{PORT}/{db}"
+
+
+def photo_position(d: DepositView) -> dict | None:
+    """A photo's position, as Pensine receives it from a phone: the device's
+    structured metadata (EXIF in production), never parsed from text nor
+    left to the model."""
+    if d.position is None:
+        return None
+    return {"lat": d.position[0], "lon": d.position[1], "source": "exif"}
 
 
 class PensineSystem(MemorySystem):
@@ -111,6 +122,8 @@ class PensineSystem(MemorySystem):
                 payload = {"deposit_id": d.id, "kind": d.kind, "author": d.author,
                            "recipient": d.recipient,
                            ("transcript" if d.kind.startswith("voice") else "text"): d.text}
+                if gps := photo_position(d):
+                    payload["lieu"] = gps
                 at = datetime.fromisoformat(d.created_at).replace(tzinfo=timezone.utc)
                 eid = db.append_event(conn, source="sourced", kind=d.kind, occurred_at=at,
                                       payload=payload)
@@ -148,9 +161,11 @@ class PensineSystem(MemorySystem):
             self.gate.append({"day": day.isoformat(), "events": len(events), **{
                 k: r.get(k) for k in (
                     "memories_written", "memories_rejected", "memories_corrected",
+                    "memories_other_voice",
                     "memories_revised", "batches", "batches_failed", "events_pending",
                     "llm_calls", "answers_repaired", "answers_truncated",
-                    "language_checked", "language_mismatched") if k in r}})
+                    "language_checked", "language_mismatched", "time_bounds_admitted",
+                    "time_bounds_refused") if k in r}})
             print(f"night {day}: {len(events)} events, {r.get('memories_written')} written, "
                   f"{r.get('memories_rejected')} rejected, "
                   f"{r.get('events_pending', 0)} left pending", file=sys.stderr, flush=True)
@@ -159,19 +174,47 @@ class PensineSystem(MemorySystem):
         """The stand-in for the consolidation model (scripted mode only)."""
         assert self.truth, "scripted mode needs the truth"
         firsts = {p["name"]: p["name"].split()[0] for p in self.truth["people"]}
+        people = {p["id"]: p for p in self.truth["people"]}
         facts = {f["id"]: f for f in self.truth["facts"]}
         traps = {t["id"]: t for t in self.truth["traps"]}
+
+        def subject_of(sentence: str) -> str:
+            """The careless writer's subject: whoever the sentence opens with."""
+            for full, first in sorted(firsts.items(), key=lambda x: -len(x[0])):
+                if sentence.startswith(full) or sentence.startswith(first + " "):
+                    return first
+            return firsts[self.owner]
 
         def first_names(s: str) -> str:
             for full, first in firsts.items():
                 s = s.replace(full, first)
             return s
 
-        out = []
+        out, aliases = [], []
         for e in events:
             dep = self.gold_deposits[self.event_deposit[e["id"]]]
+            # the deposit itself names role and name together: an identity
+            # claim, which Pensine admits or not (pensine/identity.py)
+            for pid, a, b in dep.get("meta", {}).get("alias_spans", []):
+                p = people[pid]
+                aliases.append({"name": p["name"].split()[0], "alias": p["role"],
+                                "role_of_owner": p["relation"],
+                                "excerpt": dep["text"][a:b], "source_event_id": e["id"],
+                                "confidence": 0.9})
             for s in dep["spans"]:
                 f = facts[s["fact_id"]]
+                if f.get("layer") == "dating":
+                    out += self._dated(e, dep, s, f, people)
+                    continue
+                if f.get("layer") == "coverage":  # written as deposited, role or name
+                    quote = dep["text"][s["start"]:s["end"]]
+                    p = people[f["subject"]]
+                    by_role = bool(p["role"]) and quote.lower().find(p["role"]) >= 0
+                    out.append({"type": "semantic", "content": quote, "confidence": 0.9,
+                                "importance": 0.4, "valid_from": dep["created_at"][:10],
+                                "source_event_ids": [e["id"]], "preuve": [quote],
+                                "subject": p["role"] if by_role else p["name"].split()[0]})
+                    continue
                 prev = facts.get(f["supersedes"]) if f["supersedes"] else None
                 replaces = []
                 if prev:
@@ -180,6 +223,12 @@ class PensineSystem(MemorySystem):
                                        (first_names(prev["canonical"]),)).fetchone()
                     replaces = [row["id"]] if row else []
                 content = first_names(f["canonical"])
+                subject = people[f["subject"]]["name"].split()[0]
+                if f.get("layer") == "identity" and f["predicate"] == "employer":
+                    # written as deposited, by role: Pensine must resolve who
+                    subject = people[f["subject"]]["role"]
+                    content = f"{subject[0].upper()}{subject[1:]} works at " \
+                              f"{f['value']['employer']}."
                 if f["predicate"] == "race":  # injected: altered number, real quote
                     m, sec = f["value"]["time"].rsplit(":", 1)
                     content = content.replace(f["value"]["time"],
@@ -189,7 +238,7 @@ class PensineSystem(MemorySystem):
                             "valid_from": f["valid_from"], "valid_to": f["valid_to"],
                             "source_event_ids": [e["id"]],
                             "preuve": [dep["text"][s["start"]:s["end"]]],
-                            "remplace": replaces, "raison": "changed"})
+                            "remplace": replaces, "raison": "changed", "subject": subject})
             for tid in dep["trap_ids"]:
                 t = traps[tid]
                 if t["kind"] == "photo_content":  # injected: made-up quote
@@ -202,17 +251,97 @@ class PensineSystem(MemorySystem):
                     out.append({"type": "semantic", "confidence": 0.7, "importance": 0.4,
                                 "content": first_names(t["forbidden"]),
                                 "valid_from": t["day"], "source_event_ids": [e["id"]],
-                                "preuve": [t["sentence"]]})
-        return {"memories": out, "entities": [], "relations": []}
+                                "preuve": [t["sentence"]],
+                                "subject": subject_of(first_names(t["forbidden"]))})
+        return {"memories": out, "entities": [], "relations": [], "aliases": aliases,
+                "identity_hypotheses": self._hypotheses(events)}
+
+    def _hypotheses(self, events) -> list[dict]:
+        """A careless linker: on the night the last attribute deposit of a
+        coverage pair arrives, propose that the role IS the name, citing every
+        attribute value they share, generic ones and single ones included.
+        Pensine's code must keep only the converging pair and let a later
+        "lunch with my flatmate and X" refute the look-alike."""
+        tonight = {self.event_deposit[e["id"]] for e in events}
+        event_of = {d: i for i, d in self.event_deposit.items()}
+        facts = {f["id"]: f for f in self.truth["facts"]}
+        people = {p["id"]: p for p in self.truth["people"]}
+        out = []
+        for x in self.truth.get("coverage", []):
+            spans = []
+            for d in self.gold_deposits.values():
+                for s in d["spans"]:
+                    if any(m["fact"] == s["fact_id"] for m in x["mentions"]):
+                        quote = d["text"][s["start"]:s["end"]]
+                        spans.append((d["created_at"], d["id"], facts[s["fact_id"]], quote,
+                                      x["role"] in quote.lower()))
+            if not spans or max(spans)[1] not in tonight \
+                    or any(sp[1] not in event_of for sp in spans):
+                continue
+            supports = []
+            for _, da, fa, qa, ra in spans:
+                for _, dn, fn, qn, rn in spans:
+                    if ra and not rn and fa["predicate"] == fn["predicate"] \
+                            and fa["value"] == fn["value"]:
+                        supports.append({"attribute": next(iter(fa["value"].values())),
+                                         "alias_excerpt": qa, "alias_event_id": event_of[da],
+                                         "name_excerpt": qn, "name_event_id": event_of[dn]})
+            if supports:
+                out.append({"name": people[x["name_person"]]["name"].split()[0],
+                            "alias": x["role"],
+                            "role_of_owner": people[x["role_person"]]["relation"],
+                            "supports": supports})
+        return out
+
+    def aliases(self) -> list[AliasLink]:
+        """The identities Pensine holds as active claims, with their tier."""
+        from pensine import db
+
+        with db.connection() as conn:
+            rows = conn.execute(
+                "SELECT a.alias, e.name, a.tier FROM entity_aliases a "
+                "JOIN entities e ON e.id = a.entity_id WHERE a.status = 'active' "
+                "ORDER BY a.id").fetchall()
+        return [AliasLink(r["alias"], r["name"], r["tier"]) for r in rows]
+
+    @staticmethod
+    def _dated(e, dep, s, f, people) -> list[dict]:
+        """A bracketed fact, as a careful model would write it: the memory
+        states what the deposit says ("not yet" / "already") and proposes a
+        bound quoting it; Pensine's code computes the date from the deposit
+        and derives the interval. Injected: an `exact` bound on the same
+        relation quote, which the code must refuse (invented precision)."""
+        quote = dep["text"][s["start"]:s["end"]]
+        who = people[f["subject"]]["name"].split()[0]
+        item = f["value"]["item"]
+        key = f"{who} has the {item}"
+        if s["role"] == "not_yet":
+            content, bounds = f"{who} does not have the {item} yet.", [
+                {"side": "earliest", "excerpt": quote, "source_event_id": e["id"]}]
+        else:
+            content, bounds = f"{who} has the {item}.", [
+                {"side": "latest", "excerpt": quote, "source_event_id": e["id"]},
+                {"side": "exact", "excerpt": quote, "source_event_id": e["id"]}]
+        return [{"type": "semantic", "content": content, "confidence": 0.9,
+                 "importance": 0.4, "valid_from": dep["created_at"][:10],
+                 "source_event_ids": [e["id"]], "preuve": [quote], "subject": who,
+                 "event_key": key, "event_bounds": bounds}]
 
     # -- read path --------------------------------------------------------
     def memories(self) -> list[MemoryRecord]:
         from pensine import db
 
         with db.connection() as conn:
+            # the subject is the entity Pensine resolved (through an identity
+            # claim when the memory names a role), not the text it was given
             rows = conn.execute(
-                "SELECT id, content, confidence, valid_from, valid_to, superseded_by, "
-                "archived_at, source_event_ids, evidence FROM memories ORDER BY id").fetchall()
+                "SELECT m.id, m.content, m.confidence, m.valid_from, m.valid_to, "
+                "m.superseded_by, m.archived_at, m.source_event_ids, m.evidence, "
+                "e.name AS subject FROM memories m "
+                "LEFT JOIN entities e ON e.id = m.subject_entity_id ORDER BY m.id").fetchall()
+            # the interval Pensine derives in code for each memory's fact
+            from pensine import dating
+            timed = dating.for_memories(conn, [r["id"] for r in rows])
         out = []
         for r in rows:
             deps = [self.event_deposit[i] for i in (r["source_event_ids"] or [])
@@ -231,7 +360,10 @@ class PensineSystem(MemorySystem):
                 valid_to=r["valid_to"].date().isoformat() if r["valid_to"] else None,
                 current=r["valid_to"] is None and r["superseded_by"] is None
                 and r["archived_at"] is None,
-                confidence=float(r["confidence"]), citations=cits))
+                confidence=float(r["confidence"]), citations=cits,
+                subject=r["subject"] or "",
+                event_earliest=_bound(timed.get(r["id"]), "earliest"),
+                event_latest=_bound(timed.get(r["id"]), "latest")))
         return out
 
     def answer(self, question: str, asked_at: date) -> Answer:
@@ -257,3 +389,11 @@ class PensineSystem(MemorySystem):
                 "embeddings": config.EMBEDDING_BACKEND,
                 "qa_mode": "context" if self.mode == "scripted" else "answer",
                 "evidence_gate": self.gate}
+
+
+def _bound(iv: dict | None, side: str) -> str | None:
+    """One end of a Pensine interval as an ISO date; a contradiction exposes
+    nothing (the system itself does not claim a date then)."""
+    if not iv or iv.get("conflict") or not iv.get(side):
+        return None
+    return iv[side]["date"].isoformat()

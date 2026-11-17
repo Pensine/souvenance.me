@@ -1,0 +1,707 @@
+{
+ "F049": [
+  {
+   "deposit": "D0061",
+   "start": 35,
+   "end": 76,
+   "role": "mention",
+   "excerpt": "Bordeaux is where my godfather lives now."
+  },
+  {
+   "deposit": "D0070",
+   "start": 35,
+   "end": 65,
+   "role": "mention",
+   "excerpt": "Kasper has a flat in Bordeaux."
+  }
+ ],
+ "F010": [
+  {
+   "deposit": "D0001",
+   "start": 0,
+   "end": 47,
+   "role": "mention",
+   "excerpt": "Sent the dish back — peanuts, and I'm allergic."
+  }
+ ],
+ "F020": [
+  {
+   "deposit": "D0001",
+   "start": 83,
+   "end": 139,
+   "role": "mention",
+   "excerpt": "Lovely news today: my sister Amara started a new course."
+  }
+ ],
+ "F045": [
+  {
+   "deposit": "D0049",
+   "start": 28,
+   "end": 86,
+   "role": "not_yet",
+   "excerpt": "No espresso machine for Kofi so far, the delivery is late."
+  },
+  {
+   "deposit": "D0055",
+   "start": 28,
+   "end": 90,
+   "role": "already",
+   "excerpt": "Kofi showed me the espresso machine, it arrived at some point."
+  }
+ ],
+ "F044": [
+  {
+   "deposit": "D0050",
+   "start": 35,
+   "end": 75,
+   "role": "not_yet",
+   "excerpt": "Rosa is still without the upright piano."
+  },
+  {
+   "deposit": "D0056",
+   "start": 35,
+   "end": 94,
+   "role": "already",
+   "excerpt": "Rosa showed me the upright piano, it arrived at some point."
+  }
+ ],
+ "F055": [
+  {
+   "deposit": "D0062",
+   "start": 35,
+   "end": 73,
+   "role": "mention",
+   "excerpt": "These days my uncle lives in Valencia."
+  }
+ ],
+ "F059": [
+  {
+   "deposit": "D0063",
+   "start": 44,
+   "end": 89,
+   "role": "mention",
+   "excerpt": "These days my piano teacher lives in Leipzig."
+  }
+ ],
+ "F028": [
+  {
+   "deposit": "D0002",
+   "start": 0,
+   "end": 34,
+   "role": "mention",
+   "excerpt": "Today, the Park 5K, done in 20:01."
+  }
+ ],
+ "F006": [
+  {
+   "deposit": "D0003",
+   "start": 35,
+   "end": 156,
+   "role": "future",
+   "excerpt": "On er, 15 February 2025, I er, start as backend engineer at okay so, Kestrel erm, Logistics; the contract is erm, signed."
+  },
+  {
+   "deposit": "D0004",
+   "start": 53,
+   "end": 141,
+   "role": "future",
+   "excerpt": "Following your interviews, Kestrel Logistics would like you to join as backend engineer."
+  },
+  {
+   "deposit": "D0030",
+   "start": 0,
+   "end": 64,
+   "role": "start",
+   "excerpt": "Kestrel Logistics has a new backend engineer as of yesterday: me"
+  }
+ ],
+ "F001": [
+  {
+   "deposit": "D0005",
+   "start": 59,
+   "end": 139,
+   "role": "mention",
+   "excerpt": "Since er, June well, 2024, my address okay so, has been 95 Orchard Close, Ghent."
+  }
+ ],
+ "F017": [
+  {
+   "deposit": "D0005",
+   "start": 140,
+   "end": 198,
+   "role": "mention",
+   "excerpt": "My erm, best friend Linus — in Rotterdam well, these days."
+  },
+  {
+   "deposit": "D0027",
+   "start": 45,
+   "end": 98,
+   "role": "mention",
+   "excerpt": "Thinking of Linus. They live in Rotterdam these days."
+  }
+ ],
+ "F024": [
+  {
+   "deposit": "D0006",
+   "start": 9,
+   "end": 64,
+   "role": "mention",
+   "excerpt": "Yesterday, I passed a driving test. Can you believe it?"
+  }
+ ],
+ "F019": [
+  {
+   "deposit": "D0007",
+   "start": 106,
+   "end": 131,
+   "role": "mention",
+   "excerpt": "Finish time (chip): 27:47"
+  },
+  {
+   "deposit": "D0010",
+   "start": 40,
+   "end": 78,
+   "role": "mention",
+   "excerpt": "Yesterday, the Park 5K, done in 27:47."
+  }
+ ],
+ "F005": [
+  {
+   "deposit": "D0008",
+   "start": 45,
+   "end": 102,
+   "role": "mention",
+   "excerpt": "An right, editor at Silverfern Energy right, — that's me."
+  }
+ ],
+ "F043": [
+  {
+   "deposit": "D0051",
+   "start": 31,
+   "end": 92,
+   "role": "not_yet",
+   "excerpt": "Checked the tracking again: the standing desk hasn't shipped."
+  },
+  {
+   "deposit": "D0059",
+   "start": 35,
+   "end": 72,
+   "role": "already",
+   "excerpt": "The standing desk is here and in use."
+  }
+ ],
+ "F048": [
+  {
+   "deposit": "D0052",
+   "start": 35,
+   "end": 92,
+   "role": "not_yet",
+   "excerpt": "No sewing machine for Linus so far, the delivery is late."
+  },
+  {
+   "deposit": "D0060",
+   "start": 46,
+   "end": 108,
+   "role": "already",
+   "excerpt": "The sewing machine made it to Linus; they're thrilled with it."
+  }
+ ],
+ "F021": [
+  {
+   "deposit": "D0009",
+   "start": 13,
+   "end": 63,
+   "role": "mention",
+   "excerpt": "Today, I ran a first marathon. Can you believe it?"
+  }
+ ],
+ "F042": [
+  {
+   "deposit": "D0036",
+   "start": 50,
+   "end": 108,
+   "role": "mention",
+   "excerpt": "The Beacon Hill Choir has a new member as of today: Amara."
+  }
+ ],
+ "F003": [
+  {
+   "deposit": "D0010",
+   "start": 0,
+   "end": 39,
+   "role": "mention",
+   "excerpt": "1290 EUR gone on rent again this month."
+  }
+ ],
+ "F060": [
+  {
+   "deposit": "D0064",
+   "start": 45,
+   "end": 72,
+   "role": "mention",
+   "excerpt": "Iris has a flat in Leipzig."
+  }
+ ],
+ "F046": [
+  {
+   "deposit": "D0053",
+   "start": 45,
+   "end": 79,
+   "role": "not_yet",
+   "excerpt": "Hana's rowing machine hasn't come."
+  },
+  {
+   "deposit": "D0058",
+   "start": 45,
+   "end": 105,
+   "role": "already",
+   "excerpt": "Hana showed me the rowing machine, it arrived at some point."
+  }
+ ],
+ "F047": [
+  {
+   "deposit": "D0054",
+   "start": 45,
+   "end": 85,
+   "role": "not_yet",
+   "excerpt": "Nico is still without the pottery wheel."
+  },
+  {
+   "deposit": "D0057",
+   "start": 46,
+   "end": 105,
+   "role": "already",
+   "excerpt": "Nico showed me the pottery wheel, it arrived at some point."
+  }
+ ],
+ "F051": [
+  {
+   "deposit": "D0065",
+   "start": 39,
+   "end": 77,
+   "role": "mention",
+   "excerpt": "These days my aunt lives in Edinburgh."
+  }
+ ],
+ "F061": [
+  {
+   "deposit": "D0066",
+   "start": 46,
+   "end": 96,
+   "role": "mention",
+   "excerpt": "My piano teacher — at Gullwing Ferries these days."
+  }
+ ],
+ "F015": [
+  {
+   "deposit": "D0011",
+   "start": 16,
+   "end": 44,
+   "role": "mention",
+   "excerpt": "Here in Lyon, all hmm, good."
+  },
+  {
+   "deposit": "D0024",
+   "start": 13,
+   "end": 36,
+   "role": "mention",
+   "excerpt": "Here in Lyon, all good."
+  }
+ ],
+ "F031": [
+  {
+   "deposit": "D0038",
+   "start": 46,
+   "end": 107,
+   "role": "mention",
+   "excerpt": "Saltire Glassworks is where my friend works, I reminded Rosa."
+  }
+ ],
+ "F009": [
+  {
+   "deposit": "D0012",
+   "start": 0,
+   "end": 45,
+   "role": "mention",
+   "excerpt": "Grew up in Porto, and I miss it now and then."
+  }
+ ],
+ "F007": [
+  {
+   "deposit": "D0013",
+   "start": 89,
+   "end": 135,
+   "role": "mention",
+   "excerpt": "Diagnosis — mild tendinitis in the right wrist"
+  },
+  {
+   "deposit": "D0015",
+   "start": 0,
+   "end": 97,
+   "role": "start",
+   "excerpt": "Today, diagnosed with mild tendinitis in the right wrist; an ice pack and a wrist splint for now."
+  },
+  {
+   "deposit": "D0026",
+   "start": 45,
+   "end": 148,
+   "role": "end",
+   "excerpt": "Recovered today from well, mild tendinitis in the right wrist, done with the ice okay so, pack at last."
+  }
+ ],
+ "F013": [
+  {
+   "deposit": "D0014",
+   "start": 35,
+   "end": 62,
+   "role": "mention",
+   "excerpt": "Amara — in Lyon these days."
+  }
+ ],
+ "F014": [
+  {
+   "deposit": "D0015",
+   "start": 215,
+   "end": 253,
+   "role": "mention",
+   "excerpt": "Amara has a cat; Olive, they named it."
+  },
+  {
+   "deposit": "D0029",
+   "start": 47,
+   "end": 75,
+   "role": "mention",
+   "excerpt": "Amara's cat is called Olive."
+  }
+ ],
+ "F041": [
+  {
+   "deposit": "D0039",
+   "start": 45,
+   "end": 129,
+   "role": "mention",
+   "excerpt": "Nico had no idea that my sister from the old flat is employed by Brackenridge Seeds."
+  }
+ ],
+ "F027": [
+  {
+   "deposit": "D0016",
+   "start": 0,
+   "end": 52,
+   "role": "mention",
+   "excerpt": "GPS 51.05206, 3.71039, captured 2025-02-09 at 09:19."
+  },
+  {
+   "deposit": "D0017",
+   "start": 97,
+   "end": 145,
+   "role": "mention",
+   "excerpt": "Today, a long stroll around the old market hall."
+  }
+ ],
+ "F052": [
+  {
+   "deposit": "D0067",
+   "start": 50,
+   "end": 78,
+   "role": "mention",
+   "excerpt": "Home for Hedda is Edinburgh."
+  }
+ ],
+ "F056": [
+  {
+   "deposit": "D0068",
+   "start": 45,
+   "end": 73,
+   "role": "mention",
+   "excerpt": "Dina has a flat in Valencia."
+  }
+ ],
+ "F025": [
+  {
+   "deposit": "D0017",
+   "start": 0,
+   "end": 52,
+   "role": "mention",
+   "excerpt": "At the hilltop viewpoint today, I bumped into Amara."
+  }
+ ],
+ "F026": [
+  {
+   "deposit": "D0018",
+   "start": 35,
+   "end": 84,
+   "role": "mention",
+   "excerpt": "The bank adviser appointment yesterday went fine."
+  }
+ ],
+ "F002": [
+  {
+   "deposit": "D0018",
+   "start": 85,
+   "end": 134,
+   "role": "start",
+   "excerpt": "New address as of today: 23 Tanner Street, Ghent."
+  },
+  {
+   "deposit": "D0020",
+   "start": 104,
+   "end": 141,
+   "role": "mention",
+   "excerpt": "Property let: 23 Tanner Street, Ghent"
+  }
+ ],
+ "F057": [
+  {
+   "deposit": "D0069",
+   "start": 46,
+   "end": 78,
+   "role": "mention",
+   "excerpt": "My uncle mostly works from home."
+  }
+ ],
+ "F011": [
+  {
+   "deposit": "D0019",
+   "start": 35,
+   "end": 92,
+   "role": "mention",
+   "excerpt": "A Portuguese podcast on the way home, to keep practising."
+  },
+  {
+   "deposit": "D0025",
+   "start": 123,
+   "end": 209,
+   "role": "mention",
+   "excerpt": "Kept... Kept hmm, up my Portuguese on the walk home, podcast okay so, in erm, my ears."
+  }
+ ],
+ "F004": [
+  {
+   "deposit": "D0020",
+   "start": 183,
+   "end": 213,
+   "role": "mention",
+   "excerpt": "Rent: 730 EUR, payable monthly"
+  }
+ ],
+ "F053": [
+  {
+   "deposit": "D0071",
+   "start": 35,
+   "end": 76,
+   "role": "mention",
+   "excerpt": "My aunt — at Corvid Mapmakers these days."
+  }
+ ],
+ "F040": [
+  {
+   "deposit": "D0040",
+   "start": 46,
+   "end": 112,
+   "role": "mention",
+   "excerpt": "The Juniper Street Youth Choir has a new member as of today: Nico."
+  }
+ ],
+ "F016": [
+  {
+   "deposit": "D0021",
+   "start": 9,
+   "end": 46,
+   "role": "mention",
+   "excerpt": "Being an UX researcher keeps me busy."
+  }
+ ],
+ "F039": [
+  {
+   "deposit": "D0041",
+   "start": 50,
+   "end": 180,
+   "role": "mention",
+   "excerpt": "Over coffee, Kofi wanted to know whether my brother from the running club was still at Fennick & Dale Opticians; yes, still there."
+  }
+ ],
+ "F029": [
+  {
+   "deposit": "D0022",
+   "start": 0,
+   "end": 61,
+   "role": "mention",
+   "excerpt": "At the harbour footpath today, I bumped into my brother Kofi."
+  }
+ ],
+ "F008": [
+  {
+   "deposit": "D0022",
+   "start": 62,
+   "end": 117,
+   "role": "mention",
+   "excerpt": "My birthday falls on 23 April, must organise something."
+  }
+ ],
+ "F018": [
+  {
+   "deposit": "D0023",
+   "start": 0,
+   "end": 40,
+   "role": "mention",
+   "excerpt": "Linus has a cat; Biscuit, they named it."
+  },
+  {
+   "deposit": "D0030",
+   "start": 67,
+   "end": 102,
+   "role": "mention",
+   "excerpt": "Biscuit is the name of Linus's cat."
+  }
+ ],
+ "F012": [
+  {
+   "deposit": "D0023",
+   "start": 41,
+   "end": 96,
+   "role": "mention",
+   "excerpt": "Six in the morning, and Mochi (my dog) wants breakfast."
+  }
+ ],
+ "F054": [
+  {
+   "deposit": "D0072",
+   "start": 49,
+   "end": 91,
+   "role": "mention",
+   "excerpt": "Hedda — at Wickerfield Nursery these days."
+  }
+ ],
+ "F062": [
+  {
+   "deposit": "D0073",
+   "start": 45,
+   "end": 99,
+   "role": "mention",
+   "excerpt": "Bumped into Iris; Gullwing Ferries is where they work."
+  }
+ ],
+ "F038": [
+  {
+   "deposit": "D0042",
+   "start": 45,
+   "end": 104,
+   "role": "mention",
+   "excerpt": "The Old Mill Folk Choir has a new member as of today: Kofi."
+  }
+ ],
+ "F050": [
+  {
+   "deposit": "D0074",
+   "start": 39,
+   "end": 86,
+   "role": "mention",
+   "excerpt": "My godfather — at Tamberlane Bakery these days."
+  },
+  {
+   "deposit": "D0076",
+   "start": 49,
+   "end": 90,
+   "role": "mention",
+   "excerpt": "Kasper — at Tamberlane Bakery these days."
+  }
+ ],
+ "F033": [
+  {
+   "deposit": "D0043",
+   "start": 35,
+   "end": 141,
+   "role": "mention",
+   "excerpt": "Over coffee, Matteo wanted to know whether my best friend was still at Marrowgate Press; yes, still there."
+  }
+ ],
+ "F023": [
+  {
+   "deposit": "D0025",
+   "start": 56,
+   "end": 122,
+   "role": "mention",
+   "excerpt": "At well, the right, riverside park yesterday, I bumped into Linus."
+  }
+ ],
+ "F058": [
+  {
+   "deposit": "D0075",
+   "start": 45,
+   "end": 73,
+   "role": "mention",
+   "excerpt": "Dina mostly works from home."
+  }
+ ],
+ "F022": [
+  {
+   "deposit": "D0026",
+   "start": 0,
+   "end": 44,
+   "role": "mention",
+   "excerpt": "Kofi and I met up at the city library today."
+  }
+ ],
+ "F037": [
+  {
+   "deposit": "D0044",
+   "start": 45,
+   "end": 164,
+   "role": "mention",
+   "excerpt": "Over coffee, Rosa wanted to know whether my brother from the old flat was still at Larkspur Ceramics; yes, still there."
+  }
+ ],
+ "F034": [
+  {
+   "deposit": "D0045",
+   "start": 45,
+   "end": 116,
+   "role": "mention",
+   "excerpt": "Linus — new member of the Saltmarsh Community Choir since this morning."
+  }
+ ],
+ "F035": [
+  {
+   "deposit": "D0046",
+   "start": 31,
+   "end": 136,
+   "role": "mention",
+   "excerpt": "Over coffee, Nico wanted to know whether my manager was still at Hollowbrook Surveying; yes, still there."
+  }
+ ],
+ "F030": [
+  {
+   "deposit": "D0028",
+   "start": 0,
+   "end": 52,
+   "role": "mention",
+   "excerpt": "GPS 51.03695, 3.72331, captured 2025-02-15 at 09:48."
+  },
+  {
+   "deposit": "D0029",
+   "start": 0,
+   "end": 44,
+   "role": "mention",
+   "excerpt": "Today, a long stroll around the city library"
+  }
+ ],
+ "F032": [
+  {
+   "deposit": "D0047",
+   "start": 35,
+   "end": 100,
+   "role": "mention",
+   "excerpt": "Hana — new member of the Harbour Gospel Choir since this morning."
+  }
+ ],
+ "F036": [
+  {
+   "deposit": "D0048",
+   "start": 35,
+   "end": 103,
+   "role": "mention",
+   "excerpt": "Rosa — new member of the Kiln Lane Chamber Choir since this morning."
+  }
+ ]
+}

@@ -1,0 +1,1772 @@
+{
+ "seed": 7,
+ "start": "2025-02-03",
+ "days": 14,
+ "owner": "P0",
+ "people": [
+  {
+   "id": "P0",
+   "name": "Cyrus Moreau",
+   "relation": "self",
+   "voice": "male_b",
+   "role": ""
+  },
+  {
+   "id": "P1",
+   "name": "Orla Haddad",
+   "relation": "sister",
+   "voice": "female_b",
+   "role": "my sister"
+  },
+  {
+   "id": "P2",
+   "name": "Talia Novak",
+   "relation": "brother",
+   "voice": "male_a",
+   "role": "my brother"
+  },
+  {
+   "id": "P3",
+   "name": "Silas Fischer",
+   "relation": "best friend",
+   "voice": "female_gb",
+   "role": "my best friend"
+  },
+  {
+   "id": "P4",
+   "name": "Quinn Delacroix",
+   "relation": "cousin",
+   "voice": "female_a",
+   "role": "my cousin"
+  },
+  {
+   "id": "P5",
+   "name": "Elsa Duarte",
+   "relation": "friend",
+   "voice": "female_b",
+   "role": "my friend"
+  },
+  {
+   "id": "P6",
+   "name": "Vera Delacroix",
+   "relation": "neighbour",
+   "voice": "male_a",
+   "role": "my neighbour"
+  },
+  {
+   "id": "P7",
+   "name": "Matteo Brennan",
+   "relation": "brother",
+   "voice": "female_gb",
+   "role": "my brother from the old flat"
+  },
+  {
+   "id": "P8",
+   "name": "Yusuf Rossi",
+   "relation": "aunt",
+   "voice": "female_a",
+   "role": "my aunt"
+  },
+  {
+   "id": "P9",
+   "name": "Rosa Brennan",
+   "relation": "landlady",
+   "voice": "female_b",
+   "role": "my landlady"
+  },
+  {
+   "id": "P10",
+   "name": "June Duarte",
+   "relation": "acquaintance",
+   "voice": "male_a",
+   "role": ""
+  },
+  {
+   "id": "P11",
+   "name": "Joaquin Abbott",
+   "relation": "godfather",
+   "voice": "female_gb",
+   "role": "my godfather"
+  },
+  {
+   "id": "P12",
+   "name": "Ravi Rossi",
+   "relation": "acquaintance",
+   "voice": "female_a",
+   "role": ""
+  },
+  {
+   "id": "P13",
+   "name": "Dina Okafor",
+   "relation": "uncle",
+   "voice": "female_b",
+   "role": "my uncle"
+  },
+  {
+   "id": "P14",
+   "name": "Gideon Duarte",
+   "relation": "acquaintance",
+   "voice": "male_a",
+   "role": ""
+  }
+ ],
+ "facts": [
+  {
+   "id": "F001",
+   "subject": "P0",
+   "predicate": "lives_at",
+   "value": {
+    "street": "57 Orchard Close",
+    "city": "Rotterdam"
+   },
+   "valid_from": "2021-03-25",
+   "valid_to": "2025-02-10",
+   "kind": "state",
+   "slot": "P0:lives_at",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau lives at 57 Orchard Close, Rotterdam.",
+   "answer": "57 Orchard Close, Rotterdam",
+   "layer": ""
+  },
+  {
+   "id": "F002",
+   "subject": "P0",
+   "predicate": "lives_at",
+   "value": {
+    "street": "10 Mill Road",
+    "city": "Leipzig"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:lives_at",
+   "version": 1,
+   "supersedes": "F001",
+   "since_stated": true,
+   "canonical": "Cyrus Moreau lives at 10 Mill Road, Leipzig.",
+   "answer": "10 Mill Road, Leipzig",
+   "layer": ""
+  },
+  {
+   "id": "F003",
+   "subject": "P0",
+   "predicate": "pays_rent",
+   "value": {
+    "amount": 720,
+    "currency": "EUR"
+   },
+   "valid_from": "2021-03-25",
+   "valid_to": "2025-02-10",
+   "kind": "state",
+   "slot": "P0:pays_rent",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau pays 720 EUR a month in rent.",
+   "answer": "720 EUR",
+   "layer": ""
+  },
+  {
+   "id": "F004",
+   "subject": "P0",
+   "predicate": "pays_rent",
+   "value": {
+    "amount": 1380,
+    "currency": "EUR"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:pays_rent",
+   "version": 1,
+   "supersedes": "F003",
+   "since_stated": true,
+   "canonical": "Cyrus Moreau pays 1380 EUR a month in rent.",
+   "answer": "1380 EUR",
+   "layer": ""
+  },
+  {
+   "id": "F005",
+   "subject": "P0",
+   "predicate": "works_at",
+   "value": {
+    "employer": "Bluecairn Foods",
+    "title": "data analyst"
+   },
+   "valid_from": "2023-12-16",
+   "valid_to": "2025-02-04",
+   "kind": "state",
+   "slot": "P0:works_at",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": true,
+   "canonical": "Cyrus Moreau works as a data analyst at Bluecairn Foods.",
+   "answer": "Bluecairn Foods",
+   "layer": ""
+  },
+  {
+   "id": "F006",
+   "subject": "P0",
+   "predicate": "works_at",
+   "value": {
+    "employer": "Silverfern Energy",
+    "title": "backend engineer"
+   },
+   "valid_from": "2025-02-04",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:works_at",
+   "version": 1,
+   "supersedes": "F005",
+   "since_stated": true,
+   "canonical": "Cyrus Moreau works as a backend engineer at Silverfern Energy.",
+   "answer": "Silverfern Energy",
+   "layer": ""
+  },
+  {
+   "id": "F007",
+   "subject": "P0",
+   "predicate": "health",
+   "value": {
+    "condition": "an ear infection",
+    "care": "a seven-day course of antibiotics"
+   },
+   "valid_from": "2025-02-08",
+   "valid_to": "2025-02-13",
+   "kind": "state",
+   "slot": "P0:health",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau had an ear infection, treated with a seven-day course of antibiotics.",
+   "answer": "an ear infection",
+   "layer": ""
+  },
+  {
+   "id": "F008",
+   "subject": "P0",
+   "predicate": "birthday",
+   "value": {
+    "date": "1988-10-19"
+   },
+   "valid_from": "1988-10-19",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:birthday",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau's birthday is on 19 October.",
+   "answer": "19 October",
+   "layer": ""
+  },
+  {
+   "id": "F009",
+   "subject": "P0",
+   "predicate": "hometown",
+   "value": {
+    "city": "Lyon"
+   },
+   "valid_from": "1988-10-19",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:hometown",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau grew up in Lyon.",
+   "answer": "Lyon",
+   "layer": ""
+  },
+  {
+   "id": "F010",
+   "subject": "P0",
+   "predicate": "allergy",
+   "value": {
+    "food": "shellfish"
+   },
+   "valid_from": "2022-09-05",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:allergy",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau is allergic to shellfish.",
+   "answer": "shellfish",
+   "layer": ""
+  },
+  {
+   "id": "F011",
+   "subject": "P0",
+   "predicate": "speaks",
+   "value": {
+    "language": "Portuguese"
+   },
+   "valid_from": "2021-09-11",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:speaks",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau speaks Portuguese.",
+   "answer": "Portuguese",
+   "layer": ""
+  },
+  {
+   "id": "F012",
+   "subject": "P1",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Edinburgh"
+   },
+   "valid_from": "2021-10-14",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Orla Haddad lives in Edinburgh.",
+   "answer": "Edinburgh",
+   "layer": ""
+  },
+  {
+   "id": "F013",
+   "subject": "P1",
+   "predicate": "job",
+   "value": {
+    "title": "project manager"
+   },
+   "valid_from": "2022-02-26",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Orla Haddad works as a project manager.",
+   "answer": "project manager",
+   "layer": ""
+  },
+  {
+   "id": "F014",
+   "subject": "P2",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Porto"
+   },
+   "valid_from": "2023-05-26",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Talia Novak lives in Porto.",
+   "answer": "Porto",
+   "layer": ""
+  },
+  {
+   "id": "F015",
+   "subject": "P2",
+   "predicate": "job",
+   "value": {
+    "title": "editor"
+   },
+   "valid_from": "2021-10-27",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Talia Novak works as an editor.",
+   "answer": "editor",
+   "layer": ""
+  },
+  {
+   "id": "F016",
+   "subject": "P3",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Bordeaux"
+   },
+   "valid_from": "2024-05-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Silas Fischer lives in Bordeaux.",
+   "answer": "Bordeaux",
+   "layer": ""
+  },
+  {
+   "id": "F017",
+   "subject": "P3",
+   "predicate": "job",
+   "value": {
+    "title": "research assistant"
+   },
+   "valid_from": "2023-11-04",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Silas Fischer works as a research assistant.",
+   "answer": "research assistant",
+   "layer": ""
+  },
+  {
+   "id": "F018",
+   "subject": "P3",
+   "predicate": "birthday",
+   "value": {
+    "date": "1995-07-02"
+   },
+   "valid_from": "1995-07-02",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:birthday",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Silas Fischer's birthday is on 2 July.",
+   "answer": "2 July",
+   "layer": ""
+  },
+  {
+   "id": "F019",
+   "subject": "P3",
+   "predicate": "news",
+   "value": {
+    "what": "ran a first marathon"
+   },
+   "valid_from": "2025-02-04",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P3:news",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Silas Fischer ran a first marathon around 4 February 2025.",
+   "answer": "ran a first marathon",
+   "layer": ""
+  },
+  {
+   "id": "F020",
+   "subject": "P0",
+   "predicate": "appointment",
+   "value": {
+    "what": "GP check-up"
+   },
+   "valid_from": "2025-02-16",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:appointment",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau had a GP check-up appointment on 16 February 2025.",
+   "answer": "16 February 2025",
+   "layer": ""
+  },
+  {
+   "id": "F021",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the hilltop viewpoint",
+    "city": "Rotterdam",
+    "lat": 51.93628,
+    "lon": 4.46045,
+    "time": "09:17"
+   },
+   "valid_from": "2025-02-08",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau was in Rotterdam on 8 February 2025.",
+   "answer": "Rotterdam",
+   "layer": ""
+  },
+  {
+   "id": "F022",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P1",
+    "name": "Orla Haddad",
+    "venue": "the riverside park"
+   },
+   "valid_from": "2025-02-13",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau met Orla Haddad at the riverside park on 13 February 2025.",
+   "answer": "the riverside park",
+   "layer": ""
+  },
+  {
+   "id": "F023",
+   "subject": "P0",
+   "predicate": "appointment",
+   "value": {
+    "what": "bank adviser"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:appointment",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau had a bank adviser appointment on 7 February 2025.",
+   "answer": "7 February 2025",
+   "layer": ""
+  },
+  {
+   "id": "F024",
+   "subject": "P2",
+   "predicate": "news",
+   "value": {
+    "what": "passed a driving test"
+   },
+   "valid_from": "2025-02-16",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P2:news",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Talia Novak passed a driving test around 16 February 2025.",
+   "answer": "passed a driving test",
+   "layer": ""
+  },
+  {
+   "id": "F025",
+   "subject": "P0",
+   "predicate": "race",
+   "value": {
+    "race": "Harbour Half Marathon",
+    "time": "1:36:29"
+   },
+   "valid_from": "2025-02-13",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:race",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau ran the Harbour Half Marathon on 13 February 2025 in 1:36:29.",
+   "answer": "1:36:29",
+   "layer": ""
+  },
+  {
+   "id": "F026",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P1",
+    "name": "Orla Haddad",
+    "venue": "the harbour footpath"
+   },
+   "valid_from": "2025-02-12",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau met Orla Haddad at the harbour footpath on 12 February 2025.",
+   "answer": "the harbour footpath",
+   "layer": ""
+  },
+  {
+   "id": "F027",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the city library",
+    "city": "Leipzig",
+    "lat": 51.3296,
+    "lon": 12.36874,
+    "time": "15:05"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau was in Leipzig on 15 February 2025.",
+   "answer": "Leipzig",
+   "layer": ""
+  },
+  {
+   "id": "F028",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the old market hall",
+    "city": "Rotterdam",
+    "lat": 51.93717,
+    "lon": 4.49226,
+    "time": "12:45"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau was in Rotterdam on 9 February 2025.",
+   "answer": "Rotterdam",
+   "layer": ""
+  },
+  {
+   "id": "F029",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P3",
+    "name": "Silas Fischer",
+    "venue": "the harbour footpath"
+   },
+   "valid_from": "2025-02-08",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau met Silas Fischer at the harbour footpath on 8 February 2025.",
+   "answer": "the harbour footpath",
+   "layer": ""
+  },
+  {
+   "id": "F030",
+   "subject": "P1",
+   "predicate": "news",
+   "value": {
+    "what": "adopted a puppy"
+   },
+   "valid_from": "2025-02-05",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P1:news",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Orla Haddad adopted a puppy around 5 February 2025.",
+   "answer": "adopted a puppy",
+   "layer": ""
+  },
+  {
+   "id": "F031",
+   "subject": "P5",
+   "predicate": "employer",
+   "value": {
+    "employer": "Hollowbrook Surveying"
+   },
+   "valid_from": "2023-04-25",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P5:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Elsa Duarte works at Hollowbrook Surveying.",
+   "answer": "Hollowbrook Surveying",
+   "layer": "identity"
+  },
+  {
+   "id": "F032",
+   "subject": "P5",
+   "predicate": "joined",
+   "value": {
+    "group": "the Saltmarsh Community Choir"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P5:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Elsa Duarte joined the Saltmarsh Community Choir on 9 February 2025.",
+   "answer": "Saltmarsh Community Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F033",
+   "subject": "P4",
+   "predicate": "employer",
+   "value": {
+    "employer": "Marrowgate Press"
+   },
+   "valid_from": "2022-01-01",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P4:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Quinn Delacroix works at Marrowgate Press.",
+   "answer": "Marrowgate Press",
+   "layer": "identity"
+  },
+  {
+   "id": "F034",
+   "subject": "P4",
+   "predicate": "joined",
+   "value": {
+    "group": "the Kiln Lane Chamber Choir"
+   },
+   "valid_from": "2025-02-16",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P4:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Quinn Delacroix joined the Kiln Lane Chamber Choir on 16 February 2025.",
+   "answer": "Kiln Lane Chamber Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F035",
+   "subject": "P3",
+   "predicate": "employer",
+   "value": {
+    "employer": "Thistledown Instruments"
+   },
+   "valid_from": "2023-09-05",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Silas Fischer works at Thistledown Instruments.",
+   "answer": "Thistledown Instruments",
+   "layer": "identity"
+  },
+  {
+   "id": "F036",
+   "subject": "P3",
+   "predicate": "joined",
+   "value": {
+    "group": "the Harbour Gospel Choir"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P3:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Silas Fischer joined the Harbour Gospel Choir on 10 February 2025.",
+   "answer": "Harbour Gospel Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F037",
+   "subject": "P1",
+   "predicate": "employer",
+   "value": {
+    "employer": "Saltire Glassworks"
+   },
+   "valid_from": "2021-10-21",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Orla Haddad works at Saltire Glassworks.",
+   "answer": "Saltire Glassworks",
+   "layer": "identity"
+  },
+  {
+   "id": "F038",
+   "subject": "P1",
+   "predicate": "joined",
+   "value": {
+    "group": "the Old Mill Folk Choir"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P1:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Orla Haddad joined the Old Mill Folk Choir on 10 February 2025.",
+   "answer": "Old Mill Folk Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F039",
+   "subject": "P6",
+   "predicate": "employer",
+   "value": {
+    "employer": "Brackenridge Seeds"
+   },
+   "valid_from": "2022-09-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P6:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Vera Delacroix works at Brackenridge Seeds.",
+   "answer": "Brackenridge Seeds",
+   "layer": "identity"
+  },
+  {
+   "id": "F040",
+   "subject": "P6",
+   "predicate": "joined",
+   "value": {
+    "group": "the Juniper Street Youth Choir"
+   },
+   "valid_from": "2025-02-04",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P6:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Vera Delacroix joined the Juniper Street Youth Choir on 4 February 2025.",
+   "answer": "Juniper Street Youth Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F041",
+   "subject": "P7",
+   "predicate": "employer",
+   "value": {
+    "employer": "Quillon Maps"
+   },
+   "valid_from": "2024-08-02",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P7:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Matteo Brennan works at Quillon Maps.",
+   "answer": "Quillon Maps",
+   "layer": "identity"
+  },
+  {
+   "id": "F042",
+   "subject": "P7",
+   "predicate": "joined",
+   "value": {
+    "group": "the Beacon Hill Choir"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P7:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Matteo Brennan joined the Beacon Hill Choir on 15 February 2025.",
+   "answer": "Beacon Hill Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F043",
+   "subject": "P0",
+   "predicate": "acquired",
+   "value": {
+    "item": "pottery wheel"
+   },
+   "valid_from": "2025-02-13",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:acquired:pottery wheel",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Moreau has a pottery wheel.",
+   "answer": "pottery wheel",
+   "layer": "dating"
+  },
+  {
+   "id": "F044",
+   "subject": "P2",
+   "predicate": "acquired",
+   "value": {
+    "item": "espresso machine"
+   },
+   "valid_from": "2025-02-11",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:acquired:espresso machine",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Talia Novak has an espresso machine.",
+   "answer": "espresso machine",
+   "layer": "dating"
+  },
+  {
+   "id": "F045",
+   "subject": "P3",
+   "predicate": "acquired",
+   "value": {
+    "item": "standing desk"
+   },
+   "valid_from": "2025-02-11",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:acquired:standing desk",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Silas Fischer has a standing desk.",
+   "answer": "standing desk",
+   "layer": "dating"
+  },
+  {
+   "id": "F046",
+   "subject": "P4",
+   "predicate": "acquired",
+   "value": {
+    "item": "rowing machine"
+   },
+   "valid_from": "2025-02-16",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P4:acquired:rowing machine",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Quinn Delacroix has a rowing machine.",
+   "answer": "rowing machine",
+   "layer": "dating"
+  },
+  {
+   "id": "F047",
+   "subject": "P5",
+   "predicate": "acquired",
+   "value": {
+    "item": "upright piano"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P5:acquired:upright piano",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Elsa Duarte has an upright piano.",
+   "answer": "upright piano",
+   "layer": "dating"
+  },
+  {
+   "id": "F048",
+   "subject": "P7",
+   "predicate": "acquired",
+   "value": {
+    "item": "telescope"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P7:acquired:telescope",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Matteo Brennan has a telescope.",
+   "answer": "telescope",
+   "layer": "dating"
+  },
+  {
+   "id": "F049",
+   "subject": "P8",
+   "predicate": "based_in",
+   "value": {
+    "city": "Bristol"
+   },
+   "valid_from": "2022-09-17",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P8:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Rossi lives in Bristol.",
+   "answer": "Bristol",
+   "layer": "coverage"
+  },
+  {
+   "id": "F050",
+   "subject": "P8",
+   "predicate": "employer",
+   "value": {
+    "employer": "Mistral Joinery"
+   },
+   "valid_from": "2024-01-23",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P8:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Rossi works at Mistral Joinery.",
+   "answer": "Mistral Joinery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F051",
+   "subject": "P9",
+   "predicate": "based_in",
+   "value": {
+    "city": "Valencia"
+   },
+   "valid_from": "2024-06-17",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P9:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Rosa Brennan lives in Valencia.",
+   "answer": "Valencia",
+   "layer": "coverage"
+  },
+  {
+   "id": "F052",
+   "subject": "P10",
+   "predicate": "based_in",
+   "value": {
+    "city": "Valencia"
+   },
+   "valid_from": "2024-03-15",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P10:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "June Duarte lives in Valencia.",
+   "answer": "Valencia",
+   "layer": "coverage"
+  },
+  {
+   "id": "F053",
+   "subject": "P9",
+   "predicate": "employer",
+   "value": {
+    "employer": "Corvid Mapmakers"
+   },
+   "valid_from": "2023-04-14",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P9:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Rosa Brennan works at Corvid Mapmakers.",
+   "answer": "Corvid Mapmakers",
+   "layer": "coverage"
+  },
+  {
+   "id": "F054",
+   "subject": "P10",
+   "predicate": "employer",
+   "value": {
+    "employer": "Tamberlane Bakery"
+   },
+   "valid_from": "2023-11-16",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P10:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "June Duarte works at Tamberlane Bakery.",
+   "answer": "Tamberlane Bakery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F055",
+   "subject": "P11",
+   "predicate": "based_in",
+   "value": {
+    "city": "Montreal"
+   },
+   "valid_from": "2024-09-11",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P11:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Joaquin Abbott lives in Montreal.",
+   "answer": "Montreal",
+   "layer": "coverage"
+  },
+  {
+   "id": "F056",
+   "subject": "P12",
+   "predicate": "based_in",
+   "value": {
+    "city": "Montreal"
+   },
+   "valid_from": "2023-02-09",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P12:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ravi Rossi lives in Montreal.",
+   "answer": "Montreal",
+   "layer": "coverage"
+  },
+  {
+   "id": "F057",
+   "subject": "P11",
+   "predicate": "works_from",
+   "value": {
+    "where": "home"
+   },
+   "valid_from": "2024-03-31",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P11:works_from",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Joaquin Abbott works from home.",
+   "answer": "home",
+   "layer": "coverage"
+  },
+  {
+   "id": "F058",
+   "subject": "P12",
+   "predicate": "works_from",
+   "value": {
+    "where": "home"
+   },
+   "valid_from": "2024-01-02",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P12:works_from",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ravi Rossi works from home.",
+   "answer": "home",
+   "layer": "coverage"
+  },
+  {
+   "id": "F059",
+   "subject": "P13",
+   "predicate": "based_in",
+   "value": {
+    "city": "Ghent"
+   },
+   "valid_from": "2024-04-11",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P13:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dina Okafor lives in Ghent.",
+   "answer": "Ghent",
+   "layer": "coverage"
+  },
+  {
+   "id": "F060",
+   "subject": "P14",
+   "predicate": "based_in",
+   "value": {
+    "city": "Ghent"
+   },
+   "valid_from": "2024-01-08",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P14:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Gideon Duarte lives in Ghent.",
+   "answer": "Ghent",
+   "layer": "coverage"
+  },
+  {
+   "id": "F061",
+   "subject": "P13",
+   "predicate": "employer",
+   "value": {
+    "employer": "Wickerfield Nursery"
+   },
+   "valid_from": "2024-06-29",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P13:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dina Okafor works at Wickerfield Nursery.",
+   "answer": "Wickerfield Nursery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F062",
+   "subject": "P14",
+   "predicate": "employer",
+   "value": {
+    "employer": "Wickerfield Nursery"
+   },
+   "valid_from": "2022-10-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P14:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Gideon Duarte works at Wickerfield Nursery.",
+   "answer": "Wickerfield Nursery",
+   "layer": "coverage"
+  }
+ ],
+ "traps": [
+  {
+   "id": "T01",
+   "kind": "hypothetical",
+   "subject": "P0",
+   "day": "2025-02-06",
+   "sentence": "If the Porto offer ever comes through, I'd honestly move there in a heartbeat.",
+   "forbidden": "Cyrus Moreau moved to Porto.",
+   "question": "When did Cyrus move to Porto?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T02",
+   "kind": "plan",
+   "subject": "P0",
+   "day": "2025-02-13",
+   "sentence": "I keep thinking about adopting a dog, maybe next year.",
+   "forbidden": "Cyrus Moreau has a dog.",
+   "question": "What is the name of Cyrus's dog?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T03",
+   "kind": "negation",
+   "subject": "P0",
+   "day": "2025-02-06",
+   "sentence": "In the end I did not sign up for the marathon, not this year.",
+   "forbidden": "Cyrus Moreau signed up for a marathon.",
+   "question": "Which marathon did Cyrus sign up for?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T04",
+   "kind": "hearsay",
+   "subject": "P1",
+   "day": "2025-02-10",
+   "sentence": "Orla said their bike got stolen outside the station.",
+   "forbidden": "Cyrus Moreau's bike was stolen.",
+   "question": "Where was Cyrus's bike stolen?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T05",
+   "kind": "plan",
+   "subject": "P0",
+   "day": "2025-02-16",
+   "sentence": "Maybe I'll learn to sail this summer, we'll see.",
+   "forbidden": "Cyrus Moreau learned to sail.",
+   "question": "Where did Cyrus take sailing lessons?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T06",
+   "kind": "hearsay",
+   "subject": "P3",
+   "day": "2025-02-05",
+   "sentence": "Apparently Silas's company might be shutting down.",
+   "forbidden": "Silas Fischer's company shut down.",
+   "question": "When did Silas's company shut down?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T07",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-08",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Cyrus took on 8 February 2025?",
+   "fact_id": "F021",
+   "misattributed_to": []
+  },
+  {
+   "id": "T08",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-15",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Cyrus took on 15 February 2025?",
+   "fact_id": "F027",
+   "misattributed_to": []
+  },
+  {
+   "id": "T09",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-09",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Cyrus took on 9 February 2025?",
+   "fact_id": "F028",
+   "misattributed_to": []
+  },
+  {
+   "id": "T10",
+   "kind": "attribution",
+   "subject": "P5",
+   "day": "2025-02-15",
+   "sentence": "Told Matteo that my friend works at Hollowbrook Surveying.",
+   "forbidden": "Cyrus Moreau works at Hollowbrook Surveying.",
+   "question": "",
+   "fact_id": "F031",
+   "misattributed_to": [
+    "P0",
+    "P7"
+   ]
+  },
+  {
+   "id": "T11",
+   "kind": "attribution",
+   "subject": "P5",
+   "day": "2025-02-09",
+   "sentence": "Elsa joined the Saltmarsh Community Choir today.",
+   "forbidden": "Cyrus Moreau joined the Saltmarsh Community Choir.",
+   "question": "",
+   "fact_id": "F032",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T12",
+   "kind": "attribution",
+   "subject": "P4",
+   "day": "2025-02-11",
+   "sentence": "Told Silas that my cousin works at Marrowgate Press.",
+   "forbidden": "Cyrus Moreau works at Marrowgate Press.",
+   "question": "",
+   "fact_id": "F033",
+   "misattributed_to": [
+    "P0",
+    "P3"
+   ]
+  },
+  {
+   "id": "T13",
+   "kind": "attribution",
+   "subject": "P4",
+   "day": "2025-02-16",
+   "sentence": "Quinn joined the Kiln Lane Chamber Choir today.",
+   "forbidden": "Cyrus Moreau joined the Kiln Lane Chamber Choir.",
+   "question": "",
+   "fact_id": "F034",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T14",
+   "kind": "attribution",
+   "subject": "P3",
+   "day": "2025-02-07",
+   "sentence": "Told Talia that my best friend works at Thistledown Instruments.",
+   "forbidden": "Cyrus Moreau works at Thistledown Instruments.",
+   "question": "",
+   "fact_id": "F035",
+   "misattributed_to": [
+    "P0",
+    "P2"
+   ]
+  },
+  {
+   "id": "T15",
+   "kind": "attribution",
+   "subject": "P3",
+   "day": "2025-02-10",
+   "sentence": "Silas joined the Harbour Gospel Choir today.",
+   "forbidden": "Cyrus Moreau joined the Harbour Gospel Choir.",
+   "question": "",
+   "fact_id": "F036",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T16",
+   "kind": "attribution",
+   "subject": "P1",
+   "day": "2025-02-05",
+   "sentence": "Elsa asked about my sister, who works at Saltire Glassworks.",
+   "forbidden": "Cyrus Moreau works at Saltire Glassworks.",
+   "question": "",
+   "fact_id": "F037",
+   "misattributed_to": [
+    "P0",
+    "P5"
+   ]
+  },
+  {
+   "id": "T17",
+   "kind": "attribution",
+   "subject": "P1",
+   "day": "2025-02-10",
+   "sentence": "Orla joined the Old Mill Folk Choir today.",
+   "forbidden": "Cyrus Moreau joined the Old Mill Folk Choir.",
+   "question": "",
+   "fact_id": "F038",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T18",
+   "kind": "attribution",
+   "subject": "P6",
+   "day": "2025-02-11",
+   "sentence": "Told Matteo that my neighbour works at Brackenridge Seeds.",
+   "forbidden": "Cyrus Moreau works at Brackenridge Seeds.",
+   "question": "",
+   "fact_id": "F039",
+   "misattributed_to": [
+    "P0",
+    "P7"
+   ]
+  },
+  {
+   "id": "T19",
+   "kind": "attribution",
+   "subject": "P6",
+   "day": "2025-02-04",
+   "sentence": "Vera joined the Juniper Street Youth Choir today.",
+   "forbidden": "Cyrus Moreau joined the Juniper Street Youth Choir.",
+   "question": "",
+   "fact_id": "F040",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T20",
+   "kind": "attribution",
+   "subject": "P7",
+   "day": "2025-02-10",
+   "sentence": "Told Elsa that my brother from the old flat works at Quillon Maps.",
+   "forbidden": "Cyrus Moreau works at Quillon Maps.",
+   "question": "",
+   "fact_id": "F041",
+   "misattributed_to": [
+    "P0",
+    "P5"
+   ]
+  },
+  {
+   "id": "T21",
+   "kind": "attribution",
+   "subject": "P7",
+   "day": "2025-02-15",
+   "sentence": "Matteo joined the Beacon Hill Choir today.",
+   "forbidden": "Cyrus Moreau joined the Beacon Hill Choir.",
+   "question": "",
+   "fact_id": "F042",
+   "misattributed_to": [
+    "P0"
+   ]
+  }
+ ],
+ "unstated": [
+  {
+   "question": "What car does Cyrus drive?"
+  },
+  {
+   "question": "What is Cyrus's blood type?"
+  },
+  {
+   "question": "Which university did Cyrus attend?"
+  },
+  {
+   "question": "What is Cyrus's shoe size?"
+  },
+  {
+   "question": "How old is Cyrus's pet?"
+  },
+  {
+   "question": "What car does Orla drive?"
+  },
+  {
+   "question": "What is Talia's favourite band?"
+  },
+  {
+   "question": "Which school did Silas go to?"
+  }
+ ],
+ "identity": [
+  {
+   "person": "P5",
+   "role": "my friend",
+   "contrast": "P7",
+   "alias_day": "2025-02-06",
+   "alias_sentence": "Dinner with my friend Elsa tonight, we talked for hours.",
+   "role_fact": "F031",
+   "role_trap": "T10",
+   "name_fact": "F032",
+   "name_trap": "T11"
+  },
+  {
+   "person": "P4",
+   "role": "my cousin",
+   "contrast": "P3",
+   "alias_day": "2025-02-05",
+   "alias_sentence": "Long call with Quinn, my cousin, this evening.",
+   "role_fact": "F033",
+   "role_trap": "T12",
+   "name_fact": "F034",
+   "name_trap": "T13"
+  },
+  {
+   "person": "P3",
+   "role": "my best friend",
+   "contrast": "P2",
+   "alias_day": "2025-02-06",
+   "alias_sentence": "Long call with Silas, my best friend, this evening.",
+   "role_fact": "F035",
+   "role_trap": "T14",
+   "name_fact": "F036",
+   "name_trap": "T15"
+  },
+  {
+   "person": "P1",
+   "role": "my sister",
+   "contrast": "P5",
+   "alias_day": "2025-02-04",
+   "alias_sentence": "Dinner with my sister Orla tonight, we talked for hours.",
+   "role_fact": "F037",
+   "role_trap": "T16",
+   "name_fact": "F038",
+   "name_trap": "T17"
+  },
+  {
+   "person": "P6",
+   "role": "my neighbour",
+   "contrast": "P7",
+   "alias_day": "2025-02-03",
+   "alias_sentence": "Picked up my neighbour Vera from the station.",
+   "role_fact": "F039",
+   "role_trap": "T18",
+   "name_fact": "F040",
+   "name_trap": "T19"
+  },
+  {
+   "person": "P7",
+   "role": "my brother from the old flat",
+   "contrast": "P5",
+   "alias_day": "2025-02-05",
+   "alias_sentence": "Dinner with my brother from the old flat Matteo tonight, we talked for hours.",
+   "role_fact": "F041",
+   "role_trap": "T20",
+   "name_fact": "F042",
+   "name_trap": "T21"
+  }
+ ],
+ "dating": [
+  {
+   "fact": "F043",
+   "not_yet_day": "2025-02-07",
+   "already_day": "2025-02-13"
+  },
+  {
+   "fact": "F044",
+   "not_yet_day": "2025-02-09",
+   "already_day": "2025-02-16"
+  },
+  {
+   "fact": "F045",
+   "not_yet_day": "2025-02-06",
+   "already_day": "2025-02-16"
+  },
+  {
+   "fact": "F046",
+   "not_yet_day": "2025-02-08",
+   "already_day": "2025-02-16"
+  },
+  {
+   "fact": "F047",
+   "not_yet_day": "2025-02-03",
+   "already_day": "2025-02-07"
+  },
+  {
+   "fact": "F048",
+   "not_yet_day": "2025-02-06",
+   "already_day": "2025-02-10"
+  }
+ ],
+ "coverage": [
+  {
+   "case": "converging",
+   "role_person": "P8",
+   "name_person": "P8",
+   "role": "my aunt",
+   "same": true,
+   "city": "Bristol",
+   "mentions": [
+    {
+     "fact": "F049",
+     "by_role": true,
+     "day": "2025-02-03"
+    },
+    {
+     "fact": "F049",
+     "by_role": false,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F050",
+     "by_role": true,
+     "day": "2025-02-08"
+    },
+    {
+     "fact": "F050",
+     "by_role": false,
+     "day": "2025-02-09"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "one_attribute",
+   "role_person": "P9",
+   "name_person": "P10",
+   "role": "my landlady",
+   "same": false,
+   "city": "Valencia",
+   "mentions": [
+    {
+     "fact": "F051",
+     "by_role": true,
+     "day": "2025-02-05"
+    },
+    {
+     "fact": "F052",
+     "by_role": false,
+     "day": "2025-02-09"
+    },
+    {
+     "fact": "F053",
+     "by_role": true,
+     "day": "2025-02-10"
+    },
+    {
+     "fact": "F054",
+     "by_role": false,
+     "day": "2025-02-15"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "generic",
+   "role_person": "P11",
+   "name_person": "P12",
+   "role": "my godfather",
+   "same": false,
+   "city": "Montreal",
+   "mentions": [
+    {
+     "fact": "F055",
+     "by_role": true,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F056",
+     "by_role": false,
+     "day": "2025-02-05"
+    },
+    {
+     "fact": "F057",
+     "by_role": true,
+     "day": "2025-02-09"
+    },
+    {
+     "fact": "F058",
+     "by_role": false,
+     "day": "2025-02-15"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "together",
+   "role_person": "P13",
+   "name_person": "P14",
+   "role": "my uncle",
+   "same": false,
+   "city": "Ghent",
+   "mentions": [
+    {
+     "fact": "F059",
+     "by_role": true,
+     "day": "2025-02-03"
+    },
+    {
+     "fact": "F060",
+     "by_role": false,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F061",
+     "by_role": true,
+     "day": "2025-02-05"
+    },
+    {
+     "fact": "F062",
+     "by_role": false,
+     "day": "2025-02-08"
+    }
+   ],
+   "together_day": "2025-02-14"
+  }
+ ]
+}

@@ -48,6 +48,51 @@ and HTML pages, ACL Anthology, repositories).
 | **FActScore** (Min et al., arXiv 2305.14251, EMNLP 2023) | Atomic-fact precision against a knowledge source | Atomic support against the person's own deposits |
 | MemoryAgentBench (Hu et al., arXiv 2507.05257), BEAM (Tavakoli et al., arXiv 2510.27246), RealMem (Bian et al., arXiv 2601.06966), LifeDialBench (Zheng et al., arXiv 2604.11182), LifeBench (Cheng et al., arXiv 2603.03781) | Long-horizon, project, lifelog or multi-source memory, scored on downstream answers | Write-time integrity and excerpt support (none of these score them, as far as their abstracts state) |
 
+**Identity and attribution.** Three recent benchmarks score who a memory is
+about. SocialMemBench (Owolabi, arXiv 2605.17789) works on group chats, with
+entity merging and attribution. GroupMemBench (Yang, arXiv 2605.14498) asks
+asker-specific questions over per-speaker beliefs. SpeakerMem-R1 (Zheng,
+arXiv 2609.26780) trains speaker-aware memory with a reward against
+attribution errors. Ground Truth First (above) already labels
+"misattribution" in its write-stage audit. None of them works on a
+single-owner life-log, where the owner names other people by role ("my
+sister") as often as by name, and none stores the identity decision itself.
+Graphiti (open-source code, `dedupe_nodes.py`) merges entities by asking an
+LLM whether a candidate is a duplicate; it keeps no excerpt, no confidence
+and no way to undo the merge. SOURCED adds (a) an attribution error rate
+measured on its own over stored memories that declare a subject (§4.1), and
+(b) questions that can only be answered by resolving a role to a name
+through a deposit that proves the alias (§4.3). The companion engine change
+in Pensine stores each alias decision as a claim with its quoted excerpt and
+a confidence, which can be retracted (`pensine/identity.py`). A claim is
+admitted only when its excerpt joins the alias and the name in one clause
+by an identity form ("my sister Priya", "Priya, my sister", "Priya (my
+sister)", "Priya is my sister"); two names that only share a sentence
+("Told Oskar that my sister works at …") are refused. Identities never
+written that way are covered by a second, separate tier: an *inferred*
+claim, built in code from at least two specific attributes the role and
+the name share in different deposits (each support quote-checked), used in
+recall only with a hedge and never to attach facts, promoted by a later
+identity form or the owner's confirmation, refuted by the two appearing
+together in one deposit. SOURCED scores both tiers (§4.1, alias recall and
+precision). We do not
+claim the first attribution or speaker benchmark.
+
+**Bounded dating.** Temporal reasoning benchmarks give the dates and test
+relations between them: ChronoSense (Islakoglu, arXiv 2501.03040) scores
+Allen relations over given event dates. When Silence Is Golden (Zhou, arXiv
+2602.04755) scores temporal abstention, all or nothing. Temporal Semantic
+Memory (Su, arXiv 2601.07468) stores event time in agent memory, as points,
+without uncertain bounds. Agent Zero Memory (Wu, arXiv 2608.29606) keeps
+evidence pointers and abstains. SOURCED adds facts whose date no deposit
+states, only brackets ("not yet" one day, "already" a later one), questions
+whose gold is that interval, and an **invented precision rate**: answering
+one exact date where the evidence supports only an interval. Abstaining is
+reported apart. The companion change in Pensine stores each event-time bound
+with its own quote and derives intervals in code (`pensine/dating.py`). We
+do not claim the first temporal-interval benchmark or the first temporal
+abstention metric.
+
 **The gap.** No benchmark we found combines (a) invention measured at write
 time, (b) a check that *each stored memory* is supported by the excerpt it
 cites, and (c) heterogeneous personal deposits (voice, photos, documents)
@@ -65,7 +110,8 @@ date, days, target facts, target changes. Default release: 182 days,
 300 facts, 40 changes. The world holds:
 
 - **people**: the owner and ~50 relatives, friends and colleagues
-  (fictional names);
+  (fictional names). Each has a relation to the owner and a role phrase,
+  the way the owner designates them without a name ("my sister");
 - **facts**: atomic statements with `valid_from` / `valid_to` (exclusive,
   `null` = still true). There are *state* facts (lives at, works at, pays
   rent, dating, project stage, commute, hobby, gym, pet, allergy, …) and
@@ -81,7 +127,44 @@ date, days, target facts, target changes. Default release: 182 days,
   - `hearsay` ("X said their bike got stolen" → "the owner's bike was
     stolen", or a rumour stated as done);
   - `photo_content`: every photo is a neutral, non-figurative image
-    (§3.3), so any description of what it "shows" is an invention.
+    (§3.3), so any description of what it "shows" is an invention;
+  - `attribution`: the owner reports a true fact about someone else ("my
+    sister works at Marrowgate Press"), and the careless version stores it
+    about the owner, or about the other person named in the same sentence
+    ("Told Oskar that my sister works at …" → "Oskar works at …"). The
+    people a careless writer would pick are listed in `misattributed_to`.
+    Hearsay is about a *reported claim* (it was only said); attribution is
+    about the *subject* (the fact is true, of someone else).
+- **identity layer**: a few people (2 on the 2-week sample, 5 on the
+  release) get two extra facts, an employer and a choir they join. The
+  employer is deposited by **role only**, the choir by **name only**, and
+  one earlier deposit names role and name **together** ("Dinner with my
+  sister Priya tonight"): the only place the alias is provable (its span is
+  in `meta.alias_spans`). A role phrase designates one person: a relation
+  the life holds twice is qualified ("my colleague from the book group").
+  The layer draws on its own random streams, so the base life, its
+  deposits and their ids are byte-identical with or without it (tested;
+  `generate_world(identity=False)` turns it off). Its facts carry
+  `layer: "identity"` and are added on top of the fact target;
+- **coverage layer**: four role/name pairs, on new people with relations
+  no one else holds, never written together. *converging*: one person,
+  named by role in two notes and by name in two others, sharing a city and
+  an employer (an identity the evidence supports, but only by inference);
+  three decoys, two people each: *one_attribute* (same city, different
+  employers), *generic* (same city, and "works from home"), *together*
+  (same city and employer, but a later note has "lunch with my landlady and
+  Pablo"). Truth in `coverage`, text notes only, numbered after the dating
+  layer, own random streams (`generate_world(coverage=False)`); earlier
+  deposits, recipients included, are byte-identical (tested);
+- **dating layer**: a few facts (2 on the 2-week sample, 8 on the release)
+  whose date is only bracketed: someone waits for a thing (day A: "the
+  kayak I ordered has not arrived yet"), then has it (day B: "Oskar already
+  has the kayak"). The true day lies in [A + 1, B] and is written in no
+  deposit; all the evidence supports is [A, B] (inclusive, day precision).
+  The "not yet" span has role `not_yet` and does not count as stating the
+  fact (`tasks.asserted`), the "already" span role `already`. Text deposits
+  only, numbered after the identity layer, on their own random streams
+  (`generate_world(dating=False)` turns it off; tested byte-identical);
 - **unstated slots**: questions no deposit can answer.
 
 Real cities supply real GPS coordinates. Every organisation, street and
@@ -104,6 +187,10 @@ Kinds:
 | `voice_in` | someone → owner | reference transcript | `.m4a`, another voice |
 | `photo` | owner | `Photo taken on <date> at <time>. GPS: <lat>, <lon>.` | `.jpg` with EXIF DateTimeOriginal + GPS |
 | `document` | — | lease, offer letter, visit summary, finisher certificate | `.pdf` |
+
+Identity-layer deposits are notes and messages, never voice, and are
+numbered after the base deposits (the list stays in time order), so the ids
+of base deposits and the media files named after them do not move.
 
 Relative dates ("today", "yesterday") are used on purpose: turning them into
 dates is part of the task. The same fact is often stated more than once,
@@ -167,7 +254,21 @@ Metrics:
 | **Fact recall** | gold facts deposited before the snapshot that are stated correctly by ≥ 1 memory / those gold facts |
 | Omission rate | 1 − fact recall, also by kind (state, event, change) |
 | Trap hits | traps whose false claim appears in the store |
+| **Alias recall** | true identities (identity-layer persons whose alias deposit precedes the snapshot, coverage *converging* persons whose four deposits do) linked by the system / true identities; also by kind and by the tier of the link. `null` with a reason if the system exposes no links (`MemorySystem.aliases()`) |
+| **Alias precision** | links whose alias and name designate the same person / all links; false links listed |
+| Store invented precision | among bracketed gold facts whose memories expose event bounds (`MemoryRecord.event_earliest` / `event_latest`), the share exposed as one exact date. `null` with a reason if the system exposes no bounds |
 | Stale-as-current | superseded gold facts that a memory still marks as current / superseded facts. `null` if the system does not expose currency |
+| **Attribution error rate** | among memories that state the value of a gold fact *and* declare a `subject`, the share whose subject is not that fact's subject. `null` with a reason if the system declares no subject (never 0) |
+
+**Attribution, in code.** A memory may declare whom it is about
+(`MemoryRecord.subject`: a name or a role phrase). The judge maps it to a
+person (full name, first name, or a role phrase that designates one
+person), finds the gold facts whose *value* the memory states regardless of
+who it names, and counts the memory as misattributed when the declared
+person is the subject of none of them. Matching by value is lenient: a
+wrong subject that happens to be the subject of another fact with the same
+value (two people in Porto) is accepted, so the rate is a lower bound. The
+model judge keeps this check in code.
 
 ### 4.2 The recall/invention curve
 
@@ -194,6 +295,23 @@ duplicates are dropped by construction). Categories:
 | event | What was Maya's finishing time at the Spring 10K on …? | value |
 | attribution | Who moved to Porto on …? | the other person |
 | abstention | What is the name of Maya's dog? (she only *thought* of adopting one) | must abstain |
+| identity | Which company does Priya work for now? (deposited as "my sister works at …") · Which choir did Kofi's sister join? (deposited as "Priya joined …") | the target's value; the alias deposit is listed in the evidence |
+| attribution_check | Which company employs Kofi now? · Which choir did Kofi join? · Which company does Oskar work for now? | the true subject's value, or abstain; the misattributed value is recorded as a `distractor` |
+| bounded_date | When did Oskar get the standing desk? | the interval "A/B" the deposits support (answer type `interval`) |
+
+`attribution` asks *who* did something; `identity` and
+`attribution_check` come from the identity layer and are numbered after
+the other questions, so the ids of those do not move.
+
+**Bounded dates, in code.** The answer's dates are parsed (a day written
+without its year borrows the next year written). Two or more dates: the
+answer is **correct** if its interval lies within the gold interval or
+equals it, with `tolerance_days` on each side (0 in this release). One
+date: **invented precision**, even when that date is inside the interval.
+An abstention is counted apart (`bounded_date.abstained`); it is not
+correct, and not an invention. Anything else (a wider interval, no date) is
+wrong. **Invented precision rate** = invented-precision answers / all
+bounded_date questions.
 
 Answer matching is done in code: dates parsed from the answer, numbers
 (digits or words), normalised string containment for names. A hedged
@@ -216,7 +334,8 @@ lets a system that never abstains look better than it is. In SOURCED:
 
 Each system is reported as one row, with no aggregate index:
 **invention rate · excerpt support rate · fact recall · recall at
-invention ≤ 1 % · QA accuracy (abstention included) · invented answers**.
+invention ≤ 1 % · attribution error rate · alias recall / precision · QA accuracy (abstention
+included) · invented answers · invented precision rate**.
 
 ## 5. Protocol
 
@@ -246,11 +365,34 @@ per system per seed. Five seeds for the release, with reported variance.
   The prompt is versioned by its SHA-256 (`judge.py`, `PROMPT_VERSION`).
   Candidate facts and deposits are preselected lexically. The decision is
   the model's.
-- **Human agreement before any publication**: `annotate` exports a
-  stratified sample of ~100 judge decisions. The author annotates them blind
-  to the judge's label (the labels are written to a separate `.judge.json` file). `agreement` computes Cohen's κ. **Pre-registered
-  threshold: κ ≥ 0.7** on `support`. Below it, the judge is not used and the
-  failure is published.
+- **Judge validation before any publication, with no annotator** (amended
+  2026-11-15; the thresholds below were committed before the first run).
+  The first version of this section required the author to annotate ~100
+  judge decisions blind (Cohen's κ ≥ 0.7). The author annotated 40 and
+  stopped (results/README, "Judge validation"): on a sample where the
+  judge calls 38 of 40 memories supported, κ says little, and the author
+  will not annotate further. The gate is now three checks that need no
+  one, and none of them is a validation against people:
+  1. *Injected control* (§7): inventions injected at a known rate into the
+     oracle's memories; the judge must recover the rate.
+  2. *Mutation control* (`selfcheck`): memories written by a real system,
+     which the judge called supported, are edited in code so the deposits
+     no longer say them. A strict edit puts in a number, a first name or a
+     city found in no deposit, so the twin is unsupported by construction;
+     a loose edit (a shifted date, another person or city of the same
+     world) is reported but not gated, since its truth rests on guards.
+     Verbatim twins (the memory replaced by the excerpt it cites) are
+     supported by construction. **Thresholds: the judge flags ≥ 0.90 of
+     the strict twins and ≤ 0.10 of the verbatim twins.**
+  3. *Second reader* (`annotate`, `reread`, `agreement --reader`): the
+     stratified sample of ~100 judge decisions is labelled blind by another
+     model than the judge, with the annotator's guide and only what an
+     annotator would see. **Threshold: κ ≥ 0.7** on `support`, unchanged.
+     Two models of one vendor can share blind spots; check 2, whose truth
+     comes from code, is what covers that.
+  A judge that misses a threshold is not used and the failure is published.
+  Human annotation stays possible for anyone (`annotate`, `label`,
+  `agreement`): the sample files are published so a reader can redo it.
 - `LexicalJudge` is deterministic and used only to validate the harness on
   control systems and for smoke tests. It is never the published judge.
 
@@ -261,6 +403,15 @@ per system per seed. Five seeds for the release, with reported variance.
 | Oracle (reads the truth, cites the gold spans) | invention 0, excerpt support 1, recall 1, QA 1 | passes (tests) |
 | Injected (oracle + inventions at rate *r*) | scorer recovers *r* | passes at 5 / 20 / 40 % (tests) |
 | Always-abstain | QA = abstention share | passes (tests) |
+| Oracle, attribution | attribution error 0, every memory measurable | passes (tests) |
+| Injected misattribution (true content, wrong `subject` at rate *m*) | scorer recovers *m* within 0.03, invention unchanged | passes at 10 / 30 % (tests) |
+| No declared subject | attribution `null` with a reason | passes (tests) |
+| Oracle, identity links (proven when written together, inferred when converging) | alias recall 1, precision 1 at every snapshot | passes (tests) |
+| Injected false links (*k* decoy links) | precision = n / (n + k), recall 1 | passes at k = 1, 3 (tests) |
+| No links exposed | alias metrics `null` with a reason | passes (tests) |
+| Oracle, bounded dates | every bounded_date answer correct, invented precision 0, store intervals justified | passes (tests) |
+| Injected imprecision (one exact date for a share *p* of bounded_date answers) | scorer recovers *p* exactly | passes at 25 / 50 % (tests) |
+| Abstaining on dates | invented precision 0, abstentions counted apart | passes (tests) |
 | Verbatim (stores every sentence, lexical retrieval) | invention 0, low QA | invention 0, QA 0.16 on the sample |
 
 ## 8. Systems
@@ -341,6 +492,23 @@ Adapters share one contract (`adapters/base.py`).
 - Only Track T is wired for Pensine. Track R needs its media pipeline
   (transcription, vision) and is next.
 - The lexical judge cannot read meaning. It is only a harness check.
+- Attribution is measurable only for systems that declare a subject per
+  memory. Pensine's adapter declares the entity Pensine itself resolved for
+  each memory (migration 016: consolidation writes the subject as deposited,
+  "my sister", and the code resolves it through an admitted identity claim).
+  In scripted mode the rate is a real number but measures only the
+  injected careless memories; the lexical judge cannot see the subject of
+  an event memory that states no date, so the rate is a lower bound.
+- Identity coverage is a template too: two attributes, one city each, one
+  decoy of each kind. The alias metrics count links, not their use: a
+  system that links correctly but answers through an unhedged inferred
+  claim is not penalised here.
+- Bounded dating covers one pattern ("not yet" then "already", day
+  precision, inclusive bounds). Explicit dates, month-level bounds and
+  contradicting bounds exist in Pensine's engine but not yet in the world.
+  The lexical judge reads "not yet" memories by a word list.
+- Identity-layer sentences are templates, and names are drawn without
+  regard to the relation (a "brother" may be called Priya).
 - Chatterbox samples speech tokens and flow-matching noise from torch. The
   worker seeds Python, NumPy and torch before the model is built and again
   per deposit, on CPU by default; reproducibility of Chatterbox files on the

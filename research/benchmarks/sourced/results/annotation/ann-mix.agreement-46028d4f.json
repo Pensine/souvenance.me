@@ -1,0 +1,9 @@
+{
+ "reference": "reader:claude-opus-5-5:guide-dd18ff635494",
+ "n": 20,
+ "raw_agreement": 0.9,
+ "cohen_kappa": 0.7561,
+ "cohen_kappa_supported_vs_not": 0.7368,
+ "threshold": 0.7,
+ "judge_usable": true
+}

@@ -1,0 +1,3067 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "3981614",
+  "llm_backend": "claude-cli",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 2,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 0,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-04",
+    "events": 8,
+    "memories_written": 10,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-05",
+    "events": 8,
+    "memories_written": 11,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 10,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 6,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-06",
+    "events": 6,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-07",
+    "events": 3,
+    "memories_written": 3,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-08",
+    "events": 5,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-09",
+    "events": 7,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-10",
+    "events": 7,
+    "memories_written": 8,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 5,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-11",
+    "events": 7,
+    "memories_written": 8,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-12",
+    "events": 6,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-13",
+    "events": 5,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 3,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 5,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-14",
+    "events": 4,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-15",
+    "events": 5,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-16",
+    "events": 5,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 5,
+    "time_bounds_refused": 0
+   }
+  ]
+ },
+ "track": "T",
+ "data": "sample-dev3",
+ "seconds": 845.6,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Anton is allergic to kiwi; he had to send a dish back because of it.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Had uh, to send the dish back, so, I'm allergic so, to kiwi."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "Anton is trying to go to bed earlier this week.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Trying you know, to go to um, bed earlier you know, this um, week."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3",
+     "content": "Anton pays 1170 EUR in rent every month.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Rent went out, 1170 EUR as every month."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4",
+     "content": "Anton says that if the Edinburgh offer comes through, he would move there without hesitation.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "If the Edinburgh offer I mean, ever um, comes through, you know, I'd honestly move there in a heartbeat."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "Greta told Anton that their bike was stolen outside the station.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Greta said their bike you know, got so, stolen outside the station."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6",
+     "content": "Anton grew up in Ghent.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Miss Ghent sometimes, it's where I grew up."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "Anton sometimes misses Ghent.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Miss Ghent sometimes, it's where I grew up."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8",
+     "content": "Anton's piano teacher now lives in Porto.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": "My piano teacher lives in Porto now."
+      }
+     ],
+     "subject": "my piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "Joaquin is the speaker's manager.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Picked up my manager Joaquin from the station."
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "10",
+     "content": "Anton picked up his manager Joaquin from the station and told Maya Abbott about it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Picked up my manager Joaquin from the station."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11",
+     "content": "Anton picked up his sister from the summer course, Maya, from the station.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Picked up my sister from the summer course Maya from the station."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12",
+     "content": "Greta has a dog named Otis, who woke her up at six in the morning again.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "My dog Otis woke me up at six again."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Anton told Gideon Collins that the telescope he ordered had not arrived yet.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "The telescope I ordered has not arrived yet."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "14",
+     "content": "Anton told Maya Abbott that Gideon had not yet got the rowing machine.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Gideon has not got the rowing machine yet."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": "2025-02-04",
+     "event_latest": null
+    },
+    {
+     "id": "15",
+     "content": "Anton's climbing partner now lives in Montreal.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": "My climbing partner lives in Montreal now."
+      }
+     ],
+     "subject": "my climbing partner",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "The neighbours were playing music again;",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "The neighbours were playing music again."
+      }
+     ],
+     "subject": "neighbours",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17",
+     "content": "Anton mentioned it twice on 2025-02-04, to Maya Abbott and to Gideon Collins.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "The neighbours were playing music again."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18",
+     "content": "Anton told Maya Abbott that Joaquin was still waiting for the standing desk, which had not been delivered yet.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "Joaquin is still waiting for the standing desk, not delivered yet."
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": "2025-02-05",
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "Anton was seen at Northgate Medical Practice on 5 February 2025 and assessed with a sprained left ankle.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.97,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Assessment: a sprained left ankle"
+      },
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Date of visit: 5 February 2025"
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "20",
+     "content": "Anton had a long call with Vera, my sister from the running club, in the evening.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Long call with Vera, my sister from the running club, this evening."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "21",
+     "content": "Vera Novak left Anton a voice message saying she passed her driving test today, and asked him to call her this weekend.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Big news: I passed a you know, driving test so, today! Call me like, this weekend?"
+      }
+     ],
+     "subject": "Vera Novak",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "22",
+     "content": "Anton's manager works at Brackenridge Seeds.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Maya asked about my manager, who works at Brackenridge Seeds."
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "Anton had a long call with Gideon, my sister from the old flat, in the evening.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "Long call with Gideon, my sister from the old flat, this evening."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "24",
+     "content": "Anton started a new book and finds it slow so far.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "Started a new book, slow so far."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25",
+     "content": "Anton met his sister Vera at the city library.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Met my sister Vera at the city library today."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "26",
+     "content": "Anton lives at 49 Kiln Lane in Rotterdam.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "I've been living at 49 Kiln Lane in Rotterdam."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Anton decided not to sign up for the marathon this year.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.92,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "In the end I did not sign up for the marathon, not this year."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "28",
+     "content": "Anton's aunt lives in Lyon now.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": "My aunt lives in Lyon now."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Anton had a long call with Alba, my colleague, this evening.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "Long call with Alba, my colleague, this evening."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "30",
+     "content": "Anton picked up my brother from the old flat Greta from the station.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Picked up my brother from the old flat Greta from the station."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Owen lives in Montreal, near the harbour.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": "Owen lives in Montreal, near the harbour."
+      }
+     ],
+     "subject": "Owen",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "Vera Novak left Anton a voice message saying her dog Otis woke her up at six again, and asked him to call her this weekend.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "My dog Otis uh, woke me up at six again."
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Call me this um, weekend?"
+      }
+     ],
+     "subject": "Vera Novak",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Alba joined the Old Mill Folk Choir on 2025-02-07.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Alba joined the Old Mill Folk Choir today."
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "34",
+     "content": "Alba is still waiting for the pottery wheel, which had not been delivered as of 2025-02-07.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Alba is still waiting for the pottery wheel, not delivered yet."
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": "2025-02-07",
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Anton keeps thinking about adopting a dog, maybe next year.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "I keep thinking about adopting a dog, maybe next year."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36",
+     "content": "Anton accepted the UX researcher job offer at Harbor & Pine Studio and starts on 15 February 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "I accepted the UX researcher job at Harbor & Pine Studio, I start on 15 February 2025."
+      },
+      {
+       "deposit_id": "D0012",
+       "excerpt": "We are pleased to offer you the position of UX researcher."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "37",
+     "content": "Anton had a busy week at Northwind Analytics, with the usual sales lead work.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Busy week at Northwind Analytics, the usual sales lead stuff."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "38",
+     "content": "Clara lives in Lyon, near the harbour.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": "Clara lives in Lyon, near the harbour."
+      }
+     ],
+     "subject": "Clara",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "Vera has not got the sewing machine yet.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Vera has not got the sewing machine yet."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-08",
+     "event_latest": null
+    },
+    {
+     "id": "40",
+     "content": "Maya joined the Harbour Gospel Choir.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Maya joined the Harbour Gospel Choir today."
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "41",
+     "content": "Anton told Gideon Collins that he already has the telescope set up at home.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": "Already got the telescope set up at home."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "42",
+     "content": "Anton's sister from the summer course works at Thistledown Instruments.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "Cormac asked about my sister from the summer course, who works at Thistledown Instruments."
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "43",
+     "content": "Greta is still waiting for the espresso machine, which has not been delivered yet.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": "Greta is still waiting for the espresso machine, not delivered yet."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": "2025-02-09",
+     "event_latest": null
+    },
+    {
+     "id": "44",
+     "content": "Anton's colleague works at Larkspur Ceramics.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Joaquin asked about my colleague, who works at Larkspur Ceramics."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "45",
+     "content": "Anton's birthday is on 18 March.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "My birthday is on 18 March, reminder to plan something."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-03-18",
+     "event_latest": "2025-03-18"
+    },
+    {
+     "id": "46",
+     "content": "Anton's uncle lives in Edinburgh now.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": "My uncle lives in Edinburgh now."
+      }
+     ],
+     "subject": "my uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "Vera Novak wrote to Anton that things are good where Vera is, in Bristol.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Things are good here in Bristol."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my manager",
+     "name": "Joaquin",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister from the summer course",
+     "name": "Maya",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister from the running club",
+     "name": "Vera",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister from the old flat",
+     "name": "Gideon",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister",
+     "name": "Vera",
+     "tier": "proven"
+    },
+    {
+     "alias": "my colleague",
+     "name": "Alba",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother from the old flat",
+     "name": "Greta",
+     "tier": "proven"
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Anton is allergic to kiwi; he had to send a dish back because of it.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Had uh, to send the dish back, so, I'm allergic so, to kiwi."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "Anton is trying to go to bed earlier this week.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Trying you know, to go to um, bed earlier you know, this um, week."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3",
+     "content": "Anton pays 1170 EUR in rent every month.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-16",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Rent went out, 1170 EUR as every month."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4",
+     "content": "Anton says that if the Edinburgh offer comes through, he would move there without hesitation.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "If the Edinburgh offer I mean, ever um, comes through, you know, I'd honestly move there in a heartbeat."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "Greta told Anton that their bike was stolen outside the station.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Greta said their bike you know, got so, stolen outside the station."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6",
+     "content": "Anton grew up in Ghent.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Miss Ghent sometimes, it's where I grew up."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "Anton sometimes misses Ghent.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Miss Ghent sometimes, it's where I grew up."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8",
+     "content": "Anton's piano teacher now lives in Porto.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": "My piano teacher lives in Porto now."
+      }
+     ],
+     "subject": "my piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "Joaquin is the speaker's manager.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Picked up my manager Joaquin from the station."
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "10",
+     "content": "Anton picked up his manager Joaquin from the station and told Maya Abbott about it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Picked up my manager Joaquin from the station."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11",
+     "content": "Anton picked up his sister from the summer course, Maya, from the station.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Picked up my sister from the summer course Maya from the station."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12",
+     "content": "Greta has a dog named Otis, who woke her up at six in the morning again.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "My dog Otis woke me up at six again."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Anton told Gideon Collins that the telescope he ordered had not arrived yet.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "The telescope I ordered has not arrived yet."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "14",
+     "content": "Anton told Maya Abbott that Gideon had not yet got the rowing machine.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Gideon has not got the rowing machine yet."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "15",
+     "content": "Anton's climbing partner now lives in Montreal.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": "My climbing partner lives in Montreal now."
+      }
+     ],
+     "subject": "my climbing partner",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "The neighbours were playing music again;",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "The neighbours were playing music again."
+      }
+     ],
+     "subject": "neighbours",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17",
+     "content": "Anton mentioned it twice on 2025-02-04, to Maya Abbott and to Gideon Collins.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "The neighbours were playing music again."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18",
+     "content": "Anton told Maya Abbott that Joaquin was still waiting for the standing desk, which had not been delivered yet.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "Joaquin is still waiting for the standing desk, not delivered yet."
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "19",
+     "content": "Anton was seen at Northgate Medical Practice on 5 February 2025 and assessed with a sprained left ankle.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.97,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Assessment: a sprained left ankle"
+      },
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Date of visit: 5 February 2025"
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "20",
+     "content": "Anton had a long call with Vera, my sister from the running club, in the evening.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Long call with Vera, my sister from the running club, this evening."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "21",
+     "content": "Vera Novak left Anton a voice message saying she passed her driving test today, and asked him to call her this weekend.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Big news: I passed a you know, driving test so, today! Call me like, this weekend?"
+      }
+     ],
+     "subject": "Vera Novak",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "22",
+     "content": "Anton's manager works at Brackenridge Seeds.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Maya asked about my manager, who works at Brackenridge Seeds."
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "Anton had a long call with Gideon, my sister from the old flat, in the evening.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "Long call with Gideon, my sister from the old flat, this evening."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "24",
+     "content": "Anton started a new book and finds it slow so far.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "Started a new book, slow so far."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25",
+     "content": "Anton met his sister Vera at the city library.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Met my sister Vera at the city library today."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "26",
+     "content": "Anton lives at 49 Kiln Lane in Rotterdam.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-16",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "I've been living at 49 Kiln Lane in Rotterdam."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Anton decided not to sign up for the marathon this year.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.92,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "In the end I did not sign up for the marathon, not this year."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "28",
+     "content": "Anton's aunt lives in Lyon now.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": "My aunt lives in Lyon now."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Anton had a long call with Alba, my colleague, this evening.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "Long call with Alba, my colleague, this evening."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "30",
+     "content": "Anton picked up my brother from the old flat Greta from the station.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Picked up my brother from the old flat Greta from the station."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Owen lives in Montreal, near the harbour.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": "Owen lives in Montreal, near the harbour."
+      }
+     ],
+     "subject": "Owen",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "Vera Novak left Anton a voice message saying her dog Otis woke her up at six again, and asked him to call her this weekend.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "My dog Otis uh, woke me up at six again."
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Call me this um, weekend?"
+      }
+     ],
+     "subject": "Vera Novak",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Alba joined the Old Mill Folk Choir on 2025-02-07.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Alba joined the Old Mill Folk Choir today."
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "34",
+     "content": "Alba is still waiting for the pottery wheel, which had not been delivered as of 2025-02-07.",
+     "valid_from": "2025-02-07",
+     "valid_to": "2025-02-13",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Alba is still waiting for the pottery wheel, not delivered yet."
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "35",
+     "content": "Anton keeps thinking about adopting a dog, maybe next year.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "I keep thinking about adopting a dog, maybe next year."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36",
+     "content": "Anton accepted the UX researcher job offer at Harbor & Pine Studio and starts on 15 February 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "I accepted the UX researcher job at Harbor & Pine Studio, I start on 15 February 2025."
+      },
+      {
+       "deposit_id": "D0012",
+       "excerpt": "We are pleased to offer you the position of UX researcher."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "37",
+     "content": "Anton had a busy week at Northwind Analytics, with the usual sales lead work.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Busy week at Northwind Analytics, the usual sales lead stuff."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "38",
+     "content": "Clara lives in Lyon, near the harbour.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": "Clara lives in Lyon, near the harbour."
+      }
+     ],
+     "subject": "Clara",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "Vera has not got the sewing machine yet.",
+     "valid_from": "2025-02-08",
+     "valid_to": "2025-02-13",
+     "current": false,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Vera has not got the sewing machine yet."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "40",
+     "content": "Maya joined the Harbour Gospel Choir.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Maya joined the Harbour Gospel Choir today."
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "41",
+     "content": "Anton told Gideon Collins that he already has the telescope set up at home.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": "Already got the telescope set up at home."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "42",
+     "content": "Anton's sister from the summer course works at Thistledown Instruments.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "Cormac asked about my sister from the summer course, who works at Thistledown Instruments."
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "43",
+     "content": "Greta is still waiting for the espresso machine, which has not been delivered yet.",
+     "valid_from": "2025-02-09",
+     "valid_to": "2025-02-13",
+     "current": false,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": "Greta is still waiting for the espresso machine, not delivered yet."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "44",
+     "content": "Anton's colleague works at Larkspur Ceramics.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Joaquin asked about my colleague, who works at Larkspur Ceramics."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "45",
+     "content": "Anton's birthday is on 18 March.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "My birthday is on 18 March, reminder to plan something."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-03-18",
+     "event_latest": "2025-03-18"
+    },
+    {
+     "id": "46",
+     "content": "Anton's uncle lives in Edinburgh now.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": "My uncle lives in Edinburgh now."
+      }
+     ],
+     "subject": "my uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "Vera Novak wrote to Anton that things are good where Vera is, in Bristol.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Things are good here in Bristol."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "48",
+     "content": "Anton had coffee with Vera at the old market hall.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Coffee with Vera at the old market hall yesterday."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "49",
+     "content": "Anton's brother Greta lives in Valencia these days.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "my brother Greta lives in Valencia these days."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "50",
+     "content": "Joaquin has had the standing desk for a while already.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": "Joaquin has had the standing desk for a while already."
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "51",
+     "content": "Tomas lives in Edinburgh, near the harbour.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": "Tomas lives in Edinburgh, near the harbour."
+      }
+     ],
+     "subject": "Tomas",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "52",
+     "content": "Anton ran the Spring 10K on 10 February 2025 and finished in an official time of 57:04.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "Official time: 57:04"
+      },
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Ran the Spring 10K today, finished in 57:04."
+      },
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Long um, day, but a so, good uh, one."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "53",
+     "content": "Anton said he was finally over his sprained left ankle.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Finally- Finally over a sprained left ankle today."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "54",
+     "content": "Ruth lives in Porto, near the harbour.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": "Ruth lives in Porto, near the harbour."
+      }
+     ],
+     "subject": "Ruth",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55",
+     "content": "Gideon already has the rowing machine, and Anton says it looks great.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": "Gideon already has the rowing machine, it looks great."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "56",
+     "content": "Ran the Park 5K and finished in 22:11.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Ran the Park 5K today, finished in 22:11."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-11",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "57",
+     "content": "Anton practised his Italian with a podcast on the way home.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Practised my Italian with a podcast on the way home."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "58",
+     "content": "The speaker's birthday is on 23 March.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "My birthday is on 23 March"
+      }
+     ],
+     "subject": "Greta Petrov",
+     "event_earliest": "2025-03-23",
+     "event_latest": "2025-03-23"
+    },
+    {
+     "id": "59",
+     "content": "Anton's brother from the old flat works at Saltire Glassworks.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Told Cormac that my brother from the old flat works at Saltire Glassworks."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "60",
+     "content": "Anton's uncle works at Pellucid Labs.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": "My uncle works at Pellucid Labs."
+      }
+     ],
+     "subject": "my uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "61",
+     "content": "Anton's piano teacher works at Corvid Mapmakers.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": "My piano teacher works at Corvid Mapmakers."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "62",
+     "content": "Anton's sister from the running club works at Fennick & Dale Opticians.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Maya asked about my sister from the running club, who works at Fennick & Dale Opticians."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "63",
+     "content": "Anton's aunt works from home most days.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": "My aunt works from home most days."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "64",
+     "content": "Vera Novak works as an operations manager and says work is busy.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "being an operations manager is never boring"
+      }
+     ],
+     "subject": "Vera Novak",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "65",
+     "content": "Greta works as a UX researcher.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Greta works as an UX researcher."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "66",
+     "content": "Ruth works at Corvid Mapmakers.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": "Ran into Ruth, who works at Corvid Mapmakers."
+      }
+     ],
+     "subject": "Ruth",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "67",
+     "content": "Anton's sister from the old flat works at Hollowbrook Surveying.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Maya asked about my sister from the old flat, who works at Hollowbrook Surveying."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "68",
+     "content": "Gideon joined the Kiln Lane Chamber Choir on 2025-02-12.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "Gideon joined the Kiln Lane Chamber Choir today."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "69",
+     "content": "Anton's climbing partner works at Oxbow Bindery.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": "My climbing partner works at Oxbow Bindery."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "70",
+     "content": "Anton ran the Harbour Half Marathon on 13 February 2025 and finished in an official time of 2:28:59.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.97,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "Official time: 2:28:59"
+      },
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Ran like, the Harbour uh, Half Marathon like, today, finished so, in um, 2:28:59"
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-13",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "71",
+     "content": "Anton met Vera at the harbour footpath.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Met- Met I mean, Vera at the harbour you know, footpath today"
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-13",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "72",
+     "content": "Vera already has the sewing machine, and Anton says it looks great.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": "Vera already has the sewing machine, it looks great."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "73",
+     "content": "Alba has had the pottery wheel for a while already.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": "Alba has had the pottery wheel for a while already."
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "74",
+     "content": "Greta has had the espresso machine for a while already.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": "Greta has had the espresso machine for a while already."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "75",
+     "content": "Anton had coffee with Vera at the hilltop viewpoint.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Coffee with Vera at the hilltop viewpoint today."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "76",
+     "content": "Anton had a GP check-up appointment on 2025-02-13 and everything was fine.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Gp check-up appointment yesterday, all fine."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-13",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "77",
+     "content": "Anton is trying to go to bed earlier this week.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0075",
+       "excerpt": "Trying to go to bed earlier this week."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "78",
+     "content": "Clara works from home most days.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0075",
+       "excerpt": "Clara works from home most days."
+      }
+     ],
+     "subject": "Clara",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "79",
+     "content": "Tomas works at Pellucid Labs.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0076",
+       "excerpt": "Ran into Tomas, who works at Pellucid Labs."
+      }
+     ],
+     "subject": "Tomas",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "80",
+     "content": "Owen works at Halyard Sailmakers.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0077",
+       "excerpt": "Ran into Owen, who works at Halyard Sailmakers."
+      }
+     ],
+     "subject": "Owen",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "81",
+     "content": "Joaquin joined the Juniper Street Youth Choir on 2025-02-15.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": "Joaquin joined the Juniper Street Youth Choir today."
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "82",
+     "content": "Vera joined the Saltmarsh Community Choir on 2025-02-15.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "Vera joined the Saltmarsh Community Choir today."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "83",
+     "content": "Vera Novak has a dog named Otis.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "dog Otis woke me up at uh, six I mean, again"
+      }
+     ],
+     "subject": "Vera Novak",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "84",
+     "content": "Vera Novak left Anton a voice message saying her dog Otis woke her up at six again, and that she misses him.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "dog Otis woke me up at uh, six I mean, again. Miss you!"
+      }
+     ],
+     "subject": "Vera Novak",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "85",
+     "content": "Anton wrote to Greta Petrov that he had heard Greta's company might be shutting down.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "Apparently Greta's company might be shutting down."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "86",
+     "content": "Anton had a first day as a UX researcher at Harbor & Pine Studio.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.93,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "First day as UX researcher at Harbor um, & Pine Studio yesterday"
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "87",
+     "content": "Greta joined the Beacon Hill Choir on 2025-02-16.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "Greta joined the Beacon Hill Choir today."
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    },
+    {
+     "id": "88",
+     "content": "Anton lives at 56 Quarry Lane in Gothenburg, having moved in on 16 February 2025.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Moved into the new flat at 56 Quarry Lane, Gothenburg today."
+      },
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Lease start date: 16 February 2025"
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    },
+    {
+     "id": "89",
+     "content": "Anton pays 1210 EUR in monthly rent for the flat at 56 Quarry Lane, Gothenburg, under a lease starting 16 February 2025.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Monthly rent: 1210 EUR"
+      },
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Lease start date: 16 February 2025"
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    },
+    {
+     "id": "90",
+     "content": "Anton's landlord for the 56 Quarry Lane flat is Elm Property Lettings.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Landlord: Elm Property Lettings"
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "91",
+     "content": "Anton had lunch with his uncle and Tomas on 2025-02-16.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0078",
+       "excerpt": "Lunch with my uncle and Tomas today."
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my manager",
+     "name": "Joaquin",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister from the summer course",
+     "name": "Maya",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister from the running club",
+     "name": "Vera",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister from the old flat",
+     "name": "Gideon",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister",
+     "name": "Vera",
+     "tier": "proven"
+    },
+    {
+     "alias": "my colleague",
+     "name": "Alba",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother from the old flat",
+     "name": "Greta",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother",
+     "name": "Greta",
+     "tier": "proven"
+    }
+   ]
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1210 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Gothenburg",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Bristol",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Kiwi",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "UX researcher",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "Operations manager",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Otis",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "Otis",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "18 March 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "23 March",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Harbor & Pine Studio",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "Italian",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "1170 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "16 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "15 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "5 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "5 days (diagnosed 5 February 2025, recovered 10 February 2025)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "1 day",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "13 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "2:28:59",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "22:11",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "57:04",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "At the harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "City library",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "The old market hall",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "Vera Novak",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "Beacon Hill Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "Old Mill Folk Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "Juniper Street Youth Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "Kiln Lane Chamber Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "Saltmarsh Community Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "Harbour Gospel Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q049": {
+   "text": "Larkspur Ceramics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q050": {
+   "text": "Hollowbrook Surveying",
+   "abstained": null,
+   "citations": []
+  },
+  "Q051": {
+   "text": "Saltire Glassworks",
+   "abstained": null,
+   "citations": []
+  },
+  "Q052": {
+   "text": "Fennick & Dale Opticians",
+   "abstained": null,
+   "citations": []
+  },
+  "Q053": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q054": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q055": {
+   "text": "Brackenridge Seeds",
+   "abstained": null,
+   "citations": []
+  },
+  "Q056": {
+   "text": "Thistledown Instruments",
+   "abstained": null,
+   "citations": []
+  },
+  "Q057": {
+   "text": "Harbor & Pine Studio",
+   "abstained": null,
+   "citations": []
+  },
+  "Q058": {
+   "text": "Between 7 February 2025 and 13 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q059": {
+   "text": "Between 4 February 2025 and 9 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q060": {
+   "text": "between 4 February 2025 and 10 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q061": {
+   "text": "between 9 February 2025 and 13 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q062": {
+   "text": "Between 5 February 2025 and 10 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q063": {
+   "text": "Between 8 February 2025 and 13 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

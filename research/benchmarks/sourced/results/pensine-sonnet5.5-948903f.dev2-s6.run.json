@@ -1,0 +1,2537 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "948903f",
+  "llm_backend": "claude-cli",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 5,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-04",
+    "events": 7,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-05",
+    "events": 6,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-06",
+    "events": 3,
+    "memories_written": 3,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-07",
+    "events": 5,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-08",
+    "events": 4,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 0,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-09",
+    "events": 4,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 3,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-10",
+    "events": 5,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-11",
+    "events": 3,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-12",
+    "events": 3,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-13",
+    "events": 3,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-14",
+    "events": 3,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-15",
+    "events": 1,
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 0,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-16",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   }
+  ]
+ },
+ "track": "T",
+ "data": "sample-dev2",
+ "seconds": 709.5,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Ivo accepted the research assistant job offer from Kestrel Logistics.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "kestrel logistics logistics er, said yes, so a research assistant from 11 right, february 2025 onwards."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-01",
+     "event_latest": "2025-02-28"
+    },
+    {
+     "id": "2",
+     "content": "Ivo starts work as a research assistant at Kestrel Logistics on February 11, 2025.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Role offered: research assistant, Kestrel Logistics"
+      },
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Starting on: February 11, 2025"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-11",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "3",
+     "content": "Dev, the speaker's brother, has his birthday on 17 December.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "in the the calendar for 17 december, my brother dev's birthday"
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": "2025-12-17",
+     "event_latest": "2025-12-17"
+    },
+    {
+     "id": "4",
+     "content": "Ivo grew up in Lyon.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Missing the streets of Lyon, the town I grew up in."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "The writer was missing the streets of Lyon, the town they grew up in, and fell asleep on the sofa far too early.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Missing the streets of Lyon, the town I grew up in. Fell asleep on the sofa far too early."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6",
+     "content": "Ivo's aunt now lives in Edinburgh.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "My aunt lives in Edinburgh now."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "Ivo's sister Ezra phoned him in the evening and they talked for an hour.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "My sister, Ezra, rang this evening and we talked for an hour."
+      }
+     ],
+     "subject": "Ezra",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "8",
+     "content": "Ivo's sister Ezra has been based in Valencia for a long while.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "my sister ezra has okay, been based in valencia for a long while."
+      }
+     ],
+     "subject": "Ezra",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "9",
+     "content": "Ivo wandered through the botanical garden.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "wandered through through the botanical garden today."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "10",
+     "content": "Jonah is Ivo's best friend.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Jonah (my best friend)"
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11",
+     "content": "Jonah says being a sales lead is exhausting.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "According to Jonah (my best friend), being a sales lead is exhausting."
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12",
+     "content": "Ivo's piano teacher now lives in Leipzig.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "The piano teacher lives in Leipzig now."
+      }
+     ],
+     "subject": "my piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Ivo's flatmate now lives in Rotterdam.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Our flatmate lives in Rotterdam now."
+      }
+     ],
+     "subject": "my flatmate",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "Ivo saw a doctor at Riverside Medical Practice on 5 February 2025 and was diagnosed with a bad chest cold; the advice was rest and fluids, with a review if there is no improvement.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Diagnosis - a bad chest cold"
+      },
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Management - rest and fluids"
+      },
+      {
+       "deposit_id": "D0008",
+       "excerpt": "found out it's a bad chest cold, with rest and fluids prescribed."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "15",
+     "content": "Ivo had coffee with Jonah and walked the harbour footpath on 5 February 2025.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "The harbour footpath earlier today, coffee with Jonah."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "Ivo waited at the station with his brother Dev on the evening of 5 February 2025.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Waited at the station with Dev tonight; that's my brother, for the record."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "17",
+     "content": "Ivo's uncle's flat is in Montreal.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "My uncle's flat is in Montreal."
+      }
+     ],
+     "subject": "my uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18",
+     "content": "Bianca is based in Rotterdam.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Rotterdam is where Bianca is based."
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "Jonah is still without the rowing machine.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Jonah is still without the rowing machine."
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": "2025-02-05",
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "Maya lives in Leipzig; she sent Ivo a postcard.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Postcard from Maya, who lives in Leipzig."
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "Jonah Haddad messaged Ivo on 6 February 2025 to tell him first that he had passed a driving test that day.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Had to tell you first, I passed a driving test today."
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "22",
+     "content": "Rosa lives in Edinburgh, close to the water.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Rosa lives in Edinburgh, close to the water."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "Dev Lindqvist told Ivo he has settled in Bordeaux for good.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Settled in Bordeaux for good, it seems."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24",
+     "content": "Ivo's monthly 760 EUR payment for the flat went out.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "the monthly erm, 760 eur for the flat went out."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25",
+     "content": "Ivo practised Swedish with an app before bed.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "practised swedish with an app before bed."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26",
+     "content": "Ivo is the project manager at Harbor & Pine Studio.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Being the project manager at Harbor & Pine Studio has its moments"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Ivo bumped into Jonah at the harbour footpath.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "bumped into Jonah at the harbour footpath earlier today"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "28",
+     "content": "Gus is based in Montreal.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Montreal is where Gus is based."
+      }
+     ],
+     "subject": "Gus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Jonah Haddad wrote to Ivo that all is good where he is, in Porto.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "All good here in Porto."
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30",
+     "content": "Dev works as a backend engineer.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "A backend engineer, that's what Dev does for a living."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Dev told Ivo that his company might fold before long.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Dev said their company might fold before long."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "Ivo is allergic to sesame and reads every label when shopping.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Allergic to sesame, so I read every label in the shop."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Ezra Delacroix works as a product designer.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Work as a product designer is full on this month."
+      }
+     ],
+     "subject": "Ezra",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Ezra Delacroix messaged Ivo that her work is very busy this month and that they would speak later.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Hey there! Work as a product designer is full on this month. Speak later."
+      }
+     ],
+     "subject": "Ezra",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Ivo's aunt works for Tamberlane Bakery.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "My aunt's employer: Tamberlane Bakery."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36",
+     "content": "Ivo's flatmate works for Mistral Joinery.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": "Mistral Joinery is who the flatmate works for."
+      }
+     ],
+     "subject": "my flatmate",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "37",
+     "content": "Dev joined the Old Mill Folk Choir in the morning, and the first rehearsal with the choir took place that same day.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "First rehearsal with the Old Mill Folk Choir today for Dev, who joined this morning."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "38",
+     "content": "Ivo bumped into Ezra at the harbour footpath in the morning.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "Bumped into Ezra at the harbour footpath this morning."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "Ivo caught up with Dev in the morning, and a hilltop viewpoint was mentioned.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "caught up with hmm, dev this morning"
+      },
+      {
+       "deposit_id": "D0018",
+       "excerpt": "hilltop viewpoint"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "40",
+     "content": "Ivo says his Swedish is improving, and he follows a podcast every morning.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "my swedish is improving, podcast er, every morning"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "41",
+     "content": "Bianca works at Mistral Joinery.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "Things at Mistral Joinery, where Bianca works, sound hectic."
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42",
+     "content": "On 9 February 2025 Ivo noted that things at Mistral Joinery, where Bianca works, sound hectic.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "Things at Mistral Joinery, where Bianca works, sound hectic."
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my sister",
+     "name": "Ezra",
+     "tier": "proven"
+    },
+    {
+     "alias": "my best friend",
+     "name": "Jonah",
+     "tier": "proven"
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Ivo accepted the research assistant job offer from Kestrel Logistics.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "kestrel logistics logistics er, said yes, so a research assistant from 11 right, february 2025 onwards."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-01",
+     "event_latest": "2025-02-28"
+    },
+    {
+     "id": "2",
+     "content": "Ivo starts work as a research assistant at Kestrel Logistics on February 11, 2025.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Role offered: research assistant, Kestrel Logistics"
+      },
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Starting on: February 11, 2025"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-11",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "3",
+     "content": "Dev, the speaker's brother, has his birthday on 17 December.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "in the the calendar for 17 december, my brother dev's birthday"
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": "2025-12-17",
+     "event_latest": "2025-12-17"
+    },
+    {
+     "id": "4",
+     "content": "Ivo grew up in Lyon.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Missing the streets of Lyon, the town I grew up in."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "The writer was missing the streets of Lyon, the town they grew up in, and fell asleep on the sofa far too early.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Missing the streets of Lyon, the town I grew up in. Fell asleep on the sofa far too early."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6",
+     "content": "Ivo's aunt now lives in Edinburgh.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "My aunt lives in Edinburgh now."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "Ivo's sister Ezra phoned him in the evening and they talked for an hour.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "My sister, Ezra, rang this evening and we talked for an hour."
+      }
+     ],
+     "subject": "Ezra",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "8",
+     "content": "Ivo's sister Ezra has been based in Valencia for a long while.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "my sister ezra has okay, been based in valencia for a long while."
+      }
+     ],
+     "subject": "Ezra",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "9",
+     "content": "Ivo wandered through the botanical garden.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "wandered through through the botanical garden today."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "10",
+     "content": "Jonah is Ivo's best friend.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Jonah (my best friend)"
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11",
+     "content": "Jonah says being a sales lead is exhausting.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "According to Jonah (my best friend), being a sales lead is exhausting."
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12",
+     "content": "Ivo's piano teacher now lives in Leipzig.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "The piano teacher lives in Leipzig now."
+      }
+     ],
+     "subject": "my piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Ivo's flatmate now lives in Rotterdam.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Our flatmate lives in Rotterdam now."
+      }
+     ],
+     "subject": "my flatmate",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "Ivo saw a doctor at Riverside Medical Practice on 5 February 2025 and was diagnosed with a bad chest cold; the advice was rest and fluids, with a review if there is no improvement.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Diagnosis - a bad chest cold"
+      },
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Management - rest and fluids"
+      },
+      {
+       "deposit_id": "D0008",
+       "excerpt": "found out it's a bad chest cold, with rest and fluids prescribed."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "15",
+     "content": "Ivo had coffee with Jonah and walked the harbour footpath on 5 February 2025.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "The harbour footpath earlier today, coffee with Jonah."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "Ivo waited at the station with his brother Dev on the evening of 5 February 2025.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Waited at the station with Dev tonight; that's my brother, for the record."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "17",
+     "content": "Ivo's uncle's flat is in Montreal.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "My uncle's flat is in Montreal."
+      }
+     ],
+     "subject": "my uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18",
+     "content": "Bianca is based in Rotterdam.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Rotterdam is where Bianca is based."
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "Jonah is still without the rowing machine.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-13",
+     "current": false,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Jonah is still without the rowing machine."
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "20",
+     "content": "Maya lives in Leipzig; she sent Ivo a postcard.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Postcard from Maya, who lives in Leipzig."
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "Jonah Haddad messaged Ivo on 6 February 2025 to tell him first that he had passed a driving test that day.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "Had to tell you first, I passed a driving test today."
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "22",
+     "content": "Rosa lives in Edinburgh, close to the water.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Rosa lives in Edinburgh, close to the water."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "Dev Lindqvist told Ivo he has settled in Bordeaux for good.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Settled in Bordeaux for good, it seems."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24",
+     "content": "Ivo's monthly 760 EUR payment for the flat went out.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "the monthly erm, 760 eur for the flat went out."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25",
+     "content": "Ivo practised Swedish with an app before bed.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "practised swedish with an app before bed."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26",
+     "content": "Ivo is the project manager at Harbor & Pine Studio.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Being the project manager at Harbor & Pine Studio has its moments"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Ivo bumped into Jonah at the harbour footpath.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "bumped into Jonah at the harbour footpath earlier today"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "28",
+     "content": "Gus is based in Montreal.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Montreal is where Gus is based."
+      }
+     ],
+     "subject": "Gus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Jonah Haddad wrote to Ivo that all is good where he is, in Porto.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "All good here in Porto."
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30",
+     "content": "Dev works as a backend engineer.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "A backend engineer, that's what Dev does for a living."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Dev told Ivo that his company might fold before long.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Dev said their company might fold before long."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "Ivo is allergic to sesame and reads every label when shopping.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Allergic to sesame, so I read every label in the shop."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Ezra Delacroix works as a product designer.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Work as a product designer is full on this month."
+      }
+     ],
+     "subject": "Ezra",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Ezra Delacroix messaged Ivo that her work is very busy this month and that they would speak later.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Hey there! Work as a product designer is full on this month. Speak later."
+      }
+     ],
+     "subject": "Ezra",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Ivo's aunt works for Tamberlane Bakery.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "My aunt's employer: Tamberlane Bakery."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36",
+     "content": "Ivo's flatmate works for Mistral Joinery.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": "Mistral Joinery is who the flatmate works for."
+      }
+     ],
+     "subject": "my flatmate",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "37",
+     "content": "Dev joined the Old Mill Folk Choir in the morning, and the first rehearsal with the choir took place that same day.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "First rehearsal with the Old Mill Folk Choir today for Dev, who joined this morning."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "38",
+     "content": "Ivo bumped into Ezra at the harbour footpath in the morning.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "Bumped into Ezra at the harbour footpath this morning."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "Ivo caught up with Dev in the morning, and a hilltop viewpoint was mentioned.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "caught up with hmm, dev this morning"
+      },
+      {
+       "deposit_id": "D0018",
+       "excerpt": "hilltop viewpoint"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "40",
+     "content": "Ivo says his Swedish is improving, and he follows a podcast every morning.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "my swedish is improving, podcast er, every morning"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "41",
+     "content": "Bianca works at Mistral Joinery.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "Things at Mistral Joinery, where Bianca works, sound hectic."
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42",
+     "content": "On 9 February 2025 Ivo noted that things at Mistral Joinery, where Bianca works, sound hectic.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "Things at Mistral Joinery, where Bianca works, sound hectic."
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "43",
+     "content": "Ivo completed the Spring 10K on 10 February 2025, with a recorded net time of 47:27.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Awarded to Ivo Okafor, who completed the course on 10 February 2025."
+      },
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Net time recorded: 47:27"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "44",
+     "content": "Ivo's piano teacher works at Wickerfield Nursery.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Our piano teacher works at Wickerfield Nursery."
+      }
+     ],
+     "subject": "my piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45",
+     "content": "Ivo bumped into Dev at the old market hall the evening before 10 February 2025.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Bumped into Dev at the old market hall last night."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "46",
+     "content": "Ivo told Dev on 10 February 2025 that he was finally over his bad chest cold.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Over a bad chest cold today, finally."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "Ivo says home is his uncle's office, most of the week.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "Home is my uncle's office, most of the week."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "48",
+     "content": "Ivo regularly climbs the stairs at 64 Mill Road, Ghent, which seem steeper to him every week.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "The stairs at 64 Mill Road, Ghent seem steeper every week."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "49",
+     "content": "Ivo began working as a research assistant at Kestrel Logistics.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Kestrel Logistics has had a new research assistant since earlier today: me."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-11",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "50",
+     "content": "Ivo asked twice about sesame at a restaurant because of his allergy.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "asked twice about sesame at the restaurant, er, being allergic and all."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "51",
+     "content": "Ivo's home is at 64 Mill Road, Ghent.",
+     "valid_from": "2025-02-11",
+     "valid_to": "2025-02-14",
+     "current": false,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "home at erm, 64 mill road (ghent) felt hmm, cold tonight."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "52",
+     "content": "Ivo is glad he bought the standing desk; it has earned its place in the flat.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "Glad I bought the standing desk, it has earned its spot in the flat."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "53",
+     "content": "Ivo ran into Maya.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Ran into Maya, who works at Wickerfield Nursery."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "54",
+     "content": "Maya works at Wickerfield Nursery.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Ran into Maya, who works at Wickerfield Nursery."
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55",
+     "content": "Rosa works at Corvid Mapmakers.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "Things at Corvid Mapmakers, where Rosa works, sound hectic."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "56",
+     "content": "On 12 February 2025 Ivo noted that things at Corvid Mapmakers, where Rosa works, sound hectic.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "Things at Corvid Mapmakers, where Rosa works, sound hectic."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "57",
+     "content": "On 12 February 2025 Ivo told Jonah Haddad he skipped the marathon registration this year.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Skipped the marathon registration, not this year."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "58",
+     "content": "Ivo's birthday is on November 12.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Birthday on November 12 this year too, obviously."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-11-12",
+     "event_latest": "2025-11-12"
+    },
+    {
+     "id": "59",
+     "content": "Jonah's rowing machine has been in use for a while, so he now has it.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "Jonah's rowing machine has been in use for a while."
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "60",
+     "content": "Ivo's sister works at Quillon Maps.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Dev asked where my sister works these days: Quillon Maps."
+      }
+     ],
+     "subject": "Ezra",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "61",
+     "content": "Ivo caught up with Dev and they walked around the botanical garden.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Caught up with Dev earlier today, we walked around the botanical garden."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "62",
+     "content": "Ivo caught up with Dev and they walked around the city library.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Caught up with Dev yesterday, we walked around the city library."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "63",
+     "content": "Ivo has a Valencia offer and part of him hopes it works out so that he could move there.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Part of me hopes the Valencia offer works out, so I could move there."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "64",
+     "content": "Ivo's home is now 95 Orchard Close, Ghent; he collected the keys on 14 February 2025.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "Keys collected earlier today: 95 Orchard Close, Ghent is home now."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "65",
+     "content": "Ivo's tenancy at 95 Orchard Close, Ghent, begins on 14 February 2025, let by Elm Property Lettings, with a signed agreement.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "Tenancy begins: 14 February 2025"
+      },
+      {
+       "deposit_id": "D0026",
+       "excerpt": "Between Elm Property Lettings (the lessor)"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "66",
+     "content": "Ivo's rent at 95 Orchard Close, Ghent, is 1190 EUR per month.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "Rent payable monthly: 1190 EUR"
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "67",
+     "content": "The speaker bumped into Ezra at the riverside park in the morning.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "Bumped into Ezra at the riverside park this morning."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "68",
+     "content": "Dev told Ivo that someone took their bike from outside the station.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "Dev said someone took their bike from outside the station."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "69",
+     "content": "Ivo had lunch on 14 February 2025 with Bianca and their flatmate, the three of them together.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Had lunch today with Bianca and our flatmate, the three of us."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "70",
+     "content": "Gus works from home most days, and it suits him.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Working from home suits Gus, who does it most days."
+      }
+     ],
+     "subject": "Gus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "71",
+     "content": "Ivo fell asleep on the sofa far too early.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Fell asleep on the sofa far too early."
+      }
+     ],
+     "subject": "Ivo Okafor",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "72",
+     "content": "Ivo's brother works at Marrowgate Press.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "my brother works at Marrowgate Press"
+      }
+     ],
+     "subject": "my brother",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "73",
+     "content": "Ezra sings with the Saltmarsh Community Choir.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "As of today Ezra sings with the Saltmarsh Community Choir"
+      }
+     ],
+     "subject": "Ezra",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my sister",
+     "name": "Ezra",
+     "tier": "proven"
+    },
+    {
+     "alias": "my best friend",
+     "name": "Jonah",
+     "tier": "proven"
+    }
+   ]
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1190 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Bordeaux",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "Backend engineer",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "Product designer",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Sesame",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "Sales lead",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "17 December",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "12 November",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Lyon",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Kestrel Logistics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "Swedish",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "760 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "14 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "11 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "5 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "5 days (diagnosed 5 February 2025, over it by 10 February 2025)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "3 days (11 February 2025 to 14 February 2025)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "47:27",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "City library",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "The botanical garden.",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "At the riverside park.",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "Harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "The harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "The harbour footpath.",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "Jonah Haddad",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "Saltmarsh Community Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "Kestrel Logistics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "Between 5 February 2025 and 13 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

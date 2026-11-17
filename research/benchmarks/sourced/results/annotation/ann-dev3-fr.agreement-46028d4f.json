@@ -1,0 +1,9 @@
+{
+ "reference": "human",
+ "n": 40,
+ "raw_agreement": 0.95,
+ "cohen_kappa": 0.322,
+ "cohen_kappa_supported_vs_not": 0.6552,
+ "threshold": 0.7,
+ "judge_usable": false
+}

@@ -24,26 +24,54 @@ decided, what you believed, how you changed. **Compute can be rented; context ca
 takes the opposite position: an open, self-hosted memory engine in which the AI is a replaceable
 adapter and the memory is yours — auditable, exportable, governed by you.
 
+## Where this is going
+
+Assistants are becoming always on: they listen through earbuds, see through glasses, and act for
+you between conversations. Models that simulate the world keep only a short, implicit state; the
+durable state of one person's life (where they live, who is who, what changed and when) has to live
+somewhere outside the model. Souvenance studies that layer: **a dated, source-proven and truly
+erasable state of a person's world**, written overnight from what they deposit, in which the model
+reads and the code checks before anything is stored. Today the deposits are conversations, voice
+notes, photos and documents; the measurements below are what such a layer has to pass first.
+
 ## What is new, and what is not
 
 | | |
 |---|---|
-| **Claimed** (to be measured publicly) | A write-time **admission cascade** — excerpt verified in code, then numbers and proper nouns, then a model re-read of flagged cases only — with the invention rate it lets through measured and published · a **fidelity harness** · **autobiographical lived time** (life landmarks and chapters as coordinates, computed in code) · **consent governance** (persona never self-ratified, too-fast confirmations refused, visible log of agent reads, no outbound channel) |
-| **Prior art**, implemented with credit | Append-only log with memories as projections (event sourcing) · bi-temporal graph with invalidation ([Zep / Graphiti, arXiv 2501.13956](https://arxiv.org/abs/2501.13956)) · background consolidation (OpenClaw dreaming; [sleep-time compute, arXiv 2504.13171](https://arxiv.org/abs/2504.13171)) · Hebbian links ([HeLa-Mem, arXiv 2604.16839](https://arxiv.org/abs/2604.16839)) · forgetting curves ([MemoryBank, arXiv 2305.10250](https://arxiv.org/abs/2305.10250)) |
+| **Prior art**, credited | Checking that a memory's excerpt occurs in its source before writing it: [SodaMem (arXiv 2608.08055)](https://arxiv.org/abs/2608.08055), [Eywa (arXiv 2605.30771)](https://arxiv.org/abs/2605.30771) · bi-temporal graph with per-edge provenance ([Zep / Graphiti, arXiv 2501.13956](https://arxiv.org/abs/2501.13956)) · background consolidation ([sleep-time compute, arXiv 2504.13171](https://arxiv.org/abs/2504.13171)) · append-only log with memories as projections (event sourcing) · forgetting curves ([MemoryBank, arXiv 2305.10250](https://arxiv.org/abs/2305.10250)) |
+| **What we add** | The same write gate on **identity links**: no link between a role ("my sister") and a name without an excerpt that proves it, reversible. We did not find it in the systems and papers above; that is a gap in what we found, not proof that no one does it ([prior-art notes](research/related-work/provenance-2026-11.md)) |
+| **What we measure** | Several memory systems on the same sealed data, with the same model and the same embedder, so that the memory system is the only difference; sealed sets whose wordings were written blind; and the results where we lose, too |
 
-SOURCED, the benchmark in preparation ([`research/benchmarks/sourced`](research/benchmarks/sourced)), extends [HaluMem (arXiv 2511.03506)](https://arxiv.org/abs/2511.03506);
-it is not the first benchmark of hallucinations in memory systems.
+SOURCED, the benchmark ([`research/benchmarks/sourced`](research/benchmarks/sourced)), measures the
+failures [HaluMem (arXiv 2511.03506)](https://arxiv.org/abs/2511.03506) and
+[LongMemEval](https://arxiv.org/abs/2410.10813) also measure, on synthetic lives: inventions, the
+wrong person, the wrong date, stale facts presented as current, identity. It is not the first
+benchmark of its kind.
 
 ## Results so far
 
-| Question | Finding | Status |
-|---|---|---|
-| Invention rate of the production model at write time | 0 / 42 memories rated invented | Pilot: 5 nights of the author's private data, one LLM judge — a signal, not a result ([notes](research/evals/frugal/RESULTATS.md)) |
-| Same, small open models (3–9B) on a laptop | 5–20% | Same pilot |
-| Time framing computed in code vs raw timestamps (LoCoMo) | — | Pre-registered, not run ([protocol](research/papers/002-lived-time/README.md)) |
-| Integrity of memory systems on public data | — | SOURCED benchmark in preparation |
+Three memory systems on one sealed synthetic life (seed 8: 78 deposits, 62 questions), the same
+model (Claude Sonnet 5.5) and the same embedder (nomic-embed-text v1.5) for all three.
+Three runs per system: the mean, then the lowest and highest run.
 
-No other number exists yet. When one does, it is published with its protocol, sample size and code.
+| | Pensine | Mem0 2.2.1 | Graphiti 0.31.2 |
+|---|---|---|---|
+| Facts recalled | 0.91 (0.90–0.92) | 0.52 (0.52–0.53) | 0.72 (0.68–0.74) |
+| Memories invented | 0 (none in three runs) | 0.007 (one memory per run) | 0.010 (0–0.02) |
+| Memories backed by an excerpt | 0.96 (0.95–0.97) | — (none kept) | — (none kept) |
+| Questions answered correctly | 0.89 (0.89–0.90) | 0.73 (0.71–0.74) | 0.54 (0.53–0.55) |
+| Identity questions | 8/11 (7–10) | 4/11 (3–5) | 0/11 |
+
+No run of one system overlaps another on recall or answers. Three runs understate the spread: five further runs of the same Pensine code on this seed, on 16 November, answered 0.84 to 0.92 of the questions (mean 0.87), and six runs with the poisoning fix described below 0.81 to 0.87; all stay above the other two systems. On a fresh sealed seed, run alternately, the fix shows no gap. The first three rows are read by a model judge, corrected on 15 November 2026 after its validation found it was not told who wrote each message; with the earlier judge, facts recalled read 0.95, 0.54 and 0.75. Identity, on 11 questions, moves by three between runs of the same code. What this does not show: one synthetic life, written in English by our own generator; Graphiti's
+attribution cannot be compared (its edges link two entities); most of Graphiti's misses are facts
+present in its graph that its search did not return. Two fairness fixes were made before the table
+and are documented ([results](research/benchmarks/sourced/results/README.md)).
+
+| In progress | Status |
+|---|---|
+| Memory poisoning: false claims about the person from sources with no authority (an instruction addressed to the assistant, a friend's mistaken congratulations, a notice repeated three times) | Measured, three claims per set. On a small private set Pensine stored one claim as the person's fact in each run without the fix (Mem0 none, Graphiti none, one run each): an excerpt check cannot stop it, the claim *is* in the deposit. The fix reads who speaks from the deposit's metadata: each memory carries whose word it is, what a third party says of the person is capped and set apart at recall. With it, no claim was stored as a fact in the runs made, but these are cases, not a rate: the fix does not change the wording a memory is written in, and the questions about the claims were already answered right without it. Cost: none measurable on a fresh sealed life run alternately (six runs each: 55.3 and 55.7 questions right of 63); on seed 8 its runs came out lower than the first runs without it and level with later ones, within the spread of one code ([results](research/benchmarks/sourced/results/README.md)) |
+| Validation of the model judge | Run without an annotator, thresholds fixed beforehand. It found a defect: the judge was not told who wrote each message, so it marked down faithful memories drawn from received messages, for every system. Corrected judge: flags 64 of 64 memories edited in code to be false and none of 60 true ones, on development and sealed data; agreement with a second model on a fresh sealed sample is 111 of 120, short of the κ threshold (0.54 for 0.70), the gap being memories the judge accepts and the reader calls partial. The nine seed-8 runs have been rejudged: the order and the gaps between systems hold, fact recall moves down 2 to 4 points for all three (Pensine 0.91, Mem0 0.52, Graphiti 0.72; cause not established yet). The table above shows the corrected judge's figures |
+| Letta on the same bench | Planned |
 
 ## Papers
 
@@ -75,8 +103,9 @@ assistant that supports remote MCP.
 Running cost: **about zero** beyond your server — the AI layer uses access you already have (a
 subscription CLI or an API key, swappable at any time), or runs entirely locally.
 
-A turnkey install kit, paid once, exists for those who would rather not set it up by hand; it supports
-the lab and contains nothing that is not in this repository.
+Would rather not set it up by hand? A turnkey kit, paid once, contains the measured release, a guided
+install and the phone shortcuts; it supports the lab, and nothing in it is missing from this repository.
+
 
 ## What the engine does
 

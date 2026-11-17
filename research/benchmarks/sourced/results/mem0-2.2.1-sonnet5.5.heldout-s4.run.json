@@ -1,0 +1,2668 @@
+{
+ "system": {
+  "name": "mem0",
+  "mem0ai": "2.2.1",
+  "llm": "claude-cli:claude-sonnet-5-5",
+  "embedder": "nomic-ai/nomic-embed-text-v1.5",
+  "store": "qdrant local",
+  "top_k": 10,
+  "failed_adds": 0
+ },
+ "track": "T",
+ "data": "sample-test-s4",
+ "seconds": 554.9,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "05864276-9848-4ec4-8404-6955355da4e8",
+     "content": "Alba Fischer ran the Spring 10K on February 8, 2025 with a finishing time of 52:18, in rain on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "06a69c95-2d04-4b47-be63-67a0feb38d7b",
+     "content": "Alba Fischer noted on February 7, 2025 that the plants on their balcony were watered at last",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "06bbfb72-03ed-4d66-ae55-4d31e9e8704c",
+     "content": "Alba Fischer has lived at 68 Beacon Hill Road, Montreal since March 2023, as stated on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0f717ce7-260c-4f43-b140-9072345f6a45",
+     "content": "Alba Fischer is the tenant in a tenancy agreement with Rowan Property Lettings for the property at 48 Juniper Avenue, Montreal. The tenancy begins on February 8, 2025, with rent of 1020 EUR payable monthly.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12f4285b-000b-45e1-951d-427310e073ea",
+     "content": "Alba Fischer folded and put away the laundry on February 6, 2025 and considered it a small victory",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "170a0da0-51cc-4f91-95ab-0d84e594e274",
+     "content": "Alba Fischer noted on February 9, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "196a53ee-e26b-456b-a957-fb07cedcec21",
+     "content": "Alba Fischer captured a photo on February 6, 2025 at 13:59 with GPS coordinates 45.50652, -73.57790",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1b739b78-68a3-4ae4-a96a-5117074d86a1",
+     "content": "Alba Fischer ordered a telescope that had still not arrived as of February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1c171b06-7028-4395-91ae-24a69efd24c3",
+     "content": "Alba Fischer's sister Quinn came over for dinner on February 6, 2025 and stayed until midnight",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1ce1570d-3df7-4147-8b6d-6ad2c0d1f8c9",
+     "content": "Alba Fischer would like to learn to sail if the summer is kind, as stated on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "222c683f-af7c-4f57-abea-80707ccd6fb6",
+     "content": "Alba Fischer's sister Quinn is still waiting on an espresso machine that had not arrived as of February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33c0ffb2-7f21-4c5e-aba3-408d5c45641f",
+     "content": "As of February 6, 2025, Alba Fischer heard a rumour that their brother Dev's company could be closing down",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34bedb88-4fb6-4c86-90d5-7dde622a27f9",
+     "content": "Alba Fischer had coffee at the hilltop viewpoint with their sister Quinn on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "38cc7409-159c-4169-897f-067e74d5ac13",
+     "content": "Alba Fischer finally watered the plants on their balcony on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39764868-8861-42fa-8369-26ba5af9e002",
+     "content": "Alba Fischer noted on February 7, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3b11b5f9-5187-4c47-a8d4-a13c7672ae4e",
+     "content": "Alba Fischer has signed the contract for the project manager role at Kestrel Logistics and starts on February 12, 2025, as stated on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3e3b823a-ac72-4794-9575-77d027393c83",
+     "content": "Dev Duarte's birthday falls on 27 February, and Dev told Alba Fischer on February 4, 2025 that they must organise something and asked Alba to ring them when free",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "468ed007-9d2d-411b-a24f-ef7fe845910c",
+     "content": "Zoe has a flat in Edinburgh, as noted by Alba Fischer on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "484f97e7-1f19-4153-8f56-cb4133619e56",
+     "content": "Alba Fischer noted on February 6, 2025 that home for Theo is Bristol",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55ad0fc6-f5f6-4003-866f-92094bcc0b65",
+     "content": "Alba Fischer turned odds and ends from the fridge into a soup on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55dc975c-fb54-489d-bf28-695439681d16",
+     "content": "Alba Fischer's godfather now lives in Edinburgh, as noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5672e3fa-d5bd-421f-90c9-c29a9538e960",
+     "content": "Alba Fischer's flatmate now lives in Lyon, as noted on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6030f376-ba34-40be-b7b3-3ef1af596a28",
+     "content": "Alba Fischer was again hearing music through the wall from next door on February 6, 2025, a recurring annoyance",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "60bace21-c12d-4526-abe9-11c7416f39fc",
+     "content": "Quinn, Alba Fischer's sister, works as a data analyst for a living, as noted on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6a0e3d96-5957-467d-9a4b-303e4cc04d68",
+     "content": "Alba Fischer captured a photo on February 3, 2025 at 12:36 with GPS coordinates 45.51325, -73.57289",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7b8396e9-c691-45c9-a5bf-c35e8cce38f7",
+     "content": "Alba Fischer is considering adopting a cat as of February 6, 2025, but nothing is decided",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "899ce8ed-78ef-4936-a45f-a512414a2a82",
+     "content": "Alba Fischer has been an operations manager at Harbor & Pine Studio since May 2023, as stated on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "93a987dc-886d-45ae-8e52-6dff93509919",
+     "content": "Alba Fischer folded and put away the laundry on February 8, 2025 and considered it a small victory",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9dfd053f-5f33-4dfb-a179-842b2637341f",
+     "content": "Alba Fischer received a letter from the People team at Kestrel Logistics, dated around February 8, 2025, offering them a job as project manager following their interviews. The first working day is February 12, 2025, and the letter asks Alba to countersign it and send it back.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9ffef849-b5a0-4b89-84aa-20089f958093",
+     "content": "The sky was grey from dawn to dusk on February 5, 2025, where Alba Fischer was",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a1d362d8-d63f-424a-9296-4c644309cabb",
+     "content": "Alba Fischer finally got their kitchen spotless, every shelf of it, as of February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a30e03d5-1586-445f-8416-bfa12e7a79f8",
+     "content": "Alba Fischer's ordered telescope has arrived and is in use as of February 8, 2025, after it had still not arrived on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a8be227d-10c4-4f9f-a48c-4f3b8608229f",
+     "content": "Alba Fischer took a long stroll around the hilltop viewpoint on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a982a6de-d571-46cc-bacd-8d43184b9364",
+     "content": "Under the tenancy agreement with Rowan Property Lettings for 48 Juniper Avenue, Montreal, Alba Fischer as tenant shall keep the property clean and in good repair. Both parties sign the agreement.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b0a08a1c-4ae1-4f66-a250-0eae95b2c0c7",
+     "content": "Alba Fischer is allergic to kiwi, so a dessert was sent back to the kitchen on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b10ee04a-df74-4b25-9725-0b45d6afd46d",
+     "content": "Alba Fischer grew up in Valencia and some days really misses it, as noted on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b925832f-1381-4daa-8d84-c6802f3db36a",
+     "content": "Alba Fischer's godfather is employed by Halyard Sailmakers, as stated on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ba32f5c0-75be-44e4-a01d-2fb67a6b6ce4",
+     "content": "Alba Fischer captured a photo on February 5, 2025 at 17:12 with GPS coordinates 57.71610, 11.95771",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bf19be85-79e9-439e-8af4-26e550e36578",
+     "content": "Kenji's home is Lyon, as noted by Alba Fischer on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c2742aad-b296-4492-9999-ac7898d9b7ce",
+     "content": "Alba Fischer transferred rent of 1040 EUR on rent day, February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cfb8a6c8-a9db-46ef-8062-f1cc64509f48",
+     "content": "Alba Fischer met up with their brother Dev at the hilltop viewpoint on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d4723d39-b57d-45d5-b9f2-22290f358991",
+     "content": "Alba Fischer had coffee at the riverside park with their brother Dev on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d63bc30a-7b13-498d-8ec5-5f1b74feff5f",
+     "content": "Marco has a flat in Bordeaux, as noted by Alba Fischer on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d6ec574d-b3ee-4642-ba53-c3a6788fe7c2",
+     "content": "Alba Fischer captured a photo on February 6, 2025 at 19:10 with GPS coordinates 45.48644, -73.58491",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d9e14897-4455-4c5e-b1d9-4f01eba1ed86",
+     "content": "Alba Fischer's landlady now lives in Bordeaux, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "db88882d-49c0-4579-9962-52465dac1794",
+     "content": "Alba Fischer's new address as of February 8, 2025 is 48 Juniper Avenue, Montreal, stated in a note on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dc2d7778-3e41-4717-8c14-84c653d1823f",
+     "content": "Alba Fischer's goal for the week of February 3, 2025 is to have lights out by eleven o'clock at night",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dd7b746b-99e5-4bc3-944b-d56a9ef47446",
+     "content": "Quinn Duarte has a dog named Nori, who wanted breakfast on the morning of February 5, 2025, when Quinn sent Alba Fischer a voice message and said they would speak later",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f3f0b99b-ffa9-4fde-a5f8-5c0d804d11f0",
+     "content": "Alba Fischer is two chapters into a new novel as of February 3, 2025 and finds it slow going",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f5ea6466-309f-4aea-9928-fc20ecd2ddb5",
+     "content": "Alba Fischer's sister Quinn passed a driving test on February 7, 2025, which Alba described as lovely news",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f891c2d5-2eac-4a88-b545-7de79800f451",
+     "content": "Alba Fischer listened to a German podcast on the way home on February 9, 2025, to keep practising German",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fbc7d9a7-ecc3-4acf-8821-2576e1e0ae5d",
+     "content": "Alba Fischer's aunt now lives in Bristol, as noted on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "05864276-9848-4ec4-8404-6955355da4e8",
+     "content": "Alba Fischer ran the Spring 10K on February 8, 2025 with a finishing time of 52:18, in rain on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "06a69c95-2d04-4b47-be63-67a0feb38d7b",
+     "content": "Alba Fischer noted on February 7, 2025 that the plants on their balcony were watered at last",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "06bbfb72-03ed-4d66-ae55-4d31e9e8704c",
+     "content": "Alba Fischer has lived at 68 Beacon Hill Road, Montreal since March 2023, as stated on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0ba1dfc0-a7e8-4475-b712-d53f5e466a85",
+     "content": "Alba Fischer told Dev Duarte in a message on February 12, 2025 that the espresso machine finally made it to Quinn, who is thrilled with it, after it had not yet arrived as of February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0e940585-6f01-47b6-b5dc-c2cd8b526500",
+     "content": "Alba Fischer took a long stroll around the botanical garden on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0ea763a0-d156-4f73-8278-c10f63ab4e23",
+     "content": "Dev told Alba Fischer, as noted on February 16, 2025, that their bike got stolen outside the station",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0f717ce7-260c-4f43-b140-9072345f6a45",
+     "content": "Alba Fischer is the tenant in a tenancy agreement with Rowan Property Lettings for the property at 48 Juniper Avenue, Montreal. The tenancy begins on February 8, 2025, with rent of 1020 EUR payable monthly.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "128ffd0e-bd08-4473-8ead-0a321e6158e4",
+     "content": "The sky was grey from dawn to dusk on February 10, 2025, where Alba Fischer was",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12f4285b-000b-45e1-951d-427310e073ea",
+     "content": "Alba Fischer folded and put away the laundry on February 6, 2025 and considered it a small victory",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "170a0da0-51cc-4f91-95ab-0d84e594e274",
+     "content": "Alba Fischer noted on February 9, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "196a53ee-e26b-456b-a957-fb07cedcec21",
+     "content": "Alba Fischer captured a photo on February 6, 2025 at 13:59 with GPS coordinates 45.50652, -73.57790",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1b739b78-68a3-4ae4-a96a-5117074d86a1",
+     "content": "Alba Fischer ordered a telescope that had still not arrived as of February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1c171b06-7028-4395-91ae-24a69efd24c3",
+     "content": "Alba Fischer's sister Quinn came over for dinner on February 6, 2025 and stayed until midnight",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1ce1570d-3df7-4147-8b6d-6ad2c0d1f8c9",
+     "content": "Alba Fischer would like to learn to sail if the summer is kind, as stated on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1defb372-1bbb-476a-bd00-4b2f318bf73f",
+     "content": "Alba Fischer was seen at Parkview Medical Practice on February 12, 2025 and diagnosed with a sprained left ankle",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "222c683f-af7c-4f57-abea-80707ccd6fb6",
+     "content": "Alba Fischer's sister Quinn is still waiting on an espresso machine that had not arrived as of February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "253d1b5c-6a4b-4e32-8ef2-d6bbd661849d",
+     "content": "Alba Fischer's flatmate is employed by Gullwing Ferries, as stated in a note on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27cde116-6481-4aeb-ac9a-3f741c2f6338",
+     "content": "Alba Fischer noted on February 13, 2025 that Marco works at Mistral Joinery these days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2b84273f-3a77-493d-8334-f0b06ffeb1fc",
+     "content": "Alba Fischer bumped into Zoe on February 12, 2025, and noted that Zoe works at Halyard Sailmakers",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33c0ffb2-7f21-4c5e-aba3-408d5c45641f",
+     "content": "As of February 6, 2025, Alba Fischer heard a rumour that their brother Dev's company could be closing down",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34bedb88-4fb6-4c86-90d5-7dde622a27f9",
+     "content": "Alba Fischer had coffee at the hilltop viewpoint with their sister Quinn on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "38cc7409-159c-4169-897f-067e74d5ac13",
+     "content": "Alba Fischer finally watered the plants on their balcony on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39764868-8861-42fa-8369-26ba5af9e002",
+     "content": "Alba Fischer noted on February 7, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3b11b5f9-5187-4c47-a8d4-a13c7672ae4e",
+     "content": "Alba Fischer has signed the contract for the project manager role at Kestrel Logistics and starts on February 12, 2025, as stated on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3e3b823a-ac72-4794-9575-77d027393c83",
+     "content": "Dev Duarte's birthday falls on 27 February, and Dev told Alba Fischer on February 4, 2025 that they must organise something and asked Alba to ring them when free",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3fdd36c8-bcfa-4d50-b533-5a9edd5942e0",
+     "content": "Alba Fischer was out of coffee filters again as of February 12, 2025, and noted to add them to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "468ed007-9d2d-411b-a24f-ef7fe845910c",
+     "content": "Zoe has a flat in Edinburgh, as noted by Alba Fischer on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "484f97e7-1f19-4153-8f56-cb4133619e56",
+     "content": "Alba Fischer noted on February 6, 2025 that home for Theo is Bristol",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55ad0fc6-f5f6-4003-866f-92094bcc0b65",
+     "content": "Alba Fischer turned odds and ends from the fridge into a soup on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55dc975c-fb54-489d-bf28-695439681d16",
+     "content": "Alba Fischer's godfather now lives in Edinburgh, as noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5672e3fa-d5bd-421f-90c9-c29a9538e960",
+     "content": "Alba Fischer's flatmate now lives in Lyon, as noted on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "56b0ae2d-0c1d-413a-a650-1b372843023c",
+     "content": "Alba Fischer finally got their kitchen spotless, every shelf of it, as noted on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5b490cb9-0f7c-4d31-b4b1-9b3ed13d3192",
+     "content": "Quinn Duarte's birthday is on 14 February, and Quinn left a note to self in a voice message to Alba Fischer on February 11, 2025 to plan something for it, ending with 'Speak later?'",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6030f376-ba34-40be-b7b3-3ef1af596a28",
+     "content": "Alba Fischer was again hearing music through the wall from next door on February 6, 2025, a recurring annoyance",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "60bace21-c12d-4526-abe9-11c7416f39fc",
+     "content": "Quinn, Alba Fischer's sister, works as a data analyst for a living, as noted on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6a0e3d96-5957-467d-9a4b-303e4cc04d68",
+     "content": "Alba Fischer captured a photo on February 3, 2025 at 12:36 with GPS coordinates 45.51325, -73.57289",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7a940614-8840-4f8a-ab96-098fc7faf9b5",
+     "content": "Dev Duarte sent Alba Fischer a voice message on February 16, 2025, greeting them with 'Morning!', saying all is good in Ghent, and asking to speak later",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7b8396e9-c691-45c9-a5bf-c35e8cce38f7",
+     "content": "Alba Fischer is considering adopting a cat as of February 6, 2025, but nothing is decided",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7e8e72d6-c069-480c-8933-960f7994aa1c",
+     "content": "Alba Fischer's birthday is on May 19, and Alba left a note to self on February 10, 2025 to plan something for it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8021fbc4-5517-4479-a7cb-278362c1f707",
+     "content": "Alba Fischer's aunt mostly works from home, as noted on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "899ce8ed-78ef-4936-a45f-a512414a2a82",
+     "content": "Alba Fischer has been an operations manager at Harbor & Pine Studio since May 2023, as stated on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "91f56353-ccb2-44a1-8df2-4035c1ac419b",
+     "content": "Alba Fischer had lunch on February 13, 2025 with Zoe and Alba's godfather, who both came",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "93a987dc-886d-45ae-8e52-6dff93509919",
+     "content": "Alba Fischer folded and put away the laundry on February 8, 2025 and considered it a small victory",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "981a4af2-0d1a-4b4b-8549-58319bccfe09",
+     "content": "Alba Fischer noted on February 11, 2025 that Theo mostly works from home",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9cf0e72c-8362-4192-bafb-a6510e4fc2e8",
+     "content": "Alba Fischer's sister still works at Brackenridge Seeds, as confirmed by Alba on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9dfd053f-5f33-4dfb-a179-842b2637341f",
+     "content": "Alba Fischer received a letter from the People team at Kestrel Logistics, dated around February 8, 2025, offering them a job as project manager following their interviews. The first working day is February 12, 2025, and the letter asks Alba to countersign it and send it back.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9ffef849-b5a0-4b89-84aa-20089f958093",
+     "content": "The sky was grey from dawn to dusk on February 5, 2025, where Alba Fischer was",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a1d362d8-d63f-424a-9296-4c644309cabb",
+     "content": "Alba Fischer finally got their kitchen spotless, every shelf of it, as of February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a30e03d5-1586-445f-8416-bfa12e7a79f8",
+     "content": "Alba Fischer's ordered telescope has arrived and is in use as of February 8, 2025, after it had still not arrived on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a75fc18a-596e-4d68-b8fe-38d3a12cf7ac",
+     "content": "Alba Fischer met up with their sister Quinn at the old market hall on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a8be227d-10c4-4f9f-a48c-4f3b8608229f",
+     "content": "Alba Fischer took a long stroll around the hilltop viewpoint on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a913bb76-b835-4331-81a8-cc700de0cc21",
+     "content": "Alba Fischer said on February 10, 2025 that moving to Valencia would be a dream, if an offer ever turns into something real",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a982a6de-d571-46cc-bacd-8d43184b9364",
+     "content": "Under the tenancy agreement with Rowan Property Lettings for 48 Juniper Avenue, Montreal, Alba Fischer as tenant shall keep the property clean and in good repair. Both parties sign the agreement.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "abe0f7db-150f-471e-aa72-575ccabcdafb",
+     "content": "Alba Fischer is still two chapters into the new novel and finds it slow going, as stated in a voice note on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b0a08a1c-4ae1-4f66-a250-0eae95b2c0c7",
+     "content": "Alba Fischer is allergic to kiwi, so a dessert was sent back to the kitchen on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b10ee04a-df74-4b25-9725-0b45d6afd46d",
+     "content": "Alba Fischer grew up in Valencia and some days really misses it, as noted on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b2fcc772-038c-4942-91a8-9a414e596566",
+     "content": "Alba Fischer's landlady is employed by Pellucid Labs, as noted on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b436e383-d5ca-4961-a665-192e4d820df0",
+     "content": "Alba Fischer noted on February 16, 2025 that the sprained left ankle diagnosed on February 12, 2025 is now behind them, meaning it has recovered",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b7ac0f05-d119-423d-8b0d-36e8a6276079",
+     "content": "Alba Fischer ran out of coffee filters again as of February 10, 2025, and noted to add them to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b925832f-1381-4daa-8d84-c6802f3db36a",
+     "content": "Alba Fischer's godfather is employed by Halyard Sailmakers, as stated on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ba01381b-0d6b-47dc-9062-ee122cb3e079",
+     "content": "Dev Duarte sent Alba Fischer a voice message on February 12, 2025, saying all is good in Ghent, that it was another full day because an operations manager's work is never done, and asking to speak later",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ba32f5c0-75be-44e4-a01d-2fb67a6b6ce4",
+     "content": "Alba Fischer captured a photo on February 5, 2025 at 17:12 with GPS coordinates 57.71610, 11.95771",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bc5ae597-d841-47c6-9fc1-5e6a54358926",
+     "content": "Alba Fischer's morning train arrived late, crawling in, on February 14, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bcf9a136-a37a-42b9-a13d-492ddd3aa1a4",
+     "content": "Alba Fischer's treatment for the sprained left ankle diagnosed on February 12, 2025 at Parkview Medical Practice is physiotherapy twice a week, with instructions to return if there is no improvement",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bf19be85-79e9-439e-8af4-26e550e36578",
+     "content": "Kenji's home is Lyon, as noted by Alba Fischer on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c2742aad-b296-4492-9999-ac7898d9b7ce",
+     "content": "Alba Fischer transferred rent of 1040 EUR on rent day, February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ccf431d3-6f80-43c8-9182-d5e1a541d4fa",
+     "content": "Alba Fischer decided not to run a marathon in 2025 and did not sign up for one in the end, as stated on February 13, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cf5bb653-655b-45b1-bb73-b0f377d98f5a",
+     "content": "Alba Fischer's sister Quinn lives in Porto these days, as stated by Alba in a voice note on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cfb8a6c8-a9db-46ef-8062-f1cc64509f48",
+     "content": "Alba Fischer met up with their brother Dev at the hilltop viewpoint on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d19fb9f9-9b3d-4c09-94bc-f59c8b8156e0",
+     "content": "Quinn became a new member of the Kiln Lane Chamber Choir on the morning of February 12, 2025, as noted by Alba Fischer",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d4723d39-b57d-45d5-b9f2-22290f358991",
+     "content": "Alba Fischer had coffee at the riverside park with their brother Dev on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d63bc30a-7b13-498d-8ec5-5f1b74feff5f",
+     "content": "Marco has a flat in Bordeaux, as noted by Alba Fischer on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d6ec574d-b3ee-4642-ba53-c3a6788fe7c2",
+     "content": "Alba Fischer captured a photo on February 6, 2025 at 19:10 with GPS coordinates 45.48644, -73.58491",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d7d043d6-9b89-4727-a461-36511c5e3efc",
+     "content": "Alba Fischer noted on February 11, 2025 that the goal for the week of February 10, 2025 is to have lights out by eleven o'clock at night",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d9e14897-4455-4c5e-b1d9-4f01eba1ed86",
+     "content": "Alba Fischer's landlady now lives in Bordeaux, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "db0b0fff-61e2-4b66-8b48-67e35e614770",
+     "content": "Alba Fischer captured a photo on February 11, 2025 at 11:15 with GPS coordinates 45.50796, -73.57939",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "db88882d-49c0-4579-9962-52465dac1794",
+     "content": "Alba Fischer's new address as of February 8, 2025 is 48 Juniper Avenue, Montreal, stated in a note on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dbc98b8c-b3aa-4c56-ada4-b4cf452cf3cc",
+     "content": "Dev Duarte left Alba Fischer a voice message on February 11, 2025, saying it was another full day and that an operations manager's work is never done, signing off with 'Love, as ever'",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dc2d7778-3e41-4717-8c14-84c653d1823f",
+     "content": "Alba Fischer's goal for the week of February 3, 2025 is to have lights out by eleven o'clock at night",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dd7b746b-99e5-4bc3-944b-d56a9ef47446",
+     "content": "Quinn Duarte has a dog named Nori, who wanted breakfast on the morning of February 5, 2025, when Quinn sent Alba Fischer a voice message and said they would speak later",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e7a3b0f6-68d6-48d0-acc3-0cd23f9a5c3e",
+     "content": "Alba Fischer turned odds and ends from the fridge into a soup, as noted on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f3f0b99b-ffa9-4fde-a5f8-5c0d804d11f0",
+     "content": "Alba Fischer is two chapters into a new novel as of February 3, 2025 and finds it slow going",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f495a263-147b-4238-91a8-2616855bc456",
+     "content": "Alba Fischer officially began as project manager at Kestrel Logistics on February 12, 2025, their first working day, as stated in a voice note that morning",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f5ea6466-309f-4aea-9928-fc20ecd2ddb5",
+     "content": "Alba Fischer's sister Quinn passed a driving test on February 7, 2025, which Alba described as lovely news",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f86300c2-b80d-4329-bd95-bfcc3cf39f5e",
+     "content": "Alba Fischer had coffee with their brother Dev on February 10, 2025, and Dev asked whether Alba's sister was still at Brackenridge Seeds",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f891c2d5-2eac-4a88-b545-7de79800f451",
+     "content": "Alba Fischer listened to a German podcast on the way home on February 9, 2025, to keep practising German",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "faeb1b1e-5643-4f01-8139-2a91bea30560",
+     "content": "Alba Fischer bumped into Kenji on February 12, 2025, and noted that Kenji works at Gullwing Ferries",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fbc7d9a7-ecc3-4acf-8821-2576e1e0ae5d",
+     "content": "Alba Fischer's aunt now lives in Bristol, as noted on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fd95d745-d52e-4439-99e1-b710107c85e1",
+     "content": "Alba Fischer captured a photo on February 10, 2025 at 12:47 with GPS coordinates 45.50979, -73.55156",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1020 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Kiwi",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "Operations manager",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "Data analyst",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Nori",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "19 May 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "27 February",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "14 February",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Kestrel Logistics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "German",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "1040 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "8 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "12 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "12 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "4 days",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "4 days (8 February 2025 to 12 February 2025)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "Gothenburg",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "52:18",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "Hilltop viewpoint",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "Riverside park",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "The old market hall",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "The hilltop viewpoint",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "Quinn",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "Kiln Lane Chamber Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "Kestrel Logistics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "8 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "12 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

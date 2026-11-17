@@ -28,9 +28,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pensine import (affect, config, db, embeddings, evidence, gist,  # noqa: E402
-                     graph, injection, integrity, intentions, language, links, llm,
-                     percepteurs, places, relations)
+from pensine import (affect, atoms, config, dating, db, embeddings, evidence, gist,  # noqa: E402
+                     graph, identity, injection, integrity, intentions, language, links, llm,
+                     percepteurs, places, relations, voice)
 from pensine.governor import Governor  # noqa: E402
 
 import media_pipeline  # noqa: E402
@@ -41,7 +41,14 @@ MEMORY_TYPES = {"episodic", "semantic", "procedural", "reflection"}
 
 # The keys a night's answer may carry, and those that must be lists.
 NIGHT_LISTS = ("memories", "revolues", "intentions", "intentions_closes",
-               "intentions_evoquees", "entities", "relations", "relation_states")
+               "intentions_evoquees", "entities", "relations", "relation_states",
+               "aliases", "identity_hypotheses")
+
+# Longest subject kept as written ("my colleague from the book group"):
+# anything longer is a sentence, not a designation.
+MAX_SUBJECT = 80
+# How a memory may name its owner as its subject.
+OWNER_WORDS = {"i", "me", "myself", "je", "moi", "owner", "user", "the owner", "the user"}
 
 # Appended to the prompt when the previous answer could not be used. French,
 # like the prompt it follows.
@@ -158,7 +165,8 @@ def validate_night(value) -> tuple[dict | None, str | None]:
     out["memories"] = mems
     out["relations"] = [{**r, "valid_from": _iso(r.get("valid_from"))}
                         for r in out["relations"] if isinstance(r, dict)]
-    for k in ("revolues", "intentions", "intentions_closes", "entities", "relation_states"):
+    for k in ("revolues", "intentions", "intentions_closes", "entities", "relation_states",
+              "aliases", "identity_hypotheses"):
         out[k] = [x for x in out[k] if isinstance(x, dict)]
     for r in out["revolues"]:
         r["valid_to"] = _iso(r.get("valid_to"))
@@ -217,6 +225,25 @@ def _clean_memory(m: dict) -> dict:
     for key, fix in fixes.items():
         if key in m:  # absent stays absent: the defaults downstream apply
             m[key] = fix(m[key])
+    # whom the memory is about, as written: a name or a role, never a sentence
+    subject = m.pop("sujet", None) if "subject" not in m else m.get("subject")
+    if isinstance(subject, str) and 0 < len(subject.strip()) <= MAX_SUBJECT:
+        m["subject"] = subject.strip()
+    else:
+        m.pop("subject", None)
+    # when the fact happened, as bounds the code will check (pensine/dating.py)
+    key = m.get("event_key")
+    if isinstance(key, str) and key.strip():
+        m["event_key"] = key.strip()[:200]
+    else:
+        m.pop("event_key", None)
+    bounds = m.pop("bornes", None) if "event_bounds" not in m else m.get("event_bounds")
+    if isinstance(bounds, dict):
+        bounds = [bounds]
+    if isinstance(bounds, list) and any(isinstance(b, dict) for b in bounds):
+        m["event_bounds"] = [b for b in bounds if isinstance(b, dict)]
+    else:
+        m.pop("event_bounds", None)
     return m
 
 
@@ -366,6 +393,44 @@ def language_check(memories: list[dict], langs: dict[int, str | None]) -> dict:
     return {"language_checked": checked, "language_mismatched": mismatched}
 
 
+def known_people(conn, entities: list, aliases: list) -> set[str]:
+    """The people the code can recognise at the start of a sentence: those
+    already known, and those tonight's answer names (lowercase, full and
+    first names)."""
+    names = [r["name"] for r in conn.execute(
+        "SELECT name FROM entities WHERE kind = 'person'").fetchall()] if conn is not None else []
+    names += [e.get("name") for e in entities
+              if isinstance(e, dict) and e.get("kind", "person") == "person"]
+    names += [a.get("name") for a in aliases if isinstance(a, dict)]
+    out = set()
+    for n in names:
+        if isinstance(n, str) and n.strip():
+            out.add(n.strip().lower())
+            out.add(n.strip().split()[0].lower())
+    return out
+
+
+received = voice.received  # who made the deposit (pensine/voice.py)
+
+
+def split_facts(conn, memories: list[dict], events: list[dict], entities: list,
+                aliases: list) -> list[dict]:
+    """Each candidate → one memory per fact, with the subject its sentence
+    gives (pensine/atoms.py). Runs before the evidence cascade, so each part
+    is proven on its own."""
+    by_id = {e["id"]: e for e in events if "id" in e}
+    names = known_people(conn, entities, aliases)
+    out = []
+    for m in memories:
+        if not isinstance(m, dict):
+            continue
+        own = [by_id[i] for i in (m.get("source_event_ids") or []) if i in by_id]
+        texts = [evidence.source_text(e) for e in own]
+        out.extend(atoms.atomize(m, texts, names, config.OWNER_NAME,
+                                 incoming=bool(own) and all(map(received, own))))
+    return out
+
+
 def consolidate_batch(conn, governor: Governor, events) -> dict:
     places_by_event = {e["id"]: p for e in events if (p := event_place(dict(e)))}
     langs = event_languages([dict(e) for e in events])
@@ -399,29 +464,57 @@ def consolidate_batch(conn, governor: Governor, events) -> dict:
     out, stats = ask_night(prompt, accept_truncated=len(events) == 1)
     event_ids = [e["id"] for e in events]
     allowed = {k["id"] for k in knowledge}
+    # one fact per memory, its subject read in code (pensine/atoms.py)
+    candidates = split_facts(conn, out.get("memories") or [], slimmed,
+                             out.get("entities") or [], out.get("aliases") or [])
     # cited proof: what cannot be verified in the deposits does not get in
     trace: list[str] = []
     checked, proof = evidence.verify(
-        out.get("memories") or [], slimmed, owner=config.OWNER_NAME,
+        candidates, slimmed, owner=config.OWNER_NAME,
         ask=(lambda p: llm.complete(p, json_mode=True)) if config.VERIFY == "modele" else None,
         extract_json=llm.extract_json, severity=config.EVIDENCE_SEVERITY, trace=trace)
     db.audit(conn, "consolidation", "evidence", proof)
+    # who says it: the voice of the deposits each memory quotes, read from
+    # their metadata; what only someone else says is labelled and capped
+    checked, voices = voice.stamp(checked, slimmed)
+    if voices:
+        db.audit(conn, "consolidation", "voices", voices)
     # the raw candidates, to replay this night under other severities
-    integrity.record_candidates(conn, out.get("memories") or [], trace,
+    integrity.record_candidates(conn, candidates, trace,
                                 [{"id": e["id"], "scope": e.get("scope")} for e in events])
-    written = write_memories(conn, checked, allowed, places_by_event)
+    # identity claims ("my sister Priya") first: admitted only on a verified
+    # excerpt (pensine/identity.py), they must be in place before tonight's
+    # edges and memory subjects are resolved through them
+    g = graph.ingest(conn, out.get("entities") or [], out.get("relations") or [],
+                     event_ids, aliases=out.get("aliases") or [],
+                     events=[dict(e) for e in events])
+    # identity hypotheses: checked in code, kept apart, never used to attach
+    # anything (pensine/identity.py, inferred tier); tonight's deposits may
+    # promote or refute the open ones
+    if out.get("identity_hypotheses"):
+        g.update(identity.ingest_hypotheses(conn, out["identity_hypotheses"]))
+    g.update(identity.check_deposits(conn, [dict(e) for e in events]))
+    written = write_memories(conn, checked, allowed, places_by_event,
+                             events={e["id"]: dict(e) for e in events})
     revised = sum(len(w.get("replaced", [])) for w in written)
     revised += close_ended(conn, out.get("revolues") or [], allowed)
     posed = link_episodes(conn, written)
-    g = graph.ingest(conn, out.get("entities") or [], out.get("relations") or [],
-                     event_ids)
     states = relations.ingest(conn, out.get("relation_states") or [],
                               g.pop("entity_ids", {}), event_ids)
     steps = apply_intentions(conn, out, {s["id"] for s in open_steps},
                              {e["id"]: e["occurred_at"] for e in events})
     db.mark_examined(conn, event_ids, {m["id"] for m in written})
+    bounds_refused: dict[str, int] = {}
+    for w in written:
+        for why, n in (w.get("bounds_refused") or {}).items():
+            bounds_refused[why] = bounds_refused.get(why, 0) + n
+    if bounds_refused:  # reasons as codes: the audit never copies content
+        db.audit(conn, "consolidation", "time_bounds_refused", bounds_refused)
     return {"memories_written": len(written), "memories_revised": revised, **steps,
+            "time_bounds_admitted": sum(w.get("bounds_admitted", 0) for w in written),
+            "time_bounds_refused": sum(bounds_refused.values()),
             "memories_rejected": proof["rejetees"], "memories_corrected": proof["corrigees"],
+            "memories_other_voice": sum(voices.values()),
             "links_posed": posed, "relation_states": states,
             "llm_calls": stats["calls"], "answers_repaired": stats["repaired"],
             "answers_truncated": stats["truncated"],
@@ -488,7 +581,8 @@ def close_ended(conn, items: list[dict], allowed: set[int]) -> int:
 
 
 def write_memories(conn, items: list[dict], allowed: set[int] | frozenset = frozenset(),
-                   places_by_event: dict | None = None) -> list[dict]:
+                   places_by_event: dict | None = None,
+                   events: dict[int, dict] | None = None) -> list[dict]:
     """Write the memories and return their id + source events.
 
     A memory that `remplace`s others closes them at its own start date:
@@ -496,8 +590,13 @@ def write_memories(conn, items: list[dict], allowed: set[int] | frozenset = froz
 
     The ids are used to lay the links of the same episode: two memories born
     from the same event will recall each other (see pensine/links.py).
+
+    `events` (the batch's deposits by id) lets the proposed event-time
+    bounds be checked against their deposit (pensine/dating.py); without
+    it, no bound is written.
     """
     written: list[dict] = []
+    subjects: dict[str, tuple[int, int | None] | None] = {}
     for m in items:
         if m.get("type") not in MEMORY_TYPES or not m.get("content"):
             continue  # invalid LLM output: discard, the raw stays in events
@@ -524,6 +623,34 @@ def write_memories(conn, items: list[dict], allowed: set[int] | frozenset = froz
              where.get("lat"), where.get("lon"), where.get("place"), where.get("source"),
              json.dumps(m["evidence"], ensure_ascii=False) if m.get("evidence") else None),
         ).fetchone()
+        own = [events[i] for i in sources if events and i in events]
+        who = memory_subject(conn, m.get("subject"), subjects,
+                             text=evidence.source_text(own[0]) if len(own) == 1 else None,
+                             content=m["content"])
+        if who:
+            conn.execute("UPDATE memories SET subject_entity_id = %s, subject_alias_id = %s "
+                         "WHERE id = %s", (who[0], who[1], row["id"]))
+        timed = {"admitted": 0, "refused": {}}
+        # the model's bounds, or else those the code reads in the excerpts
+        proposed = m.get("event_bounds") or dating.propose(
+            (m.get("evidence") or {}).get("citations") or [])
+        if proposed and events:
+            timed = dating.store(conn, row["id"], proposed, sources, events)
+        # the code's key when it found the thing ("kayak"): the same on
+        # every night, unlike the model's wording
+        key = (dating.object_key(m["content"]) if timed["admitted"] else None) or \
+            dating.event_key(m.get("event_key")) or (
+            dating.event_key(m["content"]) if timed["admitted"] else None)
+        if not timed["admitted"] and events:
+            # no cue of its own: the end of an earlier "not yet" on the same thing
+            thing = dating.object_key(m["content"])
+            affirmed = dating.affirm(conn, row["id"], who[0] if who else None, thing,
+                                     (m.get("evidence") or {}).get("citations") or [],
+                                     sources, events)
+            if affirmed["admitted"]:
+                timed, key = affirmed, thing
+        if key:
+            conn.execute("UPDATE memories SET event_key = %s WHERE id = %s", (key, row["id"]))
         replaced = _ids(m.get("remplace"), allowed)
         for old in replaced:
             db.close_memory(conn, old,
@@ -531,8 +658,47 @@ def write_memories(conn, items: list[dict], allowed: set[int] | frozenset = froz
                             reason=m.get("raison") or "remplacée (consolidation)",
                             successor_id=row["id"])
         written.append({"id": row["id"], "source_event_ids": sources,
-                        "replaced": replaced})
+                        "replaced": replaced, "bounds_admitted": timed["admitted"],
+                        "bounds_refused": timed["refused"]})
     return written
+
+
+def memory_subject(conn, subject: str | None, cache: dict | None = None,
+                   text: str | None = None,
+                   content: str | None = None) -> tuple[int, int | None] | None:
+    """The entity a memory is about (and the identity claim used), from the
+    subject consolidation wrote. "I", "me" and the like are the owner. An
+    ambiguous role resolves to nothing (graph.resolve_subject). A pronoun
+    ("she") resolves only within the memory's single deposit (`text`), to
+    the one known person named before it; otherwise to nobody. A role is
+    read as the memory's `content` writes it (identity.designation): "my
+    sister" in "my sister from the old flat …" is not the proven "my sister"."""
+    if not subject:
+        return None
+    mention = subject.strip()
+    if mention.lower() in OWNER_WORDS and config.OWNER_NAME:
+        mention = config.OWNER_NAME
+    elif content and conn is not None and identity.norm(mention) not in identity.PRONOUNS:
+        mention = identity.designation(conn, mention, content, config.OWNER_NAME)
+        if mention is None:
+            return None  # a qualified role no proven claim covers: no one we know
+    elif identity.norm(mention) in identity.PRONOUNS:
+        if not text:
+            return None
+        names = [r["name"] for r in conn.execute(
+            "SELECT name FROM entities WHERE kind = 'person' AND lower(name) != lower(%s)",
+            (config.OWNER_NAME or "",)).fetchall()]
+        mention = identity.pronoun_referent(mention, text, names)
+        if not mention:
+            return None
+        cache = None  # a pronoun means someone else in the next deposit
+    key = mention.lower()
+    if cache is not None and key in cache:
+        return cache[key]
+    who = graph.resolve_subject(conn, mention)
+    if cache is not None:
+        cache[key] = who
+    return who
 
 
 def link_episodes(conn, written: list[dict]) -> int:

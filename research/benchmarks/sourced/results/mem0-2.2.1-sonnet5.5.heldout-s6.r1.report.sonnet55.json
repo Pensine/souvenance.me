@@ -1,0 +1,3331 @@
+{
+ "system": {
+  "name": "mem0",
+  "mem0ai": "2.2.1",
+  "llm": "claude-cli:claude-sonnet-5-5",
+  "embedder": "nomic-ai/nomic-embed-text-v1.5",
+  "store": "qdrant local",
+  "top_k": 10,
+  "failed_adds": 0
+ },
+ "judge": "model:claude-sonnet-5-5:prompt-7dfb69b6cd34",
+ "headline": {
+  "invention_rate": 0.0,
+  "excerpt_support_rate": 0.0,
+  "fact_recall": 0.4839,
+  "recall_at_inv_1pct": 0.4838709677419355,
+  "attribution_error_rate": null,
+  "alias_recall": null,
+  "alias_precision": null,
+  "qa_accuracy": 0.6441,
+  "invented_answers": 0.0,
+  "invented_precision_rate": 0.6667,
+  "context_hit_rate": null,
+  "write_metrics": "measured"
+ },
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": 79,
+   "invention_rate": 0.0,
+   "partial_rate": 0.1772,
+   "invented": [],
+   "trap_hits": [],
+   "traps_total": 8,
+   "excerpt_support_rate": 0.0,
+   "citing_memories": 79,
+   "fact_recall": 0.4722,
+   "omission_rate": 0.5278,
+   "recall_by_kind": {
+    "change": 0.5,
+    "event": 0.8889,
+    "state": 0.3043
+   },
+   "stale_as_current": null,
+   "stale_reason": "system does not expose currency",
+   "attribution_error_rate": null,
+   "attribution_measurable": 0,
+   "attribution_wrong": [],
+   "attribution_reason": "system does not declare memory subjects",
+   "store_dating": null,
+   "store_invented_precision_rate": null,
+   "store_dating_reason": "system exposes no event bounds",
+   "alias_recall": null,
+   "alias_precision": null,
+   "alias_detail": null,
+   "alias_reason": "system does not expose identity links",
+   "curve": {
+    "points": [
+     {
+      "threshold": null,
+      "kept": 79,
+      "invention": 0.0,
+      "recall": 0.4722222222222222
+     }
+    ],
+    "recall_at_inv_1pct": 0.4722222222222222,
+    "recall_at_inv_5pct": 0.4722222222222222,
+    "has_confidence": false
+   },
+   "labels": [
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F049",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposits show only a message on 9 Feb 2025 saying it rained on and off all afternoon. They do not say the message was sent to Talia Castillo (Talia is only mentioned as owning a piano). The message was repeated later the same day, not on earlier days, so 'repeating a weather note made on earlier days' is not supported.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F051",
+      "F052"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F032",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F032"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F032\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F048"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F007\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F027",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F027"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F027\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F047"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposits never say Ezra is Ivo Okafor's sister. They only say the espresso machine reached Ezra, who is thrilled, and that it was delayed on Feb 4.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposit does not say the message was sent to Talia Castillo; no recipient is named. Only the standing desk order and its non-arrival as of 2025-02-08 are supported.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F050"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F055",
+      "F056"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F024"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F024\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F012"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F049"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F003",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F003"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F003\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F022",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F022\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The message being sent to Talia Castillo. The deposits never name a recipient. The coffee-filter note and its repetition on earlier days (Feb 3, 4, 6) are supported.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F006\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The message being addressed to Talia Castillo. D0032 shows no recipient. The rest is supported: Jonah, the best friend, came for dinner and stayed till midnight, in a message dated 2025-02-06.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F034",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F034"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F034\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"Ezra being Ivo Okafor's sister; no deposit gives that relationship. The note only says no espresso machine for Ezra so far because the delivery is late.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F010"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\": \"supported\", \"citation_supports\": false, \"facts\": [], \"invented_detail\": null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F035"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"Jonah is described as Ivo's best friend. The note only says Ivo reminded Jonah that his sister works at Quillon Maps. The 'best friend' wording appears only in a different note about Talia.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F041"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F055",
+      "F056"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The recipient, Cormac Fischer, is not mentioned in the deposits. The message D0053 shows no addressee.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F016",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F016"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F016\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F005"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F005\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The note is said to have been repeated on February 5, 2025, but the deposits only show it on February 3, 4 and 6. There is no February 5 deposit.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F007\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F014"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposit does not name the sender, so attributing the 8 February morning message to Ezra Delacroix is not supported. Only the message text and its timing (08:11, asking to be rung when free) are supported.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F051",
+      "F052"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F023"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F023\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [
+      {
+       "fact_id": "F021",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F021"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[\"F021\"],\"invented_detail\":\"The memory says the message was sent to Jonah Haddad, but the message dated 2025-02-09 (D0017) names no recipient.\"}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F017"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposit never names the sender, so attributing the message to Jonah Haddad is unsupported. The message content (life in Porto going well, asking Ivo to ring when free) and the date of February 7, 2025 are supported.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F015",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F015"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F015\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F011",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F009"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F009\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposit does not say the message was addressed to Jonah Haddad. The message D0017 names no recipient, and Jonah Haddad appears nowhere in the deposits.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F057",
+      "F058"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F018",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F018"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F018\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F029"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F029\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F013",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F013"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F013\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The attribution that Ivo Okafor told Talia Castillo. The deposit only says \\\"Yusuf's kayak hasn't come\\\" and names neither a speaker nor a recipient.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": 131,
+   "invention_rate": 0.0,
+   "partial_rate": 0.1756,
+   "invented": [],
+   "trap_hits": [
+    "T04"
+   ],
+   "traps_total": 20,
+   "excerpt_support_rate": 0.0,
+   "citing_memories": 131,
+   "fact_recall": 0.4839,
+   "omission_rate": 0.5161,
+   "recall_by_kind": {
+    "change": 0.4,
+    "event": 0.8889,
+    "state": 0.2941
+   },
+   "stale_as_current": null,
+   "stale_reason": "system does not expose currency",
+   "attribution_error_rate": null,
+   "attribution_measurable": 0,
+   "attribution_wrong": [],
+   "attribution_reason": "system does not declare memory subjects",
+   "store_dating": null,
+   "store_invented_precision_rate": null,
+   "store_dating_reason": "system exposes no event bounds",
+   "alias_recall": null,
+   "alias_precision": null,
+   "alias_detail": null,
+   "alias_reason": "system does not expose identity links",
+   "curve": {
+    "points": [
+     {
+      "threshold": null,
+      "kept": 131,
+      "invention": 0.0,
+      "recall": 0.4838709677419355
+     }
+    ],
+    "recall_at_inv_1pct": 0.4838709677419355,
+    "recall_at_inv_5pct": 0.4838709677419355,
+    "has_confidence": false
+   },
+   "labels": [
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [
+      "T04"
+     ],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F053"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F049",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposits show only a message on 9 Feb 2025 saying rain fell on and off all afternoon. They do not say the recipient was Talia Castillo, since Talia is only mentioned in a piano remark. They also do not say the weather note was repeated from earlier days: the same text appears twice on the same day (D0052 and D0053).\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F051",
+      "F052"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F025",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F025"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F025\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F033"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F032",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F032"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F032\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F048"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F007\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F027",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F027"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F027\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F047"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"Ezra being Ivo Okafor's sister. The deposits never state the relationship; they only say the espresso machine reached Ezra, who is thrilled, after an earlier delivery delay.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposit never names Talia Castillo as the recipient of the message. The claim that Ivo told her is unsupported; the deposit only supports that he ordered a standing desk that had not arrived as of Feb 8, 2025.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F050"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F055",
+      "F056"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F024"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F024\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F038",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F038"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F038\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F001",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F001\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[\"F006\"],\"invented_detail\":\"The attribution \\\"as told to Cormac Fischer\\\" is not in any deposit. No deposit names Cormac Fischer or says who the message was addressed to.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F012"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F049"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F020",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F020"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\": \"supported\", \"citation_supports\": false, \"facts\": [\"F020\"], \"invented_detail\": null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F003",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F003"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F003\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposits never mention Talia Castillo, so the claim that Ivo told her is unsupported. The message itself only says the marathon goes ahead without Ivo because signing up did not happen.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F054"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The recipient, Talia Castillo, is not mentioned in any deposit. The deposits show the coffee-filter message on Feb 8 and the same note on earlier days, but not who it was sent to.\"}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F037"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"Cormac being Ivo's cousin; the note names only Cormac, with no family relationship stated.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F006\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The claim that the message was addressed to Jonah Haddad. The deposit D0021 is a message with no recipient named, so only the recovery from the chest cold on Feb 10, 2025 is supported.\"}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The message being addressed to Talia Castillo is not shown in any deposit. D0032 gives no recipient, though it does support Jonah, the best friend, coming for dinner and staying till midnight on February 6, 2025.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F036",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F036"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F036\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F034",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F034"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F034\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F031"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"Jonah is described as Ivo's best friend; the deposit says only 'Jonah' and gives no relationship.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F050"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"Ezra being Ivo Okafor's sister; the note only mentions Ezra, with no family relationship stated.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F010"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F004",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F002",
+      "F004"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F004\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F028",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F028"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F028\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F040",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F040"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F040\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F035"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"Jonah being Ivo's best friend. D0037 says only that Ivo reminded Jonah that his sister works at Quillon Maps. The 'best friend' label appears in D0041, where the person reminded is Talia, not Jonah.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F041"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F055",
+      "F056"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F012"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F057",
+      "F058"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F061",
+      "F062"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The recipient, Cormac Fischer, does not appear in any deposit, and neither does the claim that Ivo Okafor was the sender. The message of 9 Feb 2025 only says that Talia's upright piano hasn't come.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F016",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F016"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F016\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F005"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F005\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"Only the Feb 14, 2025 message that the standing desk is here and in use is supported. Nothing shows that Ivo told Marco Abbott (no recipient is named), that the desk was ordered, or that it had not arrived as of February 8, 2025.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The message being addressed to Jonah Haddad. D0021 is a message with no named recipient, so nothing in the deposits links it to Jonah Haddad.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F007\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F046"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F010",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F010"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F010\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F014"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposit D0016 does not name its sender, so it never says the message came from Ezra Delacroix. The morning timing (08:11 on Feb 8, 2025) and the request to be rung when free are supported.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The claim that the piano was still missing on February 9, 2025 is not in any deposit. The note only says Talia showed Ivo the upright piano and that it arrived at some point.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F051",
+      "F052"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F023"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F023\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [
+      {
+       "fact_id": "F021",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F021"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[\"F021\"],\"invented_detail\":\"The message being addressed to Jonah Haddad. D0017 is a message with no recipient stated, so the deposits do not support it.\"}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposits do not name Talia Castillo as the recipient of the message. They also say nothing about the kayak still not having arrived as of February 9, 2025. Only the arrival and Yusuf's delight on February 11 are supported.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F019",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F019"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F019\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F017"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The sender is named as Jonah Haddad, but the message (D0014) names no sender and no deposit mentions Jonah Haddad. The message content (life in Porto going well, asking to be rung when free) and the date are supported.\"}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The deposit supports Ivo wanting to learn to sail if the summer is kind, on 12 February 2025. It never names Talia Castillo as the person he said it to, so that part is unsupported.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F030",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F030"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F030\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F061",
+      "F062"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F015",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F015"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F015\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F011",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F008",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F008"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F008\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F009"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F009\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The message being addressed to Jonah Haddad. D0017 records the late morning train on 2025-02-09 but names no recipient, and Jonah Haddad appears nowhere in the deposits.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F002"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F057",
+      "F058"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F018",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F018"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F018\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F002",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F002"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F002\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F029"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F029\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F039"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F013",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F013"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F013\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "partial",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"partial\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The claim that Ivo Okafor told Talia Castillo. The message only says Yusuf's kayak hasn't come, with no named sender or recipient.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F042",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F042"
+     ],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F042\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    }
+   ]
+  }
+ ],
+ "qa": {
+  "accuracy": 0.6441,
+  "n_questions": 59,
+  "by_category": {
+   "present": {
+    "accuracy": 0.8571,
+    "n": 14
+   },
+   "past": {
+    "accuracy": 0.3333,
+    "n": 3
+   },
+   "when": {
+    "accuracy": 1.0,
+    "n": 3
+   },
+   "duration": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "event": {
+    "accuracy": 0.2857,
+    "n": 7
+   },
+   "attribution": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "abstention": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "identity": {
+    "accuracy": 0.4,
+    "n": 10
+   },
+   "attribution_check": {
+    "accuracy": 0.6,
+    "n": 5
+   },
+   "bounded_date": {
+    "accuracy": 0.3333,
+    "n": 6
+   }
+  },
+  "answered_precision": 0.7179,
+  "coverage": 0.661,
+  "invented_answers": 0.0,
+  "invented_precision_rate": 0.6667,
+  "bounded_date": {
+   "n": 6,
+   "correct": 2,
+   "invented_precision": 4,
+   "abstained": 0,
+   "wrong": 0
+  },
+  "rows": [
+   {
+    "id": "Q001",
+    "category": "present",
+    "ok": true,
+    "answer": "1190 EUR"
+   },
+   {
+    "id": "Q002",
+    "category": "present",
+    "ok": true,
+    "answer": "Bordeaux"
+   },
+   {
+    "id": "Q003",
+    "category": "present",
+    "ok": false,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q004",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q005",
+    "category": "present",
+    "ok": true,
+    "answer": "Porto"
+   },
+   {
+    "id": "Q006",
+    "category": "present",
+    "ok": true,
+    "answer": "Backend engineer"
+   },
+   {
+    "id": "Q007",
+    "category": "present",
+    "ok": true,
+    "answer": "Product designer"
+   },
+   {
+    "id": "Q008",
+    "category": "present",
+    "ok": true,
+    "answer": "Sesame"
+   },
+   {
+    "id": "Q009",
+    "category": "present",
+    "ok": true,
+    "answer": "Sales lead"
+   },
+   {
+    "id": "Q010",
+    "category": "present",
+    "ok": true,
+    "answer": "17 December"
+   },
+   {
+    "id": "Q011",
+    "category": "present",
+    "ok": true,
+    "answer": "12 November"
+   },
+   {
+    "id": "Q012",
+    "category": "present",
+    "ok": true,
+    "answer": "Lyon"
+   },
+   {
+    "id": "Q013",
+    "category": "present",
+    "ok": true,
+    "answer": "Kestrel Logistics"
+   },
+   {
+    "id": "Q014",
+    "category": "present",
+    "ok": true,
+    "answer": "Swedish"
+   },
+   {
+    "id": "Q015",
+    "category": "past",
+    "ok": true,
+    "answer": "760 EUR"
+   },
+   {
+    "id": "Q016",
+    "category": "past",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q017",
+    "category": "past",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q018",
+    "category": "when",
+    "ok": true,
+    "answer": "14 February 2025"
+   },
+   {
+    "id": "Q019",
+    "category": "when",
+    "ok": true,
+    "answer": "11 February 2025"
+   },
+   {
+    "id": "Q020",
+    "category": "when",
+    "ok": true,
+    "answer": "5 February 2025"
+   },
+   {
+    "id": "Q021",
+    "category": "duration",
+    "ok": true,
+    "answer": "5 days"
+   },
+   {
+    "id": "Q022",
+    "category": "duration",
+    "ok": true,
+    "answer": "3 days"
+   },
+   {
+    "id": "Q023",
+    "category": "event",
+    "ok": true,
+    "answer": "47:27"
+   },
+   {
+    "id": "Q024",
+    "category": "event",
+    "ok": false,
+    "answer": "City library"
+   },
+   {
+    "id": "Q025",
+    "category": "event",
+    "ok": false,
+    "answer": "Botanical garden"
+   },
+   {
+    "id": "Q026",
+    "category": "event",
+    "ok": true,
+    "answer": "The riverside park in Ghent"
+   },
+   {
+    "id": "Q027",
+    "category": "event",
+    "ok": false,
+    "answer": "Harbour footpath"
+   },
+   {
+    "id": "Q028",
+    "category": "event",
+    "ok": false,
+    "answer": "Harbour footpath"
+   },
+   {
+    "id": "Q029",
+    "category": "event",
+    "ok": false,
+    "answer": "Harbour footpath"
+   },
+   {
+    "id": "Q030",
+    "category": "attribution",
+    "ok": true,
+    "answer": "Jonah Haddad"
+   },
+   {
+    "id": "Q031",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q032",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q033",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q034",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q035",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q036",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q037",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q038",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q039",
+    "category": "identity",
+    "ok": true,
+    "answer": "Old Mill Folk Choir"
+   },
+   {
+    "id": "Q040",
+    "category": "identity",
+    "ok": true,
+    "answer": "Saltmarsh Community Choir"
+   },
+   {
+    "id": "Q041",
+    "category": "identity",
+    "ok": true,
+    "answer": "Beacon Hill Choir"
+   },
+   {
+    "id": "Q042",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q043",
+    "category": "identity",
+    "ok": true,
+    "answer": "Juniper Street Youth Choir"
+   },
+   {
+    "id": "Q044",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q045",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q046",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q047",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q048",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q049",
+    "category": "attribution_check",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q050",
+    "category": "attribution_check",
+    "ok": true,
+    "answer": "Brackenridge Seeds"
+   },
+   {
+    "id": "Q051",
+    "category": "attribution_check",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q052",
+    "category": "attribution_check",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q053",
+    "category": "attribution_check",
+    "ok": false,
+    "answer": "Harbor & Pine Studio"
+   },
+   {
+    "id": "Q054",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "15 February 2025"
+   },
+   {
+    "id": "Q055",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "5 February 2025"
+   },
+   {
+    "id": "Q056",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "7 February 2025"
+   },
+   {
+    "id": "Q057",
+    "category": "bounded_date",
+    "ok": true,
+    "answer": "By 14 February 2025 (it arrived after 8 February 2025)"
+   },
+   {
+    "id": "Q058",
+    "category": "bounded_date",
+    "ok": true,
+    "answer": "Between 9 and 13 February 2025"
+   },
+   {
+    "id": "Q059",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "11 February 2025"
+   }
+  ]
+ }
+}

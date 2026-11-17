@@ -170,3 +170,10 @@ def test_palier2_heure_du_depot_toleree(monkeypatch):
     ign = evidence._dates_ignore([ev], "")
     assert {"18", "20", "29"} <= ign                    # UTC and local time (summer: +2)
     assert evidence.unsupported_details("Dépôt à 20 h 29, puis 7 km.", "", ign) == ["7"]
+
+
+def test_the_place_named_in_code_is_part_of_the_source():
+    photo = {"payload": {"kind": "photo", "text": "Photo taken on 2025-02-15. GPS: 51.92, 4.48."},
+             "lieu": "Rotterdam, South Holland (NL)"}
+    assert "Rotterdam" in evidence.source_text(photo)
+    assert "Rotterdam" not in evidence.source_text({"payload": photo["payload"]})

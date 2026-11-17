@@ -1,0 +1,543 @@
+{
+ "F022": [
+  {
+   "deposit": "D0001",
+   "start": 0,
+   "end": 53,
+   "role": "mention",
+   "excerpt": "GPS 41.14222, -8.62768, captured 2025-02-03 at 11:26."
+  }
+ ],
+ "F014": [
+  {
+   "deposit": "D0002",
+   "start": 9,
+   "end": 66,
+   "role": "mention",
+   "excerpt": "My birthday falls on 1 November, must organise something."
+  },
+  {
+   "deposit": "D0029",
+   "start": 22,
+   "end": 99,
+   "role": "mention",
+   "excerpt": "Note right, to self: 1 okay so, November is my birthday, hmm, plan something."
+  }
+ ],
+ "F043": [
+  {
+   "deposit": "D0042",
+   "start": 45,
+   "end": 84,
+   "role": "mention",
+   "excerpt": "These days my uncle lives in Edinburgh."
+  }
+ ],
+ "F003": [
+  {
+   "deposit": "D0003",
+   "start": 111,
+   "end": 158,
+   "role": "mention",
+   "excerpt": "The monthly 660 EUR for the flat has been paid."
+  }
+ ],
+ "F001": [
+  {
+   "deposit": "D0003",
+   "start": 219,
+   "end": 269,
+   "role": "mention",
+   "excerpt": "Home since October 2021 — 26 Tanner Street, Porto."
+  }
+ ],
+ "F018": [
+  {
+   "deposit": "D0004",
+   "start": 13,
+   "end": 90,
+   "role": "mention",
+   "excerpt": "Another... Another er, full day; an well, UX researcher's work is never done."
+  }
+ ],
+ "F047": [
+  {
+   "deposit": "D0043",
+   "start": 28,
+   "end": 63,
+   "role": "mention",
+   "excerpt": "Leipzig is where my aunt lives now."
+  }
+ ],
+ "F006": [
+  {
+   "deposit": "D0005",
+   "start": 52,
+   "end": 138,
+   "role": "future",
+   "excerpt": "Following your interviews, Northwind Analytics would like you to join as data analyst."
+  },
+  {
+   "deposit": "D0006",
+   "start": 48,
+   "end": 166,
+   "role": "future",
+   "excerpt": "On 8 February right, 2025, I start er, as data analyst at Northwind right, Analytics; the contract is okay so, signed."
+  },
+  {
+   "deposit": "D0015",
+   "start": 108,
+   "end": 174,
+   "role": "start",
+   "excerpt": "Today, my first day at Northwind Analytics, as their data analyst."
+  }
+ ],
+ "F036": [
+  {
+   "deposit": "D0038",
+   "start": 49,
+   "end": 86,
+   "role": "not_yet",
+   "excerpt": "Kenji's espresso machine hasn't come."
+  },
+  {
+   "deposit": "D0041",
+   "start": 45,
+   "end": 109,
+   "role": "already",
+   "excerpt": "The espresso machine made it to Kenji; they're thrilled with it."
+  }
+ ],
+ "F044": [
+  {
+   "deposit": "D0044",
+   "start": 46,
+   "end": 76,
+   "role": "mention",
+   "excerpt": "Samir has a flat in Edinburgh."
+  }
+ ],
+ "F037": [
+  {
+   "deposit": "D0045",
+   "start": 31,
+   "end": 76,
+   "role": "mention",
+   "excerpt": "Turin is where my climbing partner lives now."
+  },
+  {
+   "deposit": "D0053",
+   "start": 31,
+   "end": 53,
+   "role": "mention",
+   "excerpt": "Home for Wes is Turin."
+  }
+ ],
+ "F005": [
+  {
+   "deposit": "D0007",
+   "start": 0,
+   "end": 74,
+   "role": "mention",
+   "excerpt": "Another long meeting at Bramble Health; as an editor I get a lot of those."
+  }
+ ],
+ "F026": [
+  {
+   "deposit": "D0007",
+   "start": 75,
+   "end": 116,
+   "role": "mention",
+   "excerpt": "27:27 — my time at the Park 5K yesterday."
+  }
+ ],
+ "F015": [
+  {
+   "deposit": "D0008",
+   "start": 45,
+   "end": 109,
+   "role": "mention",
+   "excerpt": "Thinking of my brother Kenji. They live in Rotterdam these days."
+  }
+ ],
+ "F045": [
+  {
+   "deposit": "D0046",
+   "start": 35,
+   "end": 67,
+   "role": "mention",
+   "excerpt": "My uncle mostly works from home."
+  }
+ ],
+ "F035": [
+  {
+   "deposit": "D0039",
+   "start": 45,
+   "end": 106,
+   "role": "not_yet",
+   "excerpt": "Checked the tracking again: the upright piano hasn't shipped."
+  },
+  {
+   "deposit": "D0040",
+   "start": 50,
+   "end": 116,
+   "role": "already",
+   "excerpt": "Using the upright piano every day now; it turned up at some point."
+  }
+ ],
+ "F039": [
+  {
+   "deposit": "D0047",
+   "start": 35,
+   "end": 81,
+   "role": "mention",
+   "excerpt": "These days my piano teacher lives in Montreal."
+  }
+ ],
+ "F009": [
+  {
+   "deposit": "D0009",
+   "start": 0,
+   "end": 63,
+   "role": "mention",
+   "excerpt": "Valencia is where I grew right, up; some days I really miss it."
+  }
+ ],
+ "F013": [
+  {
+   "deposit": "D0009",
+   "start": 104,
+   "end": 177,
+   "role": "mention",
+   "excerpt": "My... My erm, sister okay so, Talia well, earns a living as a sales lead."
+  }
+ ],
+ "F008": [
+  {
+   "deposit": "D0010",
+   "start": 0,
+   "end": 56,
+   "role": "mention",
+   "excerpt": "My birthday falls on 2 February, must organise something"
+  }
+ ],
+ "F010": [
+  {
+   "deposit": "D0010",
+   "start": 58,
+   "end": 107,
+   "role": "mention",
+   "excerpt": "sent the dish back — shellfish, and I'm allergic."
+  }
+ ],
+ "F016": [
+  {
+   "deposit": "D0011",
+   "start": 10,
+   "end": 67,
+   "role": "mention",
+   "excerpt": "Another full day; a project manager's work is never done."
+  }
+ ],
+ "F048": [
+  {
+   "deposit": "D0048",
+   "start": 28,
+   "end": 56,
+   "role": "mention",
+   "excerpt": "Nadia has a flat in Leipzig."
+  }
+ ],
+ "F002": [
+  {
+   "deposit": "D0012",
+   "start": 101,
+   "end": 144,
+   "role": "mention",
+   "excerpt": "Property let: 71 Beacon Hill Road, Bordeaux"
+  },
+  {
+   "deposit": "D0014",
+   "start": 0,
+   "end": 62,
+   "role": "start",
+   "excerpt": "Today, I moved into the flat at 71 Beacon Hill Road, Bordeaux."
+  }
+ ],
+ "F004": [
+  {
+   "deposit": "D0012",
+   "start": 185,
+   "end": 215,
+   "role": "mention",
+   "excerpt": "Rent: 730 EUR, payable monthly"
+  }
+ ],
+ "F023": [
+  {
+   "deposit": "D0013",
+   "start": 0,
+   "end": 53,
+   "role": "mention",
+   "excerpt": "GPS 44.85700, -0.58561, captured 2025-02-07 at 13:08."
+  }
+ ],
+ "F040": [
+  {
+   "deposit": "D0049",
+   "start": 31,
+   "end": 61,
+   "role": "mention",
+   "excerpt": "Fatima has a flat in Montreal."
+  }
+ ],
+ "F019": [
+  {
+   "deposit": "D0014",
+   "start": 108,
+   "end": 163,
+   "role": "mention",
+   "excerpt": "5 July — my best friend Pablo's birthday, don't forget."
+  },
+  {
+   "deposit": "D0023",
+   "start": 146,
+   "end": 196,
+   "role": "mention",
+   "excerpt": "Must remember that Pablo has a birthday on 5 July."
+  }
+ ],
+ "F046": [
+  {
+   "deposit": "D0050",
+   "start": 45,
+   "end": 78,
+   "role": "mention",
+   "excerpt": "Most days, Samir works from home."
+  }
+ ],
+ "F032": [
+  {
+   "deposit": "D0034",
+   "start": 45,
+   "end": 106,
+   "role": "mention",
+   "excerpt": "The Harbour Gospel Choir has a new member as of today: Pablo."
+  }
+ ],
+ "F033": [
+  {
+   "deposit": "D0035",
+   "start": 45,
+   "end": 146,
+   "role": "mention",
+   "excerpt": "Over coffee, Talia wanted to know whether my brother was still at Marrowgate Press; yes, still there."
+  }
+ ],
+ "F049": [
+  {
+   "deposit": "D0051",
+   "start": 31,
+   "end": 69,
+   "role": "mention",
+   "excerpt": "My aunt — at Pellucid Labs these days."
+  }
+ ],
+ "F041": [
+  {
+   "deposit": "D0052",
+   "start": 45,
+   "end": 92,
+   "role": "mention",
+   "excerpt": "My piano teacher — at Oxbow Bindery these days."
+  }
+ ],
+ "F020": [
+  {
+   "deposit": "D0016",
+   "start": 0,
+   "end": 53,
+   "role": "mention",
+   "excerpt": "GPS 44.84200, -0.56873, captured 2025-02-09 at 14:45."
+  }
+ ],
+ "F050": [
+  {
+   "deposit": "D0054",
+   "start": 35,
+   "end": 87,
+   "role": "mention",
+   "excerpt": "Bumped into Nadia; Pellucid Labs is where they work."
+  }
+ ],
+ "F025": [
+  {
+   "deposit": "D0017",
+   "start": 0,
+   "end": 57,
+   "role": "mention",
+   "excerpt": "Lovely news er, today: Pablo ran a first right, marathon."
+  }
+ ],
+ "F017": [
+  {
+   "deposit": "D0018",
+   "start": 9,
+   "end": 43,
+   "role": "mention",
+   "excerpt": "Life in Ghent is treating me well."
+  }
+ ],
+ "F012": [
+  {
+   "deposit": "D0019",
+   "start": 9,
+   "end": 48,
+   "role": "mention",
+   "excerpt": "Life in Gothenburg is treating me well."
+  }
+ ],
+ "F024": [
+  {
+   "deposit": "D0020",
+   "start": 88,
+   "end": 138,
+   "role": "mention",
+   "excerpt": "Lovely news yesterday: Kenji started a new course."
+  }
+ ],
+ "F042": [
+  {
+   "deposit": "D0055",
+   "start": 39,
+   "end": 97,
+   "role": "mention",
+   "excerpt": "Bumped into Fatima; Halyard Sailmakers is where they work."
+  }
+ ],
+ "F007": [
+  {
+   "deposit": "D0021",
+   "start": 87,
+   "end": 115,
+   "role": "mention",
+   "excerpt": "Diagnosis — an ear infection"
+  },
+  {
+   "deposit": "D0023",
+   "start": 0,
+   "end": 99,
+   "role": "start",
+   "excerpt": "An ear infection, says the doctor yesterday, so it's a seven-day course of antibiotics for a while."
+  },
+  {
+   "deposit": "D0031",
+   "start": 0,
+   "end": 38,
+   "role": "end",
+   "excerpt": "Today, the ear infection is behind me."
+  }
+ ],
+ "F011": [
+  {
+   "deposit": "D0022",
+   "start": 51,
+   "end": 118,
+   "role": "mention",
+   "excerpt": "A... A German hmm, podcast on er, the way home, to keep practising."
+  },
+  {
+   "deposit": "D0025",
+   "start": 52,
+   "end": 112,
+   "role": "mention",
+   "excerpt": "A German podcast on the right, way home, to keep practising."
+  }
+ ],
+ "F021": [
+  {
+   "deposit": "D0022",
+   "start": 119,
+   "end": 191,
+   "role": "mention",
+   "excerpt": "Kenji well, and I well, met erm, up at the erm, hilltop viewpoint today."
+  }
+ ],
+ "F038": [
+  {
+   "deposit": "D0056",
+   "start": 45,
+   "end": 97,
+   "role": "mention",
+   "excerpt": "My climbing partner — at Mistral Joinery these days."
+  },
+  {
+   "deposit": "D0057",
+   "start": 44,
+   "end": 80,
+   "role": "mention",
+   "excerpt": "Wes — at Mistral Joinery these days."
+  }
+ ],
+ "F031": [
+  {
+   "deposit": "D0036",
+   "start": 46,
+   "end": 117,
+   "role": "mention",
+   "excerpt": "Kenji had no idea that my best friend is employed by Larkspur Ceramics."
+  }
+ ],
+ "F028": [
+  {
+   "deposit": "D0024",
+   "start": 13,
+   "end": 67,
+   "role": "mention",
+   "excerpt": "Yesterday, I ran a first marathon. Can you believe it?"
+  }
+ ],
+ "F030": [
+  {
+   "deposit": "D0026",
+   "start": 0,
+   "end": 53,
+   "role": "mention",
+   "excerpt": "GPS 44.83192, -0.56251, captured 2025-02-13 at 17:45."
+  },
+  {
+   "deposit": "D0027",
+   "start": 35,
+   "end": 104,
+   "role": "mention",
+   "excerpt": "Today, right, a long stroll around okay so, the harbour er, footpath."
+  }
+ ],
+ "F027": [
+  {
+   "deposit": "D0028",
+   "start": 0,
+   "end": 51,
+   "role": "mention",
+   "excerpt": "51:27 er, — my time at right, the Spring 10K today."
+  }
+ ],
+ "F034": [
+  {
+   "deposit": "D0037",
+   "start": 35,
+   "end": 101,
+   "role": "mention",
+   "excerpt": "The Saltmarsh Community Choir has a new member as of today: Kenji."
+  }
+ ],
+ "F029": [
+  {
+   "deposit": "D0030",
+   "start": 0,
+   "end": 53,
+   "role": "mention",
+   "excerpt": "GPS 44.83040, -0.58414, captured 2025-02-15 at 17:40."
+  }
+ ]
+}

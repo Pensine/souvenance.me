@@ -37,6 +37,9 @@ from zoneinfo import ZoneInfo
 from . import config, injection, language
 
 MAX_CITATION = 300
+# The memory narrates the record ("the subject reports…"), not the life
+# (pensine/atoms.py, `interpretive`).
+INTERPRETATION = "interprétation du dossier, pas un fait déposé"
 _NUM = re.compile(r"\d+(?:[.,]\d+)?")
 _WORD = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿ][\w'’-]*")
 
@@ -69,8 +72,11 @@ def source_text(event: dict) -> str:
             payload = json.loads(payload)
         except ValueError:
             pass
+    # the place named in code from the deposit's coordinates
+    # (nightly.event_place, offline GeoNames) is read like the rest
+    lieu = event.get("lieu") if isinstance(event.get("lieu"), str) else ""
     parts = _strings(payload) + [event.get("media_transcript") or "",
-                                 event.get("media_description") or ""]
+                                 event.get("media_description") or "", lieu]
     return "\n".join(p for p in parts if p)
 
 
@@ -210,6 +216,10 @@ def check(memory: dict, events_by_id: dict[int, dict], owner: str = "") -> dict:
     citations = [c.strip()[:MAX_CITATION] for c in citations if c.strip()]
     if not citations:
         return {"status": "reject", "citations": [], "motifs": ["aucun extrait cité"]}
+    from . import atoms
+    if atoms.interpretive(memory.get("content", "")):
+        # its excerpts may exist, but it narrates the record, not the life
+        return {"status": "reject", "citations": [], "motifs": [INTERPRETATION]}
     found = [c for c in citations if quote_found(c, text)]
     if not found:
         return {"status": "reject", "citations": [], "motifs": ["extrait introuvable dans le dépôt"]}
@@ -309,6 +319,7 @@ def verify(memories: list[dict], events: list[dict], *, owner: str = "", ask=Non
         res = check(m, by_id, owner)
         if res["status"] == "reject":
             note("aucun_extrait" if res["motifs"] == ["aucun extrait cité"]
+                 else "interpretation" if res["motifs"] == [INTERPRETATION]
                  else "extrait_introuvable")
             if severity == "desactive":
                 kept.append({**m, "evidence": {"citations": [], "motifs": res["motifs"],
@@ -330,6 +341,20 @@ def verify(memories: list[dict], events: list[dict], *, owner: str = "", ask=Non
             kept.append({**m, "evidence": {**ev, "statut": "a_verifier"}})
             report["a_verifier"] += 1
             continue
+        if res["motifs"] and all(x.startswith("absent du dépôt") for x in res["motifs"]) \
+                and not any(_NUM.search(x) for x in res["motifs"]):
+            # words the deposit does not hold, all excerpts found: a paraphrase
+            # is read by an entailment model before any reread (pensine/readers.py).
+            # Never a number: measured, the model calls "dix kilomètres" proof
+            # of "12 km"; a figure stays checked word for word.
+            from . import readers
+            p = readers.entailment(" ".join(res["citations"]), m.get("content") or "")
+            if p is not None and p >= readers.ENTAILS:
+                note("nli_soutenue")
+                kept.append({**m, "evidence": {**ev, "statut": "verifiee_nli",
+                                               "entailment": round(p, 3)}})
+                report["verifiees"] += 1
+                continue
         verdict = None
         if ask and extract_json and report["relues"] < max_relectures:
             report["relues"] += 1

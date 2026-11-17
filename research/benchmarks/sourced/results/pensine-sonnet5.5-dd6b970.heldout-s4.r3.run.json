@@ -1,0 +1,2312 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "dd6b970",
+  "llm_backend": "claude-cli",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 3,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-04",
+    "events": 3,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-05",
+    "events": 5,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-06",
+    "events": 6,
+    "memories_written": 8,
+    "memories_rejected": 0,
+    "memories_corrected": 3,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-07",
+    "events": 3,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-08",
+    "events": 7,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-09",
+    "events": 2,
+    "memories_written": 3,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-10",
+    "events": 5,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-11",
+    "events": 5,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-12",
+    "events": 9,
+    "memories_written": 9,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-13",
+    "events": 3,
+    "memories_written": 3,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-14",
+    "events": 1,
+    "memories_written": 0,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 0,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 0,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-16",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   }
+  ]
+ },
+ "track": "T",
+ "data": "sample-test-s4",
+ "seconds": 730.7,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Alba's landlady now lives in Bordeaux.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Bordeaux is where my landlady lives now."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "Alba took a photo on 3 February 2025 at 12:36 at GPS coordinates 45.51325, -73.57289.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "GPS 45.51325, -73.57289, captured 2025-02-03 at 12:36."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-03",
+     "event_latest": "2025-02-03"
+    },
+    {
+     "id": "3",
+     "content": "Alba is two chapters into a new novel and finds it slow going.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4",
+     "content": "Alba ordered a telescope that had not arrived yet.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Still no sign of the telescope I ordered."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-03",
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "Alba Fischer has been an operations manager at Harbor & Pine Studio since May 2023.",
+     "valid_from": "2023-05-01",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "An operations manager at Harbor & Pine Studio since May 2023 — that's me."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2023-05-01",
+     "event_latest": "2023-05-31"
+    },
+    {
+     "id": "6",
+     "content": "1040 EUR was transferred for rent.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Rent day: 1040 EUR transferred."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "Dev Duarte's birthday is on 27 February.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "My birthday falls on 27 February"
+      }
+     ],
+     "subject": "Dev Duarte",
+     "event_earliest": "2025-02-27",
+     "event_latest": "2025-02-27"
+    },
+    {
+     "id": "8",
+     "content": "Alba's godfather now lives in Edinburgh.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Edinburgh is where my godfather lives now."
+      }
+     ],
+     "subject": "my godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "Alba has lived at 68 Beacon Hill Road, Montreal, since March 2023.",
+     "valid_from": "2023-03-01",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Home since March 2023 — 68 Beacon Hill Road, Montreal."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2023-03-01",
+     "event_latest": "2023-03-31"
+    },
+    {
+     "id": "10",
+     "content": "Alba is allergic to kiwi.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Allergic to kiwi, so the dessert went back to the kitchen"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11",
+     "content": "The narrator had coffee at the hilltop viewpoint with their sister Quinn.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "today, coffee at the hilltop viewpoint, my sister Quinn and me."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "12",
+     "content": "Alba grew up in Valencia and some days she really misses it.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Valencia is where I grew up; some days I really miss it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Alba's aunt now lives in Bristol.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Bristol is where my aunt lives now."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "GPS coordinates 57.71610, 11.95771 were captured on 5 February 2025 at 17:12.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "GPS 57.71610, 11.95771, captured 2025-02-05 at 17:12."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "15",
+     "content": "Quinn Duarte has a dog named Nori.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.6,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Nori hmm, (my dog) wants okay so, breakfast."
+      }
+     ],
+     "subject": "Quinn Duarte",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "Alba's flatmate lives in Lyon these days.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "These days my flatmate lives in Lyon."
+      }
+     ],
+     "subject": "my flatmate",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17",
+     "content": "Alba met up with her brother Dev at the hilltop viewpoint.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "My brother Dev and I met up at the hilltop viewpoint yesterday"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "18",
+     "content": "Quinn works as a data analyst.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "a data analyst — that's what Quinn does for a living."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "There is a rumour that Dev's company could be closing down.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.3,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Rumour has it that Dev's company could be closing down."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "Alba's sister Quinn came over for dinner and stayed until midnight.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Quinn, my sister, came over for dinner and stayed till midnight."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "Theo's home is Bristol.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Home for Theo is Bristol."
+      }
+     ],
+     "subject": "Theo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "22",
+     "content": "Something was captured on 6 February 2025 at 13:59 at GPS coordinates 45.50652, -73.57790.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "GPS 45.50652, -73.57790, captured 2025-02-06 at 13:59."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "23",
+     "content": "A photo was taken on 6 February 2025 at 19:10 at GPS coordinates 45.48644, -73.58491.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "GPS 45.48644, -73.58491, captured 2025-02-06 at 19:10."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "24",
+     "content": "Alba had coffee with Dev at the riverside park.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Yesterday, coffee at the riverside park, Dev and me."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "25",
+     "content": "Quinn passed a driving test, which Alba called lovely news.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Quinn passed a driving test"
+      },
+      {
+       "deposit_id": "D0011",
+       "excerpt": "lovely right, news"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "26",
+     "content": "Alba's kitchen is finally spotless, every shelf done.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Kitchen finally spotless"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Zoe has a flat in Edinburgh.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Zoe has a flat in Edinburgh."
+      }
+     ],
+     "subject": "Zoe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "28",
+     "content": "Kenji's home is Lyon.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Home for Kenji is Lyon."
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Alba finally watered the plants on her balcony.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Plants on the balcony watered at last."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30",
+     "content": "Alba starts as project manager at Kestrel Logistics on February 12, 2025; she has signed the contract.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "First working day: February 12, 2025."
+      },
+      {
+       "deposit_id": "D0014",
+       "excerpt": "On February 12, 2025, I start as project manager hmm, at Kestrel Logistics; the contract is signed."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "31",
+     "content": "Alba has a tenancy agreement with Rowan Property Lettings for 48 Juniper Avenue, Montreal, beginning February 8, 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Property let: 48 Juniper Avenue, Montreal"
+      },
+      {
+       "deposit_id": "D0013",
+       "excerpt": "The tenancy begins on February 8, 2025."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "32",
+     "content": "The rent for the 48 Juniper Avenue tenancy is 1020 EUR, payable monthly.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Rent: 1020 EUR, payable monthly"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Alba's telescope has arrived and she is using it.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "The telescope is here and in use."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-03",
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Alba's godfather is employed by Halyard Sailmakers.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Halyard Sailmakers employs my godfather."
+      }
+     ],
+     "subject": "my godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Marco has a flat in Bordeaux.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "Marco has a flat in Bordeaux."
+      }
+     ],
+     "subject": "Marco",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36",
+     "content": "Quinn's espresso machine had not yet arrived.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Quinn's espresso machine hasn't come."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "37",
+     "content": "Alba's address is 48 Juniper Avenue, Montreal.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.93,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "New address as of yesterday: 48 Juniper Avenue, Montreal."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "38",
+     "content": "Alba ran the Spring 10K with a time of 52:18.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.93,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "52:18 — my time at the Spring 10K yesterday."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "39",
+     "content": "On February 9, 2025, Alba listened to a German podcast on the way home to keep practising.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "A German podcast on the way home, to keep practising."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my sister",
+     "name": "Quinn",
+     "tier": "proven"
+    },
+    {
+     "alias": "My brother",
+     "name": "Dev",
+     "tier": "proven"
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Alba's landlady now lives in Bordeaux.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Bordeaux is where my landlady lives now."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "Alba took a photo on 3 February 2025 at 12:36 at GPS coordinates 45.51325, -73.57289.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "GPS 45.51325, -73.57289, captured 2025-02-03 at 12:36."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-03",
+     "event_latest": "2025-02-03"
+    },
+    {
+     "id": "3",
+     "content": "Alba is two chapters into a new novel and finds it slow going.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4",
+     "content": "Alba ordered a telescope that had not arrived yet.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Still no sign of the telescope I ordered."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-03",
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "Alba Fischer has been an operations manager at Harbor & Pine Studio since May 2023.",
+     "valid_from": "2023-05-01",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "An operations manager at Harbor & Pine Studio since May 2023 — that's me."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2023-05-01",
+     "event_latest": "2023-05-31"
+    },
+    {
+     "id": "6",
+     "content": "1040 EUR was transferred for rent.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Rent day: 1040 EUR transferred."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "Dev Duarte's birthday is on 27 February.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "My birthday falls on 27 February"
+      }
+     ],
+     "subject": "Dev Duarte",
+     "event_earliest": "2025-02-27",
+     "event_latest": "2025-02-27"
+    },
+    {
+     "id": "8",
+     "content": "Alba's godfather now lives in Edinburgh.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Edinburgh is where my godfather lives now."
+      }
+     ],
+     "subject": "my godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "Alba has lived at 68 Beacon Hill Road, Montreal, since March 2023.",
+     "valid_from": "2023-03-01",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Home since March 2023 — 68 Beacon Hill Road, Montreal."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2023-03-01",
+     "event_latest": "2023-03-31"
+    },
+    {
+     "id": "10",
+     "content": "Alba is allergic to kiwi.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Allergic to kiwi, so the dessert went back to the kitchen"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11",
+     "content": "The narrator had coffee at the hilltop viewpoint with their sister Quinn.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "today, coffee at the hilltop viewpoint, my sister Quinn and me."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "12",
+     "content": "Alba grew up in Valencia and some days she really misses it.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Valencia is where I grew up; some days I really miss it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Alba's aunt now lives in Bristol.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Bristol is where my aunt lives now."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "GPS coordinates 57.71610, 11.95771 were captured on 5 February 2025 at 17:12.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "GPS 57.71610, 11.95771, captured 2025-02-05 at 17:12."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "15",
+     "content": "Quinn Duarte has a dog named Nori.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.6,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Nori hmm, (my dog) wants okay so, breakfast."
+      }
+     ],
+     "subject": "Quinn Duarte",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "Alba's flatmate lives in Lyon these days.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "These days my flatmate lives in Lyon."
+      }
+     ],
+     "subject": "my flatmate",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17",
+     "content": "Alba met up with her brother Dev at the hilltop viewpoint.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "My brother Dev and I met up at the hilltop viewpoint yesterday"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "18",
+     "content": "Quinn works as a data analyst.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "a data analyst — that's what Quinn does for a living."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "There is a rumour that Dev's company could be closing down.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.3,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Rumour has it that Dev's company could be closing down."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "Alba's sister Quinn came over for dinner and stayed until midnight.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Quinn, my sister, came over for dinner and stayed till midnight."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "Theo's home is Bristol.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Home for Theo is Bristol."
+      }
+     ],
+     "subject": "Theo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "22",
+     "content": "Something was captured on 6 February 2025 at 13:59 at GPS coordinates 45.50652, -73.57790.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "GPS 45.50652, -73.57790, captured 2025-02-06 at 13:59."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "23",
+     "content": "A photo was taken on 6 February 2025 at 19:10 at GPS coordinates 45.48644, -73.58491.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "GPS 45.48644, -73.58491, captured 2025-02-06 at 19:10."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "24",
+     "content": "Alba had coffee with Dev at the riverside park.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Yesterday, coffee at the riverside park, Dev and me."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "25",
+     "content": "Quinn passed a driving test, which Alba called lovely news.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Quinn passed a driving test"
+      },
+      {
+       "deposit_id": "D0011",
+       "excerpt": "lovely right, news"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "26",
+     "content": "Alba's kitchen is finally spotless, every shelf done.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Kitchen finally spotless"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Zoe has a flat in Edinburgh.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Zoe has a flat in Edinburgh."
+      }
+     ],
+     "subject": "Zoe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "28",
+     "content": "Kenji's home is Lyon.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Home for Kenji is Lyon."
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Alba finally watered the plants on her balcony.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Plants on the balcony watered at last."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30",
+     "content": "Alba starts as project manager at Kestrel Logistics on February 12, 2025; she has signed the contract.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "First working day: February 12, 2025."
+      },
+      {
+       "deposit_id": "D0014",
+       "excerpt": "On February 12, 2025, I start as project manager hmm, at Kestrel Logistics; the contract is signed."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "31",
+     "content": "Alba has a tenancy agreement with Rowan Property Lettings for 48 Juniper Avenue, Montreal, beginning February 8, 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Property let: 48 Juniper Avenue, Montreal"
+      },
+      {
+       "deposit_id": "D0013",
+       "excerpt": "The tenancy begins on February 8, 2025."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "32",
+     "content": "The rent for the 48 Juniper Avenue tenancy is 1020 EUR, payable monthly.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Rent: 1020 EUR, payable monthly"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Alba's telescope has arrived and she is using it.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "The telescope is here and in use."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-03",
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Alba's godfather is employed by Halyard Sailmakers.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Halyard Sailmakers employs my godfather."
+      }
+     ],
+     "subject": "my godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Marco has a flat in Bordeaux.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "Marco has a flat in Bordeaux."
+      }
+     ],
+     "subject": "Marco",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36",
+     "content": "Quinn's espresso machine had not yet arrived.",
+     "valid_from": "2025-02-08",
+     "valid_to": "2025-02-12",
+     "current": false,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Quinn's espresso machine hasn't come."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "37",
+     "content": "Alba's address is 48 Juniper Avenue, Montreal.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.93,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "New address as of yesterday: 48 Juniper Avenue, Montreal."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "38",
+     "content": "Alba ran the Spring 10K with a time of 52:18.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.93,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "52:18 — my time at the Spring 10K yesterday."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "39",
+     "content": "On February 9, 2025, Alba listened to a German podcast on the way home to keep practising.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "A German podcast on the way home, to keep practising."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40",
+     "content": "Alba had coffee with Dev, and he asked whether her sister was still at Brackenridge Seeds; she was.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Over coffee, Dev wanted to know whether my sister was still at Brackenridge Seeds; yes, still there."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "41",
+     "content": "Alba's sister still works at Brackenridge Seeds.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Over coffee, Dev wanted to know whether my sister was still at Brackenridge Seeds; yes, still there."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42",
+     "content": "Alba's flatmate is employed by Gullwing Ferries.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": "Gullwing Ferries employs my flatmate."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "43",
+     "content": "Alba would see moving to Valencia as a dream, if the offer she mentions ever turns into something real.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Moving to Valencia would be hmm, a dream, right, if that offer ever turns into something real."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "44",
+     "content": "Alba's birthday is on May 19.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Note to self: 19 well, May is my birthday, plan something."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45",
+     "content": "Alba took a long stroll around the botanical garden.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Today... a long erm, stroll around the botanical garden."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "46",
+     "content": "Alba's aunt mostly works from home.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "My aunt mostly works from home."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "Quinn Duarte's birthday is on 14 February.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "14 February is my birthday"
+      }
+     ],
+     "subject": "Quinn Duarte",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "48",
+     "content": "Quinn and the speaker met up at the old market hall.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Quinn and I met up at the old market hall yesterday."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "49",
+     "content": "Theo mostly works from home.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "Theo mostly works from home."
+      }
+     ],
+     "subject": "Theo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "50",
+     "content": "A photo was taken on 11 February 2025 at 11:15 at GPS coordinates 45.50796, -73.57939.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "GPS 45.50796, -73.57939, captured 2025-02-11 at 11:15."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-11",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "51",
+     "content": "Quinn's espresso machine has arrived, and Quinn is thrilled with it.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "The espresso machine made it to Quinn; they're thrilled with it."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "52",
+     "content": "Quinn lives in Porto these days.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "They right, live in Porto these right, days."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "53",
+     "content": "Alba started as a new project manager at Kestrel Logistics today.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "Kestrel Logistics has right, a new project manager as er, of today: er, me."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "54",
+     "content": "Alba's landlady is employed by Pellucid Labs.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Pellucid Labs employs my landlady."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55",
+     "content": "Quinn became a new member of the Kiln Lane Chamber Choir this morning.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Quinn — new member of the Kiln Lane Chamber Choir since this morning."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "56",
+     "content": "Alba was diagnosed with a sprained left ankle at Parkview Medical Practice on February 12, 2025; the treatment is physiotherapy twice a week.",
+     "valid_from": "2025-02-12",
+     "valid_to": "2025-02-16",
+     "current": false,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Seen on February 12, 2025: Alba Fischer"
+      },
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Diagnosis — a sprained left ankle"
+      },
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Treatment — physiotherapy twice a week"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "57",
+     "content": "Kenji works at Gullwing Ferries.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Bumped into Kenji; Gullwing Ferries is where they work."
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "58",
+     "content": "Zoe works at Halyard Sailmakers.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "Bumped into Zoe; Halyard Sailmakers is where they work."
+      }
+     ],
+     "subject": "Zoe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "59",
+     "content": "Dev Duarte said on February 12, 2025 that all was good with them in Ghent.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "Here in Ghent, all good."
+      }
+     ],
+     "subject": "Dev Duarte",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "60",
+     "content": "Alba had lunch with Zoe and her godfather.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Lunch today: Zoe came, and so did my godfather."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-13",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "61",
+     "content": "Alba did not sign up for the marathon and will not run one this year.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "No marathon for me this year: I did not sign up in the end."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "62",
+     "content": "Marco is working at Mistral Joinery these days.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Marco — at Mistral Joinery these days."
+      }
+     ],
+     "subject": "Marco",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "63",
+     "content": "Alba's sprained left ankle is behind her.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Today, the sprained left ankle is behind me."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    },
+    {
+     "id": "64",
+     "content": "Dev told Alba that their bike was stolen outside the station.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Outside the station, Dev said, their bike got stolen."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my sister",
+     "name": "Quinn",
+     "tier": "proven"
+    },
+    {
+     "alias": "My brother",
+     "name": "Dev",
+     "tier": "proven"
+    }
+   ]
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1020 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Kiwi",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "Data analyst",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Nori",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "19 May 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "27 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "14 February",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Kestrel Logistics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "German",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "8 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "12 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "12 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "4 days (address on 8 February 2025, job on 12 February 2025)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "Gothenburg",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "52:18",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "At the hilltop viewpoint",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "At the riverside park.",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "At the old market hall",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "Quinn",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "Kiln Lane Chamber Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "Kestrel Logistics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "Not before 3 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "No later than 12 February 2025.",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

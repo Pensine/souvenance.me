@@ -1,0 +1,3015 @@
+{
+ "system": {
+  "name": "mem0",
+  "mem0ai": "2.2.1",
+  "llm": "claude-cli:claude-sonnet-5-5",
+  "embedder": "nomic-ai/nomic-embed-text-v1.5",
+  "store": "qdrant local",
+  "top_k": 10,
+  "failed_adds": 0
+ },
+ "track": "T",
+ "data": "sample",
+ "seconds": 613.8,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "00d630a8-d885-48e2-ae4a-612f590462fd",
+     "content": "Kofi Achebe has worked as a backend engineer at Northwind Analytics since December 2021",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "043282c8-adfc-4460-b156-123ee24eda2e",
+     "content": "Kofi Achebe had dinner with their best friend Kasper on the evening of February 3, 2025, and the two talked for hours",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0603882b-9bd4-4adf-91af-890f64295f2e",
+     "content": "Kofi Achebe noted on February 9, 2025 that the neighbours were playing music again, a repeat of the same complaint noted on February 4, 7 and 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "08c3b0fc-0e03-4f76-9a1f-cfe99d2b4779",
+     "content": "Kofi Achebe had coffee with Hollis at the botanical garden on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "08c52505-cb17-4687-afa8-6674d8c7db26",
+     "content": "Oskar Lindqvist told Kofi Achebe in a voice message on February 6, 2025 that things are going so well for him in Montreal",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0a9d78be-3fdc-4b41-b6fb-92a12e965453",
+     "content": "Kofi Achebe noted on February 5, 2025 that they had a long call with Priya, whom they describe as 'my brother', on the evening of that day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12afb4a3-2044-4c96-b529-c90fe3116989",
+     "content": "Kofi Achebe noted on February 9, 2025 that Oskar Lindqvist asked about Kofi's best friend, who works at Marrowgate Press",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1730ca50-fd67-4317-afa5-65116c46a9dc",
+     "content": "Kofi Achebe's godfather works at Gullwing Ferries, as noted on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "198a29d4-c226-4b2a-a13f-776b9d4cb551",
+     "content": "Kofi Achebe has been living at 51 Orchard Close in Ghent since December 2022, as noted on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19bf0503-3fc6-4b68-84af-fb384556bb21",
+     "content": "Kofi Achebe noted on February 5, 2025 that they made soup with whatever was left in the fridge",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19d0dbae-2ce0-46fa-9ba5-1c961aba985f",
+     "content": "Kofi Achebe had a visit at Riverside Medical Practice on February 7, 2025, where the assessment was a bad chest cold and the plan was rest and fluids, with follow-up if symptoms persist",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1bf8533e-0e66-47b1-8020-65862feb31fe",
+     "content": "Kofi Achebe took a photo on February 4, 2025 at 12:41 at GPS coordinates 51.05540, 3.70413",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1e97b1cb-a29c-48fa-82be-c3ebdd836b0b",
+     "content": "Kofi Achebe practised Arabic with a podcast on the way home on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1f3ee8a5-9f2f-45b0-b927-b1dee9981fcd",
+     "content": "Kofi Achebe noted on February 8, 2025 that Oskar Lindqvist is still waiting for his standing desk, which had not been delivered yet",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21df6375-37d2-4d10-a61b-e67642b45be0",
+     "content": "Kofi Achebe's aunt works from home most days, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24b6a100-4a77-44fb-8a8a-51c8d0a4c325",
+     "content": "Kofi Achebe has a bad chest cold as of February 7, 2025 and plans to rest and drink fluids",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26e12a71-1f88-4dcd-bec5-ba0850d0b695",
+     "content": "Kofi Achebe noted on February 9, 2025 that they are trying to go to bed earlier this week",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26e94214-2eea-4323-aa16-c8c93b626347",
+     "content": "Kofi Achebe took a photo on February 3, 2025 at 17:11 at GPS coordinates 51.04428, 3.70178",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29a0cd94-3698-4e8d-adfb-2c6e75fe434e",
+     "content": "Kofi Achebe noted on February 7, 2025 that the neighbours were playing music again, a repeat of the same complaint noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30d6674c-b9eb-4229-8a82-cfe92c211311",
+     "content": "Kofi Achebe watered the plants on their balcony on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "415e6fd5-3362-4a1c-9e03-316d02a496a5",
+     "content": "Kofi Achebe's birthday is on 1 May, and on February 9, 2025 they noted a reminder to plan something for it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "41ab36ab-70dd-41d6-85d0-c91ff4b3313c",
+     "content": "Kofi Achebe took a photo on February 3, 2025 at 16:26 at GPS coordinates 51.05710, 3.70539",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45725e7d-5386-4712-9ce3-2d6b17bfed81",
+     "content": "Kofi Achebe is considering learning to sail in the summer of 2025 but is undecided, noting 'we'll see' on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45d062f1-f990-4cdc-ad24-39a34ae76178",
+     "content": "Kofi Achebe heard on February 7, 2025 that Oskar Lindqvist's company might be shutting down",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4cab946e-8bdc-42dc-8a34-6ac061947494",
+     "content": "Kofi Achebe did not sign up for the marathon in 2025, as stated in a message to Oskar Lindqvist on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4d6272c7-cb02-46ae-9b22-c70f3d280ab0",
+     "content": "Kofi Achebe noted on February 8, 2025 that the neighbours were playing music again, a repeat of the same complaint noted on February 4 and February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4ee4316a-9469-4043-a115-61d57480240b",
+     "content": "Kofi Achebe's godfather lives in Leipzig now, as noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "57ca839a-752b-4d5e-98ca-dda74237b49f",
+     "content": "Kofi Achebe described February 6, 2025 as a long day, but a good one",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "59e3b032-7932-4bc2-87e2-60c6cb8f4b35",
+     "content": "Kofi Achebe had coffee with Oskar Lindqvist at the harbour footpath on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "672a72db-9c89-49a6-bcf5-704d648556d3",
+     "content": "Kofi Achebe watered the plants on their balcony on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "68be2f56-0e50-49a4-9e3c-31cd376d6484",
+     "content": "Kofi Achebe noted on February 5, 2025 that Dina lives in Leipzig, near the harbour",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "70142f4a-bd3c-4131-b1fe-93e83e1b2684",
+     "content": "Kofi Achebe grew up in Bristol and sometimes misses it, as noted on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7317593a-2140-4a4b-8673-f66b0afb98ef",
+     "content": "Priya Sorensen told Kofi Achebe in a voice message on February 4, 2025 that she misses Kofi",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "826eed9e-3788-464b-98e0-a59826192b32",
+     "content": "Kofi Achebe noted again on February 5, 2025 that they need to buy coffee filters, repeating the same reminder from February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "89167594-968a-4013-922e-df72e75a729d",
+     "content": "Hollis Petrov told Kofi Achebe in a voice message on February 9, 2025 that things are good for Hollis in Montreal and that Hollis misses Kofi",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "98d58f38-ddff-4fc3-ab2d-fafd07e1c42d",
+     "content": "Kofi Achebe noted on February 3, 2025 that they are still waiting for their espresso machine, which had not arrived yet",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9c495f6d-77da-47ca-944c-78e53d383975",
+     "content": "Kofi Achebe noted on February 8, 2025 that he ran into Dina, who works at Mistral Joinery",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a29a7b69-d6f4-4c62-86c5-03df5d164ead",
+     "content": "Kofi Achebe is trying to go to bed earlier during the week of February 3-9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a3485ac5-e671-438a-ad26-b9f0c4529f23",
+     "content": "Kofi Achebe made soup on February 4, 2025 using whatever was left in the fridge",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a3e59dd1-42af-46d5-ae94-3710c7a2a7ee",
+     "content": "Kofi Achebe noted on February 5, 2025 that Elias lives in Valencia, near the harbour",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a4f228b8-e361-4592-bed9-797daadc0173",
+     "content": "Kofi Achebe watered the plants on their balcony on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b62add69-a5c9-4e8c-8da6-c8480c4dca26",
+     "content": "Kofi Achebe noted on February 3, 2025 that they are trying to go to bed earlier during the week of February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "baeb6a76-5df7-4cea-9232-c47874130e04",
+     "content": "Kofi Achebe's aunt lives in Valencia now, as noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "beb5d053-2ac3-4a25-891d-71144b2d259a",
+     "content": "Priya Sorensen works as an operations manager and said in a voice message to Kofi Achebe on February 4, 2025 that work is busy and the job is never boring",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c64f450a-6325-45bf-b714-eb90b2622186",
+     "content": "Kofi Achebe noted on February 8, 2025 that Silas lives in Porto, near the harbour",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cc86d9f8-bc26-44fb-8aa6-bf73bdedd75a",
+     "content": "Kofi Achebe watered the plants on their balcony on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e0b9ca64-2fa0-488c-bb03-aadef8033599",
+     "content": "Kofi Achebe noted on February 3, 2025 that they need to buy coffee filters",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e2f25763-2b37-42a7-b762-e95411881752",
+     "content": "Kofi Achebe's uncle lives in Porto now, as noted on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ec0033af-d195-4ff4-b257-7fd1c122c845",
+     "content": "Kofi Achebe walked around the botanical garden on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ef35ae1c-1868-4811-92a4-706ffcfa39c2",
+     "content": "Kofi Achebe noted that the weather was grey all morning on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f55e8912-401b-4806-a153-3c1822fef1d0",
+     "content": "Kofi Achebe noted on February 6, 2025 that Priya joined the Beacon Hill Choir that day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f7206bca-ddda-4391-a2d4-22886aa1f45d",
+     "content": "Kofi Achebe noted on February 4, 2025 that the neighbours were playing music again",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f9aa842d-2168-4c98-bd21-18ebc08281c2",
+     "content": "Kofi Achebe described February 5, 2025 as a long day, but a good one",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ff5f8bc7-046a-4d3c-8092-fafeee1fb030",
+     "content": "Kofi Achebe's uncle works at Pellucid Labs, as noted on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "00d630a8-d885-48e2-ae4a-612f590462fd",
+     "content": "Kofi Achebe has worked as a backend engineer at Northwind Analytics since December 2021",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "043282c8-adfc-4460-b156-123ee24eda2e",
+     "content": "Kofi Achebe had dinner with their best friend Kasper on the evening of February 3, 2025, and the two talked for hours",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0603882b-9bd4-4adf-91af-890f64295f2e",
+     "content": "Kofi Achebe noted on February 9, 2025 that the neighbours were playing music again, a repeat of the same complaint noted on February 4, 7 and 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "08c3b0fc-0e03-4f76-9a1f-cfe99d2b4779",
+     "content": "Kofi Achebe had coffee with Hollis at the botanical garden on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "08c52505-cb17-4687-afa8-6674d8c7db26",
+     "content": "Oskar Lindqvist told Kofi Achebe in a voice message on February 6, 2025 that things are going so well for him in Montreal",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0a9d78be-3fdc-4b41-b6fb-92a12e965453",
+     "content": "Kofi Achebe noted on February 5, 2025 that they had a long call with Priya, whom they describe as 'my brother', on the evening of that day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0c51876f-cada-46ab-bf30-74e83ee9d3e9",
+     "content": "Kofi Achebe keeps thinking about adopting a dog, possibly in 2026 (noted February 14, 2025)",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0ccd6281-74be-4575-b803-add1ab69c76f",
+     "content": "Kofi Achebe had a dentist appointment on February 13, 2025, and noted that everything was fine",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0eb4e548-fa6d-4f77-88c5-ba89421834f8",
+     "content": "Oskar Lindqvist told Kofi Achebe in a voice message on February 11, 2025 that things are good for him in Montreal, and asked Kofi to call him over the weekend of February 15-16, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11d8b138-36a3-45cf-b8f6-9a3bc3b0b31c",
+     "content": "Kofi Achebe said on February 10, 2025 that if the Turin offer ever comes through, they would move to Turin in a heartbeat",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12afb4a3-2044-4c96-b529-c90fe3116989",
+     "content": "Kofi Achebe noted on February 9, 2025 that Oskar Lindqvist asked about Kofi's best friend, who works at Marrowgate Press",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13d39c9d-a910-4730-9943-11cc47dd6783",
+     "content": "Kofi Achebe had an appointment with their bank adviser on February 16, 2025 and told Priya Sorensen that everything was fine",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1411f940-2890-4198-ab14-5771d50849f6",
+     "content": "Kofi Achebe is allergic to sesame and had to send a dish back on February 12, 2025 because of it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1730ca50-fd67-4317-afa5-65116c46a9dc",
+     "content": "Kofi Achebe's godfather works at Gullwing Ferries, as noted on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "198a29d4-c226-4b2a-a13f-776b9d4cb551",
+     "content": "Kofi Achebe has been living at 51 Orchard Close in Ghent since December 2022, as noted on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19bf0503-3fc6-4b68-84af-fb384556bb21",
+     "content": "Kofi Achebe noted on February 5, 2025 that they made soup with whatever was left in the fridge",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19d0dbae-2ce0-46fa-9ba5-1c961aba985f",
+     "content": "Kofi Achebe had a visit at Riverside Medical Practice on February 7, 2025, where the assessment was a bad chest cold and the plan was rest and fluids, with follow-up if symptoms persist",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1bf8533e-0e66-47b1-8020-65862feb31fe",
+     "content": "Kofi Achebe took a photo on February 4, 2025 at 12:41 at GPS coordinates 51.05540, 3.70413",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1e97b1cb-a29c-48fa-82be-c3ebdd836b0b",
+     "content": "Kofi Achebe practised Arabic with a podcast on the way home on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1f3ee8a5-9f2f-45b0-b927-b1dee9981fcd",
+     "content": "Kofi Achebe noted on February 8, 2025 that Oskar Lindqvist is still waiting for his standing desk, which had not been delivered yet",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21df6375-37d2-4d10-a61b-e67642b45be0",
+     "content": "Kofi Achebe's aunt works from home most days, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24b6a100-4a77-44fb-8a8a-51c8d0a4c325",
+     "content": "Kofi Achebe has a bad chest cold as of February 7, 2025 and plans to rest and drink fluids",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "260c1729-27b3-4822-9360-95a30b1bc1d5",
+     "content": "Kofi Achebe noted in a message to Priya Sorensen on February 11, 2025 that Oskar Lindqvist already has the standing desk and that it looks great",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26e12a71-1f88-4dcd-bec5-ba0850d0b695",
+     "content": "Kofi Achebe noted on February 9, 2025 that they are trying to go to bed earlier this week",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26e94214-2eea-4323-aa16-c8c93b626347",
+     "content": "Kofi Achebe took a photo on February 3, 2025 at 17:11 at GPS coordinates 51.04428, 3.70178",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29a0cd94-3698-4e8d-adfb-2c6e75fe434e",
+     "content": "Kofi Achebe noted on February 7, 2025 that the neighbours were playing music again, a repeat of the same complaint noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2adc344a-0e41-4c89-97b8-fe4a5591bb91",
+     "content": "Kofi Achebe noted on February 11, 2025 that they made soup with whatever was left in the fridge",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30854934-6bef-460d-b805-ba976256b62d",
+     "content": "Kofi Achebe told Priya Sorensen in a message on February 12, 2025 that they had fully recovered and no longer needed rest, after the bad chest cold assessed on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30a67cd3-393d-4209-a873-72949c5d5a36",
+     "content": "Kofi Achebe noted on February 14, 2025 that they are trying to go to bed earlier during the week of February 10-16, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30d6674c-b9eb-4229-8a82-cfe92c211311",
+     "content": "Kofi Achebe watered the plants on their balcony on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35948b16-db65-448e-9d27-a0a3e314ff60",
+     "content": "Kofi Achebe noted on February 10, 2025 that Hollis Petrov said their bike got stolen outside the station",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36772898-8618-4074-bc73-dc8d658c70ac",
+     "content": "Kofi Achebe noted again on February 12, 2025 that they need to buy coffee filters, repeating the same reminder from February 3, February 5, and February 11, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3e22aa0b-b023-452b-8534-aa3ca8be431c",
+     "content": "Kofi Achebe took a photo on February 12, 2025 at 12:02 at GPS coordinates 51.06624, 3.72928",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "415e6fd5-3362-4a1c-9e03-316d02a496a5",
+     "content": "Kofi Achebe's birthday is on 1 May, and on February 9, 2025 they noted a reminder to plan something for it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "41ab36ab-70dd-41d6-85d0-c91ff4b3313c",
+     "content": "Kofi Achebe took a photo on February 3, 2025 at 16:26 at GPS coordinates 51.05710, 3.70539",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45725e7d-5386-4712-9ce3-2d6b17bfed81",
+     "content": "Kofi Achebe is considering learning to sail in the summer of 2025 but is undecided, noting 'we'll see' on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45d062f1-f990-4cdc-ad24-39a34ae76178",
+     "content": "Kofi Achebe heard on February 7, 2025 that Oskar Lindqvist's company might be shutting down",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47c1d7bb-27ec-4ea1-a9f1-e8b5be136c9d",
+     "content": "Priya Sorensen told Kofi Achebe in a voice message on February 11, 2025 that things are good for her in Rotterdam",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4cab946e-8bdc-42dc-8a34-6ac061947494",
+     "content": "Kofi Achebe did not sign up for the marathon in 2025, as stated in a message to Oskar Lindqvist on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4d6272c7-cb02-46ae-9b22-c70f3d280ab0",
+     "content": "Kofi Achebe noted on February 8, 2025 that the neighbours were playing music again, a repeat of the same complaint noted on February 4 and February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4ee4316a-9469-4043-a115-61d57480240b",
+     "content": "Kofi Achebe's godfather lives in Leipzig now, as noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "527c6a82-b097-48d0-a9fa-d28e61f13a01",
+     "content": "Kofi Achebe noted again on February 11, 2025 that they need to buy coffee filters, repeating the same reminder from February 3 and February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5301495d-2c05-416b-a55b-51c5717f6976",
+     "content": "Kofi Achebe received an offer of employment from Silverfern Energy for the position of research assistant, with a start date of 15 February 2025, in a document recorded on February 12, 2025. The letter asks Kofi to sign and return a copy.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5552279e-a22b-4ffb-8572-ec5f1e11e10b",
+     "content": "Kofi Achebe noted on February 11, 2025 that Pablo lives in Bordeaux, near the harbour",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "56d89d84-820a-411f-948a-c6b42e7f99f8",
+     "content": "Kofi Achebe told Priya Sorensen in a message on February 16, 2025 that they made soup with whatever was left in the fridge",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "57ca839a-752b-4d5e-98ca-dda74237b49f",
+     "content": "Kofi Achebe described February 6, 2025 as a long day, but a good one",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "59e3b032-7932-4bc2-87e2-60c6cb8f4b35",
+     "content": "Kofi Achebe had coffee with Oskar Lindqvist at the harbour footpath on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "607c8957-e49c-45b1-a108-4cd272b0252c",
+     "content": "Kofi Achebe noted on February 12, 2025 that the espresso machine has now arrived and they use it every day, after still waiting for it as of February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "62ea062b-5d29-4eb8-bfb9-af2377f29d81",
+     "content": "Kofi Achebe noted on February 15, 2025 that he ran into Silas, who works at Pellucid Labs",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "672a72db-9c89-49a6-bcf5-704d648556d3",
+     "content": "Kofi Achebe watered the plants on their balcony on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "68be2f56-0e50-49a4-9e3c-31cd376d6484",
+     "content": "Kofi Achebe noted on February 5, 2025 that Dina lives in Leipzig, near the harbour",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6c32d455-028e-4c13-8177-1550f68fb1cc",
+     "content": "Kofi Achebe started reading a new book around February 12, 2025 and finds it slow so far",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6cfa5a7d-c106-4c34-9b1c-34235e886310",
+     "content": "Kofi Achebe had lunch with their landlady and Pablo on February 14, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6ff0d1fd-6c34-4c0c-a7ac-dda1588b812b",
+     "content": "Hollis Petrov works as a sales lead and told Kofi Achebe in a message on February 11, 2025 that work is busy and the job is never boring",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "70142f4a-bd3c-4131-b1fe-93e83e1b2684",
+     "content": "Kofi Achebe grew up in Bristol and sometimes misses it, as noted on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7317593a-2140-4a4b-8673-f66b0afb98ef",
+     "content": "Priya Sorensen told Kofi Achebe in a voice message on February 4, 2025 that she misses Kofi",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7d6809a1-a1e5-4cae-8b12-a168d9322db7",
+     "content": "Kofi Achebe paid the rent of 680 EUR, as noted on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "81d45258-9fc0-45c1-8731-5ecfaf87ff87",
+     "content": "The monthly rent for Kofi Achebe's lease at 79 Linden Street, Ghent is 1340 EUR, and the tenant agrees to keep the premises in good order, per the lease agreement recorded on February 15, 2025.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "826eed9e-3788-464b-98e0-a59826192b32",
+     "content": "Kofi Achebe noted again on February 5, 2025 that they need to buy coffee filters, repeating the same reminder from February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "843998d3-9e12-44e4-bf3c-67a6125a77a0",
+     "content": "Kofi Achebe noted in a message to Priya Sorensen that the weather was grey all morning on February 11, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "86047fc3-e15a-442a-a808-88858e3d766e",
+     "content": "Kofi Achebe walked around the hilltop viewpoint on February 11, 2025, as mentioned in a message to Kasper Varga",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "89167594-968a-4013-922e-df72e75a729d",
+     "content": "Hollis Petrov told Kofi Achebe in a voice message on February 9, 2025 that things are good for Hollis in Montreal and that Hollis misses Kofi",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "98d58f38-ddff-4fc3-ab2d-fafd07e1c42d",
+     "content": "Kofi Achebe noted on February 3, 2025 that they are still waiting for their espresso machine, which had not arrived yet",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9c495f6d-77da-47ca-944c-78e53d383975",
+     "content": "Kofi Achebe noted on February 8, 2025 that he ran into Dina, who works at Mistral Joinery",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a29a7b69-d6f4-4c62-86c5-03df5d164ead",
+     "content": "Kofi Achebe is trying to go to bed earlier during the week of February 3-9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a3485ac5-e671-438a-ad26-b9f0c4529f23",
+     "content": "Kofi Achebe made soup on February 4, 2025 using whatever was left in the fridge",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a3e59dd1-42af-46d5-ae94-3710c7a2a7ee",
+     "content": "Kofi Achebe noted on February 5, 2025 that Elias lives in Valencia, near the harbour",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a42bda56-2355-4555-9105-9c28337f3282",
+     "content": "Kofi Achebe told Priya Sorensen in a message on February 12, 2025 that they made soup with whatever was left in the fridge",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a4f228b8-e361-4592-bed9-797daadc0173",
+     "content": "Kofi Achebe watered the plants on their balcony on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "aa33061e-5443-4b77-8cac-09e74ef75213",
+     "content": "Kofi Achebe noted on February 14, 2025 that Elias works from home most days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ada09807-cddb-40ea-83fb-1a2b14392266",
+     "content": "Hollis Petrov told Kofi Achebe in a voice message on February 14, 2025 that work is busy as a sales lead, that the job is never boring, and that Hollis misses Kofi",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ae5779f7-fe04-4c21-9411-564bb30df6e1",
+     "content": "Kofi Achebe took a photo on February 11, 2025 at 11:40 at GPS coordinates 51.04755, 3.72139",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b060f0ef-64e7-44ac-83e4-adf043e1b57e",
+     "content": "Kofi Achebe had an appointment with their bank adviser on February 11, 2025, and noted that everything was fine",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b23612bc-e78c-4ae8-be46-7a2df4cd0f27",
+     "content": "Kofi Achebe noted on February 10, 2025 that Kasper joined the Saltmarsh Community Choir that day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b5211c7e-d8c1-4c2c-a51f-1b3af6bf4999",
+     "content": "Kofi Achebe noted on February 13, 2025 that Pablo, whom he ran into, works at Oxbow Bindery",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b62add69-a5c9-4e8c-8da6-c8480c4dca26",
+     "content": "Kofi Achebe noted on February 3, 2025 that they are trying to go to bed earlier during the week of February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "baeb6a76-5df7-4cea-9232-c47874130e04",
+     "content": "Kofi Achebe's aunt lives in Valencia now, as noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bb10b0ab-8d7f-4d7a-8109-a888262220d7",
+     "content": "Kofi Achebe noted on February 14, 2025 that they made soup with whatever was left in the fridge",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bc269a72-8dc3-4cfa-8170-17ed87007f5b",
+     "content": "Kofi Achebe's best friend Kasper lives in Edinburgh these days, as noted on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bd58602c-5e9d-44ff-b7c8-be935e0f0b01",
+     "content": "Kofi Achebe watered the plants on their balcony on February 13, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "beb5d053-2ac3-4a25-891d-71144b2d259a",
+     "content": "Priya Sorensen works as an operations manager and said in a voice message to Kofi Achebe on February 4, 2025 that work is busy and the job is never boring",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c418174d-8c22-4d6e-9530-81e88bceed84",
+     "content": "Kofi Achebe got the keys to his new place at 79 Linden Street, Ghent on February 15, 2025, after living at 51 Orchard Close in Ghent since December 2022",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c64f450a-6325-45bf-b714-eb90b2622186",
+     "content": "Kofi Achebe noted on February 8, 2025 that Silas lives in Porto, near the harbour",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c8f2b651-9fc1-4252-9ac0-f8871f0963f6",
+     "content": "Kofi Achebe walked around the riverside park on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c96a3145-adf1-4af8-9515-45382b7b9267",
+     "content": "Kofi Achebe took a photo on February 14, 2025 at 08:49 at GPS coordinates 45.75081, 4.83579",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cc86d9f8-bc26-44fb-8aa6-bf73bdedd75a",
+     "content": "Kofi Achebe watered the plants on their balcony on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cfb51d98-d271-422f-b6f8-fafd7397ad97",
+     "content": "Priya Sorensen asked Kofi Achebe in a voice message on February 11, 2025 to call her over the weekend of February 15-16, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d6b5e9d8-2280-4a2b-a6ee-af6fb52909b0",
+     "content": "Kofi Achebe has a residential lease agreement with landlord Rowan Property Lettings for 79 Linden Street, Ghent, starting 15 February 2025, recorded in a document on February 15, 2025. The lease was signed by both parties.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "daaf50a5-b47c-4f38-b841-1c5dda878bc5",
+     "content": "Kofi Achebe's landlady works at Oxbow Bindery, as noted on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "df130211-da66-4185-aada-3c042597cf65",
+     "content": "Kofi Achebe noted on February 12, 2025 that the neighbours were playing music again, a repeat of the same complaint noted on February 4, 7, 8 and 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e0b9ca64-2fa0-488c-bb03-aadef8033599",
+     "content": "Kofi Achebe noted on February 3, 2025 that they need to buy coffee filters",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e0fd137a-2c31-456c-990e-b3f6e3004b5f",
+     "content": "Kofi Achebe noted on February 13, 2025 that the train was a few minutes late",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e2f25763-2b37-42a7-b762-e95411881752",
+     "content": "Kofi Achebe's uncle lives in Porto now, as noted on February 5, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e528cb72-c2d2-4ca3-85ec-bd7267cc9e6f",
+     "content": "Kofi Achebe noted again on February 14, 2025 that they need to buy coffee filters, repeating the same reminder from February 3, February 5, February 11, and February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e84eb491-cd0e-41d6-a27d-f982e9fa047d",
+     "content": "Kofi Achebe took a photo on February 16, 2025 at 17:22 at GPS coordinates 51.05485, 3.73550",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ea16a793-a61f-4eb3-9e49-4f1463d5f6b7",
+     "content": "Kofi Achebe accepted the research assistant job at Silverfern Energy on February 12, 2025, with a start date of 15 February 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "eb8c39f6-7762-4870-bbd9-48906ecf15db",
+     "content": "Kofi Achebe noted on February 11, 2025 that he told Kasper his brother works at Larkspur Ceramics",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ec0033af-d195-4ff4-b257-7fd1c122c845",
+     "content": "Kofi Achebe walked around the botanical garden on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ee1a9bc3-a4aa-4f41-ae3a-2e512921945f",
+     "content": "Kofi Achebe met Oskar Lindqvist at the harbour footpath on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ef35ae1c-1868-4811-92a4-706ffcfa39c2",
+     "content": "Kofi Achebe noted that the weather was grey all morning on February 8, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f3349728-561b-4383-929c-032582f1add2",
+     "content": "Kofi Achebe noted that the weather was grey all morning on February 15, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f3b87dc2-695a-4c24-a8c9-5b8af63eb04b",
+     "content": "Kofi Achebe's first day as research assistant at Silverfern Energy was February 15, 2025, as they told Priya Sorensen in a message on February 16, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f55e8912-401b-4806-a153-3c1822fef1d0",
+     "content": "Kofi Achebe noted on February 6, 2025 that Priya joined the Beacon Hill Choir that day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f7206bca-ddda-4391-a2d4-22886aa1f45d",
+     "content": "Kofi Achebe noted on February 4, 2025 that the neighbours were playing music again",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f9aa842d-2168-4c98-bd21-18ebc08281c2",
+     "content": "Kofi Achebe described February 5, 2025 as a long day, but a good one",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fb60cf1b-100d-4116-a46c-b5b71f8b05bd",
+     "content": "Hollis Petrov asked Kofi Achebe in a message on February 11, 2025 to call them over the weekend of February 15-16, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ff5f8bc7-046a-4d3c-8092-fafeee1fb030",
+     "content": "Kofi Achebe's uncle works at Pellucid Labs, as noted on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ffe5a8a9-3996-47d7-8600-0b8c6884f326",
+     "content": "Kofi Achebe noted on February 10, 2025 that they finally cleaned the kitchen properly",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1340 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Edinburgh",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "Sales lead",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Sesame",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "Operations manager",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "1 May",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "Bristol",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Arabic",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "1340 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "15 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "15 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "7 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "5 days",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Lyon",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "13 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "The botanical garden",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "The harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "The harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "Saltmarsh Community Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "Beacon Hill Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "Silverfern Energy",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "12 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "Between 8 and 11 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

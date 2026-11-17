@@ -1,0 +1,3390 @@
+{
+ "system": {
+  "name": "graphiti",
+  "graphiti-core": "0.31.2",
+  "kuzu": "0.11.3",
+  "llm": "claude-cli:claude-sonnet-5-5",
+  "embedder": "nomic-ai/nomic-embed-text-v1.5",
+  "store": "kuzu local",
+  "search": "default hybrid RRF, no reranker",
+  "top_k": 10,
+  "concurrency": 4,
+  "failed_episodes": 0,
+  "episode_errors": []
+ },
+ "track": "T",
+ "data": "sample-dev3",
+ "seconds": 1720.4,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "eb541495-b2e5-4836-bf4a-2a87cd494a3f",
+     "content": "Vera Novak is in Bristol and says things are good there.",
+     "valid_from": "2025-02-09T20:17:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ea2d2adc-997f-4bc5-b112-267c7db3287d",
+     "content": "Anton Kowalski is considering learning to sail this summer, but is undecided.",
+     "valid_from": "2025-02-06T17:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e20aecc3-a9e4-419e-bdbe-2534350ab3d9",
+     "content": "Anton Kowalski's sister is named Maya.",
+     "valid_from": "2025-02-04T17:54:00",
+     "valid_to": "2025-02-05T19:48:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's sister",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e0455fcd-f645-401e-b4f5-b451dff72b92",
+     "content": "Vera Novak passed her driving test on 2025-02-05.",
+     "valid_from": "2025-02-05T14:54:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dec73183-a8ef-4ea1-8441-5ecf775be2bc",
+     "content": "Anton Kowalski had a long call with Gideon this evening; Anton describes Gideon as his sister from the old flat.",
+     "valid_from": "2025-02-05T17:21:00",
+     "valid_to": "2025-02-05T19:48:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dcf1876b-c800-4197-a751-408d5fa16139",
+     "content": "Anton Kowalski picked up Greta from the station.",
+     "valid_from": "2025-02-06T15:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d7db9b3b-bd33-49da-8862-baa7a9b4233d",
+     "content": "Maya asked Anton Kowalski about his manager.",
+     "valid_from": "2025-02-05T15:09:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d6c580b3-a59a-448c-a5d8-1d8244591b06",
+     "content": "Anton Kowalski had a long call with Vera on the evening of 2025-02-05.",
+     "valid_from": "2025-02-05T14:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d1a025eb-1d35-49b2-a1ea-c5501720af38",
+     "content": "Anton Kowalski's treatment plan from Northgate Medical Practice is physiotherapy twice a week for the sprained left ankle.",
+     "valid_from": "2025-02-05T11:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cea21788-8450-4c97-a122-85747a1a100d",
+     "content": "Anton Kowalski's uncle lives in Edinburgh now.",
+     "valid_from": "2025-02-09T17:40:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ce2ba9c1-9ecd-4b8d-9aa8-9be771396b99",
+     "content": "Vera has not received the sewing machine yet and is still waiting for it.",
+     "valid_from": "2025-02-08T08:14:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ca75ca1f-295b-4b7b-88d7-8dbdd36a718b",
+     "content": "Maya joined the Harbour Gospel Choir on 2025-02-08.",
+     "valid_from": "2025-02-08T20:08:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c7ee2c84-8648-480d-89a2-c89c170bc286",
+     "content": "Greta Petrov owns a dog named Otis.",
+     "valid_from": "2025-02-04T17:49:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c48ce502-1c42-4301-8378-3bbc265c9b1b",
+     "content": "Anton Kowalski was at the city library on 2025-02-05, where he met his sister Vera.",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b214d88c-7518-448c-8cf1-afbc69848da8",
+     "content": "Anton Kowalski says they would move to Edinburgh in a heartbeat if the Edinburgh offer ever comes through.",
+     "valid_from": "2025-02-03T08:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b109b58f-4cdd-4136-ac8f-0bfe92c97a93",
+     "content": "Physiotherapy twice a week is the planned treatment for the sprained left ankle.",
+     "valid_from": "2025-02-05T11:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "physiotherapy",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ae523bf0-0d7c-45b7-bfbe-f655897a9036",
+     "content": "Greta Petrov's dog Otis woke Greta Petrov up at six o'clock again, as it has done before.",
+     "valid_from": "2025-02-04T17:49:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta Petrov's dog Otis",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ae169071-8494-49cb-8b3a-9d41fcdcda4b",
+     "content": "Anton Kowalski's aunt lives in Lyon now.",
+     "valid_from": "2025-02-05T21:45:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a8d99a00-b897-4ea2-8f3b-a24b172360bb",
+     "content": "Anton Kowalski works at Northwind Analytics, where he had a busy week doing the usual sales lead work.",
+     "valid_from": "2025-02-08T14:13:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9a9b5e74-e005-4175-959b-0a18d88d2c77",
+     "content": "Greta is Anton Kowalski's brother from the old flat.",
+     "valid_from": "2025-02-06T15:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "95fe4ada-022a-46ff-862b-0270c8962299",
+     "content": "Joaquin is still waiting for the standing desk, which has not been delivered yet.",
+     "valid_from": "2025-02-05T07:38:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7c0b16a3-c797-4f11-941b-2a1d7aa1ca7d",
+     "content": "Anton Kowalski had a long call with Alba, who is Anton Kowalski's colleague, on the evening of 2025-02-06.",
+     "valid_from": "2025-02-06T09:33:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7b3b74ce-f028-4ab6-89ba-d015c7f35518",
+     "content": "Joaquin is Anton Kowalski's manager.",
+     "valid_from": "2025-02-04T11:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7b173c18-a9e0-4b47-91c6-087105b21d22",
+     "content": "Cormac asked Anton Kowalski about his sister from the summer course, who works at Thistledown Instruments.",
+     "valid_from": "2025-02-09T08:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Cormac",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "79a59f3b-abba-454b-81f9-ca2d27c1eaff",
+     "content": "Alba is a colleague of Anton Kowalski.",
+     "valid_from": "2025-02-06T09:33:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "77c75142-e78f-475f-8acd-accf87fadf9b",
+     "content": "Anton Kowalski has already set up the telescope at home.",
+     "valid_from": "2025-02-09T07:28:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "761f94dc-7d3f-44a0-89e4-d08e2a3067fa",
+     "content": "Clara lives in Lyon, near the harbour.",
+     "valid_from": "2025-02-08T13:38:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Clara",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7160f463-5f76-4d04-95a7-f1993ef5eb17",
+     "content": "Northgate Medical Practice saw patient Anton Kowalski at a visit on 5 February 2025.",
+     "valid_from": "2025-02-05T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Northgate Medical Practice",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "705c0096-78ba-4678-8aa0-6a148a84c960",
+     "content": "Anton Kowalski's neighbours were playing music again on 2025-02-05.",
+     "valid_from": "2025-02-05T14:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's neighbours",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6c9a887c-73f0-454e-9c4c-31f0fdd5bc78",
+     "content": "Alba is still waiting for the pottery wheel, which has not been delivered yet.",
+     "valid_from": "2025-02-07T18:47:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6c5a8f69-73d4-4c88-8c74-42af21eacbf1",
+     "content": "Greta's bike was stolen outside the station.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "67f9eec0-3c7b-47d8-80c2-c61dd5aaff18",
+     "content": "Anton Kowalski picked up his manager Joaquin from the station.",
+     "valid_from": "2025-02-04T11:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "64b60c61-af93-4046-b4d2-04fee3182111",
+     "content": "Anton Kowalski decided not to sign up for the marathon this year (2025).",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "628751e5-f6be-48d1-bfe7-898c4d6d47e4",
+     "content": "Anton Kowalski's climbing partner lives in Montreal now.",
+     "valid_from": "2025-02-04T22:51:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's climbing partner",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "62613133-dc67-448c-8d7c-257d3a2a6e36",
+     "content": "Greta is still waiting for the espresso machine, which has not been delivered yet.",
+     "valid_from": "2025-02-09T10:01:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "616a81f4-8c26-4052-bf16-81251f8cc91a",
+     "content": "HARBOR & PINE STUDIO offered Anton Kowalski the position of UX researcher, with a start date of 15 February 2025, and asked him to sign and return a copy of the offer letter.",
+     "valid_from": "2025-02-08T14:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "HARBOR & PINE STUDIO",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "606e4ccf-9633-48d2-a3e0-879410c5f99d",
+     "content": "Anton Kowalski picked up his sister Maya from the station.",
+     "valid_from": "2025-02-04T17:54:00",
+     "valid_to": "2025-02-05T19:48:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5a10a7ec-0caf-4fdf-9f8f-d77d166883ea",
+     "content": "Anton Kowalski's sister, who is known from the summer course, works at Thistledown Instruments.",
+     "valid_from": "2025-02-09T08:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's sister",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "58b6af29-6e01-4031-b9f0-3eeec41ca236",
+     "content": "Anton Kowalski has a sister, known from the summer course, who works at Thistledown Instruments.",
+     "valid_from": "2025-02-09T08:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "54d38f1e-0f82-4215-82cb-3f15717ff034",
+     "content": "Anton Kowalski met his sister Vera at the city library on 2025-02-05.",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "549ea204-6499-41be-9113-9ccfb9670d39",
+     "content": "Anton Kowalski is hoping the Edinburgh offer comes through, and would relocate to Edinburgh immediately if it did.",
+     "valid_from": "2025-02-03T08:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4dc62e77-6a29-46fb-b270-87c1b8404c9c",
+     "content": "Anton Kowalski grew up in Ghent and sometimes misses it.",
+     "valid_from": "2025-02-03T13:53:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4b3f3441-022a-4673-9535-43881dda303a",
+     "content": "Vera Novak owns a dog named Otis, who woke her up at six again.",
+     "valid_from": "2025-02-06T19:57:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4aa948c9-a517-4b94-b866-568b5ebb8e83",
+     "content": "Anton Kowalski's colleague works at Larkspur Ceramics.",
+     "valid_from": "2025-02-09T12:03:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's colleague",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42908cc6-4fc4-450f-83fe-e33abb7e47ff",
+     "content": "Anton Kowalski's manager works at Brackenridge Seeds.",
+     "valid_from": "2025-02-05T15:09:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's manager",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42088137-224d-4806-8f7e-5e4e00afcb4d",
+     "content": "49 Kiln Lane is an address in Rotterdam.",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "49 Kiln Lane",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "325261ec-fdd2-473f-ba07-446c7d211b1d",
+     "content": "Vera is from the running club, which Anton Kowalski describes as where his sister Vera is from.",
+     "valid_from": "2025-02-05T14:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2e5a44d8-f5ab-4609-bbb9-dacf0eace6a2",
+     "content": "Vera is the sister of Anton Kowalski.",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2bd0d879-ea4b-4151-b129-3e6e32266065",
+     "content": "Vera is Anton Kowalski's sister from the running club.",
+     "valid_from": "2025-02-05T14:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2b6fa2dd-2395-46b0-8f28-17c4cfd7ae1d",
+     "content": "Anton Kowalski was assessed at Northgate Medical Practice on 5 February 2025 as having a sprained left ankle.",
+     "valid_from": "2025-02-05T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23fa700d-c7d6-4f78-9e31-a19a22d8298b",
+     "content": "Owen lives in Montreal, near the harbour.",
+     "valid_from": "2025-02-06T15:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Owen",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "22cc9f8d-d663-43bb-9c6e-15c6dfaf7c0d",
+     "content": "Anton Kowalski is allergic to kiwi, which is why they had to send a dish back.",
+     "valid_from": "2025-02-03T08:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17e4bfe9-878d-4e04-9fd4-eeac2d68a972",
+     "content": "Maya, Anton Kowalski's sister, attends a summer course.",
+     "valid_from": "2025-02-04T17:54:00",
+     "valid_to": "2025-02-05T19:48:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "179ec711-a12e-40ca-ac71-7723849a672b",
+     "content": "Alba joined the Old Mill Folk Choir on 2025-02-07.",
+     "valid_from": "2025-02-07T09:53:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1553a882-7fb9-4387-abc5-0acba370cd15",
+     "content": "Joaquin asked Anton Kowalski about Anton's colleague, who works at Larkspur Ceramics.",
+     "valid_from": "2025-02-09T12:03:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "106fdf18-6b46-4f2d-9382-0cb0a7b3d6bd",
+     "content": "Anton Kowalski's piano teacher lives in Porto now.",
+     "valid_from": "2025-02-04T07:44:00",
+     "valid_to": "2025-02-04T22:51:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0ad0abb9-df46-4fe9-b999-de7057e241e4",
+     "content": "Anton Kowalski has been living at 49 Kiln Lane in Rotterdam.",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "09f833f8-58e8-4cd5-9341-094cb61bf74a",
+     "content": "Gideon has not yet received the rowing machine",
+     "valid_from": "2025-02-04T21:56:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "09836e4a-f494-4d4c-8c23-811283a2249f",
+     "content": "Anton Kowalski has a manager, who works at Brackenridge Seeds.",
+     "valid_from": "2025-02-05T15:09:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "fe79fda1-872d-4095-807d-4990227d4dd9",
+     "content": "Anton Kowalski's aunt is Anton Kowalski's aunt; she works from home most days.",
+     "valid_from": "2025-02-11T08:27:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f3daa864-ab62-44cd-9c33-d90ff92470a8",
+     "content": "Anton Kowalski practised his Italian by listening to a podcast on the way home.",
+     "valid_from": "2025-02-11T09:33:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0031",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ecfe238e-7d34-40e4-bfbd-064bee22152d",
+     "content": "Anton Kowalski had lunch with Tomas, together with his uncle, on 2025-02-16.",
+     "valid_from": "2025-02-16T15:04:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0078",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "eb541495-b2e5-4836-bf4a-2a87cd494a3f",
+     "content": "Vera Novak is in Bristol and says things are good there.",
+     "valid_from": "2025-02-09T20:17:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ea9996a3-2068-4650-b351-b4af31c97720",
+     "content": "Anton Kowalski's brother Greta lives in Valencia these days.",
+     "valid_from": "2025-02-10T08:31:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's brother Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ea2d2adc-997f-4bc5-b112-267c7db3287d",
+     "content": "Anton Kowalski is considering learning to sail this summer, but is undecided.",
+     "valid_from": "2025-02-06T17:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e6f8ca04-d5b0-41d3-83d7-80fec1c36fd7",
+     "content": "Maya asked Anton Kowalski about his sister from the running club, who works at Fennick & Dale Opticians.",
+     "valid_from": "2025-02-11T15:53:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e5942a0c-fccc-441a-8f6e-caf83d8822fe",
+     "content": "Greta has had the espresso machine for a while already.",
+     "valid_from": "2025-02-13T13:53:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e20aecc3-a9e4-419e-bdbe-2534350ab3d9",
+     "content": "Anton Kowalski's sister is named Maya.",
+     "valid_from": "2025-02-04T17:54:00",
+     "valid_to": "2025-02-05T19:48:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's sister",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e0455fcd-f645-401e-b4f5-b451dff72b92",
+     "content": "Vera Novak passed her driving test on 2025-02-05.",
+     "valid_from": "2025-02-05T14:54:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "df6619d3-7d26-46ab-ad6a-508a82b8276d",
+     "content": "Anton Kowalski ran into Tomas.",
+     "valid_from": "2025-02-14T16:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0076",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dec73183-a8ef-4ea1-8441-5ecf775be2bc",
+     "content": "Anton Kowalski had a long call with Gideon this evening; Anton describes Gideon as his sister from the old flat.",
+     "valid_from": "2025-02-05T17:21:00",
+     "valid_to": "2025-02-05T19:48:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dcf1876b-c800-4197-a751-408d5fa16139",
+     "content": "Anton Kowalski picked up Greta from the station.",
+     "valid_from": "2025-02-06T15:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d84f85db-d617-4d4e-aa69-09f57c6e551e",
+     "content": "Maya asked Anton Kowalski about his sister from the old flat.",
+     "valid_from": "2025-02-12T11:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d7db9b3b-bd33-49da-8862-baa7a9b4233d",
+     "content": "Maya asked Anton Kowalski about his manager.",
+     "valid_from": "2025-02-05T15:09:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d6c580b3-a59a-448c-a5d8-1d8244591b06",
+     "content": "Anton Kowalski had a long call with Vera on the evening of 2025-02-05.",
+     "valid_from": "2025-02-05T14:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d2d31976-d023-4bc1-87d8-d0e19c1916f2",
+     "content": "Anton Kowalski started his first day as a UX researcher at Harbor & Pine Studio.",
+     "valid_from": "2025-02-15T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d1a025eb-1d35-49b2-a1ea-c5501720af38",
+     "content": "Anton Kowalski's treatment plan from Northgate Medical Practice is physiotherapy twice a week for the sprained left ankle.",
+     "valid_from": "2025-02-05T11:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d19419b0-46ae-429b-9a99-e4949bc7af89",
+     "content": "Greta works as a UX researcher.",
+     "valid_from": "2025-02-12T09:43:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cea21788-8450-4c97-a122-85747a1a100d",
+     "content": "Anton Kowalski's uncle lives in Edinburgh now.",
+     "valid_from": "2025-02-09T17:40:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ce2ba9c1-9ecd-4b8d-9aa8-9be771396b99",
+     "content": "Vera has not received the sewing machine yet and is still waiting for it.",
+     "valid_from": "2025-02-08T08:14:00",
+     "valid_to": "2025-02-13T11:05:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cd2445c6-fe6a-4972-85dd-7198ecfa0457",
+     "content": "Ruth works at Corvid Mapmakers.",
+     "valid_from": "2025-02-12T10:57:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Ruth",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cb5dd905-5f61-43a6-9898-07f28b3b704f",
+     "content": "Anton Kowalski finished the SPRING 10K on 10 February 2025 with an official time of 57:04, as certified by a finisher certificate.",
+     "valid_from": "2025-02-10T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ca75ca1f-295b-4b7b-88d7-8dbdd36a718b",
+     "content": "Maya joined the Harbour Gospel Choir on 2025-02-08.",
+     "valid_from": "2025-02-08T20:08:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c8765b1e-51ef-460b-bf2e-08d52a75db3d",
+     "content": "Anton Kowalski ran the Park 5K and finished in 22:11.",
+     "valid_from": "2025-02-11T09:33:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c7ee2c84-8648-480d-89a2-c89c170bc286",
+     "content": "Greta Petrov owns a dog named Otis.",
+     "valid_from": "2025-02-04T17:49:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c48ce502-1c42-4301-8378-3bbc265c9b1b",
+     "content": "Anton Kowalski was at the city library on 2025-02-05, where he met his sister Vera.",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b2f8c61e-482f-4476-a69f-61f77865351a",
+     "content": "Anton Kowalski's sister from the old flat works at Hollowbrook Surveying.",
+     "valid_from": "2025-02-12T11:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's sister from the old flat",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b214d88c-7518-448c-8cf1-afbc69848da8",
+     "content": "Anton Kowalski says they would move to Edinburgh in a heartbeat if the Edinburgh offer ever comes through.",
+     "valid_from": "2025-02-03T08:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b20ef74b-06f3-4f12-8c02-a73ae2f5b23c",
+     "content": "Anton Kowalski's uncle works at Pellucid Labs.",
+     "valid_from": "2025-02-11T13:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b109b58f-4cdd-4136-ac8f-0bfe92c97a93",
+     "content": "Physiotherapy twice a week is the planned treatment for the sprained left ankle.",
+     "valid_from": "2025-02-05T11:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "physiotherapy",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ae523bf0-0d7c-45b7-bfbe-f655897a9036",
+     "content": "Greta Petrov's dog Otis woke Greta Petrov up at six o'clock again, as it has done before.",
+     "valid_from": "2025-02-04T17:49:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta Petrov's dog Otis",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ae169071-8494-49cb-8b3a-9d41fcdcda4b",
+     "content": "Anton Kowalski's aunt lives in Lyon now.",
+     "valid_from": "2025-02-05T21:45:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ac00d631-05af-4677-bec5-33682d73d4c8",
+     "content": "Anton Kowalski's piano teacher works at Corvid Mapmakers.",
+     "valid_from": "2025-02-11T14:22:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "aa199353-99e1-4cc5-bb97-1a660ac07e26",
+     "content": "Anton Kowalski has an uncle, who works at Pellucid Labs.",
+     "valid_from": "2025-02-11T13:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a8d99a00-b897-4ea2-8f3b-a24b172360bb",
+     "content": "Anton Kowalski works at Northwind Analytics, where he had a busy week doing the usual sales lead work.",
+     "valid_from": "2025-02-08T14:13:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a8cee159-0611-4d9d-b612-ca79635f6499",
+     "content": "Gideon joined the Kiln Lane Chamber Choir on 2025-02-12.",
+     "valid_from": "2025-02-12T21:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a193f774-3829-4db6-a629-b2ad3efc425a",
+     "content": "Anton Kowalski met Vera at the harbour footpath on 2025-02-13.",
+     "valid_from": "2025-02-13T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9cda8cc0-caeb-46a5-bb8e-3dd28801c276",
+     "content": "Anton Kowalski moved into the new flat at 56 Quarry Lane, Gothenburg on 2025-02-16.",
+     "valid_from": "2025-02-16T16:40:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9aa54862-57c3-4b14-ac59-04791aaa2a62",
+     "content": "Anton Kowalski had coffee with Vera at the hilltop viewpoint.",
+     "valid_from": "2025-02-14T08:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9a9b5e74-e005-4175-959b-0a18d88d2c77",
+     "content": "Greta is Anton Kowalski's brother from the old flat.",
+     "valid_from": "2025-02-06T15:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "95fe4ada-022a-46ff-862b-0270c8962299",
+     "content": "Joaquin is still waiting for the standing desk, which has not been delivered yet.",
+     "valid_from": "2025-02-05T07:38:00",
+     "valid_to": "2025-02-10T09:28:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8c496fee-b668-4574-956d-43643dee32ae",
+     "content": "Greta is Anton Kowalski's brother.",
+     "valid_from": "2025-02-10T08:31:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "897de1d9-d009-4431-ad2f-5ebb93db2f34",
+     "content": "Anton Kowalski ran into Ruth.",
+     "valid_from": "2025-02-12T10:57:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "851b4875-2a19-4f32-adb5-1bc932ae395f",
+     "content": "Elm Property Lettings is the landlord of the premises at 56 Quarry Lane, Gothenburg, which are let at a monthly rent of 1210 EUR from 16 February 2025.",
+     "valid_from": "2025-02-16T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Elm Property Lettings",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7c0b16a3-c797-4f11-941b-2a1d7aa1ca7d",
+     "content": "Anton Kowalski had a long call with Alba, who is Anton Kowalski's colleague, on the evening of 2025-02-06.",
+     "valid_from": "2025-02-06T09:33:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7b3b74ce-f028-4ab6-89ba-d015c7f35518",
+     "content": "Joaquin is Anton Kowalski's manager.",
+     "valid_from": "2025-02-04T11:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7b173c18-a9e0-4b47-91c6-087105b21d22",
+     "content": "Cormac asked Anton Kowalski about his sister from the summer course, who works at Thistledown Instruments.",
+     "valid_from": "2025-02-09T08:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Cormac",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "79a59f3b-abba-454b-81f9-ca2d27c1eaff",
+     "content": "Alba is a colleague of Anton Kowalski.",
+     "valid_from": "2025-02-06T09:33:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "77c75142-e78f-475f-8acd-accf87fadf9b",
+     "content": "Anton Kowalski has already set up the telescope at home.",
+     "valid_from": "2025-02-09T07:28:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7657922e-9eb9-4253-a034-aa853edf00b1",
+     "content": "Greta's company might be shutting down, according to what Anton Kowalski heard.",
+     "valid_from": "2025-02-15T20:41:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "761f94dc-7d3f-44a0-89e4-d08e2a3067fa",
+     "content": "Clara lives in Lyon, near the harbour.",
+     "valid_from": "2025-02-08T13:38:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Clara",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "75685704-d323-41d3-b7ed-66729a919933",
+     "content": "Gideon already has the rowing machine, and Anton Kowalski says it looks great.",
+     "valid_from": "2025-02-10T22:26:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "72d21719-5be6-42ed-a14c-57ab0dbc2298",
+     "content": "Ruth lives in Porto, near the harbour.",
+     "valid_from": "2025-02-10T16:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Ruth",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7160f463-5f76-4d04-95a7-f1993ef5eb17",
+     "content": "Northgate Medical Practice saw patient Anton Kowalski at a visit on 5 February 2025.",
+     "valid_from": "2025-02-05T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Northgate Medical Practice",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "705c0096-78ba-4678-8aa0-6a148a84c960",
+     "content": "Anton Kowalski's neighbours were playing music again on 2025-02-05.",
+     "valid_from": "2025-02-05T14:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's neighbours",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6c9a887c-73f0-454e-9c4c-31f0fdd5bc78",
+     "content": "Alba is still waiting for the pottery wheel, which has not been delivered yet.",
+     "valid_from": "2025-02-07T18:47:00",
+     "valid_to": "2025-02-13T13:50:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6c5ce2a7-bb6e-47cc-8485-4f22e29e4efe",
+     "content": "Anton Kowalski has a climbing partner.",
+     "valid_from": "2025-02-12T22:15:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6c5a8f69-73d4-4c88-8c74-42af21eacbf1",
+     "content": "Greta's bike was stolen outside the station.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6c17aa55-7b81-4ce0-a3a8-148292bf8648",
+     "content": "Anton Kowalski's sister is from the running club.",
+     "valid_from": "2025-02-11T15:53:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's sister",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6a16ee4c-acb4-4f13-b189-499f7fd70c62",
+     "content": "Anton Kowalski finished the Harbour Half Marathon on 13 February 2025 with an official time of 2:28:59.",
+     "valid_from": "2025-02-13T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "688361ba-17c2-433b-8f42-071d62492cf2",
+     "content": "Anton Kowalski's brother from the old flat works at Saltire Glassworks.",
+     "valid_from": "2025-02-11T13:14:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's brother",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "685dec66-d826-4b84-aca4-e2315c49502c",
+     "content": "Anton Kowalski's climbing partner works at Oxbow Bindery.",
+     "valid_from": "2025-02-12T22:15:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's climbing partner",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "67f9eec0-3c7b-47d8-80c2-c61dd5aaff18",
+     "content": "Anton Kowalski picked up his manager Joaquin from the station.",
+     "valid_from": "2025-02-04T11:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "64b60c61-af93-4046-b4d2-04fee3182111",
+     "content": "Anton Kowalski decided not to sign up for the marathon this year (2025).",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": "2025-02-10T00:00:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "628751e5-f6be-48d1-bfe7-898c4d6d47e4",
+     "content": "Anton Kowalski's climbing partner lives in Montreal now.",
+     "valid_from": "2025-02-04T22:51:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's climbing partner",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "62613133-dc67-448c-8d7c-257d3a2a6e36",
+     "content": "Greta is still waiting for the espresso machine, which has not been delivered yet.",
+     "valid_from": "2025-02-09T10:01:00",
+     "valid_to": "2025-02-13T13:53:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "616a81f4-8c26-4052-bf16-81251f8cc91a",
+     "content": "HARBOR & PINE STUDIO offered Anton Kowalski the position of UX researcher, with a start date of 15 February 2025, and asked him to sign and return a copy of the offer letter.",
+     "valid_from": "2025-02-08T14:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "HARBOR & PINE STUDIO",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "606e4ccf-9633-48d2-a3e0-879410c5f99d",
+     "content": "Anton Kowalski picked up his sister Maya from the station.",
+     "valid_from": "2025-02-04T17:54:00",
+     "valid_to": "2025-02-05T19:48:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5e97127d-be78-4217-9694-baa7122854a0",
+     "content": "Joaquin has had the standing desk for a while already.",
+     "valid_from": "2025-02-10T09:28:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5d916826-333f-495f-a724-146c456a3aaa",
+     "content": "Anton Kowalski had coffee with Vera at the hilltop viewpoint.",
+     "valid_from": "2025-02-14T08:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5a10a7ec-0caf-4fdf-9f8f-d77d166883ea",
+     "content": "Anton Kowalski's sister, who is known from the summer course, works at Thistledown Instruments.",
+     "valid_from": "2025-02-09T08:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's sister",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "59dc538b-c9e3-444d-9144-d9271309849d",
+     "content": "Anton Kowalski ran into Owen.",
+     "valid_from": "2025-02-14T19:55:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0077",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "59bb0e04-9e83-45ea-9900-620e263eeca1",
+     "content": "Alba has had the pottery wheel for a while already.",
+     "valid_from": "2025-02-13T13:50:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "58b6af29-6e01-4031-b9f0-3eeec41ca236",
+     "content": "Anton Kowalski has a sister, known from the summer course, who works at Thistledown Instruments.",
+     "valid_from": "2025-02-09T08:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55a5f0eb-ed28-427f-92c1-f6fc130b2ee4",
+     "content": "Vera had coffee with Anton Kowalski at the hilltop viewpoint.",
+     "valid_from": "2025-02-14T08:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "54d38f1e-0f82-4215-82cb-3f15717ff034",
+     "content": "Anton Kowalski met his sister Vera at the city library on 2025-02-05.",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "549ea204-6499-41be-9113-9ccfb9670d39",
+     "content": "Anton Kowalski is hoping the Edinburgh offer comes through, and would relocate to Edinburgh immediately if it did.",
+     "valid_from": "2025-02-03T08:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4ff48745-e50f-4486-ba7a-5780ac6efb78",
+     "content": "Anton Kowalski had lunch with his uncle, together with Tomas, on 2025-02-16.",
+     "valid_from": "2025-02-16T15:04:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0078",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4e745bc3-3f92-4472-bb43-be4b23fe1cb6",
+     "content": "Anton Kowalski's sister from the running club works at Fennick & Dale Opticians.",
+     "valid_from": "2025-02-11T15:53:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's sister",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4e5c61e1-e591-4965-9e2b-0f7f46680e8c",
+     "content": "Elm Property Lettings, as landlord, leases the premises at 56 Quarry Lane, Gothenburg to tenant Anton Kowalski under a signed residential lease agreement starting 16 February 2025, with monthly rent of 1210 EUR.",
+     "valid_from": "2025-02-16T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Elm Property Lettings",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4dc62e77-6a29-46fb-b270-87c1b8404c9c",
+     "content": "Anton Kowalski grew up in Ghent and sometimes misses it.",
+     "valid_from": "2025-02-03T13:53:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4b3f3441-022a-4673-9535-43881dda303a",
+     "content": "Vera Novak owns a dog named Otis, who woke her up at six again.",
+     "valid_from": "2025-02-06T19:57:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0027",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4aa948c9-a517-4b94-b866-568b5ebb8e83",
+     "content": "Anton Kowalski's colleague works at Larkspur Ceramics.",
+     "valid_from": "2025-02-09T12:03:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's colleague",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "49878968-bd40-4501-b9d7-bde7968119e9",
+     "content": "Anton Kowalski heard a rumor that Greta's company might be shutting down.",
+     "valid_from": "2025-02-15T20:41:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42908cc6-4fc4-450f-83fe-e33abb7e47ff",
+     "content": "Anton Kowalski's manager works at Brackenridge Seeds.",
+     "valid_from": "2025-02-05T15:09:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's manager",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42088137-224d-4806-8f7e-5e4e00afcb4d",
+     "content": "49 Kiln Lane is an address in Rotterdam.",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "49 Kiln Lane",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3a4bea00-6c2d-40b8-9a57-bcafc792b601",
+     "content": "Owen works at Halyard Sailmakers.",
+     "valid_from": "2025-02-14T19:55:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0077",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Owen",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "325261ec-fdd2-473f-ba07-446c7d211b1d",
+     "content": "Vera is from the running club, which Anton Kowalski describes as where his sister Vera is from.",
+     "valid_from": "2025-02-05T14:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2f608d14-eb8a-4d99-a997-9256d59c622e",
+     "content": "Vera joined the Saltmarsh Community Choir on 2025-02-15.",
+     "valid_from": "2025-02-15T14:17:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2e5a44d8-f5ab-4609-bbb9-dacf0eace6a2",
+     "content": "Vera is the sister of Anton Kowalski.",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2bd0d879-ea4b-4151-b129-3e6e32266065",
+     "content": "Vera is Anton Kowalski's sister from the running club.",
+     "valid_from": "2025-02-05T14:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2b6fa2dd-2395-46b0-8f28-17c4cfd7ae1d",
+     "content": "Anton Kowalski was assessed at Northgate Medical Practice on 5 February 2025 as having a sprained left ankle.",
+     "valid_from": "2025-02-05T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2b33daa4-b6fe-4e83-9be0-eb1bcef30d92",
+     "content": "Anton Kowalski ran the Spring 10K and finished in 57:04, after recovering from a sprained left ankle.",
+     "valid_from": "2025-02-10T20:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2735dd2a-66d0-4410-acdf-048c29e32886",
+     "content": "Greta joined the Beacon Hill Choir on 2025-02-16.",
+     "valid_from": "2025-02-16T09:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Greta",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24ffe465-a048-4642-94ed-099162002bf0",
+     "content": "Anton Kowalski has a sister from the old flat.",
+     "valid_from": "2025-02-12T11:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23fa700d-c7d6-4f78-9e31-a19a22d8298b",
+     "content": "Owen lives in Montreal, near the harbour.",
+     "valid_from": "2025-02-06T15:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Owen",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "22cc9f8d-d663-43bb-9c6e-15c6dfaf7c0d",
+     "content": "Anton Kowalski is allergic to kiwi, which is why they had to send a dish back.",
+     "valid_from": "2025-02-03T08:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1cef4c39-80a4-4ef9-b005-ee97b75f923f",
+     "content": "Anton Kowalski is the tenant of the premises at 56 Quarry Lane, Gothenburg, with a lease start date of 16 February 2025, and agrees to keep the premises in good order.",
+     "valid_from": "2025-02-16T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1964a583-7007-4174-b616-86dec669b39f",
+     "content": "Vera was at the harbour footpath on 2025-02-13 when Anton Kowalski met Vera there.",
+     "valid_from": "2025-02-13T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18a8dd6d-0e54-4c36-8dcb-0bb79a9f4a2f",
+     "content": "Vera already has the sewing machine, and it looks great.",
+     "valid_from": "2025-02-13T11:05:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17e4bfe9-878d-4e04-9fd4-eeac2d68a972",
+     "content": "Maya, Anton Kowalski's sister, attends a summer course.",
+     "valid_from": "2025-02-04T17:54:00",
+     "valid_to": "2025-02-05T19:48:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maya",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17a3c419-a3a3-4bb7-8e98-8fbaf1e7569a",
+     "content": "Anton Kowalski told Cormac that his brother from the old flat works at Saltire Glassworks.",
+     "valid_from": "2025-02-11T13:14:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "179ec711-a12e-40ca-ac71-7723849a672b",
+     "content": "Alba joined the Old Mill Folk Choir on 2025-02-07.",
+     "valid_from": "2025-02-07T09:53:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Alba",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "179ba16c-1dc8-4583-9126-86dcb1ba9bdf",
+     "content": "Joaquin joined the Juniper Street Youth Choir on 2025-02-15.",
+     "valid_from": "2025-02-15T09:19:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1678e585-13e4-4de2-bc34-9a7b88eee555",
+     "content": "Tomas works at Pellucid Labs.",
+     "valid_from": "2025-02-14T16:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0076",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Tomas",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1553a882-7fb9-4387-abc5-0acba370cd15",
+     "content": "Joaquin asked Anton Kowalski about Anton's colleague, who works at Larkspur Ceramics.",
+     "valid_from": "2025-02-09T12:03:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Joaquin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13a242d9-230c-412f-9d17-cc673ad3efec",
+     "content": "Anton Kowalski needs to buy coffee filters.",
+     "valid_from": "2025-02-12T11:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1305b2ad-793c-4951-989f-6c0c23b23f3b",
+     "content": "Anton Kowalski's uncle and Tomas were both at a lunch with Anton Kowalski on 2025-02-16.",
+     "valid_from": "2025-02-16T15:04:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0078",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "129fbf2c-47f4-4bae-83eb-5dc55fd13513",
+     "content": "Anton Kowalski has a brother from the old flat.",
+     "valid_from": "2025-02-11T13:14:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "116845e4-93fd-4b2e-90f8-c2fa54203b8f",
+     "content": "Anton Kowalski had coffee with Vera at the old market hall on 9 February 2025.",
+     "valid_from": "2025-02-09T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11586cc5-fb02-4f9e-83e8-87fcf6a1c52a",
+     "content": "Tomas lives in Edinburgh, near the harbour.",
+     "valid_from": "2025-02-10T12:07:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Tomas",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "106fdf18-6b46-4f2d-9382-0cb0a7b3d6bd",
+     "content": "Anton Kowalski's piano teacher lives in Porto now.",
+     "valid_from": "2025-02-04T07:44:00",
+     "valid_to": "2025-02-04T22:51:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski's piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0d089586-3e9e-498f-8126-1cc9117679bf",
+     "content": "Anton Kowalski has a sister from the running club who works at Fennick & Dale Opticians.",
+     "valid_from": "2025-02-11T15:53:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0ad0abb9-df46-4fe9-b999-de7057e241e4",
+     "content": "Anton Kowalski has been living at 49 Kiln Lane in Rotterdam.",
+     "valid_from": "2025-02-05T19:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "09f833f8-58e8-4cd5-9341-094cb61bf74a",
+     "content": "Gideon has not yet received the rowing machine",
+     "valid_from": "2025-02-04T21:56:00",
+     "valid_to": "2025-02-10T22:26:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "09836e4a-f494-4d4c-8c23-811283a2249f",
+     "content": "Anton Kowalski has a manager, who works at Brackenridge Seeds.",
+     "valid_from": "2025-02-05T15:09:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Anton Kowalski",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1210 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Gothenburg",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Bristol",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Kiwi",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "UX researcher",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Otis",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "Otis",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "Italian",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "16 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "15 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "5 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "5 days",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "1 day",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "5 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "2:28:59",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "22:11",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "57:04",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "Harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "Hilltop viewpoint",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "City library",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "Old market hall",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "Vera Novak",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "Old Mill Folk Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "Juniper Street Youth Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "Saltmarsh Community Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q049": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q050": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q051": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q052": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q053": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q054": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q055": {
+   "text": "Northwind Analytics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q056": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q057": {
+   "text": "Harbor & Pine Studio",
+   "abstained": null,
+   "citations": []
+  },
+  "Q058": {
+   "text": "Between 7 and 13 February 2025 (exact date not given)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q059": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q060": {
+   "text": "10 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q061": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q062": {
+   "text": "Between 5 and 10 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q063": {
+   "text": "13 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

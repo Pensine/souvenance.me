@@ -1,0 +1,3357 @@
+{
+ "system": {
+  "name": "graphiti",
+  "graphiti-core": "0.31.2",
+  "kuzu": "0.11.3",
+  "llm": "claude-cli:claude-sonnet-5-5",
+  "embedder": "nomic-ai/nomic-embed-text-v1.5",
+  "store": "kuzu local",
+  "search": "default hybrid RRF, no reranker",
+  "top_k": 10,
+  "concurrency": 4,
+  "failed_episodes": 0,
+  "episode_errors": []
+ },
+ "judge": "model:claude-sonnet-5-5:prompt-7dfb69b6cd34",
+ "headline": {
+  "invention_rate": 0.0192,
+  "excerpt_support_rate": 0.0,
+  "fact_recall": 0.7742,
+  "recall_at_inv_1pct": 0.0,
+  "attribution_error_rate": 0.4795,
+  "alias_recall": null,
+  "alias_precision": null,
+  "qa_accuracy": 0.5484,
+  "invented_answers": 0.0,
+  "invented_precision_rate": 0.8333,
+  "context_hit_rate": null,
+  "write_metrics": "measured"
+ },
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": 63,
+   "invention_rate": 0.0159,
+   "partial_rate": 0.0,
+   "invented": [
+    "Yusuf Ishikawa is still waiting for Dalia's upright piano, which has not arrived yet."
+   ],
+   "trap_hits": [],
+   "traps_total": 9,
+   "excerpt_support_rate": 0.0,
+   "citing_memories": 63,
+   "fact_recall": 0.7429,
+   "omission_rate": 0.2571,
+   "recall_by_kind": {
+    "change": 1.0,
+    "event": 0.6667,
+    "state": 0.7273
+   },
+   "stale_as_current": 0.6667,
+   "stale_reason": null,
+   "attribution_error_rate": 0.3947,
+   "attribution_measurable": 38,
+   "attribution_wrong": [
+    {
+     "content": "Yusuf Ishikawa's godfather lives in Bristol these days.",
+     "subject": "Yusuf Ishikawa's godfather"
+    },
+    {
+     "content": "Yusuf Ishikawa considers it lovely news that Lena passed a driving test on 2025-02-06.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa reminded Nadia that his brother from the old flat works at Fennick & Dale Opticians.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa received lovely news on 2025-02-08 that his brother Dalia ran a first marathon.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa's brother from the old flat works at Fennick & Dale Opticians.",
+     "subject": "Yusuf Ishikawa's brother"
+    },
+    {
+     "content": "Yusuf Ishikawa might pack up and move to Leipzig if the Leipzig offer actually happens.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa's aunt currently works at Gullwing Ferries.",
+     "subject": "Yusuf Ishikawa's aunt"
+    },
+    {
+     "content": "Gideon came over to Yusuf Ishikawa's home for dinner and stayed until midnight.",
+     "subject": "Gideon"
+    },
+    {
+     "content": "Yusuf Ishikawa's landlady lives in Bordeaux now.",
+     "subject": "Yusuf Ishikawa's landlady"
+    },
+    {
+     "content": "Yusuf Ishikawa's flatmate lives in Leipzig now.",
+     "subject": "Yusuf Ishikawa's flatmate"
+    },
+    {
+     "content": "Wickerfield Nursery employs Yusuf Ishikawa's flatmate.",
+     "subject": "Wickerfield Nursery"
+    },
+    {
+     "content": "Yusuf Ishikawa's neighbour is employed by Thistledown Instruments.",
+     "subject": "Yusuf Ishikawa's neighbour"
+    },
+    {
+     "content": "Yusuf Ishikawa's aunt lives in Rotterdam now.",
+     "subject": "Yusuf Ishikawa's aunt"
+    },
+    {
+     "content": "Gideon had no idea that Yusuf Ishikawa's neighbour is employed by Thistledown Instruments.",
+     "subject": "Gideon"
+    },
+    {
+     "content": "Riverside Medical Practice saw Yusuf Ishikawa on February 7, 2025 and diagnosed a bad chest cold, with treatment of rest and fluids and advice to return if there is no improvement.",
+     "subject": "Riverside Medical Practice"
+    }
+   ],
+   "attribution_reason": null,
+   "store_dating": null,
+   "store_invented_precision_rate": null,
+   "store_dating_reason": "system exposes no event bounds",
+   "alias_recall": null,
+   "alias_precision": null,
+   "alias_detail": null,
+   "alias_reason": "system does not expose identity links",
+   "curve": {
+    "points": [
+     {
+      "threshold": null,
+      "kept": 63,
+      "invention": 0.015873015873015872,
+      "recall": 0.7428571428571429
+     }
+    ],
+    "recall_at_inv_1pct": 0.0,
+    "recall_at_inv_5pct": 0.7428571428571429,
+    "has_confidence": false
+   },
+   "labels": [
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F023"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F023\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F011",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F011",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F011\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F001",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F001\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F009"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F009\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F048",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F048"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F048\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F054",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F054"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F054\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F024"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F024\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F059",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F059\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F029"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F029\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F021",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F021"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F021\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F037",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F037"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F037\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F047",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F047"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F047\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F027",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F027"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F027\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F009"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F009\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\": \"supported\", \"citation_supports\": false, \"facts\": [], \"invented_detail\": null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F006\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F049",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F049",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F049\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F023"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F023\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F005"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F005\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F037",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F037"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F037\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F049"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F053",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F053"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F053\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F057",
+      "F058"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F048",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F048"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F048\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F055",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F055",
+      "F056"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F055\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F014"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F060",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F060\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F049",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F049"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F049\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F050",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F050"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F050\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F050",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F050"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F050\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F033",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F033"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F033\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F007\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"unsupported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The claim that the piano has still not arrived. D0056 (Feb 9) says it hadn't come, but the later D0061 (Feb 16) says Dalia showed Yusuf the upright piano and that it had arrived, so the memory is outdated.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F020",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F020"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F020\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F024"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F024\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\": \"supported\", \"citation_supports\": false, \"facts\": [], \"invented_detail\": null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F051",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F051",
+      "F052"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F051\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F012",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F012"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F012\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\": \"supported\", \"citation_supports\": false, \"facts\": [], \"invented_detail\": null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F052",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F051",
+      "F052",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F052\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F033",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F033"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F033\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F007\"],\"invented_detail\":null}"
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": 104,
+   "invention_rate": 0.0192,
+   "partial_rate": 0.0,
+   "invented": [
+    "Yusuf Ishikawa rents the property at 60 Orchard Close, Valencia from Elm Property Lettings, with the tenancy beginning on February 10, 2025, at a rent of 1170 EUR payable monthly.",
+    "Yusuf Ishikawa is still waiting for Dalia's upright piano, which has not arrived yet."
+   ],
+   "trap_hits": [],
+   "traps_total": 24,
+   "excerpt_support_rate": 0.0,
+   "citing_memories": 104,
+   "fact_recall": 0.7742,
+   "omission_rate": 0.2258,
+   "recall_by_kind": {
+    "change": 1.0,
+    "event": 0.6842,
+    "state": 0.7576
+   },
+   "stale_as_current": 0.5,
+   "stale_reason": null,
+   "attribution_error_rate": 0.4795,
+   "attribution_measurable": 73,
+   "attribution_wrong": [
+    {
+     "content": "Yusuf Ishikawa's friend works at Brackenridge Seeds.",
+     "subject": "Yusuf Ishikawa's friend"
+    },
+    {
+     "content": "Yusuf Ishikawa has a friend who works at Brackenridge Seeds.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa's best friend works at Saltire Glassworks.",
+     "subject": "Yusuf Ishikawa's best friend"
+    },
+    {
+     "content": "Yusuf Ishikawa's godfather lives in Bristol these days.",
+     "subject": "Yusuf Ishikawa's godfather"
+    },
+    {
+     "content": "Yusuf Ishikawa considers it lovely news that Lena passed a driving test on 2025-02-06.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa reminded Wes that Yusuf Ishikawa's friend works at Brackenridge Seeds.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa reminded Nadia that his brother from the old flat works at Fennick & Dale Opticians.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Elm Property Lettings lets the property at 60 Orchard Close, Valencia to Yusuf Ishikawa, with the tenancy beginning on February 10, 2025.",
+     "subject": "Elm Property Lettings"
+    },
+    {
+     "content": "Yusuf Ishikawa received lovely news on 2025-02-08 that his brother Dalia ran a first marathon.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa reminded Lena that his best friend works at Saltire Glassworks.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Tamberlane Bakery employs Yusuf Ishikawa's godfather.",
+     "subject": "Tamberlane Bakery"
+    },
+    {
+     "content": "The property at 60 Orchard Close is located in Valencia.",
+     "subject": "60 Orchard Close, Valencia"
+    },
+    {
+     "content": "Yusuf Ishikawa's brother from the old flat works at Fennick & Dale Opticians.",
+     "subject": "Yusuf Ishikawa's brother"
+    },
+    {
+     "content": "Yusuf Ishikawa might pack up and move to Leipzig if the Leipzig offer actually happens.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa's aunt currently works at Gullwing Ferries.",
+     "subject": "Yusuf Ishikawa's aunt"
+    },
+    {
+     "content": "Gideon came over to Yusuf Ishikawa's home for dinner and stayed until midnight.",
+     "subject": "Gideon"
+    },
+    {
+     "content": "Yusuf Ishikawa's landlady lives in Bordeaux now.",
+     "subject": "Yusuf Ishikawa's landlady"
+    },
+    {
+     "content": "Yusuf Ishikawa's flatmate lives in Leipzig now.",
+     "subject": "Yusuf Ishikawa's flatmate"
+    },
+    {
+     "content": "Wickerfield Nursery employs Yusuf Ishikawa's flatmate.",
+     "subject": "Wickerfield Nursery"
+    },
+    {
+     "content": "Yusuf Ishikawa's neighbour is employed by Thistledown Instruments.",
+     "subject": "Yusuf Ishikawa's neighbour"
+    },
+    {
+     "content": "Yusuf's brother from the running club still works at Hollowbrook Surveying.",
+     "subject": "Yusuf's brother"
+    },
+    {
+     "content": "The telescope made it to Lena, who is thrilled with it.",
+     "subject": "telescope"
+    },
+    {
+     "content": "Yusuf Ishikawa's sister from the old flat still works at Quillon Maps, as Yusuf Ishikawa confirmed to Gideon over coffee.",
+     "subject": "Yusuf Ishikawa's sister"
+    },
+    {
+     "content": "Yusuf Ishikawa was shown the upright piano by Dalia; the upright piano had arrived at some point.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa's aunt lives in Rotterdam now.",
+     "subject": "Yusuf Ishikawa's aunt"
+    },
+    {
+     "content": "A rowing machine arrived at some point and Wes showed it to Yusuf Ishikawa.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa has a sister from the old flat who works at Quillon Maps.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Yusuf Ishikawa has a best friend who works at Saltire Glassworks.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Elm Property Lettings entered into a tenancy agreement with Yusuf Ishikawa, the tenant, under which Yusuf Ishikawa pays rent of 1170 EUR monthly and must keep the property clean and in good repair.",
+     "subject": "Elm Property Lettings"
+    },
+    {
+     "content": "Over coffee, Jonah asked Yusuf Ishikawa whether Yusuf's brother from the running club was still at Hollowbrook Surveying, and Yusuf confirmed he is.",
+     "subject": "Jonah"
+    },
+    {
+     "content": "Gideon had no idea that Yusuf Ishikawa's neighbour is employed by Thistledown Instruments.",
+     "subject": "Gideon"
+    },
+    {
+     "content": "Gideon had coffee with Yusuf Ishikawa and asked whether Yusuf Ishikawa's sister from the old flat was still at Quillon Maps.",
+     "subject": "Gideon"
+    },
+    {
+     "content": "Yusuf Ishikawa has a landlady who mostly works from home.",
+     "subject": "Yusuf Ishikawa"
+    },
+    {
+     "content": "Riverside Medical Practice saw Yusuf Ishikawa on February 7, 2025 and diagnosed a bad chest cold, with treatment of rest and fluids and advice to return if there is no improvement.",
+     "subject": "Riverside Medical Practice"
+    },
+    {
+     "content": "Yusuf Ishikawa's godfather is a person who works at Tamberlane Bakery.",
+     "subject": "Yusuf Ishikawa"
+    }
+   ],
+   "attribution_reason": null,
+   "store_dating": null,
+   "store_invented_precision_rate": null,
+   "store_dating_reason": "system exposes no event bounds",
+   "alias_recall": null,
+   "alias_precision": null,
+   "alias_detail": null,
+   "alias_reason": "system does not expose identity links",
+   "curve": {
+    "points": [
+     {
+      "threshold": null,
+      "kept": 104,
+      "invention": 0.019230769230769232,
+      "recall": 0.7741935483870968
+     }
+    ],
+    "recall_at_inv_1pct": 0.0,
+    "recall_at_inv_5pct": 0.7741935483870968,
+    "has_confidence": false
+   },
+   "labels": [
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F023"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F023\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F035",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F035"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F035\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F011",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F011",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F011\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F001",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F001\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F009"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F009\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F048",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F048"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F048\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F036",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F036"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F036\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F054",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F054"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F054\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F002",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F002"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F002\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F043",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F043"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F043\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F035",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F035"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F035\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F031",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F031"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F031\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F024"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F024\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F059",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F059\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F029"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F029\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F021",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F021"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F021\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F035",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F035"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F035\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F037",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F037"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F037\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F002",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F002"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F002\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F047",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F047"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F047\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F056",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F055",
+      "F056",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F056\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F027",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F027"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F027\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F032",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F032"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F032\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F009"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F009\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F006\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F049",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F049",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F049\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F040",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F040"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F040\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F031",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F031"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F031\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F061",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F061",
+      "F062"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F061\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F002"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F026",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F026"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\": \"supported\", \"citation_supports\": false, \"facts\": [\"F026\"], \"invented_detail\": null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F023"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F023\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F005"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F005\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F037",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F037"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F037\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F042",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F042"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F042\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F049"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F053",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F053"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F053\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F038",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F038"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F038\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F057",
+      "F058"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F048",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F048"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F048\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F055",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F055",
+      "F056"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F055\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F014"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F060",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F060\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F002",
+      "F004"
+     ],
+     "subject_ok": true,
+     "citation_supports": null,
+     "unparsed": true,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F002\",\"F004\"],\"invented_detail\":null}\n\nWait — I need to reconsider what the memory explicitly asserts. The memory states he rents the property at 60 Orchard Close, Valencia, with tenancy beginning Feb 10, 2025, at 1170 EUR monthly. F004 (pays 1170 EUR monthly) matches explicitly. F002 (lives at 60 Orchard Close) is not strictly stated — the memory says he rents the property, not that he lives there.\n\n{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F004\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F049",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F049"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F049\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F050",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F050"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F050\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F050",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F050"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F050\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F016",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F016"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F016\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F033",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F033"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F033\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F007\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"unsupported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":\"The claim that the piano has not arrived yet. D0056 (Feb 9) says it hadn't come, but D0061 (Feb 16) says Dalia showed Yusuf the upright piano and that it arrived, so \\\"still waiting\\\" is contradicted.\"}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F041",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F041"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F041\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F020",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F020"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F020\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F045",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F045"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F045\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F039",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F039"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F039\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F034",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F034"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F034\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F046"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F024"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F024\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\": \"supported\", \"citation_supports\": false, \"facts\": [], \"invented_detail\": null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F051",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F051",
+      "F052"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F051\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F012",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F012"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F012\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F044"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\": \"supported\", \"citation_supports\": false, \"facts\": [], \"invented_detail\": null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F039",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F039"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F039\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F031",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F031"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F031\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F004",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F004"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F004\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F052",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F051",
+      "F052",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F052\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F041",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F041"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F041\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F033",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F033"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F033\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F046",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F046"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F046\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F039"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": false,
+     "stated": [],
+     "subject_ok": null,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F057",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F057",
+      "F058"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F057\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F007\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F062",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F061",
+      "F062"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F062\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F061",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F061",
+      "F062"
+     ],
+     "subject_ok": false,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F061\"],\"invented_detail\":null}"
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F044",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": false,
+     "stated": [
+      "F044"
+     ],
+     "subject_ok": true,
+     "citation_supports": false,
+     "unparsed": false,
+     "raw": "{\"support\":\"supported\",\"citation_supports\":false,\"facts\":[\"F044\"],\"invented_detail\":null}"
+    }
+   ]
+  }
+ ],
+ "qa": {
+  "accuracy": 0.5484,
+  "n_questions": 62,
+  "by_category": {
+   "present": {
+    "accuracy": 0.6154,
+    "n": 13
+   },
+   "past": {
+    "accuracy": 0.6667,
+    "n": 3
+   },
+   "when": {
+    "accuracy": 1.0,
+    "n": 3
+   },
+   "duration": {
+    "accuracy": 0.5,
+    "n": 2
+   },
+   "event": {
+    "accuracy": 0.7778,
+    "n": 9
+   },
+   "attribution": {
+    "accuracy": 1.0,
+    "n": 3
+   },
+   "abstention": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "identity": {
+    "accuracy": 0.0,
+    "n": 11
+   },
+   "attribution_check": {
+    "accuracy": 0.5,
+    "n": 4
+   },
+   "bounded_date": {
+    "accuracy": 0.0,
+    "n": 6
+   }
+  },
+  "answered_precision": 0.75,
+  "coverage": 0.5161,
+  "invented_answers": 0.0,
+  "invented_precision_rate": 0.8333,
+  "bounded_date": {
+   "n": 6,
+   "correct": 0,
+   "invented_precision": 5,
+   "abstained": 1,
+   "wrong": 0
+  },
+  "rows": [
+   {
+    "id": "Q001",
+    "category": "present",
+    "ok": true,
+    "answer": "1170 EUR"
+   },
+   {
+    "id": "Q002",
+    "category": "present",
+    "ok": true,
+    "answer": "Turin"
+   },
+   {
+    "id": "Q003",
+    "category": "present",
+    "ok": true,
+    "answer": "Gothenburg"
+   },
+   {
+    "id": "Q004",
+    "category": "present",
+    "ok": true,
+    "answer": "Montreal"
+   },
+   {
+    "id": "Q005",
+    "category": "present",
+    "ok": true,
+    "answer": "Valencia"
+   },
+   {
+    "id": "Q006",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q007",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q008",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q009",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q010",
+    "category": "present",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q011",
+    "category": "present",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q012",
+    "category": "present",
+    "ok": true,
+    "answer": "Silverfern Energy"
+   },
+   {
+    "id": "Q013",
+    "category": "present",
+    "ok": true,
+    "answer": "German"
+   },
+   {
+    "id": "Q014",
+    "category": "past",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q015",
+    "category": "past",
+    "ok": true,
+    "answer": "Porto"
+   },
+   {
+    "id": "Q016",
+    "category": "past",
+    "ok": true,
+    "answer": "Lumen Robotics"
+   },
+   {
+    "id": "Q017",
+    "category": "when",
+    "ok": true,
+    "answer": "10 February 2025"
+   },
+   {
+    "id": "Q018",
+    "category": "when",
+    "ok": true,
+    "answer": "5 February 2025"
+   },
+   {
+    "id": "Q019",
+    "category": "when",
+    "ok": true,
+    "answer": "7 February 2025"
+   },
+   {
+    "id": "Q020",
+    "category": "duration",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q021",
+    "category": "duration",
+    "ok": true,
+    "answer": "5 days"
+   },
+   {
+    "id": "Q022",
+    "category": "event",
+    "ok": true,
+    "answer": "Valencia"
+   },
+   {
+    "id": "Q023",
+    "category": "event",
+    "ok": false,
+    "answer": "Valencia"
+   },
+   {
+    "id": "Q024",
+    "category": "event",
+    "ok": true,
+    "answer": "Valencia"
+   },
+   {
+    "id": "Q025",
+    "category": "event",
+    "ok": true,
+    "answer": "Porto"
+   },
+   {
+    "id": "Q026",
+    "category": "event",
+    "ok": true,
+    "answer": "Porto"
+   },
+   {
+    "id": "Q027",
+    "category": "event",
+    "ok": true,
+    "answer": "48:01"
+   },
+   {
+    "id": "Q028",
+    "category": "event",
+    "ok": false,
+    "answer": "48:01"
+   },
+   {
+    "id": "Q029",
+    "category": "event",
+    "ok": true,
+    "answer": "Riverside park"
+   },
+   {
+    "id": "Q030",
+    "category": "event",
+    "ok": true,
+    "answer": "The riverside park"
+   },
+   {
+    "id": "Q031",
+    "category": "attribution",
+    "ok": true,
+    "answer": "Gideon"
+   },
+   {
+    "id": "Q032",
+    "category": "attribution",
+    "ok": true,
+    "answer": "Lena"
+   },
+   {
+    "id": "Q033",
+    "category": "attribution",
+    "ok": true,
+    "answer": "Dalia"
+   },
+   {
+    "id": "Q034",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q035",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q036",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q037",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q038",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q039",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q040",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q041",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q042",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q043",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q044",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q045",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q046",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q047",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q048",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q049",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q050",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q051",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q052",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q053",
+    "category": "attribution_check",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q054",
+    "category": "attribution_check",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q055",
+    "category": "attribution_check",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q056",
+    "category": "attribution_check",
+    "ok": false,
+    "answer": "Lumen Robotics"
+   },
+   {
+    "id": "Q057",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "16 February 2025"
+   },
+   {
+    "id": "Q058",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "16 February 2025"
+   },
+   {
+    "id": "Q059",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "7 February 2025"
+   },
+   {
+    "id": "Q060",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "9 February 2025"
+   },
+   {
+    "id": "Q061",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q062",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "13 February 2025"
+   }
+  ]
+ }
+}

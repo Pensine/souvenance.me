@@ -1,0 +1,3034 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "375b178",
+  "llm_backend": "claude-cli",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 2,
+    "memories_written": 3,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-04",
+    "events": 8,
+    "memories_written": 8,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 5,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-05",
+    "events": 6,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 5,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-06",
+    "events": 9,
+    "memories_written": 10,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 9,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-07",
+    "events": 8,
+    "memories_written": 9,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-08",
+    "events": 3,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-09",
+    "events": 5,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-10",
+    "events": 8,
+    "memories_written": 10,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 9,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 6,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-11",
+    "events": 4,
+    "memories_written": 8,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-12",
+    "events": 5,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-13",
+    "events": 5,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-14",
+    "events": 5,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-15",
+    "events": 5,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-16",
+    "events": 4,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 1
+   }
+  ]
+ },
+ "track": "T",
+ "data": "sample-test-s9",
+ "seconds": 846.3,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Umar Delacroix is allergic to peanuts.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "peanuts, and I'm allergic"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "On 2025-02-03 Umar Delacroix sent a dish back because it contained peanuts, to which they are allergic, and told Linus Haddad.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Sent the dish back — peanuts, and I'm allergic."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3",
+     "content": "Umar Delacroix's sister Amara started a new course, which Umar called lovely news.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Lovely news today: my sister Amara started a new course."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": "2025-02-03",
+     "event_latest": "2025-02-03"
+    },
+    {
+     "id": "4",
+     "content": "Kofi's espresso machine delivery is late, so Kofi still has no espresso machine as of 2025-02-04.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "No espresso machine for Kofi so far, the delivery is late."
+      }
+     ],
+     "subject": "Kofi",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "Rosa is still without the upright piano as of 2025-02-04.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Rosa is still without the upright piano."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": "2025-02-04",
+     "event_latest": null
+    },
+    {
+     "id": "6",
+     "content": "Umar's uncle lives in Valencia these days.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": "These days my uncle lives in Valencia."
+      }
+     ],
+     "subject": "my uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "On the evening of 2025-02-04, Umar's brother from the running club, Nico, rang and they talked for ages.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "It was my brother from the running club Nico who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Nico",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "8",
+     "content": "Umar's piano teacher lives in Leipzig these days.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": "These days my piano teacher lives in Leipzig."
+      }
+     ],
+     "subject": "my piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "On the evening of 2025-02-04, Umar's friend Hana rang and they talked for ages.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "It was my friend Hana who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Hana",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "10",
+     "content": "On the evening of 2025-02-04, Umar's brother from the old flat, Kofi, rang and they talked for ages.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "It was my brother from the old flat Kofi who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Kofi",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "11",
+     "content": "On 2025-02-04 Umar ran the Park 5K in 20:01.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Today, the Park 5K, done in 20:01."
+      }
+     ],
+     "subject": "",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "12",
+     "content": "Umar Delacroix starts as a backend engineer at Kestrel Logistics on 15 February 2025; the contract is signed.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.93,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "On er, 15 February 2025, I er, start as backend engineer at okay so, Kestrel erm, Logistics; the contract is erm, signed."
+      },
+      {
+       "deposit_id": "D0004",
+       "excerpt": "First working day: February 15, 2025."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "13",
+     "content": "Umar Delacroix's address has been 95 Orchard Close, Ghent since June 2024.",
+     "valid_from": "2024-06-01",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Since er, June well, 2024, my address okay so, has been 95 Orchard Close, Ghent."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "14",
+     "content": "Umar's best friend Linus lives in Rotterdam these days.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "My erm, best friend Linus — in Rotterdam well, these days."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "15",
+     "content": "On 2025-02-04 Linus Haddad passed a driving test and told Umar about it on 2025-02-05, asking Umar to ring him.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Yesterday, I passed a driving test. Can you believe it? Ring me when you're free."
+      }
+     ],
+     "subject": "Linus Haddad",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "16",
+     "content": "Amara, Umar's sister from the old flat, came over for dinner and stayed till midnight.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.92,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Amara, my sister from the old flat, came over for dinner and stayed till midnight."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": "2025-02-03",
+     "event_latest": "2025-02-03"
+    },
+    {
+     "id": "17",
+     "content": "According to the official results, Umar Delacroix completed the Park 5K on 5 February 2025 with a chip finish time of 27:47.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "This certifies that Umar Delacroix completed the Park 5K on February 5, 2025."
+      },
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Finish time (chip): 27:47"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "18",
+     "content": "Umar Delacroix says he is an editor at Silverfern Energy (voice note with a garbled transcript).",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.55,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "editor at Silverfern Energy right, — that's me."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "On 2025-02-06 Umar checked the tracking again and his standing desk had still not shipped.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Checked the tracking again: the standing desk hasn't shipped."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "On 2025-02-06 the sewing machine Umar ordered for Linus had not arrived; the delivery is late.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "No sewing machine for Linus so far, the delivery is late."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "On 2025-02-06 Amara messaged Umar that she had run her first marathon that day.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Today, I ran a first marathon."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "22",
+     "content": "Linus, Umar's best friend, came over for dinner on 2025-02-06 and stayed till midnight;",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Linus, my best friend, came over for dinner and stayed till midnight."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "Umar felt tired but in a good way.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Tired tonight; good tired, though."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "24",
+     "content": "Amara became a new member of the Beacon Hill Choir on 2025-02-06.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "The Beacon Hill Choir has a new member as of today: Amara."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "25",
+     "content": "Rosa, Umar's manager, came over for dinner and stayed till midnight.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "Rosa, my manager, came over for dinner and stayed till midnight."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26",
+     "content": "Umar pays 1290 EUR rent per month.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "1290 EUR gone on rent again this month."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Iris has a flat in Leipzig.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": "Iris has a flat in Leipzig."
+      }
+     ],
+     "subject": "Iris",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "28",
+     "content": "On 2025-02-07 Hana's rowing machine had still not arrived.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Hana's rowing machine hasn't come."
+      }
+     ],
+     "subject": "Hana",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "On 2025-02-07 Umar told Kofi Petrov that Nico was still without the pottery wheel.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Nico is still without the pottery wheel."
+      }
+     ],
+     "subject": "Nico",
+     "event_earliest": "2025-02-07",
+     "event_latest": null
+    },
+    {
+     "id": "30",
+     "content": "Umar's aunt lives in Edinburgh these days.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": "These days my aunt lives in Edinburgh."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Kofi showed Umar the espresso machine, which had arrived by then.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": "Kofi showed me the espresso machine, it arrived at some point."
+      }
+     ],
+     "subject": "Kofi",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "Umar's piano teacher is at Gullwing Ferries these days.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": "My piano teacher — at Gullwing Ferries these days."
+      }
+     ],
+     "subject": "my piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Kofi Petrov is in Lyon and says things are good there.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.65,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Here in Lyon, all hmm, good."
+      }
+     ],
+     "subject": "Kofi Petrov",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Umar's friend works at Saltire Glassworks.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Saltire Glassworks is where my friend works, I reminded Rosa."
+      }
+     ],
+     "subject": "Hana",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "35",
+     "content": "Umar grew up in Porto and misses it now and then.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Grew up in Porto, and I miss it now and then."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36",
+     "content": "Umar passed on a rumour that Linus's company could be closing down.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.4,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Rumour has it that Linus's company could be closing down."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "37",
+     "content": "On 2025-02-08 Umar Delacroix was diagnosed with mild tendinitis in the right wrist and was given an ice pack and a wrist splint, with a return visit if there is no improvement.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.97,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Diagnosis — mild tendinitis in the right wrist"
+      },
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Today, diagnosed with mild tendinitis in the right wrist; an ice pack and a wrist splint for now."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "38",
+     "content": "Umar Delacroix is sitting out this year's marathon; signing up did not happen.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "This year's marathon happens without me; signing up did not happen."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "Amara is living in Lyon these days.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Amara — in Lyon these days."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40",
+     "content": "Amara has a cat named Olive.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Amara has a cat; Olive, they named it."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "41",
+     "content": "Linus told Umar Delacroix that their bike got stolen outside the station.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.88,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Outside the station, Linus said, their bike got stolen."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42",
+     "content": "Umar's sister from the old flat is employed by Brackenridge Seeds.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "my sister from the old flat is employed by Brackenridge Seeds"
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": "2025-02-03",
+     "event_latest": "2025-02-03"
+    },
+    {
+     "id": "43",
+     "content": "Umar is two chapters into a new novel and finds it slow going.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "44",
+     "content": "On 2025-02-09 Umar Delacroix was in Gent, Flanders (BE), according to a photo's GPS data.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "GPS 51.05206, 3.71039, captured 2025-02-09 at 09:19."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "45",
+     "content": "Home for Hedda is Edinburgh.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": "Home for Hedda is Edinburgh."
+      }
+     ],
+     "subject": "Hedda",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "46",
+     "content": "Dina has a flat in Valencia.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": "Dina has a flat in Valencia."
+      }
+     ],
+     "subject": "Dina",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "On 2025-02-09 Umar bumped into Amara at the hilltop viewpoint and told Kofi Petrov about it.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "At the hilltop viewpoint today, I bumped into Amara."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my sister",
+     "name": "Amara",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother from the running club",
+     "name": "Nico",
+     "tier": "proven"
+    },
+    {
+     "alias": "my friend",
+     "name": "Hana",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother from the old flat",
+     "name": "Kofi",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister from the old flat",
+     "name": "Amara",
+     "tier": "proven"
+    },
+    {
+     "alias": "my best friend",
+     "name": "Linus",
+     "tier": "proven"
+    },
+    {
+     "alias": "my manager",
+     "name": "Rosa",
+     "tier": "proven"
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Umar Delacroix is allergic to peanuts.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "peanuts, and I'm allergic"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "On 2025-02-03 Umar Delacroix sent a dish back because it contained peanuts, to which they are allergic, and told Linus Haddad.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Sent the dish back — peanuts, and I'm allergic."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3",
+     "content": "Umar Delacroix's sister Amara started a new course, which Umar called lovely news.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "Lovely news today: my sister Amara started a new course."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": "2025-02-03",
+     "event_latest": "2025-02-03"
+    },
+    {
+     "id": "4",
+     "content": "Kofi's espresso machine delivery is late, so Kofi still has no espresso machine as of 2025-02-04.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "No espresso machine for Kofi so far, the delivery is late."
+      }
+     ],
+     "subject": "Kofi",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "Rosa is still without the upright piano as of 2025-02-04.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-10",
+     "current": false,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Rosa is still without the upright piano."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "6",
+     "content": "Umar's uncle lives in Valencia these days.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": "These days my uncle lives in Valencia."
+      }
+     ],
+     "subject": "my uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "On the evening of 2025-02-04, Umar's brother from the running club, Nico, rang and they talked for ages.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "It was my brother from the running club Nico who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Nico",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "8",
+     "content": "Umar's piano teacher lives in Leipzig these days.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": "These days my piano teacher lives in Leipzig."
+      }
+     ],
+     "subject": "my piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "On the evening of 2025-02-04, Umar's friend Hana rang and they talked for ages.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "It was my friend Hana who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Hana",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "10",
+     "content": "On the evening of 2025-02-04, Umar's brother from the old flat, Kofi, rang and they talked for ages.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "It was my brother from the old flat Kofi who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Kofi",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "11",
+     "content": "On 2025-02-04 Umar ran the Park 5K in 20:01.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Today, the Park 5K, done in 20:01."
+      }
+     ],
+     "subject": "",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "12",
+     "content": "Umar Delacroix starts as a backend engineer at Kestrel Logistics on 15 February 2025; the contract is signed.",
+     "valid_from": "2025-02-15",
+     "valid_to": "2025-02-15",
+     "current": false,
+     "confidence": 0.93,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "On er, 15 February 2025, I er, start as backend engineer at okay so, Kestrel erm, Logistics; the contract is erm, signed."
+      },
+      {
+       "deposit_id": "D0004",
+       "excerpt": "First working day: February 15, 2025."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "13",
+     "content": "Umar Delacroix's address has been 95 Orchard Close, Ghent since June 2024.",
+     "valid_from": "2024-06-01",
+     "valid_to": "2025-02-10",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Since er, June well, 2024, my address okay so, has been 95 Orchard Close, Ghent."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "Umar's best friend Linus lives in Rotterdam these days.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "My erm, best friend Linus — in Rotterdam well, these days."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "15",
+     "content": "On 2025-02-04 Linus Haddad passed a driving test and told Umar about it on 2025-02-05, asking Umar to ring him.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Yesterday, I passed a driving test. Can you believe it? Ring me when you're free."
+      }
+     ],
+     "subject": "Linus Haddad",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "16",
+     "content": "Amara, Umar's sister from the old flat, came over for dinner and stayed till midnight.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.92,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Amara, my sister from the old flat, came over for dinner and stayed till midnight."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": "2025-02-03",
+     "event_latest": "2025-02-03"
+    },
+    {
+     "id": "17",
+     "content": "According to the official results, Umar Delacroix completed the Park 5K on 5 February 2025 with a chip finish time of 27:47.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "This certifies that Umar Delacroix completed the Park 5K on February 5, 2025."
+      },
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Finish time (chip): 27:47"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "18",
+     "content": "Umar Delacroix says he is an editor at Silverfern Energy (voice note with a garbled transcript).",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.55,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "editor at Silverfern Energy right, — that's me."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "On 2025-02-06 Umar checked the tracking again and his standing desk had still not shipped.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Checked the tracking again: the standing desk hasn't shipped."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "On 2025-02-06 the sewing machine Umar ordered for Linus had not arrived; the delivery is late.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "No sewing machine for Linus so far, the delivery is late."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "On 2025-02-06 Amara messaged Umar that she had run her first marathon that day.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Today, I ran a first marathon."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "22",
+     "content": "Linus, Umar's best friend, came over for dinner on 2025-02-06 and stayed till midnight;",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Linus, my best friend, came over for dinner and stayed till midnight."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "Umar felt tired but in a good way.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Tired tonight; good tired, though."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "24",
+     "content": "Amara became a new member of the Beacon Hill Choir on 2025-02-06.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "The Beacon Hill Choir has a new member as of today: Amara."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "25",
+     "content": "Rosa, Umar's manager, came over for dinner and stayed till midnight.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "Rosa, my manager, came over for dinner and stayed till midnight."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26",
+     "content": "Umar pays 1290 EUR rent per month.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "1290 EUR gone on rent again this month."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Iris has a flat in Leipzig.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": "Iris has a flat in Leipzig."
+      }
+     ],
+     "subject": "Iris",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "28",
+     "content": "On 2025-02-07 Hana's rowing machine had still not arrived.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Hana's rowing machine hasn't come."
+      }
+     ],
+     "subject": "Hana",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "On 2025-02-07 Umar told Kofi Petrov that Nico was still without the pottery wheel.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Nico is still without the pottery wheel."
+      }
+     ],
+     "subject": "Nico",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "30",
+     "content": "Umar's aunt lives in Edinburgh these days.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": "These days my aunt lives in Edinburgh."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Kofi showed Umar the espresso machine, which had arrived by then.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": "Kofi showed me the espresso machine, it arrived at some point."
+      }
+     ],
+     "subject": "Kofi",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "Umar's piano teacher is at Gullwing Ferries these days.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": "My piano teacher — at Gullwing Ferries these days."
+      }
+     ],
+     "subject": "my piano teacher",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Kofi Petrov is in Lyon and says things are good there.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.65,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Here in Lyon, all hmm, good."
+      }
+     ],
+     "subject": "Kofi Petrov",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Umar's friend works at Saltire Glassworks.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Saltire Glassworks is where my friend works, I reminded Rosa."
+      }
+     ],
+     "subject": "Hana",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "35",
+     "content": "Umar grew up in Porto and misses it now and then.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Grew up in Porto, and I miss it now and then."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36",
+     "content": "Umar passed on a rumour that Linus's company could be closing down.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.4,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Rumour has it that Linus's company could be closing down."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "37",
+     "content": "On 2025-02-08 Umar Delacroix was diagnosed with mild tendinitis in the right wrist and was given an ice pack and a wrist splint, with a return visit if there is no improvement.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.97,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Diagnosis — mild tendinitis in the right wrist"
+      },
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Today, diagnosed with mild tendinitis in the right wrist; an ice pack and a wrist splint for now."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "38",
+     "content": "Umar Delacroix is sitting out this year's marathon; signing up did not happen.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "This year's marathon happens without me; signing up did not happen."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "Amara is living in Lyon these days.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": "Amara — in Lyon these days."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40",
+     "content": "Amara has a cat named Olive.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Amara has a cat; Olive, they named it."
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "41",
+     "content": "Linus told Umar Delacroix that their bike got stolen outside the station.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.88,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Outside the station, Linus said, their bike got stolen."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42",
+     "content": "Umar's sister from the old flat is employed by Brackenridge Seeds.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "my sister from the old flat is employed by Brackenridge Seeds"
+      }
+     ],
+     "subject": "Amara",
+     "event_earliest": "2025-02-03",
+     "event_latest": "2025-02-03"
+    },
+    {
+     "id": "43",
+     "content": "Umar is two chapters into a new novel and finds it slow going.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "44",
+     "content": "On 2025-02-09 Umar Delacroix was in Gent, Flanders (BE), according to a photo's GPS data.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "GPS 51.05206, 3.71039, captured 2025-02-09 at 09:19."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45",
+     "content": "Home for Hedda is Edinburgh.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": "Home for Hedda is Edinburgh."
+      }
+     ],
+     "subject": "Hedda",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "46",
+     "content": "Dina has a flat in Valencia.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": "Dina has a flat in Valencia."
+      }
+     ],
+     "subject": "Dina",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "On 2025-02-09 Umar bumped into Amara at the hilltop viewpoint and told Kofi Petrov about it.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "At the hilltop viewpoint today, I bumped into Amara."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "48",
+     "content": "Umar Delacroix's address is 23 Tanner Street, Ghent, as of 2025-02-10.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "New address as of today: 23 Tanner Street, Ghent."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "49",
+     "content": "Umar Delacroix has a tenancy agreement with Ash Property Lettings for 23 Tanner Street, Ghent, starting 2025-02-10, with rent of 730 EUR per month.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "The tenancy begins on February 10, 2025."
+      },
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Rent: 730 EUR, payable monthly"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "50",
+     "content": "Umar's bank adviser appointment on 2025-02-09 went fine.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "The bank adviser appointment yesterday went fine."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "51",
+     "content": "Umar's uncle mostly works from home.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": "My uncle mostly works from home."
+      }
+     ],
+     "subject": "my uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "52",
+     "content": "Umar listens to a Portuguese podcast on the way home to keep practising the language.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "A Portuguese podcast on the way home, to keep practising."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "53",
+     "content": "Kasper has a flat in Bordeaux.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": "Kasper has a flat in Bordeaux."
+      }
+     ],
+     "subject": "Kasper",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "54",
+     "content": "Umar's aunt works at Corvid Mapmakers these days.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": "My aunt — at Corvid Mapmakers these days."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55",
+     "content": "On 2025-02-10 Nico became a new member of the Juniper Street Youth Choir.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "The Juniper Street Youth Choir has a new member as of today: Nico."
+      }
+     ],
+     "subject": "Nico",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "56",
+     "content": "Rosa showed Umar the upright piano on 2025-02-10; it had arrived by then, so Rosa now has the piano.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": "Rosa showed me the upright piano, it arrived at some point."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "57",
+     "content": "Umar felt tired on the evening of 2025-02-10, but in a good way.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Tired tonight; good tired, though."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "58",
+     "content": "Kofi Petrov works as a UX researcher and says it keeps him busy.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Being an UX researcher keeps me busy."
+      }
+     ],
+     "subject": "Kofi Petrov",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "59",
+     "content": "Nico showed Umar the pottery wheel, which had arrived by then.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": "Nico showed me the pottery wheel, it arrived at some point."
+      }
+     ],
+     "subject": "Nico",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "60",
+     "content": "Umar's brother from the running club still works at Fennick & Dale Opticians;",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "whether my brother from the running club was still at Fennick & Dale Opticians; yes, still there"
+      }
+     ],
+     "subject": "Nico",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "61",
+     "content": "Kofi asked about it over coffee.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "whether my brother from the running club was still at Fennick & Dale Opticians; yes, still there"
+      }
+     ],
+     "subject": "Kofi",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "62",
+     "content": "Umar is aiming to have lights out by eleven this week.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "Lights out by eleven, that is the goal this week."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "63",
+     "content": "Umar bumped into his brother Kofi on the harbour footpath and told Rosa Delacroix about it.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "At the harbour footpath today, I bumped into my brother Kofi."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-11",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "64",
+     "content": "The speaker's birthday is on 23 April.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "My birthday falls on 23 April"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-04-23",
+     "event_latest": "2025-04-23"
+    },
+    {
+     "id": "65",
+     "content": "Umar says moving to Edinburgh would be a dream, if an offer there ever becomes real.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Moving to Edinburgh would be a dream, if that offer ever turns into something real."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "66",
+     "content": "Linus has a cat named Biscuit.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "Linus has a cat; Biscuit, they named it."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "67",
+     "content": "Umar Delacroix has a dog named Mochi, who wants breakfast at six in the morning.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "Six in the morning, and Mochi (my dog) wants breakfast."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "68",
+     "content": "Hedda works at Wickerfield Nursery these days.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": "Hedda — at Wickerfield Nursery these days."
+      }
+     ],
+     "subject": "Hedda",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "69",
+     "content": "Iris works at Gullwing Ferries.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": "Gullwing Ferries is where they work."
+      }
+     ],
+     "subject": "Iris",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "70",
+     "content": "Umar Delacroix bumped into Iris on 2025-02-12.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": "Bumped into Iris;"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "71",
+     "content": "Kofi joined the Old Mill Folk Choir as a new member on 2025-02-12.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "The Old Mill Folk Choir has a new member as of today: Kofi."
+      }
+     ],
+     "subject": "Kofi",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "72",
+     "content": "Hana showed Umar the rowing machine, which had arrived by then.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": "Hana showed me the rowing machine, it arrived at some point."
+      }
+     ],
+     "subject": "Hana",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "73",
+     "content": "Umar's godfather is at Tamberlane Bakery these days.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": "My godfather — at Tamberlane Bakery these days."
+      }
+     ],
+     "subject": "my godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "74",
+     "content": "Umar's best friend is still at Marrowgate Press, as Umar confirmed to Matteo over coffee.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "whether my best friend was still at Marrowgate Press; yes, still there"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "75",
+     "content": "Umar bumped into Linus in the riverside park on 2025-02-12.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "riverside park yesterday, I bumped into Linus"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "76",
+     "content": "Dina mostly works from home.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0075",
+       "excerpt": "Dina mostly works from home."
+      }
+     ],
+     "subject": "Dina",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "77",
+     "content": "On 2025-02-14 Umar Delacroix met up with Kofi at the city library.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "Kofi and I met up at the city library today."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "78",
+     "content": "On 2025-02-14 Umar Delacroix recovered from the mild tendinitis in his right wrist and was finally done with the ice pack.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "Recovered today from well, mild tendinitis in the right wrist"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "79",
+     "content": "Umar's brother from the old flat still works at Larkspur Ceramics;",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Rosa wanted to know whether my brother from the old flat was still at Larkspur Ceramics; yes, still there."
+      }
+     ],
+     "subject": "Kofi",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "80",
+     "content": "Rosa asked about it over coffee on 2025-02-14.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Rosa wanted to know whether my brother from the old flat was still at Larkspur Ceramics; yes, still there."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "81",
+     "content": "Linus became a new member of the Saltmarsh Community Choir on the morning of 2025-02-14.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Linus — new member of the Saltmarsh Community Choir since this morning."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "82",
+     "content": "Umar Delacroix's standing desk has arrived and is in use.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": "The standing desk is here and in use."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "83",
+     "content": "Nico asked Umar Delacroix over coffee whether Umar's manager was still at Hollowbrook Surveying, and Umar said yes, the manager is still there.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "Over coffee, Nico wanted to know whether my manager was still at Hollowbrook Surveying; yes, still there."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "84",
+     "content": "On 2025-02-15 at 09:48 Umar Delacroix was in Ledeberg, Flanders (BE), according to a photo's GPS data.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "GPS 51.03695, 3.72331, captured 2025-02-15 at 09:48."
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "85",
+     "content": "Kasper is at Tamberlane Bakery these days.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0076",
+       "excerpt": "Kasper — at Tamberlane Bakery these days."
+      }
+     ],
+     "subject": "Kasper",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "86",
+     "content": "Hana became a new member of the Harbour Gospel Choir on the morning of 2025-02-15.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": "Hana — new member of the Harbour Gospel Choir since this morning."
+      }
+     ],
+     "subject": "Hana",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "87",
+     "content": "A new backend engineer joined Kestrel Logistics.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Kestrel Logistics has a new backend engineer as of yesterday: me"
+      }
+     ],
+     "subject": "Umar Delacroix",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "88",
+     "content": "Rosa became a new member of the Kiln Lane Chamber Choir on the morning of 2025-02-16.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "Rosa — new member of the Kiln Lane Chamber Choir since this morning."
+      }
+     ],
+     "subject": "Rosa",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    },
+    {
+     "id": "89",
+     "content": "The sewing machine Umar ordered for Linus has arrived and Linus is thrilled with it.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": "The sewing machine made it to Linus; they're thrilled with it."
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "90",
+     "content": "On 2025-02-16 Iris came to lunch, and so did the speaker's piano teacher.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0077",
+       "excerpt": "Lunch today: Iris came, and so did my piano teacher."
+      }
+     ],
+     "subject": "Iris",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my sister",
+     "name": "Amara",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother from the running club",
+     "name": "Nico",
+     "tier": "proven"
+    },
+    {
+     "alias": "my friend",
+     "name": "Hana",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother from the old flat",
+     "name": "Kofi",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister from the old flat",
+     "name": "Amara",
+     "tier": "proven"
+    },
+    {
+     "alias": "my best friend",
+     "name": "Linus",
+     "tier": "proven"
+    },
+    {
+     "alias": "my manager",
+     "name": "Rosa",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother",
+     "name": "Kofi",
+     "tier": "proven"
+    }
+   ]
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "730 EUR per month",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Lyon",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Lyon",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "UX researcher",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "Peanuts",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Olive",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "Biscuit",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "Mochi",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "23 April",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "Portuguese",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "Silverfern Energy",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "10 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "15 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "8 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "6 days",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Ghent (Ledeberg)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "9 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "20:01",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "27:47",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "At the hilltop viewpoint",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "On the harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "At the city library",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "In the riverside park.",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "Linus Haddad",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "Amara",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "Amara (Umar's sister)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "Saltmarsh Community Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "Old Mill Folk Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "Juniper Street Youth Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "Harbour Gospel Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "Kiln Lane Chamber Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "Beacon Hill Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q049": {
+   "text": "Brackenridge Seeds",
+   "abstained": null,
+   "citations": []
+  },
+  "Q050": {
+   "text": "Saltire Glassworks",
+   "abstained": null,
+   "citations": []
+  },
+  "Q051": {
+   "text": "Larkspur Ceramics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q052": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q053": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q054": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q055": {
+   "text": "Fennick & Dale Opticians",
+   "abstained": null,
+   "citations": []
+  },
+  "Q056": {
+   "text": "Hollowbrook Surveying",
+   "abstained": null,
+   "citations": []
+  },
+  "Q057": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q058": {
+   "text": "Between 7 February 2025 and 12 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q059": {
+   "text": "Between 4 February 2025 and 7 February 2025.",
+   "abstained": null,
+   "citations": []
+  },
+  "Q060": {
+   "text": "Between 6 February 2025 and 16 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q061": {
+   "text": "Between 7 February 2025 and 11 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q062": {
+   "text": "Between 4 February 2025 and 10 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q063": {
+   "text": "Between 6 February 2025 and 14 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

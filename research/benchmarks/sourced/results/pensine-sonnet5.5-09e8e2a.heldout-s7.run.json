@@ -1,0 +1,3377 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "09e8e2a",
+  "llm_backend": "claude-cli",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 7,
+    "memories_written": 9,
+    "memories_rejected": 0,
+    "memories_corrected": 3,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-04",
+    "events": 7,
+    "memories_written": 10,
+    "memories_rejected": 0,
+    "memories_corrected": 6,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-05",
+    "events": 8,
+    "memories_written": 10,
+    "memories_rejected": 0,
+    "memories_corrected": 4,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 9,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-06",
+    "events": 5,
+    "memories_written": 8,
+    "memories_rejected": 0,
+    "memories_corrected": 3,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-07",
+    "events": 4,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 0,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-08",
+    "events": 7,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 3,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-09",
+    "events": 8,
+    "memories_written": 10,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 10,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-10",
+    "events": 6,
+    "memories_written": 9,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 9,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-11",
+    "events": 3,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-12",
+    "events": 4,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-13",
+    "events": 3,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-14",
+    "events": 3,
+    "memories_written": 3,
+    "memories_rejected": 0,
+    "memories_corrected": 3,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-15",
+    "events": 6,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-16",
+    "events": 6,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 3,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 2
+   }
+  ]
+ },
+ "track": "T",
+ "data": "sample-test-s7",
+ "seconds": 1071.3,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Cyrus Moreau's address is 57 Orchard Close, Rotterdam.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "My address, for the record, is 57 Orchard Close, Rotterdam."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "Cyrus Moreau starts on 4 February 2025 as a backend engineer at Silverfern Energy, after interviews and an offer letter from the company's People team.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "I start as okay so, backend engineer hmm, at well, Silverfern Energy"
+      },
+      {
+       "deposit_id": "D0002",
+       "excerpt": "First working day: February 4, 2025."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "3",
+     "content": "On 3 February 2025 Cyrus Moreau said his contract with Silverfern Energy is signed, the day before his first working day.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "well, the contract is signed."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4",
+     "content": "As of 3 February 2025 Cyrus Moreau works as a data analyst at Bluecairn Foods and sits in a lot of long meetings there.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Another long meeting right, at Bluecairn hmm, Foods; as okay so, a data analyst I er, get okay so, a lot of those."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "Cyrus Moreau is two chapters into a new novel and finds it slow going.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6",
+     "content": "Elsa's upright piano had not yet arrived.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-07",
+     "current": false,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "Elsa's upright piano hasn't come."
+      }
+     ],
+     "subject": "Elsa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "Cyrus Moreau's aunt lives in Bristol these days.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": "These days my aunt lives in Bristol."
+      }
+     ],
+     "subject": "Cyrus Moreau's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8",
+     "content": "The speaker's uncle lives in Ghent now.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": "Ghent is where my uncle lives now."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "Cyrus Moreau's neighbour Vera phoned him one evening and they talked for a long time.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "It was my neighbour Vera who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-03",
+     "event_latest": "2025-02-03"
+    },
+    {
+     "id": "10",
+     "content": "The speaker announced that they are Silverfern Energy's new backend engineer as of that day.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Silverfern Energy has a new backend engineer as of today: me"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "11",
+     "content": "Cyrus Moreau's sister Orla lives in Edinburgh these days.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "thinking of my sister Orla. They live in Edinburgh these days."
+      }
+     ],
+     "subject": "Orla",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12",
+     "content": "Had tea with their sister Orla at the station café before the evening train.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Tea at the station café with my sister, Orla, before the evening train."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Gideon's home is Ghent.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": "Home for Gideon is Ghent."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "Cyrus Moreau's godfather lives in Montreal now.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": "Montreal is where my godfather lives now."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "15",
+     "content": "Cyrus Moreau grew up in Lyon and some days really misses it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Lyon is where I grew up; some days I really miss it."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "The speaker's brother Talia lives in Porto these days.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Thinking of my brother Talia."
+      },
+      {
+       "deposit_id": "D0004",
+       "excerpt": "They live erm, in erm, Porto these days."
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17",
+     "content": "Cyrus Moreau transferred 720 EUR for rent.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Rent day: 720 EUR transferred."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18",
+     "content": "Vera joined the Juniper Street Youth Choir as a new member.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "The Juniper Street Youth Choir has a new member as of today: Vera."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "19",
+     "content": "Yusuf's home is Bristol.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": "Home for Yusuf is Bristol."
+      }
+     ],
+     "subject": "Yusuf",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "Cyrus Moreau's sister is still working at Saltire Glassworks.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "whether my sister was still at Saltire Glassworks; yes, still there"
+      }
+     ],
+     "subject": "Cyrus Moreau's sister",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "The speaker's uncle is at Wickerfield Nursery these days.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": "My uncle — at Wickerfield Nursery these days."
+      }
+     ],
+     "subject": "Cyrus Moreau's uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "22",
+     "content": "Ravi has a flat in Montreal.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": "Ravi has a flat in Montreal."
+      }
+     ],
+     "subject": "Ravi",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "720 EUR went on rent again this month.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.65,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "720 EUR hmm, gone on rent again this month"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24",
+     "content": "There is a rumour that Silas's company could be closing down; it is unconfirmed.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.35,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Rumour has it that Silas's company could be closing down."
+      }
+     ],
+     "subject": "Silas",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25",
+     "content": "Orla adopted a puppy, which was described as lovely news.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Today, Orla right, adopted a puppy, lovely erm, news."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "26",
+     "content": "Cyrus Moreau spent the evening with Matteo (\"my brother from the old flat\") going through old letters.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Spent the evening with Matteo — my brother from the old flat — going through old letters."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Cyrus Moreau's cousin Quinn rang in the evening and they talked for ages.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "It was my cousin Quinn who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "28",
+     "content": "Cyrus Moreau's landlady now lives in Valencia.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": "Valencia is where my landlady lives now."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Silas Fischer ran a first marathon and told Cyrus Moreau about it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Yesterday, I ran a first marathon."
+      }
+     ],
+     "subject": "Silas Fischer",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "30",
+     "content": "Cyrus Moreau spent an evening with Silas going through old letters.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "Spent the evening with Silas — my best friend — going through old letters."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Silas is the speaker's best friend.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "Silas — my best friend"
+      }
+     ],
+     "subject": "Silas",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "Matteo is still without the telescope.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Matteo is still without the telescope."
+      }
+     ],
+     "subject": "Matteo",
+     "event_earliest": "2025-02-06",
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Silas still did not have the standing desk as of 6 February 2025.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Silas is still without the standing desk."
+      }
+     ],
+     "subject": "Silas",
+     "event_earliest": "2025-02-06",
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Cyrus Moreau let the marathon sign-up pass and decided not to run one this year.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "The marathon sign-up came and went, and I let it pass, not this year."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Cyrus Moreau says that if the Porto offer were ever to come through, he might well be on the first train.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Were the Porto offer ever to come through, I might well be on the first train."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36",
+     "content": "Cyrus Moreau is allergic to shellfish.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Sent the dish back — shellfish, and I'm allergic."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "37",
+     "content": "The speaker's friend Elsa rang tonight and they talked for ages.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "It was my friend Elsa who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Elsa",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "38",
+     "content": "Elsa now has the upright piano, which has arrived, and she loves it.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Elsa has the upright piano now, and loves it."
+      }
+     ],
+     "subject": "Elsa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "On 7 February 2025 Cyrus Moreau checked the tracking again and the pottery wheel he ordered had not shipped yet.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "Checked the tracking again: the pottery wheel hasn't shipped."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40",
+     "content": "Cyrus Moreau's best friend is employed by Thistledown Instruments.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "my best friend is employed by Thistledown Instruments"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "41",
+     "content": "Talia is an editor by trade.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Talia, an editor by trade."
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42",
+     "content": "On 8 February 2025 Cyrus Moreau was diagnosed with an ear infection at Riverside Medical Practice and prescribed a seven-day course of antibiotics.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "What I have is an ear infection, confirmed today; the plan is a seven-day course of antibiotics."
+      },
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Diagnosis — an ear infection"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "43",
+     "content": "The speaker bumped into their best friend Silas on the harbour footpath.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "At the harbour footpath today, I bumped into my best friend Silas."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "44",
+     "content": "Cyrus Moreau bumped into Gideon.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": "Bumped into Gideon"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45",
+     "content": "Gideon works at Wickerfield Nursery.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": "Wickerfield Nursery is where they work."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "46",
+     "content": "Cyrus Moreau's aunt is employed by Mistral Joinery.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": "Mistral Joinery employs my aunt."
+      }
+     ],
+     "subject": "Cyrus Moreau's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "There was an appointment with a bank adviser the day before, and there was nothing to worry about.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Yesterday, a bank well, adviser appointment; nothing okay so, to worry about."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "48",
+     "content": "As of 8 February 2025 Quinn's rowing machine had not arrived yet.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Quinn's rowing machine hasn't come."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "49",
+     "content": "Cyrus Moreau finally watered the plants on the balcony.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Plants on the balcony watered at last."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "50",
+     "content": "Elsa became a member of the Saltmarsh Community Choir.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Today Elsa became a member of the Saltmarsh Community Choir."
+      }
+     ],
+     "subject": "Elsa",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "51",
+     "content": "Talia is still without her espresso machine.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": "Talia is still without the espresso machine."
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": "2025-02-09",
+     "event_latest": null
+    },
+    {
+     "id": "52",
+     "content": "Cyrus Moreau's godfather works from home most days.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": "Most days, my godfather works from home."
+      }
+     ],
+     "subject": "Moreau's godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "53",
+     "content": "Yusuf works at Mistral Joinery these days.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": "Yusuf — at Mistral Joinery these days."
+      }
+     ],
+     "subject": "Yusuf",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "54",
+     "content": "Cyrus Moreau heard music through the wall from next door again.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Music through okay so, the wall from hmm, next door, again."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55",
+     "content": "Cyrus Moreau took a long stroll around the old market hall.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Today, hmm, a long stroll around the old market hall."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "56",
+     "content": "June has a flat in Valencia.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": "June has a flat in Valencia."
+      }
+     ],
+     "subject": "June",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "57",
+     "content": "Silas Fischer is in Bordeaux and says all is well.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Here in Bordeaux, all good."
+      }
+     ],
+     "subject": "Silas Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "58",
+     "content": "Silas Fischer's birthday is on 2 July.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "My birthday falls on 2 July"
+      }
+     ],
+     "subject": "Silas Fischer",
+     "event_earliest": "2025-07-02",
+     "event_latest": "2025-07-02"
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my neighbour",
+     "name": "Vera",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister",
+     "name": "Orla",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother",
+     "name": "Talia",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother from the old flat",
+     "name": "Matteo",
+     "tier": "proven"
+    },
+    {
+     "alias": "my cousin",
+     "name": "Quinn",
+     "tier": "proven"
+    },
+    {
+     "alias": "my best friend",
+     "name": "Silas",
+     "tier": "proven"
+    },
+    {
+     "alias": "my friend",
+     "name": "Elsa",
+     "tier": "proven"
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Cyrus Moreau's address is 57 Orchard Close, Rotterdam.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-10",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "My address, for the record, is 57 Orchard Close, Rotterdam."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "Cyrus Moreau starts on 4 February 2025 as a backend engineer at Silverfern Energy, after interviews and an offer letter from the company's People team.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "I start as okay so, backend engineer hmm, at well, Silverfern Energy"
+      },
+      {
+       "deposit_id": "D0002",
+       "excerpt": "First working day: February 4, 2025."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "3",
+     "content": "On 3 February 2025 Cyrus Moreau said his contract with Silverfern Energy is signed, the day before his first working day.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "well, the contract is signed."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4",
+     "content": "As of 3 February 2025 Cyrus Moreau works as a data analyst at Bluecairn Foods and sits in a lot of long meetings there.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "Another long meeting right, at Bluecairn hmm, Foods; as okay so, a data analyst I er, get okay so, a lot of those."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "Cyrus Moreau is two chapters into a new novel and finds it slow going.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6",
+     "content": "Elsa's upright piano had not yet arrived.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-07",
+     "current": false,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "Elsa's upright piano hasn't come."
+      }
+     ],
+     "subject": "Elsa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7",
+     "content": "Cyrus Moreau's aunt lives in Bristol these days.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": "These days my aunt lives in Bristol."
+      }
+     ],
+     "subject": "Cyrus Moreau's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8",
+     "content": "The speaker's uncle lives in Ghent now.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": "Ghent is where my uncle lives now."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "Cyrus Moreau's neighbour Vera phoned him one evening and they talked for a long time.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "It was my neighbour Vera who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-03",
+     "event_latest": "2025-02-03"
+    },
+    {
+     "id": "10",
+     "content": "The speaker announced that they are Silverfern Energy's new backend engineer as of that day.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "Silverfern Energy has a new backend engineer as of today: me"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "11",
+     "content": "Cyrus Moreau's sister Orla lives in Edinburgh these days.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": "thinking of my sister Orla. They live in Edinburgh these days."
+      }
+     ],
+     "subject": "Orla",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12",
+     "content": "Had tea with their sister Orla at the station café before the evening train.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Tea at the station café with my sister, Orla, before the evening train."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Gideon's home is Ghent.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": "Home for Gideon is Ghent."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "Cyrus Moreau's godfather lives in Montreal now.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": "Montreal is where my godfather lives now."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "15",
+     "content": "Cyrus Moreau grew up in Lyon and some days really misses it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Lyon is where I grew up; some days I really miss it."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "The speaker's brother Talia lives in Porto these days.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Thinking of my brother Talia."
+      },
+      {
+       "deposit_id": "D0004",
+       "excerpt": "They live erm, in erm, Porto these days."
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17",
+     "content": "Cyrus Moreau transferred 720 EUR for rent.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Rent day: 720 EUR transferred."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18",
+     "content": "Vera joined the Juniper Street Youth Choir as a new member.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "The Juniper Street Youth Choir has a new member as of today: Vera."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "19",
+     "content": "Yusuf's home is Bristol.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": "Home for Yusuf is Bristol."
+      }
+     ],
+     "subject": "Yusuf",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "Cyrus Moreau's sister is still working at Saltire Glassworks.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "whether my sister was still at Saltire Glassworks; yes, still there"
+      }
+     ],
+     "subject": "Cyrus Moreau's sister",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "The speaker's uncle is at Wickerfield Nursery these days.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": "My uncle — at Wickerfield Nursery these days."
+      }
+     ],
+     "subject": "Cyrus Moreau's uncle",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "22",
+     "content": "Ravi has a flat in Montreal.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": "Ravi has a flat in Montreal."
+      }
+     ],
+     "subject": "Ravi",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "720 EUR went on rent again this month.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.65,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "720 EUR hmm, gone on rent again this month"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24",
+     "content": "There is a rumour that Silas's company could be closing down; it is unconfirmed.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.35,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Rumour has it that Silas's company could be closing down."
+      }
+     ],
+     "subject": "Silas",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25",
+     "content": "Orla adopted a puppy, which was described as lovely news.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": "Today, Orla right, adopted a puppy, lovely erm, news."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "26",
+     "content": "Cyrus Moreau spent the evening with Matteo (\"my brother from the old flat\") going through old letters.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Spent the evening with Matteo — my brother from the old flat — going through old letters."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "27",
+     "content": "Cyrus Moreau's cousin Quinn rang in the evening and they talked for ages.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "It was my cousin Quinn who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": "2025-02-05",
+     "event_latest": "2025-02-05"
+    },
+    {
+     "id": "28",
+     "content": "Cyrus Moreau's landlady now lives in Valencia.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": "Valencia is where my landlady lives now."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Silas Fischer ran a first marathon and told Cyrus Moreau about it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": "Yesterday, I ran a first marathon."
+      }
+     ],
+     "subject": "Silas Fischer",
+     "event_earliest": "2025-02-04",
+     "event_latest": "2025-02-04"
+    },
+    {
+     "id": "30",
+     "content": "Cyrus Moreau spent an evening with Silas going through old letters.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "Spent the evening with Silas — my best friend — going through old letters."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Silas is the speaker's best friend.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "Silas — my best friend"
+      }
+     ],
+     "subject": "Silas",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "Matteo is still without the telescope.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Matteo is still without the telescope."
+      }
+     ],
+     "subject": "Matteo",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "33",
+     "content": "Silas still did not have the standing desk as of 6 February 2025.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Silas is still without the standing desk."
+      }
+     ],
+     "subject": "Silas",
+     "event_earliest": "2025-02-06",
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Cyrus Moreau let the marathon sign-up pass and decided not to run one this year.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "The marathon sign-up came and went, and I let it pass, not this year."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Cyrus Moreau says that if the Porto offer were ever to come through, he might well be on the first train.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Were the Porto offer ever to come through, I might well be on the first train."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36",
+     "content": "Cyrus Moreau is allergic to shellfish.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "Sent the dish back — shellfish, and I'm allergic."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "37",
+     "content": "The speaker's friend Elsa rang tonight and they talked for ages.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "It was my friend Elsa who rang tonight; we talked for ages."
+      }
+     ],
+     "subject": "Elsa",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "38",
+     "content": "Elsa now has the upright piano, which has arrived, and she loves it.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Elsa has the upright piano now, and loves it."
+      }
+     ],
+     "subject": "Elsa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "On 7 February 2025 Cyrus Moreau checked the tracking again and the pottery wheel he ordered had not shipped yet.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "Checked the tracking again: the pottery wheel hasn't shipped."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40",
+     "content": "Cyrus Moreau's best friend is employed by Thistledown Instruments.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "my best friend is employed by Thistledown Instruments"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "41",
+     "content": "Talia is an editor by trade.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Talia, an editor by trade."
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42",
+     "content": "On 8 February 2025 Cyrus Moreau was diagnosed with an ear infection at Riverside Medical Practice and prescribed a seven-day course of antibiotics.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "What I have is an ear infection, confirmed today; the plan is a seven-day course of antibiotics."
+      },
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Diagnosis — an ear infection"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "43",
+     "content": "The speaker bumped into their best friend Silas on the harbour footpath.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "At the harbour footpath today, I bumped into my best friend Silas."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "44",
+     "content": "Cyrus Moreau bumped into Gideon.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": "Bumped into Gideon"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "45",
+     "content": "Gideon works at Wickerfield Nursery.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": "Wickerfield Nursery is where they work."
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "46",
+     "content": "Cyrus Moreau's aunt is employed by Mistral Joinery.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": "Mistral Joinery employs my aunt."
+      }
+     ],
+     "subject": "Cyrus Moreau's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "There was an appointment with a bank adviser the day before, and there was nothing to worry about.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.5,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "Yesterday, a bank well, adviser appointment; nothing okay so, to worry about."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "48",
+     "content": "As of 8 February 2025 Quinn's rowing machine had not arrived yet.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Quinn's rowing machine hasn't come."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "49",
+     "content": "Cyrus Moreau finally watered the plants on the balcony.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Plants on the balcony watered at last."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "50",
+     "content": "Elsa became a member of the Saltmarsh Community Choir.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Today Elsa became a member of the Saltmarsh Community Choir."
+      }
+     ],
+     "subject": "Elsa",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "51",
+     "content": "Talia is still without her espresso machine.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": "Talia is still without the espresso machine."
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-16"
+    },
+    {
+     "id": "52",
+     "content": "Cyrus Moreau's godfather works from home most days.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": "Most days, my godfather works from home."
+      }
+     ],
+     "subject": "Moreau's godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "53",
+     "content": "Yusuf works at Mistral Joinery these days.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": "Yusuf — at Mistral Joinery these days."
+      }
+     ],
+     "subject": "Yusuf",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "54",
+     "content": "Cyrus Moreau heard music through the wall from next door again.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Music through okay so, the wall from hmm, next door, again."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55",
+     "content": "Cyrus Moreau took a long stroll around the old market hall.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Today, hmm, a long stroll around the old market hall."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-09"
+    },
+    {
+     "id": "56",
+     "content": "June has a flat in Valencia.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": "June has a flat in Valencia."
+      }
+     ],
+     "subject": "June",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "57",
+     "content": "Silas Fischer is in Bordeaux and says all is well.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Here in Bordeaux, all good."
+      }
+     ],
+     "subject": "Silas Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "58",
+     "content": "Silas Fischer's birthday is on 2 July.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "My birthday falls on 2 July"
+      }
+     ],
+     "subject": "Silas Fischer",
+     "event_earliest": "2025-07-02",
+     "event_latest": "2025-07-02"
+    },
+    {
+     "id": "59",
+     "content": "Orla became a member of the Old Mill Folk Choir.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "The Old Mill Folk Choir has a new member as of today: Orla."
+      }
+     ],
+     "subject": "Orla",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "60",
+     "content": "Silas became a member of the Harbour Gospel Choir.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Today Silas became a member of the Harbour Gospel Choir."
+      }
+     ],
+     "subject": "Silas",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "61",
+     "content": "Cyrus Moreau finally got the kitchen spotless, every shelf of it.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "Kitchen finally spotless, every shelf of it."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "62",
+     "content": "Orla's story of the day was that their bike had been stolen outside the station, or so they said.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.55,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "Orla's er, story of the right, day"
+      },
+      {
+       "deposit_id": "D0017",
+       "excerpt": "bike, stolen outside the station"
+      },
+      {
+       "deposit_id": "D0017",
+       "excerpt": "or so they right, said"
+      }
+     ],
+     "subject": "Orla",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "63",
+     "content": "Cyrus Moreau heard music through the wall from next door again.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Music through the wall from next door, again."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "64",
+     "content": "Cyrus Moreau's brother from the old flat is employed by Quillon Maps.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "my brother from the old flat is employed by Quillon Maps"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "65",
+     "content": "Cyrus Moreau watered the plants on the balcony at last.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": "Plants on the balcony watered at last."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "66",
+     "content": "Cyrus Moreau's landlady is employed by Corvid Mapmakers.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": "Corvid Mapmakers employs my landlady."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "67",
+     "content": "Matteo showed Cyrus Moreau the telescope, which had arrived at some point.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": "Matteo showed me the telescope, it arrived at some point."
+      }
+     ],
+     "subject": "Matteo",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "68",
+     "content": "Cyrus Moreau lives at 10 Mill Road, Leipzig.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "10 Mill Road in Leipzig is where I live now"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "69",
+     "content": "Cyrus Moreau moved house the day before writing to Talia Novak, and felt tired in a good way that evening.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "The move happened yesterday"
+      },
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Tired tonight; good tired, though."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "70",
+     "content": "The speaker's cousin is still employed by Marrowgate Press.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Silas wanted to know whether my cousin was still at Marrowgate Press; yes, still there."
+      }
+     ],
+     "subject": "Cyrus Moreau's cousin",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "71",
+     "content": "The speaker's neighbour is employed by Brackenridge Seeds.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Matteo had no idea that my neighbour is employed by Brackenridge Seeds."
+      }
+     ],
+     "subject": "Vera",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "72",
+     "content": "Orla Haddad works as a project manager.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Another full day; a project manager's work is never done."
+      }
+     ],
+     "subject": "Orla Haddad",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "73",
+     "content": "Silas Fischer works as a research assistant and says it keeps him busy.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.75,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "Being a research assistant keeps me busy."
+      }
+     ],
+     "subject": "Silas Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "74",
+     "content": "The speaker's birthday is on 19 October.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "19 October is my birthday, plan something."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-10-19",
+     "event_latest": "2025-10-19"
+    },
+    {
+     "id": "75",
+     "content": "Cyrus Moreau kept up his Portuguese on the walk home, listening to a podcast.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Kept up hmm, my Portuguese on the walk home, podcast in my erm, ears."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "76",
+     "content": "Cyrus Moreau spent 1380 EUR on rent this month, again.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "1380... 1380 EUR gone on rent again this month."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "77",
+     "content": "Cyrus Moreau felt tired in a good way that evening.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Tired tonight; good tired, though."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "78",
+     "content": "Orla and the narrator had coffee at Riverside Park.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "coffee at the er, riverside park, Orla and me"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-13",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "79",
+     "content": "Cyrus Moreau met up with Orla on the harbour footpath.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Orla and I met up right, at the harbour hmm, footpath yesterday"
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "80",
+     "content": "As of 13 February 2025 Cyrus Moreau's ear infection is behind him.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Today, the ear infection is behind me."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "81",
+     "content": "Cyrus Moreau is toying with the idea of adopting a dog next year, but for now it is only an idea.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.6,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "I might adopt a dog; for now it is only an idea."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "82",
+     "content": "The pottery wheel Cyrus Moreau ordered has arrived and he is already using it.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": "The pottery wheel is here and in use."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "83",
+     "content": "Cyrus Moreau had lunch with Gideon and his uncle.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0075",
+       "excerpt": "Lunch today: Gideon came, and so did my uncle."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-14",
+     "event_latest": "2025-02-14"
+    },
+    {
+     "id": "84",
+     "content": "Cyrus Moreau ran the Harbour Half Marathon in 1:36:29.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "1:36:29 — my time at the Harbour Half Marathon yesterday."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "85",
+     "content": "Plants on the balcony were watered at last.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Plants on the balcony watered at last."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "86",
+     "content": "Cyrus Moreau's friend is still at Hollowbrook Surveying;",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "Over coffee, Matteo wanted to know whether my friend was still at Hollowbrook Surveying; yes, still there."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "87",
+     "content": "Matteo asked about it over coffee and Cyrus confirmed.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "Over coffee, Matteo wanted to know whether my friend was still at Hollowbrook Surveying; yes, still there."
+      }
+     ],
+     "subject": "Matteo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "88",
+     "content": "Ravi mostly works from home.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0076",
+       "excerpt": "Ravi mostly works from home."
+      }
+     ],
+     "subject": "Ravi",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "89",
+     "content": "Cyrus Moreau spent an hour or two at the city library.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "An hour or two at the city library today."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "90",
+     "content": "Cyrus Moreau keeps up his Portuguese by listening to a podcast on the walk home.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "Kept up my Portuguese on the walk home, podcast in my ears."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "91",
+     "content": "June is at Tamberlane Bakery these days.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0077",
+       "excerpt": "June — at Tamberlane Bakery these days."
+      }
+     ],
+     "subject": "June",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "92",
+     "content": "Matteo became a member of the Beacon Hill Choir on 2025-02-15.",
+     "valid_from": "2025-02-15",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": "The Beacon Hill Choir has a new member as of today: Matteo."
+      }
+     ],
+     "subject": "Matteo",
+     "event_earliest": "2025-02-15",
+     "event_latest": "2025-02-15"
+    },
+    {
+     "id": "93",
+     "content": "Talia showed Cyrus Moreau the espresso machine, which had arrived at some point.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": "Talia showed me the espresso machine, it arrived at some point."
+      }
+     ],
+     "subject": "Talia",
+     "event_earliest": "2025-02-09",
+     "event_latest": "2025-02-16"
+    },
+    {
+     "id": "94",
+     "content": "Cyrus Moreau would like to learn to sail if the summer is kind.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.7,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "If the summer is kind, I would like to learn to sail."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "95",
+     "content": "Cyrus Moreau had a GP check-up appointment and said there was nothing to worry about.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Today, a GP check-up appointment; nothing to worry about."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    },
+    {
+     "id": "96",
+     "content": "Talia passed a driving test, which was described as lovely news.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Today, Talia passed a driving test, lovely news."
+      }
+     ],
+     "subject": "Cyrus Moreau",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    },
+    {
+     "id": "97",
+     "content": "Silas Fischer now has the standing desk and loves it.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": "Silas has the standing desk now, and loves it."
+      }
+     ],
+     "subject": "Silas Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "98",
+     "content": "Quinn became a new member of the Kiln Lane Chamber Choir on the morning in question.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "Quinn — new member of the Kiln Lane Chamber Choir since this morning."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": "2025-02-16",
+     "event_latest": "2025-02-16"
+    },
+    {
+     "id": "99",
+     "content": "Quinn now has the rowing machine and loves it.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": "Quinn has the rowing machine now, and loves it."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases": [
+    {
+     "alias": "my neighbour",
+     "name": "Vera",
+     "tier": "proven"
+    },
+    {
+     "alias": "my sister",
+     "name": "Orla",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother",
+     "name": "Talia",
+     "tier": "proven"
+    },
+    {
+     "alias": "my brother from the old flat",
+     "name": "Matteo",
+     "tier": "proven"
+    },
+    {
+     "alias": "my cousin",
+     "name": "Quinn",
+     "tier": "proven"
+    },
+    {
+     "alias": "my best friend",
+     "name": "Silas",
+     "tier": "proven"
+    },
+    {
+     "alias": "my friend",
+     "name": "Elsa",
+     "tier": "proven"
+    }
+   ]
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1380 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Leipzig",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Edinburgh",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Bordeaux",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "Shellfish",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "Project manager",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Research assistant",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "Editor",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "19 October",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "2 July",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Lyon",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Silverfern Energy",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "Portuguese",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "720 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "Bluecairn Foods",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "10 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "4 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "8 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "At most 5 days: diagnosed 8 February 2025, recovered by 13 February 2025 at the latest (no earlier date known).",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "6 days (4 February 2025 to 10 February 2025)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Leipzig",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Rotterdam",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "16 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "7 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "1:36:29",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "Harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "Harbour footpath",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "On the harbour footpath.",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "Orla",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "Talia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "Silas Fischer",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "Harbour Gospel Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "Beacon Hill Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "Kiln Lane Chamber Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "Saltmarsh Community Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "Juniper Street Youth Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "Old Mill Folk Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q049": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q050": {
+   "text": "Saltire Glassworks",
+   "abstained": null,
+   "citations": []
+  },
+  "Q051": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q052": {
+   "text": "Brackenridge Seeds",
+   "abstained": null,
+   "citations": []
+  },
+  "Q053": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q054": {
+   "text": "Quillon Maps",
+   "abstained": null,
+   "citations": []
+  },
+  "Q055": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q056": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q057": {
+   "text": "Silverfern Energy",
+   "abstained": null,
+   "citations": []
+  },
+  "Q058": {
+   "text": "Between 7 February 2025 and 13 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q059": {
+   "text": "No later than 7 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q060": {
+   "text": "Between 6 February 2025 and 10 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q061": {
+   "text": "Between 8 February 2025 and 16 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q062": {
+   "text": "Between 6 February 2025 and 16 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q063": {
+   "text": "Between 9 February 2025 and 16 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

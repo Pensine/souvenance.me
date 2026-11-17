@@ -5,8 +5,34 @@ personal memory system writes only what the person's deposits support,
 whether each memory can show the excerpt it comes from, and whether it stays
 right as facts change over months.
 
+It also checks **who** a memory is about. The owner speaks of people by role
+("my sister") as often as by name, and one deposit ties the two together. The
+`attribution` traps, the `identity` and `attribution_check` questions and the
+**attribution error rate** (memories that put a true fact on the wrong
+person) measure this. See SPEC §3.1, §4.1 and §4.3. A coverage layer adds
+identities never written together (only converging attributes) and three
+look-alike decoys; **alias recall** and **alias precision** score the links a
+system holds, by tier (proven or inferred).
+
+And it checks **when**. Some facts are never dated, only bracketed: "not
+yet" one day, "already" a later one. The `bounded_date` questions expect
+that interval, and the **invented precision rate** counts answers that give
+one exact date the evidence does not support (SPEC §3.1, §4.3).
+
 - Protocol, metrics, prior work and their verification: [SPEC.md](SPEC.md)
-- 2-week sample, actually generated: [sample/](sample/)
+- 2-week sample, actually generated: [sample/](sample/) (the dev set)
+- Held-out sets, other seeds and blind templates (`--phrasing test`):
+  sample-test/ (seed 3) and sample-test-s4/ to sample-test-s8/. The sets
+  already used for published results are released with their data; the
+  blind templates themselves (`sourced/phrasing.py`) stay private, so that
+  future sealed sets stay blind. Without them `--phrasing test` refuses to
+  run; dev and dev2 sets generate exactly as before
+- Second development set, own templates written blind to the held-out ones
+  (`--phrasing dev2`): [sample-dev2/](sample-dev2/). Same skeleton as dev
+  (ids, times, facts, traps, spans' roles), other words, built to be hard on
+  "who is this about" (subjects late in the sentence, apposition,
+  possessives, roles without "my", lower-case voice transcripts). Tune on
+  dev and dev2; never on test
 - What the numbers in `results/` mean (and do not mean): [results/README.md](results/README.md)
 
 Status: **v0.1 draft**. The generator, harness, controls and Pensine adapter
@@ -15,8 +41,13 @@ work. No system has been measured yet.
 ## Layout
 
 ```
-sourced/world.py       truth first: people, facts with validity, traps
+sourced/world.py       truth first: people (with role phrases), facts with validity, traps,
+                       identity layer (role-only / name-only facts, alias proofs),
+                       dating layer (facts bracketed by "not yet" / "already"),
+                       coverage layer (identities by converging attributes, decoys)
 sourced/deposits.py    notes, messages, voice transcripts, photos, documents + exact spans
+sourced/phrasing.py    held-out test templates (--phrasing test); private, not in the public copy
+sourced/phrasing_dev2.py  second development templates (--phrasing dev2), open
 sourced/tasks.py       questions derived from the truth (abstention included)
 sourced/media.py       neutral photos with EXIF, minimal PDFs, voice via tts_worker.py
 sourced/tts_worker.py  TTS worker: Chatterbox (default) or Piper, in its own environment
@@ -112,13 +143,22 @@ python -m sourced score --data sample --run runs/x.json --judge model \
     --judge-url http://127.0.0.1:8080/v1 --judge-model <name>
 ```
 
-**Human agreement.** Before a judge is used for publication:
+**Judge validation.** Before a judge is used for publication, with no
+annotator needed (SPEC §6):
 
 ```bash
+# memories edited in code to be false: the judge must flag >= 0.90 of the
+# strict ones, and <= 0.10 of the verbatim twins
+python -m sourced selfcheck --data sample --run runs/x.json --report runs/x.report.json \
+    --judge model --judge-backend claude-cli --out runs/x.selfcheck.json
+# a second model labels a sample blind; kappa >= 0.7 required
 python -m sourced annotate --data sample --run runs/x.json --report runs/x.report.json --n 100 --out ann.csv
-# fill the human_support column (labels of the judge are in ann.judge.json, kept apart)
-python -m sourced agreement --file ann.csv     # kappa >= 0.7 required
+python -m sourced reread --file ann.csv --model <another model than the judge>
+python -m sourced agreement --file ann.csv --reader ann.reader.json
 ```
+
+Anyone can still annotate by hand: `python -m sourced label --file ann.csv`,
+then `agreement --file ann.csv`.
 
 ## License
 

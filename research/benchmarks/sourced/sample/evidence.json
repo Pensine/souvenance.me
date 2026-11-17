@@ -17,6 +17,22 @@
    "excerpt": "Photo taken on 2025-02-03 at 17:11. GPS: 51.04428, 3.70178."
   }
  ],
+ "F035": [
+  {
+   "deposit": "D0040",
+   "start": 39,
+   "end": 98,
+   "role": "not_yet",
+   "excerpt": "Still waiting for the espresso machine, it is not here yet."
+  },
+  {
+   "deposit": "D0043",
+   "start": 41,
+   "end": 98,
+   "role": "already",
+   "excerpt": "The espresso machine is already here, I use it every day."
+  }
+ ],
  "F030": [
   {
    "deposit": "D0003",
@@ -33,6 +49,15 @@
    "excerpt": "Photo taken on 2025-02-04 at 12:41. GPS: 51.05540, 3.70413."
   }
  ],
+ "F043": [
+  {
+   "deposit": "D0044",
+   "start": 35,
+   "end": 65,
+   "role": "mention",
+   "excerpt": "My aunt lives in Valencia now."
+  }
+ ],
  "F014": [
   {
    "deposit": "D0005",
@@ -40,6 +65,15 @@
    "end": 82,
    "role": "mention",
    "excerpt": "Work- Work is busy, being an operations like, manager is never boring."
+  }
+ ],
+ "F039": [
+  {
+   "deposit": "D0045",
+   "start": 41,
+   "end": 75,
+   "role": "mention",
+   "excerpt": "My godfather lives in Leipzig now."
   }
  ],
  "F001": [
@@ -56,6 +90,49 @@
    "end": 138,
    "role": "mention",
    "excerpt": "I've been living at 51 Orchard Close in Ghent since December 2022."
+  }
+ ],
+ "F037": [
+  {
+   "deposit": "D0046",
+   "start": 39,
+   "end": 67,
+   "role": "mention",
+   "excerpt": "My uncle lives in Porto now."
+  },
+  {
+   "deposit": "D0053",
+   "start": 41,
+   "end": 80,
+   "role": "mention",
+   "excerpt": "Silas lives in Porto, near the harbour."
+  }
+ ],
+ "F040": [
+  {
+   "deposit": "D0047",
+   "start": 48,
+   "end": 88,
+   "role": "mention",
+   "excerpt": "Dina lives in Leipzig, near the harbour."
+  }
+ ],
+ "F044": [
+  {
+   "deposit": "D0048",
+   "start": 35,
+   "end": 77,
+   "role": "mention",
+   "excerpt": "Elias lives in Valencia, near the harbour."
+  }
+ ],
+ "F041": [
+  {
+   "deposit": "D0049",
+   "start": 35,
+   "end": 74,
+   "role": "mention",
+   "excerpt": "My godfather works at Gullwing Ferries."
   }
  ],
  "F012": [
@@ -81,6 +158,24 @@
    "end": 90,
    "role": "mention",
    "excerpt": "Practised my Arabic with a podcast on the way home."
+  }
+ ],
+ "F034": [
+  {
+   "deposit": "D0036",
+   "start": 26,
+   "end": 67,
+   "role": "mention",
+   "excerpt": "Priya joined the Beacon Hill Choir today."
+  }
+ ],
+ "F045": [
+  {
+   "deposit": "D0050",
+   "start": 41,
+   "end": 75,
+   "role": "mention",
+   "excerpt": "My aunt works from home most days."
   }
  ],
  "F007": [
@@ -122,6 +217,15 @@
    "excerpt": "I've been working as a backend engineer at Northwind Analytics since December 2021."
   }
  ],
+ "F047": [
+  {
+   "deposit": "D0051",
+   "start": 35,
+   "end": 69,
+   "role": "mention",
+   "excerpt": "My landlady lives in Bordeaux now."
+  }
+ ],
  "F021": [
   {
    "deposit": "D0011",
@@ -138,6 +242,31 @@
    "end": 203,
    "role": "mention",
    "excerpt": "Coffee with Hollis at the botanical garden today."
+  }
+ ],
+ "F042": [
+  {
+   "deposit": "D0052",
+   "start": 34,
+   "end": 78,
+   "role": "mention",
+   "excerpt": "Ran into Dina, who works at Mistral Joinery."
+  }
+ ],
+ "F036": [
+  {
+   "deposit": "D0041",
+   "start": 41,
+   "end": 105,
+   "role": "not_yet",
+   "excerpt": "Oskar is still waiting for the standing desk, not delivered yet."
+  },
+  {
+   "deposit": "D0042",
+   "start": 34,
+   "end": 86,
+   "role": "already",
+   "excerpt": "Oskar already has the standing desk, it looks great."
   }
  ],
  "F009": [
@@ -158,6 +287,31 @@
    "excerpt": "My birthday is on 1 May, reminder to plan something."
   }
  ],
+ "F038": [
+  {
+   "deposit": "D0054",
+   "start": 41,
+   "end": 73,
+   "role": "mention",
+   "excerpt": "My uncle works at Pellucid Labs."
+  },
+  {
+   "deposit": "D0060",
+   "start": 39,
+   "end": 82,
+   "role": "mention",
+   "excerpt": "Ran into Silas, who works at Pellucid Labs."
+  }
+ ],
+ "F031": [
+  {
+   "deposit": "D0037",
+   "start": 39,
+   "end": 103,
+   "role": "mention",
+   "excerpt": "Oskar asked about my best friend, who works at Marrowgate Press."
+  }
+ ],
  "F016": [
   {
    "deposit": "D0013",
@@ -165,6 +319,15 @@
    "end": 48,
    "role": "mention",
    "excerpt": "Things are good here um, in like, Montreal."
+  }
+ ],
+ "F032": [
+  {
+   "deposit": "D0038",
+   "start": 38,
+   "end": 88,
+   "role": "mention",
+   "excerpt": "Kasper joined the Saltmarsh Community Choir today."
   }
  ],
  "F003": [
@@ -215,6 +378,24 @@
    "end": 59,
    "role": "mention",
    "excerpt": "Photo taken on 2025-02-11 at 11:40. GPS: 51.04755, 3.72139."
+  }
+ ],
+ "F033": [
+  {
+   "deposit": "D0039",
+   "start": 34,
+   "end": 89,
+   "role": "mention",
+   "excerpt": "Told Kasper that my brother works at Larkspur Ceramics."
+  }
+ ],
+ "F048": [
+  {
+   "deposit": "D0055",
+   "start": 28,
+   "end": 70,
+   "role": "mention",
+   "excerpt": "Pablo lives in Bordeaux, near the harbour."
   }
  ],
  "F017": [
@@ -299,6 +480,24 @@
    "excerpt": "Had to send the dish back, I'm allergic to sesame."
   }
  ],
+ "F049": [
+  {
+   "deposit": "D0056",
+   "start": 28,
+   "end": 63,
+   "role": "mention",
+   "excerpt": "My landlady works at Oxbow Bindery."
+  }
+ ],
+ "F050": [
+  {
+   "deposit": "D0057",
+   "start": 35,
+   "end": 78,
+   "role": "mention",
+   "excerpt": "Ran into Pablo, who works at Oxbow Bindery."
+  }
+ ],
  "F019": [
   {
    "deposit": "D0027",
@@ -306,6 +505,15 @@
    "end": 59,
    "role": "mention",
    "excerpt": "Photo taken on 2025-02-14 at 08:49. GPS: 45.75081, 4.83579."
+  }
+ ],
+ "F046": [
+  {
+   "deposit": "D0058",
+   "start": 28,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Elias works from home most days."
   }
  ],
  "F028": [

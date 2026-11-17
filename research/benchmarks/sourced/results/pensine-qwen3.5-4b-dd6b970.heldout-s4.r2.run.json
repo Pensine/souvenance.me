@@ -1,0 +1,2614 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "dd6b970",
+  "llm_backend": "openai",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 3,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 4
+   },
+   {
+    "day": "2025-02-04",
+    "events": 3,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 3
+   },
+   {
+    "day": "2025-02-05",
+    "events": 5,
+    "memories_written": 7,
+    "memories_rejected": 9,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 0,
+    "time_bounds_refused": 8
+   },
+   {
+    "day": "2025-02-06",
+    "events": 2,
+    "memories_written": 3,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 6,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-07",
+    "events": 3,
+    "memories_written": 6,
+    "memories_rejected": 7,
+    "memories_corrected": 0,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 4
+   },
+   {
+    "day": "2025-02-08",
+    "events": 7,
+    "memories_written": 10,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 18,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 9,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 6
+   },
+   {
+    "day": "2025-02-09",
+    "events": 2,
+    "memories_written": 3,
+    "memories_rejected": 7,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-10",
+    "events": 5,
+    "memories_written": 7,
+    "memories_rejected": 10,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 4
+   },
+   {
+    "day": "2025-02-11",
+    "events": 5,
+    "memories_written": 6,
+    "memories_rejected": 8,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 3
+   },
+   {
+    "day": "2025-02-12",
+    "events": 9,
+    "memories_written": 12,
+    "memories_rejected": 7,
+    "memories_corrected": 2,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 12,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 8
+   },
+   {
+    "day": "2025-02-13",
+    "events": 3,
+    "memories_written": 7,
+    "memories_rejected": 4,
+    "memories_corrected": 0,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 5
+   },
+   {
+    "day": "2025-02-14",
+    "events": 1,
+    "memories_written": 2,
+    "memories_rejected": 1,
+    "memories_corrected": 0,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 0,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-16",
+    "events": 2,
+    "memories_written": 5,
+    "memories_rejected": 5,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 3
+   }
+  ]
+ },
+ "track": "T",
+ "data": "sample-test-s4",
+ "seconds": 3410.9,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Lights out by eleven is the goal for this week.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Lights out by eleven, that is the goal this week."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "Bordeaux is where my landlady lives now.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-04",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Bordeaux is where my landlady lives now."
+      }
+     ],
+     "subject": "my landlady",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3",
+     "content": "GPS coordinates 45.51325, -73.57289 were captured on 2025-02-03 at 12:36.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "GPS 45.51325, -73.57289, captured 2025-02-03 at 12:36."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4",
+     "content": "Two chapters into the new novel, progress is slow.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-06",
+     "current": false,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "There is still no sign of the telescope I ordered.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Still no sign of the telescope I ordered."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6",
+     "content": "An operations manager at Harbor & Pine Studio since May 2023 — that's me.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "An operations manager at Harbor & Pine Studio since May 2023 — that's me. Kitchen finally spotless, every shelf of it."
+      }
+     ],
+     "subject": "operations manager",
+     "event_earliest": "2023-05-01",
+     "event_latest": "2023-05-31"
+    },
+    {
+     "id": "7",
+     "content": "Kitchen finally spotless, every shelf of it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "An operations manager at Harbor & Pine Studio since May 2023 — that's me. Kitchen finally spotless, every shelf of it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2023-05-01",
+     "event_latest": "2023-05-31"
+    },
+    {
+     "id": "8",
+     "content": "Rent day: 1040 EUR transferred.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Rent day: 1040 EUR transferred."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "So, news. My birthday falls on 27 February, must organise something. Ring me when you're free.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "So, news. My birthday falls on 27 February, must organise something. Ring me when you're free."
+      }
+     ],
+     "subject": "",
+     "event_earliest": "2025-02-27",
+     "event_latest": "2025-02-27"
+    },
+    {
+     "id": "10",
+     "content": "Two chapters into the new novel, progress is slow.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-06",
+     "current": false,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11",
+     "content": "Edinburgh is where my godfather lives now.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Edinburgh is where my godfather lives now."
+      }
+     ],
+     "subject": "my godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12",
+     "content": "Kitchen finally spotless, every shelf of it.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Kitchen finally spotless, every shelf of it."
+      },
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Kitchen finally spotless, every shelf of it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Today, a long stroll around the hilltop viewpoint.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "Today, a long stroll around the hilltop viewpoint."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "Plants on the balcony watered at last.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-05",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "Plants on the balcony watered at last."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "15",
+     "content": "Valencia is where I grew up; some days I really miss it.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "Valencia is where I grew up; some days I really miss it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "GPS 57.71610, 11.95771, captured 2025-02-05 at 17:12.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "GPS 57.71610, 11.95771, captured 2025-02-05 at 17:12."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17",
+     "content": "Grey sky from dawn to dusk.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-05",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Grey sky from dawn to dusk."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18",
+     "content": "Bristol is where my aunt lives now.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-06",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Bristol is where my aunt lives now."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "Two chapters into the new novel, slow going.",
+     "valid_from": "2025-02-06",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "Home for Theo is Bristol.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Home for Theo is Bristol."
+      }
+     ],
+     "subject": "Theo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "GPS 45.48644, -73.58491, captured 2025-02-06 at 19:10.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "GPS 45.48644, -73.58491, captured 2025-02-06 at 19:10."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "22",
+     "content": "Plants on the balcony have been watered.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Plants on the balcony watered at last."
+      },
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Plants on the balcony watered at last."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "Grey sky from dawn to dusk.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Grey sky from dawn to dusk."
+      },
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Grey sky from dawn to dusk."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24",
+     "content": "Zoe has a flat in Edinburgh.",
+     "valid_from": "2025-02-07",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Zoe has a flat in Edinburgh."
+      }
+     ],
+     "subject": "Zoe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25",
+     "content": "Kenji is in Lyon.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Home for Kenji is Lyon."
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26",
+     "content": "Quinn passed a driving test.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Yesterday, coffee at the riverside park, Dev and me. Today, hmm, Quinn passed a driving test, right, lovely right, news."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "27",
+     "content": "Dev and I had coffee at the riverside park.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Yesterday, coffee at the riverside park, Dev and me. Today, hmm, Quinn passed a driving test, right, lovely right, news."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "28",
+     "content": "Two chapters into the new novel, slow going.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Two chapters into the new novel, slow going.\nQuinn's espresso machine hasn't come."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Quinn's espresso machine hasn't come.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Two chapters into the new novel, slow going.\nQuinn's espresso machine hasn't come."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30",
+     "content": "Odds and ends from the fridge became a soup.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Odds and ends from the fridge became a soup."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Halyard Sailmakers employs my godfather.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Halyard Sailmakers employs my godfather."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "The telescope is here and in use.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "The telescope is here and in use."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Laundry folded and put away, small victory.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "Laundry folded and put away, small victory."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Marco has a flat in Bordeaux.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "Marco has a flat in Bordeaux."
+      }
+     ],
+     "subject": "Marco",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Kestrel Logistics is offering a project manager position to Alba Fischer, with the first working day on February 12, 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Following your interviews, Kestrel Logistics would like you to join as project manager.\nFirst working day: February 12, 2025."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "36",
+     "content": "Alba Fischer has signed a tenancy agreement for 48 Juniper Avenue, Montreal, with a tenancy beginning on February 8, 2025, and rent of 1020 EUR payable monthly.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "This agreement is made between Rowan Property Lettings and Alba Fischer, the tenant.\nProperty let: 48 Juniper Avenue, Montreal\nThe tenancy begins on February 8, 2025.\nRent: 1020 EUR, payable monthly"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "37",
+     "content": "Alba Fischer is a project manager at Kestrel Logistics starting February 12, 2025, and a tenant at 48 Juniper Avenue, Montreal starting February 8, 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Following your interviews, Kestrel Logistics would like you to join as project manager.\nFirst working day: February 12, 2025."
+      },
+      {
+       "deposit_id": "D0013",
+       "excerpt": "This agreement is made between Rowan Property Lettings and Alba Fischer, the tenant.\nProperty let: 48 Juniper Avenue, Montreal\nThe tenancy begins on February 8, 2025."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "38",
+     "content": "A German podcast was being listened to on the way home to keep practicing.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "A German podcast on the way home, to keep practising.\nGrey sky from dawn to dusk."
+      },
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Grey sky from dawn to dusk."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "The sky was grey from dawn to dusk.",
+     "valid_from": "2025-02-09",
+     "valid_to": "2025-02-09",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "A German podcast on the way home, to keep practising.\nGrey sky from dawn to dusk."
+      },
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Grey sky from dawn to dusk."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40",
+     "content": "52:18 minutes elapsed during the Spring 10K run yesterday. It rained on and off all afternoon.",
+     "valid_from": "2025-02-08",
+     "valid_to": "2025-02-09",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "52:18 — my time at the Spring 10K yesterday. Rain on and off all afternoon.\nNew address as of yesterday: 48 Juniper Avenue, Montreal."
+      },
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Rain on and off all afternoon."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": "2025-02-08"
+    }
+   ],
+   "aliases": []
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "1",
+     "content": "Lights out by eleven is the goal for this week.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Lights out by eleven, that is the goal this week."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2",
+     "content": "Bordeaux is where my landlady lives now.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-04",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": "Bordeaux is where my landlady lives now."
+      }
+     ],
+     "subject": "my landlady",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3",
+     "content": "GPS coordinates 45.51325, -73.57289 were captured on 2025-02-03 at 12:36.",
+     "valid_from": "2025-02-03",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": "GPS 45.51325, -73.57289, captured 2025-02-03 at 12:36."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4",
+     "content": "Two chapters into the new novel, progress is slow.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-06",
+     "current": false,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5",
+     "content": "There is still no sign of the telescope I ordered.",
+     "valid_from": "2025-02-03",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": "Still no sign of the telescope I ordered."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6",
+     "content": "An operations manager at Harbor & Pine Studio since May 2023 — that's me.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "An operations manager at Harbor & Pine Studio since May 2023 — that's me. Kitchen finally spotless, every shelf of it."
+      }
+     ],
+     "subject": "operations manager",
+     "event_earliest": "2023-05-01",
+     "event_latest": "2023-05-31"
+    },
+    {
+     "id": "7",
+     "content": "Kitchen finally spotless, every shelf of it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "An operations manager at Harbor & Pine Studio since May 2023 — that's me. Kitchen finally spotless, every shelf of it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2023-05-01",
+     "event_latest": "2023-05-31"
+    },
+    {
+     "id": "8",
+     "content": "Rent day: 1040 EUR transferred.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": "Rent day: 1040 EUR transferred."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9",
+     "content": "So, news. My birthday falls on 27 February, must organise something. Ring me when you're free.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": "So, news. My birthday falls on 27 February, must organise something. Ring me when you're free."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "10",
+     "content": "Two chapters into the new novel, progress is slow.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-06",
+     "current": false,
+     "confidence": 0.85,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "11",
+     "content": "Edinburgh is where my godfather lives now.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": "Edinburgh is where my godfather lives now."
+      }
+     ],
+     "subject": "my godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12",
+     "content": "Kitchen finally spotless, every shelf of it.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Kitchen finally spotless, every shelf of it."
+      },
+      {
+       "deposit_id": "D0040",
+       "excerpt": "Kitchen finally spotless, every shelf of it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13",
+     "content": "Today, a long stroll around the hilltop viewpoint.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "Today, a long stroll around the hilltop viewpoint."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "14",
+     "content": "Plants on the balcony watered at last.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-05",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "Plants on the balcony watered at last."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "15",
+     "content": "Valencia is where I grew up; some days I really miss it.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-14",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": "Valencia is where I grew up; some days I really miss it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "16",
+     "content": "GPS 57.71610, 11.95771, captured 2025-02-05 at 17:12.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": "GPS 57.71610, 11.95771, captured 2025-02-05 at 17:12."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17",
+     "content": "Grey sky from dawn to dusk.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-05",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": "Grey sky from dawn to dusk."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "18",
+     "content": "Bristol is where my aunt lives now.",
+     "valid_from": "2025-02-04",
+     "valid_to": "2025-02-06",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": "Bristol is where my aunt lives now."
+      }
+     ],
+     "subject": "my aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "19",
+     "content": "Two chapters into the new novel, slow going.",
+     "valid_from": "2025-02-06",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "20",
+     "content": "Home for Theo is Bristol.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": "Home for Theo is Bristol."
+      }
+     ],
+     "subject": "Theo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "21",
+     "content": "GPS 45.48644, -73.58491, captured 2025-02-06 at 19:10.",
+     "valid_from": "2025-02-06",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": "GPS 45.48644, -73.58491, captured 2025-02-06 at 19:10."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "22",
+     "content": "Plants on the balcony have been watered.",
+     "valid_from": "2025-02-05",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Plants on the balcony watered at last."
+      },
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Plants on the balcony watered at last."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23",
+     "content": "Grey sky from dawn to dusk.",
+     "valid_from": "2025-02-05",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Grey sky from dawn to dusk."
+      },
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Grey sky from dawn to dusk."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "24",
+     "content": "Zoe has a flat in Edinburgh.",
+     "valid_from": "2025-02-07",
+     "valid_to": "2025-02-08",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": "Zoe has a flat in Edinburgh."
+      }
+     ],
+     "subject": "Zoe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25",
+     "content": "Kenji is in Lyon.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": "Home for Kenji is Lyon."
+      }
+     ],
+     "subject": "Kenji",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "26",
+     "content": "Quinn passed a driving test.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Yesterday, coffee at the riverside park, Dev and me. Today, hmm, Quinn passed a driving test, right, lovely right, news."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": "2025-02-07",
+     "event_latest": "2025-02-07"
+    },
+    {
+     "id": "27",
+     "content": "Dev and I had coffee at the riverside park.",
+     "valid_from": "2025-02-07",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": "Yesterday, coffee at the riverside park, Dev and me. Today, hmm, Quinn passed a driving test, right, lovely right, news."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": "2025-02-06",
+     "event_latest": "2025-02-06"
+    },
+    {
+     "id": "28",
+     "content": "Two chapters into the new novel, slow going.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Two chapters into the new novel, slow going.\nQuinn's espresso machine hasn't come."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "29",
+     "content": "Quinn's espresso machine hasn't come.",
+     "valid_from": "2025-02-08",
+     "valid_to": "2025-02-12",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": "Two chapters into the new novel, slow going.\nQuinn's espresso machine hasn't come."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "30",
+     "content": "Odds and ends from the fridge became a soup.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Odds and ends from the fridge became a soup."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31",
+     "content": "Halyard Sailmakers employs my godfather.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": "Halyard Sailmakers employs my godfather."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "32",
+     "content": "The telescope is here and in use.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": "The telescope is here and in use."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "33",
+     "content": "Laundry folded and put away, small victory.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "Laundry folded and put away, small victory."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34",
+     "content": "Marco has a flat in Bordeaux.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": "Marco has a flat in Bordeaux."
+      }
+     ],
+     "subject": "Marco",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "35",
+     "content": "Kestrel Logistics is offering a project manager position to Alba Fischer, with the first working day on February 12, 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Following your interviews, Kestrel Logistics would like you to join as project manager.\nFirst working day: February 12, 2025."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "36",
+     "content": "Alba Fischer has signed a tenancy agreement for 48 Juniper Avenue, Montreal, with a tenancy beginning on February 8, 2025, and rent of 1020 EUR payable monthly.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": "This agreement is made between Rowan Property Lettings and Alba Fischer, the tenant.\nProperty let: 48 Juniper Avenue, Montreal\nThe tenancy begins on February 8, 2025.\nRent: 1020 EUR, payable monthly"
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-08",
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "37",
+     "content": "Alba Fischer is a project manager at Kestrel Logistics starting February 12, 2025, and a tenant at 48 Juniper Avenue, Montreal starting February 8, 2025.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": "Following your interviews, Kestrel Logistics would like you to join as project manager.\nFirst working day: February 12, 2025."
+      },
+      {
+       "deposit_id": "D0013",
+       "excerpt": "This agreement is made between Rowan Property Lettings and Alba Fischer, the tenant.\nProperty let: 48 Juniper Avenue, Montreal\nThe tenancy begins on February 8, 2025."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "38",
+     "content": "A German podcast was being listened to on the way home to keep practicing.",
+     "valid_from": "2025-02-09",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "A German podcast on the way home, to keep practising.\nGrey sky from dawn to dusk."
+      },
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Grey sky from dawn to dusk."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "39",
+     "content": "The sky was grey from dawn to dusk.",
+     "valid_from": "2025-02-09",
+     "valid_to": "2025-02-09",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": "A German podcast on the way home, to keep practising.\nGrey sky from dawn to dusk."
+      },
+      {
+       "deposit_id": "D0015",
+       "excerpt": "Grey sky from dawn to dusk."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40",
+     "content": "52:18 minutes elapsed during the Spring 10K run yesterday. It rained on and off all afternoon.",
+     "valid_from": "2025-02-08",
+     "valid_to": "2025-02-09",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": "52:18 — my time at the Spring 10K yesterday. Rain on and off all afternoon.\nNew address as of yesterday: 48 Juniper Avenue, Montreal."
+      },
+      {
+       "deposit_id": "D0016",
+       "excerpt": "Rain on and off all afternoon."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": "2025-02-08"
+    },
+    {
+     "id": "41",
+     "content": "Dev and I had coffee at the riverside park.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": "Coffee filters: out again, add them to the list.\nOver coffee, Dev wanted to know whether my sister was still at Brackenridge Seeds; yes, still there."
+      }
+     ],
+     "subject": "Dev",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42",
+     "content": "Lights out by eleven is the goal for this week.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": "Lights out by eleven, that is the goal this week.\nGullwing Ferries employs my flatmate."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "43",
+     "content": "GPS 45.50979, -73.55156, captured 2025-02-10 at 12:47.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": "GPS 45.50979, -73.55156, captured 2025-02-10 at 12:47."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "44",
+     "content": "Moving to Valencia would be hmm, a dream, right, if that offer ever turns into something real.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Moving to Valencia would be hmm, a dream, right, if that offer ever turns into something real. Grey right, sky from dawn okay so, to dusk. Note to self: 19 well, May is my birthday, plan something. Today... Today, a long erm, stroll around the botanical garden."
+      }
+     ],
+     "subject": "",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "45",
+     "content": "Grey right, sky from dawn okay so, to dusk. Note to self: 19 well, May is my birthday, plan something. Today... Today, a long erm, stroll around the botanical garden.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": "Moving to Valencia would be hmm, a dream, right, if that offer ever turns into something real. Grey right, sky from dawn okay so, to dusk. Note to self: 19 well, May is my birthday, plan something. Today... Today, a long erm, stroll around the botanical garden."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "46",
+     "content": "Kitchen finally spotless, every shelf of it.",
+     "valid_from": "2025-02-10",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": "Kitchen finally spotless, every shelf of it.\nMy aunt mostly works from home."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "47",
+     "content": "Kitchen finally spotless, every shelf of it.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": "Kitchen finally spotless, every shelf of it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "48",
+     "content": "Alba Fischer is planning something for her birthday on 14 February.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": "Morning! Note to self: 14 February is my birthday, plan something. Speak later?"
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "49",
+     "content": "Alba Fischer met up with Quinn at the old market hall yesterday.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Quinn and I met up at the old market hall yesterday."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "50",
+     "content": "Alba Fischer is working as an operations manager.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": "Hello hello! Another full day; erm, an operations manager's work hmm, is erm, never done. Love, erm, as ever."
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "51",
+     "content": "Alba Fischer was at GPS 45.50796, -73.57939 on 2025-02-11 at 11:15.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": "GPS 45.50796, -73.57939, captured 2025-02-11 at 11:15."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-11",
+     "event_latest": "2025-02-11"
+    },
+    {
+     "id": "52",
+     "content": "Alba Fischer plans to have lights out by eleven this week.",
+     "valid_from": "2025-02-11",
+     "valid_to": "2025-02-11",
+     "current": false,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Lights out by eleven, that is the goal this week."
+      },
+      {
+       "deposit_id": "D0020",
+       "excerpt": "Lights out by eleven, that is the goal this week."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "53",
+     "content": "Theo mostly works from home.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": "Theo mostly works from home."
+      }
+     ],
+     "subject": "Theo",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "54",
+     "content": "Quinn's espresso machine has arrived and Quinn is thrilled with it.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": "Lights out by eleven, that is the goal this week. The espresso machine made it to Quinn; they're thrilled with it."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "55",
+     "content": "Odds and ends from the fridge became a soup.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Odds and ends from the fridge became a soup."
+      },
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Odds and ends from the fridge became a soup.\nPellucid Labs employs my landlady."
+      },
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Odds and ends from the fridge became a soup.\nQuinn — new member of the Kiln Lane Chamber Choir since this morning."
+      },
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Note to self: 19 May is my birthday, plan something. Odds and ends from the fridge became a soup."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "56",
+     "content": "Alba Fischer is a project manager at Kestrel Logistics starting February 12, 2025. She is the new project manager for today.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "Thinking... Thinking of Quinn. They right, live in Porto these right, days. Two... Two chapters into hmm, the new novel, okay so, slow going. Kestrel Logistics has right, a new project manager as er, of today: er, me."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "57",
+     "content": "Alba Fischer is planning something for her birthday on 19 May. Note to self: 19 May is my birthday, plan something. Odds and ends from the fridge became a soup.",
+     "valid_from": "2025-02-04",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": "Note to self: 19 May is my birthday, plan something. Odds and ends from the fridge became a soup."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-10",
+     "event_latest": "2025-02-10"
+    },
+    {
+     "id": "58",
+     "content": "Pellucid Labs employs my landlady.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": "Odds and ends from the fridge became a soup.\nPellucid Labs employs my landlady."
+      }
+     ],
+     "subject": "my landlady",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "59",
+     "content": "Quinn is a new member of the Kiln Lane Chamber Choir since this morning (2025-02-12).",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": "Odds and ends from the fridge became a soup.\nQuinn — new member of the Kiln Lane Chamber Choir since this morning."
+      }
+     ],
+     "subject": "Quinn",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "60",
+     "content": "Alba Fischer has a sprained left ankle and requires physiotherapy twice a week.",
+     "valid_from": "2025-02-12",
+     "valid_to": "2025-02-12",
+     "current": false,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": "Parkview Medical Practice\nConsultation record\n\nSeen on February 12, 2025: Alba Fischer\nDiagnosis — a sprained left ankle\nTreatment — physiotherapy twice a week\nReturn if there is no improvement."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "61",
+     "content": "Coffee filters are out and need to be added to the list.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Coffee filters: out again, add them to the list.\nBumped into Kenji; Gullwing Ferries is where they work."
+      },
+      {
+       "deposit_id": "D0052",
+       "excerpt": "Coffee filters: out again, add them to the list.\nBumped into Zoe; Halyard Sailmakers is where they work."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "62",
+     "content": "Alba Fischer bumped into Kenji at Gullwing Ferries.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": "Coffee filters: out again, add them to the list.\nBumped into Kenji; Gullwing Ferries is where they work."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "63",
+     "content": "Alba Fischer bumped into Zoe at Halyard Sailmakers.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": "Coffee filters: out again, add them to the list.\nBumped into Zoe; Halyard Sailmakers is where they work."
+      }
+     ],
+     "subject": "Zoe",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "64",
+     "content": "Dev Duarte is in Ghent and had a full day as an operations manager.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.99,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": "Morning! Here in Ghent, all good. Another... Another er, full day; an operations manager's right, work is never done. Speak later?"
+      }
+     ],
+     "subject": "Dev Duarte",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "65",
+     "content": "Alba Fischer is thinking of Quinn and their new novel.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.95,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": "Thinking... Thinking of Quinn. They right, live in Porto these right, days. Two... Two chapters into hmm, the new novel, okay so, slow going. Kestrel Logistics has right, a new project manager as er, of today: er, me."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "66",
+     "content": "Alba Fischer plans to have lights out by eleven this week.",
+     "valid_from": "2025-02-11",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Lights out by eleven, that is the goal this week."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "67",
+     "content": "Alba Fischer has a sprained left ankle and requires physiotherapy twice a week.",
+     "valid_from": "2025-02-12",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "A sprained left ankle, says the doctor yesterday, so it's physiotherapy twice a week for a while."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "68",
+     "content": "Odds and ends from the fridge became a soup.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Odds and ends from the fridge became a soup."
+      },
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Odds and ends from the fridge became a soup."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "69",
+     "content": "Kitchen finally spotless, every shelf of it.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "A sprained left ankle, says the doctor yesterday, so it's physiotherapy twice a week for a while. No marathon for me this year: I did not sign up in the end. Kitchen finally spotless, every shelf of it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "70",
+     "content": "No marathon for me this year: I did not sign up in the end.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": "A sprained left ankle, says the doctor yesterday, so it's physiotherapy twice a week for a while. No marathon for me this year: I did not sign up in the end. Kitchen finally spotless, every shelf of it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "71",
+     "content": "Marco — at Mistral Joinery these days.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": "Odds and ends from the fridge became a soup.\nMarco — at Mistral Joinery these days."
+      }
+     ],
+     "subject": "Marco",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "72",
+     "content": "Zoe came, and so did my godfather.",
+     "valid_from": "2025-02-13",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.8,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": "Lights out by eleven, that is the goal this week.\nLunch today: Zoe came, and so did my godfather."
+      }
+     ],
+     "subject": "",
+     "event_earliest": "2025-02-13",
+     "event_latest": "2025-02-13"
+    },
+    {
+     "id": "73",
+     "content": "The morning train crawled in late.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "The morning train crawled in late. Valencia is where well, I grew up; some okay so, days I really miss right, it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "74",
+     "content": "Valencia is where I grew up; some days I really miss it.",
+     "valid_from": "2025-02-14",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": "Valencia is where well, I grew up; some okay so, days I really miss right, it."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "75",
+     "content": "Two chapters into the new novel, slow going.",
+     "valid_from": "2025-02-08",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Two chapters into the new novel, slow going."
+      },
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Two chapters into the new novel, slow going."
+      }
+     ],
+     "subject": "Alba Fischer",
+     "event_earliest": "2025-02-12",
+     "event_latest": "2025-02-12"
+    },
+    {
+     "id": "76",
+     "content": "Dev Duarte said, their bike got stolen.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": "Outside the station, Dev said, their bike got stolen."
+      }
+     ],
+     "subject": "Dev Duarte",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "77",
+     "content": "Dev Duarte offered a message: 'Morning!",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Morning! Here in Ghent, all good. Speak later?"
+      }
+     ],
+     "subject": "Dev Duarte",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "78",
+     "content": "Here in Ghent, all good.",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Morning! Here in Ghent, all good. Speak later?"
+      }
+     ],
+     "subject": "Ghent",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "79",
+     "content": "Speak later?'",
+     "valid_from": "2025-02-16",
+     "valid_to": null,
+     "current": true,
+     "confidence": 0.9,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": "Morning! Here in Ghent, all good. Speak later?"
+      }
+     ],
+     "subject": "Dev Duarte",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases": []
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1020 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "operations manager",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "between 14 February 2025 and 27 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "Kestrel Logistics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "German",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "1020 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "Harbor & Pine Studio",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "between 8 February 2025 and 8 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "between 8 February 2025 and 12 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "between 12 February 2025 and 12 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "between 8 February 2025 and 12 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "52:18 minutes",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "Hilltop viewpoint",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "The old market hall",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "Quinn",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "GPS 45.48644, -73.58491",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "Kiln Lane Chamber Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "Kestrel Logistics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "between 10 February 2025 and 12 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

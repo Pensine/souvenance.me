@@ -220,6 +220,17 @@ TENSE_GUIDE = (
     "la vie, pas seulement sur un calendrier.")
 
 
+def in_window(row: dict, window: tuple) -> bool:
+    """Does a memory belong to a period? An event if it happened in it; a
+    state if it was true at some point of it (its validity overlaps)."""
+    start, end = window
+    vf = _aware(row["valid_from"])
+    if row.get("type") == "episodic":
+        return (start is None or vf >= start) and (end is None or vf < end)
+    vt = _aware(row["valid_to"]) if row.get("valid_to") else None
+    return (end is None or vf < end) and (start is None or vt is None or vt > start)
+
+
 def rank(rows: list, orientation: str | None, limit: int = 8,
          now: datetime | None = None, window: tuple | None = None) -> list:
     """Rerank candidates according to their tense and the question's orientation.
@@ -243,11 +254,8 @@ def rank(rows: list, orientation: str | None, limit: int = 8,
             score = 0.5 + r["fusion_rank"] * 0.01
         else:
             score = float(d) if d is not None else 0.5 + i * 0.01
-        if window:
-            start, end = window
-            vf = _aware(r["valid_from"])
-            if (start is None or vf >= start) and (end is None or vf < end):
-                score -= 0.10
+        if window and in_window(r, window):
+            score -= 0.10
         t = tense(r["valid_from"], r.get("valid_to"), r.get("superseded_by"), now)
         if t == "past":
             score += -0.03 if orientation == "past" else 0.12

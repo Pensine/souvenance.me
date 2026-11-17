@@ -1,5 +1,26 @@
 [
  {
+  "id": "D0034",
+  "kind": "note",
+  "created_at": "2025-02-03T15:51:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Dinner with my best friend Kasper tonight, we talked for hours.\nNeed to buy coffee filters.",
+  "fact_ids": [],
+  "trap_ids": [],
+  "spans": [],
+  "meta": {
+   "alias_spans": [
+    [
+     "P3",
+     0,
+     63
+    ]
+   ]
+  },
+  "file": "deposits/D0034_note.txt"
+ },
+ {
   "id": "D0001",
   "kind": "photo",
   "created_at": "2025-02-03T16:26:00",
@@ -54,6 +75,28 @@
    "time": "17:11"
   },
   "file": "deposits/D0002_photo.jpg"
+ },
+ {
+  "id": "D0040",
+  "kind": "note",
+  "created_at": "2025-02-03T17:49:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Trying to go to bed earlier this week.\nStill waiting for the espresso machine, it is not here yet.",
+  "fact_ids": [
+   "F035"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F035",
+    "start": 39,
+    "end": 98,
+    "role": "not_yet"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0040_note.txt"
  },
  {
   "id": "D0003",
@@ -116,6 +159,28 @@
   "file": "deposits/D0004_photo.jpg"
  },
  {
+  "id": "D0044",
+  "kind": "note",
+  "created_at": "2025-02-04T16:56:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Watered the plants on the balcony.\nMy aunt lives in Valencia now.",
+  "fact_ids": [
+   "F043"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F043",
+    "start": 35,
+    "end": 65,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0044_note.txt"
+ },
+ {
   "id": "D0005",
   "kind": "voice_in",
   "created_at": "2025-02-04T18:30:00",
@@ -140,6 +205,28 @@
   "file": "deposits/D0005_voice_in.m4a"
  },
  {
+  "id": "D0045",
+  "kind": "note",
+  "created_at": "2025-02-04T19:38:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "The neighbours were playing music again.\nMy godfather lives in Leipzig now.",
+  "fact_ids": [
+   "F039"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F039",
+    "start": 41,
+    "end": 75,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0045_note.txt"
+ },
+ {
   "id": "D0006",
   "kind": "note",
   "created_at": "2025-02-05T09:06:00",
@@ -160,6 +247,115 @@
   ],
   "meta": {},
   "file": "deposits/D0006_note.txt"
+ },
+ {
+  "id": "D0035",
+  "kind": "note",
+  "created_at": "2025-02-05T11:30:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Long call with Priya, my brother, this evening.\nNeed to buy coffee filters.",
+  "fact_ids": [],
+  "trap_ids": [],
+  "spans": [],
+  "meta": {
+   "alias_spans": [
+    [
+     "P2",
+     0,
+     47
+    ]
+   ]
+  },
+  "file": "deposits/D0035_note.txt"
+ },
+ {
+  "id": "D0046",
+  "kind": "note",
+  "created_at": "2025-02-05T15:53:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Trying to go to bed earlier this week.\nMy uncle lives in Porto now.",
+  "fact_ids": [
+   "F037"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F037",
+    "start": 39,
+    "end": 67,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0046_note.txt"
+ },
+ {
+  "id": "D0047",
+  "kind": "note",
+  "created_at": "2025-02-05T16:10:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Made soup with whatever was left in the fridge.\nDina lives in Leipzig, near the harbour.",
+  "fact_ids": [
+   "F040"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F040",
+    "start": 48,
+    "end": 88,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0047_note.txt"
+ },
+ {
+  "id": "D0048",
+  "kind": "note",
+  "created_at": "2025-02-05T17:22:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Watered the plants on the balcony.\nElias lives in Valencia, near the harbour.",
+  "fact_ids": [
+   "F044"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F044",
+    "start": 35,
+    "end": 77,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0048_note.txt"
+ },
+ {
+  "id": "D0049",
+  "kind": "note",
+  "created_at": "2025-02-06T12:57:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Watered the plants on the balcony.\nMy godfather works at Gullwing Ferries.",
+  "fact_ids": [
+   "F041"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F041",
+    "start": 35,
+    "end": 74,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0049_note.txt"
  },
  {
   "id": "D0007",
@@ -206,6 +402,60 @@
   ],
   "meta": {},
   "file": "deposits/D0008_note.txt"
+ },
+ {
+  "id": "D0036",
+  "kind": "note",
+  "created_at": "2025-02-06T22:34:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Long day, but a good one.\nPriya joined the Beacon Hill Choir today.",
+  "fact_ids": [
+   "F034"
+  ],
+  "trap_ids": [
+   "T17"
+  ],
+  "spans": [
+   {
+    "fact_id": "F034",
+    "start": 26,
+    "end": 67,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T17",
+     26,
+     67
+    ]
+   ]
+  },
+  "file": "deposits/D0036_note.txt"
+ },
+ {
+  "id": "D0050",
+  "kind": "note",
+  "created_at": "2025-02-07T07:39:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "The neighbours were playing music again.\nMy aunt works from home most days.",
+  "fact_ids": [
+   "F045"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F045",
+    "start": 41,
+    "end": 75,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0050_note.txt"
  },
  {
   "id": "D0009",
@@ -271,6 +521,28 @@
   "file": "deposits/D0010_document.pdf"
  },
  {
+  "id": "D0051",
+  "kind": "note",
+  "created_at": "2025-02-07T15:11:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Watered the plants on the balcony.\nMy landlady lives in Bordeaux now.",
+  "fact_ids": [
+   "F047"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F047",
+    "start": 35,
+    "end": 69,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0051_note.txt"
+ },
+ {
   "id": "D0011",
   "kind": "message",
   "created_at": "2025-02-08T15:50:00",
@@ -310,6 +582,72 @@
   "file": "deposits/D0011_message.txt"
  },
  {
+  "id": "D0052",
+  "kind": "note",
+  "created_at": "2025-02-08T16:09:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "The weather was grey all morning.\nRan into Dina, who works at Mistral Joinery.",
+  "fact_ids": [
+   "F042"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F042",
+    "start": 34,
+    "end": 78,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0052_note.txt"
+ },
+ {
+  "id": "D0041",
+  "kind": "note",
+  "created_at": "2025-02-08T18:15:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "The neighbours were playing music again.\nOskar is still waiting for the standing desk, not delivered yet.",
+  "fact_ids": [
+   "F036"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F036",
+    "start": 41,
+    "end": 105,
+    "role": "not_yet"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0041_note.txt"
+ },
+ {
+  "id": "D0053",
+  "kind": "note",
+  "created_at": "2025-02-08T19:34:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "The neighbours were playing music again.\nSilas lives in Porto, near the harbour.",
+  "fact_ids": [
+   "F037"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F037",
+    "start": 41,
+    "end": 80,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0053_note.txt"
+ },
+ {
   "id": "D0012",
   "kind": "note",
   "created_at": "2025-02-09T08:18:00",
@@ -339,6 +677,60 @@
   "file": "deposits/D0012_note.txt"
  },
  {
+  "id": "D0054",
+  "kind": "note",
+  "created_at": "2025-02-09T09:48:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "The neighbours were playing music again.\nMy uncle works at Pellucid Labs.",
+  "fact_ids": [
+   "F038"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F038",
+    "start": 41,
+    "end": 73,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0054_note.txt"
+ },
+ {
+  "id": "D0037",
+  "kind": "note",
+  "created_at": "2025-02-09T16:16:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Trying to go to bed earlier this week.\nOskar asked about my best friend, who works at Marrowgate Press.",
+  "fact_ids": [
+   "F031"
+  ],
+  "trap_ids": [
+   "T14"
+  ],
+  "spans": [
+   {
+    "fact_id": "F031",
+    "start": 39,
+    "end": 103,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T14",
+     39,
+     103
+    ]
+   ]
+  },
+  "file": "deposits/D0037_note.txt"
+ },
+ {
   "id": "D0013",
   "kind": "voice_in",
   "created_at": "2025-02-09T19:24:00",
@@ -361,6 +753,38 @@
    "voice": "female_b"
   },
   "file": "deposits/D0013_voice_in.m4a"
+ },
+ {
+  "id": "D0038",
+  "kind": "note",
+  "created_at": "2025-02-10T14:18:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Finally cleaned the kitchen properly.\nKasper joined the Saltmarsh Community Choir today.",
+  "fact_ids": [
+   "F032"
+  ],
+  "trap_ids": [
+   "T15"
+  ],
+  "spans": [
+   {
+    "fact_id": "F032",
+    "start": 38,
+    "end": 88,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T15",
+     38,
+     88
+    ]
+   ]
+  },
+  "file": "deposits/D0038_note.txt"
  },
  {
   "id": "D0014",
@@ -430,6 +854,28 @@
   "file": "deposits/D0015_note.txt"
  },
  {
+  "id": "D0042",
+  "kind": "message",
+  "created_at": "2025-02-11T08:16:00",
+  "author": "P0",
+  "recipient": "P2",
+  "text": "The weather was grey all morning. Oskar already has the standing desk, it looks great.",
+  "fact_ids": [
+   "F036"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F036",
+    "start": 34,
+    "end": 86,
+    "role": "already"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0042_message.txt"
+ },
+ {
   "id": "D0016",
   "kind": "message",
   "created_at": "2025-02-11T08:32:00",
@@ -459,6 +905,38 @@
   "file": "deposits/D0016_message.txt"
  },
  {
+  "id": "D0039",
+  "kind": "note",
+  "created_at": "2025-02-11T11:11:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "The train was a few minutes late.\nTold Kasper that my brother works at Larkspur Ceramics.",
+  "fact_ids": [
+   "F033"
+  ],
+  "trap_ids": [
+   "T16"
+  ],
+  "spans": [
+   {
+    "fact_id": "F033",
+    "start": 34,
+    "end": 89,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T16",
+     34,
+     89
+    ]
+   ]
+  },
+  "file": "deposits/D0039_note.txt"
+ },
+ {
   "id": "D0017",
   "kind": "photo",
   "created_at": "2025-02-11T11:40:00",
@@ -485,6 +963,28 @@
    "time": "11:40"
   },
   "file": "deposits/D0017_photo.jpg"
+ },
+ {
+  "id": "D0055",
+  "kind": "note",
+  "created_at": "2025-02-11T12:03:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Need to buy coffee filters.\nPablo lives in Bordeaux, near the harbour.",
+  "fact_ids": [
+   "F048"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F048",
+    "start": 28,
+    "end": 70,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0055_note.txt"
  },
  {
   "id": "D0018",
@@ -691,6 +1191,72 @@
   "file": "deposits/D0025_note.txt"
  },
  {
+  "id": "D0043",
+  "kind": "note",
+  "created_at": "2025-02-12T14:02:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "The neighbours were playing music again.\nThe espresso machine is already here, I use it every day.",
+  "fact_ids": [
+   "F035"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F035",
+    "start": 41,
+    "end": 98,
+    "role": "already"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0043_note.txt"
+ },
+ {
+  "id": "D0056",
+  "kind": "note",
+  "created_at": "2025-02-12T14:14:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Need to buy coffee filters.\nMy landlady works at Oxbow Bindery.",
+  "fact_ids": [
+   "F049"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F049",
+    "start": 28,
+    "end": 63,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0056_note.txt"
+ },
+ {
+  "id": "D0057",
+  "kind": "note",
+  "created_at": "2025-02-13T07:19:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Watered the plants on the balcony.\nRan into Pablo, who works at Oxbow Bindery.",
+  "fact_ids": [
+   "F050"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F050",
+    "start": 35,
+    "end": 78,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0057_note.txt"
+ },
+ {
   "id": "D0026",
   "kind": "note",
   "created_at": "2025-02-13T12:45:00",
@@ -748,6 +1314,28 @@
   "file": "deposits/D0027_photo.jpg"
  },
  {
+  "id": "D0058",
+  "kind": "note",
+  "created_at": "2025-02-14T12:14:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Need to buy coffee filters.\nElias works from home most days.",
+  "fact_ids": [
+   "F046"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F046",
+    "start": 28,
+    "end": 60,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0058_note.txt"
+ },
+ {
   "id": "D0028",
   "kind": "voice_in",
   "created_at": "2025-02-14T18:21:00",
@@ -770,6 +1358,24 @@
    "voice": "female_b"
   },
   "file": "deposits/D0028_voice_in.m4a"
+ },
+ {
+  "id": "D0059",
+  "kind": "note",
+  "created_at": "2025-02-14T19:22:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Trying to go to bed earlier this week.\nLunch with my landlady and Pablo today.",
+  "fact_ids": [],
+  "trap_ids": [],
+  "spans": [],
+  "meta": {
+   "together": [
+    "P10",
+    "P11"
+   ]
+  },
+  "file": "deposits/D0059_note.txt"
  },
  {
   "id": "D0029",
@@ -855,6 +1461,28 @@
    "doc_type": "lease"
   },
   "file": "deposits/D0031_document.pdf"
+ },
+ {
+  "id": "D0060",
+  "kind": "note",
+  "created_at": "2025-02-15T18:49:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Trying to go to bed earlier this week.\nRan into Silas, who works at Pellucid Labs.",
+  "fact_ids": [
+   "F038"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F038",
+    "start": 39,
+    "end": 82,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0060_note.txt"
  },
  {
   "id": "D0032",

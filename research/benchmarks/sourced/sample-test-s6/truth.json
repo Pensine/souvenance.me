@@ -1,0 +1,1767 @@
+{
+ "seed": 6,
+ "start": "2025-02-03",
+ "days": 14,
+ "owner": "P0",
+ "people": [
+  {
+   "id": "P0",
+   "name": "Ivo Okafor",
+   "relation": "self",
+   "voice": "male_b",
+   "role": ""
+  },
+  {
+   "id": "P1",
+   "name": "Ezra Delacroix",
+   "relation": "sister",
+   "voice": "female_b",
+   "role": "my sister"
+  },
+  {
+   "id": "P2",
+   "name": "Dev Lindqvist",
+   "relation": "brother",
+   "voice": "male_a",
+   "role": "my brother"
+  },
+  {
+   "id": "P3",
+   "name": "Jonah Haddad",
+   "relation": "best friend",
+   "voice": "female_gb",
+   "role": "my best friend"
+  },
+  {
+   "id": "P4",
+   "name": "Cormac Fischer",
+   "relation": "cousin",
+   "voice": "female_a",
+   "role": "my cousin from the old flat"
+  },
+  {
+   "id": "P5",
+   "name": "Talia Castillo",
+   "relation": "cousin",
+   "voice": "female_b",
+   "role": "my cousin"
+  },
+  {
+   "id": "P6",
+   "name": "Yusuf Abbott",
+   "relation": "colleague",
+   "voice": "male_a",
+   "role": "my colleague"
+  },
+  {
+   "id": "P7",
+   "name": "Marco Abbott",
+   "relation": "neighbour",
+   "voice": "female_gb",
+   "role": "my neighbour"
+  },
+  {
+   "id": "P8",
+   "name": "Maya Lindqvist",
+   "relation": "flatmate",
+   "voice": "female_a",
+   "role": "my flatmate"
+  },
+  {
+   "id": "P9",
+   "name": "Cyrus Abbott",
+   "relation": "piano teacher",
+   "voice": "female_b",
+   "role": "my piano teacher"
+  },
+  {
+   "id": "P10",
+   "name": "Umar Abbott",
+   "relation": "acquaintance",
+   "voice": "male_a",
+   "role": ""
+  },
+  {
+   "id": "P11",
+   "name": "Lucas Varga",
+   "relation": "uncle",
+   "voice": "female_gb",
+   "role": "my uncle"
+  },
+  {
+   "id": "P12",
+   "name": "Owen Mensah",
+   "relation": "acquaintance",
+   "voice": "female_a",
+   "role": ""
+  },
+  {
+   "id": "P13",
+   "name": "Flora Castillo",
+   "relation": "godfather",
+   "voice": "female_b",
+   "role": "my godfather"
+  },
+  {
+   "id": "P14",
+   "name": "Ida Abbott",
+   "relation": "acquaintance",
+   "voice": "male_a",
+   "role": ""
+  }
+ ],
+ "facts": [
+  {
+   "id": "F001",
+   "subject": "P0",
+   "predicate": "lives_at",
+   "value": {
+    "street": "64 Mill Road",
+    "city": "Ghent"
+   },
+   "valid_from": "2021-01-18",
+   "valid_to": "2025-02-14",
+   "kind": "state",
+   "slot": "P0:lives_at",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor lives at 64 Mill Road, Ghent.",
+   "answer": "64 Mill Road, Ghent",
+   "layer": ""
+  },
+  {
+   "id": "F002",
+   "subject": "P0",
+   "predicate": "lives_at",
+   "value": {
+    "street": "95 Orchard Close",
+    "city": "Ghent"
+   },
+   "valid_from": "2025-02-14",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:lives_at",
+   "version": 1,
+   "supersedes": "F001",
+   "since_stated": true,
+   "canonical": "Ivo Okafor lives at 95 Orchard Close, Ghent.",
+   "answer": "95 Orchard Close, Ghent",
+   "layer": ""
+  },
+  {
+   "id": "F003",
+   "subject": "P0",
+   "predicate": "pays_rent",
+   "value": {
+    "amount": 760,
+    "currency": "EUR"
+   },
+   "valid_from": "2021-01-18",
+   "valid_to": "2025-02-14",
+   "kind": "state",
+   "slot": "P0:pays_rent",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor pays 760 EUR a month in rent.",
+   "answer": "760 EUR",
+   "layer": ""
+  },
+  {
+   "id": "F004",
+   "subject": "P0",
+   "predicate": "pays_rent",
+   "value": {
+    "amount": 1190,
+    "currency": "EUR"
+   },
+   "valid_from": "2025-02-14",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:pays_rent",
+   "version": 1,
+   "supersedes": "F003",
+   "since_stated": true,
+   "canonical": "Ivo Okafor pays 1190 EUR a month in rent.",
+   "answer": "1190 EUR",
+   "layer": ""
+  },
+  {
+   "id": "F005",
+   "subject": "P0",
+   "predicate": "works_at",
+   "value": {
+    "employer": "Harbor & Pine Studio",
+    "title": "project manager"
+   },
+   "valid_from": "2023-08-30",
+   "valid_to": "2025-02-11",
+   "kind": "state",
+   "slot": "P0:works_at",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor works as a project manager at Harbor & Pine Studio.",
+   "answer": "Harbor & Pine Studio",
+   "layer": ""
+  },
+  {
+   "id": "F006",
+   "subject": "P0",
+   "predicate": "works_at",
+   "value": {
+    "employer": "Kestrel Logistics",
+    "title": "research assistant"
+   },
+   "valid_from": "2025-02-11",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:works_at",
+   "version": 1,
+   "supersedes": "F005",
+   "since_stated": true,
+   "canonical": "Ivo Okafor works as a research assistant at Kestrel Logistics.",
+   "answer": "Kestrel Logistics",
+   "layer": ""
+  },
+  {
+   "id": "F007",
+   "subject": "P0",
+   "predicate": "health",
+   "value": {
+    "condition": "a bad chest cold",
+    "care": "rest and fluids"
+   },
+   "valid_from": "2025-02-05",
+   "valid_to": "2025-02-10",
+   "kind": "state",
+   "slot": "P0:health",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor had a bad chest cold, treated with rest and fluids.",
+   "answer": "a bad chest cold",
+   "layer": ""
+  },
+  {
+   "id": "F008",
+   "subject": "P0",
+   "predicate": "birthday",
+   "value": {
+    "date": "1991-11-12"
+   },
+   "valid_from": "1991-11-12",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:birthday",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor's birthday is on 12 November.",
+   "answer": "12 November",
+   "layer": ""
+  },
+  {
+   "id": "F009",
+   "subject": "P0",
+   "predicate": "hometown",
+   "value": {
+    "city": "Lyon"
+   },
+   "valid_from": "1991-11-12",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:hometown",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor grew up in Lyon.",
+   "answer": "Lyon",
+   "layer": ""
+  },
+  {
+   "id": "F010",
+   "subject": "P0",
+   "predicate": "allergy",
+   "value": {
+    "food": "sesame"
+   },
+   "valid_from": "2023-09-06",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:allergy",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor is allergic to sesame.",
+   "answer": "sesame",
+   "layer": ""
+  },
+  {
+   "id": "F011",
+   "subject": "P0",
+   "predicate": "speaks",
+   "value": {
+    "language": "Swedish"
+   },
+   "valid_from": "2021-07-15",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:speaks",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor speaks Swedish.",
+   "answer": "Swedish",
+   "layer": ""
+  },
+  {
+   "id": "F012",
+   "subject": "P1",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Valencia"
+   },
+   "valid_from": "2023-01-22",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ezra Delacroix lives in Valencia.",
+   "answer": "Valencia",
+   "layer": ""
+  },
+  {
+   "id": "F013",
+   "subject": "P1",
+   "predicate": "job",
+   "value": {
+    "title": "product designer"
+   },
+   "valid_from": "2024-04-06",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ezra Delacroix works as a product designer.",
+   "answer": "product designer",
+   "layer": ""
+  },
+  {
+   "id": "F014",
+   "subject": "P2",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Bordeaux"
+   },
+   "valid_from": "2021-01-18",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dev Lindqvist lives in Bordeaux.",
+   "answer": "Bordeaux",
+   "layer": ""
+  },
+  {
+   "id": "F015",
+   "subject": "P2",
+   "predicate": "job",
+   "value": {
+    "title": "backend engineer"
+   },
+   "valid_from": "2022-08-21",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dev Lindqvist works as a backend engineer.",
+   "answer": "backend engineer",
+   "layer": ""
+  },
+  {
+   "id": "F016",
+   "subject": "P2",
+   "predicate": "birthday",
+   "value": {
+    "date": "1986-12-17"
+   },
+   "valid_from": "1986-12-17",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:birthday",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dev Lindqvist's birthday is on 17 December.",
+   "answer": "17 December",
+   "layer": ""
+  },
+  {
+   "id": "F017",
+   "subject": "P3",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Porto"
+   },
+   "valid_from": "2024-09-02",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Jonah Haddad lives in Porto.",
+   "answer": "Porto",
+   "layer": ""
+  },
+  {
+   "id": "F018",
+   "subject": "P3",
+   "predicate": "job",
+   "value": {
+    "title": "sales lead"
+   },
+   "valid_from": "2021-01-01",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Jonah Haddad works as a sales lead.",
+   "answer": "sales lead",
+   "layer": ""
+  },
+  {
+   "id": "F019",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P2",
+    "name": "Dev Lindqvist",
+    "venue": "the old market hall"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor met Dev Lindqvist at the old market hall on 9 February 2025.",
+   "answer": "the old market hall",
+   "layer": ""
+  },
+  {
+   "id": "F020",
+   "subject": "P0",
+   "predicate": "race",
+   "value": {
+    "race": "Spring 10K",
+    "time": "47:27"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:race",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor ran the Spring 10K on 10 February 2025 in 47:27.",
+   "answer": "47:27",
+   "layer": ""
+  },
+  {
+   "id": "F021",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P1",
+    "name": "Ezra Delacroix",
+    "venue": "the harbour footpath"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor met Ezra Delacroix at the harbour footpath on 9 February 2025.",
+   "answer": "the harbour footpath",
+   "layer": ""
+  },
+  {
+   "id": "F022",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the harbour footpath",
+    "city": "Turin",
+    "lat": 45.08166,
+    "lon": 7.6821,
+    "time": "09:33"
+   },
+   "valid_from": "2025-02-04",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor was in Turin on 4 February 2025.",
+   "answer": "Turin",
+   "layer": ""
+  },
+  {
+   "id": "F023",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P3",
+    "name": "Jonah Haddad",
+    "venue": "the harbour footpath"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor met Jonah Haddad at the harbour footpath on 7 February 2025.",
+   "answer": "the harbour footpath",
+   "layer": ""
+  },
+  {
+   "id": "F024",
+   "subject": "P3",
+   "predicate": "news",
+   "value": {
+    "what": "passed a driving test"
+   },
+   "valid_from": "2025-02-06",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P3:news",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Jonah Haddad passed a driving test around 6 February 2025.",
+   "answer": "passed a driving test",
+   "layer": ""
+  },
+  {
+   "id": "F025",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P1",
+    "name": "Ezra Delacroix",
+    "venue": "the riverside park"
+   },
+   "valid_from": "2025-02-14",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor met Ezra Delacroix at the riverside park on 14 February 2025.",
+   "answer": "the riverside park",
+   "layer": ""
+  },
+  {
+   "id": "F026",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the botanical garden",
+    "city": "Ghent",
+    "lat": 51.0418,
+    "lon": 3.71751,
+    "time": "13:59"
+   },
+   "valid_from": "2025-02-04",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor was in Ghent on 4 February 2025.",
+   "answer": "Ghent",
+   "layer": ""
+  },
+  {
+   "id": "F027",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P2",
+    "name": "Dev Lindqvist",
+    "venue": "the hilltop viewpoint"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor met Dev Lindqvist at the hilltop viewpoint on 9 February 2025.",
+   "answer": "the hilltop viewpoint",
+   "layer": ""
+  },
+  {
+   "id": "F028",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P2",
+    "name": "Dev Lindqvist",
+    "venue": "the city library"
+   },
+   "valid_from": "2025-02-12",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor met Dev Lindqvist at the city library on 12 February 2025.",
+   "answer": "the city library",
+   "layer": ""
+  },
+  {
+   "id": "F029",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P3",
+    "name": "Jonah Haddad",
+    "venue": "the harbour footpath"
+   },
+   "valid_from": "2025-02-05",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor met Jonah Haddad at the harbour footpath on 5 February 2025.",
+   "answer": "the harbour footpath",
+   "layer": ""
+  },
+  {
+   "id": "F030",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P2",
+    "name": "Dev Lindqvist",
+    "venue": "the botanical garden"
+   },
+   "valid_from": "2025-02-13",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor met Dev Lindqvist at the botanical garden on 13 February 2025.",
+   "answer": "the botanical garden",
+   "layer": ""
+  },
+  {
+   "id": "F031",
+   "subject": "P7",
+   "predicate": "employer",
+   "value": {
+    "employer": "Hollowbrook Surveying"
+   },
+   "valid_from": "2024-01-27",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P7:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Marco Abbott works at Hollowbrook Surveying.",
+   "answer": "Hollowbrook Surveying",
+   "layer": "identity"
+  },
+  {
+   "id": "F032",
+   "subject": "P7",
+   "predicate": "joined",
+   "value": {
+    "group": "the Juniper Street Youth Choir"
+   },
+   "valid_from": "2025-02-08",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P7:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Marco Abbott joined the Juniper Street Youth Choir on 8 February 2025.",
+   "answer": "Juniper Street Youth Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F033",
+   "subject": "P3",
+   "predicate": "employer",
+   "value": {
+    "employer": "Saltire Glassworks"
+   },
+   "valid_from": "2023-10-06",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Jonah Haddad works at Saltire Glassworks.",
+   "answer": "Saltire Glassworks",
+   "layer": "identity"
+  },
+  {
+   "id": "F034",
+   "subject": "P3",
+   "predicate": "joined",
+   "value": {
+    "group": "the Old Mill Folk Choir"
+   },
+   "valid_from": "2025-02-08",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P3:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Jonah Haddad joined the Old Mill Folk Choir on 8 February 2025.",
+   "answer": "Old Mill Folk Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F035",
+   "subject": "P1",
+   "predicate": "employer",
+   "value": {
+    "employer": "Quillon Maps"
+   },
+   "valid_from": "2023-06-30",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ezra Delacroix works at Quillon Maps.",
+   "answer": "Quillon Maps",
+   "layer": "identity"
+  },
+  {
+   "id": "F036",
+   "subject": "P1",
+   "predicate": "joined",
+   "value": {
+    "group": "the Kiln Lane Chamber Choir"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P1:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ezra Delacroix joined the Kiln Lane Chamber Choir on 10 February 2025.",
+   "answer": "Kiln Lane Chamber Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F037",
+   "subject": "P6",
+   "predicate": "employer",
+   "value": {
+    "employer": "Larkspur Ceramics"
+   },
+   "valid_from": "2023-05-22",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P6:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Abbott works at Larkspur Ceramics.",
+   "answer": "Larkspur Ceramics",
+   "layer": "identity"
+  },
+  {
+   "id": "F038",
+   "subject": "P6",
+   "predicate": "joined",
+   "value": {
+    "group": "the Beacon Hill Choir"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P6:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Abbott joined the Beacon Hill Choir on 15 February 2025.",
+   "answer": "Beacon Hill Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F039",
+   "subject": "P2",
+   "predicate": "employer",
+   "value": {
+    "employer": "Fennick & Dale Opticians"
+   },
+   "valid_from": "2023-08-12",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dev Lindqvist works at Fennick & Dale Opticians.",
+   "answer": "Fennick & Dale Opticians",
+   "layer": "identity"
+  },
+  {
+   "id": "F040",
+   "subject": "P2",
+   "predicate": "joined",
+   "value": {
+    "group": "the Saltmarsh Community Choir"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P2:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dev Lindqvist joined the Saltmarsh Community Choir on 15 February 2025.",
+   "answer": "Saltmarsh Community Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F041",
+   "subject": "P4",
+   "predicate": "employer",
+   "value": {
+    "employer": "Brackenridge Seeds"
+   },
+   "valid_from": "2023-06-18",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P4:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cormac Fischer works at Brackenridge Seeds.",
+   "answer": "Brackenridge Seeds",
+   "layer": "identity"
+  },
+  {
+   "id": "F042",
+   "subject": "P4",
+   "predicate": "joined",
+   "value": {
+    "group": "the Harbour Gospel Choir"
+   },
+   "valid_from": "2025-02-13",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P4:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cormac Fischer joined the Harbour Gospel Choir on 13 February 2025.",
+   "answer": "Harbour Gospel Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F043",
+   "subject": "P0",
+   "predicate": "acquired",
+   "value": {
+    "item": "standing desk"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:acquired:standing desk",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ivo Okafor has a standing desk.",
+   "answer": "standing desk",
+   "layer": "dating"
+  },
+  {
+   "id": "F044",
+   "subject": "P6",
+   "predicate": "acquired",
+   "value": {
+    "item": "kayak"
+   },
+   "valid_from": "2025-02-11",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P6:acquired:kayak",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Abbott has a kayak.",
+   "answer": "kayak",
+   "layer": "dating"
+  },
+  {
+   "id": "F045",
+   "subject": "P5",
+   "predicate": "acquired",
+   "value": {
+    "item": "upright piano"
+   },
+   "valid_from": "2025-02-13",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P5:acquired:upright piano",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Talia Castillo has an upright piano.",
+   "answer": "upright piano",
+   "layer": "dating"
+  },
+  {
+   "id": "F046",
+   "subject": "P4",
+   "predicate": "acquired",
+   "value": {
+    "item": "rowing machine"
+   },
+   "valid_from": "2025-02-12",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P4:acquired:rowing machine",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cormac Fischer has a rowing machine.",
+   "answer": "rowing machine",
+   "layer": "dating"
+  },
+  {
+   "id": "F047",
+   "subject": "P1",
+   "predicate": "acquired",
+   "value": {
+    "item": "espresso machine"
+   },
+   "valid_from": "2025-02-06",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:acquired:espresso machine",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ezra Delacroix has an espresso machine.",
+   "answer": "espresso machine",
+   "layer": "dating"
+  },
+  {
+   "id": "F048",
+   "subject": "P2",
+   "predicate": "acquired",
+   "value": {
+    "item": "pottery wheel"
+   },
+   "valid_from": "2025-02-05",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:acquired:pottery wheel",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dev Lindqvist has a pottery wheel.",
+   "answer": "pottery wheel",
+   "layer": "dating"
+  },
+  {
+   "id": "F049",
+   "subject": "P8",
+   "predicate": "based_in",
+   "value": {
+    "city": "Gothenburg"
+   },
+   "valid_from": "2023-02-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P8:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Maya Lindqvist lives in Gothenburg.",
+   "answer": "Gothenburg",
+   "layer": "coverage"
+  },
+  {
+   "id": "F050",
+   "subject": "P8",
+   "predicate": "employer",
+   "value": {
+    "employer": "Wickerfield Nursery"
+   },
+   "valid_from": "2024-08-24",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P8:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Maya Lindqvist works at Wickerfield Nursery.",
+   "answer": "Wickerfield Nursery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F051",
+   "subject": "P9",
+   "predicate": "based_in",
+   "value": {
+    "city": "Edinburgh"
+   },
+   "valid_from": "2022-09-18",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P9:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Abbott lives in Edinburgh.",
+   "answer": "Edinburgh",
+   "layer": "coverage"
+  },
+  {
+   "id": "F052",
+   "subject": "P10",
+   "predicate": "based_in",
+   "value": {
+    "city": "Edinburgh"
+   },
+   "valid_from": "2024-03-24",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P10:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Abbott lives in Edinburgh.",
+   "answer": "Edinburgh",
+   "layer": "coverage"
+  },
+  {
+   "id": "F053",
+   "subject": "P9",
+   "predicate": "employer",
+   "value": {
+    "employer": "Tamberlane Bakery"
+   },
+   "valid_from": "2023-11-21",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P9:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Abbott works at Tamberlane Bakery.",
+   "answer": "Tamberlane Bakery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F054",
+   "subject": "P10",
+   "predicate": "employer",
+   "value": {
+    "employer": "Oxbow Bindery"
+   },
+   "valid_from": "2023-01-18",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P10:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Abbott works at Oxbow Bindery.",
+   "answer": "Oxbow Bindery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F055",
+   "subject": "P11",
+   "predicate": "based_in",
+   "value": {
+    "city": "Rotterdam"
+   },
+   "valid_from": "2024-04-26",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P11:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Lucas Varga lives in Rotterdam.",
+   "answer": "Rotterdam",
+   "layer": "coverage"
+  },
+  {
+   "id": "F056",
+   "subject": "P12",
+   "predicate": "based_in",
+   "value": {
+    "city": "Rotterdam"
+   },
+   "valid_from": "2023-10-23",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P12:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Owen Mensah lives in Rotterdam.",
+   "answer": "Rotterdam",
+   "layer": "coverage"
+  },
+  {
+   "id": "F057",
+   "subject": "P11",
+   "predicate": "works_from",
+   "value": {
+    "where": "home"
+   },
+   "valid_from": "2023-06-01",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P11:works_from",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Lucas Varga works from home.",
+   "answer": "home",
+   "layer": "coverage"
+  },
+  {
+   "id": "F058",
+   "subject": "P12",
+   "predicate": "works_from",
+   "value": {
+    "where": "home"
+   },
+   "valid_from": "2024-05-24",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P12:works_from",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Owen Mensah works from home.",
+   "answer": "home",
+   "layer": "coverage"
+  },
+  {
+   "id": "F059",
+   "subject": "P13",
+   "predicate": "based_in",
+   "value": {
+    "city": "Leipzig"
+   },
+   "valid_from": "2023-09-16",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P13:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Flora Castillo lives in Leipzig.",
+   "answer": "Leipzig",
+   "layer": "coverage"
+  },
+  {
+   "id": "F060",
+   "subject": "P14",
+   "predicate": "based_in",
+   "value": {
+    "city": "Leipzig"
+   },
+   "valid_from": "2022-11-01",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P14:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ida Abbott lives in Leipzig.",
+   "answer": "Leipzig",
+   "layer": "coverage"
+  },
+  {
+   "id": "F061",
+   "subject": "P13",
+   "predicate": "employer",
+   "value": {
+    "employer": "Halyard Sailmakers"
+   },
+   "valid_from": "2024-05-31",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P13:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Flora Castillo works at Halyard Sailmakers.",
+   "answer": "Halyard Sailmakers",
+   "layer": "coverage"
+  },
+  {
+   "id": "F062",
+   "subject": "P14",
+   "predicate": "employer",
+   "value": {
+    "employer": "Halyard Sailmakers"
+   },
+   "valid_from": "2024-06-29",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P14:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Ida Abbott works at Halyard Sailmakers.",
+   "answer": "Halyard Sailmakers",
+   "layer": "coverage"
+  }
+ ],
+ "traps": [
+  {
+   "id": "T01",
+   "kind": "hypothetical",
+   "subject": "P0",
+   "day": "2025-02-13",
+   "sentence": "If the Valencia offer ever comes through, I'd honestly move there in a heartbeat.",
+   "forbidden": "Ivo Okafor moved to Valencia.",
+   "question": "When did Ivo move to Valencia?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T02",
+   "kind": "plan",
+   "subject": "P0",
+   "day": "2025-02-05",
+   "sentence": "I keep thinking about adopting a dog, maybe next year.",
+   "forbidden": "Ivo Okafor has a dog.",
+   "question": "What is the name of Ivo's dog?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T03",
+   "kind": "negation",
+   "subject": "P0",
+   "day": "2025-02-12",
+   "sentence": "In the end I did not sign up for the marathon, not this year.",
+   "forbidden": "Ivo Okafor signed up for a marathon.",
+   "question": "Which marathon did Ivo sign up for?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T04",
+   "kind": "hearsay",
+   "subject": "P2",
+   "day": "2025-02-14",
+   "sentence": "Dev said their bike got stolen outside the station.",
+   "forbidden": "Ivo Okafor's bike was stolen.",
+   "question": "Where was Ivo's bike stolen?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T05",
+   "kind": "plan",
+   "subject": "P0",
+   "day": "2025-02-12",
+   "sentence": "Maybe I'll learn to sail this summer, we'll see.",
+   "forbidden": "Ivo Okafor learned to sail.",
+   "question": "Where did Ivo take sailing lessons?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T06",
+   "kind": "hearsay",
+   "subject": "P2",
+   "day": "2025-02-08",
+   "sentence": "Apparently Dev's company might be shutting down.",
+   "forbidden": "Dev Lindqvist's company shut down.",
+   "question": "When did Dev's company shut down?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T07",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-04",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Ivo took on 4 February 2025?",
+   "fact_id": "F022",
+   "misattributed_to": []
+  },
+  {
+   "id": "T08",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-04",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Ivo took on 4 February 2025?",
+   "fact_id": "F026",
+   "misattributed_to": []
+  },
+  {
+   "id": "T09",
+   "kind": "attribution",
+   "subject": "P7",
+   "day": "2025-02-13",
+   "sentence": "Jonah asked about my neighbour, who works at Hollowbrook Surveying.",
+   "forbidden": "Ivo Okafor works at Hollowbrook Surveying.",
+   "question": "",
+   "fact_id": "F031",
+   "misattributed_to": [
+    "P0",
+    "P3"
+   ]
+  },
+  {
+   "id": "T10",
+   "kind": "attribution",
+   "subject": "P7",
+   "day": "2025-02-08",
+   "sentence": "Marco joined the Juniper Street Youth Choir today.",
+   "forbidden": "Ivo Okafor joined the Juniper Street Youth Choir.",
+   "question": "",
+   "fact_id": "F032",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T11",
+   "kind": "attribution",
+   "subject": "P3",
+   "day": "2025-02-14",
+   "sentence": "Told Talia that my best friend works at Saltire Glassworks.",
+   "forbidden": "Ivo Okafor works at Saltire Glassworks.",
+   "question": "",
+   "fact_id": "F033",
+   "misattributed_to": [
+    "P0",
+    "P5"
+   ]
+  },
+  {
+   "id": "T12",
+   "kind": "attribution",
+   "subject": "P3",
+   "day": "2025-02-08",
+   "sentence": "Jonah joined the Old Mill Folk Choir today.",
+   "forbidden": "Ivo Okafor joined the Old Mill Folk Choir.",
+   "question": "",
+   "fact_id": "F034",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T13",
+   "kind": "attribution",
+   "subject": "P1",
+   "day": "2025-02-08",
+   "sentence": "Told Jonah that my sister works at Quillon Maps.",
+   "forbidden": "Ivo Okafor works at Quillon Maps.",
+   "question": "",
+   "fact_id": "F035",
+   "misattributed_to": [
+    "P0",
+    "P3"
+   ]
+  },
+  {
+   "id": "T14",
+   "kind": "attribution",
+   "subject": "P1",
+   "day": "2025-02-10",
+   "sentence": "Ezra joined the Kiln Lane Chamber Choir today.",
+   "forbidden": "Ivo Okafor joined the Kiln Lane Chamber Choir.",
+   "question": "",
+   "fact_id": "F036",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T15",
+   "kind": "attribution",
+   "subject": "P6",
+   "day": "2025-02-16",
+   "sentence": "Told Cormac that my colleague works at Larkspur Ceramics.",
+   "forbidden": "Ivo Okafor works at Larkspur Ceramics.",
+   "question": "",
+   "fact_id": "F037",
+   "misattributed_to": [
+    "P0",
+    "P4"
+   ]
+  },
+  {
+   "id": "T16",
+   "kind": "attribution",
+   "subject": "P6",
+   "day": "2025-02-15",
+   "sentence": "Yusuf joined the Beacon Hill Choir today.",
+   "forbidden": "Ivo Okafor joined the Beacon Hill Choir.",
+   "question": "",
+   "fact_id": "F038",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T17",
+   "kind": "attribution",
+   "subject": "P2",
+   "day": "2025-02-16",
+   "sentence": "Cormac asked about my brother, who works at Fennick & Dale Opticians.",
+   "forbidden": "Ivo Okafor works at Fennick & Dale Opticians.",
+   "question": "",
+   "fact_id": "F039",
+   "misattributed_to": [
+    "P0",
+    "P4"
+   ]
+  },
+  {
+   "id": "T18",
+   "kind": "attribution",
+   "subject": "P2",
+   "day": "2025-02-15",
+   "sentence": "Dev joined the Saltmarsh Community Choir today.",
+   "forbidden": "Ivo Okafor joined the Saltmarsh Community Choir.",
+   "question": "",
+   "fact_id": "F040",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T19",
+   "kind": "attribution",
+   "subject": "P4",
+   "day": "2025-02-05",
+   "sentence": "Told Talia that my cousin from the old flat works at Brackenridge Seeds.",
+   "forbidden": "Ivo Okafor works at Brackenridge Seeds.",
+   "question": "",
+   "fact_id": "F041",
+   "misattributed_to": [
+    "P0",
+    "P5"
+   ]
+  },
+  {
+   "id": "T20",
+   "kind": "attribution",
+   "subject": "P4",
+   "day": "2025-02-13",
+   "sentence": "Cormac joined the Harbour Gospel Choir today.",
+   "forbidden": "Ivo Okafor joined the Harbour Gospel Choir.",
+   "question": "",
+   "fact_id": "F042",
+   "misattributed_to": [
+    "P0"
+   ]
+  }
+ ],
+ "unstated": [
+  {
+   "question": "What car does Ivo drive?"
+  },
+  {
+   "question": "What is Ivo's blood type?"
+  },
+  {
+   "question": "Which university did Ivo attend?"
+  },
+  {
+   "question": "What is Ivo's shoe size?"
+  },
+  {
+   "question": "How old is Ivo's pet?"
+  },
+  {
+   "question": "What car does Ezra drive?"
+  },
+  {
+   "question": "What is Dev's favourite band?"
+  },
+  {
+   "question": "Which school did Jonah go to?"
+  }
+ ],
+ "identity": [
+  {
+   "person": "P7",
+   "role": "my neighbour",
+   "contrast": "P3",
+   "alias_day": "2025-02-06",
+   "alias_sentence": "Long call with Marco, my neighbour, this evening.",
+   "role_fact": "F031",
+   "role_trap": "T09",
+   "name_fact": "F032",
+   "name_trap": "T10"
+  },
+  {
+   "person": "P3",
+   "role": "my best friend",
+   "contrast": "P5",
+   "alias_day": "2025-02-06",
+   "alias_sentence": "Dinner with my best friend Jonah tonight, we talked for hours.",
+   "role_fact": "F033",
+   "role_trap": "T11",
+   "name_fact": "F034",
+   "name_trap": "T12"
+  },
+  {
+   "person": "P1",
+   "role": "my sister",
+   "contrast": "P3",
+   "alias_day": "2025-02-06",
+   "alias_sentence": "Dinner with my sister Ezra tonight, we talked for hours.",
+   "role_fact": "F035",
+   "role_trap": "T13",
+   "name_fact": "F036",
+   "name_trap": "T14"
+  },
+  {
+   "person": "P6",
+   "role": "my colleague",
+   "contrast": "P4",
+   "alias_day": "2025-02-04",
+   "alias_sentence": "Dinner with my colleague Yusuf tonight, we talked for hours.",
+   "role_fact": "F037",
+   "role_trap": "T15",
+   "name_fact": "F038",
+   "name_trap": "T16"
+  },
+  {
+   "person": "P2",
+   "role": "my brother",
+   "contrast": "P4",
+   "alias_day": "2025-02-05",
+   "alias_sentence": "Dinner with my brother Dev tonight, we talked for hours.",
+   "role_fact": "F039",
+   "role_trap": "T17",
+   "name_fact": "F040",
+   "name_trap": "T18"
+  },
+  {
+   "person": "P4",
+   "role": "my cousin from the old flat",
+   "contrast": "P5",
+   "alias_day": "2025-02-04",
+   "alias_sentence": "Dinner with my cousin from the old flat Cormac tonight, we talked for hours.",
+   "role_fact": "F041",
+   "role_trap": "T19",
+   "name_fact": "F042",
+   "name_trap": "T20"
+  }
+ ],
+ "dating": [
+  {
+   "fact": "F043",
+   "not_yet_day": "2025-02-08",
+   "already_day": "2025-02-14"
+  },
+  {
+   "fact": "F044",
+   "not_yet_day": "2025-02-09",
+   "already_day": "2025-02-11"
+  },
+  {
+   "fact": "F045",
+   "not_yet_day": "2025-02-09",
+   "already_day": "2025-02-13"
+  },
+  {
+   "fact": "F046",
+   "not_yet_day": "2025-02-08",
+   "already_day": "2025-02-15"
+  },
+  {
+   "fact": "F047",
+   "not_yet_day": "2025-02-04",
+   "already_day": "2025-02-07"
+  },
+  {
+   "fact": "F048",
+   "not_yet_day": "2025-02-03",
+   "already_day": "2025-02-05"
+  }
+ ],
+ "coverage": [
+  {
+   "case": "converging",
+   "role_person": "P8",
+   "name_person": "P8",
+   "role": "my flatmate",
+   "same": true,
+   "city": "Gothenburg",
+   "mentions": [
+    {
+     "fact": "F049",
+     "by_role": true,
+     "day": "2025-02-03"
+    },
+    {
+     "fact": "F049",
+     "by_role": false,
+     "day": "2025-02-05"
+    },
+    {
+     "fact": "F050",
+     "by_role": true,
+     "day": "2025-02-09"
+    },
+    {
+     "fact": "F050",
+     "by_role": false,
+     "day": "2025-02-14"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "one_attribute",
+   "role_person": "P9",
+   "name_person": "P10",
+   "role": "my piano teacher",
+   "same": false,
+   "city": "Edinburgh",
+   "mentions": [
+    {
+     "fact": "F051",
+     "by_role": true,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F052",
+     "by_role": false,
+     "day": "2025-02-06"
+    },
+    {
+     "fact": "F053",
+     "by_role": true,
+     "day": "2025-02-12"
+    },
+    {
+     "fact": "F054",
+     "by_role": false,
+     "day": "2025-02-14"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "generic",
+   "role_person": "P11",
+   "name_person": "P12",
+   "role": "my uncle",
+   "same": false,
+   "city": "Rotterdam",
+   "mentions": [
+    {
+     "fact": "F055",
+     "by_role": true,
+     "day": "2025-02-03"
+    },
+    {
+     "fact": "F056",
+     "by_role": false,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F057",
+     "by_role": true,
+     "day": "2025-02-06"
+    },
+    {
+     "fact": "F058",
+     "by_role": false,
+     "day": "2025-02-13"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "together",
+   "role_person": "P13",
+   "name_person": "P14",
+   "role": "my godfather",
+   "same": false,
+   "city": "Leipzig",
+   "mentions": [
+    {
+     "fact": "F059",
+     "by_role": true,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F060",
+     "by_role": false,
+     "day": "2025-02-08"
+    },
+    {
+     "fact": "F061",
+     "by_role": true,
+     "day": "2025-02-13"
+    },
+    {
+     "fact": "F062",
+     "by_role": false,
+     "day": "2025-02-14"
+    }
+   ],
+   "together_day": "2025-02-16"
+  }
+ ]
+}

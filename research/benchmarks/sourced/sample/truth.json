@@ -8,31 +8,85 @@
    "id": "P0",
    "name": "Kofi Achebe",
    "relation": "self",
-   "voice": "female_a"
+   "voice": "female_a",
+   "role": ""
   },
   {
    "id": "P1",
    "name": "Oskar Lindqvist",
    "relation": "sister",
-   "voice": "male_a"
+   "voice": "male_a",
+   "role": "my sister"
   },
   {
    "id": "P2",
    "name": "Priya Sorensen",
    "relation": "brother",
-   "voice": "male_b"
+   "voice": "male_b",
+   "role": "my brother"
   },
   {
    "id": "P3",
    "name": "Kasper Varga",
    "relation": "best friend",
-   "voice": "female_gb"
+   "voice": "female_gb",
+   "role": "my best friend"
   },
   {
    "id": "P4",
    "name": "Hollis Petrov",
    "relation": "friend",
-   "voice": "female_b"
+   "voice": "female_b",
+   "role": "my friend"
+  },
+  {
+   "id": "P5",
+   "name": "Silas Brennan",
+   "relation": "uncle",
+   "voice": "male_a",
+   "role": "my uncle"
+  },
+  {
+   "id": "P6",
+   "name": "Hana Duarte",
+   "relation": "godfather",
+   "voice": "male_b",
+   "role": "my godfather"
+  },
+  {
+   "id": "P7",
+   "name": "Dina Sorensen",
+   "relation": "acquaintance",
+   "voice": "female_gb",
+   "role": ""
+  },
+  {
+   "id": "P8",
+   "name": "Theo Abbott",
+   "relation": "aunt",
+   "voice": "female_b",
+   "role": "my aunt"
+  },
+  {
+   "id": "P9",
+   "name": "Elias Collins",
+   "relation": "acquaintance",
+   "voice": "male_a",
+   "role": ""
+  },
+  {
+   "id": "P10",
+   "name": "Quinn Fischer",
+   "relation": "landlady",
+   "voice": "male_b",
+   "role": "my landlady"
+  },
+  {
+   "id": "P11",
+   "name": "Pablo Collins",
+   "relation": "acquaintance",
+   "voice": "female_gb",
+   "role": ""
   }
  ],
  "facts": [
@@ -52,7 +106,8 @@
    "supersedes": null,
    "since_stated": true,
    "canonical": "Kofi Achebe lives at 51 Orchard Close, Ghent.",
-   "answer": "51 Orchard Close, Ghent"
+   "answer": "51 Orchard Close, Ghent",
+   "layer": ""
   },
   {
    "id": "F002",
@@ -70,7 +125,8 @@
    "supersedes": "F001",
    "since_stated": true,
    "canonical": "Kofi Achebe lives at 79 Linden Street, Ghent.",
-   "answer": "79 Linden Street, Ghent"
+   "answer": "79 Linden Street, Ghent",
+   "layer": ""
   },
   {
    "id": "F003",
@@ -88,7 +144,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe pays 680 EUR a month in rent.",
-   "answer": "680 EUR"
+   "answer": "680 EUR",
+   "layer": ""
   },
   {
    "id": "F004",
@@ -106,7 +163,8 @@
    "supersedes": "F003",
    "since_stated": true,
    "canonical": "Kofi Achebe pays 1340 EUR a month in rent.",
-   "answer": "1340 EUR"
+   "answer": "1340 EUR",
+   "layer": ""
   },
   {
    "id": "F005",
@@ -124,7 +182,8 @@
    "supersedes": null,
    "since_stated": true,
    "canonical": "Kofi Achebe works as a backend engineer at Northwind Analytics.",
-   "answer": "Northwind Analytics"
+   "answer": "Northwind Analytics",
+   "layer": ""
   },
   {
    "id": "F006",
@@ -142,7 +201,8 @@
    "supersedes": "F005",
    "since_stated": true,
    "canonical": "Kofi Achebe works as a research assistant at Silverfern Energy.",
-   "answer": "Silverfern Energy"
+   "answer": "Silverfern Energy",
+   "layer": ""
   },
   {
    "id": "F007",
@@ -160,7 +220,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe had a bad chest cold, treated with rest and fluids.",
-   "answer": "a bad chest cold"
+   "answer": "a bad chest cold",
+   "layer": ""
   },
   {
    "id": "F008",
@@ -177,7 +238,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe's birthday is on 1 May.",
-   "answer": "1 May"
+   "answer": "1 May",
+   "layer": ""
   },
   {
    "id": "F009",
@@ -194,7 +256,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe grew up in Bristol.",
-   "answer": "Bristol"
+   "answer": "Bristol",
+   "layer": ""
   },
   {
    "id": "F010",
@@ -211,7 +274,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe is allergic to sesame.",
-   "answer": "sesame"
+   "answer": "sesame",
+   "layer": ""
   },
   {
    "id": "F011",
@@ -228,7 +292,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe speaks Arabic.",
-   "answer": "Arabic"
+   "answer": "Arabic",
+   "layer": ""
   },
   {
    "id": "F012",
@@ -245,7 +310,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Oskar Lindqvist lives in Montreal.",
-   "answer": "Montreal"
+   "answer": "Montreal",
+   "layer": ""
   },
   {
    "id": "F013",
@@ -262,7 +328,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Priya Sorensen lives in Rotterdam.",
-   "answer": "Rotterdam"
+   "answer": "Rotterdam",
+   "layer": ""
   },
   {
    "id": "F014",
@@ -279,7 +346,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Priya Sorensen works as an operations manager.",
-   "answer": "operations manager"
+   "answer": "operations manager",
+   "layer": ""
   },
   {
    "id": "F015",
@@ -296,7 +364,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kasper Varga lives in Edinburgh.",
-   "answer": "Edinburgh"
+   "answer": "Edinburgh",
+   "layer": ""
   },
   {
    "id": "F016",
@@ -313,7 +382,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Hollis Petrov lives in Montreal.",
-   "answer": "Montreal"
+   "answer": "Montreal",
+   "layer": ""
   },
   {
    "id": "F017",
@@ -330,7 +400,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Hollis Petrov works as a sales lead.",
-   "answer": "sales lead"
+   "answer": "sales lead",
+   "layer": ""
   },
   {
    "id": "F018",
@@ -349,7 +420,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe met Oskar Lindqvist at the harbour footpath on 10 February 2025.",
-   "answer": "the harbour footpath"
+   "answer": "the harbour footpath",
+   "layer": ""
   },
   {
    "id": "F019",
@@ -370,7 +442,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe was in Lyon on 14 February 2025.",
-   "answer": "Lyon"
+   "answer": "Lyon",
+   "layer": ""
   },
   {
    "id": "F020",
@@ -391,7 +464,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe was in Ghent on 16 February 2025.",
-   "answer": "Ghent"
+   "answer": "Ghent",
+   "layer": ""
   },
   {
    "id": "F021",
@@ -410,7 +484,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe met Oskar Lindqvist at the harbour footpath on 7 February 2025.",
-   "answer": "the harbour footpath"
+   "answer": "the harbour footpath",
+   "layer": ""
   },
   {
    "id": "F022",
@@ -427,7 +502,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe had a bank adviser appointment on 16 February 2025.",
-   "answer": "16 February 2025"
+   "answer": "16 February 2025",
+   "layer": ""
   },
   {
    "id": "F023",
@@ -444,7 +520,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe had a bank adviser appointment on 11 February 2025.",
-   "answer": "11 February 2025"
+   "answer": "11 February 2025",
+   "layer": ""
   },
   {
    "id": "F024",
@@ -465,7 +542,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe was in Ghent on 3 February 2025.",
-   "answer": "Ghent"
+   "answer": "Ghent",
+   "layer": ""
   },
   {
    "id": "F025",
@@ -484,7 +562,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe met Hollis Petrov at the botanical garden on 8 February 2025.",
-   "answer": "the botanical garden"
+   "answer": "the botanical garden",
+   "layer": ""
   },
   {
    "id": "F026",
@@ -505,7 +584,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe was in Ghent on 11 February 2025.",
-   "answer": "Ghent"
+   "answer": "Ghent",
+   "layer": ""
   },
   {
    "id": "F027",
@@ -526,7 +606,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe was in Ghent on 12 February 2025.",
-   "answer": "Ghent"
+   "answer": "Ghent",
+   "layer": ""
   },
   {
    "id": "F028",
@@ -543,7 +624,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe had a dentist appointment on 13 February 2025.",
-   "answer": "13 February 2025"
+   "answer": "13 February 2025",
+   "layer": ""
   },
   {
    "id": "F029",
@@ -564,7 +646,8 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe was in Ghent on 3 February 2025.",
-   "answer": "Ghent"
+   "answer": "Ghent",
+   "layer": ""
   },
   {
    "id": "F030",
@@ -585,7 +668,368 @@
    "supersedes": null,
    "since_stated": false,
    "canonical": "Kofi Achebe was in Ghent on 4 February 2025.",
-   "answer": "Ghent"
+   "answer": "Ghent",
+   "layer": ""
+  },
+  {
+   "id": "F031",
+   "subject": "P3",
+   "predicate": "employer",
+   "value": {
+    "employer": "Marrowgate Press"
+   },
+   "valid_from": "2021-05-25",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kasper Varga works at Marrowgate Press.",
+   "answer": "Marrowgate Press",
+   "layer": "identity"
+  },
+  {
+   "id": "F032",
+   "subject": "P3",
+   "predicate": "joined",
+   "value": {
+    "group": "the Saltmarsh Community Choir"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P3:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kasper Varga joined the Saltmarsh Community Choir on 10 February 2025.",
+   "answer": "Saltmarsh Community Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F033",
+   "subject": "P2",
+   "predicate": "employer",
+   "value": {
+    "employer": "Larkspur Ceramics"
+   },
+   "valid_from": "2022-01-09",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Priya Sorensen works at Larkspur Ceramics.",
+   "answer": "Larkspur Ceramics",
+   "layer": "identity"
+  },
+  {
+   "id": "F034",
+   "subject": "P2",
+   "predicate": "joined",
+   "value": {
+    "group": "the Beacon Hill Choir"
+   },
+   "valid_from": "2025-02-06",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P2:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Priya Sorensen joined the Beacon Hill Choir on 6 February 2025.",
+   "answer": "Beacon Hill Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F035",
+   "subject": "P0",
+   "predicate": "acquired",
+   "value": {
+    "item": "espresso machine"
+   },
+   "valid_from": "2025-02-06",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:acquired:espresso machine",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Achebe has an espresso machine.",
+   "answer": "espresso machine",
+   "layer": "dating"
+  },
+  {
+   "id": "F036",
+   "subject": "P1",
+   "predicate": "acquired",
+   "value": {
+    "item": "standing desk"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:acquired:standing desk",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Oskar Lindqvist has a standing desk.",
+   "answer": "standing desk",
+   "layer": "dating"
+  },
+  {
+   "id": "F037",
+   "subject": "P5",
+   "predicate": "based_in",
+   "value": {
+    "city": "Porto"
+   },
+   "valid_from": "2024-05-14",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P5:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Silas Brennan lives in Porto.",
+   "answer": "Porto",
+   "layer": "coverage"
+  },
+  {
+   "id": "F038",
+   "subject": "P5",
+   "predicate": "employer",
+   "value": {
+    "employer": "Pellucid Labs"
+   },
+   "valid_from": "2023-10-04",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P5:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Silas Brennan works at Pellucid Labs.",
+   "answer": "Pellucid Labs",
+   "layer": "coverage"
+  },
+  {
+   "id": "F039",
+   "subject": "P6",
+   "predicate": "based_in",
+   "value": {
+    "city": "Leipzig"
+   },
+   "valid_from": "2023-10-21",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P6:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Hana Duarte lives in Leipzig.",
+   "answer": "Leipzig",
+   "layer": "coverage"
+  },
+  {
+   "id": "F040",
+   "subject": "P7",
+   "predicate": "based_in",
+   "value": {
+    "city": "Leipzig"
+   },
+   "valid_from": "2023-09-12",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P7:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dina Sorensen lives in Leipzig.",
+   "answer": "Leipzig",
+   "layer": "coverage"
+  },
+  {
+   "id": "F041",
+   "subject": "P6",
+   "predicate": "employer",
+   "value": {
+    "employer": "Gullwing Ferries"
+   },
+   "valid_from": "2023-07-31",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P6:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Hana Duarte works at Gullwing Ferries.",
+   "answer": "Gullwing Ferries",
+   "layer": "coverage"
+  },
+  {
+   "id": "F042",
+   "subject": "P7",
+   "predicate": "employer",
+   "value": {
+    "employer": "Mistral Joinery"
+   },
+   "valid_from": "2023-09-05",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P7:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dina Sorensen works at Mistral Joinery.",
+   "answer": "Mistral Joinery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F043",
+   "subject": "P8",
+   "predicate": "based_in",
+   "value": {
+    "city": "Valencia"
+   },
+   "valid_from": "2024-04-04",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P8:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Theo Abbott lives in Valencia.",
+   "answer": "Valencia",
+   "layer": "coverage"
+  },
+  {
+   "id": "F044",
+   "subject": "P9",
+   "predicate": "based_in",
+   "value": {
+    "city": "Valencia"
+   },
+   "valid_from": "2023-08-30",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P9:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Elias Collins lives in Valencia.",
+   "answer": "Valencia",
+   "layer": "coverage"
+  },
+  {
+   "id": "F045",
+   "subject": "P8",
+   "predicate": "works_from",
+   "value": {
+    "where": "home"
+   },
+   "valid_from": "2024-06-09",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P8:works_from",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Theo Abbott works from home.",
+   "answer": "home",
+   "layer": "coverage"
+  },
+  {
+   "id": "F046",
+   "subject": "P9",
+   "predicate": "works_from",
+   "value": {
+    "where": "home"
+   },
+   "valid_from": "2023-01-22",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P9:works_from",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Elias Collins works from home.",
+   "answer": "home",
+   "layer": "coverage"
+  },
+  {
+   "id": "F047",
+   "subject": "P10",
+   "predicate": "based_in",
+   "value": {
+    "city": "Bordeaux"
+   },
+   "valid_from": "2023-05-04",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P10:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Quinn Fischer lives in Bordeaux.",
+   "answer": "Bordeaux",
+   "layer": "coverage"
+  },
+  {
+   "id": "F048",
+   "subject": "P11",
+   "predicate": "based_in",
+   "value": {
+    "city": "Bordeaux"
+   },
+   "valid_from": "2023-04-07",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P11:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Pablo Collins lives in Bordeaux.",
+   "answer": "Bordeaux",
+   "layer": "coverage"
+  },
+  {
+   "id": "F049",
+   "subject": "P10",
+   "predicate": "employer",
+   "value": {
+    "employer": "Oxbow Bindery"
+   },
+   "valid_from": "2023-06-13",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P10:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Quinn Fischer works at Oxbow Bindery.",
+   "answer": "Oxbow Bindery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F050",
+   "subject": "P11",
+   "predicate": "employer",
+   "value": {
+    "employer": "Oxbow Bindery"
+   },
+   "valid_from": "2023-11-07",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P11:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Pablo Collins works at Oxbow Bindery.",
+   "answer": "Oxbow Bindery",
+   "layer": "coverage"
   }
  ],
  "traps": [
@@ -597,7 +1041,8 @@
    "sentence": "If the Turin offer ever comes through, I'd honestly move there in a heartbeat.",
    "forbidden": "Kofi Achebe moved to Turin.",
    "question": "When did Kofi move to Turin?",
-   "fact_id": ""
+   "fact_id": "",
+   "misattributed_to": []
   },
   {
    "id": "T02",
@@ -607,7 +1052,8 @@
    "sentence": "I keep thinking about adopting a dog, maybe next year.",
    "forbidden": "Kofi Achebe has a dog.",
    "question": "What is the name of Kofi's dog?",
-   "fact_id": ""
+   "fact_id": "",
+   "misattributed_to": []
   },
   {
    "id": "T03",
@@ -617,7 +1063,8 @@
    "sentence": "In the end I did not sign up for the marathon, not this year.",
    "forbidden": "Kofi Achebe signed up for a marathon.",
    "question": "Which marathon did Kofi sign up for?",
-   "fact_id": ""
+   "fact_id": "",
+   "misattributed_to": []
   },
   {
    "id": "T04",
@@ -627,7 +1074,8 @@
    "sentence": "Hollis said their bike got stolen outside the station.",
    "forbidden": "Kofi Achebe's bike was stolen.",
    "question": "Where was Kofi's bike stolen?",
-   "fact_id": ""
+   "fact_id": "",
+   "misattributed_to": []
   },
   {
    "id": "T05",
@@ -637,7 +1085,8 @@
    "sentence": "Maybe I'll learn to sail this summer, we'll see.",
    "forbidden": "Kofi Achebe learned to sail.",
    "question": "Where did Kofi take sailing lessons?",
-   "fact_id": ""
+   "fact_id": "",
+   "misattributed_to": []
   },
   {
    "id": "T06",
@@ -647,7 +1096,8 @@
    "sentence": "Apparently Oskar's company might be shutting down.",
    "forbidden": "Oskar Lindqvist's company shut down.",
    "question": "When did Oskar's company shut down?",
-   "fact_id": ""
+   "fact_id": "",
+   "misattributed_to": []
   },
   {
    "id": "T07",
@@ -657,7 +1107,8 @@
    "sentence": "",
    "forbidden": "Any description of what the photo shows.",
    "question": "What could be seen in the photo Kofi took on 14 February 2025?",
-   "fact_id": "F019"
+   "fact_id": "F019",
+   "misattributed_to": []
   },
   {
    "id": "T08",
@@ -667,7 +1118,8 @@
    "sentence": "",
    "forbidden": "Any description of what the photo shows.",
    "question": "What could be seen in the photo Kofi took on 16 February 2025?",
-   "fact_id": "F020"
+   "fact_id": "F020",
+   "misattributed_to": []
   },
   {
    "id": "T09",
@@ -677,7 +1129,8 @@
    "sentence": "",
    "forbidden": "Any description of what the photo shows.",
    "question": "What could be seen in the photo Kofi took on 3 February 2025?",
-   "fact_id": "F024"
+   "fact_id": "F024",
+   "misattributed_to": []
   },
   {
    "id": "T10",
@@ -687,7 +1140,8 @@
    "sentence": "",
    "forbidden": "Any description of what the photo shows.",
    "question": "What could be seen in the photo Kofi took on 11 February 2025?",
-   "fact_id": "F026"
+   "fact_id": "F026",
+   "misattributed_to": []
   },
   {
    "id": "T11",
@@ -697,7 +1151,8 @@
    "sentence": "",
    "forbidden": "Any description of what the photo shows.",
    "question": "What could be seen in the photo Kofi took on 12 February 2025?",
-   "fact_id": "F027"
+   "fact_id": "F027",
+   "misattributed_to": []
   },
   {
    "id": "T12",
@@ -707,7 +1162,8 @@
    "sentence": "",
    "forbidden": "Any description of what the photo shows.",
    "question": "What could be seen in the photo Kofi took on 3 February 2025?",
-   "fact_id": "F029"
+   "fact_id": "F029",
+   "misattributed_to": []
   },
   {
    "id": "T13",
@@ -717,7 +1173,62 @@
    "sentence": "",
    "forbidden": "Any description of what the photo shows.",
    "question": "What could be seen in the photo Kofi took on 4 February 2025?",
-   "fact_id": "F030"
+   "fact_id": "F030",
+   "misattributed_to": []
+  },
+  {
+   "id": "T14",
+   "kind": "attribution",
+   "subject": "P3",
+   "day": "2025-02-09",
+   "sentence": "Oskar asked about my best friend, who works at Marrowgate Press.",
+   "forbidden": "Kofi Achebe works at Marrowgate Press.",
+   "question": "",
+   "fact_id": "F031",
+   "misattributed_to": [
+    "P0",
+    "P1"
+   ]
+  },
+  {
+   "id": "T15",
+   "kind": "attribution",
+   "subject": "P3",
+   "day": "2025-02-10",
+   "sentence": "Kasper joined the Saltmarsh Community Choir today.",
+   "forbidden": "Kofi Achebe joined the Saltmarsh Community Choir.",
+   "question": "",
+   "fact_id": "F032",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T16",
+   "kind": "attribution",
+   "subject": "P2",
+   "day": "2025-02-11",
+   "sentence": "Told Kasper that my brother works at Larkspur Ceramics.",
+   "forbidden": "Kofi Achebe works at Larkspur Ceramics.",
+   "question": "",
+   "fact_id": "F033",
+   "misattributed_to": [
+    "P0",
+    "P3"
+   ]
+  },
+  {
+   "id": "T17",
+   "kind": "attribution",
+   "subject": "P2",
+   "day": "2025-02-06",
+   "sentence": "Priya joined the Beacon Hill Choir today.",
+   "forbidden": "Kofi Achebe joined the Beacon Hill Choir.",
+   "question": "",
+   "fact_id": "F034",
+   "misattributed_to": [
+    "P0"
+   ]
   }
  ],
  "unstated": [
@@ -747,6 +1258,168 @@
   },
   {
    "question": "What is Hollis's middle name?"
+  }
+ ],
+ "identity": [
+  {
+   "person": "P3",
+   "role": "my best friend",
+   "contrast": "P1",
+   "alias_day": "2025-02-03",
+   "alias_sentence": "Dinner with my best friend Kasper tonight, we talked for hours.",
+   "role_fact": "F031",
+   "role_trap": "T14",
+   "name_fact": "F032",
+   "name_trap": "T15"
+  },
+  {
+   "person": "P2",
+   "role": "my brother",
+   "contrast": "P3",
+   "alias_day": "2025-02-05",
+   "alias_sentence": "Long call with Priya, my brother, this evening.",
+   "role_fact": "F033",
+   "role_trap": "T16",
+   "name_fact": "F034",
+   "name_trap": "T17"
+  }
+ ],
+ "dating": [
+  {
+   "fact": "F035",
+   "not_yet_day": "2025-02-03",
+   "already_day": "2025-02-12"
+  },
+  {
+   "fact": "F036",
+   "not_yet_day": "2025-02-08",
+   "already_day": "2025-02-11"
+  }
+ ],
+ "coverage": [
+  {
+   "case": "converging",
+   "role_person": "P5",
+   "name_person": "P5",
+   "role": "my uncle",
+   "same": true,
+   "city": "Porto",
+   "mentions": [
+    {
+     "fact": "F037",
+     "by_role": true,
+     "day": "2025-02-05"
+    },
+    {
+     "fact": "F037",
+     "by_role": false,
+     "day": "2025-02-08"
+    },
+    {
+     "fact": "F038",
+     "by_role": true,
+     "day": "2025-02-09"
+    },
+    {
+     "fact": "F038",
+     "by_role": false,
+     "day": "2025-02-15"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "one_attribute",
+   "role_person": "P6",
+   "name_person": "P7",
+   "role": "my godfather",
+   "same": false,
+   "city": "Leipzig",
+   "mentions": [
+    {
+     "fact": "F039",
+     "by_role": true,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F040",
+     "by_role": false,
+     "day": "2025-02-05"
+    },
+    {
+     "fact": "F041",
+     "by_role": true,
+     "day": "2025-02-06"
+    },
+    {
+     "fact": "F042",
+     "by_role": false,
+     "day": "2025-02-08"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "generic",
+   "role_person": "P8",
+   "name_person": "P9",
+   "role": "my aunt",
+   "same": false,
+   "city": "Valencia",
+   "mentions": [
+    {
+     "fact": "F043",
+     "by_role": true,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F044",
+     "by_role": false,
+     "day": "2025-02-05"
+    },
+    {
+     "fact": "F045",
+     "by_role": true,
+     "day": "2025-02-07"
+    },
+    {
+     "fact": "F046",
+     "by_role": false,
+     "day": "2025-02-14"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "together",
+   "role_person": "P10",
+   "name_person": "P11",
+   "role": "my landlady",
+   "same": false,
+   "city": "Bordeaux",
+   "mentions": [
+    {
+     "fact": "F047",
+     "by_role": true,
+     "day": "2025-02-07"
+    },
+    {
+     "fact": "F048",
+     "by_role": false,
+     "day": "2025-02-11"
+    },
+    {
+     "fact": "F049",
+     "by_role": true,
+     "day": "2025-02-12"
+    },
+    {
+     "fact": "F050",
+     "by_role": false,
+     "day": "2025-02-13"
+    }
+   ],
+   "together_day": "2025-02-14"
   }
  ]
 }

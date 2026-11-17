@@ -9,19 +9,19 @@
   "changes": 4
  },
  "counts": {
-  "facts": 30,
+  "facts": 50,
   "changes": 4,
-  "people": 5,
-  "traps": 13,
-  "deposits": 33,
-  "questions": 37
+  "people": 12,
+  "traps": 17,
+  "deposits": 60,
+  "questions": 46
  },
  "deposits_by_kind": {
+  "note": 37,
   "photo": 7,
-  "note": 11,
   "voice_in": 6,
   "document": 3,
-  "message": 4,
+  "message": 5,
   "message_in": 1,
   "voice": 1
  },
@@ -31,11 +31,14 @@
   "when": 3,
   "duration": 1,
   "event": 10,
-  "abstention": 7
+  "abstention": 7,
+  "identity": 4,
+  "attribution_check": 3,
+  "bounded_date": 2
  },
  "audio": "chatterbox-tts 0.1.7 (MIT), ResembleAI/chatterbox@5bb1f6e, Perth-watermarked; voices cloned from public-domain LibriVox clips (sourced/voices/refs/REFS.md)",
  "license": "CC-BY-4.0",
- "truth_sha256": "b6f3cb7e27aed1cf1a80fdbcee76fb1b6c8ff475bcdeb063a0baf9d7d47a9153",
+ "truth_sha256": "658a040a023f5bcc4fc23fd91e5387210d4af61bfda12cb2c8bcf91adb499a64",
  "files_sha256": {
   "D0001": "20c8421ce62f7c76df1dbb83bf2f26376e2418341c44dbc27376a15421234c39",
   "D0002": "df4808676e9d66e1e268af6916f2104361dd0329d8dfa1e831684df6ff28c10e",
@@ -69,6 +72,33 @@
   "D0030": "112426c4d0f79d27955905dcc33558c1b427108b2dce1ef37b592d26a8e00870",
   "D0031": "d843219c93426ca93ea0a64b1fbcff9567edd9e168c4a3d5f4841a65de2e51b6",
   "D0032": "8f365d3815863174692b02c97f625169b4e24758e9dbd7fabf22f1439a85c180",
-  "D0033": "6b7eaf7169bf0043530f2a8307f9e3b7bfab347b8e9ce5e2bcb470b761f4e849"
+  "D0033": "6b7eaf7169bf0043530f2a8307f9e3b7bfab347b8e9ce5e2bcb470b761f4e849",
+  "D0034": "5f5041805800e33db857922a46e82e6a52151fe3d72dc90fbb6ec89e5d6f83cf",
+  "D0035": "560fb2bdb75acb8495c5096cffbb137eec021bd56ea18da2158074b3feed56d1",
+  "D0036": "f8cd6444dcee52ec4eab08867ffad0404f3bce2d88019e21a035863ac270ce25",
+  "D0037": "5a785ae21fe88b31e9c4cf3a14e87a68d3539b89ce0104b6584f2475acb02897",
+  "D0038": "a024efc47bbd072b75b9d6d7748cd8bc918254534e413c46acb313164090ccdf",
+  "D0039": "bf5158adcb367e5f84b9292febec27f43bc5a57518eed031695f713fb0b6ddb4",
+  "D0040": "b981fbd48047f46f96fb095121fd16ed47f8452479fea0da6e11069b8f03d230",
+  "D0041": "bd0a040ea702102bf2d32495c2cdb13b5910b453a5ae3d966af9ca2e84a207c6",
+  "D0042": "282877985313c8e33d8d804a9d1c1819292978c61cd0cbc5319fbd62c9f0bb27",
+  "D0043": "bee0b755481ae5c29a6acdb7d61fc06405f7ed07ec0fafe781b8441759a06234",
+  "D0044": "e7421a40b7aee8c4651d45dbe7b6a0c5be29e1cd6b1d802ea22ebdeab223c267",
+  "D0045": "fd3e9f39363db86612ee6fd6e916794f734758b8716582638663d9e9152d47f9",
+  "D0046": "cf33911a0f24997f34702a2bb5af7cdfa35585811f922ba025f98ef0cb056cda",
+  "D0047": "41a38b193294fd5403c2686925030d5d8f2b366020938a1dde7c143874d05723",
+  "D0048": "d2b77512385f172838e944cc0ecdf49506658f779ff6eca784f28fc804b51fc0",
+  "D0049": "01425429833c1a550e8e6c866858c63083533d20482fd803e81d977341f0263a",
+  "D0050": "624e2e04a919cf3c13c8abda3423567dd5404be64d013345dde42de9b802e578",
+  "D0051": "1d9c74aa77353935e8d963c2bd7ee0d31a27cf475d614d43c6f2dc9f15043347",
+  "D0052": "a34f88cf21c6f3c76e55ec082feea157213b918685091b3dbbcd39725f4a6fec",
+  "D0053": "b96a160baec1b71f471da69c0bdcfd858b6eadb7ed402225366cba0357a27b1e",
+  "D0054": "76ae6056ab3ee8a666a6c2c068c09efb4b42653ba4d6f752e3f938bb1e2b0a2f",
+  "D0055": "b7059f3dd504839d7e8f6d46de38da45b43228634ea8b0a9bd3808916b1f40af",
+  "D0056": "98f69d1ae704edf273f4a8670a112336cc76af067efb3bd2cfb7bb1f466db6c3",
+  "D0057": "91df12b994b47789d43ec55c0fbc994aa09b965d08758b68094d8b3ec4724f23",
+  "D0058": "2cc65ef3c57e5fbe5bbf19e47b432b1957e48c8ebb68e5c54df91b7b9a7d4b72",
+  "D0059": "e9ecf7e985dc9682f8c03e4be7e14e4b822f1f471d6e673c3b61cf52c9916c62",
+  "D0060": "dea5afc2261832d6712f77a1af8de0dc9c1d618ecb2f5fa79adabfbc6287a820"
  }
 }

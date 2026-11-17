@@ -1,0 +1,539 @@
+{
+ "F037": [
+  {
+   "deposit": "D0038",
+   "start": 50,
+   "end": 90,
+   "role": "mention",
+   "excerpt": "Bordeaux is where my landlady lives now."
+  }
+ ],
+ "F025": [
+  {
+   "deposit": "D0001",
+   "start": 0,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "GPS 45.51325, -73.57289, captured 2025-02-03 at 12:36."
+  }
+ ],
+ "F033": [
+  {
+   "deposit": "D0034",
+   "start": 45,
+   "end": 86,
+   "role": "not_yet",
+   "excerpt": "Still no sign of the telescope I ordered."
+  },
+  {
+   "deposit": "D0036",
+   "start": 50,
+   "end": 83,
+   "role": "already",
+   "excerpt": "The telescope is here and in use."
+  }
+ ],
+ "F005": [
+  {
+   "deposit": "D0002",
+   "start": 0,
+   "end": 73,
+   "role": "mention",
+   "excerpt": "An operations manager at Harbor & Pine Studio since May 2023 — that's me."
+  }
+ ],
+ "F003": [
+  {
+   "deposit": "D0002",
+   "start": 119,
+   "end": 150,
+   "role": "mention",
+   "excerpt": "Rent day: 1040 EUR transferred."
+  }
+ ],
+ "F018": [
+  {
+   "deposit": "D0003",
+   "start": 10,
+   "end": 68,
+   "role": "mention",
+   "excerpt": "My birthday falls on 27 February, must organise something."
+  }
+ ],
+ "F045": [
+  {
+   "deposit": "D0039",
+   "start": 45,
+   "end": 87,
+   "role": "mention",
+   "excerpt": "Edinburgh is where my godfather lives now."
+  }
+ ],
+ "F014": [
+  {
+   "deposit": "D0004",
+   "start": 9,
+   "end": 87,
+   "role": "mention",
+   "excerpt": "Six er, in the well, morning, and Nori hmm, (my dog) wants okay so, breakfast."
+  }
+ ],
+ "F001": [
+  {
+   "deposit": "D0005",
+   "start": 0,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "Home since March 2023 — 68 Beacon Hill Road, Montreal."
+  }
+ ],
+ "F010": [
+  {
+   "deposit": "D0005",
+   "start": 55,
+   "end": 112,
+   "role": "mention",
+   "excerpt": "Allergic to kiwi, so the dessert went back to the kitchen"
+  }
+ ],
+ "F027": [
+  {
+   "deposit": "D0005",
+   "start": 118,
+   "end": 181,
+   "role": "mention",
+   "excerpt": "today, coffee at the hilltop viewpoint, my sister Quinn and me."
+  }
+ ],
+ "F022": [
+  {
+   "deposit": "D0006",
+   "start": 0,
+   "end": 50,
+   "role": "mention",
+   "excerpt": "Today, a long stroll around the hilltop viewpoint."
+  },
+  {
+   "deposit": "D0007",
+   "start": 0,
+   "end": 53,
+   "role": "mention",
+   "excerpt": "GPS 57.71610, 11.95771, captured 2025-02-05 at 17:12."
+  }
+ ],
+ "F009": [
+  {
+   "deposit": "D0006",
+   "start": 90,
+   "end": 146,
+   "role": "mention",
+   "excerpt": "Valencia is where I grew up; some days I really miss it."
+  },
+  {
+   "deposit": "D0028",
+   "start": 35,
+   "end": 113,
+   "role": "mention",
+   "excerpt": "Valencia is where well, I grew up; some okay so, days I really miss right, it."
+  }
+ ],
+ "F041": [
+  {
+   "deposit": "D0040",
+   "start": 45,
+   "end": 80,
+   "role": "mention",
+   "excerpt": "Bristol is where my aunt lives now."
+  }
+ ],
+ "F035": [
+  {
+   "deposit": "D0041",
+   "start": 44,
+   "end": 81,
+   "role": "mention",
+   "excerpt": "These days my flatmate lives in Lyon."
+  },
+  {
+   "deposit": "D0044",
+   "start": 39,
+   "end": 62,
+   "role": "mention",
+   "excerpt": "Home for Kenji is Lyon."
+  }
+ ],
+ "F024": [
+  {
+   "deposit": "D0008",
+   "start": 0,
+   "end": 62,
+   "role": "mention",
+   "excerpt": "My brother Dev and I met up at the hilltop viewpoint yesterday"
+  }
+ ],
+ "F013": [
+  {
+   "deposit": "D0008",
+   "start": 65,
+   "end": 118,
+   "role": "mention",
+   "excerpt": "a data analyst — that's what Quinn does for a living."
+  }
+ ],
+ "F019": [
+  {
+   "deposit": "D0009",
+   "start": 0,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "GPS 45.50652, -73.57790, captured 2025-02-06 at 13:59."
+  }
+ ],
+ "F042": [
+  {
+   "deposit": "D0042",
+   "start": 45,
+   "end": 70,
+   "role": "mention",
+   "excerpt": "Home for Theo is Bristol."
+  }
+ ],
+ "F026": [
+  {
+   "deposit": "D0010",
+   "start": 0,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "GPS 45.48644, -73.58491, captured 2025-02-06 at 19:10."
+  }
+ ],
+ "F028": [
+  {
+   "deposit": "D0011",
+   "start": 0,
+   "end": 52,
+   "role": "mention",
+   "excerpt": "Yesterday, coffee at the riverside park, Dev and me."
+  }
+ ],
+ "F023": [
+  {
+   "deposit": "D0011",
+   "start": 53,
+   "end": 120,
+   "role": "mention",
+   "excerpt": "Today, hmm, Quinn passed a driving test, right, lovely right, news."
+  }
+ ],
+ "F046": [
+  {
+   "deposit": "D0043",
+   "start": 28,
+   "end": 56,
+   "role": "mention",
+   "excerpt": "Zoe has a flat in Edinburgh."
+  }
+ ],
+ "F034": [
+  {
+   "deposit": "D0035",
+   "start": 45,
+   "end": 82,
+   "role": "not_yet",
+   "excerpt": "Quinn's espresso machine hasn't come."
+  },
+  {
+   "deposit": "D0037",
+   "start": 50,
+   "end": 114,
+   "role": "already",
+   "excerpt": "The espresso machine made it to Quinn; they're thrilled with it."
+  }
+ ],
+ "F006": [
+  {
+   "deposit": "D0012",
+   "start": 51,
+   "end": 138,
+   "role": "future",
+   "excerpt": "Following your interviews, Kestrel Logistics would like you to join as project manager."
+  },
+  {
+   "deposit": "D0014",
+   "start": 44,
+   "end": 143,
+   "role": "future",
+   "excerpt": "On February 12, 2025, I start as project manager hmm, at Kestrel Logistics; the contract is signed."
+  },
+  {
+   "deposit": "D0023",
+   "start": 142,
+   "end": 217,
+   "role": "start",
+   "excerpt": "Kestrel Logistics has right, a new project manager as er, of today: er, me."
+  }
+ ],
+ "F047": [
+  {
+   "deposit": "D0045",
+   "start": 45,
+   "end": 85,
+   "role": "mention",
+   "excerpt": "Halyard Sailmakers employs my godfather."
+  }
+ ],
+ "F002": [
+  {
+   "deposit": "D0013",
+   "start": 104,
+   "end": 145,
+   "role": "mention",
+   "excerpt": "Property let: 48 Juniper Avenue, Montreal"
+  },
+  {
+   "deposit": "D0016",
+   "start": 76,
+   "end": 133,
+   "role": "start",
+   "excerpt": "New address as of yesterday: 48 Juniper Avenue, Montreal."
+  }
+ ],
+ "F004": [
+  {
+   "deposit": "D0013",
+   "start": 186,
+   "end": 217,
+   "role": "mention",
+   "excerpt": "Rent: 1020 EUR, payable monthly"
+  }
+ ],
+ "F038": [
+  {
+   "deposit": "D0046",
+   "start": 44,
+   "end": 73,
+   "role": "mention",
+   "excerpt": "Marco has a flat in Bordeaux."
+  }
+ ],
+ "F011": [
+  {
+   "deposit": "D0015",
+   "start": 0,
+   "end": 53,
+   "role": "mention",
+   "excerpt": "A German podcast on the way home, to keep practising."
+  }
+ ],
+ "F021": [
+  {
+   "deposit": "D0016",
+   "start": 0,
+   "end": 44,
+   "role": "mention",
+   "excerpt": "52:18 — my time at the Spring 10K yesterday."
+  }
+ ],
+ "F031": [
+  {
+   "deposit": "D0032",
+   "start": 49,
+   "end": 149,
+   "role": "mention",
+   "excerpt": "Over coffee, Dev wanted to know whether my sister was still at Brackenridge Seeds; yes, still there."
+  }
+ ],
+ "F036": [
+  {
+   "deposit": "D0047",
+   "start": 50,
+   "end": 87,
+   "role": "mention",
+   "excerpt": "Gullwing Ferries employs my flatmate."
+  },
+  {
+   "deposit": "D0051",
+   "start": 49,
+   "end": 104,
+   "role": "mention",
+   "excerpt": "Bumped into Kenji; Gullwing Ferries is where they work."
+  }
+ ],
+ "F020": [
+  {
+   "deposit": "D0017",
+   "start": 0,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "GPS 45.50979, -73.55156, captured 2025-02-10 at 12:47."
+  },
+  {
+   "deposit": "D0018",
+   "start": 198,
+   "end": 261,
+   "role": "mention",
+   "excerpt": "Today... Today, a long erm, stroll around the botanical garden."
+  }
+ ],
+ "F008": [
+  {
+   "deposit": "D0018",
+   "start": 139,
+   "end": 197,
+   "role": "mention",
+   "excerpt": "Note to self: 19 well, May is my birthday, plan something."
+  },
+  {
+   "deposit": "D0024",
+   "start": 0,
+   "end": 52,
+   "role": "mention",
+   "excerpt": "Note to self: 19 May is my birthday, plan something."
+  }
+ ],
+ "F043": [
+  {
+   "deposit": "D0048",
+   "start": 45,
+   "end": 76,
+   "role": "mention",
+   "excerpt": "My aunt mostly works from home."
+  }
+ ],
+ "F015": [
+  {
+   "deposit": "D0019",
+   "start": 9,
+   "end": 66,
+   "role": "mention",
+   "excerpt": "Note to self: 14 February is my birthday, plan something."
+  }
+ ],
+ "F030": [
+  {
+   "deposit": "D0020",
+   "start": 0,
+   "end": 52,
+   "role": "mention",
+   "excerpt": "Quinn and I met up at the old market hall yesterday."
+  }
+ ],
+ "F017": [
+  {
+   "deposit": "D0021",
+   "start": 13,
+   "end": 89,
+   "role": "mention",
+   "excerpt": "Another full day; erm, an operations manager's work hmm, is erm, never done."
+  },
+  {
+   "deposit": "D0026",
+   "start": 34,
+   "end": 117,
+   "role": "mention",
+   "excerpt": "Another... Another er, full day; an operations manager's right, work is never done."
+  }
+ ],
+ "F029": [
+  {
+   "deposit": "D0022",
+   "start": 0,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "GPS 45.50796, -73.57939, captured 2025-02-11 at 11:15."
+  }
+ ],
+ "F044": [
+  {
+   "deposit": "D0049",
+   "start": 50,
+   "end": 78,
+   "role": "mention",
+   "excerpt": "Theo mostly works from home."
+  }
+ ],
+ "F012": [
+  {
+   "deposit": "D0023",
+   "start": 0,
+   "end": 75,
+   "role": "mention",
+   "excerpt": "Thinking... Thinking of Quinn. They right, live in Porto these right, days."
+  }
+ ],
+ "F039": [
+  {
+   "deposit": "D0050",
+   "start": 45,
+   "end": 79,
+   "role": "mention",
+   "excerpt": "Pellucid Labs employs my landlady."
+  }
+ ],
+ "F032": [
+  {
+   "deposit": "D0033",
+   "start": 45,
+   "end": 114,
+   "role": "mention",
+   "excerpt": "Quinn — new member of the Kiln Lane Chamber Choir since this morning."
+  }
+ ],
+ "F007": [
+  {
+   "deposit": "D0025",
+   "start": 87,
+   "end": 120,
+   "role": "mention",
+   "excerpt": "Diagnosis — a sprained left ankle"
+  },
+  {
+   "deposit": "D0027",
+   "start": 0,
+   "end": 97,
+   "role": "start",
+   "excerpt": "A sprained left ankle, says the doctor yesterday, so it's physiotherapy twice a week for a while."
+  },
+  {
+   "deposit": "D0029",
+   "start": 99,
+   "end": 143,
+   "role": "end",
+   "excerpt": "Today, the sprained left ankle is behind me."
+  }
+ ],
+ "F048": [
+  {
+   "deposit": "D0052",
+   "start": 49,
+   "end": 104,
+   "role": "mention",
+   "excerpt": "Bumped into Zoe; Halyard Sailmakers is where they work."
+  }
+ ],
+ "F016": [
+  {
+   "deposit": "D0026",
+   "start": 9,
+   "end": 33,
+   "role": "mention",
+   "excerpt": "Here in Ghent, all good."
+  },
+  {
+   "deposit": "D0030",
+   "start": 9,
+   "end": 33,
+   "role": "mention",
+   "excerpt": "Here in Ghent, all good."
+  }
+ ],
+ "F040": [
+  {
+   "deposit": "D0054",
+   "start": 45,
+   "end": 83,
+   "role": "mention",
+   "excerpt": "Marco — at Mistral Joinery these days."
+  }
+ ]
+}

@@ -1,0 +1,1816 @@
+{
+ "seed": 8,
+ "start": "2025-02-03",
+ "days": 14,
+ "owner": "P0",
+ "people": [
+  {
+   "id": "P0",
+   "name": "Yusuf Ishikawa",
+   "relation": "self",
+   "voice": "male_b",
+   "role": ""
+  },
+  {
+   "id": "P1",
+   "name": "Lena Abbott",
+   "relation": "sister",
+   "voice": "female_b",
+   "role": "my sister from the old flat"
+  },
+  {
+   "id": "P2",
+   "name": "Dalia Petrov",
+   "relation": "brother",
+   "voice": "male_a",
+   "role": "my brother from the running club"
+  },
+  {
+   "id": "P3",
+   "name": "Gideon Abbott",
+   "relation": "best friend",
+   "voice": "female_gb",
+   "role": "my best friend"
+  },
+  {
+   "id": "P4",
+   "name": "Wes Varga",
+   "relation": "sister",
+   "voice": "female_a",
+   "role": "my sister"
+  },
+  {
+   "id": "P5",
+   "name": "Linus Delacroix",
+   "relation": "brother",
+   "voice": "female_b",
+   "role": "my brother from the old flat"
+  },
+  {
+   "id": "P6",
+   "name": "Nadia Collins",
+   "relation": "neighbour",
+   "voice": "male_a",
+   "role": "my neighbour"
+  },
+  {
+   "id": "P7",
+   "name": "Jonah Varga",
+   "relation": "friend",
+   "voice": "female_gb",
+   "role": "my friend"
+  },
+  {
+   "id": "P8",
+   "name": "Cyrus Duarte",
+   "relation": "flatmate",
+   "voice": "female_a",
+   "role": "my flatmate"
+  },
+  {
+   "id": "P9",
+   "name": "Samir Haddad",
+   "relation": "aunt",
+   "voice": "female_b",
+   "role": "my aunt"
+  },
+  {
+   "id": "P10",
+   "name": "Maren Moreau",
+   "relation": "acquaintance",
+   "voice": "male_a",
+   "role": ""
+  },
+  {
+   "id": "P11",
+   "name": "Kaia Duarte",
+   "relation": "landlady",
+   "voice": "female_gb",
+   "role": "my landlady"
+  },
+  {
+   "id": "P12",
+   "name": "Dora Collins",
+   "relation": "acquaintance",
+   "voice": "female_a",
+   "role": ""
+  },
+  {
+   "id": "P13",
+   "name": "Nell Fischer",
+   "relation": "godfather",
+   "voice": "female_b",
+   "role": "my godfather"
+  },
+  {
+   "id": "P14",
+   "name": "Bianca Sorensen",
+   "relation": "acquaintance",
+   "voice": "male_a",
+   "role": ""
+  }
+ ],
+ "facts": [
+  {
+   "id": "F001",
+   "subject": "P0",
+   "predicate": "lives_at",
+   "value": {
+    "street": "60 Tanner Street",
+    "city": "Porto"
+   },
+   "valid_from": "2024-08-27",
+   "valid_to": "2025-02-10",
+   "kind": "state",
+   "slot": "P0:lives_at",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa lives at 60 Tanner Street, Porto.",
+   "answer": "60 Tanner Street, Porto",
+   "layer": ""
+  },
+  {
+   "id": "F002",
+   "subject": "P0",
+   "predicate": "lives_at",
+   "value": {
+    "street": "60 Orchard Close",
+    "city": "Valencia"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:lives_at",
+   "version": 1,
+   "supersedes": "F001",
+   "since_stated": true,
+   "canonical": "Yusuf Ishikawa lives at 60 Orchard Close, Valencia.",
+   "answer": "60 Orchard Close, Valencia",
+   "layer": ""
+  },
+  {
+   "id": "F003",
+   "subject": "P0",
+   "predicate": "pays_rent",
+   "value": {
+    "amount": 1310,
+    "currency": "EUR"
+   },
+   "valid_from": "2024-08-27",
+   "valid_to": "2025-02-10",
+   "kind": "state",
+   "slot": "P0:pays_rent",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa pays 1310 EUR a month in rent.",
+   "answer": "1310 EUR",
+   "layer": ""
+  },
+  {
+   "id": "F004",
+   "subject": "P0",
+   "predicate": "pays_rent",
+   "value": {
+    "amount": 1170,
+    "currency": "EUR"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:pays_rent",
+   "version": 1,
+   "supersedes": "F003",
+   "since_stated": true,
+   "canonical": "Yusuf Ishikawa pays 1170 EUR a month in rent.",
+   "answer": "1170 EUR",
+   "layer": ""
+  },
+  {
+   "id": "F005",
+   "subject": "P0",
+   "predicate": "works_at",
+   "value": {
+    "employer": "Lumen Robotics",
+    "title": "product designer"
+   },
+   "valid_from": "2024-02-29",
+   "valid_to": "2025-02-05",
+   "kind": "state",
+   "slot": "P0:works_at",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": true,
+   "canonical": "Yusuf Ishikawa works as a product designer at Lumen Robotics.",
+   "answer": "Lumen Robotics",
+   "layer": ""
+  },
+  {
+   "id": "F006",
+   "subject": "P0",
+   "predicate": "works_at",
+   "value": {
+    "employer": "Silverfern Energy",
+    "title": "editor"
+   },
+   "valid_from": "2025-02-05",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:works_at",
+   "version": 1,
+   "supersedes": "F005",
+   "since_stated": true,
+   "canonical": "Yusuf Ishikawa works as an editor at Silverfern Energy.",
+   "answer": "Silverfern Energy",
+   "layer": ""
+  },
+  {
+   "id": "F007",
+   "subject": "P0",
+   "predicate": "health",
+   "value": {
+    "condition": "a bad chest cold",
+    "care": "rest and fluids"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": "2025-02-12",
+   "kind": "state",
+   "slot": "P0:health",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa had a bad chest cold, treated with rest and fluids.",
+   "answer": "a bad chest cold",
+   "layer": ""
+  },
+  {
+   "id": "F008",
+   "subject": "P0",
+   "predicate": "birthday",
+   "value": {
+    "date": "2000-11-17"
+   },
+   "valid_from": "2000-11-17",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:birthday",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa's birthday is on 17 November.",
+   "answer": "17 November",
+   "layer": ""
+  },
+  {
+   "id": "F009",
+   "subject": "P0",
+   "predicate": "hometown",
+   "value": {
+    "city": "Ghent"
+   },
+   "valid_from": "2000-11-17",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:hometown",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa grew up in Ghent.",
+   "answer": "Ghent",
+   "layer": ""
+  },
+  {
+   "id": "F010",
+   "subject": "P0",
+   "predicate": "allergy",
+   "value": {
+    "food": "shellfish"
+   },
+   "valid_from": "2021-07-04",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:allergy",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa is allergic to shellfish.",
+   "answer": "shellfish",
+   "layer": ""
+  },
+  {
+   "id": "F011",
+   "subject": "P0",
+   "predicate": "speaks",
+   "value": {
+    "language": "German"
+   },
+   "valid_from": "2021-05-13",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:speaks",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa speaks German.",
+   "answer": "German",
+   "layer": ""
+  },
+  {
+   "id": "F012",
+   "subject": "P1",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Montreal"
+   },
+   "valid_from": "2023-09-05",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Lena Abbott lives in Montreal.",
+   "answer": "Montreal",
+   "layer": ""
+  },
+  {
+   "id": "F013",
+   "subject": "P1",
+   "predicate": "job",
+   "value": {
+    "title": "operations manager"
+   },
+   "valid_from": "2022-03-17",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Lena Abbott works as an operations manager.",
+   "answer": "operations manager",
+   "layer": ""
+  },
+  {
+   "id": "F014",
+   "subject": "P2",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Turin"
+   },
+   "valid_from": "2022-05-18",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dalia Petrov lives in Turin.",
+   "answer": "Turin",
+   "layer": ""
+  },
+  {
+   "id": "F015",
+   "subject": "P2",
+   "predicate": "job",
+   "value": {
+    "title": "operations manager"
+   },
+   "valid_from": "2024-03-21",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dalia Petrov works as an operations manager.",
+   "answer": "operations manager",
+   "layer": ""
+  },
+  {
+   "id": "F016",
+   "subject": "P3",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Gothenburg"
+   },
+   "valid_from": "2021-04-08",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Gideon Abbott lives in Gothenburg.",
+   "answer": "Gothenburg",
+   "layer": ""
+  },
+  {
+   "id": "F017",
+   "subject": "P3",
+   "predicate": "job",
+   "value": {
+    "title": "logistics coordinator"
+   },
+   "valid_from": "2022-10-09",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Gideon Abbott works as a logistics coordinator.",
+   "answer": "logistics coordinator",
+   "layer": ""
+  },
+  {
+   "id": "F018",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the city library",
+    "city": "Valencia",
+    "lat": 39.4717,
+    "lon": -0.38253,
+    "time": "08:18"
+   },
+   "valid_from": "2025-02-16",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa was in Valencia on 16 February 2025.",
+   "answer": "Valencia",
+   "layer": ""
+  },
+  {
+   "id": "F019",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the botanical garden",
+    "city": "Porto",
+    "lat": 41.15298,
+    "lon": -8.61573,
+    "time": "14:11"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa was in Porto on 7 February 2025.",
+   "answer": "Porto",
+   "layer": ""
+  },
+  {
+   "id": "F020",
+   "subject": "P0",
+   "predicate": "race",
+   "value": {
+    "race": "Spring 10K",
+    "time": "1:03:54"
+   },
+   "valid_from": "2025-02-04",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:race",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa ran the Spring 10K on 4 February 2025 in 1:03:54.",
+   "answer": "1:03:54",
+   "layer": ""
+  },
+  {
+   "id": "F021",
+   "subject": "P1",
+   "predicate": "news",
+   "value": {
+    "what": "passed a driving test"
+   },
+   "valid_from": "2025-02-06",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P1:news",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Lena Abbott passed a driving test around 6 February 2025.",
+   "answer": "passed a driving test",
+   "layer": ""
+  },
+  {
+   "id": "F022",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the old market hall",
+    "city": "Gothenburg",
+    "lat": 57.71167,
+    "lon": 11.99081,
+    "time": "10:26"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa was in Gothenburg on 15 February 2025.",
+   "answer": "Gothenburg",
+   "layer": ""
+  },
+  {
+   "id": "F023",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P2",
+    "name": "Dalia Petrov",
+    "venue": "the riverside park"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa met Dalia Petrov at the riverside park on 9 February 2025.",
+   "answer": "the riverside park",
+   "layer": ""
+  },
+  {
+   "id": "F024",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P3",
+    "name": "Gideon Abbott",
+    "venue": "the riverside park"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa met Gideon Abbott at the riverside park on 7 February 2025.",
+   "answer": "the riverside park",
+   "layer": ""
+  },
+  {
+   "id": "F025",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the hilltop viewpoint",
+    "city": "Valencia",
+    "lat": 39.47099,
+    "lon": -0.39015,
+    "time": "16:31"
+   },
+   "valid_from": "2025-02-13",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa was in Valencia on 13 February 2025.",
+   "answer": "Valencia",
+   "layer": ""
+  },
+  {
+   "id": "F026",
+   "subject": "P0",
+   "predicate": "race",
+   "value": {
+    "race": "Spring 10K",
+    "time": "48:01"
+   },
+   "valid_from": "2025-02-12",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:race",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa ran the Spring 10K on 12 February 2025 in 48:01.",
+   "answer": "48:01",
+   "layer": ""
+  },
+  {
+   "id": "F027",
+   "subject": "P2",
+   "predicate": "news",
+   "value": {
+    "what": "ran a first marathon"
+   },
+   "valid_from": "2025-02-08",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P2:news",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dalia Petrov ran a first marathon around 8 February 2025.",
+   "answer": "ran a first marathon",
+   "layer": ""
+  },
+  {
+   "id": "F028",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the botanical garden",
+    "city": "Porto",
+    "lat": 41.13802,
+    "lon": -8.61567,
+    "time": "11:03"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa was in Porto on 7 February 2025.",
+   "answer": "Porto",
+   "layer": ""
+  },
+  {
+   "id": "F029",
+   "subject": "P3",
+   "predicate": "news",
+   "value": {
+    "what": "adopted a puppy"
+   },
+   "valid_from": "2025-02-03",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P3:news",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Gideon Abbott adopted a puppy around 3 February 2025.",
+   "answer": "adopted a puppy",
+   "layer": ""
+  },
+  {
+   "id": "F030",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the riverside park",
+    "city": "Porto",
+    "lat": 41.14592,
+    "lon": -8.64014,
+    "time": "15:50"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa was in Porto on 9 February 2025.",
+   "answer": "Porto",
+   "layer": ""
+  },
+  {
+   "id": "F031",
+   "subject": "P3",
+   "predicate": "employer",
+   "value": {
+    "employer": "Saltire Glassworks"
+   },
+   "valid_from": "2024-04-12",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Gideon Abbott works at Saltire Glassworks.",
+   "answer": "Saltire Glassworks",
+   "layer": "identity"
+  },
+  {
+   "id": "F032",
+   "subject": "P3",
+   "predicate": "joined",
+   "value": {
+    "group": "the Kiln Lane Chamber Choir"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P3:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Gideon Abbott joined the Kiln Lane Chamber Choir on 15 February 2025.",
+   "answer": "Kiln Lane Chamber Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F033",
+   "subject": "P6",
+   "predicate": "employer",
+   "value": {
+    "employer": "Thistledown Instruments"
+   },
+   "valid_from": "2024-04-28",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P6:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Nadia Collins works at Thistledown Instruments.",
+   "answer": "Thistledown Instruments",
+   "layer": "identity"
+  },
+  {
+   "id": "F034",
+   "subject": "P6",
+   "predicate": "joined",
+   "value": {
+    "group": "the Juniper Street Youth Choir"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P6:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Nadia Collins joined the Juniper Street Youth Choir on 10 February 2025.",
+   "answer": "Juniper Street Youth Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F035",
+   "subject": "P7",
+   "predicate": "employer",
+   "value": {
+    "employer": "Brackenridge Seeds"
+   },
+   "valid_from": "2024-09-04",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P7:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Jonah Varga works at Brackenridge Seeds.",
+   "answer": "Brackenridge Seeds",
+   "layer": "identity"
+  },
+  {
+   "id": "F036",
+   "subject": "P7",
+   "predicate": "joined",
+   "value": {
+    "group": "the Beacon Hill Choir"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P7:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Jonah Varga joined the Beacon Hill Choir on 15 February 2025.",
+   "answer": "Beacon Hill Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F037",
+   "subject": "P5",
+   "predicate": "employer",
+   "value": {
+    "employer": "Fennick & Dale Opticians"
+   },
+   "valid_from": "2023-12-26",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P5:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Linus Delacroix works at Fennick & Dale Opticians.",
+   "answer": "Fennick & Dale Opticians",
+   "layer": "identity"
+  },
+  {
+   "id": "F038",
+   "subject": "P5",
+   "predicate": "joined",
+   "value": {
+    "group": "the Old Mill Folk Choir"
+   },
+   "valid_from": "2025-02-16",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P5:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Linus Delacroix joined the Old Mill Folk Choir on 16 February 2025.",
+   "answer": "Old Mill Folk Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F039",
+   "subject": "P1",
+   "predicate": "employer",
+   "value": {
+    "employer": "Quillon Maps"
+   },
+   "valid_from": "2022-06-29",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Lena Abbott works at Quillon Maps.",
+   "answer": "Quillon Maps",
+   "layer": "identity"
+  },
+  {
+   "id": "F040",
+   "subject": "P1",
+   "predicate": "joined",
+   "value": {
+    "group": "the Harbour Gospel Choir"
+   },
+   "valid_from": "2025-02-13",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P1:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Lena Abbott joined the Harbour Gospel Choir on 13 February 2025.",
+   "answer": "Harbour Gospel Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F041",
+   "subject": "P2",
+   "predicate": "employer",
+   "value": {
+    "employer": "Hollowbrook Surveying"
+   },
+   "valid_from": "2022-09-28",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dalia Petrov works at Hollowbrook Surveying.",
+   "answer": "Hollowbrook Surveying",
+   "layer": "identity"
+  },
+  {
+   "id": "F042",
+   "subject": "P2",
+   "predicate": "joined",
+   "value": {
+    "group": "the Saltmarsh Community Choir"
+   },
+   "valid_from": "2025-02-12",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P2:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dalia Petrov joined the Saltmarsh Community Choir on 12 February 2025.",
+   "answer": "Saltmarsh Community Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F043",
+   "subject": "P0",
+   "predicate": "acquired",
+   "value": {
+    "item": "standing desk"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:acquired:standing desk",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Yusuf Ishikawa has a standing desk.",
+   "answer": "standing desk",
+   "layer": "dating"
+  },
+  {
+   "id": "F044",
+   "subject": "P4",
+   "predicate": "acquired",
+   "value": {
+    "item": "rowing machine"
+   },
+   "valid_from": "2025-02-11",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P4:acquired:rowing machine",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Wes Varga has a rowing machine.",
+   "answer": "rowing machine",
+   "layer": "dating"
+  },
+  {
+   "id": "F045",
+   "subject": "P1",
+   "predicate": "acquired",
+   "value": {
+    "item": "telescope"
+   },
+   "valid_from": "2025-02-13",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:acquired:telescope",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Lena Abbott has a telescope.",
+   "answer": "telescope",
+   "layer": "dating"
+  },
+  {
+   "id": "F046",
+   "subject": "P2",
+   "predicate": "acquired",
+   "value": {
+    "item": "upright piano"
+   },
+   "valid_from": "2025-02-11",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:acquired:upright piano",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dalia Petrov has an upright piano.",
+   "answer": "upright piano",
+   "layer": "dating"
+  },
+  {
+   "id": "F047",
+   "subject": "P6",
+   "predicate": "acquired",
+   "value": {
+    "item": "espresso machine"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P6:acquired:espresso machine",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Nadia Collins has an espresso machine.",
+   "answer": "espresso machine",
+   "layer": "dating"
+  },
+  {
+   "id": "F048",
+   "subject": "P5",
+   "predicate": "acquired",
+   "value": {
+    "item": "pottery wheel"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P5:acquired:pottery wheel",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Linus Delacroix has a pottery wheel.",
+   "answer": "pottery wheel",
+   "layer": "dating"
+  },
+  {
+   "id": "F049",
+   "subject": "P8",
+   "predicate": "based_in",
+   "value": {
+    "city": "Leipzig"
+   },
+   "valid_from": "2023-06-02",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P8:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Duarte lives in Leipzig.",
+   "answer": "Leipzig",
+   "layer": "coverage"
+  },
+  {
+   "id": "F050",
+   "subject": "P8",
+   "predicate": "employer",
+   "value": {
+    "employer": "Wickerfield Nursery"
+   },
+   "valid_from": "2023-07-17",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P8:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Cyrus Duarte works at Wickerfield Nursery.",
+   "answer": "Wickerfield Nursery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F051",
+   "subject": "P9",
+   "predicate": "based_in",
+   "value": {
+    "city": "Rotterdam"
+   },
+   "valid_from": "2023-05-09",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P9:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Samir Haddad lives in Rotterdam.",
+   "answer": "Rotterdam",
+   "layer": "coverage"
+  },
+  {
+   "id": "F052",
+   "subject": "P10",
+   "predicate": "based_in",
+   "value": {
+    "city": "Rotterdam"
+   },
+   "valid_from": "2024-06-26",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P10:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Maren Moreau lives in Rotterdam.",
+   "answer": "Rotterdam",
+   "layer": "coverage"
+  },
+  {
+   "id": "F053",
+   "subject": "P9",
+   "predicate": "employer",
+   "value": {
+    "employer": "Gullwing Ferries"
+   },
+   "valid_from": "2024-02-04",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P9:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Samir Haddad works at Gullwing Ferries.",
+   "answer": "Gullwing Ferries",
+   "layer": "coverage"
+  },
+  {
+   "id": "F054",
+   "subject": "P10",
+   "predicate": "employer",
+   "value": {
+    "employer": "Pellucid Labs"
+   },
+   "valid_from": "2023-02-06",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P10:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Maren Moreau works at Pellucid Labs.",
+   "answer": "Pellucid Labs",
+   "layer": "coverage"
+  },
+  {
+   "id": "F055",
+   "subject": "P11",
+   "predicate": "based_in",
+   "value": {
+    "city": "Bordeaux"
+   },
+   "valid_from": "2024-03-17",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P11:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kaia Duarte lives in Bordeaux.",
+   "answer": "Bordeaux",
+   "layer": "coverage"
+  },
+  {
+   "id": "F056",
+   "subject": "P12",
+   "predicate": "based_in",
+   "value": {
+    "city": "Bordeaux"
+   },
+   "valid_from": "2023-09-09",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P12:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dora Collins lives in Bordeaux.",
+   "answer": "Bordeaux",
+   "layer": "coverage"
+  },
+  {
+   "id": "F057",
+   "subject": "P11",
+   "predicate": "works_from",
+   "value": {
+    "where": "home"
+   },
+   "valid_from": "2023-08-09",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P11:works_from",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kaia Duarte works from home.",
+   "answer": "home",
+   "layer": "coverage"
+  },
+  {
+   "id": "F058",
+   "subject": "P12",
+   "predicate": "works_from",
+   "value": {
+    "where": "home"
+   },
+   "valid_from": "2024-01-08",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P12:works_from",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dora Collins works from home.",
+   "answer": "home",
+   "layer": "coverage"
+  },
+  {
+   "id": "F059",
+   "subject": "P13",
+   "predicate": "based_in",
+   "value": {
+    "city": "Bristol"
+   },
+   "valid_from": "2023-08-19",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P13:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Nell Fischer lives in Bristol.",
+   "answer": "Bristol",
+   "layer": "coverage"
+  },
+  {
+   "id": "F060",
+   "subject": "P14",
+   "predicate": "based_in",
+   "value": {
+    "city": "Bristol"
+   },
+   "valid_from": "2024-06-08",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P14:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Bianca Sorensen lives in Bristol.",
+   "answer": "Bristol",
+   "layer": "coverage"
+  },
+  {
+   "id": "F061",
+   "subject": "P13",
+   "predicate": "employer",
+   "value": {
+    "employer": "Tamberlane Bakery"
+   },
+   "valid_from": "2024-09-12",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P13:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Nell Fischer works at Tamberlane Bakery.",
+   "answer": "Tamberlane Bakery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F062",
+   "subject": "P14",
+   "predicate": "employer",
+   "value": {
+    "employer": "Tamberlane Bakery"
+   },
+   "valid_from": "2024-07-23",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P14:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Bianca Sorensen works at Tamberlane Bakery.",
+   "answer": "Tamberlane Bakery",
+   "layer": "coverage"
+  }
+ ],
+ "traps": [
+  {
+   "id": "T01",
+   "kind": "hypothetical",
+   "subject": "P0",
+   "day": "2025-02-09",
+   "sentence": "If the Leipzig offer ever comes through, I'd honestly move there in a heartbeat.",
+   "forbidden": "Yusuf Ishikawa moved to Leipzig.",
+   "question": "When did Yusuf move to Leipzig?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T02",
+   "kind": "plan",
+   "subject": "P0",
+   "day": "2025-02-04",
+   "sentence": "I keep thinking about adopting a dog, maybe next year.",
+   "forbidden": "Yusuf Ishikawa has a dog.",
+   "question": "What is the name of Yusuf's dog?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T03",
+   "kind": "negation",
+   "subject": "P0",
+   "day": "2025-02-04",
+   "sentence": "In the end I did not sign up for the marathon, not this year.",
+   "forbidden": "Yusuf Ishikawa signed up for a marathon.",
+   "question": "Which marathon did Yusuf sign up for?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T04",
+   "kind": "hearsay",
+   "subject": "P3",
+   "day": "2025-02-14",
+   "sentence": "Gideon said their bike got stolen outside the station.",
+   "forbidden": "Yusuf Ishikawa's bike was stolen.",
+   "question": "Where was Yusuf's bike stolen?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T05",
+   "kind": "plan",
+   "subject": "P0",
+   "day": "2025-02-10",
+   "sentence": "Maybe I'll learn to sail this summer, we'll see.",
+   "forbidden": "Yusuf Ishikawa learned to sail.",
+   "question": "Where did Yusuf take sailing lessons?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T06",
+   "kind": "hearsay",
+   "subject": "P3",
+   "day": "2025-02-05",
+   "sentence": "Apparently Gideon's company might be shutting down.",
+   "forbidden": "Gideon Abbott's company shut down.",
+   "question": "When did Gideon's company shut down?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T07",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-16",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Yusuf took on 16 February 2025?",
+   "fact_id": "F018",
+   "misattributed_to": []
+  },
+  {
+   "id": "T08",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-07",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Yusuf took on 7 February 2025?",
+   "fact_id": "F019",
+   "misattributed_to": []
+  },
+  {
+   "id": "T09",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-15",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Yusuf took on 15 February 2025?",
+   "fact_id": "F022",
+   "misattributed_to": []
+  },
+  {
+   "id": "T10",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-13",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Yusuf took on 13 February 2025?",
+   "fact_id": "F025",
+   "misattributed_to": []
+  },
+  {
+   "id": "T11",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-07",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Yusuf took on 7 February 2025?",
+   "fact_id": "F028",
+   "misattributed_to": []
+  },
+  {
+   "id": "T12",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-09",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Yusuf took on 9 February 2025?",
+   "fact_id": "F030",
+   "misattributed_to": []
+  },
+  {
+   "id": "T13",
+   "kind": "attribution",
+   "subject": "P3",
+   "day": "2025-02-13",
+   "sentence": "Lena asked about my best friend, who works at Saltire Glassworks.",
+   "forbidden": "Yusuf Ishikawa works at Saltire Glassworks.",
+   "question": "",
+   "fact_id": "F031",
+   "misattributed_to": [
+    "P0",
+    "P1"
+   ]
+  },
+  {
+   "id": "T14",
+   "kind": "attribution",
+   "subject": "P3",
+   "day": "2025-02-15",
+   "sentence": "Gideon joined the Kiln Lane Chamber Choir today.",
+   "forbidden": "Yusuf Ishikawa joined the Kiln Lane Chamber Choir.",
+   "question": "",
+   "fact_id": "F032",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T15",
+   "kind": "attribution",
+   "subject": "P6",
+   "day": "2025-02-07",
+   "sentence": "Told Gideon that my neighbour works at Thistledown Instruments.",
+   "forbidden": "Yusuf Ishikawa works at Thistledown Instruments.",
+   "question": "",
+   "fact_id": "F033",
+   "misattributed_to": [
+    "P0",
+    "P3"
+   ]
+  },
+  {
+   "id": "T16",
+   "kind": "attribution",
+   "subject": "P6",
+   "day": "2025-02-10",
+   "sentence": "Nadia joined the Juniper Street Youth Choir today.",
+   "forbidden": "Yusuf Ishikawa joined the Juniper Street Youth Choir.",
+   "question": "",
+   "fact_id": "F034",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T17",
+   "kind": "attribution",
+   "subject": "P7",
+   "day": "2025-02-10",
+   "sentence": "Told Wes that my friend works at Brackenridge Seeds.",
+   "forbidden": "Yusuf Ishikawa works at Brackenridge Seeds.",
+   "question": "",
+   "fact_id": "F035",
+   "misattributed_to": [
+    "P0",
+    "P4"
+   ]
+  },
+  {
+   "id": "T18",
+   "kind": "attribution",
+   "subject": "P7",
+   "day": "2025-02-15",
+   "sentence": "Jonah joined the Beacon Hill Choir today.",
+   "forbidden": "Yusuf Ishikawa joined the Beacon Hill Choir.",
+   "question": "",
+   "fact_id": "F036",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T19",
+   "kind": "attribution",
+   "subject": "P5",
+   "day": "2025-02-09",
+   "sentence": "Nadia asked about my brother from the old flat, who works at Fennick & Dale Opticians.",
+   "forbidden": "Yusuf Ishikawa works at Fennick & Dale Opticians.",
+   "question": "",
+   "fact_id": "F037",
+   "misattributed_to": [
+    "P0",
+    "P6"
+   ]
+  },
+  {
+   "id": "T20",
+   "kind": "attribution",
+   "subject": "P5",
+   "day": "2025-02-16",
+   "sentence": "Linus joined the Old Mill Folk Choir today.",
+   "forbidden": "Yusuf Ishikawa joined the Old Mill Folk Choir.",
+   "question": "",
+   "fact_id": "F038",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T21",
+   "kind": "attribution",
+   "subject": "P1",
+   "day": "2025-02-12",
+   "sentence": "Gideon asked about my sister from the old flat, who works at Quillon Maps.",
+   "forbidden": "Yusuf Ishikawa works at Quillon Maps.",
+   "question": "",
+   "fact_id": "F039",
+   "misattributed_to": [
+    "P0",
+    "P3"
+   ]
+  },
+  {
+   "id": "T22",
+   "kind": "attribution",
+   "subject": "P1",
+   "day": "2025-02-13",
+   "sentence": "Lena joined the Harbour Gospel Choir today.",
+   "forbidden": "Yusuf Ishikawa joined the Harbour Gospel Choir.",
+   "question": "",
+   "fact_id": "F040",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T23",
+   "kind": "attribution",
+   "subject": "P2",
+   "day": "2025-02-13",
+   "sentence": "Jonah asked about my brother from the running club, who works at Hollowbrook Surveying.",
+   "forbidden": "Yusuf Ishikawa works at Hollowbrook Surveying.",
+   "question": "",
+   "fact_id": "F041",
+   "misattributed_to": [
+    "P0",
+    "P7"
+   ]
+  },
+  {
+   "id": "T24",
+   "kind": "attribution",
+   "subject": "P2",
+   "day": "2025-02-12",
+   "sentence": "Dalia joined the Saltmarsh Community Choir today.",
+   "forbidden": "Yusuf Ishikawa joined the Saltmarsh Community Choir.",
+   "question": "",
+   "fact_id": "F042",
+   "misattributed_to": [
+    "P0"
+   ]
+  }
+ ],
+ "unstated": [
+  {
+   "question": "What car does Yusuf drive?"
+  },
+  {
+   "question": "What is Yusuf's blood type?"
+  },
+  {
+   "question": "Which university did Yusuf attend?"
+  },
+  {
+   "question": "What is Yusuf's shoe size?"
+  },
+  {
+   "question": "How old is Yusuf's pet?"
+  },
+  {
+   "question": "What car does Lena drive?"
+  },
+  {
+   "question": "What is Dalia's favourite band?"
+  },
+  {
+   "question": "Which school did Gideon go to?"
+  }
+ ],
+ "identity": [
+  {
+   "person": "P3",
+   "role": "my best friend",
+   "contrast": "P1",
+   "alias_day": "2025-02-03",
+   "alias_sentence": "Long call with Gideon, my best friend, this evening.",
+   "role_fact": "F031",
+   "role_trap": "T13",
+   "name_fact": "F032",
+   "name_trap": "T14"
+  },
+  {
+   "person": "P6",
+   "role": "my neighbour",
+   "contrast": "P3",
+   "alias_day": "2025-02-06",
+   "alias_sentence": "Long call with Nadia, my neighbour, this evening.",
+   "role_fact": "F033",
+   "role_trap": "T15",
+   "name_fact": "F034",
+   "name_trap": "T16"
+  },
+  {
+   "person": "P7",
+   "role": "my friend",
+   "contrast": "P4",
+   "alias_day": "2025-02-05",
+   "alias_sentence": "Picked up my friend Jonah from the station.",
+   "role_fact": "F035",
+   "role_trap": "T17",
+   "name_fact": "F036",
+   "name_trap": "T18"
+  },
+  {
+   "person": "P5",
+   "role": "my brother from the old flat",
+   "contrast": "P6",
+   "alias_day": "2025-02-04",
+   "alias_sentence": "Long call with Linus, my brother from the old flat, this evening.",
+   "role_fact": "F037",
+   "role_trap": "T19",
+   "name_fact": "F038",
+   "name_trap": "T20"
+  },
+  {
+   "person": "P1",
+   "role": "my sister from the old flat",
+   "contrast": "P3",
+   "alias_day": "2025-02-04",
+   "alias_sentence": "Dinner with my sister from the old flat Lena tonight, we talked for hours.",
+   "role_fact": "F039",
+   "role_trap": "T21",
+   "name_fact": "F040",
+   "name_trap": "T22"
+  },
+  {
+   "person": "P2",
+   "role": "my brother from the running club",
+   "contrast": "P7",
+   "alias_day": "2025-02-06",
+   "alias_sentence": "Long call with Dalia, my brother from the running club, this evening.",
+   "role_fact": "F041",
+   "role_trap": "T23",
+   "name_fact": "F042",
+   "name_trap": "T24"
+  }
+ ],
+ "dating": [
+  {
+   "fact": "F043",
+   "not_yet_day": "2025-02-07",
+   "already_day": "2025-02-13"
+  },
+  {
+   "fact": "F044",
+   "not_yet_day": "2025-02-07",
+   "already_day": "2025-02-15"
+  },
+  {
+   "fact": "F045",
+   "not_yet_day": "2025-02-03",
+   "already_day": "2025-02-16"
+  },
+  {
+   "fact": "F046",
+   "not_yet_day": "2025-02-09",
+   "already_day": "2025-02-16"
+  },
+  {
+   "fact": "F047",
+   "not_yet_day": "2025-02-07",
+   "already_day": "2025-02-09"
+  },
+  {
+   "fact": "F048",
+   "not_yet_day": "2025-02-05",
+   "already_day": "2025-02-07"
+  }
+ ],
+ "coverage": [
+  {
+   "case": "converging",
+   "role_person": "P8",
+   "name_person": "P8",
+   "role": "my flatmate",
+   "same": true,
+   "city": "Leipzig",
+   "mentions": [
+    {
+     "fact": "F049",
+     "by_role": true,
+     "day": "2025-02-03"
+    },
+    {
+     "fact": "F049",
+     "by_role": false,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F050",
+     "by_role": true,
+     "day": "2025-02-07"
+    },
+    {
+     "fact": "F050",
+     "by_role": false,
+     "day": "2025-02-08"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "one_attribute",
+   "role_person": "P9",
+   "name_person": "P10",
+   "role": "my aunt",
+   "same": false,
+   "city": "Rotterdam",
+   "mentions": [
+    {
+     "fact": "F051",
+     "by_role": true,
+     "day": "2025-02-03"
+    },
+    {
+     "fact": "F052",
+     "by_role": false,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F053",
+     "by_role": true,
+     "day": "2025-02-07"
+    },
+    {
+     "fact": "F054",
+     "by_role": false,
+     "day": "2025-02-09"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "generic",
+   "role_person": "P11",
+   "name_person": "P12",
+   "role": "my landlady",
+   "same": false,
+   "city": "Bordeaux",
+   "mentions": [
+    {
+     "fact": "F055",
+     "by_role": true,
+     "day": "2025-02-03"
+    },
+    {
+     "fact": "F056",
+     "by_role": false,
+     "day": "2025-02-10"
+    },
+    {
+     "fact": "F057",
+     "by_role": true,
+     "day": "2025-02-12"
+    },
+    {
+     "fact": "F058",
+     "by_role": false,
+     "day": "2025-02-14"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "together",
+   "role_person": "P13",
+   "name_person": "P14",
+   "role": "my godfather",
+   "same": false,
+   "city": "Bristol",
+   "mentions": [
+    {
+     "fact": "F059",
+     "by_role": true,
+     "day": "2025-02-07"
+    },
+    {
+     "fact": "F060",
+     "by_role": false,
+     "day": "2025-02-09"
+    },
+    {
+     "fact": "F061",
+     "by_role": true,
+     "day": "2025-02-12"
+    },
+    {
+     "fact": "F062",
+     "by_role": false,
+     "day": "2025-02-14"
+    }
+   ],
+   "together_day": "2025-02-15"
+  }
+ ]
+}

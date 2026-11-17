@@ -26,7 +26,15 @@ def view(d: dict, people: dict[str, str], data_dir: Path, track: str) -> Deposit
                        author=people.get(d["author"], ""),
                        recipient=people.get(d["recipient"] or "", ""),
                        text=d["text"] if track == "T" else None,
-                       path=str((data_dir / d["file"]).resolve()) if d.get("file") else None)
+                       path=str((data_dir / d["file"]).resolve()) if d.get("file") else None,
+                       position=_position(d))
+
+
+def _position(d: dict) -> tuple[float, float] | None:
+    meta = d.get("meta") or {}
+    if d["kind"] == "photo" and meta.get("lat") is not None and meta.get("lon") is not None:
+        return float(meta["lat"]), float(meta["lon"])
+    return None
 
 
 def _eta(t_start: float, done: int, total: int) -> str:
@@ -67,8 +75,13 @@ def run(system: MemorySystem, data_dir: Path, track: str = "T", checkpoint_every
             except NotImplementedError as exc:
                 write_unavailable = f"not measurable: {exc}"
                 continue
-            snapshots.append({"at": (day + timedelta(days=1)).isoformat() + "T00:00:00",
-                              "memories": [asdict(m) for m in mems]})
+            snap = {"at": (day + timedelta(days=1)).isoformat() + "T00:00:00",
+                    "memories": [asdict(m) for m in mems]}
+            try:
+                snap["aliases"] = [asdict(a) for a in system.aliases()]
+            except NotImplementedError as exc:
+                snap["aliases_unavailable"] = str(exc)
+            snapshots.append(snap)
     answers = {}
     if qa:
         asked = date.fromisoformat(questions[0]["asked_at"]) if questions else start
@@ -77,6 +90,6 @@ def run(system: MemorySystem, data_dir: Path, track: str = "T", checkpoint_every
         for j, q in enumerate(asked_qs, 1):
             answers[q["id"]] = asdict(system.answer(q["question"], asked))
             say(f"question {j}/{len(asked_qs)}, {_eta(tq, j, len(asked_qs))}")
-    return {"system": system.describe(), "track": track, "data": str(data_dir),
+    return {"system": system.describe(), "track": track, "data": Path(data_dir).name,  # the set, never a local path
             "seconds": round(time.time() - t0, 1), "snapshots": snapshots,
             "write_unavailable": write_unavailable, "answers": answers}

@@ -1,0 +1,1975 @@
+[
+ {
+  "id": "D0001",
+  "kind": "voice",
+  "created_at": "2025-02-03T07:44:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "My address, for the record, is 57 Orchard Close, Rotterdam. Grey sky from dawn to dusk. On erm, 4 February well, 2025, er, I start as okay so, backend engineer hmm, at well, Silverfern Energy; well, the contract is signed.",
+  "fact_ids": [
+   "F001",
+   "F006"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F001",
+    "start": 0,
+    "end": 59,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F006",
+    "start": 88,
+    "end": 222,
+    "role": "future"
+   }
+  ],
+  "meta": {
+   "voice": "male_b"
+  },
+  "file": "deposits/D0001_voice.m4a"
+ },
+ {
+  "id": "D0002",
+  "kind": "document",
+  "created_at": "2025-02-03T09:00:00",
+  "author": "",
+  "recipient": null,
+  "text": "Silverfern Energy\nPeople team\n\nDear Cyrus Moreau,\n\nFollowing your interviews, Silverfern Energy would like you to join as backend engineer.\nFirst working day: February 4, 2025.\nKindly countersign this letter and send it back.\n\nWith best wishes",
+  "fact_ids": [
+   "F006"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F006",
+    "start": 51,
+    "end": 139,
+    "role": "future"
+   }
+  ],
+  "meta": {
+   "doc_type": "offer_letter"
+  },
+  "file": "deposits/D0002_document.pdf"
+ },
+ {
+  "id": "D0003",
+  "kind": "voice",
+  "created_at": "2025-02-03T17:16:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Odds... Odds and well, ends from the fridge became a soup. Another long meeting right, at Bluecairn hmm, Foods; as okay so, a data analyst I er, get okay so, a lot of those.",
+  "fact_ids": [
+   "F005"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F005",
+    "start": 59,
+    "end": 173,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "male_b"
+  },
+  "file": "deposits/D0003_voice.m4a"
+ },
+ {
+  "id": "D0049",
+  "kind": "note",
+  "created_at": "2025-02-03T17:25:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Two chapters into the new novel, slow going.\nElsa's upright piano hasn't come.",
+  "fact_ids": [
+   "F047"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F047",
+    "start": 45,
+    "end": 78,
+    "role": "not_yet"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0049_note.txt"
+ },
+ {
+  "id": "D0061",
+  "kind": "note",
+  "created_at": "2025-02-03T18:03:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Grey sky from dawn to dusk.\nThese days my aunt lives in Bristol.",
+  "fact_ids": [
+   "F049"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F049",
+    "start": 28,
+    "end": 64,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0061_note.txt"
+ },
+ {
+  "id": "D0062",
+  "kind": "note",
+  "created_at": "2025-02-03T21:43:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Kitchen finally spotless, every shelf of it.\nGhent is where my uncle lives now.",
+  "fact_ids": [
+   "F059"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F059",
+    "start": 45,
+    "end": 79,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0062_note.txt"
+ },
+ {
+  "id": "D0031",
+  "kind": "message",
+  "created_at": "2025-02-03T22:06:00",
+  "author": "P0",
+  "recipient": "P7",
+  "text": "It was my neighbour Vera who rang tonight; we talked for ages. Plants on the balcony watered at last.",
+  "fact_ids": [],
+  "trap_ids": [],
+  "spans": [],
+  "meta": {
+   "alias_spans": [
+    [
+     "P6",
+     0,
+     62
+    ]
+   ]
+  },
+  "file": "deposits/D0031_message.txt"
+ },
+ {
+  "id": "D0032",
+  "kind": "note",
+  "created_at": "2025-02-04T09:24:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Tea at the station café with my sister, Orla, before the evening train.\nLaundry folded and put away, small victory.",
+  "fact_ids": [],
+  "trap_ids": [],
+  "spans": [],
+  "meta": {
+   "alias_spans": [
+    [
+     "P1",
+     0,
+     71
+    ]
+   ]
+  },
+  "file": "deposits/D0032_note.txt"
+ },
+ {
+  "id": "D0063",
+  "kind": "note",
+  "created_at": "2025-02-04T12:24:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Coffee filters: out again, add them to the list.\nHome for Gideon is Ghent.",
+  "fact_ids": [
+   "F060"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F060",
+    "start": 49,
+    "end": 74,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0063_note.txt"
+ },
+ {
+  "id": "D0064",
+  "kind": "note",
+  "created_at": "2025-02-04T12:38:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Coffee filters: out again, add them to the list.\nMontreal is where my godfather lives now.",
+  "fact_ids": [
+   "F055"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F055",
+    "start": 49,
+    "end": 90,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0064_note.txt"
+ },
+ {
+  "id": "D0004",
+  "kind": "voice",
+  "created_at": "2025-02-04T17:12:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Rent... Rent day: 720 EUR transferred. Lyon is where I grew up; some days I really miss it. Laundry folded and put okay so, away, small victory. Thinking of my brother Talia. They live erm, in erm, Porto these days.",
+  "fact_ids": [
+   "F003",
+   "F009",
+   "F014"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F003",
+    "start": 0,
+    "end": 38,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F009",
+    "start": 39,
+    "end": 91,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F014",
+    "start": 145,
+    "end": 215,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "male_b"
+  },
+  "file": "deposits/D0004_voice.m4a"
+ },
+ {
+  "id": "D0033",
+  "kind": "note",
+  "created_at": "2025-02-04T18:57:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Coffee filters: out again, add them to the list.\nThe Juniper Street Youth Choir has a new member as of today: Vera.",
+  "fact_ids": [
+   "F040"
+  ],
+  "trap_ids": [
+   "T19"
+  ],
+  "spans": [
+   {
+    "fact_id": "F040",
+    "start": 49,
+    "end": 115,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T19",
+     49,
+     115
+    ]
+   ]
+  },
+  "file": "deposits/D0033_note.txt"
+ },
+ {
+  "id": "D0005",
+  "kind": "message",
+  "created_at": "2025-02-04T19:23:00",
+  "author": "P0",
+  "recipient": "P6",
+  "text": "Silverfern Energy has a new backend engineer as of today: me — thinking of my sister Orla. They live in Edinburgh these days. The morning train crawled in late.",
+  "fact_ids": [
+   "F006",
+   "F012"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F006",
+    "start": 0,
+    "end": 60,
+    "role": "start"
+   },
+   {
+    "fact_id": "F012",
+    "start": 63,
+    "end": 125,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0005_message.txt"
+ },
+ {
+  "id": "D0065",
+  "kind": "note",
+  "created_at": "2025-02-04T19:42:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Coffee filters: out again, add them to the list.\nHome for Yusuf is Bristol.",
+  "fact_ids": [
+   "F049"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F049",
+    "start": 49,
+    "end": 75,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0065_note.txt"
+ },
+ {
+  "id": "D0034",
+  "kind": "note",
+  "created_at": "2025-02-05T09:04:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Odds and ends from the fridge became a soup.\nOver coffee, Elsa wanted to know whether my sister was still at Saltire Glassworks; yes, still there.",
+  "fact_ids": [
+   "F037"
+  ],
+  "trap_ids": [
+   "T16"
+  ],
+  "spans": [
+   {
+    "fact_id": "F037",
+    "start": 45,
+    "end": 146,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T16",
+     45,
+     146
+    ]
+   ]
+  },
+  "file": "deposits/D0034_note.txt"
+ },
+ {
+  "id": "D0066",
+  "kind": "note",
+  "created_at": "2025-02-05T09:57:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Grey sky from dawn to dusk.\nMy uncle — at Wickerfield Nursery these days.",
+  "fact_ids": [
+   "F061"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F061",
+    "start": 28,
+    "end": 73,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0066_note.txt"
+ },
+ {
+  "id": "D0067",
+  "kind": "note",
+  "created_at": "2025-02-05T10:32:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Music through the wall from next door, again.\nRavi has a flat in Montreal.",
+  "fact_ids": [
+   "F056"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F056",
+    "start": 46,
+    "end": 74,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0067_note.txt"
+ },
+ {
+  "id": "D0006",
+  "kind": "voice",
+  "created_at": "2025-02-05T10:43:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "720... 720 EUR hmm, gone on rent again this month. Coffee filters: out again, erm, add them to the list. Rumour has it that Silas's company could be closing down. Today, Orla right, adopted a puppy, lovely erm, news.",
+  "fact_ids": [
+   "F003",
+   "F030"
+  ],
+  "trap_ids": [
+   "T06"
+  ],
+  "spans": [
+   {
+    "fact_id": "F003",
+    "start": 0,
+    "end": 50,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F030",
+    "start": 163,
+    "end": 216,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "male_b",
+   "trap_spans": [
+    [
+     "T06",
+     105,
+     162
+    ]
+   ]
+  },
+  "file": "deposits/D0006_voice.m4a"
+ },
+ {
+  "id": "D0035",
+  "kind": "message",
+  "created_at": "2025-02-05T10:47:00",
+  "author": "P0",
+  "recipient": "P5",
+  "text": "Spent the evening with Matteo — my brother from the old flat — going through old letters. Music through the wall from next door, again.",
+  "fact_ids": [],
+  "trap_ids": [],
+  "spans": [],
+  "meta": {
+   "alias_spans": [
+    [
+     "P7",
+     0,
+     89
+    ]
+   ]
+  },
+  "file": "deposits/D0035_message.txt"
+ },
+ {
+  "id": "D0068",
+  "kind": "note",
+  "created_at": "2025-02-05T15:54:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Rain on and off all afternoon.\nValencia is where my landlady lives now.",
+  "fact_ids": [
+   "F051"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F051",
+    "start": 31,
+    "end": 71,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0068_note.txt"
+ },
+ {
+  "id": "D0036",
+  "kind": "note",
+  "created_at": "2025-02-05T19:43:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "It was my cousin Quinn who rang tonight; we talked for ages.\nKitchen finally spotless, every shelf of it.",
+  "fact_ids": [],
+  "trap_ids": [],
+  "spans": [],
+  "meta": {
+   "alias_spans": [
+    [
+     "P4",
+     0,
+     60
+    ]
+   ]
+  },
+  "file": "deposits/D0036_note.txt"
+ },
+ {
+  "id": "D0007",
+  "kind": "message_in",
+  "created_at": "2025-02-05T20:37:00",
+  "author": "P3",
+  "recipient": "P0",
+  "text": "Hello hello! Yesterday, I ran a first marathon. Can you believe it? Speak later?",
+  "fact_ids": [
+   "F019"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F019",
+    "start": 13,
+    "end": 67,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0007_message_in.txt"
+ },
+ {
+  "id": "D0037",
+  "kind": "message",
+  "created_at": "2025-02-06T10:55:00",
+  "author": "P0",
+  "recipient": "P2",
+  "text": "Spent the evening with Silas — my best friend — going through old letters. Lights out by eleven, that is the goal this week.",
+  "fact_ids": [],
+  "trap_ids": [],
+  "spans": [],
+  "meta": {
+   "alias_spans": [
+    [
+     "P3",
+     0,
+     74
+    ]
+   ]
+  },
+  "file": "deposits/D0037_message.txt"
+ },
+ {
+  "id": "D0050",
+  "kind": "note",
+  "created_at": "2025-02-06T18:35:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Tired tonight; good tired, though.\nMatteo is still without the telescope.",
+  "fact_ids": [
+   "F048"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F048",
+    "start": 35,
+    "end": 73,
+    "role": "not_yet"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0050_note.txt"
+ },
+ {
+  "id": "D0008",
+  "kind": "message",
+  "created_at": "2025-02-06T20:17:00",
+  "author": "P0",
+  "recipient": "P7",
+  "text": "Tired tonight; good tired, though. The marathon sign-up came and went, and I let it pass, not this year. Were the Porto offer ever to come through, I might well be on the first train. Sent the dish back — shellfish, and I'm allergic.",
+  "fact_ids": [
+   "F010"
+  ],
+  "trap_ids": [
+   "T03",
+   "T01"
+  ],
+  "spans": [
+   {
+    "fact_id": "F010",
+    "start": 184,
+    "end": 233,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T03",
+     35,
+     104
+    ],
+    [
+     "T01",
+     105,
+     183
+    ]
+   ]
+  },
+  "file": "deposits/D0008_message.txt"
+ },
+ {
+  "id": "D0051",
+  "kind": "note",
+  "created_at": "2025-02-06T21:50:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Music through the wall from next door, again.\nSilas is still without the standing desk.",
+  "fact_ids": [
+   "F045"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F045",
+    "start": 46,
+    "end": 87,
+    "role": "not_yet"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0051_note.txt"
+ },
+ {
+  "id": "D0038",
+  "kind": "message",
+  "created_at": "2025-02-06T22:51:00",
+  "author": "P0",
+  "recipient": "P7",
+  "text": "It was my friend Elsa who rang tonight; we talked for ages. Laundry folded and put away, small victory.",
+  "fact_ids": [],
+  "trap_ids": [],
+  "spans": [],
+  "meta": {
+   "alias_spans": [
+    [
+     "P5",
+     0,
+     59
+    ]
+   ]
+  },
+  "file": "deposits/D0038_message.txt"
+ },
+ {
+  "id": "D0052",
+  "kind": "note",
+  "created_at": "2025-02-07T12:45:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Odds and ends from the fridge became a soup.\nChecked the tracking again: the pottery wheel hasn't shipped.",
+  "fact_ids": [
+   "F043"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F043",
+    "start": 45,
+    "end": 106,
+    "role": "not_yet"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0052_note.txt"
+ },
+ {
+  "id": "D0053",
+  "kind": "note",
+  "created_at": "2025-02-07T17:19:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Lights out by eleven, that is the goal this week.\nElsa has the upright piano now, and loves it.",
+  "fact_ids": [
+   "F047"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F047",
+    "start": 50,
+    "end": 95,
+    "role": "already"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0053_note.txt"
+ },
+ {
+  "id": "D0039",
+  "kind": "note",
+  "created_at": "2025-02-07T18:49:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Rain on and off all afternoon.\nTalia had no idea that my best friend is employed by Thistledown Instruments.",
+  "fact_ids": [
+   "F035"
+  ],
+  "trap_ids": [
+   "T14"
+  ],
+  "spans": [
+   {
+    "fact_id": "F035",
+    "start": 31,
+    "end": 108,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T14",
+     31,
+     108
+    ]
+   ]
+  },
+  "file": "deposits/D0039_note.txt"
+ },
+ {
+  "id": "D0009",
+  "kind": "message",
+  "created_at": "2025-02-07T21:53:00",
+  "author": "P0",
+  "recipient": "P1",
+  "text": "Rain on and off all afternoon. Talia, an editor by trade.",
+  "fact_ids": [
+   "F015"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F015",
+    "start": 31,
+    "end": 57,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0009_message.txt"
+ },
+ {
+  "id": "D0010",
+  "kind": "photo",
+  "created_at": "2025-02-08T09:17:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "GPS 51.93628, 4.46045, captured 2025-02-08 at 09:17.",
+  "fact_ids": [
+   "F021"
+  ],
+  "trap_ids": [
+   "T07"
+  ],
+  "spans": [
+   {
+    "fact_id": "F021",
+    "start": 0,
+    "end": 52,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "lat": 51.93628,
+   "lon": 4.46045,
+   "time": "09:17"
+  },
+  "file": "deposits/D0010_photo.jpg"
+ },
+ {
+  "id": "D0054",
+  "kind": "note",
+  "created_at": "2025-02-08T12:37:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Kitchen finally spotless, every shelf of it.\nQuinn's rowing machine hasn't come.",
+  "fact_ids": [
+   "F046"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F046",
+    "start": 45,
+    "end": 80,
+    "role": "not_yet"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0054_note.txt"
+ },
+ {
+  "id": "D0011",
+  "kind": "message",
+  "created_at": "2025-02-08T12:52:00",
+  "author": "P0",
+  "recipient": "P4",
+  "text": "Laundry folded and put away, small victory. What I have is an ear infection, confirmed today; the plan is a seven-day course of antibiotics. At the harbour footpath today, I bumped into my best friend Silas.",
+  "fact_ids": [
+   "F007",
+   "F029"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F007",
+    "start": 44,
+    "end": 140,
+    "role": "start"
+   },
+   {
+    "fact_id": "F029",
+    "start": 141,
+    "end": 207,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0011_message.txt"
+ },
+ {
+  "id": "D0012",
+  "kind": "document",
+  "created_at": "2025-02-08T14:00:00",
+  "author": "",
+  "recipient": null,
+  "text": "Riverside Medical Practice\nConsultation record\n\nSeen on February 8, 2025: Cyrus Moreau\nDiagnosis — an ear infection\nTreatment — a seven-day course of antibiotics\nReturn if there is no improvement.",
+  "fact_ids": [
+   "F007"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F007",
+    "start": 87,
+    "end": 115,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "doc_type": "visit_summary"
+  },
+  "file": "deposits/D0012_document.pdf"
+ },
+ {
+  "id": "D0069",
+  "kind": "note",
+  "created_at": "2025-02-08T17:59:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Laundry folded and put away, small victory.\nBumped into Gideon; Wickerfield Nursery is where they work.",
+  "fact_ids": [
+   "F062"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F062",
+    "start": 44,
+    "end": 103,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0069_note.txt"
+ },
+ {
+  "id": "D0070",
+  "kind": "note",
+  "created_at": "2025-02-08T19:10:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Music through the wall from next door, again.\nMistral Joinery employs my aunt.",
+  "fact_ids": [
+   "F050"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F050",
+    "start": 46,
+    "end": 78,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0070_note.txt"
+ },
+ {
+  "id": "D0013",
+  "kind": "voice",
+  "created_at": "2025-02-08T21:03:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Laundry folded and put away, small victory. Yesterday, a bank well, adviser appointment; nothing okay so, to worry about.",
+  "fact_ids": [
+   "F023"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F023",
+    "start": 44,
+    "end": 121,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "male_b"
+  },
+  "file": "deposits/D0013_voice.m4a"
+ },
+ {
+  "id": "D0040",
+  "kind": "note",
+  "created_at": "2025-02-09T07:40:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Plants on the balcony watered at last.\nToday Elsa became a member of the Saltmarsh Community Choir.",
+  "fact_ids": [
+   "F032"
+  ],
+  "trap_ids": [
+   "T11"
+  ],
+  "spans": [
+   {
+    "fact_id": "F032",
+    "start": 39,
+    "end": 99,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T11",
+     39,
+     99
+    ]
+   ]
+  },
+  "file": "deposits/D0040_note.txt"
+ },
+ {
+  "id": "D0055",
+  "kind": "note",
+  "created_at": "2025-02-09T08:10:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Two chapters into the new novel, slow going.\nTalia is still without the espresso machine.",
+  "fact_ids": [
+   "F044"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F044",
+    "start": 45,
+    "end": 89,
+    "role": "not_yet"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0055_note.txt"
+ },
+ {
+  "id": "D0071",
+  "kind": "note",
+  "created_at": "2025-02-09T10:45:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Two chapters into the new novel, slow going.\nMost days, my godfather works from home.",
+  "fact_ids": [
+   "F057"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F057",
+    "start": 45,
+    "end": 85,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0071_note.txt"
+ },
+ {
+  "id": "D0072",
+  "kind": "note",
+  "created_at": "2025-02-09T11:55:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Plants on the balcony watered at last.\nYusuf — at Mistral Joinery these days.",
+  "fact_ids": [
+   "F050"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F050",
+    "start": 39,
+    "end": 77,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0072_note.txt"
+ },
+ {
+  "id": "D0014",
+  "kind": "photo",
+  "created_at": "2025-02-09T12:45:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "GPS 51.93717, 4.49226, captured 2025-02-09 at 12:45.",
+  "fact_ids": [
+   "F028"
+  ],
+  "trap_ids": [
+   "T09"
+  ],
+  "spans": [
+   {
+    "fact_id": "F028",
+    "start": 0,
+    "end": 52,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "lat": 51.93717,
+   "lon": 4.49226,
+   "time": "12:45"
+  },
+  "file": "deposits/D0014_photo.jpg"
+ },
+ {
+  "id": "D0015",
+  "kind": "voice",
+  "created_at": "2025-02-09T18:15:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Music through okay so, the wall from hmm, next door, again. Today, hmm, a long stroll around the old market hall.",
+  "fact_ids": [
+   "F028"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F028",
+    "start": 60,
+    "end": 113,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "male_b"
+  },
+  "file": "deposits/D0015_voice.m4a"
+ },
+ {
+  "id": "D0073",
+  "kind": "note",
+  "created_at": "2025-02-09T19:54:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Lights out by eleven, that is the goal this week.\nJune has a flat in Valencia.",
+  "fact_ids": [
+   "F052"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F052",
+    "start": 50,
+    "end": 78,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0073_note.txt"
+ },
+ {
+  "id": "D0016",
+  "kind": "message_in",
+  "created_at": "2025-02-09T22:54:00",
+  "author": "P3",
+  "recipient": "P0",
+  "text": "Hi, it's me. Here in Bordeaux, all good. My birthday falls on 2 July, must organise something. Ring me when you're free.",
+  "fact_ids": [
+   "F016",
+   "F018"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F016",
+    "start": 13,
+    "end": 40,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F018",
+    "start": 41,
+    "end": 94,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0016_message_in.txt"
+ },
+ {
+  "id": "D0041",
+  "kind": "note",
+  "created_at": "2025-02-10T11:47:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Kitchen finally spotless, every shelf of it.\nThe Old Mill Folk Choir has a new member as of today: Orla.",
+  "fact_ids": [
+   "F038"
+  ],
+  "trap_ids": [
+   "T17"
+  ],
+  "spans": [
+   {
+    "fact_id": "F038",
+    "start": 45,
+    "end": 104,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T17",
+     45,
+     104
+    ]
+   ]
+  },
+  "file": "deposits/D0041_note.txt"
+ },
+ {
+  "id": "D0042",
+  "kind": "note",
+  "created_at": "2025-02-10T11:57:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Grey sky from dawn to dusk.\nToday Silas became a member of the Harbour Gospel Choir.",
+  "fact_ids": [
+   "F036"
+  ],
+  "trap_ids": [
+   "T15"
+  ],
+  "spans": [
+   {
+    "fact_id": "F036",
+    "start": 28,
+    "end": 84,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T15",
+     28,
+     84
+    ]
+   ]
+  },
+  "file": "deposits/D0042_note.txt"
+ },
+ {
+  "id": "D0017",
+  "kind": "voice",
+  "created_at": "2025-02-10T13:44:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Orla's er, story of the right, day: erm, their okay so, bike, stolen outside the station, okay so, or so they right, said. Kitchen finally spotless, every shelf er, of hmm, it.",
+  "fact_ids": [],
+  "trap_ids": [
+   "T04"
+  ],
+  "spans": [],
+  "meta": {
+   "voice": "male_b",
+   "trap_spans": [
+    [
+     "T04",
+     0,
+     122
+    ]
+   ]
+  },
+  "file": "deposits/D0017_voice.m4a"
+ },
+ {
+  "id": "D0043",
+  "kind": "note",
+  "created_at": "2025-02-10T19:31:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Music through the wall from next door, again.\nElsa had no idea that my brother from the old flat is employed by Quillon Maps.",
+  "fact_ids": [
+   "F041"
+  ],
+  "trap_ids": [
+   "T20"
+  ],
+  "spans": [
+   {
+    "fact_id": "F041",
+    "start": 46,
+    "end": 125,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T20",
+     46,
+     125
+    ]
+   ]
+  },
+  "file": "deposits/D0043_note.txt"
+ },
+ {
+  "id": "D0074",
+  "kind": "note",
+  "created_at": "2025-02-10T20:41:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Plants on the balcony watered at last.\nCorvid Mapmakers employs my landlady.",
+  "fact_ids": [
+   "F053"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F053",
+    "start": 39,
+    "end": 76,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0074_note.txt"
+ },
+ {
+  "id": "D0056",
+  "kind": "note",
+  "created_at": "2025-02-10T20:59:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Lights out by eleven, that is the goal this week.\nMatteo showed me the telescope, it arrived at some point.",
+  "fact_ids": [
+   "F048"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F048",
+    "start": 50,
+    "end": 107,
+    "role": "already"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0056_note.txt"
+ },
+ {
+  "id": "D0044",
+  "kind": "note",
+  "created_at": "2025-02-11T08:51:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Rain on and off all afternoon.\nOver coffee, Silas wanted to know whether my cousin was still at Marrowgate Press; yes, still there.",
+  "fact_ids": [
+   "F033"
+  ],
+  "trap_ids": [
+   "T12"
+  ],
+  "spans": [
+   {
+    "fact_id": "F033",
+    "start": 31,
+    "end": 131,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T12",
+     31,
+     131
+    ]
+   ]
+  },
+  "file": "deposits/D0044_note.txt"
+ },
+ {
+  "id": "D0018",
+  "kind": "message",
+  "created_at": "2025-02-11T10:25:00",
+  "author": "P0",
+  "recipient": "P2",
+  "text": "The move happened yesterday: 10 Mill Road in Leipzig is where I live now. Tired tonight; good tired, though.",
+  "fact_ids": [
+   "F002"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F002",
+    "start": 0,
+    "end": 73,
+    "role": "start"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0018_message.txt"
+ },
+ {
+  "id": "D0045",
+  "kind": "note",
+  "created_at": "2025-02-11T15:39:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "The morning train crawled in late.\nMatteo had no idea that my neighbour is employed by Brackenridge Seeds.",
+  "fact_ids": [
+   "F039"
+  ],
+  "trap_ids": [
+   "T18"
+  ],
+  "spans": [
+   {
+    "fact_id": "F039",
+    "start": 35,
+    "end": 106,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T18",
+     35,
+     106
+    ]
+   ]
+  },
+  "file": "deposits/D0045_note.txt"
+ },
+ {
+  "id": "D0019",
+  "kind": "message_in",
+  "created_at": "2025-02-12T08:33:00",
+  "author": "P1",
+  "recipient": "P0",
+  "text": "So, news. Another full day; a project manager's work is never done. Speak later?",
+  "fact_ids": [
+   "F013"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F013",
+    "start": 10,
+    "end": 67,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0019_message_in.txt"
+ },
+ {
+  "id": "D0020",
+  "kind": "voice",
+  "created_at": "2025-02-12T09:07:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Kept up hmm, my Portuguese on the walk home, podcast in my erm, ears. 1380... 1380 EUR gone on rent again this month. Tired... Tired tonight; good tired, though.",
+  "fact_ids": [
+   "F011",
+   "F004"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F011",
+    "start": 0,
+    "end": 69,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F004",
+    "start": 70,
+    "end": 117,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "male_b"
+  },
+  "file": "deposits/D0020_voice.m4a"
+ },
+ {
+  "id": "D0021",
+  "kind": "note",
+  "created_at": "2025-02-12T10:44:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Note to self: 19 October is my birthday, plan something. Tired tonight; good tired, though.",
+  "fact_ids": [
+   "F008"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F008",
+    "start": 0,
+    "end": 56,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0021_note.txt"
+ },
+ {
+  "id": "D0022",
+  "kind": "voice_in",
+  "created_at": "2025-02-12T20:05:00",
+  "author": "P3",
+  "recipient": "P0",
+  "text": "So... So, news. Being a research assistant keeps me busy. Speak later?",
+  "fact_ids": [
+   "F017"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F017",
+    "start": 16,
+    "end": 57,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "female_gb"
+  },
+  "file": "deposits/D0022_voice_in.m4a"
+ },
+ {
+  "id": "D0023",
+  "kind": "voice",
+  "created_at": "2025-02-13T07:56:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Today, right, coffee at the er, riverside park, Orla and me. Tired tonight; good well, tired, though.",
+  "fact_ids": [
+   "F022"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F022",
+    "start": 0,
+    "end": 60,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "male_b"
+  },
+  "file": "deposits/D0023_voice.m4a"
+ },
+ {
+  "id": "D0024",
+  "kind": "voice",
+  "created_at": "2025-02-13T08:29:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Rain on and off all afternoon. Orla and I met up right, at the harbour hmm, footpath yesterday. Next right, year, erm, perhaps, I might adopt a dog; for now it is only an idea. Today, the ear infection is behind me.",
+  "fact_ids": [
+   "F026",
+   "F007"
+  ],
+  "trap_ids": [
+   "T02"
+  ],
+  "spans": [
+   {
+    "fact_id": "F026",
+    "start": 31,
+    "end": 95,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F007",
+    "start": 177,
+    "end": 215,
+    "role": "end"
+   }
+  ],
+  "meta": {
+   "voice": "male_b",
+   "trap_spans": [
+    [
+     "T02",
+     96,
+     176
+    ]
+   ]
+  },
+  "file": "deposits/D0024_voice.m4a"
+ },
+ {
+  "id": "D0057",
+  "kind": "note",
+  "created_at": "2025-02-13T22:04:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Two chapters into the new novel, slow going.\nThe pottery wheel is here and in use.",
+  "fact_ids": [
+   "F043"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F043",
+    "start": 45,
+    "end": 82,
+    "role": "already"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0057_note.txt"
+ },
+ {
+  "id": "D0075",
+  "kind": "note",
+  "created_at": "2025-02-14T12:16:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Coffee filters: out again, add them to the list.\nLunch today: Gideon came, and so did my uncle.",
+  "fact_ids": [],
+  "trap_ids": [],
+  "spans": [],
+  "meta": {
+   "together": [
+    "P13",
+    "P14"
+   ]
+  },
+  "file": "deposits/D0075_note.txt"
+ },
+ {
+  "id": "D0025",
+  "kind": "note",
+  "created_at": "2025-02-14T17:43:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "1:36:29 — my time at the Harbour Half Marathon yesterday.\nPlants on the balcony watered at last.",
+  "fact_ids": [
+   "F025"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F025",
+    "start": 0,
+    "end": 57,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0025_note.txt"
+ },
+ {
+  "id": "D0026",
+  "kind": "voice_in",
+  "created_at": "2025-02-14T21:54:00",
+  "author": "P1",
+  "recipient": "P0",
+  "text": "Morning! Another full day; a project manager's work is never done. Love, as ever.",
+  "fact_ids": [
+   "F013"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F013",
+    "start": 9,
+    "end": 66,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "female_b"
+  },
+  "file": "deposits/D0026_voice_in.m4a"
+ },
+ {
+  "id": "D0046",
+  "kind": "note",
+  "created_at": "2025-02-15T14:21:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Lights out by eleven, that is the goal this week.\nOver coffee, Matteo wanted to know whether my friend was still at Hollowbrook Surveying; yes, still there.",
+  "fact_ids": [
+   "F031"
+  ],
+  "trap_ids": [
+   "T10"
+  ],
+  "spans": [
+   {
+    "fact_id": "F031",
+    "start": 50,
+    "end": 156,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T10",
+     50,
+     156
+    ]
+   ]
+  },
+  "file": "deposits/D0046_note.txt"
+ },
+ {
+  "id": "D0027",
+  "kind": "photo",
+  "created_at": "2025-02-15T15:05:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "GPS 51.32960, 12.36874, captured 2025-02-15 at 15:05.",
+  "fact_ids": [
+   "F027"
+  ],
+  "trap_ids": [
+   "T08"
+  ],
+  "spans": [
+   {
+    "fact_id": "F027",
+    "start": 0,
+    "end": 53,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "lat": 51.3296,
+   "lon": 12.36874,
+   "time": "15:05"
+  },
+  "file": "deposits/D0027_photo.jpg"
+ },
+ {
+  "id": "D0076",
+  "kind": "note",
+  "created_at": "2025-02-15T17:28:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Plants on the balcony watered at last.\nRavi mostly works from home.",
+  "fact_ids": [
+   "F058"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F058",
+    "start": 39,
+    "end": 67,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0076_note.txt"
+ },
+ {
+  "id": "D0028",
+  "kind": "note",
+  "created_at": "2025-02-15T19:18:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Plants on the balcony watered at last. An hour or two at the city library today.\nKept up my Portuguese on the walk home, podcast in my ears.",
+  "fact_ids": [
+   "F027",
+   "F011"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F027",
+    "start": 39,
+    "end": 80,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F011",
+    "start": 81,
+    "end": 140,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0028_note.txt"
+ },
+ {
+  "id": "D0077",
+  "kind": "note",
+  "created_at": "2025-02-15T19:45:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Kitchen finally spotless, every shelf of it.\nJune — at Tamberlane Bakery these days.",
+  "fact_ids": [
+   "F054"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F054",
+    "start": 45,
+    "end": 84,
+    "role": "mention"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0077_note.txt"
+ },
+ {
+  "id": "D0047",
+  "kind": "note",
+  "created_at": "2025-02-15T20:52:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Laundry folded and put away, small victory.\nThe Beacon Hill Choir has a new member as of today: Matteo.",
+  "fact_ids": [
+   "F042"
+  ],
+  "trap_ids": [
+   "T21"
+  ],
+  "spans": [
+   {
+    "fact_id": "F042",
+    "start": 44,
+    "end": 103,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T21",
+     44,
+     103
+    ]
+   ]
+  },
+  "file": "deposits/D0047_note.txt"
+ },
+ {
+  "id": "D0029",
+  "kind": "voice_in",
+  "created_at": "2025-02-16T08:07:00",
+  "author": "P3",
+  "recipient": "P0",
+  "text": "So, news. Note well, to self: 2 July is my birthday, okay so, plan something. Love, as ever.",
+  "fact_ids": [
+   "F018"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F018",
+    "start": 10,
+    "end": 77,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "voice": "female_gb"
+  },
+  "file": "deposits/D0029_voice_in.m4a"
+ },
+ {
+  "id": "D0058",
+  "kind": "note",
+  "created_at": "2025-02-16T09:05:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Two chapters into the new novel, slow going.\nTalia showed me the espresso machine, it arrived at some point.",
+  "fact_ids": [
+   "F044"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F044",
+    "start": 45,
+    "end": 108,
+    "role": "already"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0058_note.txt"
+ },
+ {
+  "id": "D0030",
+  "kind": "message",
+  "created_at": "2025-02-16T13:45:00",
+  "author": "P0",
+  "recipient": "P4",
+  "text": "Kitchen finally spotless, every shelf of it. If the summer is kind, I would like to learn to sail. Today, a GP check-up appointment; nothing to worry about. Today, Talia passed a driving test, lovely news.",
+  "fact_ids": [
+   "F020",
+   "F024"
+  ],
+  "trap_ids": [
+   "T05"
+  ],
+  "spans": [
+   {
+    "fact_id": "F020",
+    "start": 99,
+    "end": 156,
+    "role": "mention"
+   },
+   {
+    "fact_id": "F024",
+    "start": 157,
+    "end": 205,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T05",
+     45,
+     98
+    ]
+   ]
+  },
+  "file": "deposits/D0030_message.txt"
+ },
+ {
+  "id": "D0059",
+  "kind": "note",
+  "created_at": "2025-02-16T14:12:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Grey sky from dawn to dusk.\nSilas has the standing desk now, and loves it.",
+  "fact_ids": [
+   "F045"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F045",
+    "start": 28,
+    "end": 74,
+    "role": "already"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0059_note.txt"
+ },
+ {
+  "id": "D0048",
+  "kind": "note",
+  "created_at": "2025-02-16T16:04:00",
+  "author": "P0",
+  "recipient": null,
+  "text": "Lights out by eleven, that is the goal this week.\nQuinn — new member of the Kiln Lane Chamber Choir since this morning.",
+  "fact_ids": [
+   "F034"
+  ],
+  "trap_ids": [
+   "T13"
+  ],
+  "spans": [
+   {
+    "fact_id": "F034",
+    "start": 50,
+    "end": 119,
+    "role": "mention"
+   }
+  ],
+  "meta": {
+   "trap_spans": [
+    [
+     "T13",
+     50,
+     119
+    ]
+   ]
+  },
+  "file": "deposits/D0048_note.txt"
+ },
+ {
+  "id": "D0060",
+  "kind": "message",
+  "created_at": "2025-02-16T16:29:00",
+  "author": "P0",
+  "recipient": "P7",
+  "text": "Two chapters into the new novel, slow going. Quinn has the rowing machine now, and loves it.",
+  "fact_ids": [
+   "F046"
+  ],
+  "trap_ids": [],
+  "spans": [
+   {
+    "fact_id": "F046",
+    "start": 45,
+    "end": 92,
+    "role": "already"
+   }
+  ],
+  "meta": {},
+  "file": "deposits/D0060_message.txt"
+ }
+]

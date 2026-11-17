@@ -1,0 +1,3240 @@
+{
+ "system": {
+  "name": "graphiti",
+  "graphiti-core": "0.31.2",
+  "kuzu": "0.11.3",
+  "llm": "claude-cli:claude-sonnet-5-5",
+  "embedder": "nomic-ai/nomic-embed-text-v1.5",
+  "store": "kuzu local",
+  "search": "default hybrid RRF, no reranker",
+  "top_k": 10,
+  "concurrency": 4,
+  "failed_episodes": 0,
+  "episode_errors": []
+ },
+ "track": "T",
+ "data": "sample-test-s8",
+ "seconds": 1999.2,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "ff66a5b2-f46d-4ae9-a413-e14e2bc7f99e",
+     "content": "Yusuf Ishikawa and Dalia had coffee together at the riverside park on 2025-02-09.",
+     "valid_from": "2025-02-09T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f1412db2-6ca4-481f-94d2-4ef7073587ea",
+     "content": "Yusuf Ishikawa kept up his German on the walk home from the botanical garden by listening to a podcast through his earphones.",
+     "valid_from": "2025-02-07T22:13:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f0055104-73d3-4077-a11a-81686c5b40f4",
+     "content": "Yusuf Ishikawa's home is 60 Tanner Street, Porto.",
+     "valid_from": "2025-02-04T11:04:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ed9252bb-e285-44e1-a4a1-4aed2908cec8",
+     "content": "Yusuf Ishikawa ordered a standing desk, which still has not arrived as of this message.",
+     "valid_from": "2025-02-07T08:08:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ea2d88af-55ff-4b17-9101-26a82526f6a3",
+     "content": "Yusuf Ishikawa grew up in Ghent.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e9c24759-10b3-413d-ad98-5f018ef84e60",
+     "content": "Yusuf Ishikawa had tea at the station café with Dalia before the evening train.",
+     "valid_from": "2025-02-06T22:03:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e9aa91a2-5743-4b44-b24e-03319aec59e7",
+     "content": "Dalia is Yusuf Ishikawa's brother from the running club.",
+     "valid_from": "2025-02-06T22:03:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Dalia Petrov",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e6a5f8f0-a5ff-46ac-b3a1-f15e5fac03f0",
+     "content": "Yusuf Ishikawa had tea at the station café with Nadia before the evening train.",
+     "valid_from": "2025-02-06T12:23:00",
+     "valid_to": "2025-02-06T22:03:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e61324d1-ba63-4734-bdf8-ed38fdf97233",
+     "content": "Linus showed Yusuf Ishikawa the pottery wheel, which had arrived at some point.",
+     "valid_from": "2025-02-07T17:39:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dd6e79ad-de90-4bd8-9c32-671f1829b725",
+     "content": "Lena rang Yusuf Ishikawa tonight, and the two of them talked for ages.",
+     "valid_from": "2025-02-04T15:36:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Lena",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dc8aa8b8-cb0d-4338-ab3d-5008a7eca057",
+     "content": "Maren works at Pellucid Labs.",
+     "valid_from": "2025-02-09T07:13:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maren",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d8911365-7ec5-4c13-92e8-8c0da42a4b48",
+     "content": "Yusuf Ishikawa took a long stroll around the botanical garden on 2025-02-07.",
+     "valid_from": "2025-02-07T22:13:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d7c97cab-d46e-4e7f-835e-c0848813eeef",
+     "content": "Nadia is Yusuf Ishikawa's neighbour.",
+     "valid_from": "2025-02-06T12:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d37849fa-e9a2-45e9-bd09-35ef7f95aa9b",
+     "content": "Yusuf Ishikawa had tea with Nadia at the station café before the evening train.",
+     "valid_from": "2025-02-06T12:23:00",
+     "valid_to": "2025-02-06T22:03:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d0f55e59-cab9-4f14-935f-bf9425664dd6",
+     "content": "Yusuf Ishikawa met up with Gideon at the riverside park on 2025-02-07, when it rained on and off all afternoon.",
+     "valid_from": "2025-02-07T14:39:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ce0490cc-c44a-461b-9a64-c53ef4209a46",
+     "content": "Yusuf Ishikawa's godfather lives in Bristol these days.",
+     "valid_from": "2025-02-07T14:28:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cd915afa-82c6-4ba5-9210-e89d0278f125",
+     "content": "Gideon adopted a puppy on February 3, 2025.",
+     "valid_from": "2025-02-03T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ccb4af73-6b1f-4ee4-ac72-43b7605bd9ec",
+     "content": "Yusuf Ishikawa considers it lovely news that Lena passed a driving test on 2025-02-06.",
+     "valid_from": "2025-02-06T12:21:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cc937690-378d-4ff4-8f92-e9896d057a4a",
+     "content": "Yusuf Ishikawa bumped into Maren on the morning of 2025-02-09.",
+     "valid_from": "2025-02-09T07:13:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c5d9c919-3eb8-43da-a1f1-72162cd0743b",
+     "content": "Yusuf Ishikawa reminded Nadia that his brother from the old flat works at Fennick & Dale Opticians.",
+     "valid_from": "2025-02-09T16:34:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bf1894c3-c5e4-4a58-a60c-ff95e740876c",
+     "content": "Nadia has the espresso machine now and loves it.",
+     "valid_from": "2025-02-09T09:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ba18182c-d8c3-4390-b3aa-3ca37a89c880",
+     "content": "Yusuf Ishikawa received lovely news on 2025-02-08 that his brother Dalia ran a first marathon.",
+     "valid_from": "2025-02-08T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b2729719-9981-4ee5-a351-31df2704c7bf",
+     "content": "Yusuf Ishikawa sometimes really misses Ghent, the place where he grew up.",
+     "valid_from": "2025-02-07T14:39:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b14902fa-10f5-4f08-ae72-37e2f591cb5b",
+     "content": "Jonah, a friend of Yusuf Ishikawa, rang Yusuf Ishikawa in the evening and they talked for ages.",
+     "valid_from": "2025-02-05T19:17:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ad437485-9a5c-4dae-9969-ccd1880de13b",
+     "content": "Nadia had tea at the station café with Yusuf Ishikawa before the evening train.",
+     "valid_from": "2025-02-06T12:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9f4d073c-bf7e-49b5-9515-d48f7ae292e4",
+     "content": "Yusuf Ishikawa said yes to a job offer from Silverfern Energy for an editor role, starting February 5, 2025.",
+     "valid_from": "2025-02-03T10:34:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9ef244b6-7bc8-46af-b0f2-fddf5b5ec1bf",
+     "content": "Cyrus's home is Leipzig; Cyrus lives in Leipzig.",
+     "valid_from": "2025-02-04T17:40:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Cyrus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "84e19889-8060-4a6b-84e2-a76903ec8426",
+     "content": "Yusuf Ishikawa had coffee at the riverside park with Dalia on 2025-02-09.",
+     "valid_from": "2025-02-09T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8491ee2d-f4f1-4249-9393-8c431db2ed14",
+     "content": "Gideon's company might be on the brink of shutting down, according to word going around.",
+     "valid_from": "2025-02-05T07:12:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon's company",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "810071ba-144d-4eae-99af-85d91d19bb39",
+     "content": "Yusuf Ishikawa works as a product designer at Lumen Robotics, where he attends many long meetings.",
+     "valid_from": "2025-02-03T22:29:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "80a9c548-e26c-4117-b8f3-f0ca15dbafdf",
+     "content": "Yusuf Ishikawa's brother from the old flat works at Fennick & Dale Opticians.",
+     "valid_from": "2025-02-09T16:34:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's brother",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7a6e9601-46e6-4e9a-b083-fd07d528c7d7",
+     "content": "Yusuf Ishikawa might pack up and move to Leipzig if the Leipzig offer actually happens.",
+     "valid_from": "2025-02-09T16:38:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7849be3a-6f0c-47b5-bcc0-5fe61239771f",
+     "content": "Yusuf Ishikawa's aunt currently works at Gullwing Ferries.",
+     "valid_from": "2025-02-07T15:22:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "76c2a266-dbcc-431b-a122-ca28be34faf1",
+     "content": "Linus is still without the pottery wheel.",
+     "valid_from": "2025-02-05T08:39:00",
+     "valid_to": "2025-02-07T17:39:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "76130a5f-c277-485e-9343-a0f2522b4b8d",
+     "content": "Gideon came over to Yusuf Ishikawa's home for dinner and stayed until midnight.",
+     "valid_from": "2025-02-03T21:55:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "75f43dbb-dff8-48e4-87dc-04f79f2ab947",
+     "content": "Linus showed the pottery wheel to Yusuf Ishikawa.",
+     "valid_from": "2025-02-07T17:39:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7472d8db-546c-4761-b67a-bfdc3bb78b17",
+     "content": "Yusuf Ishikawa's landlady lives in Bordeaux now.",
+     "valid_from": "2025-02-03T08:44:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's landlady",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "726e56ed-493d-4948-8e45-26229886eb37",
+     "content": "Lena is Yusuf Ishikawa's sister from the old flat.",
+     "valid_from": "2025-02-04T15:36:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Lena",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "71a3ce04-5c82-4da3-bd1e-2da09304fe29",
+     "content": "Dalia Petrov says she is currently in Turin, where all is well.",
+     "valid_from": "2025-02-08T14:10:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Dalia Petrov",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "70ca1981-bf3c-4e88-9f42-9f6852f5a5c8",
+     "content": "Bianca has a flat in Bristol.",
+     "valid_from": "2025-02-09T17:51:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6d83ff1f-cc8d-493a-9130-2b820a392fb4",
+     "content": "Yusuf Ishikawa's flatmate lives in Leipzig now.",
+     "valid_from": "2025-02-03T17:05:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's flatmate",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6aec3e4b-a76f-41fe-a2bc-26250d1c2151",
+     "content": "Cyrus works at Wickerfield Nursery these days.",
+     "valid_from": "2025-02-08T14:37:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Cyrus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "67c7c215-39cd-4aff-9ef9-ce8af09c7968",
+     "content": "Wickerfield Nursery employs Yusuf Ishikawa's flatmate.",
+     "valid_from": "2025-02-07T17:06:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Wickerfield Nursery",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "669accb9-eea2-4866-bec0-5e517b6c683d",
+     "content": "Yusuf Ishikawa's neighbour is employed by Thistledown Instruments.",
+     "valid_from": "2025-02-07T09:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's neighbour",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "646cb13f-cde8-4920-bf9b-0b9d29a142ef",
+     "content": "Yusuf Ishikawa has a bad chest cold, diagnosed by the doctor the day before (2025-02-07), and has been advised rest and fluids for a while.",
+     "valid_from": "2025-02-07T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "63d3583e-6191-47e8-bae1-57a5b355e23b",
+     "content": "Yusuf Ishikawa is still waiting for Dalia's upright piano, which has not arrived yet.",
+     "valid_from": "2025-02-09T08:42:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5d96a654-4c11-494c-9506-9819d86a41e1",
+     "content": "Yusuf Ishikawa had tea with Dalia, his brother from the running club, at the station café before the evening train.",
+     "valid_from": "2025-02-06T22:03:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5aa20850-7f8c-4f42-b6c3-4dde899c31ce",
+     "content": "Jonah is a friend of Yusuf Ishikawa.",
+     "valid_from": "2025-02-05T19:17:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4f0ddf6b-ead7-4961-a911-5aefdfc3f978",
+     "content": "Yusuf Ishikawa ran the Spring 10K today, finishing in 1:03:54.",
+     "valid_from": "2025-02-04T11:04:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "48188096-47f1-4a92-8dcc-6a5f1370e61b",
+     "content": "Yusuf Ishikawa has run out of coffee filters again and needs to add them to the shopping list.",
+     "valid_from": "2025-02-04T15:36:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3f729f9b-f1a6-4ac0-902c-db67322ea5cc",
+     "content": "Dalia is the brother of Yusuf Ishikawa.",
+     "valid_from": "2025-02-09T16:38:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3dc17015-b693-464b-9f48-4fa02753a804",
+     "content": "Yusuf Ishikawa spent the afternoon of 2025-02-07 at the riverside park, where he met up with Gideon.",
+     "valid_from": "2025-02-07T14:39:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36925bb3-1885-4711-ad40-0df451fec5a7",
+     "content": "Linus, whom Yusuf Ishikawa calls his brother from the old flat, came over to Yusuf Ishikawa's place for dinner and stayed until midnight.",
+     "valid_from": "2025-02-04T13:17:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34b9d666-68a4-4809-a4f3-932297e13fcf",
+     "content": "Yusuf Ishikawa's aunt lives in Rotterdam now.",
+     "valid_from": "2025-02-03T10:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3421bc1e-7276-4a7d-a4a0-32ffa798141f",
+     "content": "Yusuf Ishikawa's sister Lena lives in Montreal these days.",
+     "valid_from": "2025-02-04T10:29:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Lena",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2e2c14d9-d1f9-427d-87de-b83bda5528e9",
+     "content": "Yusuf Ishikawa finally watered the plants on the balcony.",
+     "valid_from": "2025-02-05T07:12:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2c440487-ab66-4b5e-8554-bf4ac83d3dc5",
+     "content": "Gideon is Yusuf Ishikawa's best friend.",
+     "valid_from": "2025-02-03T21:55:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2b886084-5747-44b3-bc1a-bef682ba0e33",
+     "content": "Lena is still without the telescope.",
+     "valid_from": "2025-02-03T15:34:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Lena",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2a4a4a0c-07d5-432c-98ff-5caa415fe913",
+     "content": "Lena is Yusuf Ishikawa's sister.",
+     "valid_from": "2025-02-04T10:29:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13d5c5be-cac6-4eb4-97ea-f67f86a2e8f5",
+     "content": "Maren calls Rotterdam home and lives there.",
+     "valid_from": "2025-02-04T12:45:00",
+     "valid_to": "2025-02-09T07:13:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maren",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12490a80-961d-4541-af3f-aae2ff114847",
+     "content": "Gideon had no idea that Yusuf Ishikawa's neighbour is employed by Thistledown Instruments.",
+     "valid_from": "2025-02-07T09:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0e767e47-d120-4645-8310-65d4fb98be80",
+     "content": "Nadia's espresso machine has not arrived yet; Yusuf Ishikawa notes it hasn't come.",
+     "valid_from": "2025-02-07T09:56:00",
+     "valid_to": "2025-02-09T09:00:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0c2f2521-2276-4ffb-b485-c59a04475bd2",
+     "content": "Riverside Medical Practice saw Yusuf Ishikawa on February 7, 2025 and diagnosed a bad chest cold, with treatment of rest and fluids and advice to return if there is no improvement.",
+     "valid_from": "2025-02-07T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Riverside Medical Practice",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "ff66a5b2-f46d-4ae9-a413-e14e2bc7f99e",
+     "content": "Yusuf Ishikawa and Dalia had coffee together at the riverside park on 2025-02-09.",
+     "valid_from": "2025-02-09T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f7007534-669e-4ee5-815a-15c2fa8afc43",
+     "content": "Yusuf Ishikawa's friend works at Brackenridge Seeds.",
+     "valid_from": "2025-02-10T12:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's friend",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f1412db2-6ca4-481f-94d2-4ef7073587ea",
+     "content": "Yusuf Ishikawa kept up his German on the walk home from the botanical garden by listening to a podcast through his earphones.",
+     "valid_from": "2025-02-07T22:13:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f0055104-73d3-4077-a11a-81686c5b40f4",
+     "content": "Yusuf Ishikawa's home is 60 Tanner Street, Porto.",
+     "valid_from": "2025-02-04T11:04:00",
+     "valid_to": "2025-02-10T00:00:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ed9252bb-e285-44e1-a4a1-4aed2908cec8",
+     "content": "Yusuf Ishikawa ordered a standing desk, which still has not arrived as of this message.",
+     "valid_from": "2025-02-07T08:08:00",
+     "valid_to": "2025-02-13T11:50:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ea2d88af-55ff-4b17-9101-26a82526f6a3",
+     "content": "Yusuf Ishikawa grew up in Ghent.",
+     "valid_from": null,
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e9c24759-10b3-413d-ad98-5f018ef84e60",
+     "content": "Yusuf Ishikawa had tea at the station café with Dalia before the evening train.",
+     "valid_from": "2025-02-06T22:03:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e9aa91a2-5743-4b44-b24e-03319aec59e7",
+     "content": "Dalia is Yusuf Ishikawa's brother from the running club.",
+     "valid_from": "2025-02-06T22:03:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Dalia Petrov",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e6a5f8f0-a5ff-46ac-b3a1-f15e5fac03f0",
+     "content": "Yusuf Ishikawa had tea at the station café with Nadia before the evening train.",
+     "valid_from": "2025-02-06T12:23:00",
+     "valid_to": "2025-02-06T22:03:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e61324d1-ba63-4734-bdf8-ed38fdf97233",
+     "content": "Linus showed Yusuf Ishikawa the pottery wheel, which had arrived at some point.",
+     "valid_from": "2025-02-07T17:39:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e2f8d479-5a0d-4c20-a0d6-627c92afa8a5",
+     "content": "Jonah became a new member of the Beacon Hill Choir as of the morning of 2025-02-15.",
+     "valid_from": "2025-02-15T09:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e2afda0c-f395-4a05-80b8-392aac2b531f",
+     "content": "Yusuf Ishikawa has a brother, who is from the running club.",
+     "valid_from": "2025-02-13T12:05:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dd6e79ad-de90-4bd8-9c32-671f1829b725",
+     "content": "Lena rang Yusuf Ishikawa tonight, and the two of them talked for ages.",
+     "valid_from": "2025-02-04T15:36:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Lena",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dc8aa8b8-cb0d-4338-ab3d-5008a7eca057",
+     "content": "Maren works at Pellucid Labs.",
+     "valid_from": "2025-02-09T07:13:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maren",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dad6b888-132e-491a-a56a-3948cdace692",
+     "content": "Yusuf Ishikawa moved into the flat at 60 Orchard Close, Valencia on 2025-02-10.",
+     "valid_from": "2025-02-10T12:57:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d89847e5-9872-4876-a781-fc087602b031",
+     "content": "Yusuf Ishikawa's standing desk has arrived and he is already using it.",
+     "valid_from": "2025-02-13T11:50:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d8911365-7ec5-4c13-92e8-8c0da42a4b48",
+     "content": "Yusuf Ishikawa took a long stroll around the botanical garden on 2025-02-07.",
+     "valid_from": "2025-02-07T22:13:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d7c97cab-d46e-4e7f-835e-c0848813eeef",
+     "content": "Nadia is Yusuf Ishikawa's neighbour.",
+     "valid_from": "2025-02-06T12:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d46d1556-20ab-4262-b6b1-bafa5c76ca11",
+     "content": "Bianca and Yusuf Ishikawa's godfather both attended the same lunch with Yusuf Ishikawa on 2025-02-15.",
+     "valid_from": "2025-02-15T09:09:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0078",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d37849fa-e9a2-45e9-bd09-35ef7f95aa9b",
+     "content": "Yusuf Ishikawa had tea with Nadia at the station café before the evening train.",
+     "valid_from": "2025-02-06T12:23:00",
+     "valid_to": "2025-02-06T22:03:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d22f2459-de6e-4588-a929-95e26f323736",
+     "content": "Yusuf Ishikawa has a friend who works at Brackenridge Seeds.",
+     "valid_from": "2025-02-10T12:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d194a166-98ae-4e18-b674-81a13f82c374",
+     "content": "Yusuf Ishikawa's best friend works at Saltire Glassworks.",
+     "valid_from": "2025-02-13T11:04:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's best friend",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d0f55e59-cab9-4f14-935f-bf9425664dd6",
+     "content": "Yusuf Ishikawa met up with Gideon at the riverside park on 2025-02-07, when it rained on and off all afternoon.",
+     "valid_from": "2025-02-07T14:39:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ce0490cc-c44a-461b-9a64-c53ef4209a46",
+     "content": "Yusuf Ishikawa's godfather lives in Bristol these days.",
+     "valid_from": "2025-02-07T14:28:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cd915afa-82c6-4ba5-9210-e89d0278f125",
+     "content": "Gideon adopted a puppy on February 3, 2025.",
+     "valid_from": "2025-02-03T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ccb4af73-6b1f-4ee4-ac72-43b7605bd9ec",
+     "content": "Yusuf Ishikawa considers it lovely news that Lena passed a driving test on 2025-02-06.",
+     "valid_from": "2025-02-06T12:21:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cc937690-378d-4ff4-8f92-e9896d057a4a",
+     "content": "Yusuf Ishikawa bumped into Maren on the morning of 2025-02-09.",
+     "valid_from": "2025-02-09T07:13:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c73ca8a7-f2fe-46e8-b0f3-b6da10135430",
+     "content": "Yusuf Ishikawa reminded Wes that Yusuf Ishikawa's friend works at Brackenridge Seeds.",
+     "valid_from": "2025-02-10T12:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c5d9c919-3eb8-43da-a1f1-72162cd0743b",
+     "content": "Yusuf Ishikawa reminded Nadia that his brother from the old flat works at Fennick & Dale Opticians.",
+     "valid_from": "2025-02-09T16:34:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c030a1ee-8198-4107-9e40-429b3997c6c4",
+     "content": "Elm Property Lettings lets the property at 60 Orchard Close, Valencia to Yusuf Ishikawa, with the tenancy beginning on February 10, 2025.",
+     "valid_from": "2025-02-10T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Elm Property Lettings",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bf1894c3-c5e4-4a58-a60c-ff95e740876c",
+     "content": "Nadia has the espresso machine now and loves it.",
+     "valid_from": "2025-02-09T09:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "bc444d91-1ae4-461f-91c1-88f29e0283e7",
+     "content": "Dora's home is Bordeaux.",
+     "valid_from": "2025-02-10T19:07:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Dora",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ba18182c-d8c3-4390-b3aa-3ca37a89c880",
+     "content": "Yusuf Ishikawa received lovely news on 2025-02-08 that his brother Dalia ran a first marathon.",
+     "valid_from": "2025-02-08T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b34650ea-dfee-45e6-8d1b-969cc918b360",
+     "content": "Gideon became a member of the Kiln Lane Chamber Choir on 2025-02-15.",
+     "valid_from": "2025-02-15T19:49:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b2729719-9981-4ee5-a351-31df2704c7bf",
+     "content": "Yusuf Ishikawa sometimes really misses Ghent, the place where he grew up.",
+     "valid_from": "2025-02-07T14:39:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b14902fa-10f5-4f08-ae72-37e2f591cb5b",
+     "content": "Jonah, a friend of Yusuf Ishikawa, rang Yusuf Ishikawa in the evening and they talked for ages.",
+     "valid_from": "2025-02-05T19:17:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ad437485-9a5c-4dae-9969-ccd1880de13b",
+     "content": "Nadia had tea at the station café with Yusuf Ishikawa before the evening train.",
+     "valid_from": "2025-02-06T12:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9f4d073c-bf7e-49b5-9515-d48f7ae292e4",
+     "content": "Yusuf Ishikawa said yes to a job offer from Silverfern Energy for an editor role, starting February 5, 2025.",
+     "valid_from": "2025-02-03T10:34:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9ef244b6-7bc8-46af-b0f2-fddf5b5ec1bf",
+     "content": "Cyrus's home is Leipzig; Cyrus lives in Leipzig.",
+     "valid_from": "2025-02-04T17:40:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Cyrus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9c165470-4087-4570-af36-f61aed8d1b3e",
+     "content": "Lena became a new member of the Harbour Gospel Choir on the morning of 2025-02-13.",
+     "valid_from": "2025-02-13T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Lena",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9ad8690f-64ea-4d6e-8eb6-d3c6c4175114",
+     "content": "Yusuf Ishikawa reminded Lena that his best friend works at Saltire Glassworks.",
+     "valid_from": "2025-02-13T11:04:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8e6b6997-a0d7-4276-b3db-0d9aaf02bc39",
+     "content": "Tamberlane Bakery employs Yusuf Ishikawa's godfather.",
+     "valid_from": "2025-02-12T19:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Tamberlane Bakery",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8e4d943a-9914-47b5-8d60-d9c3dc51cbb7",
+     "content": "The property at 60 Orchard Close is located in Valencia.",
+     "valid_from": "2025-02-10T15:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "60 Orchard Close, Valencia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8787ebd4-e0c6-4039-a1d7-cf1d58972d44",
+     "content": "Yusuf Ishikawa completed the Spring 10K on February 12, 2025, with a chip finish time of 48:01.",
+     "valid_from": "2025-02-12T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0028",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "84e19889-8060-4a6b-84e2-a76903ec8426",
+     "content": "Yusuf Ishikawa had coffee at the riverside park with Dalia on 2025-02-09.",
+     "valid_from": "2025-02-09T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8491ee2d-f4f1-4249-9393-8c431db2ed14",
+     "content": "Gideon's company might be on the brink of shutting down, according to word going around.",
+     "valid_from": "2025-02-05T07:12:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon's company",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "810071ba-144d-4eae-99af-85d91d19bb39",
+     "content": "Yusuf Ishikawa works as a product designer at Lumen Robotics, where he attends many long meetings.",
+     "valid_from": "2025-02-03T22:29:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "80a9c548-e26c-4117-b8f3-f0ca15dbafdf",
+     "content": "Yusuf Ishikawa's brother from the old flat works at Fennick & Dale Opticians.",
+     "valid_from": "2025-02-09T16:34:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's brother",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7b6b4a5d-49aa-41e2-ac4b-25495e7336fc",
+     "content": "Dalia became a member of the Saltmarsh Community Choir.",
+     "valid_from": "2025-02-12T12:25:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Dalia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7a6e9601-46e6-4e9a-b083-fd07d528c7d7",
+     "content": "Yusuf Ishikawa might pack up and move to Leipzig if the Leipzig offer actually happens.",
+     "valid_from": "2025-02-09T16:38:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7849be3a-6f0c-47b5-bcc0-5fe61239771f",
+     "content": "Yusuf Ishikawa's aunt currently works at Gullwing Ferries.",
+     "valid_from": "2025-02-07T15:22:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "77741c49-f87b-4889-addc-b94b36a0d227",
+     "content": "Linus became a member of the Old Mill Folk Choir on 2025-02-16.",
+     "valid_from": "2025-02-16T18:46:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "76c2a266-dbcc-431b-a122-ca28be34faf1",
+     "content": "Linus is still without the pottery wheel.",
+     "valid_from": "2025-02-05T08:39:00",
+     "valid_to": "2025-02-07T17:39:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "76130a5f-c277-485e-9343-a0f2522b4b8d",
+     "content": "Gideon came over to Yusuf Ishikawa's home for dinner and stayed until midnight.",
+     "valid_from": "2025-02-03T21:55:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "75f43dbb-dff8-48e4-87dc-04f79f2ab947",
+     "content": "Linus showed the pottery wheel to Yusuf Ishikawa.",
+     "valid_from": "2025-02-07T17:39:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Linus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7472d8db-546c-4761-b67a-bfdc3bb78b17",
+     "content": "Yusuf Ishikawa's landlady lives in Bordeaux now.",
+     "valid_from": "2025-02-03T08:44:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's landlady",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "726e56ed-493d-4948-8e45-26229886eb37",
+     "content": "Lena is Yusuf Ishikawa's sister from the old flat.",
+     "valid_from": "2025-02-04T15:36:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Lena",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "71a3ce04-5c82-4da3-bd1e-2da09304fe29",
+     "content": "Dalia Petrov says she is currently in Turin, where all is well.",
+     "valid_from": "2025-02-08T14:10:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Dalia Petrov",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "70ca1981-bf3c-4e88-9f42-9f6852f5a5c8",
+     "content": "Bianca has a flat in Bristol.",
+     "valid_from": "2025-02-09T17:51:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6f79e36a-0bef-41d3-ba41-ba2c80bfa242",
+     "content": "Yusuf Ishikawa rents the property at 60 Orchard Close, Valencia from Elm Property Lettings, with the tenancy beginning on February 10, 2025, at a rent of 1170 EUR payable monthly.",
+     "valid_from": "2025-02-10T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6d83ff1f-cc8d-493a-9130-2b820a392fb4",
+     "content": "Yusuf Ishikawa's flatmate lives in Leipzig now.",
+     "valid_from": "2025-02-03T17:05:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's flatmate",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6b57c097-eda7-4ac8-9f34-1a66973beaf6",
+     "content": "Yusuf Ishikawa spent an hour or two at the hilltop viewpoint on 2025-02-13.",
+     "valid_from": "2025-02-13T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6aec3e4b-a76f-41fe-a2bc-26250d1c2151",
+     "content": "Cyrus works at Wickerfield Nursery these days.",
+     "valid_from": "2025-02-08T14:37:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Cyrus",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "697d19bb-16bb-4a05-bb83-e243dc80513c",
+     "content": "Bianca came to lunch with Yusuf Ishikawa on 2025-02-15.",
+     "valid_from": "2025-02-15T09:09:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0078",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "67c7c215-39cd-4aff-9ef9-ce8af09c7968",
+     "content": "Wickerfield Nursery employs Yusuf Ishikawa's flatmate.",
+     "valid_from": "2025-02-07T17:06:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Wickerfield Nursery",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "67470be0-de9a-4952-8f3e-7d83ce1d974a",
+     "content": "Gideon Abbott is in Gothenburg and says all is well.",
+     "valid_from": "2025-02-12T15:55:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "669accb9-eea2-4866-bec0-5e517b6c683d",
+     "content": "Yusuf Ishikawa's neighbour is employed by Thistledown Instruments.",
+     "valid_from": "2025-02-07T09:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's neighbour",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "646cb13f-cde8-4920-bf9b-0b9d29a142ef",
+     "content": "Yusuf Ishikawa has a bad chest cold, diagnosed by the doctor the day before (2025-02-07), and has been advised rest and fluids for a while.",
+     "valid_from": "2025-02-07T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "63d3583e-6191-47e8-bae1-57a5b355e23b",
+     "content": "Yusuf Ishikawa is still waiting for Dalia's upright piano, which has not arrived yet.",
+     "valid_from": "2025-02-09T08:42:00",
+     "valid_to": "2025-02-16T20:18:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5ed59816-f8b1-4b85-b6d9-182dee4a739f",
+     "content": "Yusuf Ishikawa's godfather came to lunch with Yusuf Ishikawa on 2025-02-15.",
+     "valid_from": "2025-02-15T09:09:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0078",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's godfather",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5ea388ee-61fa-416d-95ed-17f3f194eaff",
+     "content": "Yusuf's brother from the running club still works at Hollowbrook Surveying.",
+     "valid_from": "2025-02-13T12:05:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf's brother",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5d96a654-4c11-494c-9506-9819d86a41e1",
+     "content": "Yusuf Ishikawa had tea with Dalia, his brother from the running club, at the station café before the evening train.",
+     "valid_from": "2025-02-06T22:03:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5aa20850-7f8c-4f42-b6c3-4dde899c31ce",
+     "content": "Jonah is a friend of Yusuf Ishikawa.",
+     "valid_from": "2025-02-05T19:17:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4f0ddf6b-ead7-4961-a911-5aefdfc3f978",
+     "content": "Yusuf Ishikawa ran the Spring 10K today, finishing in 1:03:54.",
+     "valid_from": "2025-02-04T11:04:00",
+     "valid_to": "2025-02-12T00:00:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4bfafdf2-fd65-4587-816b-d1b9dd4ccaca",
+     "content": "The telescope made it to Lena, who is thrilled with it.",
+     "valid_from": "2025-02-16T16:02:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": ""
+      }
+     ],
+     "subject": "telescope",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4ab5535a-9109-4f8e-945f-733df43c0eaf",
+     "content": "Yusuf Ishikawa's sister from the old flat still works at Quillon Maps, as Yusuf Ishikawa confirmed to Gideon over coffee.",
+     "valid_from": "2025-02-12T10:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's sister",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4a228dcf-31ad-4224-a5db-2dee8dd2f8f8",
+     "content": "Nadia became a member of the Juniper Street Youth Choir.",
+     "valid_from": "2025-02-10T22:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "48188096-47f1-4a92-8dcc-6a5f1370e61b",
+     "content": "Yusuf Ishikawa has run out of coffee filters again and needs to add them to the shopping list.",
+     "valid_from": "2025-02-04T15:36:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42234375-f430-449e-bdb0-0ec556587daf",
+     "content": "Yusuf Ishikawa was shown the upright piano by Dalia; the upright piano had arrived at some point.",
+     "valid_from": "2025-02-16T20:18:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3f729f9b-f1a6-4ac0-902c-db67322ea5cc",
+     "content": "Dalia is the brother of Yusuf Ishikawa.",
+     "valid_from": "2025-02-09T16:38:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3dc17015-b693-464b-9f48-4fa02753a804",
+     "content": "Yusuf Ishikawa spent the afternoon of 2025-02-07 at the riverside park, where he met up with Gideon.",
+     "valid_from": "2025-02-07T14:39:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "36925bb3-1885-4711-ad40-0df451fec5a7",
+     "content": "Linus, whom Yusuf Ishikawa calls his brother from the old flat, came over to Yusuf Ishikawa's place for dinner and stayed until midnight.",
+     "valid_from": "2025-02-04T13:17:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "34b9d666-68a4-4809-a4f3-932297e13fcf",
+     "content": "Yusuf Ishikawa's aunt lives in Rotterdam now.",
+     "valid_from": "2025-02-03T10:23:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa's aunt",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3421bc1e-7276-4a7d-a4a0-32ffa798141f",
+     "content": "Yusuf Ishikawa's sister Lena lives in Montreal these days.",
+     "valid_from": "2025-02-04T10:29:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0023",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Lena",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "308fe325-f098-4880-8c39-3490eb729ec0",
+     "content": "A rowing machine arrived at some point and Wes showed it to Yusuf Ishikawa.",
+     "valid_from": "2025-02-15T19:47:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2e2c14d9-d1f9-427d-87de-b83bda5528e9",
+     "content": "Yusuf Ishikawa finally watered the plants on the balcony.",
+     "valid_from": "2025-02-05T07:12:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2c440487-ab66-4b5e-8554-bf4ac83d3dc5",
+     "content": "Gideon is Yusuf Ishikawa's best friend.",
+     "valid_from": "2025-02-03T21:55:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      },
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2b886084-5747-44b3-bc1a-bef682ba0e33",
+     "content": "Lena is still without the telescope.",
+     "valid_from": "2025-02-03T15:34:00",
+     "valid_to": "2025-02-16T16:02:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Lena",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2a4a4a0c-07d5-432c-98ff-5caa415fe913",
+     "content": "Lena is Yusuf Ishikawa's sister.",
+     "valid_from": "2025-02-04T10:29:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "251f0974-3cbf-4084-8af1-63dbda2761d8",
+     "content": "Yusuf Ishikawa has a sister from the old flat who works at Quillon Maps.",
+     "valid_from": "2025-02-12T10:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "245a8dba-3a4f-4691-9e39-ece4db0c236f",
+     "content": "Yusuf Ishikawa has a best friend who works at Saltire Glassworks.",
+     "valid_from": "2025-02-13T11:04:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1ddfbf54-d5e0-4b32-b31e-7fbb7c2169fc",
+     "content": "Elm Property Lettings entered into a tenancy agreement with Yusuf Ishikawa, the tenant, under which Yusuf Ishikawa pays rent of 1170 EUR monthly and must keep the property clean and in good repair.",
+     "valid_from": "2025-02-10T15:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Elm Property Lettings",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "1db848be-8258-4275-940d-9134800099e2",
+     "content": "Gideon's bike was stolen outside the station, according to what Gideon said to Yusuf Ishikawa.",
+     "valid_from": "2025-02-14T20:35:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13d5c5be-cac6-4eb4-97ea-f67f86a2e8f5",
+     "content": "Maren calls Rotterdam home and lives there.",
+     "valid_from": "2025-02-04T12:45:00",
+     "valid_to": "2025-02-09T07:13:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Maren",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "13c90c5f-ac2c-4929-bf38-797f4d9ba521",
+     "content": "Over coffee, Jonah asked Yusuf Ishikawa whether Yusuf's brother from the running club was still at Hollowbrook Surveying, and Yusuf confirmed he is.",
+     "valid_from": "2025-02-13T12:05:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Jonah",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "12490a80-961d-4541-af3f-aae2ff114847",
+     "content": "Gideon had no idea that Yusuf Ishikawa's neighbour is employed by Thistledown Instruments.",
+     "valid_from": "2025-02-07T09:16:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "103e1202-f5f5-4cec-ae97-260a861463e6",
+     "content": "Dalia showed Yusuf Ishikawa the upright piano, which had arrived at some point.",
+     "valid_from": "2025-02-16T20:18:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Dalia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0f8c5e5c-fd5a-4d03-8def-05a97d59f361",
+     "content": "Gideon had coffee with Yusuf Ishikawa and asked whether Yusuf Ishikawa's sister from the old flat was still at Quillon Maps.",
+     "valid_from": "2025-02-12T10:48:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Gideon",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0e767e47-d120-4645-8310-65d4fb98be80",
+     "content": "Nadia's espresso machine has not arrived yet; Yusuf Ishikawa notes it hasn't come.",
+     "valid_from": "2025-02-07T09:56:00",
+     "valid_to": "2025-02-09T09:00:00",
+     "current": false,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Nadia",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0da7ae90-a97d-4fa4-8588-98cc8023794c",
+     "content": "Yusuf Ishikawa has a landlady who mostly works from home.",
+     "valid_from": "2025-02-12T22:51:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0075",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0c2f2521-2276-4ffb-b485-c59a04475bd2",
+     "content": "Riverside Medical Practice saw Yusuf Ishikawa on February 7, 2025 and diagnosed a bad chest cold, with treatment of rest and fluids and advice to return if there is no improvement.",
+     "valid_from": "2025-02-07T00:00:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Riverside Medical Practice",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "09004cd1-0e8c-48b3-a82c-cd22020ff1af",
+     "content": "Bianca works at Tamberlane Bakery these days.",
+     "valid_from": "2025-02-14T16:35:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0076",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Bianca",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "085038c2-d6c6-4c67-96ef-b764b0aa80ff",
+     "content": "Yusuf Ishikawa's godfather is a person who works at Tamberlane Bakery.",
+     "valid_from": "2025-02-12T19:58:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Yusuf Ishikawa",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0644343c-16f5-478a-983b-8767eeff7d2e",
+     "content": "Wes showed Yusuf Ishikawa the rowing machine, which had arrived at some earlier point.",
+     "valid_from": "2025-02-15T19:47:00",
+     "valid_to": null,
+     "current": true,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "Wes",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1170 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Turin",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "Gothenburg",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Silverfern Energy",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "German",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "Lumen Robotics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "10 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "5 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "7 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "5 days",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "48:01",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "48:01",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "Riverside park",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "The riverside park",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "Gideon",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "Lena",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "Dalia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q049": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q050": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q051": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q052": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q053": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q054": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q055": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q056": {
+   "text": "Lumen Robotics",
+   "abstained": null,
+   "citations": []
+  },
+  "Q057": {
+   "text": "16 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q058": {
+   "text": "16 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q059": {
+   "text": "7 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q060": {
+   "text": "9 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q061": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q062": {
+   "text": "13 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

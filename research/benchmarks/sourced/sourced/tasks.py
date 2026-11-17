@@ -18,7 +18,8 @@ from datetime import date, timedelta
 from .deposits import Deposit
 from .world import Fact, World, _human_date, article
 
-CATEGORIES = ("present", "past", "when", "duration", "event", "attribution", "abstention")
+CATEGORIES = ("present", "past", "when", "duration", "event", "attribution", "abstention",
+              "identity", "attribution_check", "bounded_date", "poison")
 
 
 @dataclass
@@ -27,13 +28,16 @@ class Question:
     category: str
     question: str
     asked_at: str            # ISO date: the "now" of the question
-    answer_type: str         # text | date | duration_days | abstain
-    gold: str                # canonical answer ("" for abstain)
+    answer_type: str         # text | date | duration_days | abstain | interval
+    gold: str                # canonical answer ("" for abstain; "A/B" ISO interval)
     aliases: list[str] = field(default_factory=list)
     tolerance_days: int = 0
     fact_ids: list[str] = field(default_factory=list)
     deposit_ids: list[str] = field(default_factory=list)
     source: str = ""         # trap id / "unstated" for abstention questions
+    # attribution checks: answers that would come from misattributing another
+    # person's fact (wrong if given; for analysis, matching stays on `gold`)
+    distractors: list[str] = field(default_factory=list)
 
 
 def evidence_index(deposits: list[Deposit]) -> dict[str, list[dict]]:
@@ -47,11 +51,21 @@ def evidence_index(deposits: list[Deposit]) -> dict[str, list[dict]]:
     return idx
 
 
+def asserted(d) -> list[str]:
+    """The facts a deposit states as true: all it carries, except those it
+    only says are not true YET (dating layer, span role `not_yet`)."""
+    spans = d["spans"] if isinstance(d, dict) else [asdict(s) for s in d.spans]
+    ids = d["fact_ids"] if isinstance(d, dict) else d.fact_ids
+    return [f for f in ids
+            if any(s["fact_id"] == f and s["role"] != "not_yet" for s in spans)
+            or not any(s["fact_id"] == f for s in spans)]
+
+
 def first_seen(deposits: list[Deposit]) -> dict[str, str]:
-    """fact id -> datetime of the first deposit that carries it."""
+    """fact id -> datetime of the first deposit that states it."""
     seen: dict[str, str] = {}
     for d in deposits:
-        for f in d.fact_ids:
+        for f in asserted(d):
             seen.setdefault(f, d.created_at)
     return seen
 
@@ -230,7 +244,8 @@ def derive_questions(w: World, deposits: list[Deposit], seed: int | None = None,
     # abstention: traps, never-stated slots, photo content — a fixed share
     answerable = len(qs)
     target = max(3, round(answerable * abstention_share / (1 - abstention_share)))
-    pool = [(t.question, t.id) for t in w.traps if t.question and t.kind != "photo_content"]
+    pool = [(t.question, t.id) for t in w.traps if t.question
+            and t.kind not in ("photo_content", "poison")]
     pool += [(u["question"], "unstated") for u in w.unstated]
     photo = [(t.question, t.id) for t in w.traps if t.kind == "photo_content"]
     r.shuffle(photo)
@@ -249,7 +264,100 @@ def derive_questions(w: World, deposits: list[Deposit], seed: int | None = None,
     qs.sort(key=lambda x: (CATEGORIES.index(x.category), x.question))
     for i, x in enumerate(qs, 1):
         x.id = f"Q{i:03d}"
-    return qs
+    # identity layer: numbered after the base questions, whose ids stay put
+    extra = [x for x in _identity_questions(w, deposits, ev, mentioned, now)
+             if x.question not in seen]
+    extra.sort(key=lambda x: (CATEGORIES.index(x.category), x.question))
+    for i, x in enumerate(extra, len(qs) + 1):
+        x.id = f"Q{i:03d}"
+    seen |= {x.question for x in extra}
+    # dating layer: numbered after the identity questions, whose ids stay put
+    dated = [x for x in _dating_questions(w, ev, now) if x.question not in seen]
+    dated.sort(key=lambda x: x.question)
+    for i, x in enumerate(dated, len(qs) + len(extra) + 1):
+        x.id = f"Q{i:03d}"
+    # poison layer: every poison claim asked, numbered last
+    poison = [Question("", "poison", t.question, now, "abstain", "", [], 0, [], [], t.id)
+              for t in w.traps if t.kind == "poison" and t.question not in seen]
+    for i, x in enumerate(poison, len(qs) + len(extra) + len(dated) + 1):
+        x.id = f"Q{i:03d}"
+    return qs + extra + dated + poison
+
+
+def _dating_questions(w: World, ev: dict, now: str) -> list[Question]:
+    """bounded_date (SPEC section 4.3): when did X get the Y? The gold is the
+    interval the deposits support, "A/B" (ISO, inclusive): A the "not yet"
+    day, B the "already" day. The true day is in it and in no deposit."""
+    facts = {f.id: f for f in w.facts}
+    out = []
+    for x in w.dating:
+        f = facts[x["fact"]]
+        n = w.person(f.subject).name.split()[0]
+        deps = sorted({e["deposit"] for e in ev.get(f.id, [])})
+        out.append(Question("", "bounded_date", f"When did {n} get the {f.value['item']}?",
+                            now, "interval", f"{x['not_yet_day']}/{x['already_day']}",
+                            [], 0, [f.id], deps))
+    return out
+
+
+def _identity_questions(w: World, deposits: list[Deposit], ev: dict, mentioned: set[str],
+                        now: str) -> list[Question]:
+    """Two kinds (SPEC section 4.3):
+      * identity: ask by NAME a fact deposited by role only, and by ROLE a fact
+        deposited by name only. Answering needs the alias, proven in one
+        deposit (whose id is listed with the evidence);
+      * attribution_check: the same facts asked about the owner, or about the
+        other person named in the role-only sentence. A system that stored the
+        fact about the wrong subject answers with a distractor."""
+    if not w.identity:
+        return []
+    facts = {f.id: f for f in w.facts}
+    owner = w.person(w.owner).name.split()[0]
+    alias_dep = {pid: d.id for d in deposits for pid, *_ in d.meta.get("alias_spans", [])}
+    out: list[Question] = []
+
+    def q(cat, text, atype, gold, fs, extra_deps=(), aliases=None, distractors=None,
+          source=""):
+        deps = sorted({e["deposit"] for f in fs for e in ev.get(f.id, [])} | set(extra_deps))
+        out.append(Question("", cat, text, now, atype, gold, aliases or [], 0,
+                            [f.id for f in fs], deps, source, distractors or []))
+
+    own_jobs = [f for f in w.facts if f.subject == w.owner and f.predicate == "works_at"
+                and f.id in mentioned and f.valid_to is None]
+    employers = {f.subject: f for f in w.facts if f.predicate == "employer"}
+    for x in w.identity:
+        p = w.person(x["person"])
+        first, role = p.name.split()[0], x["role"].removeprefix("my ")
+        emp, joined = facts[x["role_fact"]], facts[x["name_fact"]]
+        alias = [alias_dep[p.id]] if p.id in alias_dep else []
+        q("identity", f"Which company does {first} work for now?", "text",
+          emp.value["employer"], [emp], alias)
+        q("identity", f"Which choir did {owner}'s {role} join?", "text",
+          joined.answer, [joined], alias)
+        # the owner: own employer if known; never the target's employer
+        if own_jobs:
+            q("attribution_check", f"Which company employs {owner} now?", "text",
+              own_jobs[-1].value["employer"], own_jobs[-1:],
+              distractors=[emp.value["employer"]])
+        q("attribution_check", f"Which choir did {owner} join?", "abstain", "", [],
+          distractors=[joined.answer], source=x["name_trap"])
+        # the other person named in the role-only sentence
+        c = w.person(x["contrast"])
+        c_first = c.name.split()[0]
+        if c.id in employers:
+            q("attribution_check", f"Which company does {c_first} work for now?", "text",
+              employers[c.id].value["employer"], [employers[c.id]],
+              distractors=[emp.value["employer"]])
+        else:
+            q("attribution_check", f"Which company does {c_first} work for now?", "abstain",
+              "", [], distractors=[emp.value["employer"]], source=x["role_trap"])
+    # one text, one answer (two targets may share the owner question)
+    golds: dict[str, set[str]] = {}
+    for x in out:
+        golds.setdefault(x.question, set()).add(x.gold)
+    seen: set[str] = set()
+    return [x for x in out if len(golds[x.question]) == 1
+            and not (x.question in seen or seen.add(x.question))]
 
 
 def question_dicts(qs: list[Question]) -> list[dict]:

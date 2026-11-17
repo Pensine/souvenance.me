@@ -175,13 +175,24 @@ def _search_filters(include_past: bool, include_archived: bool,
     if not include_archived:
         where.append("archived_at IS NULL")
     if window:
+        # an event belongs to the period it happened in; a state to every
+        # period it was true in ("lived in Rotterdam" from 5 to 16 February
+        # answers "on 9 February"), so its validity must overlap the period
         start, end = window
+        event, state = ["type = 'episodic'"], ["type <> 'episodic'"]
+        e_params, s_params = [], []
         if start is not None:
-            where.append("valid_from >= %s")
-            params.append(start)
+            event.append("valid_from >= %s")
+            e_params.append(start)
+            state.append("(valid_to IS NULL OR valid_to > %s)")
+            s_params.append(start)
         if end is not None:
-            where.append("valid_from < %s")
-            params.append(end)
+            event.append("valid_from < %s")
+            e_params.append(end)
+            state.append("valid_from < %s")
+            s_params.append(end)
+        where.append(f"(({' AND '.join(event)}) OR ({' AND '.join(state)}))")
+        params += e_params + s_params
     return where, params
 
 
@@ -196,6 +207,22 @@ def vector_candidates(conn, embedding, limit: int, where: list[str], params: lis
         """,
         (str(embedding), *params, str(embedding), limit),
     ).fetchall()
+
+
+def subject_memories(conn, entity_id: int, embedding, limit: int = 12,
+                     *, include_archived: bool = False):
+    """The memories the graph attaches to one person (subject_entity_id),
+    closest to the question first: what a person named in the question is
+    known for, even when no word of the question is in them."""
+    where, params = _search_filters(True, include_archived)
+    where.append("subject_entity_id = %s")
+    params.append(entity_id)
+    if embedding is not None:
+        return vector_candidates(conn, embedding, limit, where, params)
+    return conn.execute(
+        f"""SELECT {_SEARCH_COLS}, NULL::float AS distance FROM memories
+            WHERE {" AND ".join(where)} ORDER BY valid_from DESC LIMIT %s""",
+        (*params, limit)).fetchall()
 
 
 def lexical_candidates(conn, words: list[str], limit: int, where: list[str], params: list):

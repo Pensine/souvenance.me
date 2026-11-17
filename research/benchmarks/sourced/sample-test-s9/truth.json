@@ -1,0 +1,1749 @@
+{
+ "seed": 9,
+ "start": "2025-02-03",
+ "days": 14,
+ "owner": "P0",
+ "people": [
+  {
+   "id": "P0",
+   "name": "Umar Delacroix",
+   "relation": "self",
+   "voice": "male_a",
+   "role": ""
+  },
+  {
+   "id": "P1",
+   "name": "Amara Delacroix",
+   "relation": "sister",
+   "voice": "female_b",
+   "role": "my sister from the old flat"
+  },
+  {
+   "id": "P2",
+   "name": "Kofi Petrov",
+   "relation": "brother",
+   "voice": "male_b",
+   "role": "my brother from the old flat"
+  },
+  {
+   "id": "P3",
+   "name": "Linus Haddad",
+   "relation": "best friend",
+   "voice": "female_gb",
+   "role": "my best friend"
+  },
+  {
+   "id": "P4",
+   "name": "Matteo Lindqvist",
+   "relation": "sister",
+   "voice": "female_a",
+   "role": "my sister"
+  },
+  {
+   "id": "P5",
+   "name": "Rosa Delacroix",
+   "relation": "manager",
+   "voice": "female_b",
+   "role": "my manager"
+  },
+  {
+   "id": "P6",
+   "name": "Nico Haddad",
+   "relation": "brother",
+   "voice": "male_b",
+   "role": "my brother from the running club"
+  },
+  {
+   "id": "P7",
+   "name": "Hana Delacroix",
+   "relation": "friend",
+   "voice": "female_gb",
+   "role": "my friend"
+  },
+  {
+   "id": "P8",
+   "name": "Kasper Delacroix",
+   "relation": "godfather",
+   "voice": "female_a",
+   "role": "my godfather"
+  },
+  {
+   "id": "P9",
+   "name": "Jonah Haddad",
+   "relation": "aunt",
+   "voice": "female_b",
+   "role": "my aunt"
+  },
+  {
+   "id": "P10",
+   "name": "Hedda Delacroix",
+   "relation": "acquaintance",
+   "voice": "male_b",
+   "role": ""
+  },
+  {
+   "id": "P11",
+   "name": "Milo Okafor",
+   "relation": "uncle",
+   "voice": "female_gb",
+   "role": "my uncle"
+  },
+  {
+   "id": "P12",
+   "name": "Dina Sorensen",
+   "relation": "acquaintance",
+   "voice": "female_a",
+   "role": ""
+  },
+  {
+   "id": "P13",
+   "name": "June Fischer",
+   "relation": "piano teacher",
+   "voice": "female_b",
+   "role": "my piano teacher"
+  },
+  {
+   "id": "P14",
+   "name": "Iris Castillo",
+   "relation": "acquaintance",
+   "voice": "male_b",
+   "role": ""
+  }
+ ],
+ "facts": [
+  {
+   "id": "F001",
+   "subject": "P0",
+   "predicate": "lives_at",
+   "value": {
+    "street": "95 Orchard Close",
+    "city": "Ghent"
+   },
+   "valid_from": "2024-06-23",
+   "valid_to": "2025-02-10",
+   "kind": "state",
+   "slot": "P0:lives_at",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": true,
+   "canonical": "Umar Delacroix lives at 95 Orchard Close, Ghent.",
+   "answer": "95 Orchard Close, Ghent",
+   "layer": ""
+  },
+  {
+   "id": "F002",
+   "subject": "P0",
+   "predicate": "lives_at",
+   "value": {
+    "street": "23 Tanner Street",
+    "city": "Ghent"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:lives_at",
+   "version": 1,
+   "supersedes": "F001",
+   "since_stated": true,
+   "canonical": "Umar Delacroix lives at 23 Tanner Street, Ghent.",
+   "answer": "23 Tanner Street, Ghent",
+   "layer": ""
+  },
+  {
+   "id": "F003",
+   "subject": "P0",
+   "predicate": "pays_rent",
+   "value": {
+    "amount": 1290,
+    "currency": "EUR"
+   },
+   "valid_from": "2024-06-23",
+   "valid_to": "2025-02-10",
+   "kind": "state",
+   "slot": "P0:pays_rent",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix pays 1290 EUR a month in rent.",
+   "answer": "1290 EUR",
+   "layer": ""
+  },
+  {
+   "id": "F004",
+   "subject": "P0",
+   "predicate": "pays_rent",
+   "value": {
+    "amount": 730,
+    "currency": "EUR"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:pays_rent",
+   "version": 1,
+   "supersedes": "F003",
+   "since_stated": true,
+   "canonical": "Umar Delacroix pays 730 EUR a month in rent.",
+   "answer": "730 EUR",
+   "layer": ""
+  },
+  {
+   "id": "F005",
+   "subject": "P0",
+   "predicate": "works_at",
+   "value": {
+    "employer": "Silverfern Energy",
+    "title": "editor"
+   },
+   "valid_from": "2023-04-09",
+   "valid_to": "2025-02-15",
+   "kind": "state",
+   "slot": "P0:works_at",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix works as an editor at Silverfern Energy.",
+   "answer": "Silverfern Energy",
+   "layer": ""
+  },
+  {
+   "id": "F006",
+   "subject": "P0",
+   "predicate": "works_at",
+   "value": {
+    "employer": "Kestrel Logistics",
+    "title": "backend engineer"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:works_at",
+   "version": 1,
+   "supersedes": "F005",
+   "since_stated": true,
+   "canonical": "Umar Delacroix works as a backend engineer at Kestrel Logistics.",
+   "answer": "Kestrel Logistics",
+   "layer": ""
+  },
+  {
+   "id": "F007",
+   "subject": "P0",
+   "predicate": "health",
+   "value": {
+    "condition": "mild tendinitis in the right wrist",
+    "care": "an ice pack and a wrist splint"
+   },
+   "valid_from": "2025-02-08",
+   "valid_to": "2025-02-14",
+   "kind": "state",
+   "slot": "P0:health",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix had mild tendinitis in the right wrist, treated with an ice pack and a wrist splint.",
+   "answer": "mild tendinitis in the right wrist",
+   "layer": ""
+  },
+  {
+   "id": "F008",
+   "subject": "P0",
+   "predicate": "birthday",
+   "value": {
+    "date": "1986-04-23"
+   },
+   "valid_from": "1986-04-23",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:birthday",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix's birthday is on 23 April.",
+   "answer": "23 April",
+   "layer": ""
+  },
+  {
+   "id": "F009",
+   "subject": "P0",
+   "predicate": "hometown",
+   "value": {
+    "city": "Porto"
+   },
+   "valid_from": "1986-04-23",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:hometown",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix grew up in Porto.",
+   "answer": "Porto",
+   "layer": ""
+  },
+  {
+   "id": "F010",
+   "subject": "P0",
+   "predicate": "allergy",
+   "value": {
+    "food": "peanuts"
+   },
+   "valid_from": "2022-06-17",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:allergy",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix is allergic to peanuts.",
+   "answer": "peanuts",
+   "layer": ""
+  },
+  {
+   "id": "F011",
+   "subject": "P0",
+   "predicate": "speaks",
+   "value": {
+    "language": "Portuguese"
+   },
+   "valid_from": "2022-08-23",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:speaks",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix speaks Portuguese.",
+   "answer": "Portuguese",
+   "layer": ""
+  },
+  {
+   "id": "F012",
+   "subject": "P0",
+   "predicate": "pet",
+   "value": {
+    "kind": "dog",
+    "name": "Mochi"
+   },
+   "valid_from": "2022-05-21",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:pet",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix has a dog named Mochi.",
+   "answer": "Mochi",
+   "layer": ""
+  },
+  {
+   "id": "F013",
+   "subject": "P1",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Lyon"
+   },
+   "valid_from": "2024-02-01",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Amara Delacroix lives in Lyon.",
+   "answer": "Lyon",
+   "layer": ""
+  },
+  {
+   "id": "F014",
+   "subject": "P1",
+   "predicate": "pet",
+   "value": {
+    "kind": "cat",
+    "name": "Olive"
+   },
+   "valid_from": "2024-09-20",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:pet",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Amara Delacroix has a cat named Olive.",
+   "answer": "Olive",
+   "layer": ""
+  },
+  {
+   "id": "F015",
+   "subject": "P2",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Lyon"
+   },
+   "valid_from": "2021-12-16",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Petrov lives in Lyon.",
+   "answer": "Lyon",
+   "layer": ""
+  },
+  {
+   "id": "F016",
+   "subject": "P2",
+   "predicate": "job",
+   "value": {
+    "title": "UX researcher"
+   },
+   "valid_from": "2021-10-02",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:job",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Petrov works as an UX researcher.",
+   "answer": "UX researcher",
+   "layer": ""
+  },
+  {
+   "id": "F017",
+   "subject": "P3",
+   "predicate": "lives_in",
+   "value": {
+    "city": "Rotterdam"
+   },
+   "valid_from": "2024-03-29",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:lives_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Linus Haddad lives in Rotterdam.",
+   "answer": "Rotterdam",
+   "layer": ""
+  },
+  {
+   "id": "F018",
+   "subject": "P3",
+   "predicate": "pet",
+   "value": {
+    "kind": "cat",
+    "name": "Biscuit"
+   },
+   "valid_from": "2023-04-03",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:pet",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Linus Haddad has a cat named Biscuit.",
+   "answer": "Biscuit",
+   "layer": ""
+  },
+  {
+   "id": "F019",
+   "subject": "P0",
+   "predicate": "race",
+   "value": {
+    "race": "Park 5K",
+    "time": "27:47"
+   },
+   "valid_from": "2025-02-05",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:race",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix ran the Park 5K on 5 February 2025 in 27:47.",
+   "answer": "27:47",
+   "layer": ""
+  },
+  {
+   "id": "F020",
+   "subject": "P1",
+   "predicate": "news",
+   "value": {
+    "what": "started a new course"
+   },
+   "valid_from": "2025-02-03",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P1:news",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Amara Delacroix started a new course around 3 February 2025.",
+   "answer": "started a new course",
+   "layer": ""
+  },
+  {
+   "id": "F021",
+   "subject": "P1",
+   "predicate": "news",
+   "value": {
+    "what": "ran a first marathon"
+   },
+   "valid_from": "2025-02-06",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P1:news",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Amara Delacroix ran a first marathon around 6 February 2025.",
+   "answer": "ran a first marathon",
+   "layer": ""
+  },
+  {
+   "id": "F022",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P2",
+    "name": "Kofi Petrov",
+    "venue": "the city library"
+   },
+   "valid_from": "2025-02-14",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix met Kofi Petrov at the city library on 14 February 2025.",
+   "answer": "the city library",
+   "layer": ""
+  },
+  {
+   "id": "F023",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P3",
+    "name": "Linus Haddad",
+    "venue": "the riverside park"
+   },
+   "valid_from": "2025-02-12",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix met Linus Haddad at the riverside park on 12 February 2025.",
+   "answer": "the riverside park",
+   "layer": ""
+  },
+  {
+   "id": "F024",
+   "subject": "P3",
+   "predicate": "news",
+   "value": {
+    "what": "passed a driving test"
+   },
+   "valid_from": "2025-02-04",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P3:news",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Linus Haddad passed a driving test around 4 February 2025.",
+   "answer": "passed a driving test",
+   "layer": ""
+  },
+  {
+   "id": "F025",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P1",
+    "name": "Amara Delacroix",
+    "venue": "the hilltop viewpoint"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix met Amara Delacroix at the hilltop viewpoint on 9 February 2025.",
+   "answer": "the hilltop viewpoint",
+   "layer": ""
+  },
+  {
+   "id": "F026",
+   "subject": "P0",
+   "predicate": "appointment",
+   "value": {
+    "what": "bank adviser"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:appointment",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix had a bank adviser appointment on 9 February 2025.",
+   "answer": "9 February 2025",
+   "layer": ""
+  },
+  {
+   "id": "F027",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the old market hall",
+    "city": "Ghent",
+    "lat": 51.05206,
+    "lon": 3.71039,
+    "time": "09:19"
+   },
+   "valid_from": "2025-02-09",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix was in Ghent on 9 February 2025.",
+   "answer": "Ghent",
+   "layer": ""
+  },
+  {
+   "id": "F028",
+   "subject": "P0",
+   "predicate": "race",
+   "value": {
+    "race": "Park 5K",
+    "time": "20:01"
+   },
+   "valid_from": "2025-02-04",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:race",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix ran the Park 5K on 4 February 2025 in 20:01.",
+   "answer": "20:01",
+   "layer": ""
+  },
+  {
+   "id": "F029",
+   "subject": "P0",
+   "predicate": "met",
+   "value": {
+    "person": "P2",
+    "name": "Kofi Petrov",
+    "venue": "the harbour footpath"
+   },
+   "valid_from": "2025-02-11",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:met",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix met Kofi Petrov at the harbour footpath on 11 February 2025.",
+   "answer": "the harbour footpath",
+   "layer": ""
+  },
+  {
+   "id": "F030",
+   "subject": "P0",
+   "predicate": "visited",
+   "value": {
+    "venue": "the city library",
+    "city": "Ghent",
+    "lat": 51.03695,
+    "lon": 3.72331,
+    "time": "09:48"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P0:visited",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix was in Ghent on 15 February 2025.",
+   "answer": "Ghent",
+   "layer": ""
+  },
+  {
+   "id": "F031",
+   "subject": "P7",
+   "predicate": "employer",
+   "value": {
+    "employer": "Saltire Glassworks"
+   },
+   "valid_from": "2022-02-01",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P7:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Hana Delacroix works at Saltire Glassworks.",
+   "answer": "Saltire Glassworks",
+   "layer": "identity"
+  },
+  {
+   "id": "F032",
+   "subject": "P7",
+   "predicate": "joined",
+   "value": {
+    "group": "the Harbour Gospel Choir"
+   },
+   "valid_from": "2025-02-15",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P7:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Hana Delacroix joined the Harbour Gospel Choir on 15 February 2025.",
+   "answer": "Harbour Gospel Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F033",
+   "subject": "P3",
+   "predicate": "employer",
+   "value": {
+    "employer": "Marrowgate Press"
+   },
+   "valid_from": "2023-04-07",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Linus Haddad works at Marrowgate Press.",
+   "answer": "Marrowgate Press",
+   "layer": "identity"
+  },
+  {
+   "id": "F034",
+   "subject": "P3",
+   "predicate": "joined",
+   "value": {
+    "group": "the Saltmarsh Community Choir"
+   },
+   "valid_from": "2025-02-14",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P3:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Linus Haddad joined the Saltmarsh Community Choir on 14 February 2025.",
+   "answer": "Saltmarsh Community Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F035",
+   "subject": "P5",
+   "predicate": "employer",
+   "value": {
+    "employer": "Hollowbrook Surveying"
+   },
+   "valid_from": "2024-06-15",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P5:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Rosa Delacroix works at Hollowbrook Surveying.",
+   "answer": "Hollowbrook Surveying",
+   "layer": "identity"
+  },
+  {
+   "id": "F036",
+   "subject": "P5",
+   "predicate": "joined",
+   "value": {
+    "group": "the Kiln Lane Chamber Choir"
+   },
+   "valid_from": "2025-02-16",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P5:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Rosa Delacroix joined the Kiln Lane Chamber Choir on 16 February 2025.",
+   "answer": "Kiln Lane Chamber Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F037",
+   "subject": "P2",
+   "predicate": "employer",
+   "value": {
+    "employer": "Larkspur Ceramics"
+   },
+   "valid_from": "2024-10-04",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Petrov works at Larkspur Ceramics.",
+   "answer": "Larkspur Ceramics",
+   "layer": "identity"
+  },
+  {
+   "id": "F038",
+   "subject": "P2",
+   "predicate": "joined",
+   "value": {
+    "group": "the Old Mill Folk Choir"
+   },
+   "valid_from": "2025-02-12",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P2:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Petrov joined the Old Mill Folk Choir on 12 February 2025.",
+   "answer": "Old Mill Folk Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F039",
+   "subject": "P6",
+   "predicate": "employer",
+   "value": {
+    "employer": "Fennick & Dale Opticians"
+   },
+   "valid_from": "2023-08-25",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P6:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Nico Haddad works at Fennick & Dale Opticians.",
+   "answer": "Fennick & Dale Opticians",
+   "layer": "identity"
+  },
+  {
+   "id": "F040",
+   "subject": "P6",
+   "predicate": "joined",
+   "value": {
+    "group": "the Juniper Street Youth Choir"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P6:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Nico Haddad joined the Juniper Street Youth Choir on 10 February 2025.",
+   "answer": "Juniper Street Youth Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F041",
+   "subject": "P1",
+   "predicate": "employer",
+   "value": {
+    "employer": "Brackenridge Seeds"
+   },
+   "valid_from": "2021-11-07",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P1:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Amara Delacroix works at Brackenridge Seeds.",
+   "answer": "Brackenridge Seeds",
+   "layer": "identity"
+  },
+  {
+   "id": "F042",
+   "subject": "P1",
+   "predicate": "joined",
+   "value": {
+    "group": "the Beacon Hill Choir"
+   },
+   "valid_from": "2025-02-06",
+   "valid_to": null,
+   "kind": "event",
+   "slot": "P1:joined",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Amara Delacroix joined the Beacon Hill Choir on 6 February 2025.",
+   "answer": "Beacon Hill Choir",
+   "layer": "identity"
+  },
+  {
+   "id": "F043",
+   "subject": "P0",
+   "predicate": "acquired",
+   "value": {
+    "item": "standing desk"
+   },
+   "valid_from": "2025-02-07",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P0:acquired:standing desk",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Umar Delacroix has a standing desk.",
+   "answer": "standing desk",
+   "layer": "dating"
+  },
+  {
+   "id": "F044",
+   "subject": "P5",
+   "predicate": "acquired",
+   "value": {
+    "item": "upright piano"
+   },
+   "valid_from": "2025-02-08",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P5:acquired:upright piano",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Rosa Delacroix has an upright piano.",
+   "answer": "upright piano",
+   "layer": "dating"
+  },
+  {
+   "id": "F045",
+   "subject": "P2",
+   "predicate": "acquired",
+   "value": {
+    "item": "espresso machine"
+   },
+   "valid_from": "2025-02-05",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P2:acquired:espresso machine",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kofi Petrov has an espresso machine.",
+   "answer": "espresso machine",
+   "layer": "dating"
+  },
+  {
+   "id": "F046",
+   "subject": "P7",
+   "predicate": "acquired",
+   "value": {
+    "item": "rowing machine"
+   },
+   "valid_from": "2025-02-10",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P7:acquired:rowing machine",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Hana Delacroix has a rowing machine.",
+   "answer": "rowing machine",
+   "layer": "dating"
+  },
+  {
+   "id": "F047",
+   "subject": "P6",
+   "predicate": "acquired",
+   "value": {
+    "item": "pottery wheel"
+   },
+   "valid_from": "2025-02-11",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P6:acquired:pottery wheel",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Nico Haddad has a pottery wheel.",
+   "answer": "pottery wheel",
+   "layer": "dating"
+  },
+  {
+   "id": "F048",
+   "subject": "P3",
+   "predicate": "acquired",
+   "value": {
+    "item": "sewing machine"
+   },
+   "valid_from": "2025-02-14",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P3:acquired:sewing machine",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Linus Haddad has a sewing machine.",
+   "answer": "sewing machine",
+   "layer": "dating"
+  },
+  {
+   "id": "F049",
+   "subject": "P8",
+   "predicate": "based_in",
+   "value": {
+    "city": "Bordeaux"
+   },
+   "valid_from": "2022-08-25",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P8:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kasper Delacroix lives in Bordeaux.",
+   "answer": "Bordeaux",
+   "layer": "coverage"
+  },
+  {
+   "id": "F050",
+   "subject": "P8",
+   "predicate": "employer",
+   "value": {
+    "employer": "Tamberlane Bakery"
+   },
+   "valid_from": "2023-02-15",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P8:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Kasper Delacroix works at Tamberlane Bakery.",
+   "answer": "Tamberlane Bakery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F051",
+   "subject": "P9",
+   "predicate": "based_in",
+   "value": {
+    "city": "Edinburgh"
+   },
+   "valid_from": "2023-02-01",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P9:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Jonah Haddad lives in Edinburgh.",
+   "answer": "Edinburgh",
+   "layer": "coverage"
+  },
+  {
+   "id": "F052",
+   "subject": "P10",
+   "predicate": "based_in",
+   "value": {
+    "city": "Edinburgh"
+   },
+   "valid_from": "2024-06-21",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P10:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Hedda Delacroix lives in Edinburgh.",
+   "answer": "Edinburgh",
+   "layer": "coverage"
+  },
+  {
+   "id": "F053",
+   "subject": "P9",
+   "predicate": "employer",
+   "value": {
+    "employer": "Corvid Mapmakers"
+   },
+   "valid_from": "2023-03-31",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P9:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Jonah Haddad works at Corvid Mapmakers.",
+   "answer": "Corvid Mapmakers",
+   "layer": "coverage"
+  },
+  {
+   "id": "F054",
+   "subject": "P10",
+   "predicate": "employer",
+   "value": {
+    "employer": "Wickerfield Nursery"
+   },
+   "valid_from": "2023-06-02",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P10:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Hedda Delacroix works at Wickerfield Nursery.",
+   "answer": "Wickerfield Nursery",
+   "layer": "coverage"
+  },
+  {
+   "id": "F055",
+   "subject": "P11",
+   "predicate": "based_in",
+   "value": {
+    "city": "Valencia"
+   },
+   "valid_from": "2024-09-13",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P11:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Milo Okafor lives in Valencia.",
+   "answer": "Valencia",
+   "layer": "coverage"
+  },
+  {
+   "id": "F056",
+   "subject": "P12",
+   "predicate": "based_in",
+   "value": {
+    "city": "Valencia"
+   },
+   "valid_from": "2023-08-21",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P12:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dina Sorensen lives in Valencia.",
+   "answer": "Valencia",
+   "layer": "coverage"
+  },
+  {
+   "id": "F057",
+   "subject": "P11",
+   "predicate": "works_from",
+   "value": {
+    "where": "home"
+   },
+   "valid_from": "2023-06-30",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P11:works_from",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Milo Okafor works from home.",
+   "answer": "home",
+   "layer": "coverage"
+  },
+  {
+   "id": "F058",
+   "subject": "P12",
+   "predicate": "works_from",
+   "value": {
+    "where": "home"
+   },
+   "valid_from": "2022-10-31",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P12:works_from",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Dina Sorensen works from home.",
+   "answer": "home",
+   "layer": "coverage"
+  },
+  {
+   "id": "F059",
+   "subject": "P13",
+   "predicate": "based_in",
+   "value": {
+    "city": "Leipzig"
+   },
+   "valid_from": "2023-03-26",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P13:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "June Fischer lives in Leipzig.",
+   "answer": "Leipzig",
+   "layer": "coverage"
+  },
+  {
+   "id": "F060",
+   "subject": "P14",
+   "predicate": "based_in",
+   "value": {
+    "city": "Leipzig"
+   },
+   "valid_from": "2023-04-14",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P14:based_in",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Iris Castillo lives in Leipzig.",
+   "answer": "Leipzig",
+   "layer": "coverage"
+  },
+  {
+   "id": "F061",
+   "subject": "P13",
+   "predicate": "employer",
+   "value": {
+    "employer": "Gullwing Ferries"
+   },
+   "valid_from": "2024-07-31",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P13:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "June Fischer works at Gullwing Ferries.",
+   "answer": "Gullwing Ferries",
+   "layer": "coverage"
+  },
+  {
+   "id": "F062",
+   "subject": "P14",
+   "predicate": "employer",
+   "value": {
+    "employer": "Gullwing Ferries"
+   },
+   "valid_from": "2024-02-18",
+   "valid_to": null,
+   "kind": "state",
+   "slot": "P14:employer",
+   "version": 0,
+   "supersedes": null,
+   "since_stated": false,
+   "canonical": "Iris Castillo works at Gullwing Ferries.",
+   "answer": "Gullwing Ferries",
+   "layer": "coverage"
+  }
+ ],
+ "traps": [
+  {
+   "id": "T01",
+   "kind": "hypothetical",
+   "subject": "P0",
+   "day": "2025-02-11",
+   "sentence": "If the Edinburgh offer ever comes through, I'd honestly move there in a heartbeat.",
+   "forbidden": "Umar Delacroix moved to Edinburgh.",
+   "question": "When did Umar move to Edinburgh?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T02",
+   "kind": "negation",
+   "subject": "P0",
+   "day": "2025-02-08",
+   "sentence": "In the end I did not sign up for the marathon, not this year.",
+   "forbidden": "Umar Delacroix signed up for a marathon.",
+   "question": "Which marathon did Umar sign up for?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T03",
+   "kind": "hearsay",
+   "subject": "P3",
+   "day": "2025-02-08",
+   "sentence": "Linus said their bike got stolen outside the station.",
+   "forbidden": "Umar Delacroix's bike was stolen.",
+   "question": "Where was Umar's bike stolen?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T04",
+   "kind": "plan",
+   "subject": "P0",
+   "day": "2025-02-05",
+   "sentence": "Maybe I'll learn to sail this summer, we'll see.",
+   "forbidden": "Umar Delacroix learned to sail.",
+   "question": "Where did Umar take sailing lessons?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T05",
+   "kind": "hearsay",
+   "subject": "P3",
+   "day": "2025-02-07",
+   "sentence": "Apparently Linus's company might be shutting down.",
+   "forbidden": "Linus Haddad's company shut down.",
+   "question": "When did Linus's company shut down?",
+   "fact_id": "",
+   "misattributed_to": []
+  },
+  {
+   "id": "T06",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-09",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Umar took on 9 February 2025?",
+   "fact_id": "F027",
+   "misattributed_to": []
+  },
+  {
+   "id": "T07",
+   "kind": "photo_content",
+   "subject": "P0",
+   "day": "2025-02-15",
+   "sentence": "",
+   "forbidden": "Any description of what the photo shows.",
+   "question": "What could be seen in the photo Umar took on 15 February 2025?",
+   "fact_id": "F030",
+   "misattributed_to": []
+  },
+  {
+   "id": "T08",
+   "kind": "attribution",
+   "subject": "P7",
+   "day": "2025-02-07",
+   "sentence": "Told Rosa that my friend works at Saltire Glassworks.",
+   "forbidden": "Umar Delacroix works at Saltire Glassworks.",
+   "question": "",
+   "fact_id": "F031",
+   "misattributed_to": [
+    "P0",
+    "P5"
+   ]
+  },
+  {
+   "id": "T09",
+   "kind": "attribution",
+   "subject": "P7",
+   "day": "2025-02-15",
+   "sentence": "Hana joined the Harbour Gospel Choir today.",
+   "forbidden": "Umar Delacroix joined the Harbour Gospel Choir.",
+   "question": "",
+   "fact_id": "F032",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T10",
+   "kind": "attribution",
+   "subject": "P3",
+   "day": "2025-02-13",
+   "sentence": "Matteo asked about my best friend, who works at Marrowgate Press.",
+   "forbidden": "Umar Delacroix works at Marrowgate Press.",
+   "question": "",
+   "fact_id": "F033",
+   "misattributed_to": [
+    "P0",
+    "P4"
+   ]
+  },
+  {
+   "id": "T11",
+   "kind": "attribution",
+   "subject": "P3",
+   "day": "2025-02-14",
+   "sentence": "Linus joined the Saltmarsh Community Choir today.",
+   "forbidden": "Umar Delacroix joined the Saltmarsh Community Choir.",
+   "question": "",
+   "fact_id": "F034",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T12",
+   "kind": "attribution",
+   "subject": "P5",
+   "day": "2025-02-15",
+   "sentence": "Nico asked about my manager, who works at Hollowbrook Surveying.",
+   "forbidden": "Umar Delacroix works at Hollowbrook Surveying.",
+   "question": "",
+   "fact_id": "F035",
+   "misattributed_to": [
+    "P0",
+    "P6"
+   ]
+  },
+  {
+   "id": "T13",
+   "kind": "attribution",
+   "subject": "P5",
+   "day": "2025-02-16",
+   "sentence": "Rosa joined the Kiln Lane Chamber Choir today.",
+   "forbidden": "Umar Delacroix joined the Kiln Lane Chamber Choir.",
+   "question": "",
+   "fact_id": "F036",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T14",
+   "kind": "attribution",
+   "subject": "P2",
+   "day": "2025-02-14",
+   "sentence": "Rosa asked about my brother from the old flat, who works at Larkspur Ceramics.",
+   "forbidden": "Umar Delacroix works at Larkspur Ceramics.",
+   "question": "",
+   "fact_id": "F037",
+   "misattributed_to": [
+    "P0",
+    "P5"
+   ]
+  },
+  {
+   "id": "T15",
+   "kind": "attribution",
+   "subject": "P2",
+   "day": "2025-02-12",
+   "sentence": "Kofi joined the Old Mill Folk Choir today.",
+   "forbidden": "Umar Delacroix joined the Old Mill Folk Choir.",
+   "question": "",
+   "fact_id": "F038",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T16",
+   "kind": "attribution",
+   "subject": "P6",
+   "day": "2025-02-11",
+   "sentence": "Kofi asked about my brother from the running club, who works at Fennick & Dale Opticians.",
+   "forbidden": "Umar Delacroix works at Fennick & Dale Opticians.",
+   "question": "",
+   "fact_id": "F039",
+   "misattributed_to": [
+    "P0",
+    "P2"
+   ]
+  },
+  {
+   "id": "T17",
+   "kind": "attribution",
+   "subject": "P6",
+   "day": "2025-02-10",
+   "sentence": "Nico joined the Juniper Street Youth Choir today.",
+   "forbidden": "Umar Delacroix joined the Juniper Street Youth Choir.",
+   "question": "",
+   "fact_id": "F040",
+   "misattributed_to": [
+    "P0"
+   ]
+  },
+  {
+   "id": "T18",
+   "kind": "attribution",
+   "subject": "P1",
+   "day": "2025-02-09",
+   "sentence": "Told Nico that my sister from the old flat works at Brackenridge Seeds.",
+   "forbidden": "Umar Delacroix works at Brackenridge Seeds.",
+   "question": "",
+   "fact_id": "F041",
+   "misattributed_to": [
+    "P0",
+    "P6"
+   ]
+  },
+  {
+   "id": "T19",
+   "kind": "attribution",
+   "subject": "P1",
+   "day": "2025-02-06",
+   "sentence": "Amara joined the Beacon Hill Choir today.",
+   "forbidden": "Umar Delacroix joined the Beacon Hill Choir.",
+   "question": "",
+   "fact_id": "F042",
+   "misattributed_to": [
+    "P0"
+   ]
+  }
+ ],
+ "unstated": [
+  {
+   "question": "What car does Umar drive?"
+  },
+  {
+   "question": "What is Umar's blood type?"
+  },
+  {
+   "question": "Which university did Umar attend?"
+  },
+  {
+   "question": "What is Umar's shoe size?"
+  },
+  {
+   "question": "What car does Amara drive?"
+  },
+  {
+   "question": "What is Kofi's favourite band?"
+  },
+  {
+   "question": "Which school did Linus go to?"
+  }
+ ],
+ "identity": [
+  {
+   "person": "P7",
+   "role": "my friend",
+   "contrast": "P5",
+   "alias_day": "2025-02-04",
+   "alias_sentence": "Picked up my friend Hana from the station.",
+   "role_fact": "F031",
+   "role_trap": "T08",
+   "name_fact": "F032",
+   "name_trap": "T09"
+  },
+  {
+   "person": "P3",
+   "role": "my best friend",
+   "contrast": "P4",
+   "alias_day": "2025-02-06",
+   "alias_sentence": "Dinner with my best friend Linus tonight, we talked for hours.",
+   "role_fact": "F033",
+   "role_trap": "T10",
+   "name_fact": "F034",
+   "name_trap": "T11"
+  },
+  {
+   "person": "P5",
+   "role": "my manager",
+   "contrast": "P6",
+   "alias_day": "2025-02-06",
+   "alias_sentence": "Picked up my manager Rosa from the station.",
+   "role_fact": "F035",
+   "role_trap": "T12",
+   "name_fact": "F036",
+   "name_trap": "T13"
+  },
+  {
+   "person": "P2",
+   "role": "my brother from the old flat",
+   "contrast": "P5",
+   "alias_day": "2025-02-04",
+   "alias_sentence": "Dinner with my brother from the old flat Kofi tonight, we talked for hours.",
+   "role_fact": "F037",
+   "role_trap": "T14",
+   "name_fact": "F038",
+   "name_trap": "T15"
+  },
+  {
+   "person": "P6",
+   "role": "my brother from the running club",
+   "contrast": "P2",
+   "alias_day": "2025-02-04",
+   "alias_sentence": "Long call with Nico, my brother from the running club, this evening.",
+   "role_fact": "F039",
+   "role_trap": "T16",
+   "name_fact": "F040",
+   "name_trap": "T17"
+  },
+  {
+   "person": "P1",
+   "role": "my sister from the old flat",
+   "contrast": "P6",
+   "alias_day": "2025-02-05",
+   "alias_sentence": "Long call with Amara, my sister from the old flat, this evening.",
+   "role_fact": "F041",
+   "role_trap": "T18",
+   "name_fact": "F042",
+   "name_trap": "T19"
+  }
+ ],
+ "dating": [
+  {
+   "fact": "F043",
+   "not_yet_day": "2025-02-06",
+   "already_day": "2025-02-14"
+  },
+  {
+   "fact": "F044",
+   "not_yet_day": "2025-02-04",
+   "already_day": "2025-02-10"
+  },
+  {
+   "fact": "F045",
+   "not_yet_day": "2025-02-04",
+   "already_day": "2025-02-07"
+  },
+  {
+   "fact": "F046",
+   "not_yet_day": "2025-02-07",
+   "already_day": "2025-02-12"
+  },
+  {
+   "fact": "F047",
+   "not_yet_day": "2025-02-07",
+   "already_day": "2025-02-11"
+  },
+  {
+   "fact": "F048",
+   "not_yet_day": "2025-02-06",
+   "already_day": "2025-02-16"
+  }
+ ],
+ "coverage": [
+  {
+   "case": "converging",
+   "role_person": "P8",
+   "name_person": "P8",
+   "role": "my godfather",
+   "same": true,
+   "city": "Bordeaux",
+   "mentions": [
+    {
+     "fact": "F049",
+     "by_role": true,
+     "day": "2025-02-03"
+    },
+    {
+     "fact": "F049",
+     "by_role": false,
+     "day": "2025-02-10"
+    },
+    {
+     "fact": "F050",
+     "by_role": true,
+     "day": "2025-02-13"
+    },
+    {
+     "fact": "F050",
+     "by_role": false,
+     "day": "2025-02-15"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "one_attribute",
+   "role_person": "P9",
+   "name_person": "P10",
+   "role": "my aunt",
+   "same": false,
+   "city": "Edinburgh",
+   "mentions": [
+    {
+     "fact": "F051",
+     "by_role": true,
+     "day": "2025-02-07"
+    },
+    {
+     "fact": "F052",
+     "by_role": false,
+     "day": "2025-02-09"
+    },
+    {
+     "fact": "F053",
+     "by_role": true,
+     "day": "2025-02-10"
+    },
+    {
+     "fact": "F054",
+     "by_role": false,
+     "day": "2025-02-12"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "generic",
+   "role_person": "P11",
+   "name_person": "P12",
+   "role": "my uncle",
+   "same": false,
+   "city": "Valencia",
+   "mentions": [
+    {
+     "fact": "F055",
+     "by_role": true,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F056",
+     "by_role": false,
+     "day": "2025-02-09"
+    },
+    {
+     "fact": "F057",
+     "by_role": true,
+     "day": "2025-02-10"
+    },
+    {
+     "fact": "F058",
+     "by_role": false,
+     "day": "2025-02-13"
+    }
+   ],
+   "together_day": null
+  },
+  {
+   "case": "together",
+   "role_person": "P13",
+   "name_person": "P14",
+   "role": "my piano teacher",
+   "same": false,
+   "city": "Leipzig",
+   "mentions": [
+    {
+     "fact": "F059",
+     "by_role": true,
+     "day": "2025-02-04"
+    },
+    {
+     "fact": "F060",
+     "by_role": false,
+     "day": "2025-02-06"
+    },
+    {
+     "fact": "F061",
+     "by_role": true,
+     "day": "2025-02-07"
+    },
+    {
+     "fact": "F062",
+     "by_role": false,
+     "day": "2025-02-12"
+    }
+   ],
+   "together_day": "2025-02-16"
+  }
+ ]
+}

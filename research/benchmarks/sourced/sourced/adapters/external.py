@@ -90,5 +90,6 @@ class ClaudeMemorySystem(_Skeleton):
     write_metrics = False
 
 
-REGISTRY = {c.name: c for c in (Mem0System, ZepSystem, SupermemorySystem, MemobaseSystem,
+# Mem0 is run for real: sourced/adapters/mem0.py
+REGISTRY = {c.name: c for c in (ZepSystem, SupermemorySystem, MemobaseSystem,
                                 ChatGPTMemorySystem, ClaudeMemorySystem)}

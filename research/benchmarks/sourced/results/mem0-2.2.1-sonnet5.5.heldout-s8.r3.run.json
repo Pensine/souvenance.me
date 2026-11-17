@@ -1,0 +1,4030 @@
+{
+ "system": {
+  "name": "mem0",
+  "mem0ai": "2.2.1",
+  "llm": "claude-cli:claude-sonnet-5-5",
+  "embedder": "nomic-ai/nomic-embed-text-v1.5",
+  "store": "qdrant local",
+  "top_k": 10,
+  "failed_adds": 0
+ },
+ "track": "T",
+ "data": "sample-test-s8",
+ "seconds": 1004.1,
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": [
+    {
+     "id": "07691015-898b-4691-97d7-5b6f7029177f",
+     "content": "Yusuf Ishikawa is an operations manager, and described on February 3, 2025 that the work of an operations manager is never done, with another full day ahead",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "08fa870d-141c-4483-9d7c-2fd9ea124503",
+     "content": "Yusuf Ishikawa felt tired on the evening of February 7, 2025, but described it as a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0e64af7b-09ec-4361-9e76-e571b04cab98",
+     "content": "Yusuf Ishikawa captured a photo on February 9, 2025 at 15:50 at GPS coordinates 41.14592, -8.64014",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "142b220a-2e2d-4e55-941d-45a4c48c99a8",
+     "content": "Yusuf Ishikawa's friend Jonah phoned him on the evening of February 5, 2025 and they talked for ages",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "158dd450-895b-456f-ac22-1cd834d4db1f",
+     "content": "Yusuf Ishikawa captured a photo on February 7, 2025 at 11:03 at GPS coordinates 41.13802, -8.61567",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "15e861f9-c4be-408e-8fae-318cc5f96773",
+     "content": "Yusuf Ishikawa's home address is 60 Tanner Street, Porto, as noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "209c5e70-391c-430d-a9c1-5a22812b4913",
+     "content": "Yusuf Ishikawa had another long meeting at Lumen Robotics on February 3, 2025, and says that as a product designer he gets a lot of such meetings",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2230d7bb-a853-413e-8c2e-e523712e35c1",
+     "content": "Yusuf Ishikawa noted on February 8, 2025 that music was coming through the wall from next door again",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25062288-56ee-404c-b9c9-bcc3b6c85e7d",
+     "content": "Yusuf Ishikawa took a long stroll around the botanical garden on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "28475ce2-9caa-43eb-a8eb-175b544f7c76",
+     "content": "Yusuf Ishikawa's flatmate lives in Leipzig now, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2926f54a-8f06-4f52-a158-a5f9a011a342",
+     "content": "Yusuf Ishikawa noted in a message to Wes Varga on the morning of February 8, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2ccee801-628e-437f-a602-04292ba69e6d",
+     "content": "Yusuf Ishikawa noted on February 3, 2025 that it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "300e91f3-4cce-4ba1-a541-092301f40673",
+     "content": "Yusuf Ishikawa kept up his German practice on February 7, 2025 by listening to a podcast on the walk home from the botanical garden",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3167aee8-5f3c-481d-895e-e469cc732537",
+     "content": "Yusuf Ishikawa noted in a message to Dalia Petrov on February 5, 2025 that Linus is still without the pottery wheel",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31978582-39b8-4423-a0bc-ee5624700b62",
+     "content": "Yusuf Ishikawa ordered a standing desk that had still not arrived as of February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3c04c848-5a5b-470f-8cae-4bc117f13ebe",
+     "content": "Yusuf Ishikawa had tea at the station café with his neighbour, Nadia, before the evening train on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3dcabdd9-bbb6-4bbd-bdc0-cef78acc580e",
+     "content": "Yusuf Ishikawa noted on February 6, 2025 that it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "43f10589-865a-40ab-a5d2-5a91b7d763fb",
+     "content": "Yusuf Ishikawa noted on February 8, 2025 that Cyrus is at Wickerfield Nursery these days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4cc50ad7-9530-4e7b-8801-dc27f6133c78",
+     "content": "Yusuf Ishikawa ran out of coffee filters again and wanted them added to the shopping list on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "505f129f-9d9a-4974-8b07-2b14eed8af3e",
+     "content": "Yusuf Ishikawa is two chapters into a new novel and finds it slow going, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "595cf3ff-e562-49a1-8d2d-f6b2e03ae064",
+     "content": "Yusuf Ishikawa's sister Lena, from the old flat, phoned him on the evening of February 4, 2025 and they talked for ages",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5b08c842-f1a9-4b8c-823b-f9b7e91edf77",
+     "content": "Yusuf Ishikawa's morning train crawled in late on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5cfb9ed5-fd7a-4511-8d2d-62319481816e",
+     "content": "Yusuf Ishikawa completed the Spring 10K on February 4, 2025 with a time of 1:03:54",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5e2625dc-814b-411c-a7e5-4a45e10661cd",
+     "content": "Yusuf Ishikawa's goal for the week of February 7, 2025 is to have lights out by eleven",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5f16563e-98fb-4394-9f42-cd0c73f8b5a2",
+     "content": "Yusuf Ishikawa noted on February 4, 2025 that home for Maren is Rotterdam",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6530e5ff-5f98-4311-ad27-1de01391d4dc",
+     "content": "Yusuf Ishikawa noted on February 4, 2025 that home for Cyrus is Leipzig",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "697e2597-205c-4856-b375-5e71a21dc1dd",
+     "content": "Yusuf Ishikawa is considering adopting a dog in 2026, but as of February 4, 2025 it is only an idea",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "69da12b1-4d83-460a-b98c-8a401498cef3",
+     "content": "Yusuf Ishikawa noted on February 4, 2025 that the sky in Porto was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6f8856fe-74ff-4340-995f-0f22d91b6658",
+     "content": "Yusuf Ishikawa noted on February 9, 2025 that he was out of coffee filters again and wanted them added to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "73e3710c-4208-4ad0-9393-e1a0ae18f182",
+     "content": "Yusuf Ishikawa received a formal offer letter from the People team at Silverfern Energy on February 3, 2025, following his interviews, inviting him to join as editor with a first working day of February 5, 2025, and asking him to countersign and return it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "784095fd-3578-4ce3-987b-1eb8e52f2471",
+     "content": "Dalia Petrov sent Yusuf Ishikawa a message on the morning of February 4, 2025 saying it was another full day and that an operations manager's work is never done, and asked him to ring her when he is free",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7a426a26-85d9-4647-b7f8-52d9fe435891",
+     "content": "Yusuf Ishikawa noted on February 6, 2025 that the plants on his balcony had been watered at last",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "83679128-fed0-4173-877d-d1a0ad9929b2",
+     "content": "Yusuf Ishikawa had his first day at Silverfern Energy as their editor on February 5, 2025, as noted on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "840a40d9-7f9a-47a4-a6a0-14093a5e9fe4",
+     "content": "Yusuf Ishikawa's flatmate is employed by Wickerfield Nursery, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "885a3fbf-3605-43e2-8b5a-b1ba0e89dc6c",
+     "content": "Yusuf Ishikawa noted on February 6, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "89edf7a7-94f8-49c4-9116-967b2e899a72",
+     "content": "Yusuf Ishikawa noted on February 9, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8cf0e4b7-e64e-4187-be0a-a0d67fabd102",
+     "content": "Yusuf Ishikawa felt tired on the evening of February 4, 2025, but described it as a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8df1e2d7-7792-4158-8923-a95bb25ff7f9",
+     "content": "Yusuf Ishikawa's landlady lives in Bordeaux now, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "94694b41-25eb-4f1b-ad9a-ac01138958e9",
+     "content": "Yusuf Ishikawa had tea at the station café with Dalia, whom he describes as his brother from the running club, before the evening train on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "95ad73c1-be59-4658-940b-dd2d6fe96569",
+     "content": "Yusuf Ishikawa noted on February 7, 2025 that it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "96f42137-677c-4bb8-b873-b98669dafc23",
+     "content": "Yusuf Ishikawa met up with his best friend Gideon at the riverside park on February 7, 2025, and it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "98041738-bd01-4684-b3ef-dbe215150243",
+     "content": "Yusuf Ishikawa's morning train crawled in late on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "988f6a15-6ee4-4fb1-b43d-7b22ef925a85",
+     "content": "Yusuf Ishikawa had coffee with Dalia at the riverside park on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "995756ee-473c-4a60-9393-3bd4076ad80e",
+     "content": "Yusuf Ishikawa noted on February 7, 2025 that he was out of coffee filters again and wanted them added to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9b9b9e71-c859-4266-9ef8-9755a6360e9d",
+     "content": "Yusuf Ishikawa transferred 1310 EUR for rent on February 7, 2025, which was rent day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9e688fea-2d5d-4dc1-90dc-925c1fb56449",
+     "content": "Yusuf Ishikawa's best friend Gideon works as a logistics coordinator, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9eb0f900-1078-4519-9f07-c52c416aa316",
+     "content": "Yusuf Ishikawa noted on February 9, 2025 that Nadia now has the espresso machine, which had not yet arrived as of February 7, 2025, and that she loves it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a1701d66-403c-4a1a-8a29-9b35005cdcd2",
+     "content": "Yusuf Ishikawa noted on February 5, 2025 that the plants on his balcony had been watered at last",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a248549a-7b51-429c-9651-2943a40f2be0",
+     "content": "Lena Abbott sent Yusuf Ishikawa a message on the afternoon of February 9, 2025 saying it was another full day and that an operations manager's work is never done, closing with 'That's all from here.'",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a26977dc-a9d1-467b-85ed-aca2acc392bd",
+     "content": "Dalia Petrov left Yusuf Ishikawa a voice message on the morning of February 8, 2025, saying she was in Turin and all was well, and asked him to ring her when he is free",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a3eecffc-edef-4b2f-920c-627176e21c7f",
+     "content": "Yusuf Ishikawa shared the news on February 9, 2025 that his brother Dalia ran a first marathon the day before, on February 8, 2025, and called it lovely news",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a6c94bc1-a461-482d-80f6-0e0e194e8c12",
+     "content": "Yusuf Ishikawa said on February 9, 2025 that if the Leipzig offer actually happens, he might pack up and move there",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ab4e9cb0-9fc2-483c-8be3-15d609361d0a",
+     "content": "Yusuf Ishikawa told Jonah Varga in a message on February 7, 2025 that Nadia's espresso machine had still not arrived",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "acb98b7f-f937-43d9-a1f2-a97f75e087ac",
+     "content": "Yusuf Ishikawa is not running the 2025 marathon because he never signed up for it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b2c89892-83c2-40ad-b338-7bc789c66c34",
+     "content": "Yusuf Ishikawa noted on February 6, 2025 that he had lovely news: Lena passed a driving test",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b3c32187-780a-4b7b-a34e-22ee4ccffe53",
+     "content": "Yusuf Ishikawa's aunt works at Gullwing Ferries these days, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b4720336-a24a-4de0-ac21-64eecb518062",
+     "content": "Yusuf Ishikawa told Jonah Varga in a message on February 9, 2025 that Dalia's upright piano had still not arrived",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b4d6f9e6-3b70-4329-9f89-1c73fd57a183",
+     "content": "Yusuf Ishikawa's sister Lena lives in Montreal, as noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b68b2b52-a7fd-4121-8fc0-93c8b79072c9",
+     "content": "Yusuf Ishikawa noted on February 5, 2025 that he had heard, as an unconfirmed rumour, that his best friend Gideon's company might be on the brink of shutting down",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b798e844-2286-46d2-adce-311f623f7184",
+     "content": "Yusuf Ishikawa grew up in Ghent and, as he told Dalia Petrov on February 7, 2025, some days he really misses it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c051e3c2-5198-4abf-8da3-441109b43852",
+     "content": "Yusuf Ishikawa's best friend Gideon adopted a puppy on February 3, 2025, which Yusuf called lovely news",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c1b72ca1-a0a4-47a4-9106-c3e789a8f27f",
+     "content": "Yusuf Ishikawa's best friend Gideon came over for dinner on February 3, 2025 and stayed until midnight",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c80d656c-bd98-4a12-b84f-069fa970cb0b",
+     "content": "Yusuf Ishikawa told Jonah Varga in a message on February 9, 2025 that he was two chapters into the new novel and finding it slow going",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ca582921-41b6-46d0-8f1f-71236670c3d8",
+     "content": "Yusuf Ishikawa captured a photo on February 7, 2025 at 14:11 at GPS coordinates 41.15298, -8.61573",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cf4af5f9-4358-476e-b84f-ff55f41d8e4b",
+     "content": "Yusuf Ishikawa finally watered the plants on his balcony on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d017680f-209e-47f0-bb54-baa9cbd6494f",
+     "content": "Yusuf Ishikawa finally got his kitchen spotless, including every shelf, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d205b97f-9da0-4287-81e3-b7fdef5fc4b8",
+     "content": "Yusuf Ishikawa's brother from the old flat works at Fennick & Dale Opticians, and Yusuf reminded Nadia of this on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dfdf6a91-0b19-4cc3-bb9b-ea3737341149",
+     "content": "Yusuf Ishikawa bumped into Maren on February 9, 2025, and noted that Maren works at Pellucid Labs",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e31400ae-398c-4a0e-988f-84ffb634c088",
+     "content": "Yusuf Ishikawa told Wes Varga on February 8, 2025 that the doctor had diagnosed a bad chest cold the day before (February 7, 2025), and that he would be on rest and fluids for a while",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e45f906c-717b-43f3-8f43-c0b6bc6ea158",
+     "content": "Yusuf Ishikawa's godfather lives in Bristol these days, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e6709e7c-4563-4bd0-9411-2646b8ea98e2",
+     "content": "Yusuf Ishikawa's birthday falls on 17 November, and he noted on February 5, 2025 that he must organise something for it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ebd9fb95-875e-49cd-b200-e5eb05d87cb0",
+     "content": "Yusuf Ishikawa noted on February 7, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ec0757fe-61bb-4ca7-af98-e45e4122f864",
+     "content": "Yusuf Ishikawa noted on February 9, 2025 that Bianca has a flat in Bristol",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ed00d01b-964c-4c14-954b-dc0e383e1618",
+     "content": "Yusuf Ishikawa's brother Linus, from the old flat, came over for dinner on February 4, 2025 and stayed until midnight",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "efabb3bb-ef9e-4b39-a590-25005dbad401",
+     "content": "Yusuf Ishikawa was seen at Riverside Medical Practice on February 7, 2025 and diagnosed with a bad chest cold; treatment was rest and fluids, and he was advised to return if there is no improvement",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f08e521c-372a-4c54-9a0b-fd4921165072",
+     "content": "Lena Abbott sent Yusuf Ishikawa a message on the morning of February 5, 2025 saying it was another full day and that an operations manager's work is never done, signing off with 'Love, as ever.'",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f7bffa0c-c630-4f65-8cec-4a1bbe4d8176",
+     "content": "Yusuf Ishikawa accepted a job offer from Silverfern Energy for an editor role, starting February 5, 2025, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f86d23b2-7283-4047-83aa-9cb23875cf06",
+     "content": "Yusuf Ishikawa's aunt lives in Rotterdam now, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f95e8f6d-9ad5-4c44-9f20-89bbcd8ddf64",
+     "content": "Yusuf Ishikawa told Linus Delacroix in a message on February 7, 2025 that Wes's rowing machine had still not arrived",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fa6a4bf0-91b5-4f9c-a087-cc28e1b54b68",
+     "content": "Linus showed Yusuf Ishikawa the pottery wheel on February 7, 2025; it had arrived at some point, after Yusuf's February 5, 2025 note that Linus was still without it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fac36d9a-d5b3-4d0d-9ece-435b6e74e57c",
+     "content": "In the novel Yusuf Ishikawa is reading, the character Lena is still without the telescope, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fec71871-6dcd-46be-925c-fb06771fbcb8",
+     "content": "Yusuf Ishikawa's neighbour is employed by Thistledown Instruments, and Yusuf's best friend Gideon had no idea about this, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": [
+    {
+     "id": "07691015-898b-4691-97d7-5b6f7029177f",
+     "content": "Yusuf Ishikawa is an operations manager, and described on February 3, 2025 that the work of an operations manager is never done, with another full day ahead",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0001",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "08fa870d-141c-4483-9d7c-2fd9ea124503",
+     "content": "Yusuf Ishikawa felt tired on the evening of February 7, 2025, but described it as a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0dd73680-fdd5-46a4-885a-c5e58835366b",
+     "content": "Yusuf Ishikawa's neighbour Nadia became a member of the Juniper Street Youth Choir on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "0e64af7b-09ec-4361-9e76-e571b04cab98",
+     "content": "Yusuf Ishikawa captured a photo on February 9, 2025 at 15:50 at GPS coordinates 41.14592, -8.64014",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0019",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "142b220a-2e2d-4e55-941d-45a4c48c99a8",
+     "content": "Yusuf Ishikawa's friend Jonah phoned him on the evening of February 5, 2025 and they talked for ages",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0035",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "158dd450-895b-456f-ac22-1cd834d4db1f",
+     "content": "Yusuf Ishikawa captured a photo on February 7, 2025 at 11:03 at GPS coordinates 41.13802, -8.61567",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0011",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "15e861f9-c4be-408e-8fae-318cc5f96773",
+     "content": "Yusuf Ishikawa's home address is 60 Tanner Street, Porto, as noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "17e4ad85-b874-432a-9607-6ee11ed6a731",
+     "content": "Yusuf Ishikawa is allergic to shellfish and, as noted on February 12, 2025, sent a dish back because it contained shellfish",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2041ed8a-1218-4436-a7ee-f40311afa655",
+     "content": "Yusuf Ishikawa felt tired on February 15, 2025, but described it as a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0078",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "209c5e70-391c-430d-a9c1-5a22812b4913",
+     "content": "Yusuf Ishikawa had another long meeting at Lumen Robotics on February 3, 2025, and says that as a product designer he gets a lot of such meetings",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2230d7bb-a853-413e-8c2e-e523712e35c1",
+     "content": "Yusuf Ishikawa noted on February 8, 2025 that music was coming through the wall from next door again",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "23533a67-1f5a-491f-b986-c7f4a99435df",
+     "content": "Yusuf Ishikawa captured a photo on February 15, 2025 at 10:26 at GPS coordinates 57.71167, 11.99081",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0030",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "25062288-56ee-404c-b9c9-bcc3b6c85e7d",
+     "content": "Yusuf Ishikawa took a long stroll around the botanical garden on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "28475ce2-9caa-43eb-a8eb-175b544f7c76",
+     "content": "Yusuf Ishikawa's flatmate lives in Leipzig now, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2926f54a-8f06-4f52-a158-a5f9a011a342",
+     "content": "Yusuf Ishikawa noted in a message to Wes Varga on the morning of February 8, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "2ccee801-628e-437f-a602-04292ba69e6d",
+     "content": "Yusuf Ishikawa noted on February 3, 2025 that it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "300e91f3-4cce-4ba1-a541-092301f40673",
+     "content": "Yusuf Ishikawa kept up his German practice on February 7, 2025 by listening to a podcast on the walk home from the botanical garden",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3167aee8-5f3c-481d-895e-e469cc732537",
+     "content": "Yusuf Ishikawa noted in a message to Dalia Petrov on February 5, 2025 that Linus is still without the pottery wheel",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "318b3bce-fd87-44af-b7be-4a696cfd7b5d",
+     "content": "Yusuf Ishikawa noted on February 16, 2025 that Dalia showed him the upright piano, which had arrived at some point",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "31978582-39b8-4423-a0bc-ee5624700b62",
+     "content": "Yusuf Ishikawa ordered a standing desk that had still not arrived as of February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0052",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "395640ff-71e4-41cf-afed-f59427f27b70",
+     "content": "Yusuf Ishikawa noted on February 14, 2025 that, according to what his best friend Gideon said, Gideon's bike was stolen outside the station",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3c04c848-5a5b-470f-8cae-4bc117f13ebe",
+     "content": "Yusuf Ishikawa had tea at the station café with his neighbour, Nadia, before the evening train on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "3dcabdd9-bbb6-4bbd-bdc0-cef78acc580e",
+     "content": "Yusuf Ishikawa noted on February 6, 2025 that it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0036",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "407d1e25-24fc-4eee-83cb-4a5a3bd27731",
+     "content": "Yusuf Ishikawa signed a tenancy agreement with Elm Property Lettings for the property at 60 Orchard Close, Valencia, with the tenancy beginning on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "40b41f1b-f4dd-4850-b5a9-f452cb9c4633",
+     "content": "Yusuf Ishikawa captured a photo on February 16, 2025 at 08:18 at GPS coordinates 39.47170, -0.38253, close to where he captured a photo on February 13, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0031",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "42a1537f-f271-4a5d-9aea-4612d441b79d",
+     "content": "Yusuf Ishikawa noted on February 12, 2025 that his kitchen was finally spotless, including every shelf",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "43f10589-865a-40ab-a5d2-5a91b7d763fb",
+     "content": "Yusuf Ishikawa noted on February 8, 2025 that Cyrus is at Wickerfield Nursery these days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0070",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "44c676f7-6de0-4099-be86-7f0a968cb1c7",
+     "content": "Yusuf Ishikawa noted on February 16, 2025 that he was out of coffee filters again and wanted them added to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "44efbbe5-a22f-4d81-9083-e420553c3b87",
+     "content": "Yusuf Ishikawa's godfather is employed by Tamberlane Bakery, as noted on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0074",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4af5a279-5e0d-47d4-b9e0-6ae04d694758",
+     "content": "Yusuf Ishikawa told Gideon Abbott in a message on February 15, 2025 that odds and ends from the fridge became a soup",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4cc50ad7-9530-4e7b-8801-dc27f6133c78",
+     "content": "Yusuf Ishikawa ran out of coffee filters again and wanted them added to the shopping list on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0064",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "4f0f351f-4bd4-424c-9435-97e74cbd3d5a",
+     "content": "Yusuf Ishikawa noted on February 12, 2025 that he was back to normal after the bad chest cold diagnosed on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "505f129f-9d9a-4974-8b07-2b14eed8af3e",
+     "content": "Yusuf Ishikawa is two chapters into a new novel and finds it slow going, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "518f50d8-39c6-48fc-ad04-59988e497402",
+     "content": "Yusuf Ishikawa's tenancy agreement for 60 Orchard Close, Valencia sets the rent at 1170 EUR, payable monthly",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "595cf3ff-e562-49a1-8d2d-f6b2e03ae064",
+     "content": "Yusuf Ishikawa's sister Lena, from the old flat, phoned him on the evening of February 4, 2025 and they talked for ages",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0034",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5b08c842-f1a9-4b8c-823b-f9b7e91edf77",
+     "content": "Yusuf Ishikawa's morning train crawled in late on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5cfb9ed5-fd7a-4511-8d2d-62319481816e",
+     "content": "Yusuf Ishikawa completed the Spring 10K on February 4, 2025 with a time of 1:03:54",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5e2625dc-814b-411c-a7e5-4a45e10661cd",
+     "content": "Yusuf Ishikawa's goal for the week of February 7, 2025 is to have lights out by eleven",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "5f16563e-98fb-4394-9f42-cd0c73f8b5a2",
+     "content": "Yusuf Ishikawa noted on February 4, 2025 that home for Maren is Rotterdam",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0065",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "60dbd21d-c611-44f9-937d-15a2bcb2afec",
+     "content": "Yusuf Ishikawa folded and put away his laundry on February 16, 2025, calling it a small victory",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6530e5ff-5f98-4311-ad27-1de01391d4dc",
+     "content": "Yusuf Ishikawa noted on February 4, 2025 that home for Cyrus is Leipzig",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0066",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "697e2597-205c-4856-b375-5e71a21dc1dd",
+     "content": "Yusuf Ishikawa is considering adopting a dog in 2026, but as of February 4, 2025 it is only an idea",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "69da12b1-4d83-460a-b98c-8a401498cef3",
+     "content": "Yusuf Ishikawa noted on February 4, 2025 that the sky in Porto was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6d469b06-e816-4e1c-9a4e-dc583291000e",
+     "content": "Yusuf Ishikawa noted in a voice note on February 11, 2025 that music was coming through the wall from next door again",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0023",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6effa20f-9f6a-4a57-9b4e-d3088e908995",
+     "content": "Yusuf Ishikawa told Gideon Abbott in a message on February 15, 2025 that Wes showed him the rowing machine, which had arrived at some point, after earlier reports on February 7, 2025 that it had not yet arrived",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0059",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "6f8856fe-74ff-4340-995f-0f22d91b6658",
+     "content": "Yusuf Ishikawa noted on February 9, 2025 that he was out of coffee filters again and wanted them added to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "72e30508-aac0-427a-a542-3e962976b885",
+     "content": "Yusuf Ishikawa noted on February 16, 2025 that music was coming through the wall from next door again",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0061",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "73e3710c-4208-4ad0-9393-e1a0ae18f182",
+     "content": "Yusuf Ishikawa received a formal offer letter from the People team at Silverfern Energy on February 3, 2025, following his interviews, inviting him to join as editor with a first working day of February 5, 2025, and asking him to countersign and return it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0003",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7423989b-cb04-4400-a20f-92b04aa2a361",
+     "content": "Yusuf Ishikawa noted on February 10, 2025 that music was coming through the wall from next door again",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "75cb9250-eabd-436b-9cd2-8f3d497e6617",
+     "content": "Yusuf Ishikawa's official Spring 10K results certify that he completed the Spring 10K on February 12, 2025, with a chip finish time of 48:01",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0026",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "784095fd-3578-4ce3-987b-1eb8e52f2471",
+     "content": "Dalia Petrov sent Yusuf Ishikawa a message on the morning of February 4, 2025 saying it was another full day and that an operations manager's work is never done, and asked him to ring her when he is free",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0007",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "78f30c31-98b1-42f6-9f27-f69e87c8bf0e",
+     "content": "Yusuf Ishikawa had lunch on February 15, 2025 with Bianca and his godfather, both of whom came",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0078",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7a426a26-85d9-4647-b7f8-52d9fe435891",
+     "content": "Yusuf Ishikawa noted on February 6, 2025 that the plants on his balcony had been watered at last",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "7acce46c-bbb9-4747-83b8-deaa4d63311e",
+     "content": "Yusuf Ishikawa noted on February 15, 2025 that Gideon became a member of the Kiln Lane Chamber Choir that day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "83679128-fed0-4173-877d-d1a0ad9929b2",
+     "content": "Yusuf Ishikawa had his first day at Silverfern Energy as their editor on February 5, 2025, as noted on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "840a40d9-7f9a-47a4-a6a0-14093a5e9fe4",
+     "content": "Yusuf Ishikawa's flatmate is employed by Wickerfield Nursery, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0069",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "855dd344-f608-43da-8e1d-cb895872f520",
+     "content": "Yusuf Ishikawa noted on February 12, 2025 that the plants on his balcony had been watered at last",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0024",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "878be585-e96c-4600-9cf8-580c9ccdd600",
+     "content": "Yusuf Ishikawa noted on February 15, 2025 that he was out of coffee filters again and wanted them added to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0048",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "885a3fbf-3605-43e2-8b5a-b1ba0e89dc6c",
+     "content": "Yusuf Ishikawa noted on February 6, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "89edf7a7-94f8-49c4-9116-967b2e899a72",
+     "content": "Yusuf Ishikawa noted on February 9, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8af96cb8-55d2-461c-a354-380d8b7762f7",
+     "content": "Yusuf Ishikawa noted on February 14, 2025 that Bianca works at Tamberlane Bakery these days",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0076",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8c5ceb05-3638-4fa2-9cdc-e90d295d2b6a",
+     "content": "Yusuf Ishikawa's best friend works at Saltire Glassworks, and Yusuf reminded Lena of this on February 13, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8cba704d-dd8e-4bb1-8396-544e38a1bb2c",
+     "content": "Yusuf Ishikawa noted on February 14, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0076",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8cf0e4b7-e64e-4187-be0a-a0d67fabd102",
+     "content": "Yusuf Ishikawa felt tired on the evening of February 4, 2025, but described it as a good kind of tired",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8df1e2d7-7792-4158-8923-a95bb25ff7f9",
+     "content": "Yusuf Ishikawa's landlady lives in Bordeaux now, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8ead24a3-01fb-40a1-9392-2de8051e7f1a",
+     "content": "Yusuf Ishikawa had coffee with his friend Jonah around February 13, 2025, and Jonah asked whether Yusuf's brother from the running club still worked at Hollowbrook Surveying; Yusuf confirmed he is still there",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0045",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "8ebd6dbf-88dc-4c7a-bf81-7a5f95bf1500",
+     "content": "Yusuf Ishikawa noted on February 12, 2025 that Dalia became a member of the Saltmarsh Community Choir that day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "943c872a-ce6d-4819-9638-61999e267599",
+     "content": "Yusuf Ishikawa noted on February 10, 2025 that home for Dora is Bordeaux",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "94694b41-25eb-4f1b-ad9a-ac01138958e9",
+     "content": "Yusuf Ishikawa had tea at the station café with Dalia, whom he describes as his brother from the running club, before the evening train on February 6, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0037",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9572b0dd-dba2-404b-8d7c-ffa08591aa9a",
+     "content": "Yusuf Ishikawa's standing desk, which had still not arrived as of February 7, 2025, had arrived and was in use by February 13, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "95ad73c1-be59-4658-940b-dd2d6fe96569",
+     "content": "Yusuf Ishikawa noted on February 7, 2025 that it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "96f42137-677c-4bb8-b873-b98669dafc23",
+     "content": "Yusuf Ishikawa met up with his best friend Gideon at the riverside park on February 7, 2025, and it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "98041738-bd01-4684-b3ef-dbe215150243",
+     "content": "Yusuf Ishikawa's morning train crawled in late on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0062",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "988f6a15-6ee4-4fb1-b43d-7b22ef925a85",
+     "content": "Yusuf Ishikawa had coffee with Dalia at the riverside park on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "995756ee-473c-4a60-9393-3bd4076ad80e",
+     "content": "Yusuf Ishikawa noted on February 7, 2025 that he was out of coffee filters again and wanted them added to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9ac81cbd-c385-4325-8d21-fe2c1247708e",
+     "content": "Yusuf Ishikawa noted on February 10, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0073",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9ae62da3-3772-4a30-8b00-b749dc9a470f",
+     "content": "Yusuf Ishikawa captured a photo on February 13, 2025 at 16:31 at GPS coordinates 39.47099, -0.39015",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0027",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9b9b9e71-c859-4266-9ef8-9755a6360e9d",
+     "content": "Yusuf Ishikawa transferred 1310 EUR for rent on February 7, 2025, which was rent day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9e688fea-2d5d-4dc1-90dc-925c1fb56449",
+     "content": "Yusuf Ishikawa's best friend Gideon works as a logistics coordinator, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "9eb0f900-1078-4519-9f07-c52c416aa316",
+     "content": "Yusuf Ishikawa noted on February 9, 2025 that Nadia now has the espresso machine, which had not yet arrived as of February 7, 2025, and that she loves it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0057",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a1701d66-403c-4a1a-8a29-9b35005cdcd2",
+     "content": "Yusuf Ishikawa noted on February 5, 2025 that the plants on his balcony had been watered at last",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0051",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a248549a-7b51-429c-9651-2943a40f2be0",
+     "content": "Lena Abbott sent Yusuf Ishikawa a message on the afternoon of February 9, 2025 saying it was another full day and that an operations manager's work is never done, closing with 'That's all from here.'",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0018",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a26977dc-a9d1-467b-85ed-aca2acc392bd",
+     "content": "Dalia Petrov left Yusuf Ishikawa a voice message on the morning of February 8, 2025, saying she was in Turin and all was well, and asked him to ring her when he is free",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0017",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a3eecffc-edef-4b2f-920c-627176e21c7f",
+     "content": "Yusuf Ishikawa shared the news on February 9, 2025 that his brother Dalia ran a first marathon the day before, on February 8, 2025, and called it lovely news",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a6c94bc1-a461-482d-80f6-0e0e194e8c12",
+     "content": "Yusuf Ishikawa said on February 9, 2025 that if the Leipzig offer actually happens, he might pack up and move there",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0020",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "a800b977-ebd9-4ee9-9a43-9d1a9a024f14",
+     "content": "Yusuf Ishikawa noted on February 13, 2025 that it rained on and off all afternoon",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "aa284c6d-c21e-4b80-89fa-16627d8e6ae9",
+     "content": "Yusuf Ishikawa had coffee with his best friend Gideon around February 12, 2025, and Gideon asked whether Yusuf's sister from the old flat still worked at Quillon Maps; Yusuf confirmed she is still there",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0042",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ab4e9cb0-9fc2-483c-8be3-15d609361d0a",
+     "content": "Yusuf Ishikawa told Jonah Varga in a message on February 7, 2025 that Nadia's espresso machine had still not arrived",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0053",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "acb98b7f-f937-43d9-a1f2-a97f75e087ac",
+     "content": "Yusuf Ishikawa is not running the 2025 marathon because he never signed up for it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0006",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b2c89892-83c2-40ad-b338-7bc789c66c34",
+     "content": "Yusuf Ishikawa noted on February 6, 2025 that he had lovely news: Lena passed a driving test",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0010",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b3c32187-780a-4b7b-a34e-22ee4ccffe53",
+     "content": "Yusuf Ishikawa's aunt works at Gullwing Ferries these days, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0068",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b4720336-a24a-4de0-ac21-64eecb518062",
+     "content": "Yusuf Ishikawa told Jonah Varga in a message on February 9, 2025 that Dalia's upright piano had still not arrived",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b4900beb-4f49-4093-9e0d-8ff0576a592e",
+     "content": "Under the tenancy agreement with Elm Property Lettings for 60 Orchard Close, Valencia, Yusuf Ishikawa as the tenant must keep the property clean and in good repair",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0022",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b4d6f9e6-3b70-4329-9f89-1c73fd57a183",
+     "content": "Yusuf Ishikawa's sister Lena lives in Montreal, as noted on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b4e4aad4-6b33-40cd-9e22-d62433dbb6e9",
+     "content": "Yusuf Ishikawa noted on February 13, 2025 that Lena became a new member of the Harbour Gospel Choir that morning",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0046",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b5dc8611-45ec-4eab-b430-6cdfe38026a3",
+     "content": "Yusuf Ishikawa noted on February 14, 2025 that Dora mostly works from home",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0077",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b639aba1-f158-4afb-8915-384818c9f4a9",
+     "content": "Yusuf Ishikawa spent an hour or two at the hilltop viewpoint on February 13, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0028",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b68b2b52-a7fd-4121-8fc0-93c8b79072c9",
+     "content": "Yusuf Ishikawa noted on February 5, 2025 that he had heard, as an unconfirmed rumour, that his best friend Gideon's company might be on the brink of shutting down",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "b798e844-2286-46d2-adce-311f623f7184",
+     "content": "Yusuf Ishikawa grew up in Ghent and, as he told Dalia Petrov on February 7, 2025, some days he really misses it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0013",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c051e3c2-5198-4abf-8da3-441109b43852",
+     "content": "Yusuf Ishikawa's best friend Gideon adopted a puppy on February 3, 2025, which Yusuf called lovely news",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0004",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c1b72ca1-a0a4-47a4-9106-c3e789a8f27f",
+     "content": "Yusuf Ishikawa's best friend Gideon came over for dinner on February 3, 2025 and stayed until midnight",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0032",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "c80d656c-bd98-4a12-b84f-069fa970cb0b",
+     "content": "Yusuf Ishikawa told Jonah Varga in a message on February 9, 2025 that he was two chapters into the new novel and finding it slow going",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0056",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ca582921-41b6-46d0-8f1f-71236670c3d8",
+     "content": "Yusuf Ishikawa captured a photo on February 7, 2025 at 14:11 at GPS coordinates 41.15298, -8.61573",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0012",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ce11ba75-f2ad-4053-a1d2-69d9d0f9be5a",
+     "content": "Yusuf Ishikawa was still two chapters into the new novel and finding it slow going, as noted on February 13, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0044",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ce65d80a-8e98-4d28-840b-47721281054d",
+     "content": "Yusuf Ishikawa is undecided about whether to finally learn to sail in summer 2025, saying he might or might not",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "cf4af5f9-4358-476e-b84f-ff55f41d8e4b",
+     "content": "Yusuf Ishikawa finally watered the plants on his balcony on February 4, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0005",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d017680f-209e-47f0-bb54-baa9cbd6494f",
+     "content": "Yusuf Ishikawa finally got his kitchen spotless, including every shelf, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d02d2e0e-d3c2-47c9-8264-f8810ce12c32",
+     "content": "Yusuf Ishikawa noted on February 13, 2025 that he was out of coffee filters again and wanted them added to the shopping list",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0058",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d1952d54-93bf-43e5-ba6e-ca3fa865d3fa",
+     "content": "Yusuf Ishikawa noted on February 15, 2025 that the plants on his balcony had been watered at last",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d205b97f-9da0-4287-81e3-b7fdef5fc4b8",
+     "content": "Yusuf Ishikawa's brother from the old flat works at Fennick & Dale Opticians, and Yusuf reminded Nadia of this on February 9, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0039",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d37366ed-629c-48a8-92fa-d8db25bb282f",
+     "content": "Yusuf Ishikawa made a soup out of odds and ends from the fridge on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0043",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "d7388531-8655-4bec-97b6-913dff1fe69c",
+     "content": "Yusuf Ishikawa noted on February 16, 2025 that Linus became a member of the Old Mill Folk Choir that day",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0049",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "df0325f9-30d9-41ec-8191-eaba0f7e0a29",
+     "content": "Yusuf Ishikawa's friend works at Brackenridge Seeds, and Yusuf reminded Wes of this on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0040",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "dfdf6a91-0b19-4cc3-bb9b-ea3737341149",
+     "content": "Yusuf Ishikawa bumped into Maren on February 9, 2025, and noted that Maren works at Pellucid Labs",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0071",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e31400ae-398c-4a0e-988f-84ffb634c088",
+     "content": "Yusuf Ishikawa told Wes Varga on February 8, 2025 that the doctor had diagnosed a bad chest cold the day before (February 7, 2025), and that he would be on rest and fluids for a while",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0016",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e45f906c-717b-43f3-8f43-c0b6bc6ea158",
+     "content": "Yusuf Ishikawa's godfather lives in Bristol these days, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0067",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e4c0b792-e185-4b0c-a8af-b233325d4b17",
+     "content": "Yusuf Ishikawa's landlady mostly works from home, as noted on February 12, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0075",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "e6709e7c-4563-4bd0-9411-2646b8ea98e2",
+     "content": "Yusuf Ishikawa's birthday falls on 17 November, and he noted on February 5, 2025 that he must organise something for it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0008",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ea1998f5-b611-43a8-b279-574e4d9e44a8",
+     "content": "Yusuf Ishikawa noted on February 14, 2025 that music was coming through the wall from next door again",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0029",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "eb1cbb84-4349-4305-947a-0d2ffd485dd7",
+     "content": "Yusuf Ishikawa noted on February 15, 2025 that his friend Jonah became a new member of the Beacon Hill Choir that morning",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0047",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "eb69bd5d-1809-4e8d-9e37-35fa95d5e612",
+     "content": "Yusuf Ishikawa's morning train crawled in late on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0041",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ebd9fb95-875e-49cd-b200-e5eb05d87cb0",
+     "content": "Yusuf Ishikawa noted on February 7, 2025 that the sky was grey from dawn to dusk",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0015",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ec0757fe-61bb-4ca7-af98-e45e4122f864",
+     "content": "Yusuf Ishikawa noted on February 9, 2025 that Bianca has a flat in Bristol",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0072",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ec8ae4fc-4b4a-4437-9d76-ec1d333b197b",
+     "content": "Yusuf Ishikawa moved into a flat at 60 Orchard Close, Valencia on February 10, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0021",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "ed00d01b-964c-4c14-954b-dc0e383e1618",
+     "content": "Yusuf Ishikawa's brother Linus, from the old flat, came over for dinner on February 4, 2025 and stayed until midnight",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0033",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "efabb3bb-ef9e-4b39-a590-25005dbad401",
+     "content": "Yusuf Ishikawa was seen at Riverside Medical Practice on February 7, 2025 and diagnosed with a bad chest cold; treatment was rest and fluids, and he was advised to return if there is no improvement",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0014",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f08e521c-372a-4c54-9a0b-fd4921165072",
+     "content": "Lena Abbott sent Yusuf Ishikawa a message on the morning of February 5, 2025 saying it was another full day and that an operations manager's work is never done, signing off with 'Love, as ever.'",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0009",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f1779e08-c2d8-4c67-b272-56820adae88b",
+     "content": "Gideon Abbott sent Yusuf Ishikawa a message on the afternoon of February 12, 2025, saying he was in Gothenburg and all was good, and signed off with 'Love, as ever.'",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0025",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f45824b2-3638-4475-8842-48a3c8cbab0e",
+     "content": "Yusuf Ishikawa told Wes Varga in a message on February 16, 2025 that the telescope made it to Lena and that Lena is thrilled with it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0060",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f7bffa0c-c630-4f65-8cec-4a1bbe4d8176",
+     "content": "Yusuf Ishikawa accepted a job offer from Silverfern Energy for an editor role, starting February 5, 2025, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0002",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f86d23b2-7283-4047-83aa-9cb23875cf06",
+     "content": "Yusuf Ishikawa's aunt lives in Rotterdam now, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0063",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "f95e8f6d-9ad5-4c44-9f20-89bbcd8ddf64",
+     "content": "Yusuf Ishikawa told Linus Delacroix in a message on February 7, 2025 that Wes's rowing machine had still not arrived",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0054",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fa6a4bf0-91b5-4f9c-a087-cc28e1b54b68",
+     "content": "Linus showed Yusuf Ishikawa the pottery wheel on February 7, 2025; it had arrived at some point, after Yusuf's February 5, 2025 note that Linus was still without it",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0055",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fac36d9a-d5b3-4d0d-9ece-435b6e74e57c",
+     "content": "In the novel Yusuf Ishikawa is reading, the character Lena is still without the telescope, as noted on February 3, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0050",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    },
+    {
+     "id": "fec71871-6dcd-46be-925c-fb06771fbcb8",
+     "content": "Yusuf Ishikawa's neighbour is employed by Thistledown Instruments, and Yusuf's best friend Gideon had no idea about this, as noted on February 7, 2025",
+     "valid_from": null,
+     "valid_to": null,
+     "current": null,
+     "confidence": null,
+     "citations": [
+      {
+       "deposit_id": "D0038",
+       "excerpt": ""
+      }
+     ],
+     "subject": "",
+     "event_earliest": null,
+     "event_latest": null
+    }
+   ],
+   "aliases_unavailable": "system does not expose identity links"
+  }
+ ],
+ "write_unavailable": null,
+ "answers": {
+  "Q001": {
+   "text": "1170 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q002": {
+   "text": "Turin",
+   "abstained": null,
+   "citations": []
+  },
+  "Q003": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q004": {
+   "text": "Montreal",
+   "abstained": null,
+   "citations": []
+  },
+  "Q005": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q006": {
+   "text": "Operations manager",
+   "abstained": null,
+   "citations": []
+  },
+  "Q007": {
+   "text": "Logistics coordinator",
+   "abstained": null,
+   "citations": []
+  },
+  "Q008": {
+   "text": "Operations manager",
+   "abstained": null,
+   "citations": []
+  },
+  "Q009": {
+   "text": "Shellfish",
+   "abstained": null,
+   "citations": []
+  },
+  "Q010": {
+   "text": "17 November",
+   "abstained": null,
+   "citations": []
+  },
+  "Q011": {
+   "text": "Ghent",
+   "abstained": null,
+   "citations": []
+  },
+  "Q012": {
+   "text": "Silverfern Energy",
+   "abstained": null,
+   "citations": []
+  },
+  "Q013": {
+   "text": "German",
+   "abstained": null,
+   "citations": []
+  },
+  "Q014": {
+   "text": "1170 EUR",
+   "abstained": null,
+   "citations": []
+  },
+  "Q015": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q016": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q017": {
+   "text": "10 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q018": {
+   "text": "5 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q019": {
+   "text": "7 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q020": {
+   "text": "5 days",
+   "abstained": null,
+   "citations": []
+  },
+  "Q021": {
+   "text": "5 days",
+   "abstained": null,
+   "citations": []
+  },
+  "Q022": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q023": {
+   "text": "Gothenburg",
+   "abstained": null,
+   "citations": []
+  },
+  "Q024": {
+   "text": "Valencia",
+   "abstained": null,
+   "citations": []
+  },
+  "Q025": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q026": {
+   "text": "Porto",
+   "abstained": null,
+   "citations": []
+  },
+  "Q027": {
+   "text": "48:01",
+   "abstained": null,
+   "citations": []
+  },
+  "Q028": {
+   "text": "1:03:54",
+   "abstained": null,
+   "citations": []
+  },
+  "Q029": {
+   "text": "Riverside park",
+   "abstained": null,
+   "citations": []
+  },
+  "Q030": {
+   "text": "Riverside park",
+   "abstained": null,
+   "citations": []
+  },
+  "Q031": {
+   "text": "Gideon (Gideon Abbott), Yusuf's best friend",
+   "abstained": null,
+   "citations": []
+  },
+  "Q032": {
+   "text": "Lena",
+   "abstained": null,
+   "citations": []
+  },
+  "Q033": {
+   "text": "Dalia (Yusuf's brother from the running club)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q034": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q035": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q036": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q037": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q038": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q039": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q040": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q041": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q042": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q043": {
+   "text": "Old Mill Folk Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q044": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q045": {
+   "text": "Beacon Hill Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q046": {
+   "text": "Juniper Street Youth Choir",
+   "abstained": null,
+   "citations": []
+  },
+  "Q047": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q048": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q049": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q050": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q051": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q052": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q053": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q054": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q055": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q056": {
+   "text": "No information",
+   "abstained": null,
+   "citations": []
+  },
+  "Q057": {
+   "text": "Between 9 and 16 February 2025. Dalia showed him the piano on 16 February 2025.",
+   "abstained": null,
+   "citations": []
+  },
+  "Q058": {
+   "text": "16 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q059": {
+   "text": "7 February 2025 (when Linus showed it to Yusuf)",
+   "abstained": null,
+   "citations": []
+  },
+  "Q060": {
+   "text": "Between 7 and 9 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q061": {
+   "text": "Between 7 and 15 February 2025",
+   "abstained": null,
+   "citations": []
+  },
+  "Q062": {
+   "text": "Between 7 and 13 February 2025",
+   "abstained": null,
+   "citations": []
+  }
+ }
+}

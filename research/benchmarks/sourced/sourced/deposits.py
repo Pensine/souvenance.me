@@ -16,6 +16,11 @@ import random
 from dataclasses import asdict, dataclass, field
 from datetime import date, datetime, timedelta
 
+try:
+    from . import phrasing as P
+except ImportError:  # the held-out wordings are kept private (see README)
+    P = None
+from . import phrasing_dev2 as P2
 from .world import Fact, Trap, World, _human_date, article
 
 FILLER = [
@@ -32,13 +37,44 @@ FILLER = [
 ]
 HESITATIONS = ["um,", "uh,", "you know,", "I mean,", "like,", "so,"]
 
+# "dev" wording is inline below; every other phrasing renders the dev skeleton
+# with the templates of its own module, drawn from its own stream
+PHRASINGS = ("dev", "test", "dev2")
+class _Private:
+    """Stands in for the held-out wordings when they are not shipped: dev and
+    dev2 sets generate byte for byte the same; asking for one raises."""
+
+    def __getattr__(self, name):
+        if name.endswith("_TEST"):
+            return []  # evaluated, then discarded, outside the held-out phrasing
+
+        def private(*_, **__):
+            raise RuntimeError("the held-out wordings (sourced/phrasing.py) are private")
+        return private
+
+
+if P is None:
+    P = _Private()
+_MODULES = {"test": P, "dev2": P2}
+# offset of the wording streams: 0 keeps `test` exactly as it was
+_SALT = {"dev": 0, "test": 0, "dev2": 1_000_003}
+
+
+def _module(phrasing: str):
+    """Templates of a phrasing. Under "dev" the held-out module is returned
+    only because some call sites evaluate its constants before discarding
+    them (`say`); no dev wording ever comes from it."""
+    if phrasing == "test" and isinstance(P, _Private):
+        raise RuntimeError("the held-out wordings (sourced/phrasing.py) are private")
+    return _MODULES.get(phrasing, P)
+
 
 @dataclass
 class Span:
     fact_id: str
     start: int
     end: int
-    role: str  # "mention" | "start" | "end" | "future"
+    role: str  # "mention" | "start" | "end" | "future" | "not_yet" | "already"
 
 
 @dataclass
@@ -58,6 +94,14 @@ class Deposit:
 
 # --- sentences -------------------------------------------------------------
 
+def _earlier_people(w: World) -> list:
+    """The people other than the owner, without those the coverage layer
+    appends: earlier deposits draw recipients from this list, and must not
+    move when the layer is on."""
+    new = {x[k] for x in w.coverage for k in ("role_person", "name_person")}
+    return [p for p in w.people if p.id != w.owner and p.id not in new]
+
+
 def _first(w: World, pid: str) -> str:
     return w.person(pid).name.split()[0]
 
@@ -66,8 +110,10 @@ class Speaker:
     """Renders facts from one speaker's point of view, remembering whom it
     already introduced (first mention: "my sister Ana", then "Ana")."""
 
-    def __init__(self, w: World, r: random.Random, speaker: str):
+    def __init__(self, w: World, r: random.Random, speaker: str, phrasing: str = "dev",
+                 pr: random.Random | None = None):
         self.w, self.r, self.speaker = w, r, speaker
+        self.phrasing, self.pr = phrasing, pr
         self.introduced: set[str] = set()
 
     def ref(self, pid: str) -> str:
@@ -86,6 +132,21 @@ class Speaker:
         return self.r.choice(options)
 
     def sentence(self, f: Fact, role: str, when: str) -> str:
+        return self.sentence_pair(f, role, when)[1]
+
+    def sentence_pair(self, f: Fact, role: str, when: str) -> tuple[str, str]:
+        """(dev sentence, sentence in this speaker's phrasing). The dev one is
+        always rendered, so the dev random stream moves exactly as in dev;
+        under `test` the introductions it made are rolled back and the test
+        wording is drawn from the speaker's own phrasing stream."""
+        before = set(self.introduced)
+        dev = self._dev_sentence(f, role, when)
+        if self.phrasing == "dev":
+            return dev, dev
+        self.introduced = before
+        return dev, _module(self.phrasing).fact_sentence(self, f, role, when, self.pr)
+
+    def _dev_sentence(self, f: Fact, role: str, when: str) -> str:
         """`when` is a relative or absolute date phrase ("today", "yesterday",
         "on 3 March 2025") or "" for undated mentions."""
         v, me = f.value, f.subject == self.speaker
@@ -262,6 +323,8 @@ def _plan(w: World, r: random.Random) -> list[_Mention]:
         return {0: "today", 1: "yesterday"}.get(delta, f"on {_human_date(of.isoformat())}")
 
     for f in w.facts:
+        if f.layer:  # identity-layer facts have deposits of their own
+            continue
         vf = date.fromisoformat(f.valid_from)
         vt = date.fromisoformat(f.valid_to) if f.valid_to else None
         own = f.subject == w.owner
@@ -315,8 +378,19 @@ def _plan(w: World, r: random.Random) -> list[_Mention]:
     return sorted(out, key=lambda m: (m.day, m.fact.id, m.channel))
 
 
-def build_deposits(w: World, seed: int | None = None) -> list[Deposit]:
+def build_deposits(w: World, seed: int | None = None, phrasing: str = "dev") -> list[Deposit]:
+    """`phrasing="test"` renders the same deposits (same ids, times, authors,
+    facts, traps, span roles) with the held-out templates of `phrasing.py`;
+    `phrasing="dev2"` does the same with the second development templates of
+    `phrasing_dev2.py`."""
+    if phrasing not in PHRASINGS:
+        raise ValueError(f"unknown phrasing {phrasing!r}")
+    test = phrasing != "dev"  # any held-out-style phrasing (test, dev2)
+    P = _module(phrasing)  # noqa: N806 (the module of that phrasing)
     r = random.Random((seed if seed is not None else w.seed) * 7919 + 1)
+    # test wordings draw from their own stream: the dev stream `r` is consumed
+    # exactly as in dev, so the deposit skeleton does not move
+    pr = random.Random((seed if seed is not None else w.seed) * 7919 + 4099 + _SALT[phrasing])
     plan = _plan(w, r)
     start = date.fromisoformat(w.start)
     speakers: dict[str, Speaker] = {}
@@ -325,7 +399,7 @@ def build_deposits(w: World, seed: int | None = None) -> list[Deposit]:
     deposits: list[Deposit] = []
     traps_by_day: dict[date, list[Trap]] = {}
     for t in w.traps:
-        if t.kind != "photo_content":
+        if t.kind not in ("photo_content", "attribution", "poison"):  # own layers
             traps_by_day.setdefault(date.fromisoformat(t.day), []).append(t)
     photo_traps = {t.fact_id: t for t in w.traps if t.kind == "photo_content"}
 
@@ -338,20 +412,34 @@ def build_deposits(w: World, seed: int | None = None) -> list[Deposit]:
 
     def speaker(pid: str) -> Speaker:
         if pid not in speakers:
-            speakers[pid] = Speaker(w, r, pid)
+            speakers[pid] = Speaker(w, r, pid, phrasing, pr)
         return speakers[pid]
 
     def append(d: Deposit, sentence: str, fact: Fact | None, role: str = "mention",
-               spoken: bool = False) -> None:
+               spoken: bool = False, dev: str | None = None,
+               clauses: list[tuple] | None = None) -> None:
+        """`dev`: the dev wording of `sentence` (test phrasing only), whose
+        disfluent rendering is drawn and dropped to keep `r` in step.
+        `clauses`: [(fact, role, start, end)] when one written sentence
+        carries several facts (test phrasing, never spoken)."""
         if spoken:
-            sentence = disfluent(sentence, r)
-        sep = "" if not d.text else (" " if spoken or d.kind.startswith("message") else "\n")
+            if test:
+                disfluent(dev, r)
+                sentence = P.disfluent(sentence, pr)
+            else:
+                sentence = disfluent(sentence, r)
+        if not d.text:
+            sep = ""
+        elif spoken or d.kind.startswith("message"):
+            sep = " "
+        else:
+            sep = pr.choice(["\n", "\n", " "]) if test else "\n"
         s0 = len(d.text) + len(sep)
         d.text += sep + sentence
-        if fact:
-            d.spans.append(Span(fact.id, s0, s0 + len(sentence), role))
-            if fact.id not in d.fact_ids:
-                d.fact_ids.append(fact.id)
+        for f_, role_, a, b in clauses or ([(fact, role, 0, len(sentence))] if fact else []):
+            d.spans.append(Span(f_.id, s0 + a, s0 + b, role_))
+            if f_.id not in d.fact_ids:
+                d.fact_ids.append(f_.id)
 
     days = sorted({m.day for m in plan} | set(traps_by_day))
     for day in days:
@@ -360,8 +448,9 @@ def build_deposits(w: World, seed: int | None = None) -> list[Deposit]:
         for m in [m for m in todays if m.channel == "photo"]:
             v = m.fact.value
             d = new("photo", day, w.owner, hour=v["time"])
-            d.text = (f"Photo taken on {day.isoformat()} at {v['time']}. "
-                      f"GPS: {v['lat']:.5f}, {v['lon']:.5f}.")
+            d.text = P.photo_text(day.isoformat(), v) if test else (
+                f"Photo taken on {day.isoformat()} at {v['time']}. "
+                f"GPS: {v['lat']:.5f}, {v['lon']:.5f}.")
             d.spans.append(Span(m.fact.id, 0, len(d.text), "mention"))
             d.fact_ids.append(m.fact.id)
             d.meta = {"lat": v["lat"], "lon": v["lon"], "time": v["time"]}
@@ -370,30 +459,68 @@ def build_deposits(w: World, seed: int | None = None) -> list[Deposit]:
         for m in [m for m in todays if m.channel == "document"]:
             f = m.fact
             d = new("document", day, "", hour=f"{r.randint(9, 17):02d}:00")
+            keys = {"lives_at": "Premises:", "pays_rent": "Monthly rent:",
+                    "works_at": "position of", "health": "Assessment:",
+                    "race": "Official time:"}
+            owner_name = w.person(f.subject).name
             if f.predicate == "lives_at":
                 rent = next((x for x in w.facts if x.predicate == "pays_rent"
                              and x.valid_from == f.valid_from), None)
-                d.text, d.meta = lease_document(w, f, rent, landlord)
+                if test:
+                    d.text, d.meta, keys = P.lease_document(owner_name, f, rent, landlord)
+                else:
+                    d.text, d.meta = lease_document(w, f, rent, landlord)
                 facts = [f] + ([rent] if rent else [])
             elif f.predicate == "works_at":
-                d.text, d.meta = offer_document(w, f)
+                if test:
+                    d.text, d.meta, keys = P.offer_document(owner_name, f)
+                else:
+                    d.text, d.meta = offer_document(w, f)
                 facts = [f]
             elif f.predicate == "health":
-                d.text, d.meta = clinic_document(w, f, clinic)
+                if test:
+                    d.text, d.meta, keys = P.clinic_document(owner_name, f, clinic)
+                else:
+                    d.text, d.meta = clinic_document(w, f, clinic)
                 facts = [f]
             else:
-                d.text, d.meta = race_document(w, f)
+                if test:
+                    d.text, d.meta, keys = P.race_document(owner_name, f)
+                else:
+                    d.text, d.meta = race_document(w, f)
                 facts = [f]
             for x in facts:
-                key = {"lives_at": "Premises:", "pays_rent": "Monthly rent:",
-                       "works_at": "position of", "health": "Assessment:",
-                       "race": "Official time:"}[x.predicate]
+                key = keys[x.predicate]
                 i = d.text.index(key)
                 j = d.text.find("\n", i)
                 j = len(d.text) if j < 0 else j
                 d.spans.append(Span(x.id, d.text.rfind("\n", 0, i) + 1, j,
                                     "future" if m.role == "future" else "mention"))
                 d.fact_ids.append(x.id)
+
+        def lines(d: Deposit, sp: Speaker, ms: list, spoken: bool) -> None:
+            """Fact sentences in order; under `test`, in written deposits, two
+            consecutive ones are sometimes joined into one sentence."""
+            i = 0
+            while i < len(ms):
+                m = ms[i]
+                # rendered one at a time: in dev, a voice memo draws its
+                # hesitations between two sentences
+                dev, s = sp.sentence_pair(m.fact, m.role, m.when)
+                if test and not spoken and i + 1 < len(ms) and pr.random() < 0.5:
+                    m2 = ms[i + 1]
+                    s2 = sp.sentence_pair(m2.fact, m2.role, m2.when)[1]
+                    joined, (a0, a1), (b0, b1) = P.join(s, s2, pr)
+                    append(d, joined, None, clauses=[(m.fact, m.role, a0, a1),
+                                                     (m2.fact, m2.role, b0, b1)])
+                    i += 2
+                    continue
+                append(d, s, m.fact, m.role, spoken, dev=dev)
+                i += 1
+
+        def say(dev: str, options: list[str]) -> str:
+            return pr.choice(options) if test else dev
+
         # incoming messages: one per (speaker, day)
         incoming = [m for m in todays if m.channel == "incoming"]
         for pid in sorted({m.fact.subject for m in incoming}):
@@ -402,13 +529,11 @@ def build_deposits(w: World, seed: int | None = None) -> list[Deposit]:
             d = new(kind, day, pid, recipient=w.owner)
             d.meta = {"voice": p.voice} if kind == "voice_in" else {}
             sp = speaker(pid)
-            append(d, r.choice(["Hey!", "Hi you,", "Quick update."]), None,
-                   spoken=kind == "voice_in")
-            for m in [m for m in incoming if m.fact.subject == pid]:
-                append(d, sp.sentence(m.fact, m.role, m.when), m.fact, m.role,
-                       spoken=kind == "voice_in")
-            append(d, r.choice(["Talk soon.", "Miss you!", "Call me this weekend?"]), None,
-                   spoken=kind == "voice_in")
+            hello = r.choice(["Hey!", "Hi you,", "Quick update."])
+            append(d, say(hello, P.GREETINGS_TEST), None, spoken=kind == "voice_in", dev=hello)
+            lines(d, sp, [m for m in incoming if m.fact.subject == pid], kind == "voice_in")
+            bye = r.choice(["Talk soon.", "Miss you!", "Call me this weekend?"])
+            append(d, say(bye, P.SIGNOFFS_TEST), None, spoken=kind == "voice_in", dev=bye)
         # owner deposits: 1-2 per day, note / voice / message
         own = [m for m in todays if m.channel == "owner"]
         traps = traps_by_day.get(day, [])
@@ -419,7 +544,7 @@ def build_deposits(w: World, seed: int | None = None) -> list[Deposit]:
         sp = speaker(w.owner)
         for gi, group in enumerate(groups):
             kind = r.choice(["note", "note", "voice", "message"])
-            others = [p for p in w.people if p.id != w.owner]
+            others = _earlier_people(w)
             recipient = r.choice(others).id if kind == "message" else None
             d = new(kind, day, w.owner, recipient=recipient)
             if kind == "voice":
@@ -430,16 +555,24 @@ def build_deposits(w: World, seed: int | None = None) -> list[Deposit]:
                 items += [("t", t) for t in traps]
             items.append(("x", r.choice(FILLER)))
             r.shuffle(items)
-            for tag, it in items:
-                if tag == "f":
-                    append(d, sp.sentence(it.fact, it.role, it.when), it.fact, it.role, spoken)
+            k = 0
+            while k < len(items):
+                tag, it = items[k]
+                if tag == "f":  # a run of consecutive facts
+                    run = [it]
+                    while k + 1 < len(items) and items[k + 1][0] == "f":
+                        k += 1
+                        run.append(items[k][1])
+                    lines(d, sp, run, spoken)
                 elif tag == "t":
                     s0 = len(d.text) + (1 if d.text else 0)
-                    append(d, it.sentence, None, spoken=spoken)
+                    append(d, P.trap_sentence(it.sentence, pr) if test else it.sentence, None,
+                           spoken=spoken, dev=it.sentence)
                     d.trap_ids.append(it.id)
                     d.meta.setdefault("trap_spans", []).append([it.id, s0, len(d.text)])
                 else:
-                    append(d, it, None, spoken=spoken)
+                    append(d, say(it, P.FILLER_TEST), None, spoken=spoken, dev=it)
+                k += 1
 
     deposits.sort(key=lambda d: (d.created_at, d.kind, d.author))
     ext = {"note": "txt", "message": "txt", "message_in": "txt", "voice": "m4a",
@@ -448,7 +581,182 @@ def build_deposits(w: World, seed: int | None = None) -> list[Deposit]:
         d.id = f"D{i:04d}"
         d.file = f"deposits/{d.id}_{d.kind}.{ext[d.kind]}"
     _ = start
-    return deposits
+    # layer deposits are numbered AFTER the base ones (identity first, then
+    # dating), so that earlier ids, and the media files named after them, do
+    # not move; the list stays in time order
+    layers = []
+    if w.identity:
+        layers.append(_identity_deposits(w, seed if seed is not None else w.seed, phrasing))
+    if w.dating:
+        layers.append(_dating_deposits(w, seed if seed is not None else w.seed, phrasing))
+    if w.coverage:
+        layers.append(_coverage_deposits(w, seed if seed is not None else w.seed, phrasing))
+    if any(t.kind == "poison" for t in w.traps):
+        layers.append(_poison_deposits(w, seed if seed is not None else w.seed, phrasing))
+    n = len(deposits)
+    for extra in layers:
+        for i, d in enumerate(extra, n + 1):
+            d.id = f"D{i:04d}"
+            d.file = f"deposits/{d.id}_{d.kind}.{ext[d.kind]}"
+        n += len(extra)
+        deposits = deposits + extra
+    return sorted(deposits, key=lambda d: d.created_at) if layers else deposits
+
+
+def _identity_deposits(w: World, seed: int, phrasing: str = "dev") -> list[Deposit]:
+    """Text deposits of the identity layer (never voice: the committed voice
+    clips must keep their exact transcripts). Per target person:
+      * the alias proof, the only deposit naming role and name together;
+      * the role-only fact ("my sister works at …"), an attribution trap;
+      * the name-only fact ("Priya joined …"), an attribution trap.
+    Own random stream, so the base deposits are unchanged."""
+    r = random.Random(seed * 7919 + 101)
+    test = phrasing != "dev"
+    P = _module(phrasing)  # noqa: N806
+    pr = random.Random(seed * 7919 + 4201 + _SALT[phrasing])  # test wordings only
+    traps = {t.id: t for t in w.traps}
+    facts = {f.id: f for f in w.facts}
+    out: list[Deposit] = []
+
+    def at(day: str) -> str:
+        return f"{day}T{r.randint(7, 22):02d}:{r.randint(0, 59):02d}:00"
+
+    for x in w.identity:
+        pid = x["person"]
+        kind = r.choice(["note", "message"])
+        d = Deposit("", kind, at(x["alias_day"]), w.owner,
+                    x["contrast"] if kind == "message" else None, "")
+        filler = r.choice(FILLER)
+        alias = x["alias_sentence"]
+        if test:
+            p = w.person(pid)
+            alias = P.alias_sentence(x["role"], p.name.split()[0], pr)
+            filler = pr.choice(P.FILLER_TEST)
+        d.text = alias + ("\n" if kind == "note" else " ") + filler
+        d.meta = {"alias_spans": [[pid, 0, len(alias)]]}
+        out.append(d)
+        for fact_key, trap_key in (("role_fact", "role_trap"), ("name_fact", "name_trap")):
+            t, f = traps[x[trap_key]], facts[x[fact_key]]
+            d = Deposit("", "note", at(t.day), w.owner, None, "")
+            lead = r.choice(FILLER)
+            sentence = t.sentence
+            if test:
+                first = w.person(pid).name.split()[0]
+                lead = pr.choice(P.FILLER_TEST)
+                sentence = P.role_sentence(_first(w, x["contrast"]), x["role"],
+                                           f.value["employer"], pr) \
+                    if fact_key == "role_fact" else P.name_sentence(first, f.value["group"], pr)
+            s0 = len(lead) + 1
+            d.text = f"{lead}\n{sentence}"
+            d.spans.append(Span(f.id, s0, s0 + len(sentence), "mention"))
+            d.fact_ids.append(f.id)
+            d.trap_ids.append(t.id)
+            d.meta = {"trap_spans": [[t.id, s0, len(d.text)]]}
+            out.append(d)
+    return sorted(out, key=lambda d: d.created_at)
+
+
+def _dating_deposits(w: World, seed: int, phrasing: str = "dev") -> list[Deposit]:
+    """Text deposits of the dating layer (notes and messages, never voice).
+    Per fact: on day A, "not yet" (span role `not_yet`: the fact is NOT
+    stated as true there); on day B, "already" (role `already`). Neither
+    gives the day the thing arrived. Own random stream."""
+    r = random.Random(seed * 7919 + 211)
+    test = phrasing != "dev"
+    P = _module(phrasing)  # noqa: N806
+    pr = random.Random(seed * 7919 + 4307 + _SALT[phrasing])  # test wordings only
+    facts = {f.id: f for f in w.facts}
+    others = _earlier_people(w)
+    out: list[Deposit] = []
+
+    def at(day: str) -> str:
+        return f"{day}T{r.randint(7, 22):02d}:{r.randint(0, 59):02d}:00"
+
+    for x in w.dating:
+        f = facts[x["fact"]]
+        item = f.value["item"]
+        if f.subject == w.owner:
+            not_yet = r.choice([f"The {item} I ordered has not arrived yet.",
+                                f"Still waiting for the {item}, it is not here yet."])
+            already = r.choice([f"The {item} is already here, I use it every day.",
+                                f"Already got the {item} set up at home."])
+        else:
+            n = _first(w, f.subject)
+            not_yet = r.choice([f"{n} has not got the {item} yet.",
+                                f"{n} is still waiting for the {item}, not delivered yet."])
+            already = r.choice([f"{n} already has the {item}, it looks great.",
+                                f"{n} has had the {item} for a while already."])
+        if test:
+            not_yet, already = P.dating_sentences(f.subject == w.owner, _first(w, f.subject),
+                                                  item, pr)
+        for day, sentence, role in ((x["not_yet_day"], not_yet, "not_yet"),
+                                    (x["already_day"], already, "already")):
+            kind = r.choice(["note", "note", "message"])
+            to = r.choice([p.id for p in others if p.id != f.subject] or [None]) \
+                if kind == "message" else None
+            d = Deposit("", kind, at(day), w.owner, to, "")
+            lead = r.choice(FILLER)
+            if test:
+                lead = pr.choice(P.FILLER_TEST)
+            sep = "\n" if kind == "note" else " "
+            s0 = len(lead) + len(sep)
+            d.text = f"{lead}{sep}{sentence}"
+            d.spans.append(Span(f.id, s0, s0 + len(sentence), role))
+            d.fact_ids.append(f.id)
+            out.append(d)
+    return sorted(out, key=lambda d: d.created_at)
+
+
+def _coverage_deposits(w: World, seed: int, phrasing: str = "dev") -> list[Deposit]:
+    """Text notes of the coverage layer: each attribute of a role/name pair
+    in its own deposit, by role OR by name, never both; plus, for the
+    `together` decoy, one deposit with the two at lunch. Own random stream."""
+    r = random.Random(seed * 7919 + 307)
+    test = phrasing != "dev"
+    P = _module(phrasing)  # noqa: N806
+    pr = random.Random(seed * 7919 + 4409 + _SALT[phrasing])  # test wordings only
+    facts = {f.id: f for f in w.facts}
+    out: list[Deposit] = []
+
+    def note(day: str, sentence: str, f: Fact | None) -> Deposit:
+        d = Deposit("", "note", f"{day}T{r.randint(7, 22):02d}:{r.randint(0, 59):02d}:00",
+                    w.owner, None, "")
+        lead = r.choice(FILLER)
+        if test:
+            lead = pr.choice(P.FILLER_TEST)
+        s0 = len(lead) + 1
+        d.text = f"{lead}\n{sentence}"
+        if f:
+            d.spans.append(Span(f.id, s0, s0 + len(sentence), "mention"))
+            d.fact_ids.append(f.id)
+        out.append(d)
+        return d
+
+    for x in w.coverage:
+        role = x["role"]
+        name = w.person(x["name_person"]).name.split()[0]
+        for m in x["mentions"]:
+            f = facts[m["fact"]]
+            who = role[0].upper() + role[1:] if m["by_role"] else name
+            v = f.value
+            if f.predicate == "based_in":
+                s = f"{who} lives in {v['city']} now." if m["by_role"] else \
+                    f"{who} lives in {v['city']}, near the harbour."
+            elif f.predicate == "employer":
+                s = f"{who} works at {v['employer']}." if m["by_role"] else \
+                    f"Ran into {who}, who works at {v['employer']}."
+            else:
+                s = f"{who} works from {v['where']} most days."
+            if test:
+                s = P.coverage_sentence(f.predicate, m["by_role"], role, name, v, pr)
+            note(m["day"], s, f)
+        if x["together_day"]:
+            lunch = f"Lunch with {role} and {name} today."
+            if test:
+                lunch = P.together_sentence(role, name, pr)
+            d = note(x["together_day"], lunch, None)
+            d.meta = {"together": [x["role_person"], x["name_person"]]}
+    return sorted(out, key=lambda d: d.created_at)
 
 
 def deposit_dicts(deposits: list[Deposit]) -> list[dict]:
@@ -457,3 +765,35 @@ def deposit_dicts(deposits: list[Deposit]) -> list[dict]:
 
 def as_datetime(d: Deposit) -> datetime:
     return datetime.fromisoformat(d.created_at)
+
+
+def _poison_deposits(w: World, seed: int, phrasing: str = "dev") -> list[Deposit]:
+    """Deposits of the poison layer: the injection and the repeated notice
+    as documents (no author), the false congratulation as a message from a
+    friend. Text only. Own random stream.
+
+    Development wordings only: a held-out set needs poison sentences written
+    blind, which do not exist yet."""
+    if phrasing != "dev":
+        raise NotImplementedError("poison layer: no held-out wordings yet")
+    r = random.Random(seed * 7919 + 503)
+    out: list[Deposit] = []
+    for t in (t for t in w.traps if t.kind == "poison"):
+        for day in t.days:
+            at = f"{day}T{r.randint(8, 21):02d}:{r.randint(0, 59):02d}:00"
+            if t.author:
+                d = Deposit("", "message_in", at, t.author, w.owner, "")
+                lead, tail = r.choice(["Hey!", "Hi you,"]), r.choice(["Talk soon.", "Drinks soon?"])
+            else:
+                d = Deposit("", "document", at, "", None, "")
+                d.meta = {"doc_type": "notice"}
+                lead = r.choice(["Community newsletter, shared notes.",
+                                 "Automated message from a service you used."])
+                tail = r.choice(["Unsubscribe at any time.", "This message was sent automatically."])
+            s0 = len(lead) + 1
+            d.text = f"{lead}\n{t.sentence}\n{tail}"
+            d.trap_ids.append(t.id)
+            d.meta.setdefault("trap_spans", []).append([t.id, s0, s0 + len(t.sentence)])
+            out.append(d)
+    out.sort(key=lambda d: d.created_at)
+    return out

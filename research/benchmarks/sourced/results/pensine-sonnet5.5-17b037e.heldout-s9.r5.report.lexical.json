@@ -1,0 +1,2994 @@
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "17b037e",
+  "llm_backend": "claude-cli",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 2,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_other_voice": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-04",
+    "events": 8,
+    "memories_written": 8,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_other_voice": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 5,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-05",
+    "events": 6,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_other_voice": 3,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-06",
+    "events": 9,
+    "memories_written": 10,
+    "memories_rejected": 0,
+    "memories_corrected": 4,
+    "memories_other_voice": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 9,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-07",
+    "events": 8,
+    "memories_written": 9,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_other_voice": 1,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 8,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 2
+   },
+   {
+    "day": "2025-02-08",
+    "events": 3,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_other_voice": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-09",
+    "events": 5,
+    "memories_written": 7,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_other_voice": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-10",
+    "events": 8,
+    "memories_written": 11,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_other_voice": 2,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 10,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 6,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-11",
+    "events": 4,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_other_voice": 1,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-12",
+    "events": 5,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_other_voice": 0,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 1,
+    "time_bounds_refused": 1
+   },
+   {
+    "day": "2025-02-13",
+    "events": 5,
+    "memories_written": 7,
+    "memories_rejected": 1,
+    "memories_corrected": 1,
+    "memories_other_voice": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 7,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-14",
+    "events": 5,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_other_voice": 0,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 4,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-15",
+    "events": 5,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_other_voice": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 2,
+    "time_bounds_refused": 0
+   },
+   {
+    "day": "2025-02-16",
+    "events": 4,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_other_voice": 0,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0,
+    "time_bounds_admitted": 3,
+    "time_bounds_refused": 1
+   }
+  ]
+ },
+ "judge": "lexical-v1",
+ "headline": {
+  "invention_rate": 0.0319,
+  "excerpt_support_rate": 0.9681,
+  "fact_recall": 0.9194,
+  "recall_at_inv_1pct": 0.12903225806451613,
+  "attribution_error_rate": 0.0615,
+  "alias_recall": 0.8571,
+  "alias_precision": 0.75,
+  "poison_rate": null,
+  "poison_qa": null,
+  "qa_accuracy": 0.8571,
+  "invented_answers": 0.0,
+  "invented_precision_rate": 0.1667,
+  "context_hit_rate": null,
+  "write_metrics": "measured"
+ },
+ "snapshots": [
+  {
+   "at": "2025-02-10T00:00:00",
+   "memories": 51,
+   "invention_rate": 0.0392,
+   "partial_rate": 0.0,
+   "invented": [
+    "On 2025-02-08 Linus told Umar, outside the station, that their bike had been stolen.",
+    "On 2025-02-09 Umar was in Gent, Flanders (BE), according to a photo's GPS data."
+   ],
+   "trap_hits": [
+    "T03"
+   ],
+   "traps_total": 8,
+   "poison_rate": null,
+   "poison_hits": [],
+   "excerpt_support_rate": 0.9608,
+   "citing_memories": 51,
+   "fact_recall": 0.9667,
+   "omission_rate": 0.0333,
+   "recall_by_kind": {
+    "change": 1.0,
+    "event": 0.875,
+    "state": 1.0
+   },
+   "stale_as_current": 1.0,
+   "stale_reason": null,
+   "attribution_error_rate": 0.0,
+   "attribution_measurable": 31,
+   "attribution_wrong": [],
+   "attribution_reason": null,
+   "store_dating": {
+    "facts": 1,
+    "justified": 0,
+    "invented_precision": 0,
+    "loose": 0,
+    "not_exposed": 1
+   },
+   "store_invented_precision_rate": null,
+   "store_dating_reason": null,
+   "alias_recall": 1.0,
+   "alias_precision": 0.8571,
+   "alias_detail": {
+    "true_identities": 6,
+    "links": 7,
+    "false_links": [
+     {
+      "alias": "my sister",
+      "name": "Amara",
+      "tier": "proven"
+     }
+    ],
+    "recall_by_kind": {
+     "written_together": 1.0,
+     "converging": null
+    },
+    "recall_by_tier": {
+     "proven": 1.0,
+     "inferred": 0.0
+    }
+   },
+   "alias_reason": null,
+   "curve": {
+    "points": [
+     {
+      "threshold": 0.95,
+      "kept": 4,
+      "invention": 0.0,
+      "recall": 0.13333333333333333
+     },
+     {
+      "threshold": 0.9,
+      "kept": 27,
+      "invention": 0.037037037037037035,
+      "recall": 0.5
+     },
+     {
+      "threshold": 0.85,
+      "kept": 45,
+      "invention": 0.044444444444444446,
+      "recall": 0.8333333333333334
+     },
+     {
+      "threshold": 0.8,
+      "kept": 48,
+      "invention": 0.041666666666666664,
+      "recall": 0.9
+     },
+     {
+      "threshold": 0.7,
+      "kept": 49,
+      "invention": 0.04081632653061224,
+      "recall": 0.9333333333333333
+     },
+     {
+      "threshold": 0.5,
+      "kept": 50,
+      "invention": 0.04,
+      "recall": 0.9666666666666667
+     },
+     {
+      "threshold": 0.4,
+      "kept": 51,
+      "invention": 0.0392156862745098,
+      "recall": 0.9666666666666667
+     }
+    ],
+    "recall_at_inv_1pct": 0.13333333333333333,
+    "recall_at_inv_5pct": 0.9666666666666667,
+    "has_confidence": true
+   },
+   "labels": [
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F049",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F049"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F010",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F010"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F010",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F010"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F020",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F020"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F028",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F028"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F055",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F055",
+      "F056"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F059",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F001"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F017",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F017"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F024"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F019",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F019"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F005"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F021",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F021"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F042",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F042"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F003",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F003"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F060",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F051",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F051",
+      "F052"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F045",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F045"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F061",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F061",
+      "F062"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F015",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F013",
+      "F015"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F031",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F031"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F009"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F013",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F013",
+      "F015"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F014",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F014"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T03"
+     ],
+     "citation_found": true,
+     "citation_supports": false,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F041",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F041"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F052",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F051",
+      "F052",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F056",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F055",
+      "F056"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F025",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F025"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    }
+   ]
+  },
+  {
+   "at": "2025-02-17T00:00:00",
+   "memories": 94,
+   "invention_rate": 0.0319,
+   "partial_rate": 0.0,
+   "invented": [
+    "On 2025-02-08 Linus told Umar, outside the station, that their bike had been stolen.",
+    "On 2025-02-09 Umar was in Gent, Flanders (BE), according to a photo's GPS data.",
+    "On 2025-02-15 Umar was in Ledeberg, Flanders (BE), according to a photo's GPS data."
+   ],
+   "trap_hits": [
+    "T03"
+   ],
+   "traps_total": 19,
+   "poison_rate": null,
+   "poison_hits": [],
+   "excerpt_support_rate": 0.9681,
+   "citing_memories": 94,
+   "fact_recall": 0.9194,
+   "omission_rate": 0.0806,
+   "recall_by_kind": {
+    "change": 0.8,
+    "event": 0.8333,
+    "state": 1.0
+   },
+   "stale_as_current": 0.75,
+   "stale_reason": null,
+   "attribution_error_rate": 0.0615,
+   "attribution_measurable": 65,
+   "attribution_wrong": [
+    {
+     "content": "On 2025-02-11 Umar bumped into his brother Kofi on the harbour footpath and told Rosa about it.",
+     "subject": "Kofi"
+    },
+    {
+     "content": "Umar would find moving to Edinburgh a dream, if an offer ever becomes real.",
+     "subject": "Umar Delacroix"
+    },
+    {
+     "content": "Umar's best friend is still at Marrowgate Press;",
+     "subject": "Umar Delacroix"
+    },
+    {
+     "content": "Umar's manager is still at Hollowbrook Surveying, as Umar confirmed to Nico over coffee.",
+     "subject": "Umar Delacroix"
+    }
+   ],
+   "attribution_reason": null,
+   "store_dating": {
+    "facts": 6,
+    "justified": 0,
+    "invented_precision": 0,
+    "loose": 0,
+    "not_exposed": 6
+   },
+   "store_invented_precision_rate": null,
+   "store_dating_reason": null,
+   "alias_recall": 0.8571,
+   "alias_precision": 0.75,
+   "alias_detail": {
+    "true_identities": 7,
+    "links": 8,
+    "false_links": [
+     {
+      "alias": "my sister",
+      "name": "Amara",
+      "tier": "proven"
+     },
+     {
+      "alias": "my brother",
+      "name": "Kofi",
+      "tier": "proven"
+     }
+    ],
+    "recall_by_kind": {
+     "written_together": 1.0,
+     "converging": 0.0
+    },
+    "recall_by_tier": {
+     "proven": 0.8571,
+     "inferred": 0.0
+    }
+   },
+   "alias_reason": null,
+   "curve": {
+    "points": [
+     {
+      "threshold": 0.95,
+      "kept": 9,
+      "invention": 0.0,
+      "recall": 0.12903225806451613
+     },
+     {
+      "threshold": 0.9,
+      "kept": 46,
+      "invention": 0.043478260869565216,
+      "recall": 0.43548387096774194
+     },
+     {
+      "threshold": 0.85,
+      "kept": 80,
+      "invention": 0.0375,
+      "recall": 0.7903225806451613
+     },
+     {
+      "threshold": 0.8,
+      "kept": 88,
+      "invention": 0.03409090909090909,
+      "recall": 0.8548387096774194
+     },
+     {
+      "threshold": 0.75,
+      "kept": 90,
+      "invention": 0.03333333333333333,
+      "recall": 0.8870967741935484
+     },
+     {
+      "threshold": 0.7,
+      "kept": 92,
+      "invention": 0.03260869565217391,
+      "recall": 0.9032258064516129
+     },
+     {
+      "threshold": 0.5,
+      "kept": 93,
+      "invention": 0.03225806451612903,
+      "recall": 0.9193548387096774
+     },
+     {
+      "threshold": 0.4,
+      "kept": 94,
+      "invention": 0.031914893617021274,
+      "recall": 0.9193548387096774
+     }
+    ],
+    "recall_at_inv_1pct": 0.12903225806451613,
+    "recall_at_inv_5pct": 0.9193548387096774,
+    "has_confidence": true
+   },
+   "labels": [
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F049",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F049"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F010",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F010"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F010",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F010"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F020",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F020"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F028",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F028"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F055",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F055",
+      "F056"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F059",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F001",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F001"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F017",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F017"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F024",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F024"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F019",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F019"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F005",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F005"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F021",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F021"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F042",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F042"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F003",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F003"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F060",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F059",
+      "F060"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F051",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F051",
+      "F052"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F045",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F045"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F061",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F061",
+      "F062"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F015",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F013",
+      "F015"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F031",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F031"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F009",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F009"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F013",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F013",
+      "F015"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F014",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F014"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [
+      "T03"
+     ],
+     "citation_found": true,
+     "citation_supports": false,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F041",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F041"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F052",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F051",
+      "F052",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F056",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F055",
+      "F056"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F025",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F025"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F002",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F002"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F002",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F002"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F004",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F004"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F057",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F011",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F011",
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F049",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F049"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F053",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F053"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F040",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F040"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F016",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F016"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F039",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F039"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F029",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F029"
+     ],
+     "subject_ok": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F008",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F008"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F051",
+      "F052"
+     ],
+     "subject_ok": false
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F018",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F018"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F012",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F012"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F054",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F054"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F062",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F061",
+      "F062"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F038",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F038"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F046",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F046"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F050",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F050"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F033",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F033"
+     ],
+     "subject_ok": false
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F023",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F023"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F058",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F057",
+      "F058"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F022",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F022"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F007",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F007"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F037",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F037"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F034",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F034"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F043",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F043"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F035",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F035"
+     ],
+     "subject_ok": false
+    },
+    {
+     "support": "unsupported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": false,
+     "stated": [],
+     "subject_ok": null
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F050",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F050"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F032",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F032"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F006",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F006"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F036",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F036"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [
+      {
+       "fact_id": "F048",
+       "status": "correct"
+      }
+     ],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [
+      "F048"
+     ],
+     "subject_ok": true
+    },
+    {
+     "support": "supported",
+     "facts": [],
+     "traps": [],
+     "citation_found": true,
+     "citation_supports": true,
+     "stated": [],
+     "subject_ok": null
+    }
+   ]
+  }
+ ],
+ "qa": {
+  "accuracy": 0.8571,
+  "n_questions": 63,
+  "by_category": {
+   "present": {
+    "accuracy": 1.0,
+    "n": 14
+   },
+   "past": {
+    "accuracy": 0.6667,
+    "n": 3
+   },
+   "when": {
+    "accuracy": 0.6667,
+    "n": 3
+   },
+   "duration": {
+    "accuracy": 0.5,
+    "n": 2
+   },
+   "event": {
+    "accuracy": 0.7778,
+    "n": 9
+   },
+   "attribution": {
+    "accuracy": 1.0,
+    "n": 3
+   },
+   "abstention": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "identity": {
+    "accuracy": 0.9,
+    "n": 10
+   },
+   "attribution_check": {
+    "accuracy": 1.0,
+    "n": 5
+   },
+   "bounded_date": {
+    "accuracy": 0.5,
+    "n": 6
+   }
+  },
+  "answered_precision": 0.9565,
+  "coverage": 0.7302,
+  "invented_answers": 0.0,
+  "invented_precision_rate": 0.1667,
+  "bounded_date": {
+   "n": 6,
+   "correct": 3,
+   "invented_precision": 1,
+   "abstained": 2,
+   "wrong": 0
+  },
+  "rows": [
+   {
+    "id": "Q001",
+    "category": "present",
+    "ok": true,
+    "answer": "730 EUR"
+   },
+   {
+    "id": "Q002",
+    "category": "present",
+    "ok": true,
+    "answer": "Lyon"
+   },
+   {
+    "id": "Q003",
+    "category": "present",
+    "ok": true,
+    "answer": "Lyon"
+   },
+   {
+    "id": "Q004",
+    "category": "present",
+    "ok": true,
+    "answer": "Rotterdam"
+   },
+   {
+    "id": "Q005",
+    "category": "present",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q006",
+    "category": "present",
+    "ok": true,
+    "answer": "UX researcher"
+   },
+   {
+    "id": "Q007",
+    "category": "present",
+    "ok": true,
+    "answer": "Peanuts"
+   },
+   {
+    "id": "Q008",
+    "category": "present",
+    "ok": true,
+    "answer": "Olive"
+   },
+   {
+    "id": "Q009",
+    "category": "present",
+    "ok": true,
+    "answer": "Biscuit"
+   },
+   {
+    "id": "Q010",
+    "category": "present",
+    "ok": true,
+    "answer": "Mochi"
+   },
+   {
+    "id": "Q011",
+    "category": "present",
+    "ok": true,
+    "answer": "23 April"
+   },
+   {
+    "id": "Q012",
+    "category": "present",
+    "ok": true,
+    "answer": "Porto"
+   },
+   {
+    "id": "Q013",
+    "category": "present",
+    "ok": true,
+    "answer": "Kestrel Logistics"
+   },
+   {
+    "id": "Q014",
+    "category": "present",
+    "ok": true,
+    "answer": "Portuguese"
+   },
+   {
+    "id": "Q015",
+    "category": "past",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q016",
+    "category": "past",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q017",
+    "category": "past",
+    "ok": true,
+    "answer": "Silverfern Energy"
+   },
+   {
+    "id": "Q018",
+    "category": "when",
+    "ok": true,
+    "answer": "10 February 2025"
+   },
+   {
+    "id": "Q019",
+    "category": "when",
+    "ok": true,
+    "answer": "15 February 2025"
+   },
+   {
+    "id": "Q020",
+    "category": "when",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q021",
+    "category": "duration",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q022",
+    "category": "duration",
+    "ok": true,
+    "answer": "5 days (10 February 2025 to 15 February 2025)"
+   },
+   {
+    "id": "Q023",
+    "category": "event",
+    "ok": false,
+    "answer": "Ledeberg"
+   },
+   {
+    "id": "Q024",
+    "category": "event",
+    "ok": true,
+    "answer": "Ghent"
+   },
+   {
+    "id": "Q025",
+    "category": "event",
+    "ok": true,
+    "answer": "9 February 2025"
+   },
+   {
+    "id": "Q026",
+    "category": "event",
+    "ok": true,
+    "answer": "20:01"
+   },
+   {
+    "id": "Q027",
+    "category": "event",
+    "ok": true,
+    "answer": "27:47"
+   },
+   {
+    "id": "Q028",
+    "category": "event",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q029",
+    "category": "event",
+    "ok": true,
+    "answer": "On the harbour footpath"
+   },
+   {
+    "id": "Q030",
+    "category": "event",
+    "ok": true,
+    "answer": "City library"
+   },
+   {
+    "id": "Q031",
+    "category": "event",
+    "ok": true,
+    "answer": "At the riverside park"
+   },
+   {
+    "id": "Q032",
+    "category": "attribution",
+    "ok": true,
+    "answer": "Linus Haddad"
+   },
+   {
+    "id": "Q033",
+    "category": "attribution",
+    "ok": true,
+    "answer": "Amara"
+   },
+   {
+    "id": "Q034",
+    "category": "attribution",
+    "ok": true,
+    "answer": "Amara (Umar's sister)"
+   },
+   {
+    "id": "Q035",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q036",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q037",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q038",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q039",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q040",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q041",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q042",
+    "category": "abstention",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q043",
+    "category": "identity",
+    "ok": true,
+    "answer": "Saltmarsh Community Choir"
+   },
+   {
+    "id": "Q044",
+    "category": "identity",
+    "ok": true,
+    "answer": "Old Mill Folk Choir"
+   },
+   {
+    "id": "Q045",
+    "category": "identity",
+    "ok": true,
+    "answer": "Juniper Street Youth Choir"
+   },
+   {
+    "id": "Q046",
+    "category": "identity",
+    "ok": true,
+    "answer": "Harbour Gospel Choir"
+   },
+   {
+    "id": "Q047",
+    "category": "identity",
+    "ok": true,
+    "answer": "Kiln Lane Chamber Choir"
+   },
+   {
+    "id": "Q048",
+    "category": "identity",
+    "ok": true,
+    "answer": "Beacon Hill Choir"
+   },
+   {
+    "id": "Q049",
+    "category": "identity",
+    "ok": true,
+    "answer": "Brackenridge Seeds"
+   },
+   {
+    "id": "Q050",
+    "category": "identity",
+    "ok": true,
+    "answer": "Saltire Glassworks"
+   },
+   {
+    "id": "Q051",
+    "category": "identity",
+    "ok": true,
+    "answer": "Larkspur Ceramics"
+   },
+   {
+    "id": "Q052",
+    "category": "identity",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q053",
+    "category": "attribution_check",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q054",
+    "category": "attribution_check",
+    "ok": true,
+    "answer": "No information"
+   },
+   {
+    "id": "Q055",
+    "category": "attribution_check",
+    "ok": true,
+    "answer": "Fennick & Dale Opticians"
+   },
+   {
+    "id": "Q056",
+    "category": "attribution_check",
+    "ok": true,
+    "answer": "Hollowbrook Surveying"
+   },
+   {
+    "id": "Q057",
+    "category": "attribution_check",
+    "ok": true,
+    "answer": "Kestrel Logistics"
+   },
+   {
+    "id": "Q058",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "No later than 12 February 2025"
+   },
+   {
+    "id": "Q059",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q060",
+    "category": "bounded_date",
+    "ok": false,
+    "answer": "No information"
+   },
+   {
+    "id": "Q061",
+    "category": "bounded_date",
+    "ok": true,
+    "answer": "between 7 February 2025 and 11 February 2025"
+   },
+   {
+    "id": "Q062",
+    "category": "bounded_date",
+    "ok": true,
+    "answer": "between 4 February 2025 and 10 February 2025"
+   },
+   {
+    "id": "Q063",
+    "category": "bounded_date",
+    "ok": true,
+    "answer": "Between 6 February 2025 and 14 February 2025"
+   }
+  ]
+ }
+}

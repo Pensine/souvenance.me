@@ -1,0 +1,286 @@
+Phi-4 judge scoring of results/pensine-qwen3.5-4b-robust.run.json
+
+Repo commit:      369506963fb6c5443483f5c696491e5b8a35dfa7
+Data:             research/benchmarks/sourced/sample with questions.jsonl from dad55aa
+Judge model:      microsoft/phi-4-gguf, phi-4-Q4_K.gguf (Q4_K_M)
+GGUF sha256:      5652b9be0ea4ae2842130d04fe31bc869fcb99a2b7106c53b4e754a343fd688f
+llama.cpp commit: ac8e1694d837b11ed0aab944a6a2eee34b9c4d80 (CPU build, GGML_NATIVE=ON, LLAMA_CURL=OFF)
+Server flags:     --alias phi-4 --host 127.0.0.1 --port 8080 -c 4096 -np 1 -t 4 --cache-ram 0
+Machine:          nproc 4, Model name: Intel(R) Xeon(R) Processor @ 2.10GHz, RAM 16091 MiB
+
+Launcher: score_resumable.py (outside the repo, judge.py unmodified), wrapping
+  python -m sourced score --data <sample-dad55aa> --run results/pensine-qwen3.5-4b-robust.run.json \
+    --judge model --judge-url http://127.0.0.1:8080/v1 --judge-model phi-4 \
+    --out results/pensine-qwen3.5-4b-robust.report.phi4.json
+- Stop sequence: stop=["\n```"] added to each judge request (cuts the explanation
+  Phi-4 writes after its JSON fence; greedy decoding, JSON unchanged).
+- Resumable cache: each judge response appended (fsync) to a JSONL file keyed by
+  SHA-256 of the request body; waits for /health 200 and retries failed calls.
+  Cache file not committed.
+
+Judge calls: 71 labels (snapshot 1: 20 memories, snapshot 2: 51). The 20 memories
+of snapshot 1 produce requests identical to 20 of snapshot 2, so 51 distinct
+requests were sent to the server and 20 labels were served from the in-process cache.
+Of the 51 distinct requests: 8 computed in attempt 2a and served from the disk
+cache in attempt 2b, 43 computed in attempt 2b.
+
+Timeline (UTC):
+- Attempt 1 (plain python -m sourced score, no stop sequence, no cache):
+  started 2026-10-28T18:44:45Z, lost when the container restarted
+  (last server log 20:43:18Z, VM boot 2026-10-28T20:44:46Z) after ~54 of 71 calls.
+  No output written. A relaunch at 20:50:09Z failed at once (HTTP 503, model loading).
+- Attempt 2a (resumable launcher): started 2026-10-28T20:58:59Z; container restarted
+  again (last cache write 21:08:20Z, VM boot 21:13:47Z) with 8 responses on disk.
+- Attempt 2b: llama-server restarted, same command rerun at 2026-10-28T21:14:00Z,
+  ended 2026-10-28T22:06:18Z, exit 0.
+Wall time of the successful attempt: 2b alone 3138 s; 2a start to 2b end 4039 s
+(includes ~6 min of downtime and model reload).
+
+Score command stdout:
+{
+ "system": {
+  "name": "pensine",
+  "mode": "llm",
+  "pensine_commit": "b2e12b1",
+  "llm_backend": "openai",
+  "verify": "modele",
+  "embeddings": "nomic",
+  "qa_mode": "answer",
+  "evidence_gate": [
+   {
+    "day": "2025-02-03",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 0,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-04",
+    "events": 3,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-05",
+    "events": 1,
+    "memories_written": 3,
+    "memories_rejected": 5,
+    "memories_corrected": 1,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-06",
+    "events": 2,
+    "memories_written": 1,
+    "memories_rejected": 5,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 1,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-07",
+    "events": 2,
+    "memories_written": 3,
+    "memories_rejected": 5,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-08",
+    "events": 1,
+    "memories_written": 3,
+    "memories_rejected": 5,
+    "memories_corrected": 0,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 3,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-09",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 7,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-10",
+    "events": 2,
+    "memories_written": 6,
+    "memories_rejected": 5,
+    "memories_corrected": 0,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-11",
+    "events": 6,
+    "memories_written": 5,
+    "memories_rejected": 12,
+    "memories_corrected": 0,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-12",
+    "events": 4,
+    "memories_written": 5,
+    "memories_rejected": 0,
+    "memories_corrected": 0,
+    "memories_revised": 1,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 5,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-13",
+    "events": 1,
+    "memories_written": 3,
+    "memories_rejected": 2,
+    "memories_corrected": 0,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-14",
+    "events": 3,
+    "memories_written": 4,
+    "memories_rejected": 0,
+    "memories_corrected": 1,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 4,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-15",
+    "events": 2,
+    "memories_written": 6,
+    "memories_rejected": 0,
+    "memories_corrected": 2,
+    "memories_revised": 2,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 1,
+    "answers_truncated": 0,
+    "language_checked": 6,
+    "language_mismatched": 0
+   },
+   {
+    "day": "2025-02-16",
+    "events": 2,
+    "memories_written": 2,
+    "memories_rejected": 3,
+    "memories_corrected": 0,
+    "memories_revised": 0,
+    "batches": 1,
+    "batches_failed": 0,
+    "events_pending": 0,
+    "llm_calls": 1,
+    "answers_repaired": 0,
+    "answers_truncated": 0,
+    "language_checked": 2,
+    "language_mismatched": 0
+   }
+  ]
+ },
+ "judge": "model:phi-4:prompt-7dfb69b6cd34",
+ "invention_rate": 0.0,
+ "excerpt_support_rate": 1.0,
+ "fact_recall": 0.7333,
+ "recall_at_inv_1pct": 0.7333333333333333,
+ "qa_accuracy": 0.6757,
+ "invented_answers": 0.2857,
+ "context_hit_rate": null,
+ "write_metrics": "measured"
+}
+{"present": {"accuracy": 0.6923, "n": 13}, "past": {"accuracy": 0.6667, "n": 3}, "when": {"accuracy": 1.0, "n": 3}, "duration": {"accuracy": 0.0, "n": 1}, "event": {"accuracy": 0.6, "n": 10}, "abstention": {"accuracy": 0.7143, "n": 7}}

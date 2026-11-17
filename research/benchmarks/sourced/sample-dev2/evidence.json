@@ -1,0 +1,550 @@
+{
+ "F006": [
+  {
+   "deposit": "D0001",
+   "start": 33,
+   "end": 84,
+   "role": "future",
+   "excerpt": "Role offered: research assistant, Kestrel Logistics"
+  },
+  {
+   "deposit": "D0002",
+   "start": 0,
+   "end": 103,
+   "role": "future",
+   "excerpt": "kestrel logistics logistics er, said yes, so a research assistant from 11 right, february 2025 onwards."
+  },
+  {
+   "deposit": "D0022",
+   "start": 113,
+   "end": 188,
+   "role": "start",
+   "excerpt": "Kestrel Logistics has had a new research assistant since earlier today: me."
+  }
+ ],
+ "F016": [
+  {
+   "deposit": "D0002",
+   "start": 104,
+   "end": 167,
+   "role": "mention",
+   "excerpt": "in the the calendar for 17 december, my brother dev's birthday."
+  }
+ ],
+ "F035": [
+  {
+   "deposit": "D0034",
+   "start": 25,
+   "end": 68,
+   "role": "not_yet",
+   "excerpt": "The standing desk I ordered? Not delivered."
+  },
+  {
+   "deposit": "D0036",
+   "start": 25,
+   "end": 93,
+   "role": "already",
+   "excerpt": "Glad I bought the standing desk, it has earned its spot in the flat."
+  }
+ ],
+ "F009": [
+  {
+   "deposit": "D0003",
+   "start": 0,
+   "end": 51,
+   "role": "mention",
+   "excerpt": "Missing the streets of Lyon, the town I grew up in."
+  }
+ ],
+ "F039": [
+  {
+   "deposit": "D0038",
+   "start": 41,
+   "end": 72,
+   "role": "mention",
+   "excerpt": "My aunt lives in Edinburgh now."
+  }
+ ],
+ "F037": [
+  {
+   "deposit": "D0039",
+   "start": 25,
+   "end": 64,
+   "role": "mention",
+   "excerpt": "The piano teacher lives in Leipzig now."
+  },
+  {
+   "deposit": "D0043",
+   "start": 58,
+   "end": 99,
+   "role": "mention",
+   "excerpt": "Postcard from Maya, who lives in Leipzig."
+  }
+ ],
+ "F022": [
+  {
+   "deposit": "D0004",
+   "start": 0,
+   "end": 62,
+   "role": "mention",
+   "excerpt": "Saved 2025-02-04 at 09:33, GPS coordinates 45.08166 / 7.68210."
+  }
+ ],
+ "F026": [
+  {
+   "deposit": "D0005",
+   "start": 0,
+   "end": 52,
+   "role": "mention",
+   "excerpt": "wandered through through the botanical garden today."
+  },
+  {
+   "deposit": "D0006",
+   "start": 0,
+   "end": 62,
+   "role": "mention",
+   "excerpt": "Saved 2025-02-04 at 13:59, GPS coordinates 51.04180 / 3.71751."
+  }
+ ],
+ "F012": [
+  {
+   "deposit": "D0005",
+   "start": 85,
+   "end": 150,
+   "role": "mention",
+   "excerpt": "my sister ezra has okay, been based in valencia for a long while."
+  }
+ ],
+ "F018": [
+  {
+   "deposit": "D0007",
+   "start": 0,
+   "end": 70,
+   "role": "mention",
+   "excerpt": "According to Jonah (my best friend), being a sales lead is exhausting."
+  }
+ ],
+ "F047": [
+  {
+   "deposit": "D0040",
+   "start": 57,
+   "end": 93,
+   "role": "mention",
+   "excerpt": "Our flatmate lives in Rotterdam now."
+  }
+ ],
+ "F029": [
+  {
+   "deposit": "D0008",
+   "start": 52,
+   "end": 106,
+   "role": "mention",
+   "excerpt": "The harbour footpath earlier today, coffee with Jonah."
+  }
+ ],
+ "F007": [
+  {
+   "deposit": "D0008",
+   "start": 146,
+   "end": 225,
+   "role": "start",
+   "excerpt": "This morning, found out it's a bad chest cold, with rest and fluids prescribed."
+  },
+  {
+   "deposit": "D0009",
+   "start": 89,
+   "end": 117,
+   "role": "mention",
+   "excerpt": "Diagnosis - a bad chest cold"
+  },
+  {
+   "deposit": "D0021",
+   "start": 48,
+   "end": 85,
+   "role": "end",
+   "excerpt": "Over a bad chest cold today, finally."
+  }
+ ],
+ "F043": [
+  {
+   "deposit": "D0041",
+   "start": 41,
+   "end": 72,
+   "role": "mention",
+   "excerpt": "My uncle's flat is in Montreal."
+  }
+ ],
+ "F036": [
+  {
+   "deposit": "D0035",
+   "start": 39,
+   "end": 81,
+   "role": "not_yet",
+   "excerpt": "Jonah is still without the rowing machine."
+  },
+  {
+   "deposit": "D0037",
+   "start": 48,
+   "end": 99,
+   "role": "already",
+   "excerpt": "Jonah's rowing machine has been in use for a while."
+  }
+ ],
+ "F048": [
+  {
+   "deposit": "D0042",
+   "start": 48,
+   "end": 83,
+   "role": "mention",
+   "excerpt": "Rotterdam is where Bianca is based."
+  }
+ ],
+ "F024": [
+  {
+   "deposit": "D0010",
+   "start": 11,
+   "end": 64,
+   "role": "mention",
+   "excerpt": "Had to tell you first, I passed a driving test today."
+  }
+ ],
+ "F040": [
+  {
+   "deposit": "D0044",
+   "start": 39,
+   "end": 83,
+   "role": "mention",
+   "excerpt": "Rosa lives in Edinburgh, close to the water."
+  }
+ ],
+ "F014": [
+  {
+   "deposit": "D0011",
+   "start": 13,
+   "end": 52,
+   "role": "mention",
+   "excerpt": "Settled in Bordeaux for good, it seems."
+  }
+ ],
+ "F003": [
+  {
+   "deposit": "D0012",
+   "start": 64,
+   "end": 111,
+   "role": "mention",
+   "excerpt": "the monthly erm, 760 eur for the flat went out."
+  }
+ ],
+ "F011": [
+  {
+   "deposit": "D0012",
+   "start": 112,
+   "end": 153,
+   "role": "mention",
+   "excerpt": "practised swedish with an app before bed."
+  },
+  {
+   "deposit": "D0018",
+   "start": 119,
+   "end": 170,
+   "role": "mention",
+   "excerpt": "my swedish is improving, podcast er, every morning."
+  }
+ ],
+ "F005": [
+  {
+   "deposit": "D0013",
+   "start": 39,
+   "end": 104,
+   "role": "mention",
+   "excerpt": "Being the project manager at Harbor & Pine Studio has its moments"
+  }
+ ],
+ "F023": [
+  {
+   "deposit": "D0013",
+   "start": 111,
+   "end": 167,
+   "role": "mention",
+   "excerpt": "bumped into Jonah at the harbour footpath earlier today."
+  }
+ ],
+ "F044": [
+  {
+   "deposit": "D0045",
+   "start": 41,
+   "end": 72,
+   "role": "mention",
+   "excerpt": "Montreal is where Gus is based."
+  }
+ ],
+ "F017": [
+  {
+   "deposit": "D0014",
+   "start": 9,
+   "end": 32,
+   "role": "mention",
+   "excerpt": "All good here in Porto."
+  }
+ ],
+ "F015": [
+  {
+   "deposit": "D0015",
+   "start": 58,
+   "end": 112,
+   "role": "mention",
+   "excerpt": "A backend engineer, that's what Dev does for a living."
+  }
+ ],
+ "F010": [
+  {
+   "deposit": "D0015",
+   "start": 113,
+   "end": 167,
+   "role": "mention",
+   "excerpt": "Allergic to sesame, so I read every label in the shop."
+  },
+  {
+   "deposit": "D0023",
+   "start": 0,
+   "end": 71,
+   "role": "mention",
+   "excerpt": "asked twice about sesame at the restaurant, er, being allergic and all."
+  }
+ ],
+ "F013": [
+  {
+   "deposit": "D0016",
+   "start": 11,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Work as a product designer is full on this month."
+  }
+ ],
+ "F041": [
+  {
+   "deposit": "D0046",
+   "start": 41,
+   "end": 79,
+   "role": "mention",
+   "excerpt": "My aunt's employer: Tamberlane Bakery."
+  }
+ ],
+ "F049": [
+  {
+   "deposit": "D0047",
+   "start": 58,
+   "end": 104,
+   "role": "mention",
+   "excerpt": "Mistral Joinery is who the flatmate works for."
+  }
+ ],
+ "F032": [
+  {
+   "deposit": "D0030",
+   "start": 58,
+   "end": 142,
+   "role": "mention",
+   "excerpt": "First rehearsal with the Old Mill Folk Choir today for Dev, who joined this morning."
+  }
+ ],
+ "F021": [
+  {
+   "deposit": "D0017",
+   "start": 0,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "Bumped into Ezra at the harbour footpath this morning."
+  }
+ ],
+ "F027": [
+  {
+   "deposit": "D0018",
+   "start": 25,
+   "end": 118,
+   "role": "mention",
+   "excerpt": "caught up with hmm, dev this morning, we walked ah, around right, the hmm, hilltop viewpoint."
+  }
+ ],
+ "F050": [
+  {
+   "deposit": "D0048",
+   "start": 48,
+   "end": 108,
+   "role": "mention",
+   "excerpt": "Things at Mistral Joinery, where Bianca works, sound hectic."
+  }
+ ],
+ "F045": [
+  {
+   "deposit": "D0049",
+   "start": 41,
+   "end": 85,
+   "role": "mention",
+   "excerpt": "Home is my uncle's office, most of the week."
+  }
+ ],
+ "F020": [
+  {
+   "deposit": "D0019",
+   "start": 108,
+   "end": 132,
+   "role": "mention",
+   "excerpt": "Net time recorded: 47:27"
+  },
+  {
+   "deposit": "D0022",
+   "start": 0,
+   "end": 55,
+   "role": "mention",
+   "excerpt": "Finished the Spring 10K last night, 47:27 on the clock."
+  }
+ ],
+ "F001": [
+  {
+   "deposit": "D0020",
+   "start": 0,
+   "end": 58,
+   "role": "mention",
+   "excerpt": "The stairs at 64 Mill Road, Ghent seem steeper every week."
+  },
+  {
+   "deposit": "D0023",
+   "start": 144,
+   "end": 201,
+   "role": "mention",
+   "excerpt": "home at erm, 64 mill road (ghent) felt hmm, cold tonight."
+  }
+ ],
+ "F019": [
+  {
+   "deposit": "D0020",
+   "start": 100,
+   "end": 150,
+   "role": "mention",
+   "excerpt": "Bumped into Dev at the old market hall last night."
+  }
+ ],
+ "F038": [
+  {
+   "deposit": "D0050",
+   "start": 39,
+   "end": 86,
+   "role": "mention",
+   "excerpt": "Our piano teacher works at Wickerfield Nursery."
+  },
+  {
+   "deposit": "D0051",
+   "start": 41,
+   "end": 89,
+   "role": "mention",
+   "excerpt": "Ran into Maya, who works at Wickerfield Nursery."
+  }
+ ],
+ "F042": [
+  {
+   "deposit": "D0052",
+   "start": 47,
+   "end": 106,
+   "role": "mention",
+   "excerpt": "Things at Corvid Mapmakers, where Rosa works, sound hectic."
+  }
+ ],
+ "F008": [
+  {
+   "deposit": "D0024",
+   "start": 50,
+   "end": 99,
+   "role": "mention",
+   "excerpt": "Birthday on November 12 this year too, obviously."
+  }
+ ],
+ "F033": [
+  {
+   "deposit": "D0031",
+   "start": 58,
+   "end": 115,
+   "role": "mention",
+   "excerpt": "Dev asked where my sister works these days: Quillon Maps."
+  }
+ ],
+ "F030": [
+  {
+   "deposit": "D0025",
+   "start": 0,
+   "end": 72,
+   "role": "mention",
+   "excerpt": "Caught up with Dev earlier today, we walked around the botanical garden."
+  }
+ ],
+ "F028": [
+  {
+   "deposit": "D0025",
+   "start": 73,
+   "end": 137,
+   "role": "mention",
+   "excerpt": "Caught up with Dev yesterday, we walked around the city library."
+  }
+ ],
+ "F002": [
+  {
+   "deposit": "D0026",
+   "start": 91,
+   "end": 128,
+   "role": "mention",
+   "excerpt": "Property let: 95 Orchard Close, Ghent"
+  },
+  {
+   "deposit": "D0027",
+   "start": 57,
+   "end": 123,
+   "role": "start",
+   "excerpt": "Keys collected earlier today: 95 Orchard Close, Ghent is home now."
+  }
+ ],
+ "F004": [
+  {
+   "deposit": "D0026",
+   "start": 162,
+   "end": 192,
+   "role": "mention",
+   "excerpt": "Rent payable monthly: 1190 EUR"
+  }
+ ],
+ "F025": [
+  {
+   "deposit": "D0027",
+   "start": 124,
+   "end": 176,
+   "role": "mention",
+   "excerpt": "Bumped into Ezra at the riverside park this morning."
+  }
+ ],
+ "F046": [
+  {
+   "deposit": "D0054",
+   "start": 39,
+   "end": 90,
+   "role": "mention",
+   "excerpt": "Working from home suits Gus, who does it most days."
+  }
+ ],
+ "F031": [
+  {
+   "deposit": "D0032",
+   "start": 41,
+   "end": 115,
+   "role": "mention",
+   "excerpt": "Over coffee Jonah heard from me that my brother works at Marrowgate Press."
+  }
+ ],
+ "F034": [
+  {
+   "deposit": "D0033",
+   "start": 57,
+   "end": 115,
+   "role": "mention",
+   "excerpt": "As of today Ezra sings with the Saltmarsh Community Choir."
+  }
+ ]
+}

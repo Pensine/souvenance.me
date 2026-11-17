@@ -1,0 +1,47 @@
+{
+ "benchmark": "SOURCED",
+ "generator_version": "0.1.0",
+ "params": {
+  "seed": 21,
+  "start": "2025-02-03",
+  "days": 14,
+  "facts": 30,
+  "changes": 4,
+  "phrasing": "dev",
+  "identities": 6,
+  "bracketed": 6
+ },
+ "counts": {
+  "facts": 62,
+  "changes": 4,
+  "people": 15,
+  "traps": 21,
+  "deposits": 78,
+  "questions": 63
+ },
+ "deposits_by_kind": {
+  "voice": 4,
+  "note": 47,
+  "message": 12,
+  "photo": 3,
+  "voice_in": 4,
+  "document": 5,
+  "message_in": 3
+ },
+ "questions_by_category": {
+  "present": 14,
+  "past": 3,
+  "when": 3,
+  "duration": 2,
+  "event": 11,
+  "attribution": 1,
+  "abstention": 8,
+  "identity": 10,
+  "attribution_check": 5,
+  "bounded_date": 6
+ },
+ "audio": "not rendered",
+ "license": "CC-BY-4.0",
+ "truth_sha256": "d12fabe24a52291f5905c53ffb6fbb085daf9f025942482145a277d0c1ea51bb",
+ "files_sha256": {}
+}

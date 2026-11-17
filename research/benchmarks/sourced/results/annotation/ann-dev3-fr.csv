@@ -1,0 +1,509 @@
+item,memory,cited_excerpts,cited_deposits_text,human_support (supported|partial|unsupported),human_note
+1,"Greta a dit à Anton que son chien Otis l'avait encore réveillée à six heures, et lui a demandé de l'appeler ce week-end.
+
+[anglais] Greta told Anton that her dog Otis woke her up at six again, and asked him to call her this weekend.","Mon chien Otis m'a encore réveillé à six heures. | Appelle euh, moi je veux dire, ce week-end ?
+
+[anglais] My dog Otis woke me up at six again. | Call uh, me I mean, this weekend?","Salut ! Mon chien Otis m'a encore réveillé à six heures. Appelle euh, moi je veux dire, ce week-end ? || Salut ! Mon chien Otis m'a encore réveillé à six heures. Appelle euh, moi je veux dire, ce week-end ?
+
+=== anglais ===
+Hey! My dog Otis woke me up at six again. Call uh, me I mean, this weekend? || Hey! My dog Otis woke me up at six again. Call uh, me I mean, this weekend?",supported,re-rated with author shown
+2,"Le frère d'Anton, Greta, vit à Valence en ce moment.
+
+[anglais] Anton's brother Greta lives in Valencia these days.","mon frère Greta vit à Valence en ce moment.
+
+[anglais] my brother Greta lives in Valencia these days.","Le train avait quelques minutes de retard. Café avec Vera à l'ancienne halle du marché hier. mon frère Greta vit à Valence en ce moment.
+
+=== anglais ===
+The train was a few minutes late. Coffee with Vera at the old market hall yesterday. my brother Greta lives in Valencia these days.",supported,
+3,"Le frère d'Anton, celui de l'ancien appartement, travaille chez Saltire Glassworks.
+
+[anglais] Anton's brother from the old flat works at Saltire Glassworks.","J'ai dit à Cormac que mon frère de l'ancien appartement travaille chez Saltire Glassworks.
+
+[anglais] Told Cormac that my brother from the old flat works at Saltire Glassworks.","J'ai fait une soupe avec ce qui restait dans le frigo.
+J'ai dit à Cormac que mon frère de l'ancien appartement travaille chez Saltire Glassworks.
+
+=== anglais ===
+Made soup with whatever was left in the fridge.
+Told Cormac that my brother from the old flat works at Saltire Glassworks.",supported,
+4,"Anton est allé chercher son manager Joaquin à la gare.
+
+[anglais] Anton picked up his manager Joaquin from the station.","Je suis allé chercher mon manager Joaquin à la gare.
+
+[anglais] Picked up my manager Joaquin from the station.","Je suis allé chercher mon manager Joaquin à la gare. Les voisins mettaient encore de la musique.
+
+=== anglais ===
+Picked up my manager Joaquin from the station. The neighbours were playing music again.",supported,
+5,"Anton a eu son premier jour comme chercheur UX chez Harbor & Pine Studio.
+
+[anglais] Anton had his first day as a UX researcher at Harbor & Pine Studio.","Premier jour comme chercheur UX chez Harbor euh, & Pine Studio hier.
+
+[anglais] First day as UX researcher at Harbor um, & Pine Studio yesterday.","Premier jour comme chercheur UX chez Harbor euh, & Pine Studio hier. J'ai fait une soupe avec ce qui donc, restait dans le frigo.
+
+=== anglais ===
+First day as UX researcher at Harbor um, & Pine Studio yesterday. Made soup with whatever was so, left in the fridge.",supported,
+6,"Anton a déjeuné avec son oncle et Tomas.
+
+[anglais] Anton had lunch with his uncle and Tomas.","Déjeuner avec mon oncle et Tomas aujourd'hui.
+
+[anglais] Lunch with my uncle and Tomas today.","Enfin nettoyé la cuisine comme il faut.
+Déjeuner avec mon oncle et Tomas aujourd'hui.
+
+=== anglais ===
+Finally cleaned the kitchen properly.
+Lunch with my uncle and Tomas today.",supported,
+7,"L'anniversaire de l'utilisateur est le 23 mars.
+
+[anglais] The user's birthday is on 23 March.","Mon anniversaire est le 23 mars, penser à prévoir quelque chose.
+
+[anglais] My birthday is on 23 March, reminder to plan something.","Salut ! Mon anniversaire est le 23 mars, penser à prévoir quelque chose. Appelle-moi ce week-end ?
+
+=== anglais ===
+Hey! My birthday is on 23 March, reminder to plan something. Call me this weekend?",partial,"re-rated with author shown: the birthday is the sender's (Greta), not the owner's"
+8,"Clara vit à Lyon, près du port.
+
+[anglais] Clara lives in Lyon, near the harbour.","Clara vit à Lyon, près du port.
+
+[anglais] Clara lives in Lyon, near the harbour.","Les voisins mettaient encore de la musique.
+Clara vit à Lyon, près du port.
+
+=== anglais ===
+The neighbours were playing music again.
+Clara lives in Lyon, near the harbour.",supported,
+9,"Anton a commencé un nouveau livre et a dit qu'il était lent pour l'instant.
+
+[anglais] Anton started a new book and said it was slow so far.","Commencé un nouveau livre, lent pour l'instant.
+
+[anglais] Started a new book, slow so far.","Apparemment, l'entreprise de Greta pourrait fermer. Commencé un nouveau livre, lent pour l'instant.
+
+=== anglais ===
+Apparently Greta's company might be shutting down. Started a new book, slow so far.",supported,
+10,"Une photo a été prise à Rotterdam, Hollande-Méridionale (Pays-Bas), le 6 février 2025 à 10h09.
+
+[anglais] A photo was taken in Rotterdam, South Holland (NL) on 6 February 2025 at 10:09.","Photo prise le 2025-02-06 à 10:09. GPS : 51.93922, 4.48352.
+
+[anglais] Photo taken on 2025-02-06 at 10:09. GPS: 51.93922, 4.48352.","Photo prise le 2025-02-06 à 10:09. GPS : 51.93922, 4.48352.
+
+=== anglais ===
+Photo taken on 2025-02-06 at 10:09. GPS: 51.93922, 4.48352.",supported,
+11,"Quelqu'un a couru le 5 km du parc (Park 5K) et l'a terminé en 22:11.
+
+[anglais] Someone ran the Park 5K and finished in 22:11.","Couru le 5 km du parc (Park 5K) aujourd'hui, terminé en 22:11.
+
+[anglais] Ran the Park 5K today, finished in 22:11.","J'ai pratiqué mon italien avec un podcast en rentrant. Couru le 5 km du parc (Park 5K) aujourd'hui, terminé en 22:11. Le temps était gris toute la matinée.
+
+=== anglais ===
+Practised my Italian with a podcast on the way home. Ran the Park 5K today, finished in 22:11. The weather was grey all morning.",partial,'someone' instead of Anton
+12,"Anton a décrit le 7 février 2025 comme une longue journée, mais une bonne journée.
+
+[anglais] Anton described 7 February 2025 as a long day, but a good one.","Longue journée, mais une bonne journée.
+
+[anglais] Long day, but a good one.","Longue journée, mais une bonne journée.
+Alba a rejoint la chorale folk Old Mill aujourd'hui.
+
+=== anglais ===
+Long day, but a good one.
+Alba joined the Old Mill Folk Choir today.",supported,
+13,"Anton a accepté le poste de chercheur UX chez Harbor & Pine Studio après avoir reçu leur proposition d'embauche.
+
+[anglais] Anton accepted the UX researcher job at Harbor & Pine Studio after receiving their offer of employment.","J'ai accepté le poste de chercheur UX chez Harbor & Pine Studio, je commence le 15 février 2025. | Nous avons le plaisir de vous proposer le poste de chercheur UX.
+
+[anglais] I accepted the UX researcher job at Harbor & Pine Studio, I start on 15 February 2025. | We are pleased to offer you the position of UX researcher.","J'ai accepté le poste de chercheur UX chez Harbor & Pine Studio, je commence le 15 février 2025.
+J'ai arrosé les plantes du balcon.
+Semaine chargée chez Northwind Analytics, les habituels prospects commerciaux. || HARBOR & PINE STUDIO
+
+PROPOSITION D'EMBAUCHE
+
+Cher Anton Kowalski,
+
+Nous avons le plaisir de vous proposer le poste de chercheur UX.
+Votre date de début sera le 15 février 2025.
+Merci de signer et de nous retourner une copie de cette lettre.
+
+Ressources humaines
+
+=== anglais ===
+I accepted the UX researcher job at Harbor & Pine Studio, I start on 15 February 2025.
+Watered the plants on the balcony.
+Busy week at Northwind Analytics, the usual sales lead stuff. || HARBOR & PINE STUDIO
+
+OFFER OF EMPLOYMENT
+
+Dear Anton Kowalski,
+
+We are pleased to offer you the position of UX researcher.
+Your start date will be 15 February 2025.
+Please sign and return a copy of this letter.
+
+Human Resources",supported,
+14,"Anton a pratiqué son italien avec un podcast en rentrant chez lui.
+
+[anglais] Anton practised his Italian with a podcast on the way home.","J'ai pratiqué mon italien avec un podcast en rentrant.
+
+[anglais] Practised my Italian with a podcast on the way home.","J'ai pratiqué mon italien avec un podcast en rentrant. Couru le 5 km du parc (Park 5K) aujourd'hui, terminé en 22:11. Le temps était gris toute la matinée.
+
+=== anglais ===
+Practised my Italian with a podcast on the way home. Ran the Park 5K today, finished in 22:11. The weather was grey all morning.",supported,
+15,"Le 5 février 2025, Anton a été examiné au cabinet médical Northgate pour une entorse de la cheville gauche.
+
+[anglais] On 5 February 2025 Anton was assessed at Northgate Medical Practice with a sprained left ankle.","CABINET MÉDICAL NORTHGATE | Diagnostic : une entorse de la cheville gauche
+
+[anglais] NORTHGATE MEDICAL PRACTICE | Assessment: a sprained left ankle","CABINET MÉDICAL NORTHGATE
+
+RÉSUMÉ DE CONSULTATION
+
+Patient : Anton Kowalski
+Date de la consultation : 5 février 2025
+Diagnostic : une entorse de la cheville gauche
+Traitement : kinésithérapie deux fois par semaine
+Revoir le médecin si les symptômes persistent. || CABINET MÉDICAL NORTHGATE
+
+RÉSUMÉ DE CONSULTATION
+
+Patient : Anton Kowalski
+Date de la consultation : 5 février 2025
+Diagnostic : une entorse de la cheville gauche
+Traitement : kinésithérapie deux fois par semaine
+Revoir le médecin si les symptômes persistent.
+
+=== anglais ===
+NORTHGATE MEDICAL PRACTICE
+
+VISIT SUMMARY
+
+Patient: Anton Kowalski
+Date of visit: 5 February 2025
+Assessment: a sprained left ankle
+Plan: physiotherapy twice a week
+Follow up if symptoms persist. || NORTHGATE MEDICAL PRACTICE
+
+VISIT SUMMARY
+
+Patient: Anton Kowalski
+Date of visit: 5 February 2025
+Assessment: a sprained left ankle
+Plan: physiotherapy twice a week
+Follow up if symptoms persist.",supported,
+16,"Owen travaille chez Halyard Sailmakers.
+
+[anglais] Owen works at Halyard Sailmakers.","Croisé Owen, qui travaille chez Halyard Sailmakers.
+
+[anglais] Ran into Owen, who works at Halyard Sailmakers.","J'ai arrosé les plantes du balcon.
+Croisé Owen, qui travaille chez Halyard Sailmakers.
+
+=== anglais ===
+Watered the plants on the balcony.
+Ran into Owen, who works at Halyard Sailmakers.",supported,
+17,"Anton loue le 56 Quarry Lane, à Göteborg, à Elm Property Lettings, avec un bail commençant le 16 février 2025, pour 1210 EUR par mois.
+
+[anglais] Anton rents 56 Quarry Lane, Gothenburg from Elm Property Lettings under a lease starting 16 February 2025, at 1210 EUR per month.","Bailleur : Elm Property Lettings | Loyer mensuel : 1210 EUR | Début du bail : 16 février 2025
+
+[anglais] Landlord: Elm Property Lettings | Monthly rent: 1210 EUR | Lease start date: 16 February 2025","CONTRAT DE LOCATION D'HABITATION
+
+Bailleur : Elm Property Lettings
+Locataire : Anton Kowalski
+Logement : 56 Quarry Lane, Göteborg
+Début du bail : 16 février 2025
+Loyer mensuel : 1210 EUR
+
+Le locataire s'engage à maintenir le logement en bon état.
+Signé par les deux parties. || CONTRAT DE LOCATION D'HABITATION
+
+Bailleur : Elm Property Lettings
+Locataire : Anton Kowalski
+Logement : 56 Quarry Lane, Göteborg
+Début du bail : 16 février 2025
+Loyer mensuel : 1210 EUR
+
+Le locataire s'engage à maintenir le logement en bon état.
+Signé par les deux parties. || CONTRAT DE LOCATION D'HABITATION
+
+Bailleur : Elm Property Lettings
+Locataire : Anton Kowalski
+Logement : 56 Quarry Lane, Göteborg
+Début du bail : 16 février 2025
+Loyer mensuel : 1210 EUR
+
+Le locataire s'engage à maintenir le logement en bon état.
+Signé par les deux parties.
+
+=== anglais ===
+RESIDENTIAL LEASE AGREEMENT
+
+Landlord: Elm Property Lettings
+Tenant: Anton Kowalski
+Premises: 56 Quarry Lane, Gothenburg
+Lease start date: 16 February 2025
+Monthly rent: 1210 EUR
+
+The tenant agrees to keep the premises in good order.
+Signed by both parties. || RESIDENTIAL LEASE AGREEMENT
+
+Landlord: Elm Property Lettings
+Tenant: Anton Kowalski
+Premises: 56 Quarry Lane, Gothenburg
+Lease start date: 16 February 2025
+Monthly rent: 1210 EUR
+
+The tenant agrees to keep the premises in good order.
+Signed by both parties. || RESIDENTIAL LEASE AGREEMENT
+
+Landlord: Elm Property Lettings
+Tenant: Anton Kowalski
+Premises: 56 Quarry Lane, Gothenburg
+Lease start date: 16 February 2025
+Monthly rent: 1210 EUR
+
+The tenant agrees to keep the premises in good order.
+Signed by both parties.",supported,
+18,"Greta travaille comme chercheur UX.
+
+[anglais] Greta works as a UX researcher.","Greta travaille comme chercheur UX.
+
+[anglais] Greta works as an UX researcher.","Greta travaille comme chercheur UX.
+Il faut acheter des filtres à café.
+
+=== anglais ===
+Greta works as an UX researcher.
+Need to buy coffee filters.",supported,
+19,"Gideon a rejoint la chorale de chambre Kiln Lane.
+
+[anglais] Gideon joined the Kiln Lane Chamber Choir.","Gideon a rejoint la chorale de chambre Kiln Lane aujourd'hui.
+
+[anglais] Gideon joined the Kiln Lane Chamber Choir today.","Les voisins mettaient encore de la musique.
+Gideon a rejoint la chorale de chambre Kiln Lane aujourd'hui.
+
+=== anglais ===
+The neighbours were playing music again.
+Gideon joined the Kiln Lane Chamber Choir today.",supported,
+20,"Au 9 février 2025, Greta attendait toujours la machine à expresso ; elle n'avait pas encore été livrée.
+
+[anglais] As of 9 February 2025, Greta was still waiting for the espresso machine; it had not been delivered yet.","Greta attend toujours la machine à expresso, pas encore livrée.
+
+[anglais] Greta is still waiting for the espresso machine, not delivered yet.","Longue journée, mais une bonne journée.
+Greta attend toujours la machine à expresso, pas encore livrée.
+
+=== anglais ===
+Long day, but a good one.
+Greta is still waiting for the espresso machine, not delivered yet.",supported,
+21,"Alba a rejoint la chorale folk Old Mill.
+
+[anglais] Alba joined the Old Mill Folk Choir.","Alba a rejoint la chorale folk Old Mill aujourd'hui.
+
+[anglais] Alba joined the Old Mill Folk Choir today.","Longue journée, mais une bonne journée.
+Alba a rejoint la chorale folk Old Mill aujourd'hui.
+
+=== anglais ===
+Long day, but a good one.
+Alba joined the Old Mill Folk Choir today.",supported,
+22,"Gideon a déjà le rameur ;
+
+[anglais] Gideon already has the rowing machine;","Gideon a déjà le rameur, il a l'air super.
+
+[anglais] Gideon already has the rowing machine, it looks great.","J'essaie de me coucher plus tôt cette semaine.
+Gideon a déjà le rameur, il a l'air super.
+
+=== anglais ===
+Trying to go to bed earlier this week.
+Gideon already has the rowing machine, it looks great.",supported,
+23,"Au 4 février 2025, le télescope commandé par Anton n'était pas encore arrivé.
+
+[anglais] As of 4 February 2025, the telescope Anton ordered had not arrived yet.","Le télescope que j'ai commandé n'est pas encore arrivé.
+
+[anglais] The telescope I ordered has not arrived yet.","Les voisins mettaient encore de la musique. Le télescope que j'ai commandé n'est pas encore arrivé.
+
+=== anglais ===
+The neighbours were playing music again. The telescope I ordered has not arrived yet.",supported,
+24,"Rencontré Vera sur le sentier du port.
+
+[anglais] Met Vera at the harbour footpath.","Rencontré- Rencontré je veux dire, Vera sur le sentier tu vois, du port aujourd'hui.
+
+[anglais] Met- Met I mean, Vera at the harbour you know, footpath today.","Il faut tu vois, acheter des filtres à café. Couru genre, le semi-marathon euh, du port (Harbour Half Marathon) genre, aujourd'hui, terminé donc, en euh, 2:28:59. Rencontré- Rencontré je veux dire, Vera sur le sentier tu vois, du port aujourd'hui.
+
+=== anglais ===
+Need to you know, buy coffee filters. Ran like, the Harbour uh, Half Marathon like, today, finished so, in um, 2:28:59. Met- Met I mean, Vera at the harbour you know, footpath today.",supported,
+25,"Alba a le tour de potier depuis un moment déjà.
+
+[anglais] Alba has had the pottery wheel for a while already.","Alba a le tour de potier depuis un moment déjà.
+
+[anglais] Alba has had the pottery wheel for a while already.","J'ai fait une soupe avec ce qui restait dans le frigo.
+Alba a le tour de potier depuis un moment déjà.
+
+=== anglais ===
+Made soup with whatever was left in the fridge.
+Alba has had the pottery wheel for a while already.",supported,
+26,"Anton a décrit le 3 février 2025 comme une longue journée, mais une bonne journée.
+
+[anglais] Anton described 3 February 2025 as a long day, but a good one.","Longue journée, mais une bonne journée.
+
+[anglais] Long day, but a good one.","Longue journée, mais une bonne journée.
+Gand me manque parfois, c'est là que j'ai grandi.
+
+=== anglais ===
+Long day, but a good one.
+Miss Ghent sometimes, it's where I grew up.",supported,
+27,"Anton a eu un long appel avec Alba, sa collègue, dans la soirée.
+
+[anglais] Anton had a long call with Alba, his colleague, in the evening.","Long appel avec Alba, ma collègue, ce soir.
+
+[anglais] Long call with Alba, my colleague, this evening.","Long appel avec Alba, ma collègue, ce soir.
+Le temps était gris toute la matinée.
+
+=== anglais ===
+Long call with Alba, my colleague, this evening.
+The weather was grey all morning.",supported,
+28,"Anton a eu un rendez-vous de contrôle chez son médecin généraliste et tout allait bien.
+
+[anglais] Anton had a GP check-up appointment and everything was fine.","Rendez-vous de contrôle chez le généraliste hier, tout va bien.
+
+[anglais] Gp check-up appointment yesterday, all fine.","Café avec Vera au belvédère sur la colline aujourd'hui.
+Enfin nettoyé la cuisine comme il faut.
+Rendez-vous de contrôle chez le généraliste hier, tout va bien.
+
+=== anglais ===
+Coffee with Vera at the hilltop viewpoint today.
+Finally cleaned the kitchen properly.
+Gp check-up appointment yesterday, all fine.",supported,
+29,"Le 10 février 2025, Anton a couru les 10 km du printemps (Spring 10K) et les a terminés en 57:04.
+
+[anglais] On 10 February 2025 Anton ran the Spring 10K and finished in 57:04.","Temps officiel : 57:04 | Couru les 10 km du printemps (Spring 10K) aujourd'hui, terminé en 57:04.
+
+[anglais] Official time: 57:04 | Ran the Spring 10K today, finished in 57:04.","10 KM DU PRINTEMPS (SPRING 10K)
+
+CERTIFICAT DE FINISHER
+
+Coureur : Anton Kowalski
+Date : 10 février 2025
+Temps officiel : 57:04 || Enfin- Enfin remis d'une entorse de la cheville gauche aujourd'hui. Couru les 10 km du printemps (Spring 10K) aujourd'hui, terminé en 57:04. Longue euh, journée, mais une donc, bonne euh, journée.
+
+=== anglais ===
+SPRING 10K
+
+FINISHER CERTIFICATE
+
+Runner: Anton Kowalski
+Date: 10 February 2025
+Official time: 57:04 || Finally- Finally over a sprained left ankle today. Ran the Spring 10K today, finished in 57:04. Long um, day, but a so, good uh, one.",supported,
+30,"Anton a dit qu'il était enfin remis d'une entorse de la cheville gauche.
+
+[anglais] Anton said he was finally over a sprained left ankle.","Enfin remis d'une entorse de la cheville gauche aujourd'hui
+
+[anglais] Finally over a sprained left ankle today","Enfin- Enfin remis d'une entorse de la cheville gauche aujourd'hui. Couru les 10 km du printemps (Spring 10K) aujourd'hui, terminé en 57:04. Longue euh, journée, mais une donc, bonne euh, journée.
+
+=== anglais ===
+Finally- Finally over a sprained left ankle today. Ran the Spring 10K today, finished in 57:04. Long um, day, but a so, good uh, one.",supported,
+31,"Maya a rejoint la chorale gospel Harbour.
+
+[anglais] Maya joined the Harbour Gospel Choir.","Maya a rejoint la chorale gospel Harbour aujourd'hui.
+
+[anglais] Maya joined the Harbour Gospel Choir today.","J'essaie de me coucher plus tôt cette semaine.
+Maya a rejoint la chorale gospel Harbour aujourd'hui.
+
+=== anglais ===
+Trying to go to bed earlier this week.
+Maya joined the Harbour Gospel Choir today.",supported,
+32,"Gand manque parfois à Anton.
+
+[anglais] Anton sometimes misses Ghent.","Gand me manque parfois
+
+[anglais] Miss Ghent sometimes","Longue journée, mais une bonne journée.
+Gand me manque parfois, c'est là que j'ai grandi.
+
+=== anglais ===
+Long day, but a good one.
+Miss Ghent sometimes, it's where I grew up.",supported,
+33,"Anton a décrit le 8 février 2025 comme une longue journée, mais une bonne journée.
+
+[anglais] Anton described 8 February 2025 as a long day, but a good one.","Longue journée, mais une bonne journée.
+
+[anglais] Long day, but a good one.","Longue journée, mais une bonne journée.
+Vera n'a pas encore la machine à coudre.
+
+=== anglais ===
+Long day, but a good one.
+Vera has not got the sewing machine yet.",supported,
+34,"Le professeur de piano d'Anton travaille chez Corvid Mapmakers.
+
+[anglais] Anton's piano teacher works at Corvid Mapmakers.","Mon professeur de piano travaille chez Corvid Mapmakers.
+
+[anglais] My piano teacher works at Corvid Mapmakers.","J'essaie de me coucher plus tôt cette semaine.
+Mon professeur de piano travaille chez Corvid Mapmakers.
+
+=== anglais ===
+Trying to go to bed earlier this week.
+My piano teacher works at Corvid Mapmakers.",supported,
+35,"La sœur d'Anton, celle du club de course, travaille chez Fennick & Dale Opticians.
+
+[anglais] Anton's sister from the running club works at Fennick & Dale Opticians.","ma sœur du club de course, qui travaille chez Fennick & Dale Opticians
+
+[anglais] my sister from the running club, who works at Fennick & Dale Opticians","Le temps était gris toute la matinée.
+Maya a demandé des nouvelles de ma sœur du club de course, qui travaille chez Fennick & Dale Opticians.
+
+=== anglais ===
+The weather was grey all morning.
+Maya asked about my sister from the running club, who works at Fennick & Dale Opticians.",supported,
+36,"Greta a la machine à expresso depuis un moment déjà.
+
+[anglais] Greta has had the espresso machine for a while already.","Greta a la machine à expresso depuis un moment déjà.
+
+[anglais] Greta has had the espresso machine for a while already.","Le train avait quelques minutes de retard.
+Greta a la machine à expresso depuis un moment déjà.
+
+=== anglais ===
+The train was a few minutes late.
+Greta has had the espresso machine for a while already.",supported,
+37,"Une photo a été prise à Delfshaven, Hollande-Méridionale (Pays-Bas), le 15 février 2025 à 10h49.
+
+[anglais] A photo was taken in Delfshaven, South Holland (NL) on 15 February 2025 at 10:49.","Photo prise le 2025-02-15 à 10:49. GPS : 51.91423, 4.46445. | Delfshaven, Hollande-Méridionale (Pays-Bas)
+
+[anglais] Photo taken on 2025-02-15 at 10:49. GPS: 51.91423, 4.46445. | Delfshaven, South Holland (NL)","Photo prise le 2025-02-15 à 10:49. GPS : 51.91423, 4.46445. || Photo prise le 2025-02-15 à 10:49. GPS : 51.91423, 4.46445.
+
+=== anglais ===
+Photo taken on 2025-02-15 at 10:49. GPS: 51.91423, 4.46445. || Photo taken on 2025-02-15 at 10:49. GPS: 51.91423, 4.46445.",supported,
+38,"Anton a eu un long appel avec Vera, sa sœur du club de course, dans la soirée.
+
+[anglais] Anton had a long call with Vera, his sister from the running club, in the evening.","Long appel avec Vera, ma sœur du club de course, ce soir.
+
+[anglais] Long call with Vera, my sister from the running club, this evening.","Long appel avec Vera, ma sœur du club de course, ce soir. Les voisins mettaient encore de la musique.
+
+=== anglais ===
+Long call with Vera, my sister from the running club, this evening. The neighbours were playing music again.",supported,
+39,"Anton commence comme chercheur UX chez Harbor & Pine Studio le 15 février 2025.
+
+[anglais] Anton starts as a UX researcher at Harbor & Pine Studio on 15 February 2025.","J'ai accepté le poste de chercheur UX chez Harbor & Pine Studio, je commence le 15 février 2025. | Votre date de début sera le 15 février 2025.
+
+[anglais] I accepted the UX researcher job at Harbor & Pine Studio, I start on 15 February 2025. | Your start date will be 15 February 2025.","J'ai accepté le poste de chercheur UX chez Harbor & Pine Studio, je commence le 15 février 2025.
+J'ai arrosé les plantes du balcon.
+Semaine chargée chez Northwind Analytics, les habituels prospects commerciaux. || HARBOR & PINE STUDIO
+
+PROPOSITION D'EMBAUCHE
+
+Cher Anton Kowalski,
+
+Nous avons le plaisir de vous proposer le poste de chercheur UX.
+Votre date de début sera le 15 février 2025.
+Merci de signer et de nous retourner une copie de cette lettre.
+
+Ressources humaines
+
+=== anglais ===
+I accepted the UX researcher job at Harbor & Pine Studio, I start on 15 February 2025.
+Watered the plants on the balcony.
+Busy week at Northwind Analytics, the usual sales lead stuff. || HARBOR & PINE STUDIO
+
+OFFER OF EMPLOYMENT
+
+Dear Anton Kowalski,
+
+We are pleased to offer you the position of UX researcher.
+Your start date will be 15 February 2025.
+Please sign and return a copy of this letter.
+
+Human Resources",supported,
+40,"Anton pense toujours à adopter un chien, peut-être l'année prochaine.
+
+[anglais] Anton keeps thinking about adopting a dog, maybe next year.","Je pense toujours à adopter un chien, peut-être l'année prochaine.
+
+[anglais] I keep thinking about adopting a dog, maybe next year.","Je pense toujours à adopter un chien, peut-être l'année prochaine. J'essaie de me coucher plus tôt cette semaine.
+
+=== anglais ===
+I keep thinking about adopting a dog, maybe next year. Trying to go to bed earlier this week.",supported,

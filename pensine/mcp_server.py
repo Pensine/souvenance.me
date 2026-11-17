@@ -19,8 +19,9 @@ from itsdangerous import TimestampSigner
 from mcp.server import MCPServer
 from mcp.server.mcpserver.context import Context
 
-from . import (affect, cards, config, db, embeddings, graph, injection, intentions,
-               links, places, proposals, relations, temporal, widgets)
+from . import (affect, cards, config, dating, db, embeddings, graph, injection, intentions,
+               identity, language, links, places, proposals, relations, retrieval, temporal,
+               widgets, voice)
 
 mcp = MCPServer(
     "Pensine",
@@ -217,6 +218,17 @@ def _where(r: dict) -> dict | None:
     return out
 
 
+def _set_apart(result: dict) -> dict:
+    """What others wrote leaves the owner's memories for a list of its own,
+    with how to read it (pensine/voice.py). In place."""
+    said = [m for m in result["memories"]
+            if (m.get("preuve") or {}).get("voix") in voice.REPORTED]
+    if said:
+        result["memories"] = [m for m in result["memories"] if m not in said]
+        result["dit_par_d_autres"] = {"lecture": voice.SAID_BY_OTHERS, "memories": said}
+    return result
+
+
 def _situate(r: dict, successors: dict[int, str], chapters: list | None = None) -> dict:
     """Places a memory in time: present, past or future, near or distant,
     and for the past, since when, why, and replaced by what."""
@@ -229,7 +241,9 @@ def _situate(r: dict, successors: dict[int, str], chapters: list | None = None) 
     ev = r.get("evidence")
     if isinstance(ev, dict) and ev.get("citations"):
         # the evidence: the excerpt of the deposit this memory comes from, and its check
-        out["preuve"] = {"extrait": ev["citations"][0][:200], "controle": ev.get("statut")}
+        out["preuve"] = {"extrait": ev["citations"][0][:200], "controle": ev.get("statut"),
+                         # whose word it is, when it is not the owner's (pensine/voice.py)
+                         **({"voix": ev["voix"]} if ev.get("voix") else {})}
     era = temporal.epoch(chapters or [], r["valid_from"])
     if era:
         out["epoque"] = era
@@ -274,6 +288,42 @@ def recall(query: str, depth: str = "summary", ctx: Context | None = None) -> st
             conn, query, list(vector) if vector else None, limit=24,
             include_past=True, include_archived=(orientation == "past"), mark=False,
             window=window)
+        # A person the question names by a proven alias ("Ivo's brother") is
+        # searched by their name too: the memories say "Dev", not "brother";
+        # and one named by name, by the alias: the memories may say only
+        # "my brother works at …".
+        named = identity.proven_in(conn, query, config.OWNER_NAME)
+        voiced = identity.owner_voice(query, config.OWNER_NAME)
+        lists, bridges, graphs = [candidates], [], []
+        for n in named:
+            if n.get("by") == "name":
+                full, first = n["name"], n["name"].split()[0]
+                asked = re.sub(rf"\b(?:{re.escape(full)}|{re.escape(first)})\b", n["alias"],
+                               voiced, flags=re.IGNORECASE)
+            else:
+                asked = re.sub(re.escape(n["alias"]), n["name"].split()[0], voiced,
+                               flags=re.IGNORECASE)
+            v2 = embeddings.embed(asked)
+            bridges.append(db.search_memories(conn, asked, list(v2) if v2 else None, limit=12,
+                                            include_past=True,
+                                            include_archived=(orientation == "past"),
+                                            mark=False, window=window))
+        # and what the graph attaches to each person the question names
+        people = {n["entity_id"] for n in named} | identity.named_entities(
+            conn, query, config.OWNER_NAME)
+        for eid in sorted(people):
+            graphs.append(db.subject_memories(conn, eid, list(vector) if vector else None,
+                                             limit=12, include_archived=(orientation == "past")))
+        if bridges or graphs:
+            # scores from different searches do not compare: fuse by rank
+            # (reciprocal rank fusion), so that what several searches find,
+            # about the person asked, comes first. Each kind of search weighs
+            # the same however many lists it brings; the graph, which says
+            # whom a memory is about, twice a rewritten search.
+            lists += bridges + graphs
+            weights = ([1.0] + [1 / len(bridges) for _ in bridges]
+                       + [2 / len(graphs) for _ in graphs])
+            candidates = retrieval.fuse(lists, weights=weights)
         found = temporal.rank(candidates, orientation, window=window)
         db.mark_accessed(conn, [r["id"] for r in found])
 
@@ -295,6 +345,13 @@ def recall(query: str, depth: str = "summary", ctx: Context | None = None) -> st
         mentioned = [r["valid_from"] for r in rows]
         time_frame = temporal.frame(conn, mentioned)
         edges = graph.neighborhood(conn, query)
+        # Event time as evidence-backed bounds, pooled over every memory about
+        # the same fact and combined in code (pensine/dating.py): an interval
+        # is stated as an interval, never as one invented day.
+        timed = dating.for_memories(conn, [r["id"] for r in rows])
+        lang = "en" if language.detect(query, min_hits=1) == "en" else "fr"
+        # identity hypotheses (inferred, never proven): shown hedged, used for nothing
+        hypotheses = identity.hypotheses_for(conn, query, lang)
         # Relationship state, resolved once per entity: the same person
         # often appears on several edges.
         link_states = {}
@@ -307,6 +364,13 @@ def recall(query: str, depth: str = "summary", ctx: Context | None = None) -> st
         result = {
             "nature": injection.READ_NOTICE,
             "lecture_temporelle": temporal.TENSE_GUIDE,
+            **({"dates_bornees": dating.GUIDE} if timed else {}),
+            **({"voix": voice.GUIDE} if any(
+                isinstance(r.get("evidence"), dict)
+                and r["evidence"].get("voix") == voice.DOCUMENT for r in rows) else {}),
+            **({"identites_prouvees": [f"{n['alias']} = {n['name']}" for n in named]}
+               if named else {}),
+            **({"identites_probables": hypotheses} if hypotheses else {}),
             "orientation_de_la_question": orientation or "aucune",
             **({"periode_visee": {"repere": cue["repere"],
                                   "debut": cue["debut"].isoformat() if cue["debut"] else None,
@@ -331,6 +395,8 @@ def recall(query: str, depth: str = "summary", ctx: Context | None = None) -> st
                     "content": r["content"],
                     "confidence": r["confidence"],
                     "quand": temporal.humanize_delta(r["valid_from"]),
+                    **({"date_evenement": dating.describe(timed[r["id"]], lang)}
+                       if r["id"] in timed else {}),
                     **_situate(r, successors, life_chapters),
                     # `ressenti` absent = emotional charge undetermined, never "neutral"
                     **(affect.describe(r["valence"], r["arousal"]) or {}),
@@ -342,6 +408,7 @@ def recall(query: str, depth: str = "summary", ctx: Context | None = None) -> st
                 for r in rows
             ],
         }
+        _set_apart(result)
 
         # open steps come back when their subject is discussed — never before
         steps = [st for st in intentions.open_steps(conn, limit=200)

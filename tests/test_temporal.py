@@ -35,3 +35,23 @@ def test_annees():
 
 def test_futur_en_jours():
     assert humanize_delta(datetime(2026, 8, 10, tzinfo=timezone.utc), NOW) == "dans 6 jours"
+
+
+def test_a_state_belongs_to_every_period_it_was_true_in():
+    """Measured on dev3 (Sonnet 5.5, 3981614): "In which city did Anton live
+    on 9 February?" missed "lives in Rotterdam" (5 → 16 February), whose
+    validity started before the period."""
+    from datetime import datetime, timezone
+    from pensine import temporal
+    d = lambda day: datetime(2025, 2, day, tzinfo=timezone.utc)
+    window = (d(8), d(11))
+    lived = {"type": "semantic", "valid_from": d(5), "valid_to": d(16)}
+    assert temporal.in_window(lived, window)
+    assert not temporal.in_window({**lived, "valid_to": d(7)}, window)      # over before
+    assert not temporal.in_window({"type": "semantic", "valid_from": d(16), "valid_to": None},
+                                  window)                                   # began after
+    assert temporal.in_window({"type": "semantic", "valid_from": d(1), "valid_to": None}, window)
+    # an event is in the period only if it happened in it
+    assert not temporal.in_window({"type": "episodic", "valid_from": d(5), "valid_to": None},
+                                  window)
+    assert temporal.in_window({"type": "episodic", "valid_from": d(9), "valid_to": None}, window)

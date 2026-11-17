@@ -1,0 +1,1567 @@
+{
+ "F129": [
+  {
+   "deposit": "D0150",
+   "start": 41,
+   "end": 75,
+   "role": "mention",
+   "excerpt": "My godfather lives in Bristol now."
+  },
+  {
+   "deposit": "D0159",
+   "start": 39,
+   "end": 80,
+   "role": "mention",
+   "excerpt": "Odile lives in Bristol, near the harbour."
+  }
+ ],
+ "F030": [
+  {
+   "deposit": "D0001",
+   "start": 8,
+   "end": 66,
+   "role": "mention",
+   "excerpt": "Work is busy, being an operations manager is never boring."
+  },
+  {
+   "deposit": "D0015",
+   "start": 8,
+   "end": 66,
+   "role": "mention",
+   "excerpt": "Work is busy, being an operations manager is never boring."
+  }
+ ],
+ "F095": [
+  {
+   "deposit": "D0002",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-05 at 12:42. GPS: 39.47395, -0.36947."
+  },
+  {
+   "deposit": "D0004",
+   "start": 43,
+   "end": 80,
+   "role": "mention",
+   "excerpt": "Walked around the city library today."
+  }
+ ],
+ "F087": [
+  {
+   "deposit": "D0003",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-05 at 14:26. GPS: 44.82500, -0.59627."
+  },
+  {
+   "deposit": "D0004",
+   "start": 0,
+   "end": 42,
+   "role": "mention",
+   "excerpt": "Walked around the hilltop viewpoint today."
+  }
+ ],
+ "F014": [
+  {
+   "deposit": "D0005",
+   "start": 28,
+   "end": 89,
+   "role": "mention",
+   "excerpt": "Spent the evening on trail running, still my favourite thing."
+  }
+ ],
+ "F063": [
+  {
+   "deposit": "D0006",
+   "start": 5,
+   "end": 63,
+   "role": "mention",
+   "excerpt": "Work is so, busy, being a project manager is never boring."
+  }
+ ],
+ "F016": [
+  {
+   "deposit": "D0007",
+   "start": 0,
+   "end": 41,
+   "role": "mention",
+   "excerpt": "Quick session at Ironbark Gym after work."
+  }
+ ],
+ "F009": [
+  {
+   "deposit": "D0007",
+   "start": 42,
+   "end": 122,
+   "role": "start",
+   "excerpt": "Started sketching out a I mean, board game prototype today, still just planning."
+  }
+ ],
+ "F047": [
+  {
+   "deposit": "D0008",
+   "start": 14,
+   "end": 44,
+   "role": "mention",
+   "excerpt": "Things are good here in Porto."
+  },
+  {
+   "deposit": "D0014",
+   "start": 5,
+   "end": 43,
+   "role": "mention",
+   "excerpt": "Things- Things are good here in Porto."
+  }
+ ],
+ "F027": [
+  {
+   "deposit": "D0009",
+   "start": 10,
+   "end": 71,
+   "role": "mention",
+   "excerpt": "Work- Work is busy, being a data analyst is never um, boring."
+  }
+ ],
+ "F089": [
+  {
+   "deposit": "D0010",
+   "start": 41,
+   "end": 83,
+   "role": "mention",
+   "excerpt": "Walked around the hilltop viewpoint today."
+  },
+  {
+   "deposit": "D0013",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-07 at 19:46. GPS: 39.45565, -0.35732."
+  }
+ ],
+ "F012": [
+  {
+   "deposit": "D0011",
+   "start": 33,
+   "end": 62,
+   "role": "mention",
+   "excerpt": "Went to work by bus as usual."
+  }
+ ],
+ "F105": [
+  {
+   "deposit": "D0011",
+   "start": 63,
+   "end": 113,
+   "role": "mention",
+   "excerpt": "my colleague Cyrus started a new course yesterday."
+  }
+ ],
+ "F066": [
+  {
+   "deposit": "D0012",
+   "start": 14,
+   "end": 63,
+   "role": "mention",
+   "excerpt": "Work is busy, being a sales lead is never boring."
+  },
+  {
+   "deposit": "D0062",
+   "start": 5,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "Work is busy, being a sales lead is never boring."
+  }
+ ],
+ "F049": [
+  {
+   "deposit": "D0016",
+   "start": 0,
+   "end": 39,
+   "role": "mention",
+   "excerpt": "my sister Clara has a cat called Ziggy."
+  },
+  {
+   "deposit": "D0091",
+   "start": 38,
+   "end": 67,
+   "role": "mention",
+   "excerpt": "Clara has a cat called Ziggy."
+  }
+ ],
+ "F099": [
+  {
+   "deposit": "D0017",
+   "start": 0,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "Met my partner Hugo at the harbour footpath yesterday."
+  }
+ ],
+ "F059": [
+  {
+   "deposit": "D0017",
+   "start": 103,
+   "end": 141,
+   "role": "mention",
+   "excerpt": "my cousin Nadia has a dog called Juno."
+  }
+ ],
+ "F115": [
+  {
+   "deposit": "D0018",
+   "start": 77,
+   "end": 99,
+   "role": "mention",
+   "excerpt": "Official time: 1:10:27"
+  },
+  {
+   "deposit": "D0020",
+   "start": 66,
+   "end": 112,
+   "role": "mention",
+   "excerpt": "Ran the Spring 10K today, finished in 1:10:27."
+  }
+ ],
+ "F088": [
+  {
+   "deposit": "D0019",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-09 at 16:18. GPS: 55.93590, -3.19214."
+  },
+  {
+   "deposit": "D0020",
+   "start": 0,
+   "end": 39,
+   "role": "mention",
+   "excerpt": "Walked around the riverside park today."
+  }
+ ],
+ "F111": [
+  {
+   "deposit": "D0021",
+   "start": 38,
+   "end": 83,
+   "role": "mention",
+   "excerpt": "Coffee with Hana at the riverside park today."
+  }
+ ],
+ "F023": [
+  {
+   "deposit": "D0022",
+   "start": 10,
+   "end": 83,
+   "role": "mention",
+   "excerpt": "Work is busy, being you know, a product designer is I mean, never boring."
+  }
+ ],
+ "F020": [
+  {
+   "deposit": "D0023",
+   "start": 0,
+   "end": 53,
+   "role": "mention",
+   "excerpt": "Had to send the dish back, I'm allergic to shellfish."
+  }
+ ],
+ "F050": [
+  {
+   "deposit": "D0023",
+   "start": 93,
+   "end": 139,
+   "role": "mention",
+   "excerpt": "my brother Yusuf lives in Bordeaux these days."
+  }
+ ],
+ "F053": [
+  {
+   "deposit": "D0024",
+   "start": 8,
+   "end": 58,
+   "role": "mention",
+   "excerpt": "My I mean, dog Otis woke me like, up at six again."
+  },
+  {
+   "deposit": "D0030",
+   "start": 55,
+   "end": 91,
+   "role": "mention",
+   "excerpt": "My dog Otis woke me up at six again."
+  }
+ ],
+ "F048": [
+  {
+   "deposit": "D0025",
+   "start": 8,
+   "end": 53,
+   "role": "start",
+   "excerpt": "I moved to Gothenburg today, still unpacking."
+  }
+ ],
+ "F109": [
+  {
+   "deposit": "D0026",
+   "start": 39,
+   "end": 95,
+   "role": "mention",
+   "excerpt": "Met my neighbour Ezra at the harbour footpath yesterday."
+  }
+ ],
+ "F135": [
+  {
+   "deposit": "D0151",
+   "start": 38,
+   "end": 69,
+   "role": "mention",
+   "excerpt": "My landlady lives in Ghent now."
+  }
+ ],
+ "F024": [
+  {
+   "deposit": "D0027",
+   "start": 0,
+   "end": 33,
+   "role": "mention",
+   "excerpt": "Hana lives in Leipzig these days."
+  }
+ ],
+ "F045": [
+  {
+   "deposit": "D0028",
+   "start": 5,
+   "end": 58,
+   "role": "mention",
+   "excerpt": "Work is busy, being an UX researcher is never boring."
+  }
+ ],
+ "F113": [
+  {
+   "deposit": "D0029",
+   "start": 0,
+   "end": 57,
+   "role": "mention",
+   "excerpt": "Met my best friend Amara at the riverside park yesterday."
+  }
+ ],
+ "F052": [
+  {
+   "deposit": "D0030",
+   "start": 5,
+   "end": 54,
+   "role": "mention",
+   "excerpt": "Work is busy, being a sales lead is never boring."
+  }
+ ],
+ "F085": [
+  {
+   "deposit": "D0031",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-15 at 09:48. GPS: 55.97099, -3.20293."
+  },
+  {
+   "deposit": "D0034",
+   "start": 115,
+   "end": 156,
+   "role": "mention",
+   "excerpt": "Walked around the botanical garden today."
+  }
+ ],
+ "F017": [
+  {
+   "deposit": "D0032",
+   "start": 35,
+   "end": 73,
+   "role": "start",
+   "excerpt": "Switched to Riverside Pool Club today."
+  }
+ ],
+ "F007": [
+  {
+   "deposit": "D0033",
+   "start": 97,
+   "end": 125,
+   "role": "mention",
+   "excerpt": "Assessment: an ear infection"
+  },
+  {
+   "deposit": "D0034",
+   "start": 35,
+   "end": 114,
+   "role": "start",
+   "excerpt": "Turns out it's an ear infection today. A seven-day course of antibiotics it is."
+  },
+  {
+   "deposit": "D0039",
+   "start": 0,
+   "end": 65,
+   "role": "end",
+   "excerpt": "Fully recovered today, no more a seven-day course of antibiotics."
+  }
+ ],
+ "F001": [
+  {
+   "deposit": "D0035",
+   "start": 35,
+   "end": 104,
+   "role": "mention",
+   "excerpt": "Back home at 86 Linden Street, Valencia, the radiator is still noisy."
+  },
+  {
+   "deposit": "D0080",
+   "start": 78,
+   "end": 147,
+   "role": "mention",
+   "excerpt": "Back home at 86 Linden Street, Valencia, the radiator is still noisy."
+  }
+ ],
+ "F131": [
+  {
+   "deposit": "D0152",
+   "start": 28,
+   "end": 66,
+   "role": "mention",
+   "excerpt": "My climbing partner lives in Lyon now."
+  }
+ ],
+ "F043": [
+  {
+   "deposit": "D0036",
+   "start": 8,
+   "end": 40,
+   "role": "mention",
+   "excerpt": "Things are good here in Leipzig."
+  }
+ ],
+ "F114": [
+  {
+   "deposit": "D0037",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-20 at 13:52. GPS: 39.46294, -0.36344."
+  }
+ ],
+ "F025": [
+  {
+   "deposit": "D0038",
+   "start": 35,
+   "end": 65,
+   "role": "start",
+   "excerpt": "Hana moved to Porto yesterday."
+  }
+ ],
+ "F119": [
+  {
+   "deposit": "D0039",
+   "start": 66,
+   "end": 110,
+   "role": "mention",
+   "excerpt": "Ran the Spring 10K today, finished in 56:58."
+  },
+  {
+   "deposit": "D0040",
+   "start": 78,
+   "end": 98,
+   "role": "mention",
+   "excerpt": "Official time: 56:58"
+  }
+ ],
+ "F038": [
+  {
+   "deposit": "D0041",
+   "start": 8,
+   "end": 67,
+   "role": "mention",
+   "excerpt": "My birthday is on 19 September, reminder to plan something."
+  }
+ ],
+ "F075": [
+  {
+   "deposit": "D0042",
+   "start": 0,
+   "end": 48,
+   "role": "mention",
+   "excerpt": "Coffee with Nadia at the harbour footpath today."
+  }
+ ],
+ "F126": [
+  {
+   "deposit": "D0142",
+   "start": 34,
+   "end": 73,
+   "role": "not_yet",
+   "excerpt": "Hana has not got the upright piano yet."
+  },
+  {
+   "deposit": "D0149",
+   "start": 34,
+   "end": 85,
+   "role": "already",
+   "excerpt": "Hana has had the upright piano for a while already."
+  }
+ ],
+ "F005": [
+  {
+   "deposit": "D0043",
+   "start": 0,
+   "end": 63,
+   "role": "mention",
+   "excerpt": "Busy week at Oakline Software, the usual project manager stuff."
+  }
+ ],
+ "F108": [
+  {
+   "deposit": "D0044",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-02-23 at 10:16. GPS: 39.46076, -0.39125."
+  }
+ ],
+ "F035": [
+  {
+   "deposit": "D0045",
+   "start": 14,
+   "end": 47,
+   "role": "mention",
+   "excerpt": "Things are good here in Montreal."
+  }
+ ],
+ "F031": [
+  {
+   "deposit": "D0046",
+   "start": 0,
+   "end": 47,
+   "role": "mention",
+   "excerpt": "my colleague Mira lives in Montreal these days."
+  }
+ ],
+ "F112": [
+  {
+   "deposit": "D0046",
+   "start": 76,
+   "end": 126,
+   "role": "mention",
+   "excerpt": "Coffee with Clara at the riverside park yesterday."
+  }
+ ],
+ "F136": [
+  {
+   "deposit": "D0153",
+   "start": 41,
+   "end": 79,
+   "role": "mention",
+   "excerpt": "Maya lives in Ghent, near the harbour."
+  }
+ ],
+ "F015": [
+  {
+   "deposit": "D0047",
+   "start": 0,
+   "end": 56,
+   "role": "start",
+   "excerpt": "Signed up for bouldering today, first session was great."
+  }
+ ],
+ "F037": [
+  {
+   "deposit": "D0047",
+   "start": 100,
+   "end": 155,
+   "role": "mention",
+   "excerpt": "my cousin Bianca works as you know, a backend engineer."
+  }
+ ],
+ "F132": [
+  {
+   "deposit": "D0154",
+   "start": 39,
+   "end": 77,
+   "role": "mention",
+   "excerpt": "Felix lives in Lyon, near the harbour."
+  }
+ ],
+ "F128": [
+  {
+   "deposit": "D0143",
+   "start": 39,
+   "end": 98,
+   "role": "not_yet",
+   "excerpt": "Vera is still waiting for the telescope, not delivered yet."
+  },
+  {
+   "deposit": "D0147",
+   "start": 34,
+   "end": 81,
+   "role": "already",
+   "excerpt": "Vera has had the telescope for a while already."
+  }
+ ],
+ "F139": [
+  {
+   "deposit": "D0155",
+   "start": 35,
+   "end": 69,
+   "role": "mention",
+   "excerpt": "My flatmate lives in Bordeaux now."
+  }
+ ],
+ "F081": [
+  {
+   "deposit": "D0048",
+   "start": 0,
+   "end": 53,
+   "role": "mention",
+   "excerpt": "Coffee with Bianca at the harbour footpath yesterday."
+  }
+ ],
+ "F133": [
+  {
+   "deposit": "D0156",
+   "start": 34,
+   "end": 83,
+   "role": "mention",
+   "excerpt": "My climbing partner works at Wickerfield Nursery."
+  }
+ ],
+ "F137": [
+  {
+   "deposit": "D0157",
+   "start": 28,
+   "end": 66,
+   "role": "mention",
+   "excerpt": "My landlady works from home most days."
+  }
+ ],
+ "F083": [
+  {
+   "deposit": "D0049",
+   "start": 41,
+   "end": 92,
+   "role": "mention",
+   "excerpt": "Met my manager Elias at the botanical garden today."
+  }
+ ],
+ "F003": [
+  {
+   "deposit": "D0050",
+   "start": 34,
+   "end": 58,
+   "role": "mention",
+   "excerpt": "Paid the rent, 1160 EUR."
+  },
+  {
+   "deposit": "D0067",
+   "start": 0,
+   "end": 24,
+   "role": "mention",
+   "excerpt": "Paid the rent, 1160 EUR."
+  }
+ ],
+ "F028": [
+  {
+   "deposit": "D0051",
+   "start": 12,
+   "end": 50,
+   "role": "mention",
+   "excerpt": "Things are good like, here in Leipzig."
+  }
+ ],
+ "F096": [
+  {
+   "deposit": "D0052",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-03-03 at 11:17. GPS: 39.46143, -0.36834."
+  },
+  {
+   "deposit": "D0053",
+   "start": 41,
+   "end": 81,
+   "role": "mention",
+   "excerpt": "Walked around the old market hall today."
+  }
+ ],
+ "F061": [
+  {
+   "deposit": "D0054",
+   "start": 0,
+   "end": 47,
+   "role": "mention",
+   "excerpt": "my neighbour Wes lives in Rotterdam these days."
+  }
+ ],
+ "F122": [
+  {
+   "deposit": "D0138",
+   "start": 28,
+   "end": 76,
+   "role": "mention",
+   "excerpt": "Lena joined the Saltmarsh Community Choir today."
+  }
+ ],
+ "F036": [
+  {
+   "deposit": "D0055",
+   "start": 48,
+   "end": 80,
+   "role": "start",
+   "excerpt": "Bianca moved to Ghent yesterday."
+  }
+ ],
+ "F103": [
+  {
+   "deposit": "D0056",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-03-06 at 15:14. GPS: 39.45967, -0.38884."
+  }
+ ],
+ "F046": [
+  {
+   "deposit": "D0057",
+   "start": 8,
+   "end": 65,
+   "role": "mention",
+   "excerpt": "My birthday uh, is on 2 July, reminder to plan something."
+  },
+  {
+   "deposit": "D0108",
+   "start": 5,
+   "end": 58,
+   "role": "mention",
+   "excerpt": "My birthday is on 2 July, reminder to plan something."
+  }
+ ],
+ "F076": [
+  {
+   "deposit": "D0058",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-03-07 at 08:49. GPS: 39.48398, -0.38398."
+  },
+  {
+   "deposit": "D0059",
+   "start": 34,
+   "end": 75,
+   "role": "mention",
+   "excerpt": "Walked around the botanical garden today."
+  }
+ ],
+ "F006": [
+  {
+   "deposit": "D0060",
+   "start": 0,
+   "end": 83,
+   "role": "future",
+   "excerpt": "I accepted the research assistant job at Bluecairn Foods, I start on 15 March 2025."
+  },
+  {
+   "deposit": "D0063",
+   "start": 58,
+   "end": 121,
+   "role": "future",
+   "excerpt": "We are pleased to offer you the position of research assistant."
+  },
+  {
+   "deposit": "D0074",
+   "start": 28,
+   "end": 95,
+   "role": "start",
+   "excerpt": "Started at Bluecairn Foods today, I'm their new research assistant."
+  }
+ ],
+ "F051": [
+  {
+   "deposit": "D0061",
+   "start": 14,
+   "end": 48,
+   "role": "mention",
+   "excerpt": "Things are good here in Edinburgh."
+  }
+ ],
+ "F140": [
+  {
+   "deposit": "D0158",
+   "start": 35,
+   "end": 77,
+   "role": "mention",
+   "excerpt": "Lucas lives in Bordeaux, near the harbour."
+  }
+ ],
+ "F008": [
+  {
+   "deposit": "D0064",
+   "start": 30,
+   "end": 111,
+   "role": "start",
+   "excerpt": "Had a I mean, lovely evening so, with Hugo today, I think we're so, together now."
+  }
+ ],
+ "F127": [
+  {
+   "deposit": "D0144",
+   "start": 28,
+   "end": 91,
+   "role": "not_yet",
+   "excerpt": "Mira is still waiting for the standing desk, not delivered yet."
+  },
+  {
+   "deposit": "D0145",
+   "start": 48,
+   "end": 99,
+   "role": "already",
+   "excerpt": "Mira has had the standing desk for a while already."
+  }
+ ],
+ "F034": [
+  {
+   "deposit": "D0065",
+   "start": 5,
+   "end": 46,
+   "role": "mention",
+   "excerpt": "My dog so, Olive woke me up at six again."
+  }
+ ],
+ "F055": [
+  {
+   "deposit": "D0066",
+   "start": 16,
+   "end": 71,
+   "role": "mention",
+   "excerpt": "Work is busy, being a backend engineer is never boring."
+  },
+  {
+   "deposit": "D0076",
+   "start": 12,
+   "end": 79,
+   "role": "mention",
+   "excerpt": "Work- Work is like, busy, being a backend engineer is never boring."
+  }
+ ],
+ "F062": [
+  {
+   "deposit": "D0067",
+   "start": 25,
+   "end": 57,
+   "role": "mention",
+   "excerpt": "Elias lives in Porto these days."
+  }
+ ],
+ "F044": [
+  {
+   "deposit": "D0069",
+   "start": 8,
+   "end": 52,
+   "role": "start",
+   "excerpt": "I moved to Turin yesterday, still unpacking."
+  }
+ ],
+ "F041": [
+  {
+   "deposit": "D0070",
+   "start": 8,
+   "end": 48,
+   "role": "mention",
+   "excerpt": "My- My cat Otis woke me up at six again."
+  },
+  {
+   "deposit": "D0082",
+   "start": 12,
+   "end": 78,
+   "role": "mention",
+   "excerpt": "My- My uh, cat like, Otis like, woke me like, up at um, six again."
+  }
+ ],
+ "F078": [
+  {
+   "deposit": "D0071",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-03-13 at 18:16. GPS: 55.94601, -3.18406."
+  }
+ ],
+ "F072": [
+  {
+   "deposit": "D0072",
+   "start": 35,
+   "end": 75,
+   "role": "mention",
+   "excerpt": "Gp check-up appointment today, all fine."
+  }
+ ],
+ "F107": [
+  {
+   "deposit": "D0073",
+   "start": 34,
+   "end": 77,
+   "role": "mention",
+   "excerpt": "Met Bianca at the riverside park yesterday."
+  }
+ ],
+ "F056": [
+  {
+   "deposit": "D0073",
+   "start": 78,
+   "end": 112,
+   "role": "mention",
+   "excerpt": "Cyrus lives in Bristol these days."
+  }
+ ],
+ "F130": [
+  {
+   "deposit": "D0160",
+   "start": 38,
+   "end": 74,
+   "role": "mention",
+   "excerpt": "My godfather works at Pellucid Labs."
+  },
+  {
+   "deposit": "D0163",
+   "start": 35,
+   "end": 78,
+   "role": "mention",
+   "excerpt": "Ran into Odile, who works at Pellucid Labs."
+  }
+ ],
+ "F060": [
+  {
+   "deposit": "D0075",
+   "start": 8,
+   "end": 85,
+   "role": "mention",
+   "excerpt": "My uh, birthday you know, is uh, on 9 August, uh, reminder to plan something."
+  }
+ ],
+ "F065": [
+  {
+   "deposit": "D0077",
+   "start": 0,
+   "end": 46,
+   "role": "mention",
+   "excerpt": "my brother Lena lives in Edinburgh these days."
+  }
+ ],
+ "F090": [
+  {
+   "deposit": "D0077",
+   "start": 47,
+   "end": 84,
+   "role": "mention",
+   "excerpt": "my manager Dev adopted a puppy today."
+  }
+ ],
+ "F074": [
+  {
+   "deposit": "D0078",
+   "start": 0,
+   "end": 39,
+   "role": "mention",
+   "excerpt": "Met Lena at the harbour footpath today."
+  }
+ ],
+ "F026": [
+  {
+   "deposit": "D0078",
+   "start": 87,
+   "end": 136,
+   "role": "mention",
+   "excerpt": "Amara- Amara lives in like, Porto these uh, days."
+  }
+ ],
+ "F141": [
+  {
+   "deposit": "D0161",
+   "start": 38,
+   "end": 76,
+   "role": "mention",
+   "excerpt": "My flatmate works at Corvid Mapmakers."
+  }
+ ],
+ "F125": [
+  {
+   "deposit": "D0146",
+   "start": 48,
+   "end": 105,
+   "role": "not_yet",
+   "excerpt": "Still waiting for the rowing machine, it is not here yet."
+  },
+  {
+   "deposit": "D0148",
+   "start": 34,
+   "end": 89,
+   "role": "already",
+   "excerpt": "The rowing machine is already here, I use it every day."
+  }
+ ],
+ "F069": [
+  {
+   "deposit": "D0079",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-03-18 at 17:28. GPS: 39.48089, -0.36294."
+  }
+ ],
+ "F013": [
+  {
+   "deposit": "D0080",
+   "start": 0,
+   "end": 44,
+   "role": "start",
+   "excerpt": "From yesterday on I'm going to work by bike."
+  }
+ ],
+ "F118": [
+  {
+   "deposit": "D0081",
+   "start": 48,
+   "end": 96,
+   "role": "mention",
+   "excerpt": "Met my sister Kaia at the old market hall today."
+  }
+ ],
+ "F123": [
+  {
+   "deposit": "D0139",
+   "start": 33,
+   "end": 110,
+   "role": "mention",
+   "excerpt": "Told Cyrus that my brother from the running club works at Brackenridge Seeds."
+  }
+ ],
+ "F092": [
+  {
+   "deposit": "D0083",
+   "start": 34,
+   "end": 66,
+   "role": "mention",
+   "excerpt": "Kaia started a new course today."
+  }
+ ],
+ "F058": [
+  {
+   "deposit": "D0083",
+   "start": 67,
+   "end": 99,
+   "role": "mention",
+   "excerpt": "Nadia lives in Turin these days."
+  },
+  {
+   "deposit": "D0130",
+   "start": 0,
+   "end": 32,
+   "role": "mention",
+   "excerpt": "Nadia lives in Turin these days."
+  }
+ ],
+ "F039": [
+  {
+   "deposit": "D0084",
+   "start": 0,
+   "end": 34,
+   "role": "mention",
+   "excerpt": "Ezra lives in Montreal these days."
+  }
+ ],
+ "F029": [
+  {
+   "deposit": "D0084",
+   "start": 69,
+   "end": 113,
+   "role": "start",
+   "excerpt": "my friend Vera moved to Edinburgh yesterday."
+  }
+ ],
+ "F021": [
+  {
+   "deposit": "D0085",
+   "start": 0,
+   "end": 52,
+   "role": "mention",
+   "excerpt": "Practised my Italian with a podcast on the way home."
+  }
+ ],
+ "F084": [
+  {
+   "deposit": "D0085",
+   "start": 53,
+   "end": 93,
+   "role": "mention",
+   "excerpt": "Walked around the old market hall today."
+  },
+  {
+   "deposit": "D0086",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-03-22 at 12:10. GPS: 39.47872, -0.37697."
+  }
+ ],
+ "F098": [
+  {
+   "deposit": "D0087",
+   "start": 37,
+   "end": 81,
+   "role": "mention",
+   "excerpt": "Ran the Spring 10K today, finished in 55:26."
+  }
+ ],
+ "F057": [
+  {
+   "deposit": "D0088",
+   "start": 0,
+   "end": 55,
+   "role": "mention",
+   "excerpt": "Cyrus- Cyrus works as a you know, backend so, engineer."
+  }
+ ],
+ "F138": [
+  {
+   "deposit": "D0162",
+   "start": 39,
+   "end": 70,
+   "role": "mention",
+   "excerpt": "Maya works from home most days."
+  }
+ ],
+ "F124": [
+  {
+   "deposit": "D0140",
+   "start": 28,
+   "end": 72,
+   "role": "mention",
+   "excerpt": "Yusuf joined the Harbour Gospel Choir today."
+  }
+ ],
+ "F054": [
+  {
+   "deposit": "D0089",
+   "start": 33,
+   "end": 74,
+   "role": "mention",
+   "excerpt": "my friend Freya lives in Lyon these days."
+  },
+  {
+   "deposit": "D0109",
+   "start": 0,
+   "end": 31,
+   "role": "mention",
+   "excerpt": "Freya lives in Lyon these days."
+  }
+ ],
+ "F019": [
+  {
+   "deposit": "D0090",
+   "start": 0,
+   "end": 43,
+   "role": "mention",
+   "excerpt": "Miss Porto sometimes, it's where I grew up."
+  }
+ ],
+ "F070": [
+  {
+   "deposit": "D0092",
+   "start": 34,
+   "end": 74,
+   "role": "mention",
+   "excerpt": "Gp check-up appointment today, all fine."
+  }
+ ],
+ "F022": [
+  {
+   "deposit": "D0092",
+   "start": 75,
+   "end": 114,
+   "role": "mention",
+   "excerpt": "My dog Biscuit woke me up at six again."
+  }
+ ],
+ "F042": [
+  {
+   "deposit": "D0093",
+   "start": 14,
+   "end": 70,
+   "role": "mention",
+   "excerpt": "My birthday is on 13 August, reminder to plan something."
+  }
+ ],
+ "F064": [
+  {
+   "deposit": "D0094",
+   "start": 5,
+   "end": 42,
+   "role": "mention",
+   "excerpt": "Things are so, good here in Valencia."
+  }
+ ],
+ "F033": [
+  {
+   "deposit": "D0095",
+   "start": 48,
+   "end": 84,
+   "role": "mention",
+   "excerpt": "Mira works as an operations manager."
+  },
+  {
+   "deposit": "D0114",
+   "start": 0,
+   "end": 42,
+   "role": "mention",
+   "excerpt": "Mira works like, as an operations manager."
+  }
+ ],
+ "F073": [
+  {
+   "deposit": "D0096",
+   "start": 85,
+   "end": 107,
+   "role": "mention",
+   "excerpt": "Official time: 1:47:05"
+  },
+  {
+   "deposit": "D0097",
+   "start": 0,
+   "end": 61,
+   "role": "mention",
+   "excerpt": "Ran uh, the Harbour Half Marathon today, finished in 1:47:05."
+  }
+ ],
+ "F018": [
+  {
+   "deposit": "D0097",
+   "start": 105,
+   "end": 171,
+   "role": "mention",
+   "excerpt": "My- My birthday is um, on 27 November, reminder to plan something."
+  }
+ ],
+ "F067": [
+  {
+   "deposit": "D0098",
+   "start": 0,
+   "end": 40,
+   "role": "mention",
+   "excerpt": "Dentist appointment yesterday, all fine."
+  }
+ ],
+ "F134": [
+  {
+   "deposit": "D0164",
+   "start": 33,
+   "end": 81,
+   "role": "mention",
+   "excerpt": "Ran into Felix, who works at Halyard Sailmakers."
+  }
+ ],
+ "F117": [
+  {
+   "deposit": "D0099",
+   "start": 0,
+   "end": 59,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-04-04 at 08:44. GPS: 51.92529, 4.49070."
+  },
+  {
+   "deposit": "D0100",
+   "start": 39,
+   "end": 81,
+   "role": "mention",
+   "excerpt": "Walked around the hilltop viewpoint today."
+  }
+ ],
+ "F040": [
+  {
+   "deposit": "D0101",
+   "start": 5,
+   "end": 63,
+   "role": "mention",
+   "excerpt": "Work is busy, being an operations manager is never boring."
+  },
+  {
+   "deposit": "D0103",
+   "start": 5,
+   "end": 85,
+   "role": "mention",
+   "excerpt": "Work- Work um, is busy, being uh, an operations so, manager um, is never boring."
+  }
+ ],
+ "F010": [
+  {
+   "deposit": "D0104",
+   "start": 0,
+   "end": 53,
+   "role": "start",
+   "excerpt": "Began actually building a board game prototype today."
+  }
+ ],
+ "F002": [
+  {
+   "deposit": "D0105",
+   "start": 0,
+   "end": 63,
+   "role": "start",
+   "excerpt": "Got the keys today: the new place is 19 Mill Road, uh, Leipzig."
+  }
+ ],
+ "F142": [
+  {
+   "deposit": "D0165",
+   "start": 48,
+   "end": 94,
+   "role": "mention",
+   "excerpt": "Ran into Lucas, who works at Corvid Mapmakers."
+  }
+ ],
+ "F100": [
+  {
+   "deposit": "D0107",
+   "start": 26,
+   "end": 70,
+   "role": "mention",
+   "excerpt": "Met Elias at the harbour footpath yesterday."
+  }
+ ],
+ "F116": [
+  {
+   "deposit": "D0109",
+   "start": 66,
+   "end": 102,
+   "role": "mention",
+   "excerpt": "Haircut appointment today, all fine."
+  }
+ ],
+ "F110": [
+  {
+   "deposit": "D0110",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-04-14 at 17:24. GPS: 51.32377, 12.35520."
+  }
+ ],
+ "F004": [
+  {
+   "deposit": "D0111",
+   "start": 0,
+   "end": 24,
+   "role": "mention",
+   "excerpt": "Paid the rent, 1080 EUR."
+  }
+ ],
+ "F120": [
+  {
+   "deposit": "D0112",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-04-16 at 17:23. GPS: 51.34733, 12.36879."
+  },
+  {
+   "deposit": "D0113",
+   "start": 0,
+   "end": 39,
+   "role": "mention",
+   "excerpt": "Walked around the riverside park today."
+  }
+ ],
+ "F068": [
+  {
+   "deposit": "D0114",
+   "start": 43,
+   "end": 80,
+   "role": "mention",
+   "excerpt": "Walked around the city library today."
+  },
+  {
+   "deposit": "D0115",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-04-18 at 14:29. GPS: 51.35452, 12.35811."
+  }
+ ],
+ "F032": [
+  {
+   "deposit": "D0116",
+   "start": 12,
+   "end": 59,
+   "role": "start",
+   "excerpt": "I- I moved to Edinburgh today, still unpacking."
+  }
+ ],
+ "F101": [
+  {
+   "deposit": "D0117",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-04-20 at 08:00. GPS: 55.95527, -3.17761."
+  }
+ ],
+ "F011": [
+  {
+   "deposit": "D0118",
+   "start": 0,
+   "end": 58,
+   "role": "start",
+   "excerpt": "Launched a board game prototype today! It's out there now."
+  }
+ ],
+ "F091": [
+  {
+   "deposit": "D0120",
+   "start": 0,
+   "end": 40,
+   "role": "mention",
+   "excerpt": "Haircut appointment yesterday, all fine."
+  }
+ ],
+ "F094": [
+  {
+   "deposit": "D0121",
+   "start": 72,
+   "end": 92,
+   "role": "mention",
+   "excerpt": "Official time: 26:59"
+  },
+  {
+   "deposit": "D0122",
+   "start": 0,
+   "end": 45,
+   "role": "mention",
+   "excerpt": "Ran the Park 5K yesterday, finished in 26:59."
+  }
+ ],
+ "F093": [
+  {
+   "deposit": "D0123",
+   "start": 0,
+   "end": 41,
+   "role": "mention",
+   "excerpt": "Met Bianca at the botanical garden today."
+  }
+ ],
+ "F079": [
+  {
+   "deposit": "D0123",
+   "start": 42,
+   "end": 83,
+   "role": "mention",
+   "excerpt": "Bank adviser appointment today, all fine."
+  }
+ ],
+ "F121": [
+  {
+   "deposit": "D0141",
+   "start": 28,
+   "end": 95,
+   "role": "mention",
+   "excerpt": "Told Elias that my brother from the old flat works at Quillon Maps."
+  }
+ ],
+ "F086": [
+  {
+   "deposit": "D0124",
+   "start": 14,
+   "end": 52,
+   "role": "mention",
+   "excerpt": "Big news: I adopted a puppy yesterday!"
+  }
+ ],
+ "F071": [
+  {
+   "deposit": "D0125",
+   "start": 39,
+   "end": 80,
+   "role": "mention",
+   "excerpt": "Walked around the botanical garden today."
+  },
+  {
+   "deposit": "D0126",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-04-27 at 09:48. GPS: 51.35222, 12.39171."
+  }
+ ],
+ "F097": [
+  {
+   "deposit": "D0127",
+   "start": 0,
+   "end": 57,
+   "role": "mention",
+   "excerpt": "Ran the Harbour Half Marathon today, finished in 2:04:21."
+  },
+  {
+   "deposit": "D0128",
+   "start": 86,
+   "end": 108,
+   "role": "mention",
+   "excerpt": "Official time: 2:04:21"
+  }
+ ],
+ "F104": [
+  {
+   "deposit": "D0129",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-04-28 at 19:40. GPS: 44.81921, -0.56164."
+  }
+ ],
+ "F106": [
+  {
+   "deposit": "D0131",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-04-29 at 18:43. GPS: 51.32435, 12.37338."
+  }
+ ],
+ "F077": [
+  {
+   "deposit": "D0132",
+   "start": 0,
+   "end": 59,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-05-02 at 10:16. GPS: 51.92480, 4.48109."
+  }
+ ],
+ "F082": [
+  {
+   "deposit": "D0133",
+   "start": 0,
+   "end": 56,
+   "role": "mention",
+   "excerpt": "Coffee with Freya at the uh, harbour footpath yesterday."
+  }
+ ],
+ "F102": [
+  {
+   "deposit": "D0134",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-05-02 at 14:17. GPS: 51.35743, 12.36437."
+  }
+ ],
+ "F080": [
+  {
+   "deposit": "D0135",
+   "start": 0,
+   "end": 60,
+   "role": "mention",
+   "excerpt": "Photo taken on 2025-05-02 at 19:09. GPS: 55.96214, -3.17955."
+  }
+ ]
+}

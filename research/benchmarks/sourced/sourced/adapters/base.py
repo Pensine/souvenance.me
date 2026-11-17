@@ -27,6 +27,9 @@ class DepositView:
     recipient: str       # display name, "" if none
     text: str | None     # Track T: transcript / EXIF summary / PDF text. None on Track R
     path: str | None     # absolute path of the media file (both tracks when rendered)
+    # a photo's GPS position as the device records it (EXIF), on both
+    # tracks: device metadata, not a label; None for anything else
+    position: tuple[float, float] | None = None
 
 
 @dataclass
@@ -44,6 +47,23 @@ class MemoryRecord:
     current: bool | None = None      # does the system present it as true now? None = unknown
     confidence: float | None = None  # enables the recall/invention curve
     citations: list[Citation] = field(default_factory=list)
+    # whom the memory is about (a name or a role), if the system records it;
+    # "" = not declared, and the attribution error rate is then not measurable
+    subject: str = ""
+    # when the memory's fact happened, as the system bounds it (ISO dates,
+    # inclusive): earliest == latest is an exact date; None = no such bound
+    event_earliest: str | None = None
+    event_latest: str | None = None
+
+
+@dataclass
+class AliasLink:
+    """An identity the system holds: `alias` ("my aunt") is `name` ("Ines").
+    `tier`: "proven" (written as one designation in a deposit), "inferred"
+    (a hypothesis from converging evidence), or "" if the system does not say."""
+    alias: str
+    name: str
+    tier: str = ""
 
 
 @dataclass
@@ -70,6 +90,11 @@ class MemorySystem(ABC):
     @abstractmethod
     def memories(self) -> list[MemoryRecord]:
         """The full memory store as of now."""
+
+    def aliases(self) -> list[AliasLink]:
+        """The identities the system currently holds (alias = name). Systems
+        that do not expose them raise: alias metrics are then null."""
+        raise NotImplementedError("system does not expose identity links")
 
     @abstractmethod
     def answer(self, question: str, asked_at: date) -> Answer:
