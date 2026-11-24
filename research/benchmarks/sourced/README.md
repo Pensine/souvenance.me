@@ -35,8 +35,18 @@ one exact date the evidence does not support (SPEC §3.1, §4.3).
   dev and dev2; never on test
 - What the numbers in `results/` mean (and do not mean): [results/README.md](results/README.md)
 
-Status: **v0.1 draft**. The generator, harness, controls and Pensine adapter
-work. No system has been measured yet.
+Status: **v0.1 draft**, paused since 24 November 2026. The generator,
+harness, controls and the Pensine, Mem0 and Graphiti adapters work. Three
+systems have been measured on sealed sets (seeds 4 to 9), with Claude Sonnet
+5.5 as the memory model, reader and judge: see
+[results/README.md](results/README.md). Limits that apply to every figure
+there: all lives come from this one generator, written by the author; the
+model judge is not validated (κ 0.54 against a second reader on fresh sealed
+data, for a pre-registered 0.70; its "invented" label holds against
+code-built controls, its "partial" label does not); one model family writes,
+reads and judges; the identity-link gate has not been ablated; Letta and
+Zep's hosted service have not been run; on seeds 4 and 5 Mem0 answers as
+many questions as Pensine.
 
 ## Layout
 

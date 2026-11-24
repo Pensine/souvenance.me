@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Souvenance — a self-hosted memory engine you own"
+title: "Souvenance — a personal memory engine that checks each memory against its source, and the SOURCED integrity benchmark"
 message: "If you use this software or refer to its architecture, please cite it."
 type: software
 authors:
@@ -14,7 +14,13 @@ abstract: >-
   a bi-temporal knowledge graph are recomputable projections of that log.
   Nightly consolidation runs on a swappable AI backend, and the memory is
   served through MCP — so the model, the interface and the vendor stay
-  replaceable while the substrate persists.
+  replaceable while the substrate persists. A language model proposes each
+  memory with a verbatim excerpt; code checks the excerpt against the source
+  before writing, and applies the same proof gate to identity links. The
+  release includes SOURCED (draft v0.1), a benchmark of write-time integrity
+  on synthetic lives, with first results for three memory systems and their
+  limits: one data generator written by the author, a model judge that did
+  not pass its pre-registered validation, one model family throughout.
 keywords:
   - personal memory
   - self-hosted
@@ -22,6 +28,9 @@ keywords:
   - temporal knowledge graph
   - model context protocol
   - data ownership
+  - hallucination
+  - benchmark
+  - verifiable AI
 license: Apache-2.0
-version: 0.2.4
-date-released: 2026-08-07
+version: 0.6.0
+date-released: 2026-11-24

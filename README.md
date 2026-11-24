@@ -9,7 +9,7 @@ which **every entry quotes the words it came from, checked in code before it is 
 which nothing is silently overwritten.
 
 [Website](https://souvenance.me) · [Research](https://souvenance.me/research) ·
-[SOURCED benchmark (in preparation)](https://souvenance.me/benchmark) · [Related work](https://souvenance.me/related-work) ·
+[SOURCED benchmark (draft, first results)](https://souvenance.me/benchmark) · [Related work](https://souvenance.me/related-work) ·
 [Lab notes](https://souvenance.me/lab)
 
 ## Why
@@ -67,11 +67,37 @@ attribution cannot be compared (its edges link two entities); most of Graphiti's
 present in its graph that its search did not return. Two fairness fixes were made before the table
 and are documented ([results](research/benchmarks/sourced/results/README.md)).
 
+**What these numbers do not establish.**
+
+- **One generator, written by the author.** Every sealed life comes from our own generator; the table
+  rests on one of them. Nobody outside the lab has built or checked the data.
+- **The model judge is not validated**: κ = 0.54 against a second reader on fresh sealed data, for a
+  threshold of 0.70 written before the run. Its "invented" label holds against controls built in code;
+  its "partial" label does not. Questions answered and identity are scored in code.
+- **One model family** writes the memories for all three systems, answers the questions and judges them.
+- **No ablation of the identity-link gate**, the one part we claim as ours.
+- **LoCoMo has never been run end to end** (our LoCoMo figures measure retrieval on raw turns only).
+- **Not measured**: Letta, Zep's hosted service, and the built-in memories of ChatGPT and Claude; the
+  site's pages comparing Souvenance with those two are qualitative.
+- **Where we do not win**: on sealed seeds 4 and 5, Mem0 answered as many questions as Pensine (0.85
+  against 0.83; 0.71 against 0.73), inside the run-to-run spread.
+
 | In progress | Status |
 |---|---|
 | Memory poisoning: false claims about the person from sources with no authority (an instruction addressed to the assistant, a friend's mistaken congratulations, a notice repeated three times) | Measured, three claims per set. On a small private set Pensine stored one claim as the person's fact in each run without the fix (Mem0 none, Graphiti none, one run each): an excerpt check cannot stop it, the claim *is* in the deposit. The fix reads who speaks from the deposit's metadata: each memory carries whose word it is, what a third party says of the person is capped and set apart at recall. With it, no claim was stored as a fact in the runs made, but these are cases, not a rate: the fix does not change the wording a memory is written in, and the questions about the claims were already answered right without it. Cost: none measurable on a fresh sealed life run alternately (six runs each: 55.3 and 55.7 questions right of 63); on seed 8 its runs came out lower than the first runs without it and level with later ones, within the spread of one code ([results](research/benchmarks/sourced/results/README.md)) |
 | Validation of the model judge | Run without an annotator, thresholds fixed beforehand. It found a defect: the judge was not told who wrote each message, so it marked down faithful memories drawn from received messages, for every system. Corrected judge: flags 64 of 64 memories edited in code to be false and none of 60 true ones, on development and sealed data; agreement with a second model on a fresh sealed sample is 111 of 120, short of the κ threshold (0.54 for 0.70), the gap being memories the judge accepts and the reader calls partial. The nine seed-8 runs have been rejudged: the order and the gaps between systems hold, fact recall moves down 2 to 4 points for all three (Pensine 0.91, Mem0 0.52, Graphiti 0.72; cause not established yet). The table above shows the corrected judge's figures |
-| Letta on the same bench | Planned |
+| Letta, Zep, a judge from another model family, an identity-gate ablation | Not started: development is paused since 24 November 2026 (release v0.6.0) |
+
+## See the gate work in two minutes
+
+```bash
+python3 examples/admission-demo/demo.py     # Python 3.11+, standard library only, offline
+```
+
+Synthetic deposits, five candidate memories as a model would propose them, and the code deciding which
+are written: no excerpt, refused; an excerpt that is not in the deposit, refused; a number the deposit
+does not hold, flagged; a real excerpt, admitted. Then the same gate on identity links.
+[What it shows and what it does not](examples/admission-demo/README.md).
 
 ## Papers
 

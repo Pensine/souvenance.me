@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
-  "title": "Souvenance — a self-hosted memory engine you own",
-  "description": "<p>A self-hosted personal memory engine for AI assistants. Events are stored in an append-only PostgreSQL log owned by the subject; memories, embeddings and a bi-temporal knowledge graph are recomputable projections of that log. Nightly consolidation runs on a swappable AI backend, and the memory is served through MCP — so the model, the interface and the vendor stay replaceable while the substrate persists.</p><p>This archive includes the <code>research/</code> folder: position papers and pre-registered evaluation protocols arguing and testing the architecture, with verified sources, an explicit list of rejected sources, and falsification criteria named in advance.</p>",
+  "title": "Souvenance — a personal memory engine that checks each memory against its source, and the SOURCED integrity benchmark",
+  "description": "<p>A self-hosted personal memory engine for AI assistants. Events are stored in an append-only PostgreSQL log owned by the subject; memories, embeddings and a bi-temporal knowledge graph are recomputable projections of that log. A language model proposes each memory with a verbatim excerpt; code checks the excerpt against the source before writing, and applies the same proof gate to identity links. Nightly consolidation runs on a swappable AI backend, and the memory is served through MCP.</p><p>This archive includes the <code>research/</code> folder: position papers, pre-registered evaluation protocols, and SOURCED (draft v0.1), a benchmark of write-time integrity for personal memory on synthetic lives, with first results for three memory systems (Souvenance, Mem0, Graphiti). Limits stated with the results: every life comes from one generator written by the author; the model judge did not pass its pre-registered validation (kappa 0.54 for a threshold of 0.70); one model family writes, reads and judges; no ablation of the identity-link gate; LoCoMo not run end to end. Development is paused at this release.</p>",
   "creators": [
     {
       "name": "Noguera, Nicolas"
@@ -17,7 +17,10 @@
     "model context protocol",
     "data ownership",
     "data portability",
-    "personal informatics"
+    "personal informatics",
+    "hallucination",
+    "benchmark",
+    "verifiable AI"
   ],
   "related_identifiers": [
     {
@@ -30,5 +33,7 @@
       "relation": "isSupplementTo",
       "scheme": "url"
     }
-  ]
+  ],
+  "version": "0.6.0",
+  "publication_date": "2026-11-24"
 }
