@@ -1,5 +1,7 @@
 # Souvenance
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21852271.svg)](https://doi.org/10.5281/zenodo.21852271)
+
 > **A personal memory that invents nothing, and proves it.**
 
 Souvenance is an independent, open-source research lab on AI memory, and the engine it uses as a
@@ -107,8 +109,9 @@ does not hold, flagged; a real excerpt, admitted. Then the same gate on identity
 - **002 — Lived time** (pre-registered protocol): an ablation on LoCoMo with five conditions, including
   a token-matched placebo, across model sizes. [Protocol](research/papers/002-lived-time/README.md)
 
-Standards: [research/README.md](research/README.md). To cite: GitHub's "Cite this repository" button
-([CITATION.cff](CITATION.cff)).
+Standards: [research/README.md](research/README.md). To cite: [doi:10.5281/zenodo.21852271](https://doi.org/10.5281/zenodo.21852271)
+(all versions; version 0.6.0 is [10.5281/zenodo.24508852](https://doi.org/10.5281/zenodo.24508852)),
+or GitHub's "Cite this repository" button ([CITATION.cff](CITATION.cff)).
 
 ## Run the engine
 

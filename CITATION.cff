@@ -8,6 +8,14 @@ authors:
     website: "https://souvenance.me"
 repository-code: "https://github.com/Pensine/souvenance.me"
 url: "https://souvenance.me"
+doi: 10.5281/zenodo.21852271
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21852271
+    description: "All versions (concept DOI)"
+  - type: doi
+    value: 10.5281/zenodo.24508852
+    description: "Version 0.6.0"
 abstract: >-
   A self-hosted personal memory engine for AI assistants. Events are stored in
   an append-only PostgreSQL log owned by the subject; memories, embeddings and
